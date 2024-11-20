@@ -1,0 +1,24 @@
+.navigationBar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    background-color: white;
+    top: 0;
+}
+
+.navigationIcon {
+    width: 100%;
+    max-width: 1300px;
+
+
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    font-size: 20px;
+    font-weight: 600;
+}

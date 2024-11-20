@@ -1,0 +1,14 @@
+.globalPageSize {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    padding-top: 100px;
+}
+
+@media (max-width :800px) {
+    
+    .globalPageSize {
+        padding-top: 80px;
+    }
+}
