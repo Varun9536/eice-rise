@@ -3,7 +3,29 @@
 @font-face {
   font-family: 'Segoe';
   src: url("./assets/font/SegoeUI.ttf") format('truetype');
+
 }
+
+@font-face {
+  font-family: 'Segoe2';
+  src: url("./assets/font/custom/segoeuithisz.ttf") format('truetype');
+
+}
+
+
+.s1
+{
+  font-family: "Segoe";
+
+}
+
+.s2
+{font-family: "Segoe2";
+
+}
+
+
+
 
 
 
@@ -11,10 +33,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe";
 }
-
-
-
-
-

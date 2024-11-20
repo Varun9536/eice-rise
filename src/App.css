@@ -6,9 +6,9 @@
     padding-top: 100px;
 }
 
-@media (max-width :800px) {
+@media (max-width :1000px) {
     
     .globalPageSize {
-        padding-top: 80px;
+        padding-top: 70px;
     }
 }

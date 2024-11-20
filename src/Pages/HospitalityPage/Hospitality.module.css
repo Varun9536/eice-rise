@@ -1,0 +1,78 @@
+.section1 {
+    background-image: url("../../assets/Hospitality/main2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto;
+    max-width: 1700px;
+    width: 100vw;
+    height: 860px;
+    margin: 0px auto;
+    position: relative;
+    top: 90px;
+
+
+}
+
+.laptopImg {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 16rem;
+
+
+
+}
+
+
+.textBox {
+
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+}
+
+
+
+
+.text1 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 53px;
+    
+    
+
+}
+
+
+
+.text2 {
+
+    padding: 10px 60px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+.text3
+{
+    
+    background-color: rgba(1 , 176, 241 ,1);
+    width: 30%;
+    margin: 0px auto;
+    font-size: 20px;
+    padding: 10px 6px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+
+
+
+/* section 2 */
