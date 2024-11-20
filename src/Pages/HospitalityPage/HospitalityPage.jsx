@@ -2,8 +2,82 @@ import styles from "./Hospitality.module.css"
 import laptop from "../../assets/Hospitality/laptop.png"
 
 
+import pos from "../../assets/insidePages/account/account.webp"
+
+
 
 export default function HospitalityPage() {
+
+
+    const services = [
+        {
+            serviceName: "POS",
+            icon: pos
+        },
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+
+        ,
+
+        {
+            serviceName: "POS",
+            icon: pos
+        }
+    ]
+
+
     return (
         <>
 
@@ -34,6 +108,27 @@ export default function HospitalityPage() {
 
 
             <div className={`${styles.section2} globalPageSize`}>
+
+
+                <div className={`${styles.section2Heading} s1`}>Our <span s className={`${styles.headingClass} s2`} > End to End </span>  Technology Solution</div>
+
+
+
+                <div className={`${styles.servicesBox}`}>
+                    {services.map((item) =>
+                    (
+                        <div className={`${styles.iconAndTextBox}`}>
+
+                            <div className={styles.imgBox} >
+                                <img src={item.icon} alt="" />
+                            </div>
+
+
+                            <div className={`${styles.serviceName} s2`}>{item.serviceName}</div>
+                        </div>
+                    ))}
+                </div>
+
 
             </div>
 
