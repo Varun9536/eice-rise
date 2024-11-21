@@ -131,7 +131,7 @@ export default function HospitalityPage() {
 
 
                 <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalPageSize2 `}>
+                    <div className={`${styles.servicesBox} globalSectionSize `}>
                         {services.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
@@ -159,7 +159,7 @@ export default function HospitalityPage() {
             {/* section3 */}
 
 
-            <section className={`${styles.section3} globalPageSize`}>
+            <section className={`${styles.section3} globalSectionSize`}>
 
                 <div className={`${styles.section3Heading} font1`}>With deep expertise in <span className={`${styles.headingClass} font2`}>Hospitality Technology</span> , we have
                     perfected the art of delivering efficient, scalable, and tailored
@@ -179,8 +179,41 @@ export default function HospitalityPage() {
             {/* section4 */}
 
 
-            <section>
+            <section className={`${styles.section4} globalSectionSize`}>
 
+                <div className={`${styles.section4Heading}`}>
+                    <span className={`${styles.headingClass} font2`}>Trusted</span><span className="font1"> by Brands around the World</span>
+                </div>
+            </section>
+
+
+
+            {/* section5 */}
+
+            <section className={`${styles.section5} globalSectionSize`}>
+
+                <div className={`${styles.section4Heading} font1`}>
+                    What our <span className={`${styles.headingClass} font2`}>Customers</span> say about us ?
+                </div>
+            </section>
+
+
+            {/* section6 */}
+            <section className={`${styles.section6} globalSectionSize`}>
+                <div className={`${styles.section4Heading} font1`}>
+                    Real  <span className={`${styles.headingClass} font2`}>Stories</span> , Real <span className={`${styles.headingClass} font2`}>Impact</span>
+                </div>
+            </section>
+
+
+            {/* section7 */}
+            <section className={`${styles.section7} globalSectionSize`}>
+
+
+                <div className={`${styles.section4Heading} font1`}>
+                    Some Interesting <span className={`${styles.headingClass} font2`} >Insights</span> from the Hospitality Industry
+
+                </div>
             </section>
 
 

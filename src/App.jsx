@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <Error />
-    
+
       },
 
       {
@@ -43,29 +43,29 @@ const router = createBrowserRouter([
       },
 
       {
-        path : "about-us",
-        element : <AboutUs/>
+        path: "about-us",
+        element: <AboutUs />
       },
 
-      
+
       {
-        path : "products",
-        element : <Products/>
+        path: "products",
+        element: <Products />
       },
 
-      
+
       {
-        path : "pricing",
-        element : <Pricing/>
+        path: "pricing",
+        element: <Pricing />
       },
 
-      
+
       {
-        path : "blogs",
-        element : <Blogs/>
+        path: "blogs",
+        element: <Blogs />
       },
 
-     
+
 
 
       {
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         element: <RoomBooking />
       },
 
-      
+
       {
         path: "pos-dining",
         element: <Pos />
@@ -124,17 +124,24 @@ const router = createBrowserRouter([
 
   }
 
- 
 
 
 
-] ,
 
-{
-  future: {
-    v7_relativeSplatPath: true,
-  },
-}
+],
+
+  {
+    future: {
+    
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
+      v7_skipActionErrorRevalidation: true,
+      v7_relativeSplatPath: true,
+      v7_startTransition: true,
+    },
+  }
+
 
 )
 
@@ -143,7 +150,7 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <RouterProvider  router={router} />
+      <RouterProvider router={router} />
     </>
   )
 }

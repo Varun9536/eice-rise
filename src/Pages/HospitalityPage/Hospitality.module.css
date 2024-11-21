@@ -3,7 +3,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px auto;
     max-width: 1700px;
     width: 100%;
     height: 900px;
@@ -70,7 +69,7 @@
     color: white;
     font-size: 17px;
     cursor: pointer;
-    
+
 }
 
 
@@ -81,6 +80,10 @@
 
 /* section 2 */
 
+.section2 {
+    margin-bottom: 5rem;
+}
+
 
 .headingClass {
     color: rgba(1, 176, 241, 1);
@@ -90,7 +93,7 @@
     text-align: center;
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -146,10 +149,12 @@
 
 /* section3 */
 
-
+.section3 {
+    margin-bottom: 5rem;
+}
 
 .section3Heading {
-    font-size: 26px;
+    font-size: 32px;
     text-align: center;
     font-weight: 600;
     width: 70%;
@@ -172,6 +177,63 @@
 
 
 
+/* section4 */
+
+
+.section4 {
+    margin-bottom: 5rem;
+}
+
+
+.section4Heading {
+    margin-bottom: 2.5rem;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.section5 {
+    margin-bottom: 5rem;
+
+}
+
+.section5Heading {
+    margin-bottom: 2.5rem;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.section6 {
+    margin-bottom: 5rem;
+}
+
+.section6Heading {
+    margin-bottom: 2.5rem;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.section7 {
+    margin-bottom: 5rem;
+}
+
+.section7Heading {
+    margin-bottom: 2.5rem;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
 @media (max-width :1000px) {
 
 
@@ -185,3 +247,5 @@
     }
 
 }
+
+/* section4 */

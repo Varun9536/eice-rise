@@ -14,10 +14,9 @@
     }
 }
 
-.globalPageSize2 {
+.globalSectionSize {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 15px;
-    padding-top: 20px;
 }
