@@ -97,8 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: 60px;
-    row-gap: 40px;
+    gap: 20px 30px;
     padding: 20px;
 }
 
@@ -107,6 +106,9 @@
     width: 200px;
     padding: 8px;
     background-color: white;
+    height: 210px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
 }
 
@@ -123,6 +125,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
