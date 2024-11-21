@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: 'Segoe';
-  src: url("./SegoeUI.ttf") format('truetype');
-  font-display: swap;
+  src: url("/font1/SegoeUI.ttf") format('truetype');
+ 
 
 }
 
 @font-face {
   font-family: 'Segoe2';
-  src: url("/segoeuithisz.ttf") format('truetype');
-  font-display: swap;
+  src: url("/font2/segoeuithisz.ttf") format('truetype');
+ 
 
 }
 
