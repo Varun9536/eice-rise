@@ -2,36 +2,34 @@
 
 @font-face {
   font-family: 'Segoe';
-  src: url("./assets/font/SegoeUI.ttf") format('truetype');
+  src: url("./SegoeUI.ttf") format('truetype');
+  font-display: swap;
 
 }
 
 @font-face {
   font-family: 'Segoe2';
-  src: url("./assets/font/custom/segoeuithisz.ttf") format('truetype');
+  src: url("/segoeuithisz.ttf") format('truetype');
+  font-display: swap;
 
 }
 
-/* font syles */
-.font1
-{
+/* font family classes for global use */
+.font1 {
   font-family: "Segoe";
 
 }
 
-.font2
-{font-family: "Segoe2";
+.font2 {
+  font-family: "Segoe2";
 
 }
 
 
-.linkClass
-{
+.linkClass {
   text-decoration: none;
   color: black;
 }
-
-
 
 
 
@@ -40,5 +38,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }

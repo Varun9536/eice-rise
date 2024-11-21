@@ -25,7 +25,6 @@ const router = createBrowserRouter([
     children: [
 
 
-
       {
         path : "about-us",
 
@@ -123,13 +122,13 @@ const router = createBrowserRouter([
 
 
 
-],
-  {
-    future: {
-      v7_startTransition: true, // Opt-in early to prevent the warning
-    }
-  }
+] ,
 
+{
+  future: {
+    v7_relativeSplatPath: true,
+  },
+}
 
 )
 
@@ -138,8 +137,7 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <RouterProvider router={router} />
-
+      <RouterProvider  router={router} />
     </>
   )
 }

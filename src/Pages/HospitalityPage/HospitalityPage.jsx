@@ -26,12 +26,14 @@ export default function HospitalityPage() {
             serviceName: "ROOM BOOKING",
             icon: room,
             path: "room-booking",
+            key : "1"
         },
 
         {
             serviceName: "DINNING (POS)",
             icon: pos,
             path: "pos-dining",
+             key : "2"
         }
 
         ,
@@ -40,6 +42,7 @@ export default function HospitalityPage() {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
             path: "banquet-billing",
+             key : "3"
         }
 
         ,
@@ -48,6 +51,7 @@ export default function HospitalityPage() {
             serviceName: "MEMBER SUITE ",
             icon: member,
             path: "member-suite",
+             key : "4"
         }
 
         ,
@@ -56,6 +60,7 @@ export default function HospitalityPage() {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
             path: "account-finance",
+             key : "5"
         }
 
         ,
@@ -64,6 +69,7 @@ export default function HospitalityPage() {
             serviceName: "EMPLOYEE SUITE",
             icon: emp,
             path: "employee-suite",
+             key : "6"
         }
 
         ,
@@ -72,6 +78,7 @@ export default function HospitalityPage() {
             serviceName: "PAYROLL",
             icon: pay,
             path: "payroll",
+             key : "7"
         }
 
         ,
@@ -80,6 +87,7 @@ export default function HospitalityPage() {
             serviceName: "USER STORE & INVENTRY",
             icon: inentry,
             path: "userstore-inventry",
+             key : "8"
         }
 
         ,
@@ -88,6 +96,7 @@ export default function HospitalityPage() {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
             path: "purchase-vendor",
+             key : "9"
         }
 
         ,
@@ -96,6 +105,7 @@ export default function HospitalityPage() {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
             path: "food-cost",
+             key : "10"
         }
     ]
 
@@ -140,7 +150,7 @@ export default function HospitalityPage() {
                     <div className={`${styles.servicesBox} globalPageSize2 `}>
                         {services.map((item) =>
                         (
-                            <Link className="linkClass" to={item.path}>
+                            <Link className="linkClass" key={item.key} to={item.path}>
 
                                 <div className={`${styles.iconAndTextBox} `}>
 
