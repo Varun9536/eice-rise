@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars } from "react-icons/fa";
 import styles from "./phoneNavigation.module.css"
-import { Outlet } from 'react-router-dom';
 import { IoCloseSharp } from "react-icons/io5";
 
 import logo from "../../assets/logo/logo.svg"

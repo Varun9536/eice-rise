@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
-import { Outlet } from 'react-router-dom'
+
 import logo from "../../assets/logo/logo.svg"
 
-import { MdLocalPhone } from "react-icons/md";
+
 
 export default function Navbar() {
     return (

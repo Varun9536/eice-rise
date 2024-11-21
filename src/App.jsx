@@ -1,6 +1,9 @@
 import React from 'react'
 import "./App.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+
+
 import HospitalityPage from './Pages/HospitalityPage/HospitalityPage'
 import Layout from './Components/Layout/Layout'
 import Error from './Components/Error/Error'
