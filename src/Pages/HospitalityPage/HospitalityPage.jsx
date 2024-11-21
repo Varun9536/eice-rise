@@ -26,86 +26,70 @@ export default function HospitalityPage() {
             serviceName: "ROOM BOOKING",
             icon: room,
             path: "room-booking",
-            key : "1"
+            key: "1"
         },
 
         {
             serviceName: "DINNING (POS)",
             icon: pos,
             path: "pos-dining",
-             key : "2"
-        }
-
-        ,
+            key: "2"
+        },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
             path: "banquet-billing",
-             key : "3"
-        }
-
-        ,
+            key: "3"
+        },
 
         {
             serviceName: "MEMBER SUITE ",
             icon: member,
             path: "member-suite",
-             key : "4"
-        }
-
-        ,
+            key: "4"
+        },
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
             path: "account-finance",
-             key : "5"
-        }
-
-        ,
+            key: "5"
+        },
 
         {
             serviceName: "EMPLOYEE SUITE",
             icon: emp,
             path: "employee-suite",
-             key : "6"
-        }
-
-        ,
+            key: "6"
+        },
 
         {
             serviceName: "PAYROLL",
             icon: pay,
             path: "payroll",
-             key : "7"
-        }
-
-        ,
+            key: "7"
+        },
 
         {
             serviceName: "USER STORE & INVENTRY",
             icon: inentry,
             path: "userstore-inventry",
-             key : "8"
-        }
-
-        ,
+            key: "8"
+        },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
             path: "purchase-vendor",
-             key : "9"
-        }
-
-        ,
+            key: "9"
+        },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
             path: "food-cost",
-             key : "10"
+            key: "10"
         }
     ]
 
@@ -158,7 +142,6 @@ export default function HospitalityPage() {
                                         <img src={item.icon} alt="" />
                                     </div>
 
-
                                     <div className={`${styles.serviceName} font1`}>{item.serviceName}</div>
                                 </div>
 
@@ -190,6 +173,14 @@ export default function HospitalityPage() {
                     <img style={{ width: "65%" }} src={vimg} alt="video" />
                 </div>
 
+            </section>
+
+
+            {/* section4 */}
+
+
+            <section>
+                
             </section>
 
 
