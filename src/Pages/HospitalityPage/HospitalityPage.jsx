@@ -114,7 +114,7 @@ export default function HospitalityPage() {
                     </p>
 
                     <div className={`${styles.text3} font1`}>
-                        Request a Demo
+                        <button className={` ${styles.requestDemoBtn} font1`}>  Request a Demo</button>
                     </div>
 
                 </div>
@@ -170,7 +170,7 @@ export default function HospitalityPage() {
 
 
                 <div className={`${styles.section3Video}`} >
-                    <img style={{ width: "65%" }} src={vimg} alt="video" />
+                    <img style={{ width: "65%" }} loading="lazy" src={vimg} alt="video" />
                 </div>
 
             </section>
@@ -180,7 +180,7 @@ export default function HospitalityPage() {
 
 
             <section>
-                
+
             </section>
 
 

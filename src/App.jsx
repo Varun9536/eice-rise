@@ -17,6 +17,10 @@ import Payroll from './Pages/InsidePages/Payroll'
 import PurchaseAndVendor from './Pages/InsidePages/PurchaseAndVendor'
 import UserAndInventry from './Pages/InsidePages/UserAndInventry'
 import FoodCost from './Pages/InsidePages/FoodCost'
+import AboutUs from './Pages/NavigationBarPages/AboutUs'
+import Products from './Pages/NavigationBarPages/Products'
+import Pricing from './Pages/NavigationBarPages/Pricing'
+import Blogs from './Pages/NavigationBarPages/Blogs'
 
 
 
@@ -27,28 +31,10 @@ const router = createBrowserRouter([
 
     children: [
 
-
       {
-        path : "about-us",
-
-      },
-
-      
-      {
-        path : "products",
-
-      },
-
-      
-      {
-        path : "pricing",
-
-      },
-
-      
-      {
-        path : "blogs",
-
+        path: "*",
+        element: <Error />
+    
       },
 
       {
@@ -57,12 +43,37 @@ const router = createBrowserRouter([
       },
 
       {
+        path : "about-us",
+        element : <AboutUs/>
+      },
+
+      
+      {
+        path : "products",
+        element : <Products/>
+      },
+
+      
+      {
+        path : "pricing",
+        element : <Pricing/>
+      },
+
+      
+      {
+        path : "blogs",
+        element : <Blogs/>
+      },
+
+     
+
+
+      {
         path: "room-booking",
         element: <RoomBooking />
       },
 
       
-
       {
         path: "pos-dining",
         element: <Pos />
@@ -108,20 +119,12 @@ const router = createBrowserRouter([
         element: <FoodCost />
       },
 
-
-
-
-
     ]
 
 
-  },
+  }
 
-  {
-    path: "*",
-    element: <Error />
-
-  },
+ 
 
 
 

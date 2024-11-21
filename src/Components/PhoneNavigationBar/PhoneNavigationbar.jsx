@@ -53,7 +53,7 @@ export default function PhoneNavigationbar() {
 
 
             {/* menu items */}
-            <div >
+            <div style={{ position: "fixed", zIndex: "999" }} >
                 {
                     navbarOpen ? (<div></div>)
                         :
