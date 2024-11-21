@@ -24,6 +24,31 @@ const router = createBrowserRouter([
 
     children: [
 
+
+
+      {
+        path : "about-us",
+
+      },
+
+      
+      {
+        path : "products",
+
+      },
+
+      
+      {
+        path : "pricing",
+
+      },
+
+      
+      {
+        path : "blogs",
+
+      },
+
       {
         path: "",
         element: <HospitalityPage />,
@@ -34,63 +59,47 @@ const router = createBrowserRouter([
         element: <RoomBooking />
       },
 
-      ,
+      
 
       {
         path: "pos-dining",
         element: <Pos />
-      }
-
-      ,
+      },
 
       {
         path: "account-finance",
         element: <AccountAndFinance />
-      }
-
-      ,
+      },
 
       {
         path: "banquet-billing",
         element: <BanquetAnsBilling />
-      }
-
-      ,
+      },
 
       {
         path: "employee-suite",
         element: <EmployeeSuite />
-      }
-
-      ,
+      },
 
       {
         path: "member-suite",
         element: <MemberSuite />
-      }
-
-      ,
+      },
 
       {
         path: "payroll",
         element: <Payroll />
-      }
-
-      ,
+      },
 
       {
         path: "purchase-vendor",
         element: <PurchaseAndVendor />
-      }
-
-      ,
+      },
 
       {
         path: "userstore-inventry",
         element: <UserAndInventry />
-      }
-
-      ,
+      },
 
       {
         path: "food-cost",

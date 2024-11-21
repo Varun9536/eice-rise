@@ -17,7 +17,7 @@ export default function Navbar() {
                         <img src={logo} alt="" />
                     </div>
 
-                    <div className={`${styles.navigationIcon} s1`} >
+                    <div className={`${styles.navigationIcon} font1`} >
                         <div>Home</div>
                         <div>About Us</div>
                         <div>Products</div>
