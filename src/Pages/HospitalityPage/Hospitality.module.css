@@ -10,16 +10,23 @@
     margin: 0px auto;
     position: relative;
     top: 90px;
+    z-index: -1;
 
 
 }
+
+
+
+
+
+
 
 .laptopImg {
     position: absolute;
     right: 0px;
     display: flex;
     justify-content: flex-end;
-    bottom: 16rem;
+    bottom: 17rem;
 }
 
 
@@ -41,8 +48,8 @@
     font-size: 52px;
     font-weight: 600;
     line-height: 53px;
-    
-    
+
+
 
 }
 
@@ -56,10 +63,9 @@
 }
 
 
-.text3
-{
-    
-    background-color: rgba(1 , 176, 241 ,1);
+.text3 {
+
+    background-color: rgba(1, 176, 241, 1);
     width: 30%;
     margin: 0px auto;
     font-size: 20px;
@@ -67,7 +73,7 @@
     font-weight: 600;
     border-radius: 5px;
     margin-top: 15px;
-    
+
 }
 
 
@@ -75,13 +81,11 @@
 /* section 2 */
 
 
-.headingClass
-{
-    color: rgba(1 , 176, 241 ,1);
+.headingClass {
+    color: rgba(1, 176, 241, 1);
 }
 
-.section2Heading
-{
+.section2Heading {
     text-align: center;
     font-size: 32px;
     font-weight: 600;
@@ -89,30 +93,32 @@
 }
 
 
-.servicesBox
-{
+.servicesBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: 80px;
+    column-gap: 60px;
     row-gap: 40px;
+    padding: 20px;
 }
 
 
-.iconAndTextBox
-{
-    
-    border: 2px solid red;
-    width: 170px;
+.iconAndTextBox {
+    width: 200px;
     padding: 8px;
-    
+    background-color: white;
+
+}
+
+.iconAndTextBox:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
-.imgBox
-{
+
+
+.imgBox {
     padding: 10px;
-    /* background-color: aqua; */
     background-color: #F0F0F0;
     display: flex;
     align-items: center;
@@ -120,15 +126,59 @@
 }
 
 
-.imgBox img
-{
-   
+.imgBox img {
+    width: 70%;
 }
 
 
-.serviceName
-{
-    padding: 30px;
+.serviceName {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+
+/* section3 */
+
+.section3 {}
+
+.section3Heading {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+}
+
+
+.section3Para {
+    width: 76%;
+    margin: 0px auto;
+
     text-align: center;
 }
 
+.section3Video {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+
+@media (max-width :1000px) {
+    .section1 {
+        top: 64px;
+    }
+
+    .text1 {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+
+
+
+}

@@ -17,7 +17,7 @@ export default function Navbar() {
                         <img src={logo} alt="" />
                     </div>
 
-                    <div className={styles.navigationIcon} >
+                    <div className={`${styles.navigationIcon} s1`} >
                         <div>Home</div>
                         <div>About Us</div>
                         <div>Products</div>
@@ -26,11 +26,11 @@ export default function Navbar() {
                         <div>Blogs</div>
                     </div>
 
-                    <div className={styles.contactUsBtn}>
+                    {/* <div className={styles.contactUsBtn}>
                         <MdLocalPhone size={20} />
                         <span>Contact Us</span>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
