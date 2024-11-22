@@ -18,6 +18,34 @@ import vimg from "../../assets/insidePages/vimg.png"
 
 
 
+
+import c1 from "../../assets/Hospitality/customer/c1.png"
+import c2 from "../../assets/Hospitality/customer/c2.png"
+import c3 from "../../assets/Hospitality/customer/c3.png"
+
+
+import s1 from "../../assets/Hospitality/story/s1.png"
+import s2 from "../../assets/Hospitality/story/s2.png"
+import s3 from "../../assets/Hospitality/story/s3.png"
+
+
+import insight1 from "../../assets/Hospitality/insights/01.png"
+import insight2 from "../../assets/Hospitality/insights/02.png"
+import insight3 from "../../assets/Hospitality/insights/03.png"
+
+
+import tata from "../../assets/Hospitality/clients/tata.png"
+import nrf from "../../assets/Hospitality/clients/nrf.png"
+import indOil from "../../assets/Hospitality/clients/indOil.png"
+import pg from "../../assets/Hospitality/clients/pg.png"
+import slb from "../../assets/Hospitality/clients/slb.png"
+import salesvu from "../../assets/Hospitality/clients/salesvu.png"
+
+
+import { FaArrowRightLong } from "react-icons/fa6";
+
+
+
 export default function HospitalityPage() {
 
 
@@ -94,6 +122,105 @@ export default function HospitalityPage() {
     ]
 
 
+
+    const clientLogo = [
+
+        {
+            logo : tata
+        },
+
+        {
+            logo : pg
+        },
+
+        {
+            logo : slb
+        },
+
+        {
+            logo : salesvu
+        },
+
+        {
+            logo : indOil
+        },
+
+        {
+            logo : nrf
+        }
+    ]
+
+
+    const feedback = [
+        {
+            img: c1,
+            position: " Operations Manager, LuxeStay Hotels",
+            heading: " Transformative Technology Partner ",
+            para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner."
+        },
+
+        {
+            img: c2,
+            position: " Operations Manager, LuxeStay Hotels",
+            heading: " Transformative Technology Partner ",
+            para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner."
+        },
+
+        {
+            img: c3,
+            position: " Operations Manager, LuxeStay Hotels",
+            heading: " Transformative Technology Partner ",
+            para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner."
+        }
+    ]
+
+
+    const stories = [
+        {
+            img: s1,
+            heading: " Seamless Operations at LuxeStay Hotels",
+            para: "How EICE Rise streamlined front desk, housekeeping, and POS systems, boosting operational efficiency by 40%. "
+        },
+
+        {
+            img: s2,
+            heading: "Driving Guest Satisfaction for Serenity Resorts",
+            para: "Enhanced guest experiences through AI-driven personalization and integrated feedback systems. "
+        },
+
+        {
+            img: s3,
+            heading: " Expanding Global Reach with Gourmet Suites ",
+            para: " Scaling operations across multiple properties with centralized data and real-time insights. "
+        }
+
+    ]
+
+
+    const insights = [
+
+        {
+            img: insight1,
+            heading: "Guest Loyalty (Personalization) ",
+            para: "Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. "
+        },
+
+        {
+            img: insight2,
+            heading: "The Rise of Contactless Technology ",
+            para: "From mobile check-ins to digital room keys, 85% of hotels now prioritize contactless solutions to enhance convenience and safety for their guests. "
+
+        },
+
+        {
+            img: insight3,
+            heading: "AI-Powered Guest Experiences:",
+            para: "Chatbots and virtual concierges powered by AI are revolutionizing guest services, reducing response times and increasing satisfaction "
+        }
+
+    ]
+
+
     return (
         <>
 
@@ -114,7 +241,19 @@ export default function HospitalityPage() {
                     </p>
 
                     <div className={`${styles.text3} font1`}>
-                        <button className={` ${styles.requestDemoBtn} font1`}>  Request a Demo</button>
+
+
+
+                        <div className={`${styles.demoButton}`}>
+                            <div> Request a Demo </div>
+                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+
+
+
+                        {/* <button className={` ${styles.requestDemoBtn} font1`}>  Request a Demo    </button> 
+                        <div className={` ${styles.requestDemoBtn} font1`} ><FaArrowRightLong  /></div> */}
+
                     </div>
 
                 </div>
@@ -179,6 +318,9 @@ export default function HospitalityPage() {
             {/* section4 */}
 
 
+
+
+
             <section className={`${styles.section4} globalSectionSize`}>
 
                 <div className={`${styles.section4Heading}`}>
@@ -187,33 +329,137 @@ export default function HospitalityPage() {
             </section>
 
 
+            <div className={styles.clientSection} >
+                <div className={`${styles.clientLogoBox} globalSectionSize`}>
+                    {/* <img style={{ width: "100%" }} src={client} alt="" /> */}
+                    {clientLogo.map((item)=>
+                    (
+                        <div style={{width : "12%"}}>
+                            <img  style={{width : "100%"}} src={item.logo} alt="" />
+                        </div>
+
+                    ))}
+                </div>
+            </div>
+
+
+
+
+
+
+
+
 
             {/* section5 */}
 
             <section className={`${styles.section5} globalSectionSize`}>
 
-                <div className={`${styles.section4Heading} font1`}>
+                <div className={`${styles.section5Heading} font1`}>
                     What our <span className={`${styles.headingClass} font2`}>Customers</span> say about us ?
                 </div>
+
+
+                <div className={`${styles.section5Subheading} font1`}>
+                    "<span style={{ fontWeight: "600" }} > Proven Excellence:</span> Trusted by Leading  <span className={`${styles.headingClass} font2`}>Hotels, Resorts, and Restaurants </span>."
+                </div>
+
+
+
+                <main className={`${styles.feedBack}`}>
+                    {feedback.map((item) =>
+                    (
+                        <article className={`${styles.feedBackArticleBox} font1`} >
+
+                            <figure >
+
+                                <div style={{ textAlign: "center" }}  >
+                                    <img style={{ width: "28%" }} src={item.img} alt="" />
+                                </div>
+
+                                <figcaption style={{ textAlign: "center" }} >{item.position}</figcaption>
+
+                            </figure>
+
+                            <div style={{ textAlign: "center" }}>{item.heading}</div>
+
+                            <p style={{ textAlign: "center" }}>{item.para}</p>
+
+                        </article>
+                    ))}
+                </main>
+
+
             </section>
+
+
+
+
+
 
 
             {/* section6 */}
             <section className={`${styles.section6} globalSectionSize`}>
-                <div className={`${styles.section4Heading} font1`}>
+                <div className={`${styles.section6Heading} font1`}>
                     Real  <span className={`${styles.headingClass} font2`}>Stories</span> , Real <span className={`${styles.headingClass} font2`}>Impact</span>
                 </div>
+
+
+                <div className={`${styles.storySection}`}>
+
+                    {stories.map((item) =>
+                    (
+                        <div className={`${styles.storyBox}`}>
+
+                            <div>
+                                <img style={{ width: "100%" }} src={item.img} alt="storyimg" />
+                            </div>
+
+                            <div>
+                                {item.heading}
+                            </div>
+
+                            <p>{item.para}</p>
+
+                        </div>
+
+                    ))}
+
+                </div>
+
+
             </section>
+
+
+
+
+
+
 
 
             {/* section7 */}
             <section className={`${styles.section7} globalSectionSize`}>
 
 
-                <div className={`${styles.section4Heading} font1`}>
+                <div className={`${styles.section7Heading} font1`}>
                     Some Interesting <span className={`${styles.headingClass} font2`} >Insights</span> from the Hospitality Industry
-
                 </div>
+
+                <div className={`${styles.insightSection}`}>
+
+                    {insights.map((item) => (
+                        <div className={`${styles.insightBox}`}>
+
+                            <div>
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div>{item.heading}</div>
+                            <p>{item.para}</p>
+                        </div>
+                    ))}
+                </div>
+
+
             </section>
 
 

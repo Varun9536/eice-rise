@@ -1,5 +1,6 @@
 .section1 {
     background-image: url("../../assets/Hospitality/main2.webp");
+  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,19 +59,34 @@
 
     margin-top: 15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.requestDemoBtn {
+.demoButton {
+
     background-color: rgba(1, 176, 241, 1);
-    border: none;
+    display: flex;
+    gap: 10px;
+    padding: 10px 35px;
     border-radius: 5px;
-    padding: 10px 15px;
-    color: white;
     font-size: 17px;
     cursor: pointer;
 
 }
+
+.demoButton:hover {
+    background-color: rgba(20, 176, 241, 1);
+}
+
+.demoArrowButton {
+    padding-top: 3.5px;
+}
+
+
+
 
 
 
@@ -181,15 +197,28 @@
 
 
 .section4 {
-    margin-bottom: 5rem;
+    margin-bottom: 1.3rem;
 }
 
 
 .section4Heading {
-    margin-bottom: 2.5rem;
+
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+}
+
+
+.clientSection {
+    margin-bottom: 5rem;
+    background-color: #80B4FB;
+    padding: 15px 0px;
+}
+
+.clientLogoBox {
+    display: flex;
+    justify-content: center;
+    gap: 0px 38px;
 }
 
 
@@ -200,10 +229,31 @@
 }
 
 .section5Heading {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+}
+
+
+.section5Subheading {
+
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.feedBack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.feedBackArticleBox {
+    width: 370px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
 
 
@@ -219,6 +269,19 @@
 }
 
 
+.storySection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.storyBox {
+    width: 370px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+
 
 .section7 {
     margin-bottom: 5rem;
@@ -229,6 +292,18 @@
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+}
+
+.insightSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.insightBox {
+    width: 370px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
 
 
