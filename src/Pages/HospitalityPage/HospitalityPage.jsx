@@ -42,6 +42,9 @@ import slb from "../../assets/Hospitality/clients/slb.png"
 import salesvu from "../../assets/Hospitality/clients/salesvu.png"
 
 
+import clientHeadIcon from "../../assets/Hospitality/customer/subh.png"
+
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
@@ -364,7 +367,7 @@ export default function HospitalityPage() {
             <section className={`${styles.section5} globalSectionSize`}>
 
                 <div className={`${styles.section5Heading} font1`}>
-                    What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
+                <img style={{width : "6%" , marginRight : "15px"}} src={clientHeadIcon} alt="icon" />    What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
                 </div>
 
 
@@ -454,7 +457,7 @@ export default function HospitalityPage() {
 
 
                 <div className={`${styles.section7Heading} font1`}>
-                    Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
+                 <img src="" alt="" /> Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
                 </div>
 
                 <div className={`${styles.insightSection} font1`}>
