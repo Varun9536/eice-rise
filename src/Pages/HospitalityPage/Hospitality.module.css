@@ -101,9 +101,7 @@
 }
 
 
-.headingClass {
-    color: rgba(1, 176, 241, 1);
-}
+
 
 .section2Heading {
     text-align: center;
@@ -282,6 +280,19 @@
 }
 
 
+.viewMoreBtn
+{
+    background-color: rgba(20, 176, 241, 1);
+    border: none;
+    padding: 15px 90px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
 
 .section7 {
     margin-bottom: 5rem;
@@ -304,6 +315,14 @@
     width: 370px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 15px;
+}
+
+
+.cardBoxInnerHeading
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
 }
 
 
