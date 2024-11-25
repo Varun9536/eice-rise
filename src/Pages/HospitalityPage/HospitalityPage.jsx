@@ -277,7 +277,7 @@ export default function HospitalityPage() {
             <section className={`${styles.section2} `}>
 
 
-                <div className={`${styles.section2Heading} font1 globalPageSize`}>Our <span className={` blueTextGlobalClass font2`} > End to End </span>  Technology Solution</div>
+                <div className={`${styles.section2Heading} font1 globalSectionSize`}>Our <span className={` blueTextGlobalClass font2`} > End to End </span>  Technology Solution</div>
 
 
 
