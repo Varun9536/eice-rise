@@ -1,8 +1,14 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "x-robots-tag",
+            "value": "index, follow"
+          }
+        ]
+      }
     ]
-}
+  }
+  
