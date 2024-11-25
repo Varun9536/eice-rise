@@ -240,7 +240,7 @@ export default function HospitalityPage() {
             <section className={styles.section1}>
 
                 <div className={styles.laptopImg}>
-                    <img style={{ maxWidth: "60%" }} src={laptop} alt="" />
+                    <img style={{ maxWidth: "74%" }} src={laptop} alt="" />
                 </div>
 
                 <div className={styles.textBox}>
@@ -367,7 +367,8 @@ export default function HospitalityPage() {
             <section className={`${styles.section5} globalSectionSize`}>
 
                 <div className={`${styles.section5Heading} font1`}>
-                <img style={{width : "6%" , marginRight : "15px"}} src={clientHeadIcon} alt="icon" />    What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
+
+                <img style={{width : "5%" , marginRight : "15px"}} src={clientHeadIcon} alt="icon" />    What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
                 </div>
 
 
