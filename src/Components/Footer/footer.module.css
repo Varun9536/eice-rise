@@ -1,0 +1,59 @@
+.footerMainBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+
+}
+
+
+.demoButton {
+
+    background-color: rgba(1, 176, 241, 1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    color: white;
+    width: 45%;
+    margin-top: 30px;
+
+
+}
+
+.demoButton:hover {
+    background-color: rgba(20, 176, 241, 1);
+}
+
+.demoArrowButton {
+    padding-top: 3.5px;
+}
+
+.footerSubHeading
+{
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footerPoints
+{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 16px;
+}
+
+.footerSubHeading:hover
+{
+    color: rgba(1, 176, 241, 1);
+}

@@ -45,7 +45,12 @@ import salesvu from "../../assets/Hospitality/clients/salesvu.png"
 import clientHeadIcon from "../../assets/Hospitality/customer/subh.png"
 
 
+import h1 from "../../assets/Hospitality/headIcon/h1.png"
+import h2 from "../../assets/Hospitality/headIcon/h2.png"
+
+
 import { FaArrowRightLong } from "react-icons/fa6";
+import Footer from "../../Components/Footer/Footer"
 
 
 
@@ -367,13 +372,24 @@ export default function HospitalityPage() {
             <section className={`${styles.section5} globalSectionSize`}>
 
                 <div className={`${styles.section5Heading} font1`}>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                        <div style={{ width: "55px", paddingBottom : "14px"  }}>
+                            <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
+                        </div>
 
-                <img style={{width : "5%" , marginRight : "15px"}} src={clientHeadIcon} alt="icon" />    What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
+                        <div>
+                            What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
+                        </div>
+                    </div>
                 </div>
 
 
+
+
+
+
                 <div className={`${styles.section5Subheading} font1`}>
-                    "<span style={{ fontWeight: "600" }} > Proven Excellence:</span> Trusted by Leading  <span className={` blueTextGlobalClass font2`}>Hotels, Resorts, and Restaurants </span>."
+                    <span style={{ fontWeight: "600" }} >"Proven Excellence:</span> Trusted by Leading  <span className={` blueTextGlobalClass font2`}>Hotels, Resorts, and Restaurants</span>."
                 </div>
 
 
@@ -413,7 +429,24 @@ export default function HospitalityPage() {
             {/* section6 */}
             <section className={`${styles.section6} globalSectionSize`}>
                 <div className={`${styles.section6Heading} font1`}>
-                    Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
+
+
+
+
+
+
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                        <div style={{ width: "50px", paddingTop: "12px" }}>
+                            <img style={{ width: "100%" }} src={h2} alt="" />
+                        </div>
+
+                        <div>
+                            Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
 
@@ -458,7 +491,19 @@ export default function HospitalityPage() {
 
 
                 <div className={`${styles.section7Heading} font1`}>
-                 <img src="" alt="" /> Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
+
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                        <div style={{ width: "50px" }}>
+                            <img style={{ width: "100%" }} src={h1} alt="" />
+                        </div>
+
+                        <div>
+                            Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
+                        </div>
+                    </div>
+
+
+
                 </div>
 
                 <div className={`${styles.insightSection} font1`}>
@@ -478,6 +523,16 @@ export default function HospitalityPage() {
 
 
             </section>
+
+            <div  className="globalSectionSize">
+                <div style={{padding : "0px 30px" , marginBottom : "50px"}}>
+                <Footer/>
+                </div>
+                <div>
+
+                </div>
+              
+            </div>
 
 
 
