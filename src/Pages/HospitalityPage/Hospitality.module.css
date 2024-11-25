@@ -1,15 +1,16 @@
 .section1 {
-    background-image: url("../../assets/Hospitality/main2.webp");
-    /* background-image: url("../../assets/Hospitality/main.png"); */
+    /* background-image: url("../../assets/Hospitality/main2.webp"); */
+    background-image: url("../../assets/Hospitality/section2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
     max-width: 1700px;
     width: 100%;
-    height: 996px;
+    height: 930px;
     margin: 0px auto;
     position: relative;
-    top: 90px;
+    top: 40px;
     z-index: 1;
 }
 
@@ -24,14 +25,14 @@
     right: 0px;
     display: flex;
     justify-content: flex-end;
-    bottom: 15.5rem;
+    bottom: 14.5rem;
 }
 
 
 .textBox {
 
     position: absolute;
-    top: 26%;
+    top: 31%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
