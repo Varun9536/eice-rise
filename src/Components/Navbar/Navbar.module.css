@@ -13,15 +13,12 @@
 .logoAndNavigationIcon {
     width: 100%;
     max-width: 1300px;
-
-
     margin: 0 auto;
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    padding: 0px 44px;
 
 }
 
