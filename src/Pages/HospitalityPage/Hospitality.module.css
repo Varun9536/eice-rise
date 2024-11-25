@@ -6,7 +6,7 @@
     background-size: cover;
     max-width: 1700px;
     width: 100%;
-    height: 1100px;
+    height: 1050px;
     margin: 0px auto;
     position: relative;
     top: 90px;
@@ -26,7 +26,7 @@
     right: 0px;
     display: flex;
     justify-content: flex-end;
-    bottom: 29rem;
+    bottom: 26rem;
 }
 
 
