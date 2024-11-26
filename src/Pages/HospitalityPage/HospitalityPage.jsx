@@ -509,7 +509,7 @@ export default function HospitalityPage() {
                             <img style={{ width: "100%" }} src={h1} alt="" />
                         </div>
 
-                        <div className="font1">
+                        <div className="font3">
                             Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
                         </div>
                     </div>
