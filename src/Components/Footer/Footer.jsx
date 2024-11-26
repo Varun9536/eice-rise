@@ -33,8 +33,8 @@ export default function Footer() {
 
                 <div style={{ width: "50%" }}>
 
-                    <div >
-                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font1" style={{ color: "black", fontWeight: "600" }}> tailored to your business needs</span> </span>
+                    <div  >
+                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font3" style={{ color: "black" }}> tailored to your business needs</span> </span>
                     </div>
 
 

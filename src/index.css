@@ -26,15 +26,20 @@
 
 /* font family classes for global use */
 .font1 {
-  font-family: "Segoe";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-stretch: expanded; */
+  font-weight: 600;
+}
 
-
+.font3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-stretch: expanded; */
+  font-weight: 700;
 }
 
 .font2 {
   font-family: "Segoe2";
-  font-weight: 450;
-
+  font-weight: 400;
 
 }
 
@@ -49,4 +54,3 @@
 }
 
 
-.globalFontSize22px {}

@@ -257,7 +257,7 @@ export default function HospitalityPage() {
 
                 <div className={styles.textBox}>
                     <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions</span> <span className="font1">tailored to your business needs</span>
+                        <span className="font2" >Flexible, Modular Solutions</span> <span className="font3">tailored to your business needs</span>
                     </div>
 
                     <p className={`${styles.text2} font1`}>
@@ -289,7 +289,7 @@ export default function HospitalityPage() {
             <section className={`${styles.section2} `}>
 
 
-                <div className={`${styles.section2Heading} font1 globalSectionSize`}>Our <span className={` blueTextGlobalClass font2`} > End to End </span>  Technology Solution</div>
+                <div className={`${styles.section2Heading} font3 globalSectionSize`}>Our <span className={` blueTextGlobalClass font2`} > End to End </span>  Technology Solution</div>
 
 
 
@@ -326,7 +326,7 @@ export default function HospitalityPage() {
 
             <section className={`${styles.section3} globalSectionSize`}>
 
-                <div className={`${styles.section3Heading} font1`}>With deep expertise in <span className={` blueTextGlobalClass font2`}>Hospitality Technology</span> , we have
+                <div className={`${styles.section3Heading} font3`}>With deep expertise in <span className={` blueTextGlobalClass font2`}>Hospitality Technology</span> , we have
                     perfected the art of delivering efficient, scalable, and tailored
                     tech solutions for the industry</div>
 
@@ -350,7 +350,7 @@ export default function HospitalityPage() {
             <section className={`${styles.section4} globalSectionSize`}>
 
                 <div className={`${styles.section4Heading}`}>
-                    <span className={` blueTextGlobalClass font2`}>Trusted</span><span className="font1"> by Brands around the World</span>
+                    <span className={` blueTextGlobalClass font2`}>Trusted</span><span className="font3"> by Brands around the World</span>
                 </div>
             </section>
 
@@ -386,7 +386,7 @@ export default function HospitalityPage() {
                             <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
                         </div>
 
-                        <div>
+                        <div className="font3">
                             What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
                         </div>
                     </div>
@@ -452,7 +452,7 @@ export default function HospitalityPage() {
                             <img style={{ width: "100%" }} src={h2} alt="" />
                         </div>
 
-                        <div>
+                        <div className="font3">
                             Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
                         </div>
                     </div>
@@ -509,7 +509,7 @@ export default function HospitalityPage() {
                             <img style={{ width: "100%" }} src={h1} alt="" />
                         </div>
 
-                        <div>
+                        <div className="font3">
                             Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
                         </div>
                     </div>
