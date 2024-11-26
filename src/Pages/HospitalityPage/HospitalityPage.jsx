@@ -62,70 +62,70 @@ export default function HospitalityPage() {
             serviceName: "ROOM BOOKING",
             icon: room,
             path: "room-booking",
-            key: "1"
+            key: 1
         },
 
         {
             serviceName: "DINNING (POS)",
             icon: pos,
             path: "pos-dining",
-            key: "2"
+            key: 2
         },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
             path: "banquet-billing",
-            key: "3"
+            key: 3
         },
 
         {
             serviceName: "MEMBER SUITE ",
             icon: member,
             path: "member-suite",
-            key: "4"
+            key: 4
         },
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
             path: "account-finance",
-            key: "5"
+            key: 5
         },
 
         {
             serviceName: "EMPLOYEE SUITE",
             icon: emp,
             path: "employee-suite",
-            key: "6"
+            key: 6
         },
 
         {
             serviceName: "PAYROLL",
             icon: pay,
             path: "payroll",
-            key: "7"
+            key: 7
         },
 
         {
             serviceName: "USER STORE & INVENTRY",
             icon: inentry,
             path: "userstore-inventry",
-            key: "8"
+            key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
             path: "purchase-vendor",
-            key: "9"
+            key: 9
         },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
             path: "food-cost",
-            key: "10"
+            key: 10
         }
     ]
 
@@ -165,7 +165,9 @@ export default function HospitalityPage() {
             position: " Operations Manager",
             company: ", LuxeStay Hotels",
             heading: " Transformative Technology Partner ",
-            para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.",
+            para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span>  our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
+            // para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.",
+            key: 1
 
         },
 
@@ -174,7 +176,8 @@ export default function HospitalityPage() {
             position: "General Manager",
             company: ", Serenity Resorts",
             heading: " Exceptional Support and Innovation ",
-            para: " The intuitive modules offered by EICE Rise have simplified our front desk and housekeeping operations. Their team’s support and innovative approach are unmatched. We’ve seen remarkable growth since implementing their solutions.",
+            para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
+            key: 2
 
         },
 
@@ -183,7 +186,8 @@ export default function HospitalityPage() {
             position: " Director of Operations",
             company: ", Gourmet Suites",
             heading: "Elevated, Efficiency Guaranteed",
-            para: "Thanks to EICE Rise, we’ve streamlined processes like banquet management and inventory control. The centralized platform has saved us time and significantly improved guest satisfaction.",
+            para: (<span>Thanks to EICE Rise, <span style={{fontWeight : "bold"}}>we’ve streamlined processes</span>  like banquet management and inventory control. The centralized platform has <span style={{fontWeight : "bold"}}>saved us time</span>  and significantly improved <span style={{fontWeight : "bold"}} > guest satisfaction.</span> </span>),
+            key: 3
 
         }
     ]
@@ -219,7 +223,10 @@ export default function HospitalityPage() {
         {
             img: insight1,
             heading: "Guest Loyalty (Personalization) ",
-            para: "Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. "
+
+            // para: "Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. "
+
+            para: (<span>Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. </span>)
         },
 
         {
@@ -268,8 +275,8 @@ export default function HospitalityPage() {
 
 
 
-                        {/* <button className={` ${styles.requestDemoBtn} font1`}>  Request a Demo    </button> 
-                        <div className={` ${styles.requestDemoBtn} font1`} ><FaArrowRightLong  /></div> */}
+                        {/* <button className={` ${ styles.requestDemoBtn } font1`}>  Request a Demo    </button> 
+                        <div className={` ${ styles.requestDemoBtn } font1`} ><FaArrowRightLong  /></div> */}
 
                     </div>
 
@@ -287,7 +294,7 @@ export default function HospitalityPage() {
 
 
                 <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize `}>
+                    <div className={`${styles.servicesBox} globalSectionSize`}>
                         {services.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
@@ -297,8 +304,10 @@ export default function HospitalityPage() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
+                                    <div>
+                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    </div>
 
-                                    <div className={`${styles.serviceName} font1`}>{item.serviceName}</div>
                                 </div>
 
                             </Link>
@@ -373,7 +382,7 @@ export default function HospitalityPage() {
 
                 <div className={`${styles.section5Heading} font1`}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "55px", paddingBottom : "14px"  }}>
+                        <div style={{ width: "55px", paddingBottom: "14px" }}>
                             <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
                         </div>
 
@@ -397,7 +406,7 @@ export default function HospitalityPage() {
                 <main className={`${styles.feedBack}`}>
                     {feedback.map((item) =>
                     (
-                        <article className={`${styles.feedBackArticleBox} font1`} >
+                        <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
 
                             <figure >
 
@@ -408,8 +417,11 @@ export default function HospitalityPage() {
                                 <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
 
                             </figure>
+                            <div>
+                                {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font1`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font1`} >"{item.heading}"</div>)}
+                            </div>
 
-                            <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font1`} style={{ textAlign: "center" }}>{item.heading}</div>
+
 
                             <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
 
@@ -460,7 +472,7 @@ export default function HospitalityPage() {
                                 <img style={{ width: "100%" }} src={item.img} alt="storyimg" />
                             </div>
 
-                            <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font1`}>
+                            <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
                                 {item.heading}
                             </div>
 
@@ -515,7 +527,7 @@ export default function HospitalityPage() {
                                 <img style={{ width: "100%" }} src={item.img} alt="" />
                             </div>
 
-                            <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font1`}>{item.heading}</div>
+                            <div className={`${styles.cardBoxInsightsInnerHeading} blueTextGlobalClass font1`}>{item.heading}</div>
                             <p style={{ lineHeight: "1.8rem" }}  >{item.para}</p>
                         </div>
                     ))}
@@ -524,14 +536,9 @@ export default function HospitalityPage() {
 
             </section>
 
-            <div  className="globalSectionSize">
-                <div style={{padding : "0px 30px" , marginBottom : "50px"}}>
-                <Footer/>
-                </div>
-                <div>
+            <div >
+                <Footer />
 
-                </div>
-              
             </div>
 
 

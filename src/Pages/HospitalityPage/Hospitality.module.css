@@ -115,8 +115,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px 30px;
-    padding: 20px;
+   
+    padding: 40px 80px;
+    row-gap: 20px;
 }
 
 
@@ -153,6 +154,13 @@
 
 
 .serviceName {
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+.serviceName2
+{
     padding: 10px 15px;
     text-align: center;
     font-size: 17px;
@@ -326,8 +334,36 @@
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0px;
+    text-align: center;
+    padding: 0px 50px;
 }
 
+.cardBoxInnerHeading2
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 0px 70px;
+}
+
+
+.cardBoxStoryInnerHeading
+{font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+   
+   
+}
+
+.cardBoxInsightsInnerHeading
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+    
+    
+}
 
 
 

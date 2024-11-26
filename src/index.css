@@ -13,14 +13,14 @@
 @font-face {
   font-family: 'Segoe';
   src: url("/font1/SegoeUI.ttf") format('truetype');
- 
+
 
 }
 
 @font-face {
   font-family: 'Segoe2';
   src: url("/font2/segoeuithisz.ttf") format('truetype');
- 
+
 
 }
 
@@ -28,10 +28,13 @@
 .font1 {
   font-family: "Segoe";
 
+
 }
 
 .font2 {
   font-family: "Segoe2";
+  font-weight: 450;
+
 
 }
 
@@ -46,8 +49,4 @@
 }
 
 
-.globalFontSize22px
-{
-  
-}
-
+.globalFontSize22px {}

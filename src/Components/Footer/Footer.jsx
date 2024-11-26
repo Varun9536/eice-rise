@@ -29,9 +29,9 @@ export default function Footer() {
     return (
         <>
 
-            <div className={`${styles.footerMainBox} `}>
+            <div className={`${styles.footerMainBoxUpper} `}>
 
-                <div style={{ width: "60%" }}>
+                <div style={{ width: "50%" }}>
 
                     <div >
                         <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font1" style={{ color: "black", fontWeight: "600" }}> tailored to your business needs</span> </span>
@@ -54,9 +54,9 @@ export default function Footer() {
 
 
 
-            <div style={{ marginTop: "8rem", display: "flex", justifyContent: "space-between" }}>
+            <div className="globalSectionSize" style={{ marginTop: "8rem", display: "flex" , paddingLeft : "30px" }}>
 
-                <div className="font1" style={{ display: "flex", rowGap: "30px", flexDirection: "column", width: "40%" }}>
+                <div className="font1" style={{ display: "flex", rowGap: "30px", flexDirection: "column", width: "32%" }}>
 
                     <div>
 
@@ -91,7 +91,7 @@ export default function Footer() {
                 </div>
 
 
-                <div className="font1" style={{ display: "flex", gap: "0px 50px" }}>
+                <div className="font1" style={{ display: "flex", flexWrap: "wrap", columnGap: "100px", marginLeft: "185px" }}>
 
                     <div>
 
@@ -138,7 +138,7 @@ export default function Footer() {
 
                             <div>
                                 <div style={{ fontWeight: "600" }}>Email:</div>
-                                <div className="blueTextGlobalClass">support@eice.com</div>
+                                <div >support@eice.com</div>
                             </div>
 
 
@@ -166,6 +166,21 @@ export default function Footer() {
                     </div>
 
                 </div>
+            </div>
+
+
+            <div className={`${styles.copyRightSectionBox} font1  `}  >
+                <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
+                    <div>
+                        ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
+                    </div>
+
+                    <div>
+                        Terms & Conditions
+                    </div>
+                </div>
+
+
             </div>
 
         </>
