@@ -26,21 +26,17 @@
 
 /* font family classes for global use */
 .font1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* font-stretch: expanded; */
-  font-weight: 600;
+  font-family: "Segoe";
+
 }
 
 .font3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* font-stretch: expanded; */
   font-weight: 700;
 }
 
 .font2 {
   font-family: "Segoe2";
-  font-weight: 400;
-
 }
 
 
@@ -52,5 +48,3 @@
 .blueTextGlobalClass {
   color: rgba(1, 176, 241, 1);
 }
-
-
