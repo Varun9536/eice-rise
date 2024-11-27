@@ -8,25 +8,25 @@ import icon3 from "../../assets/insidePages/room/roomPage/Icons/3.png"
 
 
 // features
-import rt from "../../assets/insidePages/room/roomPage/feature/rt.png"
-import app from "../../assets/insidePages/room/roomPage/feature/app.png"
-import cbd from "../../assets/insidePages/room/roomPage/feature/cbd.png"
-import cbo from "../../assets/insidePages/room/roomPage/feature/cbo.png"
-import frs from "../../assets/insidePages/room/roomPage/feature/frs.png"
-import ibc from "../../assets/insidePages/room/roomPage/feature/ibc.png"
-import mfi from "../../assets/insidePages/room/roomPage/feature/mfi.png"
-import wifi from "../../assets/insidePages/room/roomPage/feature/wifi.png"
-import ipg from "../../assets/insidePages/room/roomPage/feature/ipg.png"
+import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
+import it from "../../assets/insidePages/pos/posPage/feature/it.png"
+import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
+import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
+import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
+import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
+import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
+import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
+import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
 
 
 // benifits
 
-import b1 from "../../assets/insidePages/room/roomPage/benifit/b1.png"
-import b2 from "../../assets/insidePages/room/roomPage/benifit/b2.png"
-import b3 from "../../assets/insidePages/room/roomPage/benifit/b3.png"
-import b4 from "../../assets/insidePages/room/roomPage/benifit/b4.png"
-import b5 from "../../assets/insidePages/room/roomPage/benifit/b5.png"
+import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.png"
+import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.png"
+import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.png"
+import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.png"
+import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.png"
 
 
 
@@ -44,113 +44,121 @@ export default function Pos() {
     const features = [
         {
             key: 1,
-            heading: "Real-Time Room Availability",
-            desc: "Easily check room availability in real-time, providing guests with up-to-date information to make informed booking decisions.",
-            img: rt
+            heading: "User-Friendly Interface",
+            desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
+            img: ufi
         },
         {
             key: 2,
-            heading: "Flexible Room Selection",
-            desc: "Choose from a variety of room types, including standard, deluxe, and suite categories. Each room type includes detailed descriptions, photos, and amenities.",
-            img: frs
+            heading: "Real-Time Menu Management",
+            desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
+            img: rtmm
         },
         {
             key: 3,
-            heading: "Integrated Wi-Fi Access",
-            desc: "Automatically grants guests secure Wi-Fi access as part of their booking package, enhancing their stay experience from the moment they check in.",
-            img: wifi
+            heading: "Order Customization",
+            desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
+            img: oc
         },
         {
             key: 4,
-            heading: "Customizable Booking Options",
-            desc: "Enable guests to select add-ons such as breakfast packages, airport transfers, or room upgrades directly during the booking process.",
-            img: cbo
+            heading: "Table Management",
+            desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
+            img: tm
         },
         {
             key: 5,
-            heading: "Automated Pricing and Promotions",
-            desc: "Dynamic pricing based on demand, seasonality, and special events, with options for promotional codes and loyalty discounts to attract repeat customers.",
-            img: app
+            heading: "Integrated Payment Solutions",
+            desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
+            img: ips
         },
         {
             key: 6,
-            heading: "Centralized Booking Dashboard",
-            desc: "Manage all room bookings from a single dashboard. Track check-ins, check-outs, and cancellations effortlessly, optimizing room occupancy rates.",
-            img: cbd
+            heading: "Inventory Tracking",
+            desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
+            img: it
         },
         {
             key: 7,
-            heading: "Integrated Payment Gateway",
-            desc: "Secure online payment processing with multiple options (credit/debit cards, UPI, mobile wallets) for a smooth, hassle-free booking experience.",
-            img: ipg
+            heading: "Kitchen Display System (KDS) Integration",
+            desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
+            img: kds
         },
         {
             key: 8,
-            heading: "Mobile-Friendly Interface",
-            desc: "Guests can book rooms on the go using mobile devices, ensuring a responsive and seamless experience across all platforms.",
-            img: mfi
+            heading: "Promotions and Loyalty Programs",
+            desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
+            img: plp
         },
         {
             key: 9,
-            heading: "Instant Booking Confirmation",
-            desc: "Automated email and SMS confirmations are sent to guests upon successful booking, including details like check-in time, room type, and any additional services selected.",
-            img: ibc
-        },
-
-    ];
-
-
-
-    const benifits = [
-        {
-            key: 1,
-            heading: "Enhanced Guest Experience",
-            desc: "Provides a hassle-free booking process that enhances customer satisfaction and loyalty.",
-            img: b1,
-        },
-        {
-            key: 2,
-            heading: "Operational Efficiency",
-            desc: "Reduces manual workload for staff and minimizes booking errors, resulting in smoother operations.",
-            img: b2
-        },
-        {
-            key: 3,
-            heading: "Revenue Optimization",
-            desc: "Maximizes room occupancy and boosts revenue through dynamic pricing and promotional features.",
-            img: b3
-        },
-        {
-            key: 4,
-            heading: "Centralized Management",
-            desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
-            img: b4
-        },
-        {
-            key: 5,
-            heading: "Real-time Availability",
-            desc: "Ensures guests have access to up-to-date room availability, preventing overbooking and improving guest trust.",
-            img: b5
+            heading: "Real-Time Sales Reporting",
+            desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
+            img: rtsr
         }
     ];
 
 
+
+
+    const benefits = [
+        {
+            key: 1,
+            heading: "Enhanced Customer Satisfaction",
+            desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
+            img: b1
+        },
+        {
+            key: 2,
+            heading: "Operational Efficiency",
+            desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
+            img: b2
+        },
+        {
+            key: 3,
+            heading: "Personalized Dining Experience",
+            desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
+            img: b3
+        },
+        {
+            key: 4,
+            heading: "Optimized Resource Utilization",
+            desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
+            img: b4
+        },
+
+        {
+            key: 5,
+            heading: "Data-Driven Decision Making",
+            desc: "Real-time sales reporting and analytics provide valuable insights into customer preferences, top-selling items, and daily performance, enabling data-driven business decisions",
+            img: b5
+
+        }
+    ];
+
+
+
+
+
+
+
+
     const query = [
         {
-            question: "What is the Room Booking module, and who is it designed for?",
-            answer: "The Room Booking module is a comprehensive solution for the hospitality industry, ideal for hotels, resorts, clubs, and institutions. It simplifies the booking process while integrating seamlessly with EICE Rise ERP."
+            question: "How does the Dining (POS) module handle split bills or group payments?",
+            answer: "The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
         },
         {
-            question: "How does this module improve the guest experience?",
-            answer: "The module offers real-time availability, customizable booking options, and instant confirmations, ensuring a smooth and hassle-free experience for guests."
+            question: "Can the module manage menu customization and promotions in real-time?",
+            answer: "Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
         },
         {
-            question: "What payment options are supported by the Integrated Payment Gateway?",
-            answer: "The payment gateway supports credit/debit cards, UPI, and mobile wallets, ensuring secure and convenient transactions."
+            question: "Does the Dining (POS) module support table reservations and service tracking?",
+            answer: "Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
         },
         {
-            question: "Is the Room Booking module integrated with front desk and housekeeping systems?",
-            answer: "Yes, it synchronizes room status with the front desk and housekeeping modules, enabling efficient room management and timely cleaning services."
+            question: "What analytics and reporting capabilities does the Dining (POS) module offer?",
+            answer: "The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
         }
     ];
 
@@ -164,7 +172,7 @@ export default function Pos() {
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div className={`${style.section1Haeding}`}>
-                        ROOM BOOKING
+                        DINNING POS
                     </div>
                     <div className={style.section1ImgBox}>
 
@@ -253,7 +261,7 @@ export default function Pos() {
 
                     <div className={`${style.benifitContainer}`}>
 
-                        {benifits.map((item) => (
+                        {benefits.map((item) => (
                             <div className={`${style.innerBenifitBox}`}>
 
                                 <div>
