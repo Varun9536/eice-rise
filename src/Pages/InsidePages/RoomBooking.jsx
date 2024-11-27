@@ -30,6 +30,14 @@ import b4 from "../../assets/insidePages/room/roomPage/benifit/b4.png"
 import b5 from "../../assets/insidePages/room/roomPage/benifit/b5.png"
 
 
+// overview 
+import laptop from "../../assets/insidePages/room/roomPage/laptop.png"
+
+import bottomDesign from "../../assets/insidePages/room/roomPage/overviewBottom.jpg"
+// import spiral from "../../assets/insidePages/room/roomPage/spiral.jpg"
+import spiral from "../../assets/insidePages/room/roomPage/spiral2.png"
+
+
 
 
 
@@ -164,8 +172,9 @@ export default function RoomBooking() {
 
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
-                    <div className={`${style.section1Haeding}`}>
-                        ROOM BOOKING
+                    <div className={`${style.section1Heading} font4`}>
+                        <span style={{color : "012060"}}>ROOM </span>  
+                        <span style={{color : "01B0F1"}} className="blueTextGlobalClass"> BOOKING</span>
                     </div>
                     <div className={style.section1ImgBox}>
 
@@ -175,20 +184,46 @@ export default function RoomBooking() {
             </section>
 
 
-            <section>
-                <div className={`${style.section2} globalSectionSize`}>
+            <section style={{ backgroundColor: "#f5f5f5" }}>
+                <div className={`${style.section2} font4 globalSectionSize`}>
 
-                    <div>
-                        <img src={icon1} alt="" />
+                    <div className={style.section2IconAndName}>
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={icon1} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName}`}>
+                            Seamless
+                        </div>
                     </div>
 
-                    <div>
-                        <img src={icon2} alt="" />
+
+
+                    <div className={style.section2IconAndName}>
+
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={icon2} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName} `}>Smart</div>
                     </div>
 
-                    <div>
-                        <img src={icon3} alt="" />
+
+
+                    <div className={style.section2IconAndName}>
+
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={icon3} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName}`}>
+                            Scalable
+                        </div>
+
                     </div>
+
+
+
                 </div>
             </section>
 
@@ -198,14 +233,30 @@ export default function RoomBooking() {
 
                 <div className={`${style.section3}`}>
 
-                    <div className={`${style.laptopImgSection3}`}>
-                        <img src="" alt="" />
-                    </div>
+
 
                     <div className={`${style.blueBoxSetion3}`}>
-                        <p className={`${style.section3Para}`}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis fugit asperiores est debitis ducimus officiis ipsum similique hic quod! Blanditiis iure vero aut sapiente rerum reprehenderit quidem similique in.
-                        </p>
+
+                        <div className={`${style.laptopImgSection3}`}>
+                            <div className={`${style.laptopImgBox}`} >
+                                <img style={{ width: "100%" }} src={laptop} alt="" />
+                            </div>
+                        </div>
+
+
+                        <div className={`${style.section3Para} font4`}>
+                            <div className="globalSectionSize">
+                                Our Room Booking module is a comprehensive solution designed for the hospitality industry, integrating with EICE Rise ERP to simplify and streamline the booking process for Hotels, Resorts, Clubs and Institutions. From standard rooms to luxury suites, this feature offers an intuitive, user-friendly interface for both guests and administrators, ensuring a smooth experience throughout the booking journey.
+                            </div>
+
+                        </div>
+
+                        {/* <div >
+                            <div className={`${style.section3Spiral}`}  >
+                                <img style={{width : "100%" }} src={spiral} alt="" />
+                            </div>
+                        </div> */}
+
                     </div>
 
                 </div>
@@ -214,28 +265,29 @@ export default function RoomBooking() {
 
 
             <section >
-                <div className={`${style.section4}`}>
+                <div className={`${style.section4} globalSectionSize`}>
 
-                    <div className={`${style.heading}`}>Key Features</div>
+                    <div className={`${style.section4heading} font4`}>Key Features</div>
 
                     <div className={`${style.featureContainer}`}>
 
                         {features.map((item) =>
                         (
-                            <div key={item.key} className={`${style.featureInnerBox}`}>
+                            <div key={item.key} className={`${style.featureInnerBox} font4`}>
+
                                 <div className={`${style.headingAndIconFeatures}`}>
 
                                     <div style={{ width: "20%" }}>
                                         <img style={{ width: "100%" }} src={item.img} alt="" />
                                     </div>
 
-                                    <div>
+                                    <div className={`${style.featureHeading}`}>
                                         {item.heading}
                                     </div>
 
                                 </div>
 
-                                <div>
+                                <div className={`${style.featureDesc}`}>
                                     {item.desc}
                                 </div>
 
@@ -250,29 +302,56 @@ export default function RoomBooking() {
 
 
             <section >
-                <div className={`${style.section5}`}>
+                <div className={`${style.section5} font4 globalSectionSize`}>
 
+
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
                     <div className={`${style.benifitContainer}`}>
 
-                        {benifits.map((item) => (
-                            <div className={`${style.innerBenifitBox}`}>
+                        {benifits.map((item, i) => (
 
-                                <div>
-                                    <img src={item.img} alt="" />
+
+                            (i + 1) % 2 !== 0 ? (<div className={`${style.innerBenifitBox}`}>
+
+                                <div className={`${style.benefitImages}`} >
+                                    <img style={{ width: "100%" }} src={item.img} alt="" />
                                 </div>
 
-                                <div>
-                                    <div>
+                                <div className={`${style.benefitHeadingAndDesc}`}>
+
+                                    <div className={`${style.innerHeadingBenifit}`}>
                                         {item.heading}
                                     </div>
-                                    <p>
+                                    <p className={`${style.innerDescBenifit}`}>
                                         {item.desc}
                                     </p>
 
                                 </div>
 
-                            </div>
-                        ))}
+                            </div>) : (<div className={`${style.innerBenifitBox2}`}>
+
+                                <div className={`${style.benefitImages}`} >
+                                    <img style={{ width: "100%" }} src={item.img} alt="" />
+                                </div>
+
+                                <div className={`${style.benefitHeadingAndDesc}`}>
+                                    <div className={`${style.innerHeadingBenifit}`}>
+                                        {item.heading}
+                                    </div>
+                                    <p className={`${style.innerDescBenifit}`}>
+                                        {item.desc}
+                                    </p>
+                                </div>
+
+                            </div>)
+
+
+
+
+
+                        )
+
+                        )}
 
                     </div>
 

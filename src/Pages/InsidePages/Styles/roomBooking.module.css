@@ -1,8 +1,7 @@
 .section1 {
     display: flex;
     align-items: center;
-    
-    /* column-gap: 100px; */
+    column-gap: 40px;
 }
 
 .section1ImgBox {
@@ -10,88 +9,214 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 55%;
+    width: 62%;
     height: 500px;
-   
+    position: relative;
+    right: -128px;
+
 }
 
 
-.section1Haeding
-{
+.section1Heading {
     font-size: 40px;
-    font-weight: 600;
-    margin-left: 200px;
+    font-weight: 700;
+    padding-left: 180px;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1), rgb(194, 190, 190, 1));  */
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(244, 244, 244));
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 
 }
 
 
-.section2
-{
+.section2 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* background-color: #f5f5f5; */
+    padding: 20px 0px;
+    margin-bottom: 16rem;
+}
+
+.section2Icon {
+
+    width: 100px;
+}
+
+.section2IconAndName {}
+
+.iconName {
+    text-align: center;
 }
 
 
-.section3
-{
+
+
+.section3 {
+
+    width: 100%;
+    max-width: 1600px;
+    margin: 0px auto;
+}
+
+
+
+
+.blueBoxSetion3 {
+    background-image: url("../../../assets/insidePages/room/roomPage/overview.png");
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     position: relative;
-}
 
-
-.laptopImgSection3
-{
-
-}
-
-
-.blueBoxSetion3
-{
-
-}
-
-.section3Para
-{
+    display: flex;
+    /* Centering horizontally can also use flexbox */
+    justify-content: center;
 
 }
 
 
-.featureContainer
-{
+
+
+.laptopImgSection3 {
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -140px;
+
+
+
+}
+
+.laptopImgBox {
+    width: 35%;
+}
+
+
+
+.section3Para {
+
+    font-size: 25px;
+
+    color: white;
+    position: absolute;
+
+    bottom: 28px;
+
+    text-align: center;
+}
+
+.section3Spiral {
+    position: absolute;
+    bottom: -398px;
+    right: -477px;
+    width: 55%;
+    z-index: -1;
+
+
+
+
+}
+
+.section4 {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.section4heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+
+.featureContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid red;
+    column-gap: 16px;
+    row-gap: 30px;
+
 }
 
 
-.featureInnerBox
-{
-    width: 300px;
-    width: 400px;
-    border: 2px solid red;
+.featureInnerBox {
+    width: 350px;
 }
 
 
-
-
-
-.headingAndIconFeatures
-{
+.headingAndIconFeatures {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 
-.benifitContainer
-{
+.featureDesc {}
+
+.featureHeading {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0px 10px;
+    margin-left: 15px;
+}
+
+
+.section5 {
+    margin-bottom: 3rem;
+
+}
+
+
+.section5heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.benifitContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 90px;
+
+}
+
+.innerBenifitBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+
+}
+
+.innerBenifitBox2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefitImages {
+    width: 390px;
+}
+
+.benefitHeadingAndDesc {
     display: flex;
     flex-direction: column;
 }
 
-.innerBenifitBox
-{
-    display: flex;
-    justify-content: center;
+.innerHeadingBenifit {
+    font-size: 30px;
+    font-weight: 600;
 
+}
+
+.innerDescBenifit {
+
+    font-size: 24px;
 }
