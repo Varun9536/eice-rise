@@ -1,0 +1,97 @@
+.section1 {
+    display: flex;
+    align-items: center;
+    
+    /* column-gap: 100px; */
+}
+
+.section1ImgBox {
+    background-image: url("../../../assets/insidePages/room/roomPage/Herosection.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55%;
+    height: 500px;
+   
+}
+
+
+.section1Haeding
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 200px;
+
+}
+
+
+.section2
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.section3
+{
+    position: relative;
+}
+
+
+.laptopImgSection3
+{
+
+}
+
+
+.blueBoxSetion3
+{
+
+}
+
+.section3Para
+{
+
+}
+
+
+.featureContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+
+.featureInnerBox
+{
+    width: 300px;
+    width: 400px;
+    border: 2px solid red;
+}
+
+
+
+
+
+.headingAndIconFeatures
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.benifitContainer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.innerBenifitBox
+{
+    display: flex;
+    justify-content: center;
+
+}

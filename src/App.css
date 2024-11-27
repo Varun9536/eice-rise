@@ -3,7 +3,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 15px;
-    padding-top: 100px;
+    padding-top: 90px;
     
 }
 
@@ -19,4 +19,14 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 15px;
+}
+
+
+.insidePageUpperSection
+{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+    max-width: 1600px;
+   
 }
