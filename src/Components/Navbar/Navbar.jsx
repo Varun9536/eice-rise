@@ -42,13 +42,21 @@ export default function Navbar() {
                                 onMouseLeave={() => handleOnMouseLeave(item)}
                             >
                                 <div>
-                                    <Link to={`/${item.toLowerCase().replace(/\s+/g, '-')}`} className="linkClass">
+                                    <Link
+                                        to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                                        className="linkClass"
+                                    >
                                         {item}
                                     </Link>
                                 </div>
-                                <div style={{ paddingTop: '3px' }}>
+                                {item === 'Home' ?  (<div></div>) : ( <div style={{ paddingTop: '3px' }}>
+                                    
                                     {hoverStates[item] ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                                </div>
+                                </div>)}
+
+                                {/* <div style={{border : "2px solid red" , height : "300px"}}>
+
+                                </div> */}
                             </div>
                         ))}
                     </div>

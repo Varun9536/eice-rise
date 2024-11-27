@@ -3,9 +3,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 160px;
+    padding-left: 180px;
     max-width: 1600px;
     margin: 0px auto;
+    width: 100%;
 
 
 
@@ -41,39 +42,69 @@
     padding-top: 3.5px;
 }
 
-.footerSubHeading
-{
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 16px;
+.footerInnerBox {
+    display: flex;
+    padding: 0px 68px;
+    justify-content: space-between;
+   
 }
 
-.footerPoints
-{
+
+.footerNavigationBox {
+    background-image: url("../../assets/footer/bottomNavigation.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    max-width: 100%;
+   
+
+    margin: 0px auto;
+    margin-top: 5rem;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.logoWhite {
+    filter: brightness(0) invert(1);
+    /* Makes the SVG appear white */
+
+}
+
+
+.footerPoints {
     font-size: 14px;
     display: flex;
-    flex-direction: column;
-    row-gap: 16px;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    margin-top: 14px;
 }
 
-.footerSubHeading:hover
-{
+.footerPointsSubheading {
+
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.footerSubHeading:hover {
     color: rgba(1, 176, 241, 1);
 }
 
-.copyRightSectionBox
-{
-    background-color: rgb(51, 51, 153);
-    margin-top: 30px;
+.copyRightSectionBox {
+    
+    
 
 }
 
-.copyRightSectionInnerBox
-{
+.copyRightSectionInnerBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 10px;
-   
-    color: white;
+    padding: 20px 58px;
 }

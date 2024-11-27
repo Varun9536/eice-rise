@@ -34,7 +34,7 @@ export default function Footer() {
                 <div style={{ width: "50%" }}>
 
                     <div  >
-                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font3" style={{ color: "black" }}> tailored to your business needs</span> </span>
+                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font1" style={{ color: "black"  , fontWeight : "600"}}> tailored to your business needs</span> </span>
                     </div>
 
 
@@ -53,135 +53,121 @@ export default function Footer() {
             </div>
 
 
+            <div className={`${styles.footerNavigationBox}`}>
 
-            <div className="globalSectionSize" style={{ marginTop: "8rem", display: "flex" , paddingLeft : "30px" }}>
+                <div className={`${styles.footerInnerBox} globalSectionSize`}>
 
-                <div className="font1" style={{ display: "flex", rowGap: "30px", flexDirection: "column", width: "32%" }}>
+                    <div className="font1" style={{ color: "white", display: "flex", rowGap: "10px", flexDirection: "column", width: "30%" }}>
 
-                    <div>
-
-                        <img src={logo} alt="" />
-
-
-                    </div>
-
-                    <div>
-
-                        Delivering innovative ERP solutions since 2010. Simplifying operations, enhancing efficiency, and empowering businesses worldwide.
-                    </div>
-
-                    <div style={{ fontWeight: "600" }}>
-                        follow us
-
-                        <div style={{ display: "flex", gap: "0px 20px", marginTop: "15px" }}>
-
-                            <div>
-                                <FaLinkedin size={30} className="blueTextGlobalClass" />
-                            </div>
-
-                            <div>
-                                <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-                <div className="font1" style={{ display: "flex", flexWrap: "wrap", columnGap: "100px", marginLeft: "185px" }}>
-
-                    <div>
-
-                        <div className={`${styles.footerSubHeading}`} >Explore</div>
-
-                        <div className={`${styles.footerPoints}`}>
-                            <div style={{ fontWeight: "600" }}>Home</div>
-                            <div style={{ fontWeight: "600" }}>About Us</div>
-                            <div style={{ fontWeight: "600" }}>Products</div>
-                            <div>Room Booking</div>
-                            <div>Dining (POS)</div>
-                            <div>Banquet & Billing</div>
-                            <div>Membership Portal</div>
-                            <div>Accounts & Finance</div>
-                            <div style={{ fontWeight: "600" }}>Pricing</div>
-                            <div style={{ fontWeight: "600" }}>Blogs</div>
+                        <div>
+                            <img className={styles.logoWhite} src={logo} alt="" />
                         </div>
 
-
-
-                    </div>
-
-
-                    <div>
-
-                        <div className={`${styles.footerSubHeading}`}>Company</div>
-
-                        <div className={`${styles.footerPoints}`}>
-                            <div style={{ fontWeight: "600" }}>About Eice</div>
-                            <div style={{ fontWeight: "600" }}>Careers</div>
-                            <div style={{ fontWeight: "600" }}>Contact us</div>
-
+                        <div>
+                            Delivering innovative ERP solutions since 2010. Simplifying operations, enhancing efficiency, and empowering businesses worldwide.
                         </div>
 
+                        <div style={{ fontWeight: "600", marginTop: "20px" }}>
+                            Follow us
 
+                            <div style={{ display: "flex", gap: "0px 20px", marginTop: "15px" }}>
 
-                    </div>
-
-                    <div>
-                        <div className={`${styles.footerSubHeading}`}>Get in Touch</div>
-
-
-                        <div className={`${styles.footerPoints}`}>
-
-                            <div>
-                                <div style={{ fontWeight: "600" }}>Email:</div>
-                                <div >support@eice.com</div>
-                            </div>
-
-
-                            <div>
-                                <div style={{ fontWeight: "600" }}>Phone : <span > 0120 435 5910</span></div>
-
-                            </div>
-                            <div>
-                                <div style={{ fontWeight: "600" }}>
-                                    Address :(India):
+                                <div>
+                                    <FaLinkedin size={30} className="blueTextGlobalClass" />
                                 </div>
 
-                                <div >  B-8 Second Floor Sec-60, Noida 201301</div>
+                                <div>
+                                    <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
+                                </div>
+
                             </div>
+                        </div>
 
-                            <div >
-                                <div style={{ fontWeight: "600" }}>Address (USA):</div>
 
-                                <div>  440 Cobia Drive, #901 Katy, Texas 77494</div>
+
+                    </div>
+
+
+
+
+                    <div style={{ color: "white" }} >
+
+                        <div style={{ fontWeight: "bold" }} className="blueTextGlobalClass font1">Get In Touch</div>
+
+                        <div className={`${styles.footerPoints}`}>
+
+                            <div>
+
+                                <div className={`${styles.footerPointsSubheading} font1`}>Email :</div>
+                                <div className="font4">info@eicetechnology.com</div>
+
+                            </div>
+                            <div>
+
+                                <div className={`${styles.footerPointsSubheading} font1 `}>Phone no :</div>
+                                <div className="font4"> 0120 435 5910</div>
+
+                            </div>
+                            <div>
+
+                                <div className={`${styles.footerPointsSubheading} font1`}>Address (India) :</div>
+                                <div className="font4">B-8 Second Floor   </div>
+                                <div className="font4"> Sec-60, Noida 201301</div>
+
+                            </div>
+                            <div>
+
+                                <div className={`${styles.footerPointsSubheading} font1`}>Address (USA) :</div>
+                                <div className="font4">440 Cobia Drive, #901 </div>
+                                <div className="font4">katy, Texas 77494</div>
+
                             </div>
 
 
                         </div>
-
                     </div>
 
                 </div>
             </div>
 
 
-            <div className={`${styles.copyRightSectionBox} font1  `}  >
-                <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
+
+            {/* <div className={`${styles.copyRightSectionBox}`}>
+
+                <div className="globalSectionSize">
+
                     <div>
-                        ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
+
                     </div>
 
                     <div>
+
+                    </div>
+
+                </div>
+
+            </div> */}
+
+
+            <div  className={`${styles.copyRightSectionBox} font4  `}  >
+                <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
+                    <div style={{fontSize : "14px"}}>
+                        ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
+                    </div>
+
+                    <div style={{fontSize : "14px"}}>
                         Terms & Conditions
                     </div>
                 </div>
 
 
             </div>
+
+
+
+
+
+
 
         </>
     )

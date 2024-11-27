@@ -80,7 +80,8 @@ export default function HospitalityPage() {
         },
 
         {
-            serviceName: "MEMBER SUITE ",
+            // serviceName: "MEMBER SUITE ",
+            serviceName : (<span style={{padding : "0px 3px"}}>MEMBER SUITE</span>),
             icon: member,
             path: "member-suite",
             key: 4
@@ -108,7 +109,7 @@ export default function HospitalityPage() {
         },
 
         {
-            serviceName: "USER STORE & INVENTRY",
+            serviceName: "USER STORE & INVENTORY",
             icon: inentry,
             path: "userstore-inventry",
             key: 8
@@ -162,9 +163,9 @@ export default function HospitalityPage() {
     const feedback = [
         {
             img: c1,
-            position: " Operations Manager",
+            position: "Operations Manager",
             company: ", LuxeStay Hotels",
-            heading: " Transformative Technology Partner ",
+            heading: "Transformative Technology Partner",
             para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span>  our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
             // para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.",
             key: 1
@@ -173,9 +174,9 @@ export default function HospitalityPage() {
 
         {
             img: c2,
-            position: "General Manager",
+            position: " General Manager ",
             company: ", Serenity Resorts",
-            heading: " Exceptional Support and Innovation ",
+            heading: "Exceptional Support & Innovation",
             para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
             key: 2
 
@@ -186,7 +187,7 @@ export default function HospitalityPage() {
             position: " Director of Operations",
             company: ", Gourmet Suites",
             heading: "Elevated, Efficiency Guaranteed",
-            para: (<span>Thanks to EICE Rise, <span style={{fontWeight : "bold"}}>we’ve streamlined processes</span>  like banquet management and inventory control. The centralized platform has <span style={{fontWeight : "bold"}}>saved us time</span>  and significantly improved <span style={{fontWeight : "bold"}} > guest satisfaction.</span> </span>),
+            para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span>  like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span>  and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
 
         }
@@ -257,7 +258,7 @@ export default function HospitalityPage() {
 
                 <div className={styles.textBox}>
                     <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions</span> <span className="font3">tailored to your business needs</span>
+                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight : "600"}} className="font1">tailored to your business needs</span>
                     </div>
 
                     <p className={`${styles.text2} font1`}>
@@ -378,59 +379,63 @@ export default function HospitalityPage() {
 
             {/* section5 */}
 
-            <section className={`${styles.section5} globalSectionSize`}>
 
-                <div className={`${styles.section5Heading} font1`}>
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "55px", paddingBottom: "14px" }}>
-                            <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
-                        </div>
+            <div className={`${styles.reviewSection}`}>
+                <section className={`${styles.section5} globalSectionSize`}>
 
-                        <div className="font3">
-                            What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-                <div className={`${styles.section5Subheading} font1`}>
-                    <span style={{ fontWeight: "600" }} >"Proven Excellence:</span> Trusted by Leading  <span className={` blueTextGlobalClass font2`}>Hotels, Resorts, and Restaurants</span>."
-                </div>
-
-
-
-                <main className={`${styles.feedBack}`}>
-                    {feedback.map((item) =>
-                    (
-                        <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
-
-                            <figure >
-
-                                <div style={{ textAlign: "center" }}  >
-                                    <img style={{ width: "28%" }} src={item.img} alt="" />
-                                </div>
-
-                                <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
-
-                            </figure>
-                            <div>
-                                {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font1`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font1`} >"{item.heading}"</div>)}
+                    <div className={`${styles.section5Heading} font1`}>
+                        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                            <div style={{ width: "55px", paddingBottom: "14px" }}>
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
                             </div>
 
+                            <div className="font3">
+                                What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
+                            </div>
+                        </div>
+                    </div>
 
 
-                            <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
-
-                        </article>
-                    ))}
-                </main>
 
 
-            </section>
+
+
+                    <div className={`${styles.section5Subheading} font1`}>
+                        <span style={{ fontWeight: "600" }} >"Proven Excellence:</span> Trusted by Leading  <span className={` blueTextGlobalClass font2`}>Hotels, Resorts, and Restaurants</span>."
+                    </div>
+
+
+
+                    <main className={`${styles.feedBack}`}>
+                        {feedback.map((item) =>
+                        (
+                            <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
+
+                                <figure >
+
+                                    <div style={{ textAlign: "center" }}  >
+                                        <img style={{ width: "28%" }} src={item.img} alt="" />
+                                    </div>
+
+                                    <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
+
+                                </figure>
+                                <div>
+                                    {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)}
+                                </div>
+
+
+
+                                <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
+
+                            </article>
+                        ))}
+                    </main>
+
+
+                </section>
+            </div>
+
 
 
 
