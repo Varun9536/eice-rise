@@ -139,35 +139,41 @@ export default function RoomBooking() {
             heading: "Enhanced Guest Experience",
             desc: "Provides a hassle-free booking process that enhances customer satisfaction and loyalty.",
             img: b1,
-            width: "73%"
+            width: "73%",
+            imgwidth: "400px"
         },
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Reduces manual workload for staff and minimizes booking errors, resulting in smoother operations.",
             img: b2,
-            width: "86%"
+            width: "86%",
+            imgwidth: "440px"
+
         },
         {
             key: 3,
             heading: "Revenue Optimization",
             desc: "Maximizes room occupancy and boosts revenue through dynamic pricing and promotional features.",
             img: b3,
-            width: "75%"
+            width: "75%" ,
+             imgwidth: "480px"
         },
         {
             key: 4,
             heading: "Centralized Management",
             desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
             img: b4,
-            width: "75%"
+            width: "75%" ,
+             imgwidth: "440px"
         },
         {
             key: 5,
             heading: "Real-time Availability",
             desc: "Ensures guests have access to up-to-date room availability, preventing overbooking and improving guest trust.",
             img: b5,
-            width: "88%"
+            width: "88%" ,
+            imgwidth: "530px"
         }
     ];
 
@@ -202,8 +208,8 @@ export default function RoomBooking() {
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div style={{ width: "33%" }}>
                         <div className={`${style.section1Heading} font4`}>
-                            <span style={{ color: "012060" }}>ROOM </span>
-                            <span style={{ color: "01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
+                            <span style={{ color: "#012060" }}>ROOM </span>
+                            <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
                         </div>
                     </div>
 
@@ -365,7 +371,7 @@ export default function RoomBooking() {
 
                             (i + 1) % 2 !== 0 ? (<div className={`${style.innerBenifitBox}`}>
 
-                                <div className={`${style.benefitImages}`} >
+                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
                                     <img style={{ width: "100%" }} src={item.img} alt="" />
                                 </div>
 
@@ -382,7 +388,7 @@ export default function RoomBooking() {
 
                             </div>) : (<div className={`${style.innerBenifitBox2}`}>
 
-                                <div className={`${style.benefitImages}`} >
+                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
                                     <img style={{ width: "100%" }} src={item.img} alt="" />
                                 </div>
 
@@ -408,9 +414,6 @@ export default function RoomBooking() {
 
             <section >
                 <div className={`${style.FAQsection} globalSectionSize font4`}>
-
-                  
-
                     <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
 
 
@@ -422,11 +425,6 @@ export default function RoomBooking() {
 
                 </div>
             </section>
-
-
-
-
-
 
             <div >
                 <Footer2 />

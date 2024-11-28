@@ -169,7 +169,7 @@ export default function Pos() {
     return (
         <>
 
-            <section>
+            {/* <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div className={`${style.section1Haeding}`}>
                         DINNING POS
@@ -179,23 +179,65 @@ export default function Pos() {
                     </div>
                 </div>
 
+            </section> */}
+
+            <section>
+                <div className={`${style.section1} insidePageUpperSection`}>
+                    <div style={{ width: "33%" }}>
+                        <div className={`${style.section1Heading} font4`}>
+                            <span style={{ color: "012060" }}>DINNING</span>
+                            <span style={{ color: "01B0F1" }} className="blueTextGlobalClass"> (POS)</span>
+                        </div>
+                    </div>
+
+                    <div className={style.section1ImgBox}>
+
+                    </div>
+                </div>
+
             </section>
 
 
-            <section>
-                <div className={`${style.section2} globalSectionSize`}>
+            <section style={{ backgroundColor: "#f5f5f5" }}>
+                <div className={`${style.section2} font4 globalSectionSize`}>
 
-                    <div>
-                        <img src={icon1} alt="" />
+                    <div className={style.section2IconAndName}>
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={icon1} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName} `}>
+                            Seamless
+                        </div>
                     </div>
 
-                    <div>
-                        <img src={icon2} alt="" />
+
+
+                    <div className={style.section2IconAndName}>
+
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={icon2} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName} `}>Smart</div>
                     </div>
 
-                    <div>
-                        <img src={icon3} alt="" />
+
+
+                    <div className={style.section2IconAndName}>
+
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={icon3} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName}`}>
+                            Scalable
+                        </div>
+
                     </div>
+
+
+
                 </div>
             </section>
 

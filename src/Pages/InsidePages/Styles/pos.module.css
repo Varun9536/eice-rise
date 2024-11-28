@@ -32,18 +32,20 @@
     align-items: center;
     overflow: hidden;
     margin-bottom: 20px;
+    justify-content: space-between;
+
 
 }
 
 .section1ImgBox {
-    background-image: url("../../../assets/insidePages/room/roomPage/Herosection.png");
+    background-image: url("../../../assets/insidePages/pos/posPage/Herosection2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 60%;
     height: 500px;
     position: relative;
-    left: 168px;
+    left: 86px;
 
 }
 
@@ -56,6 +58,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: right;
+    padding-right: 20px;
 
 }
 
