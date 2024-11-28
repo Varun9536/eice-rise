@@ -1,5 +1,7 @@
 import styles from "./footer.module.css"
 import footer from "../../assets/footer/foot.png"
+import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.png"
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import logo from '../../assets/logo/logo.svg';
@@ -29,12 +31,19 @@ export default function Footer2() {
     return (
         <>
 
-            {/* <div className={`${styles.footerMainBoxUpper} `}>
+            <div className={`${styles.footerMainBoxUpper} `}>
 
                 <div style={{ width: "50%" }}>
 
                     <div  >
-                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font1" style={{ color: "black"  , fontWeight : "600"}}> tailored to your business needs</span> </span>
+                        {/* <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > "Streamline <span className="font1" style={{ color: "black"  , fontWeight : "600"}}> bookings 
+                        effortlessly"</span> 
+                        
+                        </span> */}
+
+                        <div style={{ fontSize: "46px" }}> <span className="font2 blueTextGlobalClass">"Streamline </span> 
+                        <span style={{fontWeight : "700"}} className="font1"> bookings</span>  </div>
+                        <div style={{ fontSize: "46px"  , fontWeight : "700"}} className="font1"> effortlessly"</div>
                     </div>
 
 
@@ -46,11 +55,11 @@ export default function Footer2() {
 
                 </div>
 
-                <div style={{ width: "39%" }} >
-                    <img style={{ width: "100%" }} src={footer} alt="" />
+                <div style={{ width: "45%" }} >
+                    <img style={{ width: "100%" }} src={footerRoomLaptop} alt="" />
                 </div>
 
-            </div> */}
+            </div>
 
 
             <div className={`${styles.footerNavigationBox}`}>
@@ -149,13 +158,13 @@ export default function Footer2() {
             </div> */}
 
 
-            <div  className={`${styles.copyRightSectionBox} font4  `}  >
+            <div className={`${styles.copyRightSectionBox} font4  `}  >
                 <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
-                    <div style={{fontSize : "14px"}}>
+                    <div style={{ fontSize: "14px" }}>
                         ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
                     </div>
 
-                    <div style={{fontSize : "14px"}}>
+                    <div style={{ fontSize: "14px" }}>
                         Terms & Conditions
                     </div>
                 </div>

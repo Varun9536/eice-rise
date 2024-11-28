@@ -31,7 +31,8 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+
 }
 
 .section1ImgBox {
@@ -42,7 +43,7 @@
     width: 60%;
     height: 500px;
     position: relative;
-    left: 144px;
+    left: 168px;
 
 }
 
@@ -55,6 +56,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: right;
+
 }
 
 
@@ -64,8 +66,8 @@
     align-items: center;
     /* background-color: #f5f5f5; */
     padding: 20px 0px;
-    margin-bottom: 16rem;
-    
+    margin-bottom: 12rem;
+
 }
 
 .section2Icon {
@@ -73,13 +75,19 @@
     width: 95px;
 }
 
-.section2IconAndName {}
+.section2IconAndName {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .iconName {
     text-align: center;
     font-weight: 700;
     font-size: 26px;
-    margin-top: 15px;
+    margin-top: 8px;
     text-align: center;
 }
 
@@ -91,7 +99,7 @@
     width: 100%;
     max-width: 1600px;
     margin: 0px auto;
-    margin-bottom: 6rem;
+    margin-bottom: 52px;
 }
 
 
@@ -134,20 +142,19 @@
 
 .section3Para {
 
-    font-size: 25px;
+    font-size: 26px;
     color: white;
     position: absolute;
     bottom: 28px;
     text-align: center;
 }
 
-.paragraph
-{
+.paragraph {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0px 156px;
-    
+
 }
 
 .section3Spiral {
@@ -156,6 +163,7 @@
     right: -477px;
     width: 55%;
     z-index: -1;
+    overflow-x: hidden;
 
 
 
@@ -163,10 +171,10 @@
 }
 
 .section4 {
-    margin-bottom: 7rem;
-   
+    margin-bottom: 22px;
 
-    
+
+
 }
 
 .section4heading {
@@ -189,6 +197,7 @@
 
 .featureInnerBox {
     width: 350px;
+    /* height: 200px; */
 }
 
 
@@ -196,6 +205,7 @@
     display: flex;
     /* margin-bottom: 25px; */
     height: 85px;
+    align-items: center;
 }
 
 
@@ -203,16 +213,45 @@
 
 .featureHeading {
     font-weight: 700;
-    font-size: 22px;
-    padding: 0px 10px;
+    font-size: 20px;
     margin-left: 15px;
+
+
+}
+
+.demoButton {
+
+    background-color: rgba(1, 176, 241, 1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    color: white;
+    width: 25%;
+    margin-top: 30px;
+
+
+}
+
+.demoButton:hover {
+    background-color: rgba(20, 176, 241, 1);
+}
+
+.demoArrowButton {
+    padding-top: 3.5px;
 }
 
 
 .section5 {
     margin-bottom: 3rem;
     padding: 30px 0px;
-   
+    margin-top: 62px;
+
 
 }
 
@@ -227,7 +266,8 @@
 .benifitContainer {
     display: flex;
     flex-direction: column;
-    padding: 0px 70px;
+    padding: 0px 140px;
+    row-gap: 50px;
 
 }
 
@@ -235,7 +275,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 80px;
 
 }
 
@@ -253,6 +293,7 @@
 .benefitHeadingAndDesc {
     display: flex;
     flex-direction: column;
+    /* padding: 0px 30px; */
 }
 
 .innerHeadingBenifit {
@@ -264,22 +305,23 @@
 .innerDescBenifit {
     font-size: 22px;
     margin-top: 20px;
+
+
 }
 
-.FAQsection
-{
-    margin-top: 7rem;
+.FAQsection {
+    margin-top: 58px;
+    padding: 0px 60px;
+    margin-bottom: 70px;
 }
 
-.FAQHeading
-{
+.FAQHeading {
     /* text-align: center; */
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 
-.FAQContainer
-{
-    margin-top: 3rem;
+.FAQContainer {
+    margin-top: 2rem;
 }

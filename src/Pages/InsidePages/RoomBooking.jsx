@@ -27,17 +27,20 @@ import b1 from "../../assets/insidePages/room/roomPage/benifit/b1.png"
 import b2 from "../../assets/insidePages/room/roomPage/benifit/b2.png"
 import b3 from "../../assets/insidePages/room/roomPage/benifit/b3.png"
 import b4 from "../../assets/insidePages/room/roomPage/benifit/b4.png"
-import b5 from "../../assets/insidePages/room/roomPage/benifit/b5.png"
+import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.png"
 
 
 // overview 
 import laptop from "../../assets/insidePages/room/roomPage/laptop.png"
+
 
 import bottomDesign from "../../assets/insidePages/room/roomPage/overviewBottom.jpg"
 // import spiral from "../../assets/insidePages/room/roomPage/spiral.jpg"
 import spiral from "../../assets/insidePages/room/roomPage/spiral2.png"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
+
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 
@@ -53,66 +56,77 @@ export default function RoomBooking() {
     const features = [
         {
             key: 1,
-            heading: "Real-Time Room Availability",
+            heading: "Real-Time ",
+            heading2: "Room Availability",
             desc: "Easily check room availability in real-time, providing guests with up-to-date information to make informed booking decisions.",
             img: rt,
-            width: "80px"
+            width: "73px",
+
+
         },
         {
             key: 2,
-            heading: "Flexible Room Selection",
+            heading: "Flexible Room ",
+            heading2: "Selection",
             desc: "Choose from a variety of room types, including standard, deluxe, and suite categories. Each room type includes detailed descriptions, photos, and amenities.",
             img: frs,
             width: "62px"
         },
         {
             key: 3,
-            heading: "Integrated Wi-Fi Access",
+            heading: "Integrated ",
+            heading2: "Wi-Fi Access",
             desc: "Automatically grants guests secure Wi-Fi access as part of their booking package, enhancing their stay experience from the moment they check in.",
             img: wifi,
             width: "60px"
         },
         {
             key: 4,
-            heading: "Customizable Booking Options",
+            heading: "Customizable ",
+            heading2: "Booking Options",
             desc: "Enable guests to select add-ons such as breakfast packages, airport transfers, or room upgrades directly during the booking process.",
             img: cbo,
-            width: "64px"
+            width: "56px"
         },
         {
             key: 5,
-            heading: "Automated Pricing and Promotions",
+            heading: "Automated Pricing ",
+            heading2: "& Promotions",
             desc: "Dynamic pricing based on demand, seasonality, and special events, with options for promotional codes and loyalty discounts to attract repeat customers.",
             img: app,
-            width: "84px"
+            width: "70px"
         },
         {
             key: 6,
-            heading: "Centralized Booking Dashboard",
+            heading: "Centralized ",
+            heading2: "Booking Dashboard",
             desc: "Manage all room bookings from a single dashboard. Track check-ins, check-outs, and cancellations effortlessly, optimizing room occupancy rates.",
             img: cbd,
-            width: "72px"
+            width: "60px"
         },
         {
             key: 7,
-            heading: "Integrated Payment Gateway",
+            heading: "Integrated ",
+            heading2: "Payment Gateway",
             desc: "Secure online payment processing with multiple options (credit/debit cards, UPI, mobile wallets) for a smooth, hassle-free booking experience.",
             img: ipg,
-            width: "68px"
+            width: "60px"
         },
         {
             key: 8,
-            heading: "Mobile-Friendly Interface",
+            heading: "Mobile-Friendly ",
+            heading2: "Interface",
             desc: "Guests can book rooms on the go using mobile devices, ensuring a responsive and seamless experience across all platforms.",
             img: mfi,
-            width: "62px"
+            width: "60px"
         },
         {
             key: 9,
             heading: "Instant Booking Confirmation",
+            heading2: "",
             desc: "Automated email and SMS confirmations are sent to guests upon successful booking, including details like check-in time, room type, and any additional services selected.",
             img: ibc,
-            width: "62px"
+            width: "56px"
         },
 
     ];
@@ -125,50 +139,55 @@ export default function RoomBooking() {
             heading: "Enhanced Guest Experience",
             desc: "Provides a hassle-free booking process that enhances customer satisfaction and loyalty.",
             img: b1,
+            width: "73%"
         },
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Reduces manual workload for staff and minimizes booking errors, resulting in smoother operations.",
-            img: b2
+            img: b2,
+            width: "86%"
         },
         {
             key: 3,
             heading: "Revenue Optimization",
             desc: "Maximizes room occupancy and boosts revenue through dynamic pricing and promotional features.",
-            img: b3
+            img: b3,
+            width: "75%"
         },
         {
             key: 4,
             heading: "Centralized Management",
             desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
-            img: b4
+            img: b4,
+            width: "75%"
         },
         {
             key: 5,
             heading: "Real-time Availability",
             desc: "Ensures guests have access to up-to-date room availability, preventing overbooking and improving guest trust.",
-            img: b5
+            img: b5,
+            width: "88%"
         }
     ];
 
 
     const query = [
         {
-            question: "What is the Room Booking module, and who is it designed for?",
-            answer: "The Room Booking module is a comprehensive solution for the hospitality industry, ideal for hotels, resorts, clubs, and institutions. It simplifies the booking process while integrating seamlessly with EICE Rise ERP."
+            question: "Q : What is the Room Booking module, and who is it designed for?",
+            answer: "A : The Room Booking module is a comprehensive solution for the hospitality industry, ideal for hotels, resorts, clubs, and institutions. It simplifies the booking process while integrating seamlessly with EICE Rise ERP."
         },
         {
-            question: "How does this module improve the guest experience?",
-            answer: "The module offers real-time availability, customizable booking options, and instant confirmations, ensuring a smooth and hassle-free experience for guests."
+            question: "Q : How does this module improve the guest experience?",
+            answer: "A : The module offers real-time availability, customizable booking options, and instant confirmations, ensuring a smooth and hassle-free experience for guests."
         },
         {
-            question: "What payment options are supported by the Integrated Payment Gateway?",
-            answer: "The payment gateway supports credit/debit cards, UPI, and mobile wallets, ensuring secure and convenient transactions."
+            question: "Q : What payment options are supported by the Integrated Payment Gateway?",
+            answer: " A : The payment gateway supports credit/debit cards, UPI, and mobile wallets, ensuring secure and convenient transactions."
         },
         {
-            question: "Is the Room Booking module integrated with front desk and housekeeping systems?",
-            answer: "Yes, it synchronizes room status with the front desk and housekeeping modules, enabling efficient room management and timely cleaning services."
+            question: "Q : Is the Room Booking module integrated with front desk and housekeeping systems?",
+            answer: "A : Yes, it synchronizes room status with the front desk and housekeeping modules, enabling efficient room management and timely cleaning services."
         }
     ];
 
@@ -181,7 +200,7 @@ export default function RoomBooking() {
 
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
-                    <div style={{ width: "35%" }}>
+                    <div style={{ width: "33%" }}>
                         <div className={`${style.section1Heading} font4`}>
                             <span style={{ color: "012060" }}>ROOM </span>
                             <span style={{ color: "01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
@@ -264,7 +283,7 @@ export default function RoomBooking() {
 
                         </div>
 
-                        {/* <div >
+                        {/* <div style={{overflow : "hidden"}} >
                             <div className={`${style.section3Spiral}`}  >
                                 <img style={{width : "100%" }} src={spiral} alt="" />
                             </div>
@@ -295,7 +314,14 @@ export default function RoomBooking() {
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
-                                        {item.heading}
+                                        <div>
+                                            {item.heading}
+                                        </div>
+
+                                        <div>
+                                            {item.heading2}
+                                        </div>
+
                                     </div>
 
                                 </div>
@@ -314,7 +340,20 @@ export default function RoomBooking() {
             </section>
 
 
-            <section style={{background : "#f5f5f5"}} >
+            <section className={`${style.requestDemoBtn}`}>
+
+                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                    <div className={`${style.demoButton} font1`}>
+                        <div > Request a Demo </div>
+                        <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section style={{ background: "#f5f5f5" }} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -335,7 +374,7 @@ export default function RoomBooking() {
                                     <div className={`${style.innerHeadingBenifit}`}>
                                         {item.heading}
                                     </div>
-                                    <p className={`${style.innerDescBenifit}`}>
+                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
                                         {item.desc}
                                     </p>
 
@@ -351,7 +390,7 @@ export default function RoomBooking() {
                                     <div className={`${style.innerHeadingBenifit}`}>
                                         {item.heading}
                                     </div>
-                                    <p className={`${style.innerDescBenifit}`}>
+                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
                                         {item.desc}
                                     </p>
                                 </div>
@@ -370,8 +409,7 @@ export default function RoomBooking() {
             <section >
                 <div className={`${style.FAQsection} globalSectionSize font4`}>
 
-                    <div className={`${style.FAQHeading}`}></div>
-
+                  
 
                     <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
 

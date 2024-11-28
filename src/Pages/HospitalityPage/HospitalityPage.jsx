@@ -1,5 +1,6 @@
 import styles from "./Hospitality.module.css"
-import laptop from "../../assets/Hospitality/laptop.png"
+// import laptop from "../../assets/Hospitality/laptop.png"
+import laptop from "../../assets/Hospitality/laptoplatest.png"
 import { Link } from "react-router-dom"
 
 
@@ -253,7 +254,7 @@ export default function HospitalityPage() {
             <section className={styles.section1}>
 
                 <div className={styles.laptopImg}>
-                    <img style={{ maxWidth: "74%" }} src={laptop} alt="" />
+                    <img style={{ maxWidth: "54%" }} src={laptop} alt="" />
                 </div>
 
                 <div className={styles.textBox}>

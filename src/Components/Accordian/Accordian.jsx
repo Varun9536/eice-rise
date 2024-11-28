@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styles from './accordian.module.css';
 
+import { GoDash } from "react-icons/go";
+import { FaPlus } from "react-icons/fa6";
+
 const Accordion = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +15,7 @@ const Accordion = ({ question, answer }) => {
         <div className={styles.accordionItem}>
             <div className={styles.question} onClick={toggleAccordion}>
                 {question}
-                <span className={styles.icon}>{isOpen ? '-' : '+'}</span>
+                <span >{isOpen ? (<GoDash  style={{fontSize : "30px"}} />) : (<FaPlus />)}</span>
             </div>
             {isOpen && <div className={styles.answer}>{answer}</div>}
         </div>
