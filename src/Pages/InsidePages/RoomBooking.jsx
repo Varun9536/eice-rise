@@ -55,55 +55,64 @@ export default function RoomBooking() {
             key: 1,
             heading: "Real-Time Room Availability",
             desc: "Easily check room availability in real-time, providing guests with up-to-date information to make informed booking decisions.",
-            img: rt
+            img: rt,
+            width: "80px"
         },
         {
             key: 2,
             heading: "Flexible Room Selection",
             desc: "Choose from a variety of room types, including standard, deluxe, and suite categories. Each room type includes detailed descriptions, photos, and amenities.",
-            img: frs
+            img: frs,
+            width: "62px"
         },
         {
             key: 3,
             heading: "Integrated Wi-Fi Access",
             desc: "Automatically grants guests secure Wi-Fi access as part of their booking package, enhancing their stay experience from the moment they check in.",
-            img: wifi
+            img: wifi,
+            width: "60px"
         },
         {
             key: 4,
             heading: "Customizable Booking Options",
             desc: "Enable guests to select add-ons such as breakfast packages, airport transfers, or room upgrades directly during the booking process.",
-            img: cbo
+            img: cbo,
+            width: "64px"
         },
         {
             key: 5,
             heading: "Automated Pricing and Promotions",
             desc: "Dynamic pricing based on demand, seasonality, and special events, with options for promotional codes and loyalty discounts to attract repeat customers.",
-            img: app
+            img: app,
+            width: "84px"
         },
         {
             key: 6,
             heading: "Centralized Booking Dashboard",
             desc: "Manage all room bookings from a single dashboard. Track check-ins, check-outs, and cancellations effortlessly, optimizing room occupancy rates.",
-            img: cbd
+            img: cbd,
+            width: "72px"
         },
         {
             key: 7,
             heading: "Integrated Payment Gateway",
             desc: "Secure online payment processing with multiple options (credit/debit cards, UPI, mobile wallets) for a smooth, hassle-free booking experience.",
-            img: ipg
+            img: ipg,
+            width: "68px"
         },
         {
             key: 8,
             heading: "Mobile-Friendly Interface",
             desc: "Guests can book rooms on the go using mobile devices, ensuring a responsive and seamless experience across all platforms.",
-            img: mfi
+            img: mfi,
+            width: "62px"
         },
         {
             key: 9,
             heading: "Instant Booking Confirmation",
             desc: "Automated email and SMS confirmations are sent to guests upon successful booking, including details like check-in time, room type, and any additional services selected.",
-            img: ibc
+            img: ibc,
+            width: "62px"
         },
 
     ];
@@ -172,7 +181,7 @@ export default function RoomBooking() {
 
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
-                    <div style={{width : "35%"}}>
+                    <div style={{ width: "35%" }}>
                         <div className={`${style.section1Heading} font4`}>
                             <span style={{ color: "012060" }}>ROOM </span>
                             <span style={{ color: "01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
@@ -195,7 +204,7 @@ export default function RoomBooking() {
                             <img style={{ width: "100%" }} src={icon1} alt="" />
                         </div>
 
-                        <div className={`${style.iconName}`}>
+                        <div className={`${style.iconName} `}>
                             Seamless
                         </div>
                     </div>
@@ -248,8 +257,9 @@ export default function RoomBooking() {
 
 
                         <div className={`${style.section3Para} font4`}>
-                            <div className="globalSectionSize">
-                                Our Room Booking module is a comprehensive solution designed for the hospitality industry, integrating with EICE Rise ERP to simplify and streamline the booking process for Hotels, Resorts, Clubs and Institutions. From standard rooms to luxury suites, this feature offers an intuitive, user-friendly interface for both guests and administrators, ensuring a smooth experience throughout the booking journey.
+                            <div className={`${style.paragraph}`}>
+
+                                Our Room Booking module is a <strong className="font2">comprehensive solution</strong>  designed for the hospitality industry, integrating with EICE Rise ERP to simplify and streamline the booking process for <strong className="font2">Hotels, Resorts, Clubs and Institutions.</strong>  From standard rooms to luxury suites, this feature offers an intuitive, user-friendly interface for both guests and administrators, ensuring a smooth experience throughout the booking journey.
                             </div>
 
                         </div>
@@ -280,7 +290,7 @@ export default function RoomBooking() {
 
                                 <div className={`${style.headingAndIconFeatures}`}>
 
-                                    <div style={{ width: "20%" }}>
+                                    <div style={{ width: item.width }}>
                                         <img style={{ width: "100%" }} src={item.img} alt="" />
                                     </div>
 
@@ -304,7 +314,7 @@ export default function RoomBooking() {
             </section>
 
 
-            <section >
+            <section style={{background : "#f5f5f5"}} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -347,11 +357,6 @@ export default function RoomBooking() {
                                 </div>
 
                             </div>)
-
-
-
-
-
                         )
 
                         )}
@@ -363,25 +368,15 @@ export default function RoomBooking() {
 
 
             <section >
-                <div className={`${style.FAQsection} globalSectionSize`}>
+                <div className={`${style.FAQsection} globalSectionSize font4`}>
 
                     <div className={`${style.FAQHeading}`}></div>
 
-                    {/* <div className={`${style.questionAndAnswerBox}`}>
 
-                        {query.map((item) =>
-                        (
-                            <div>
-                                <div>{item.question}</div>
-                                <div>{item.answer}</div>
-                            </div>
+                    <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
 
-                        ))}
 
-                    </div> */}
-
-                    <div className={style.faqsContainer}>
-                        <h1>Frequently Asked Questions</h1>
+                    <div className={style.FAQContainer}>
                         {query.map((faq, index) => (
                             <Accordion key={index} question={faq.question} answer={faq.answer} />
                         ))}

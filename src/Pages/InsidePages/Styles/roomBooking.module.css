@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .section1ImgBox {
@@ -54,8 +55,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: right;
-
-
 }
 
 
@@ -66,16 +65,21 @@
     /* background-color: #f5f5f5; */
     padding: 20px 0px;
     margin-bottom: 16rem;
+    
 }
 
 .section2Icon {
 
-    width: 100px;
+    width: 95px;
 }
 
 .section2IconAndName {}
 
 .iconName {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -87,6 +91,7 @@
     width: 100%;
     max-width: 1600px;
     margin: 0px auto;
+    margin-bottom: 6rem;
 }
 
 
@@ -94,7 +99,7 @@
 
 .blueBoxSetion3 {
     background-image: url("../../../assets/insidePages/room/roomPage/overview.png");
-    height: 380px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,13 +135,19 @@
 .section3Para {
 
     font-size: 25px;
-
     color: white;
     position: absolute;
-
     bottom: 28px;
-
     text-align: center;
+}
+
+.paragraph
+{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 156px;
+    
 }
 
 .section3Spiral {
@@ -152,8 +163,10 @@
 }
 
 .section4 {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 7rem;
+   
+
+    
 }
 
 .section4heading {
@@ -168,8 +181,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 16px;
-    row-gap: 30px;
+    column-gap: 48px;
+    row-gap: 70px;
 
 }
 
@@ -181,15 +194,16 @@
 
 .headingAndIconFeatures {
     display: flex;
-    margin-bottom: 15px;
+    /* margin-bottom: 25px; */
+    height: 85px;
 }
 
 
 .featureDesc {}
 
 .featureHeading {
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 22px;
     padding: 0px 10px;
     margin-left: 15px;
 }
@@ -197,6 +211,8 @@
 
 .section5 {
     margin-bottom: 3rem;
+    padding: 30px 0px;
+   
 
 }
 
@@ -211,7 +227,7 @@
 .benifitContainer {
     display: flex;
     flex-direction: column;
-    padding: 0px 90px;
+    padding: 0px 70px;
 
 }
 
@@ -231,7 +247,7 @@
 }
 
 .benefitImages {
-    width: 390px;
+    width: 400px;
 }
 
 .benefitHeadingAndDesc {
@@ -240,12 +256,30 @@
 }
 
 .innerHeadingBenifit {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 700;
 
 }
 
 .innerDescBenifit {
+    font-size: 22px;
+    margin-top: 20px;
+}
 
-    font-size: 24px;
+.FAQsection
+{
+    margin-top: 7rem;
+}
+
+.FAQHeading
+{
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+.FAQContainer
+{
+    margin-top: 3rem;
 }
