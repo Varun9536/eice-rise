@@ -1,9 +1,9 @@
 import style from "./Styles/pos.module.css"
 
 
-import icon1 from "../../assets/insidePages/room/roomPage/Icons/1.png"
-import icon2 from "../../assets/insidePages/room/roomPage/Icons/2.png"
-import icon3 from "../../assets/insidePages/room/roomPage/Icons/3.png"
+import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
+import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
+import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
 
 
@@ -30,7 +30,7 @@ import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.png"
 
 
 
-
+import laptop from "../../assets/insidePages/pos/posPage/laptop.png"
 
 
 
@@ -207,7 +207,9 @@ export default function Pos() {
                         </div>
 
                         <div className={`${style.iconName} `}>
-                            Seamless
+                            
+                            <div> Effortless</div>
+                            <div> Operations</div>
                         </div>
                     </div>
 
@@ -219,7 +221,14 @@ export default function Pos() {
                             <img style={{ width: "100%" }} src={icon2} alt="" />
                         </div>
 
-                        <div className={`${style.iconName} `}>Smart</div>
+                        <div className={`${style.iconName} `}>
+                            
+                             
+
+                            <div> Personalized</div>
+                            <div>Experience</div>
+                            
+                            </div>
                     </div>
 
 
@@ -231,7 +240,15 @@ export default function Pos() {
                         </div>
 
                         <div className={`${style.iconName}`}>
-                            Scalable
+                           
+
+                            <div>
+                            Smart 
+                            </div>
+
+                            <div>
+                            Insights
+                            </div>
                         </div>
 
                     </div>
@@ -247,14 +264,31 @@ export default function Pos() {
 
                 <div className={`${style.section3}`}>
 
-                    <div className={`${style.laptopImgSection3}`}>
-                        <img src="" alt="" />
-                    </div>
+
 
                     <div className={`${style.blueBoxSetion3}`}>
-                        <p className={`${style.section3Para}`}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quis fugit asperiores est debitis ducimus officiis ipsum similique hic quod! Blanditiis iure vero aut sapiente rerum reprehenderit quidem similique in.
-                        </p>
+
+                        <div className={`${style.laptopImgSection3}`}>
+                            <div className={`${style.laptopImgBox}`} >
+                                <img style={{ width: "100%" }} src={laptop} alt="" />
+                            </div>
+                        </div>
+
+
+                        <div className={`${style.section3Para} font4`}>
+                            <div className={`${style.paragraph}`}>
+
+                                Our Room Booking module is a <strong className="font2">comprehensive solution</strong>  designed for the hospitality industry, integrating with EICE Rise ERP to simplify and streamline the booking process for <strong className="font2">Hotels, Resorts, Clubs and Institutions.</strong>  From standard rooms to luxury suites, this feature offers an intuitive, user-friendly interface for both guests and administrators, ensuring a smooth experience throughout the booking journey.
+                            </div>
+
+                        </div>
+
+                        {/* <div style={{overflow : "hidden"}} >
+            <div className={`${style.section3Spiral}`}  >
+                <img style={{width : "100%" }} src={spiral} alt="" />
+            </div>
+        </div> */}
+
                     </div>
 
                 </div>

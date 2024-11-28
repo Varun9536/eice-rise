@@ -156,23 +156,23 @@ export default function RoomBooking() {
             heading: "Revenue Optimization",
             desc: "Maximizes room occupancy and boosts revenue through dynamic pricing and promotional features.",
             img: b3,
-            width: "75%" ,
-             imgwidth: "480px"
+            width: "75%",
+            imgwidth: "480px"
         },
         {
             key: 4,
             heading: "Centralized Management",
             desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
             img: b4,
-            width: "75%" ,
-             imgwidth: "440px"
+            width: "75%",
+            imgwidth: "440px"
         },
         {
             key: 5,
             heading: "Real-time Availability",
             desc: "Ensures guests have access to up-to-date room availability, preventing overbooking and improving guest trust.",
             img: b5,
-            width: "88%" ,
+            width: "88%",
             imgwidth: "530px"
         }
     ];

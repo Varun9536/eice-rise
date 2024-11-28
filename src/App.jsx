@@ -74,50 +74,50 @@ const router = createBrowserRouter([
       },
 
 
-      // {
-      //   path: "pos-dining",
-      //   element: <Pos />
-      // },
+      {
+        path: "pos-dining",
+        element: <Pos />
+      },
 
-      // {
-      //   path: "account-finance",
-      //   element: <AccountAndFinance />
-      // },
+      {
+        path: "account-finance",
+        element: <AccountAndFinance />
+      },
 
-      // {
-      //   path: "banquet-billing",
-      //   element: <BanquetAnsBilling />
-      // },
+      {
+        path: "banquet-billing",
+        element: <BanquetAnsBilling />
+      },
 
-      // {
-      //   path: "employee-suite",
-      //   element: <EmployeeSuite />
-      // },
+      {
+        path: "employee-suite",
+        element: <EmployeeSuite />
+      },
 
-      // {
-      //   path: "member-suite",
-      //   element: <MemberSuite />
-      // },
+      {
+        path: "member-suite",
+        element: <MemberSuite />
+      },
 
-      // {
-      //   path: "payroll",
-      //   element: <Payroll />
-      // },
+      {
+        path: "payroll",
+        element: <Payroll />
+      },
 
-      // {
-      //   path: "purchase-vendor",
-      //   element: <PurchaseAndVendor />
-      // },
+      {
+        path: "purchase-vendor",
+        element: <PurchaseAndVendor />
+      },
 
-      // {
-      //   path: "userstore-inventry",
-      //   element: <UserAndInventry />
-      // },
+      {
+        path: "userstore-inventry",
+        element: <UserAndInventry />
+      },
 
-      // {
-      //   path: "food-cost",
-      //   element: <FoodCost />
-      // },
+      {
+        path: "food-cost",
+        element: <FoodCost />
+      },
 
     ]
 
