@@ -1,7 +1,6 @@
-.section1 {
+/* .section1 {
     display: flex;
     align-items: center;
-    column-gap: 40px;
 }
 
 .section1ImgBox {
@@ -9,10 +8,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 62%;
+    width: 60%;
     height: 500px;
     position: relative;
-    right: -128px;
+    left: 144px;
 
 }
 
@@ -20,11 +19,41 @@
 .section1Heading {
     font-size: 40px;
     font-weight: 700;
-    padding-left: 180px;
-    /* background: linear-gradient(to left, rgba(255, 255, 255, 1), rgb(194, 190, 190, 1));  */
+    
     background: linear-gradient(to left, rgb(255, 255, 255), rgb(244, 244, 244));
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: right;
+} */
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section1ImgBox {
+    background-image: url("../../../assets/insidePages/room/roomPage/Herosection.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60%;
+    height: 500px;
+    position: relative;
+    left: 144px;
+
+}
+
+
+.section1Heading {
+    font-size: 40px;
+    font-weight: 700;
+    /* padding-left: 180px; */
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(244, 244, 244));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
 
 
 }

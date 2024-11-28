@@ -1,0 +1,27 @@
+.accordionItem {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.question {
+    background-color: #f9f9f9;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.answer {
+    padding: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #555;
+}
+
+.icon {
+    font-size: 18px;
+}

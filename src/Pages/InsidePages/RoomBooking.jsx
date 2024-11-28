@@ -37,7 +37,7 @@ import bottomDesign from "../../assets/insidePages/room/roomPage/overviewBottom.
 // import spiral from "../../assets/insidePages/room/roomPage/spiral.jpg"
 import spiral from "../../assets/insidePages/room/roomPage/spiral2.png"
 
-
+import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 
 
@@ -172,10 +172,13 @@ export default function RoomBooking() {
 
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
-                    <div className={`${style.section1Heading} font4`}>
-                        <span style={{color : "012060"}}>ROOM </span>  
-                        <span style={{color : "01B0F1"}} className="blueTextGlobalClass"> BOOKING</span>
+                    <div style={{width : "35%"}}>
+                        <div className={`${style.section1Heading} font4`}>
+                            <span style={{ color: "012060" }}>ROOM </span>
+                            <span style={{ color: "01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
+                        </div>
                     </div>
+
                     <div className={style.section1ImgBox}>
 
                     </div>
@@ -360,11 +363,11 @@ export default function RoomBooking() {
 
 
             <section >
-                <div className={`${style.FAQsection}`}>
+                <div className={`${style.FAQsection} globalSectionSize`}>
 
                     <div className={`${style.FAQHeading}`}></div>
 
-                    <div className={`${style.questionAndAnswerBox}`}>
+                    {/* <div className={`${style.questionAndAnswerBox}`}>
 
                         {query.map((item) =>
                         (
@@ -375,6 +378,13 @@ export default function RoomBooking() {
 
                         ))}
 
+                    </div> */}
+
+                    <div className={style.faqsContainer}>
+                        <h1>Frequently Asked Questions</h1>
+                        {query.map((faq, index) => (
+                            <Accordion key={index} question={faq.question} answer={faq.answer} />
+                        ))}
                     </div>
 
                 </div>
