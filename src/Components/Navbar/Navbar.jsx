@@ -49,7 +49,7 @@ export default function Navbar() {
                                         {item}
                                     </Link>
                                 </div>
-                                {item === 'Home' ?  (<div></div>) : ( <div style={{ paddingTop: '3px' }}>
+                                {item === 'Home' ?  (<div ></div>) : ( <div style={{ paddingTop: '3px' }}>
                                     
                                     {hoverStates[item] ? <IoIosArrowUp /> : <IoIosArrowDown />}
                                 </div>)}

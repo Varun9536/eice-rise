@@ -32,7 +32,7 @@ import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.png"
 
 import laptop from "../../assets/insidePages/pos/posPage/laptop.png"
 
-
+import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 import Footer2 from "../../Components/Footer/Footer2.jsx"
 
@@ -46,55 +46,64 @@ export default function Pos() {
             key: 1,
             heading: "User-Friendly Interface",
             desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
-            img: ufi
+            img: ufi,
+            width: "70px",
         },
         {
             key: 2,
             heading: "Real-Time Menu Management",
             desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
-            img: rtmm
+            img: rtmm,
+            width: "73px",
         },
         {
             key: 3,
             heading: "Order Customization",
             desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
-            img: oc
+            img: oc,
+            width: "60px",
         },
         {
             key: 4,
             heading: "Table Management",
             desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
-            img: tm
+            img: tm,
+            width: "73px",
         },
         {
             key: 5,
             heading: "Integrated Payment Solutions",
             desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
-            img: ips
+            img: ips,
+            width: "73px",
         },
         {
             key: 6,
             heading: "Inventory Tracking",
             desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
-            img: it
+            img: it,
+            width: "73px",
         },
         {
             key: 7,
             heading: "Kitchen Display System (KDS) Integration",
             desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
-            img: kds
+            img: kds,
+            width: "73px",
         },
         {
             key: 8,
             heading: "Promotions and Loyalty Programs",
             desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
-            img: plp
+            img: plp,
+            width: "73px",
         },
         {
             key: 9,
             heading: "Real-Time Sales Reporting",
             desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
-            img: rtsr
+            img: rtsr,
+            width: "73px",
         }
     ];
 
@@ -169,17 +178,7 @@ export default function Pos() {
     return (
         <>
 
-            {/* <section>
-                <div className={`${style.section1} insidePageUpperSection`}>
-                    <div className={`${style.section1Haeding}`}>
-                        DINNING POS
-                    </div>
-                    <div className={style.section1ImgBox}>
 
-                    </div>
-                </div>
-
-            </section> */}
 
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
@@ -207,7 +206,7 @@ export default function Pos() {
                         </div>
 
                         <div className={`${style.iconName} `}>
-                            
+
                             <div> Effortless</div>
                             <div> Operations</div>
                         </div>
@@ -222,13 +221,13 @@ export default function Pos() {
                         </div>
 
                         <div className={`${style.iconName} `}>
-                            
-                             
+
+
 
                             <div> Personalized</div>
                             <div>Experience</div>
-                            
-                            </div>
+
+                        </div>
                     </div>
 
 
@@ -240,14 +239,14 @@ export default function Pos() {
                         </div>
 
                         <div className={`${style.iconName}`}>
-                           
+
 
                             <div>
-                            Smart 
+                                Smart
                             </div>
 
                             <div>
-                            Insights
+                                Insights
                             </div>
                         </div>
 
@@ -278,7 +277,7 @@ export default function Pos() {
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                                Our Room Booking module is a <strong className="font2">comprehensive solution</strong>  designed for the hospitality industry, integrating with EICE Rise ERP to simplify and streamline the booking process for <strong className="font2">Hotels, Resorts, Clubs and Institutions.</strong>  From standard rooms to luxury suites, this feature offers an intuitive, user-friendly interface for both guests and administrators, ensuring a smooth experience throughout the booking journey.
+                            The <strong className="font2">Dining (POS)</strong>  module of EICE Rise ERP is designed to revolutionize the food and beverage services in your hospitality establishment. It offers a robust, user-friendly Point of Sale (POS) system tailored for <strong className="font2" >Restaurants, Cafes, Bars, and Banquet services</strong> . Whether you are managing a <strong className="font2">single restaurant or multiple dining outlets</strong> , this module provides a seamless, integrated experience that enhances operational efficiency and customer satisfaction
                             </div>
 
                         </div>
@@ -296,29 +295,39 @@ export default function Pos() {
 
 
 
-            <section >
-                <div className={`${style.section4}`}>
 
-                    <div className={`${style.heading}`}>Key Features</div>
+
+            <section >
+                <div className={`${style.section4} globalSectionSize`}>
+
+                    <div className={`${style.section4heading} font4`}>Key Features</div>
 
                     <div className={`${style.featureContainer}`}>
 
                         {features.map((item) =>
                         (
-                            <div key={item.key} className={`${style.featureInnerBox}`}>
+                            <div key={item.key} className={`${style.featureInnerBox} font4`}>
+
                                 <div className={`${style.headingAndIconFeatures}`}>
 
-                                    <div style={{ width: "20%" }}>
+                                    <div style={{ width: item.width }}>
                                         <img style={{ width: "100%" }} src={item.img} alt="" />
                                     </div>
 
-                                    <div>
-                                        {item.heading}
+                                    <div className={`${style.featureHeading}`}>
+                                        <div>
+                                            {item.heading}
+                                        </div>
+
+                                        <div>
+                                            {item.heading2}
+                                        </div>
+
                                     </div>
 
                                 </div>
 
-                                <div>
+                                <div className={`${style.featureDesc}`}>
                                     {item.desc}
                                 </div>
 
@@ -332,73 +341,80 @@ export default function Pos() {
             </section>
 
 
-            <section >
-                <div className={`${style.section5}`}>
 
+            <section style={{ background: "#f5f5f5" }} >
+                <div className={`${style.section5} font4 globalSectionSize`}>
+
+
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
                     <div className={`${style.benifitContainer}`}>
 
-                        {benefits.map((item) => (
-                            <div className={`${style.innerBenifitBox}`}>
+                        {benefits.map((item, i) => (
 
-                                <div>
-                                    <img src={item.img} alt="" />
+
+                            (i + 1) % 2 !== 0 ? (<div className={`${style.innerBenifitBox}`}>
+
+                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
+                                    <img style={{ width: "100%" }} src={item.img} alt="" />
                                 </div>
 
-                                <div>
-                                    <div>
+                                <div className={`${style.benefitHeadingAndDesc}`}>
+
+                                    <div className={`${style.innerHeadingBenifit}`}>
                                         {item.heading}
                                     </div>
-                                    <p>
+                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
                                         {item.desc}
                                     </p>
 
                                 </div>
 
-                            </div>
-                        ))}
+                            </div>) : (<div className={`${style.innerBenifitBox2}`}>
+
+                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
+                                    <img style={{ width: "100%" }} src={item.img} alt="" />
+                                </div>
+
+                                <div className={`${style.benefitHeadingAndDesc}`}>
+                                    <div className={`${style.innerHeadingBenifit}`}>
+                                        {item.heading}
+                                    </div>
+                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
+                                        {item.desc}
+                                    </p>
+                                </div>
+
+                            </div>)
+                        )
+
+                        )}
 
                     </div>
 
                 </div>
             </section>
+
 
 
             <section >
-                <div className={`${style.FAQsection}`}>
+                <div className={`${style.FAQsection} globalSectionSize font4`}>
+                    <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
 
-                    <div className={`${style.FAQHeading}`}></div>
 
-                    <div className={`${style.questionAndAnswerBox}`}>
-
-                        {query.map((item) =>
-                        (
-                            <div>
-                                <div>{item.question}</div>
-                                <div>{item.answer}</div>
-                            </div>
-
+                    <div className={style.FAQContainer}>
+                        {query.map((faq, index) => (
+                            <Accordion key={index} question={faq.question} answer={faq.answer} />
                         ))}
-
                     </div>
 
                 </div>
             </section>
-
-
-
-
 
 
             <div >
                 <Footer2 />
 
             </div>
-
-
-
-
-
-
 
         </>
     )
