@@ -34,7 +34,7 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.png"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import Footer2 from "../../Components/Footer/Footer2.jsx"
+import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -164,24 +164,27 @@ export default function Pos() {
 
 
 
+   
+
+
     const query = [
         {
-            question: "How does the Dining (POS) module handle split bills or group payments?",
-            answer: "The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+          question: "Q : How does the Dining (POS) module handle split bills or group payments?",
+          answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
         },
         {
-            question: "Can the module manage menu customization and promotions in real-time?",
-            answer: "Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+          question: "Q : Can the module manage menu customization and promotions in real-time?",
+          answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
         },
         {
-            question: "Does the Dining (POS) module support table reservations and service tracking?",
-            answer: "Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+          question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
+          answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
         },
         {
-            question: "What analytics and reporting capabilities does the Dining (POS) module offer?",
-            answer: "The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+          question:  "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
+          answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
         }
-    ];
+      ];
 
 
 
@@ -436,7 +439,7 @@ export default function Pos() {
 
 
             <div >
-                <Footer2 />
+                <Footer3 />
 
             </div>
 

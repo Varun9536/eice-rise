@@ -274,7 +274,7 @@
 .benifitContainer {
     display: flex;
     flex-direction: column;
-    padding: 0px 140px;
+    padding: 0px 95px;
     row-gap: 50px;
 
 }
@@ -319,7 +319,7 @@
 
 .FAQsection {
     margin-top: 58px;
-    padding: 0px 60px;
+    padding: 0px 74px;
     margin-bottom: 70px;
 }
 
