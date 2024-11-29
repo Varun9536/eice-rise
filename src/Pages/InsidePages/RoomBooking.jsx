@@ -31,7 +31,7 @@ import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.webp"
 
 
 // overview 
-import laptop from "../../assets/insidePages/room/roomPage/laptop.png"
+import laptop from "../../assets/insidePages/room/roomPage/laptop.webp"
 
 
 import bottomDesign from "../../assets/insidePages/room/roomPage/overviewBottom.jpg"
