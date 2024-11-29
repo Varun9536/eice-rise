@@ -22,11 +22,11 @@ import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
 // benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.png"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.png"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.png"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.png"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.png"
+import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
+import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
+import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
+import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
+import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 
