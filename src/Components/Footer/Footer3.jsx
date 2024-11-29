@@ -1,6 +1,6 @@
 import styles from "./footer.module.css"
 import footer from "../../assets/footer/foot.png"
-import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.png"
+import footerRoomLaptop from "../../assets/insidePages/pos/posPage/FooterPos.png"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
