@@ -1,5 +1,5 @@
 import styles from "./footer.module.css"
-import footer from "../../assets/footer/foot.png"
+import footer from "../../assets/footer/foot.webp"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import logo from '../../assets/logo/logo.svg';
