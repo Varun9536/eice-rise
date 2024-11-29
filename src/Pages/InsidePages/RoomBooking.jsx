@@ -1,5 +1,5 @@
 import style from "./Styles/roomBooking.module.css"
-import section1img from "../../assets/insidePages/room/roomPage/Herosection.png"
+import section1img from "../../assets/insidePages/room/roomPage/Herosection.webp"
 
 
 import icon1 from "../../assets/insidePages/room/roomPage/Icons/1.png"
@@ -23,11 +23,11 @@ import ipg from "../../assets/insidePages/room/roomPage/feature/ipg.png"
 
 // benifits
 
-import b1 from "../../assets/insidePages/room/roomPage/benifit/b1.png"
-import b2 from "../../assets/insidePages/room/roomPage/benifit/b2.png"
-import b3 from "../../assets/insidePages/room/roomPage/benifit/b3.png"
-import b4 from "../../assets/insidePages/room/roomPage/benifit/b4.png"
-import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.png"
+import b1 from "../../assets/insidePages/room/roomPage/benifit/b1.webp"
+import b2 from "../../assets/insidePages/room/roomPage/benifit/b2.webp"
+import b3 from "../../assets/insidePages/room/roomPage/benifit/b3.webp"
+import b4 from "../../assets/insidePages/room/roomPage/benifit/b4.webp"
+import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.webp"
 
 
 // overview 
