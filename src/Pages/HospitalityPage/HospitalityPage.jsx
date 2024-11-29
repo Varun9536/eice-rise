@@ -1,6 +1,6 @@
 import styles from "./Hospitality.module.css"
 // import laptop from "../../assets/Hospitality/laptop.png"
-import laptop from "../../assets/Hospitality/laptoplatest.png"
+import laptop from "../../assets/Hospitality/laptoplatest.webp"
 import { Link } from "react-router-dom"
 
 
@@ -15,7 +15,7 @@ import pay from "../../assets/Hospitality/allPageIcon/PAyscale.png"
 import room from "../../assets/Hospitality/allPageIcon/Room.png"
 import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
-import vimg from "../../assets/insidePages/vimg.png"
+import vimg from "../../assets/insidePages/vimg.webp"
 
 
 
@@ -25,14 +25,14 @@ import c2 from "../../assets/Hospitality/customer/c2.png"
 import c1 from "../../assets/Hospitality/customer/c3.png"
 
 
-import s1 from "../../assets/Hospitality/story/s1.png"
-import s2 from "../../assets/Hospitality/story/s2.png"
-import s3 from "../../assets/Hospitality/story/s3.png"
+import s1 from "../../assets/Hospitality/story/s1.webp"
+import s2 from "../../assets/Hospitality/story/s2.webp"
+import s3 from "../../assets/Hospitality/story/s3.webp"
 
 
-import insight1 from "../../assets/Hospitality/insights/01.png"
-import insight2 from "../../assets/Hospitality/insights/02.png"
-import insight3 from "../../assets/Hospitality/insights/03.png"
+import insight1 from "../../assets/Hospitality/insights/01.webp"
+import insight2 from "../../assets/Hospitality/insights/02.webp"
+import insight3 from "../../assets/Hospitality/insights/03.webp"
 
 
 import tata from "../../assets/Hospitality/clients/tata.png"
