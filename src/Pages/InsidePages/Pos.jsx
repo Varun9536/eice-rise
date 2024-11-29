@@ -36,6 +36,8 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 import Footer2 from "../../Components/Footer/Footer2.jsx"
 
+import { FaArrowRightLong } from "react-icons/fa6";
+
 export default function Pos() {
 
 
@@ -115,32 +117,42 @@ export default function Pos() {
             key: 1,
             heading: "Enhanced Customer Satisfaction",
             desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
-            img: b1
+            img: b1,
+            width: "79%",
+            imgwidth: "590px"
         },
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
-            img: b2
+            img: b2,
+            width: "86%",
+            imgwidth: "520px"
         },
         {
             key: 3,
             heading: "Personalized Dining Experience",
             desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
-            img: b3
+            img: b3,
+            width: "75%",
+            imgwidth: "555px"
         },
         {
             key: 4,
             heading: "Optimized Resource Utilization",
             desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
-            img: b4
+            img: b4,
+            width: "86%",
+            imgwidth: "603px"
         },
 
         {
             key: 5,
             heading: "Data-Driven Decision Making",
             desc: "Real-time sales reporting and analytics provide valuable insights into customer preferences, top-selling items, and daily performance, enabling data-driven business decisions",
-            img: b5
+            img: b5,
+            width: "88%",
+            imgwidth: "635px"
 
         }
     ];
@@ -277,7 +289,7 @@ export default function Pos() {
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                            The <strong className="font2">Dining (POS)</strong>  module of EICE Rise ERP is designed to revolutionize the food and beverage services in your hospitality establishment. It offers a robust, user-friendly Point of Sale (POS) system tailored for <strong className="font2" >Restaurants, Cafes, Bars, and Banquet services</strong> . Whether you are managing a <strong className="font2">single restaurant or multiple dining outlets</strong> , this module provides a seamless, integrated experience that enhances operational efficiency and customer satisfaction
+                                The <strong className="font2">Dining (POS)</strong>  module of EICE Rise ERP is designed to revolutionize the food and beverage services in your hospitality establishment. It offers a robust, user-friendly Point of Sale (POS) system tailored for <strong className="font2" >Restaurants, Cafes, Bars, and Banquet services</strong> . Whether you are managing a <strong className="font2">single restaurant or multiple dining outlets</strong> , this module provides a seamless, integrated experience that enhances operational efficiency and customer satisfaction
                             </div>
 
                         </div>
@@ -338,6 +350,18 @@ export default function Pos() {
                     </div>
 
                 </div>
+            </section>
+
+            <section className={`${style.requestDemoBtn}`}>
+
+                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                    <div className={`${style.demoButton} font1`}>
+                        <div > Request a Demo </div>
+                        <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                    </div>
+
+                </div>
+
             </section>
 
 
