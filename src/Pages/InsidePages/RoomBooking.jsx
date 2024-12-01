@@ -52,6 +52,9 @@ export default function RoomBooking() {
 
 
 
+    
+
+
 
     const features = [
         {
@@ -427,7 +430,7 @@ export default function RoomBooking() {
             </section>
 
             <div >
-                <Footer2 />
+                <Footer2  />
 
             </div>
 

@@ -52,6 +52,7 @@ import h2 from "../../assets/Hospitality/headIcon/h2.png"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from "../../Components/Footer/Footer"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart"
 
 
 
@@ -543,6 +544,7 @@ export default function HospitalityPage() {
             </section>
 
             <div >
+                <FooterUpperPart/>
                 <Footer />
 
             </div>

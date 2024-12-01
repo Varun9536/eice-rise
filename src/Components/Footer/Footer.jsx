@@ -13,23 +13,11 @@ export default function Footer() {
 
 
 
-    const navItems = [
-        'Home',
-        'About Us',
-        'Products',
-        'Room Booking',
-        'Dining (POS)',
-        'Banquet & Billing',
-        'Membership Portal',
-        'Accounts & Finance',
-        'Pricing',
-        'Blogs'
-    ];
-
+   
     return (
         <>
 
-            <div className={`${styles.footerMainBoxUpper} `}>
+            {/* <div className={`${styles.footerMainBoxUpper} `}>
 
                 <div style={{ width: "50%" }}>
 
@@ -50,7 +38,7 @@ export default function Footer() {
                     <img style={{ width: "100%" }} src={footer} alt="" />
                 </div>
 
-            </div>
+            </div> */}
 
 
             <div className={`${styles.footerNavigationBox}`}>
