@@ -7,11 +7,27 @@
     max-width: 1600px;
     margin: 0px auto;
     width: 100%;
+}
 
+.footerLaptopImg
+{
+    width: 39%;
 
+}
 
+@media (min-width : 1600px)
+{
+    .footerMainBoxUpper {
+        max-width: 1500px;
+        justify-content: unset;
+        
+    }
 
+    .footerLaptopImg
+{
+    width: 36%;
 
+}
 }
 
 

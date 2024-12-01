@@ -46,7 +46,7 @@ export default function Footer() {
 
                 </div>
 
-                <div style={{ width: "39%" }} >
+                <div className={`${styles.footerLaptopImg}`} >
                     <img style={{ width: "100%" }} src={footer} alt="" />
                 </div>
 
