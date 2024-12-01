@@ -21,6 +21,16 @@
 }
 
 
+@media (min-width : 1600px)
+{
+    .section1ImgBox {
+        
+        left: unset;
+    
+    }
+}
+
+
 .section1Heading {
     font-size: 40px;
     font-weight: 700;

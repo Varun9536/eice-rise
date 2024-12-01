@@ -46,7 +46,7 @@ export default function Navbar() {
                                         to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`}
                                         className="linkClass"
                                     >
-                                        {item}
+                                        {item} 
                                     </Link>
                                 </div>
                                 {/* {item === 'Home' ?  (<div ></div>) : ( <div style={{ paddingTop: '3px' }}>
