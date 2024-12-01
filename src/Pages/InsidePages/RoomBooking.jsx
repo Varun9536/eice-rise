@@ -1,5 +1,5 @@
 import style from "./Styles/roomBooking.module.css"
-import section1img from "../../assets/insidePages/room/roomPage/Herosection.webp"
+
 
 
 import icon1 from "../../assets/insidePages/room/roomPage/Icons/1.png"
@@ -34,7 +34,7 @@ import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.webp"
 import laptop from "../../assets/insidePages/room/roomPage/laptop.webp"
 
 
-import bottomDesign from "../../assets/insidePages/room/roomPage/overviewBottom.jpg"
+
 // import spiral from "../../assets/insidePages/room/roomPage/spiral.jpg"
 import spiral from "../../assets/insidePages/room/roomPage/spiral2.png"
 
