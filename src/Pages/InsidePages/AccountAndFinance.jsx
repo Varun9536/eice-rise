@@ -45,97 +45,181 @@ export default function AccountAndFinance() {
 
 
 
+  // const features = [
+  //   {
+  //     key: 1,
+  //     heading: "Customized Packages and Pricing",
+  //     desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
+  //     img: ufi, // Image from the previous array
+  //     width: "64px", // Width from the previous array
+  //   },
+  //   {
+  //     key: 2,
+  //     heading: "Digital Contracts and Invoicing",
+  //     desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
+  //     img: rtmm, // Image from the previous array
+  //     width: "65px", // Width from the previous array
+  //   },
+  //   {
+  //     key: 3,
+  //     heading: "Integrated Resource Management",
+  //     desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
+  //     img: oc, // Image from the previous array
+  //     width: "54px", // Width from the previous array
+  //   },
+  //   {
+  //     key: 4,
+  //     heading: "Automated Billing System",
+  //     desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
+  //     img: tm, // Image from the previous array
+  //     width: "65px", // Width from the previous array
+  //   },
+  //   {
+  //     key: 5,
+  //     heading: "Comprehensive Reports",
+  //     desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
+  //     img: ips, // Image from the previous array
+  //     width: "65px", // Width from the previous array
+  //   },
+  //   {
+  //     key: 6,
+  //     heading: "Client Portal Access",
+  //     desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
+  //     img: it, // Image from the previous array
+  //     width: "63px", // Width from the previous array
+  //   }
+  // ];
+
+
+
   const features = [
     {
+        key: 1,
+        heading: "Comprehensive Financial Management",
+        desc: "Manage all core financial functions, including accounts receivable, accounts payable, debit & credit notes, taxation, balance sheets, and general ledger. Streamline processes and ensure timely payments and collections.",
+        img: ufi,
+        width: "64px",
+    },
+    {
+        key: 2,
+        heading: "Real-Time Financial Data",
+        desc: "Access up-to-date financial data at any time, empowering managers to make data-driven decisions that enhance profitability and financial health.",
+        img: rtmm,
+        width: "65px",
+    },
+    {
+        key: 3,
+        heading: "Integrated Invoicing and Billing",
+        desc: "Automatically generate invoices and billing statements for room bookings, event bookings, dining, and more. Customizable invoice templates ensure branding consistency and accuracy.",
+        img: oc,
+        width: "54px",
+    },
+    {
+        key: 4,
+        heading: "Tax Management and Compliance",
+        desc: "Stay compliant with regional and international tax regulations. Automate tax calculations based on local laws and apply them seamlessly to invoices and payments.",
+        img: tm,
+        width: "65px",
+    },
+    {
+        key: 5,
+        heading: "Advanced Reporting and Analytics",
+        desc: "Create custom financial reports that provide deeper insights into revenue, expenditures, profit margins, etc. Analyze trends and generate forecasts to support future planning.",
+        img: ips,
+        width: "65px",
+    },
+    {
+        key: 6,
+        heading: "Payment Gateway Integration",
+        desc: "Integrated with secure payment gateways, businesses can process payments efficiently and track financial transactions in real-time.",
+        img: it,
+        width: "63px",
+    },
+    {
+        key: 7,
+        heading: "Budgeting and Forecasting",
+        desc: "Plan and monitor your budget effectively with integrated forecasting tools. Track expenses, and revenues, and allocate resources for better financial planning.",
+        img: kds,
+        width: "70px",
+    },
+    {
+        key: 8,
+        heading: "Cash Flow Management",
+        desc: "Monitor cash flow with real-time reporting to ensure liquidity, helping businesses manage operational costs and optimize cash reserves.",
+        img: plp,
+        width: "65px",
+    },
+    {
+        key: 9,
+        heading: "Vendor and Supplier Payments",
+        desc: "Easily manage payments to vendors and suppliers, track due invoices, and ensure timely settlements with the automated payment tracking system.",
+        img: rtsr,
+        width: "60px",
+    },
+   
+];
+
+
+
+
+const benefits = [
+  {
       key: 1,
-      heading: "Customized Packages and Pricing",
-      desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-      img: ufi, // Image from the previous array
-      width: "64px", // Width from the previous array
-    },
-    {
-      key: 2,
-      heading: "Digital Contracts and Invoicing",
-      desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-      img: rtmm, // Image from the previous array
-      width: "65px", // Width from the previous array
-    },
-    {
-      key: 3,
-      heading: "Integrated Resource Management",
-      desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-      img: oc, // Image from the previous array
-      width: "54px", // Width from the previous array
-    },
-    {
-      key: 4,
-      heading: "Automated Billing System",
-      desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-      img: tm, // Image from the previous array
-      width: "65px", // Width from the previous array
-    },
-    {
-      key: 5,
-      heading: "Comprehensive Reports",
-      desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-      img: ips, // Image from the previous array
-      width: "65px", // Width from the previous array
-    },
-    {
-      key: 6,
-      heading: "Client Portal Access",
-      desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-      img: it, // Image from the previous array
-      width: "63px", // Width from the previous array
-    }
-  ];
-
-
-
-
-  const benefits = [
-    {
-      key: 1,
-      heading: "Enhanced Client Experience",
-      desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: b1, // Reused or placeholder image
+      heading: "Financial Accuracy",
+      desc: "Reduce human error in financial reporting and ensure accuracy in all transactions and documentation.",
+      img: b1,
       width: "79%",
-      imgwidth: "356px"
-    },
-    {
+      imgwidth: "590px"
+  },
+  {
       key: 2,
-      heading: "Improved Efficiency",
-      desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: b2, // Reused or placeholder image
+      heading: "Operational Efficiency",
+      desc: "Automate routine financial tasks, freeing up time for finance teams to focus on strategic decision-making.",
+      img: b2,
       width: "86%",
-      imgwidth: "315px"
-    },
-    {
+      imgwidth: "520px"
+  },
+  {
       key: 3,
-      heading: "Revenue Optimization",
-      desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: b3, // Reused or placeholder image
+      heading: "Cost Control",
+      desc: "Monitor expenses, analyze spending patterns, and optimize cost management across departments.",
+      img: b3,
       width: "75%",
-      imgwidth: "410px"
-    },
-    {
+      imgwidth: "555px"
+  },
+  {
       key: 4,
-      heading: "Centralized Management",
-      desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
-      img: b4, // Reused or placeholder image
+      heading: "Compliance Assurance",
+      desc: "Stay compliant with industry standards and tax regulations, avoiding penalties and ensuring financial transparency.",
+      img: b4,
       width: "86%",
-      imgwidth: "642px"
-    },
-    {
+      imgwidth: "603px"
+  },
+  {
       key: 5,
-      heading: "Better Resource Utilization",
-      desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: b5, // Reused or placeholder image
+      heading: "Improved Cash Flow Management",
+      desc: "With real-time tracking and reporting, businesses can manage their cash flow more effectively, improving financial stability.",
+      img: b5,
       width: "88%",
       imgwidth: "635px"
-    },
-
-  ];
+  },
+  {
+      key: 6,
+      heading: "Enhanced Decision Making",
+      desc: "Gain valuable financial insights that drive informed decision-making and business growth.",
+      img: b1, // Reusing as a placeholder; replace with a specific image if needed
+      width: "79%",
+      imgwidth: "590px"
+  },
+  {
+      key: 7,
+      heading: "Seamless Integration with Other Modules",
+      desc: "Fully integrates with other EICE Rise ERP modules (like Room Booking, Banquet & Billing, Dining (POS), Member Portal, Employee Portal, Payroll, User & Store Inventory, Food & Beverage, and Purchase & Vendor Portal) for consistent data flow and synchronized financial records.",
+      img: b2, // Reusing as a placeholder; replace with a specific image if needed
+      width: "86%",
+      imgwidth: "520px"
+  }
+];
 
 
 
@@ -180,8 +264,8 @@ export default function AccountAndFinance() {
         <div className={`${style.section1} insidePageUpperSection`}>
           <div style={{ width: "33%" }}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>BANQUET &</span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BILLING</span>
+              <span style={{ color: "#012060" }}>ACCOUNTS &</span>
+              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> FINANCE</span>
             </div>
           </div>
 
@@ -273,7 +357,8 @@ export default function AccountAndFinance() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                EICE Rise ERP’s Banquet & Billing module is designed to simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties. The module offers comprehensive tools for Booking, Scheduling, and Billing, enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures accurate resource allocation, efficient billing, and enhanced customer satisfaction.
+              The Accounts and Finance module in EICE Rise ERP streamlines financial management for hospitality operations. It automates workflows, ensuring accurate records, compliance, and improved financial decision-making. This module enhances control and transparency in financial activities from budgeting, forecasting, invoicing, and taxation to financial reporting.
+
 
               </div>
 

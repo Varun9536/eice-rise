@@ -47,95 +47,104 @@ export default function MemberSuite() {
 
   const features = [
     {
-      key: 1,
-      heading: "Customized Packages and Pricing",
-      desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-      img: ufi, // Image from the previous array
-      width: "64px", // Width from the previous array
+        key: 1,
+        heading: "Membership Registration and Management",
+        desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
+        img: ufi, // Reusing image from previous array, replace with relevant image if needed
+        width: "64px"
     },
     {
-      key: 2,
-      heading: "Digital Contracts and Invoicing",
-      desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-      img: rtmm, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 2,
+        heading: "Self-Service Portal",
+        desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
+        img: rtmm, // Reusing image from previous array, replace with relevant image if needed
+        width: "65px"
     },
     {
-      key: 3,
-      heading: "Integrated Resource Management",
-      desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-      img: oc, // Image from the previous array
-      width: "54px", // Width from the previous array
+        key: 3,
+        heading: "Subscription Management",
+        desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
+        img: oc, // Reusing image from previous array, replace with relevant image if needed
+        width: "54px"
     },
     {
-      key: 4,
-      heading: "Automated Billing System",
-      desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-      img: tm, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 4,
+        heading: "Exclusive Member Benefits",
+        desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
+        img: tm, // Reusing image from previous array, replace with relevant image if needed
+        width: "65px"
     },
     {
-      key: 5,
-      heading: "Comprehensive Reports",
-      desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-      img: ips, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 5,
+        heading: "Integrated Communication Tools",
+        desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
+        img: ips, // Reusing image from previous array, replace with relevant image if needed
+        width: "65px"
     },
     {
-      key: 6,
-      heading: "Client Portal Access",
-      desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-      img: it, // Image from the previous array
-      width: "63px", // Width from the previous array
+        key: 6,
+        heading: "Analytics Dashboard",
+        desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
+        img: it, // Reusing image from previous array, replace with relevant image if needed
+        width: "63px"
     }
-  ];
+];
 
 
 
 
-  const benefits = [
-    {
+
+const benefits = [
+  {
       key: 1,
-      heading: "Enhanced Client Experience",
-      desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: b1, // Reused or placeholder image
+      heading: "Enhanced Member Experience",
+      desc: "Provide a personalized and streamlined experience for your members, improving retention and satisfaction.",
+      img: b1, // Reusing image from previous array, replace with relevant image if needed
       width: "79%",
-      imgwidth: "356px"
-    },
-    {
+      imgwidth: "590px"
+  },
+  {
       key: 2,
-      heading: "Improved Efficiency",
-      desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: b2, // Reused or placeholder image
+      heading: "Operational Efficiency",
+      desc: "Automate routine tasks such as renewals and notifications, reducing administrative workload.",
+      img: b2, // Reusing image from previous array, replace with relevant image if needed
       width: "86%",
-      imgwidth: "315px"
-    },
-    {
+      imgwidth: "520px"
+  },
+  {
       key: 3,
-      heading: "Revenue Optimization",
-      desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: b3, // Reused or placeholder image
+      heading: "Data-Driven Insights",
+      desc: "Leverage analytics to understand member preferences and make informed decisions on services and offerings.",
+      img: b3, // Reusing image from previous array, replace with relevant image if needed
       width: "75%",
-      imgwidth: "410px"
-    },
-    {
+      imgwidth: "555px"
+  },
+  {
       key: 4,
-      heading: "Centralized Management",
-      desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
-      img: b4, // Reused or placeholder image
+      heading: "Improved Communication",
+      desc: "Streamline communication with members through automated alerts, reminders, and personalized messaging, fostering stronger relationships and engagement.",
+      img: b4, // Reusing image from previous array, replace with relevant image if needed
       width: "86%",
-      imgwidth: "642px"
-    },
-    {
+      imgwidth: "603px"
+  },
+  {
       key: 5,
-      heading: "Better Resource Utilization",
-      desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: b5, // Reused or placeholder image
+      heading: "Increased Member Retention",
+      desc: "By offering targeted services and benefits based on member data, you can increase retention and reduce churn, creating long-term loyalty.",
+      img: b5, // Reusing image from previous array, replace with relevant image if needed
       width: "88%",
       imgwidth: "635px"
-    },
+  },
+  {
+      key: 6,
+      heading: "Revenue Growth",
+      desc: "Enable upselling and cross-selling opportunities through tailored offers and personalized services, driving additional revenue streams from your existing member base.",
+      img: b1, // Reusing image from previous array, replace with relevant image if needed
+      width: "79%",
+      imgwidth: "590px"
+  }
+];
 
-  ];
 
 
 
@@ -180,8 +189,8 @@ export default function MemberSuite() {
         <div className={`${style.section1} insidePageUpperSection`}>
           <div style={{ width: "33%" }}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>BANQUET &</span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BILLING</span>
+              <span style={{ color: "#012060" }}>MEMBER </span>
+              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> SUITE</span>
             </div>
           </div>
 
@@ -272,8 +281,8 @@ export default function MemberSuite() {
 
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
+              EICE Rise ERP’s Member Suite offers a centralized solution for managing diverse membership types, subscriptions, and engagement activities. Designed specifically for Clubs, Institutions, Hotels, and Resorts, this module streamlines membership processes, enhances communication, and provides personalized services to members, all within a secure, user-friendly platform.
 
-                EICE Rise ERP’s Banquet & Billing module is designed to simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties. The module offers comprehensive tools for Booking, Scheduling, and Billing, enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures accurate resource allocation, efficient billing, and enhanced customer satisfaction.
 
               </div>
 

@@ -1,13 +1,8 @@
-/* app.css */
-
-
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- /* overflow-x: hidden; */
+
 }
 
 
@@ -31,21 +26,19 @@
 
 }
 
-.font3 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
-}
-
-.font4
-{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .font2 {
   font-family: "Segoe2";
 }
 
+.font3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
 
+.font4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 
