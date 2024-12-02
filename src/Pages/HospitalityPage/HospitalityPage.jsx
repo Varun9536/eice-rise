@@ -546,7 +546,6 @@ export default function HospitalityPage() {
             <div >
                 <FooterUpperPart/>
                 <Footer />
-
             </div>
 
 
