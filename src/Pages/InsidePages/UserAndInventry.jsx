@@ -43,119 +43,113 @@ export default function UserAndInventry() {
 
 
 
-    const features = [
-        {
-            key: 1,
-            heading: "User-Friendly Interface",
-            desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
-            img: ufi,
-            width: "64px",
-        },
-        {
-            key: 2,
-            heading: "Real-Time Menu Management",
-            desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
-            img: rtmm,
-            width: "65px",
-        },
-        {
-            key: 3,
-            heading: "Order Customization",
-            desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
-            img: oc,
-            width: "54px",
-        },
-        {
-            key: 4,
-            heading: "Table Management",
-            desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
-            img: tm,
-            width: "65px",
-        },
-        {
-            key: 5,
-            heading: "Integrated Payment Solutions",
-            desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
-            img: ips,
-            width: "65px",
-        },
-        {
-            key: 6,
-            heading: "Inventory Tracking",
-            desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
-            img: it,
-            width: "63px",
-        },
-        {
-            key: 7,
-            heading: "Kitchen Display System (KDS) Integration",
-            desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
-            img: kds,
-            width: "70px",
-        },
-        {
-            key: 8,
-            heading: "Promotions and Loyalty Programs",
-            desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
-            img: plp,
-            width: "65px",
-        },
-        {
-            key: 9,
-            heading: "Real-Time Sales Reporting",
-            desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
-            img: rtsr,
-            width: "60px",
-        }
-    ];
+  const features = [
+    {
+        key: 1,
+        heading: "Centralized User Management",
+        desc: "Streamline user access store-wise with customizable roles and permissions.",
+        img: ufi, // Reused image from the previous features array
+        width: "64px" // Reused width from the previous features array
+    },
+    {
+        key: 2,
+        heading: "Efficient Store Management",
+        desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
+        img: rtmm, // Reused image from the previous features array
+        width: "65px" // Reused width from the previous features array
+    },
+    {
+        key: 3,
+        heading: "Real-Time Inventory Control",
+        desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
+        img: oc, // Reused image from the previous features array
+        width: "54px" // Reused width from the previous features array
+    },
+    {
+        key: 4,
+        heading: "Advanced Reporting and Analytics",
+        desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
+        img: tm, // Reused image from the previous features array
+        width: "65px" // Reused width from the previous features array
+    },
+    {
+        key: 5,
+        heading: "Multi-Location Support",
+        desc: "Manage multiple stores from a central platform, transfer stock between locations, and monitor regional inventory needs.",
+        img: ips, // Reused image from the previous features array
+        width: "65px" // Reused width from the previous features array
+    },
+    {
+        key: 6,
+        heading: "Seamless ERP Integration",
+        desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
+        img: it, // Reused image from the previous features array
+        width: "63px" // Reused width from the previous features array
+    }
+];
 
 
 
 
-    const benefits = [
-        {
-            key: 1,
-            heading: "Enhanced Customer Satisfaction",
-            desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
-            img: b1,
-            width: "79%",
-            imgwidth: "590px"
-        },
-        {
-            key: 2,
-            heading: "Operational Efficiency",
-            desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
-            img: b2,
-            width: "86%",
-            imgwidth: "520px"
-        },
-        {
-            key: 3,
-            heading: "Personalized Dining Experience",
-            desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
-            img: b3,
-            width: "75%",
-            imgwidth: "555px"
-        },
-        {
-            key: 4,
-            heading: "Optimized Resource Utilization",
-            desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
-            img: b4,
-            width: "86%",
-            imgwidth: "603px"
-        },
 
-        {
-            key: 5,
-            heading: "Data-Driven Decision Making",
-            desc: "Real-time sales reporting and analytics provide valuable insights into customer preferences, top-selling items, and daily performance, enabling data-driven business decisions",
-            img: b5,
-            width: "88%",
-            imgwidth: "635px"
-
-        }
-    ];
+const benefits = [
+  {
+      key: 1,
+      heading: "Operational Efficiency",
+      desc: "Reduce manual errors, accelerate processes, and free up resources for strategic tasks.",
+      img: b1, // Reused image from the previous benefits array
+      width: "79%", // Reused width from the previous benefits array
+      imgwidth: "356px" // Reused imgwidth from the previous benefits array
+  },
+  {
+      key: 2,
+      heading: "Real-Time Insights",
+      desc: "Get instant visibility into inventory, store performance, and user activity to make faster decisions.",
+      img: b2, // Reused image from the previous benefits array
+      width: "86%", // Reused width from the previous benefits array
+      imgwidth: "315px" // Reused imgwidth from the previous benefits array
+  },
+  {
+      key: 3,
+      heading: "Cost Optimization",
+      desc: "Automate restocking and inventory updates to minimize costs, prevent overstocking, and boost profit margins.",
+      img: b3, // Reused image from the previous benefits array
+      width: "75%", // Reused width from the previous benefits array
+      imgwidth: "410px" // Reused imgwidth from the previous benefits array
+  },
+  {
+      key: 4,
+      heading: "Scalability",
+      desc: "Easily manage multiple locations as your business grows with customizable configurations and consistent performance.",
+      img: b4, // Reused image from the previous benefits array
+      width: "86%", // Reused width from the previous benefits array
+      imgwidth: "642px" // Reused imgwidth from the previous benefits array
+  },
+  {
+      key: 5,
+      heading: "Improved Inventory Control",
+      desc: "Accurate, automated inventory management ensures real-time stock updates, enhancing the customer experience.",
+      img: b5, // Reused image from the previous benefits array
+      width: "88%", // Reused width from the previous benefits array
+      imgwidth: "635px" // Reused imgwidth from the previous benefits array
+  },
+  {
+      key: 6,
+      heading: "Seamless Integration",
+      desc: "Integrate with ERP systems to eliminate manual entry and ensure smooth data flow across functions.",
+      img: b1, // Reused image for consistency
+      width: "79%", // Reused width for consistency
+      imgwidth: "356px" // Reused imgwidth for consistency
+  },
+  {
+      key: 7,
+      heading: "Enhanced User and Store Management",
+      desc: "Track store performance and employee roles efficiently with real-time insights to improve customer service.",
+      img: b2, // Reused image for consistency
+      width: "86%", // Reused width for consistency
+      imgwidth: "315px" // Reused imgwidth for consistency
+  }
+];
 
 
 
@@ -199,8 +193,8 @@ export default function UserAndInventry() {
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div style={{ width: "33%" }}>
                         <div className={`${style.section1Heading} font4`}>
-                            <span style={{ color: "#012060" }}>DINNING</span>
-                            <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> (POS)</span>
+                            <span style={{ color: "#012060" }}>USER STORE &</span>
+                            <span style={{ color: "#01B0F1" ,textAlign : "center" }} className="blueTextGlobalClass"> INVENTORY</span>
                         </div>
                     </div>
 
@@ -292,7 +286,8 @@ export default function UserAndInventry() {
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                                The <strong className="font2">Dining (POS)</strong>  module of EICE Rise ERP is designed to revolutionize the food and beverage services in your hospitality establishment. It offers a robust, user-friendly Point of Sale (POS) system tailored for <strong className="font2" >Restaurants, Cafes, Bars, and Banquet services</strong> . Whether you are managing a <strong className="font2">single restaurant or multiple dining outlets</strong> , this module provides a seamless, integrated experience that enhances operational efficiency and customer satisfaction
+                            The User and Store Inventory Management Portal simplifies the management of users who place requests to stores for issuing raw materials, store operator supplies the material as per user request across locations. It enhances visibility, automates tracking, and optimizes performance, helping businesses reduce costs and improve efficiency.
+
                             </div>
 
                         </div>

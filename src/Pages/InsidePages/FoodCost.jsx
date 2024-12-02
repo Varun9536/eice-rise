@@ -47,95 +47,139 @@ export default function FoodCost() {
 
   const features = [
     {
-      key: 1,
-      heading: "Customized Packages and Pricing",
-      desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-      img: ufi, // Image from the previous array
-      width: "64px", // Width from the previous array
+        key: 1,
+        heading: "Real-Time Cost Tracking",
+        desc: "Monitor the cost of ingredients, resources, and overhead in real time, ensuring that all food and beverage transactions, from procurement to sale, are tracked and analyzed for accurate cost control.",
+        img: ufi, // Placeholder based on your original provided array
+        width: "64px",
     },
     {
-      key: 2,
-      heading: "Digital Contracts and Invoicing",
-      desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-      img: rtmm, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 2,
+        heading: "Recipe Costing",
+        desc: "Track detailed recipes, including ingredient quantities, preparation methods, and associated costs. The system automatically calculates the cost per dish or drink, helping businesses make accurate pricing decisions.",
+        img: rtmm, // Placeholder based on your original provided array
+        width: "65px",
     },
     {
-      key: 3,
-      heading: "Integrated Resource Management",
-      desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-      img: oc, // Image from the previous array
-      width: "54px", // Width from the previous array
+        key: 3,
+        heading: "Menu Engineering",
+        desc: "Analyze the profitability of menu items by evaluating cost versus price. This helps identify high-cost or low-margin items and suggests ways to adjust pricing, optimize menu offerings, and implement portion control to boost profitability.",
+        img: oc, // Placeholder based on your original provided array
+        width: "54px",
     },
     {
-      key: 4,
-      heading: "Automated Billing System",
-      desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-      img: tm, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 4,
+        heading: "Supplier Management & Purchase Orders",
+        desc: "Monitor supplier prices and purchase orders to ensure the best deals on ingredients. The system helps compare supplier prices, manage inventory efficiently, and negotiate better prices to reduce the cost of goods sold (COGS).",
+        img: tm, // Placeholder based on your original provided array
+        width: "65px",
     },
     {
-      key: 5,
-      heading: "Comprehensive Reports",
-      desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-      img: ips, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 5,
+        heading: "COGS Calculation",
+        desc: "Track and calculate the cost of goods sold on a daily, weekly, or monthly basis. This feature provides insights into the total cost of ingredients used and evaluates the profitability of each food and beverage sale.",
+        img: ips, // Placeholder based on your original provided array
+        width: "65px",
     },
     {
-      key: 6,
-      heading: "Client Portal Access",
-      desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-      img: it, // Image from the previous array
-      width: "63px", // Width from the previous array
+        key: 6,
+        heading: "Waste and Loss Management",
+        desc: "Identify and reduce food and beverage wastage, whether caused by over-portioning, spoilage, or incorrect inventory practices. This feature helps minimize loss and optimize resource utilization.",
+        img: it, // Placeholder based on your original provided array
+        width: "63px",
+    },
+    {
+        key: 7,
+        heading: "Dynamic Pricing and Cost Adjustments",
+        desc: "Adjust pricing strategies based on demand fluctuations, seasonality, or special events. The system enables businesses to set flexible pricing options for peak periods, offering promotions or discounts while maintaining profitability.",
+        img: kds, // Placeholder based on your original provided array
+        width: "70px",
+    },
+    {
+        key: 8,
+        heading: "Inventory Management",
+        desc: "Efficiently manage inventory levels to avoid overstocking or stockouts. This system integrates inventory and purchasing to ensure stock availability, reduce waste, and maintain optimal ingredient levels.",
+        img: plp, // Placeholder based on your original provided array
+        width: "65px",
+    },
+    {
+        key: 9,
+        heading: "Sales Performance Insights",
+        desc: "Analyze the sales performance of menu items and identify top-performing dishes and beverages. Use these insights to adjust menu offerings and match customer preferences.",
+        img: rtsr, // Placeholder based on your original provided array
+        width: "60px",
+    },
+    {
+        key: 10,
+        heading: "Financial Reporting and Analytics",
+        desc: "Generate detailed financial reports on F&B costs, profit margins, and pricing strategies. These reports provide essential data to help businesses make informed decisions and improve operational efficiency.",
+        img: ufi, // Reuse image identifier from provided array
+        width: "64px",
+    },
+    {
+        key: 11,
+        heading: "Budgeting and Forecasting",
+        desc: "Create budgets and forecast future F&B costs using historical data and trends. This feature allows businesses to plan for high-demand periods and optimize menu pricing.",
+        img: rtmm, // Reuse image identifier from provided array
+        width: "65px",
+    },
+    {
+        key: 12,
+        heading: "Nutritional and Dietary Costing",
+        desc: "Track and cost menu items based on their nutritional value, catering to health-conscious guests or dietary-specific needs. The system helps optimize the health and wellness aspects of the menu while ensuring accurate costing.",
+        img: oc, // Reuse image identifier from provided array
+        width: "54px",
     }
-  ];
+];
 
 
 
 
-  const benefits = [
-    {
+
+
+const benefits = [
+  {
       key: 1,
-      heading: "Enhanced Client Experience",
-      desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: b1, // Reused or placeholder image
+      heading: "Profitability Optimization",
+      desc: "Gain insights into ingredient costs, portion sizes, and menu profitability to adjust pricing, eliminate waste, and improve profit margins.",
+      img: b1, // Placeholder or reused image
       width: "79%",
       imgwidth: "356px"
-    },
-    {
+  },
+  {
       key: 2,
-      heading: "Improved Efficiency",
-      desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: b2, // Reused or placeholder image
+      heading: "Cost Control",
+      desc: "Track F&B expenses in real-time from procurement to sale, reducing unexpected costs and ensuring better financial control.",
+      img: b2, // Placeholder or reused image
       width: "86%",
       imgwidth: "315px"
-    },
-    {
+  },
+  {
       key: 3,
-      heading: "Revenue Optimization",
-      desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: b3, // Reused or placeholder image
+      heading: "Efficient Menu Management",
+      desc: "Optimize menu items based on profitability, removing low-margin dishes and adjusting portions to meet customer demand while ensuring profitability.",
+      img: b3, // Placeholder or reused image
       width: "75%",
       imgwidth: "410px"
-    },
-    {
+  },
+  {
       key: 4,
-      heading: "Centralized Management",
-      desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
-      img: b4, // Reused or placeholder image
+      heading: "Enhanced Supplier Negotiation",
+      desc: "Track supplier prices and evaluate cost-effectiveness to negotiate better terms and reduce ingredient costs.",
+      img: b4, // Placeholder or reused image
       width: "86%",
       imgwidth: "642px"
-    },
-    {
+  },
+  {
       key: 5,
-      heading: "Better Resource Utilization",
-      desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: b5, // Reused or placeholder image
+      heading: "Waste Reduction",
+      desc: "Identify food wastage trends and implement better inventory practices to reduce spoilage, prevent over/under-preparation, and boost profits.",
+      img: b5, // Placeholder or reused image
       width: "88%",
       imgwidth: "635px"
-    },
+  }
+];
 
-  ];
 
 
 
@@ -180,8 +224,8 @@ export default function FoodCost() {
         <div className={`${style.section1} insidePageUpperSection`}>
           <div style={{ width: "33%" }}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>BANQUET &</span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BILLING</span>
+              <span style={{ color: "#012060" }}>FOOD & BEVERAGE </span>
+              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass" >COST ANALYSIS</span>
             </div>
           </div>
 
@@ -273,7 +317,7 @@ export default function FoodCost() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                EICE Rise ERP’s Banquet & Billing module is designed to simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties. The module offers comprehensive tools for Booking, Scheduling, and Billing, enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures accurate resource allocation, efficient billing, and enhanced customer satisfaction.
+              The Food & Beverage (F&B) Cost Analysis module in EICE Rise ERP helps hospitality businesses monitor and optimize F&B costs. It offers real-time tracking, cost analysis, and strategic insights to improve efficiency, reduce wastage, and enhance profitability.
 
               </div>
 

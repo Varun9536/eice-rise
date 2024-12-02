@@ -43,119 +43,193 @@ export default function PurchaseAndVendor() {
 
 
 
+    // const features = [
+    //     {
+    //         key: 1,
+    //         heading: "User-Friendly Interface",
+    //         desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
+    //         img: ufi,
+    //         width: "64px",
+    //     },
+    //     {
+    //         key: 2,
+    //         heading: "Real-Time Menu Management",
+    //         desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
+    //         img: rtmm,
+    //         width: "65px",
+    //     },
+    //     {
+    //         key: 3,
+    //         heading: "Order Customization",
+    //         desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
+    //         img: oc,
+    //         width: "54px",
+    //     },
+    //     {
+    //         key: 4,
+    //         heading: "Table Management",
+    //         desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
+    //         img: tm,
+    //         width: "65px",
+    //     },
+    //     {
+    //         key: 5,
+    //         heading: "Integrated Payment Solutions",
+    //         desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
+    //         img: ips,
+    //         width: "65px",
+    //     },
+    //     {
+    //         key: 6,
+    //         heading: "Inventory Tracking",
+    //         desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
+    //         img: it,
+    //         width: "63px",
+    //     },
+    //     {
+    //         key: 7,
+    //         heading: "Kitchen Display System (KDS) Integration",
+    //         desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
+    //         img: kds,
+    //         width: "70px",
+    //     },
+    //     {
+    //         key: 8,
+    //         heading: "Promotions and Loyalty Programs",
+    //         desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
+    //         img: plp,
+    //         width: "65px",
+    //     },
+    //     {
+    //         key: 9,
+    //         heading: "Real-Time Sales Reporting",
+    //         desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
+    //         img: rtsr,
+    //         width: "60px",
+    //     }
+    // ];
+
+
     const features = [
-        {
-            key: 1,
-            heading: "User-Friendly Interface",
-            desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
-            img: ufi,
-            width: "64px",
-        },
-        {
-            key: 2,
-            heading: "Real-Time Menu Management",
-            desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
-            img: rtmm,
-            width: "65px",
-        },
-        {
-            key: 3,
-            heading: "Order Customization",
-            desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
-            img: oc,
-            width: "54px",
-        },
-        {
-            key: 4,
-            heading: "Table Management",
-            desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
-            img: tm,
-            width: "65px",
-        },
-        {
-            key: 5,
-            heading: "Integrated Payment Solutions",
-            desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
-            img: ips,
-            width: "65px",
-        },
-        {
-            key: 6,
-            heading: "Inventory Tracking",
-            desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
-            img: it,
-            width: "63px",
-        },
-        {
-            key: 7,
-            heading: "Kitchen Display System (KDS) Integration",
-            desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
-            img: kds,
-            width: "70px",
-        },
-        {
-            key: 8,
-            heading: "Promotions and Loyalty Programs",
-            desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
-            img: plp,
-            width: "65px",
-        },
-        {
-            key: 9,
-            heading: "Real-Time Sales Reporting",
-            desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
-            img: rtsr,
-            width: "60px",
-        }
-    ];
+      {
+          key: 1,
+          heading: "Vendor Management",
+          desc: "Maintain a centralized database with detailed vendor profiles, including contact information, product offerings, and contract terms, helping businesses efficiently track and manage supplier relationships.",
+          img: ufi, // Image from the previous feature array
+          width: "64px" // Width from the previous feature array
+      },
+      {
+          key: 2,
+          heading: "RFP/RFQ Management",
+          desc: "Easily create, send, and manage Requests for Proposals (RFPs) and Quotations (RFQs), ensuring businesses receive competitive bids from multiple vendors, simplifying the procurement process.",
+          img: rtmm, // Image from the previous feature array
+          width: "65px" // Width from the previous feature array
+      },
+      {
+          key: 3,
+          heading: "Automated Quotation Comparison",
+          desc: "Automatically compare vendor quotations based on price, delivery, and quality, helping businesses make data-driven procurement decisions quickly.",
+          img: oc, // Image from the previous feature array
+          width: "54px" // Width from the previous feature array
+      },
+      {
+          key: 4,
+          heading: "Order Management",
+          desc: "Track and manage purchase orders from creation to fulfillment, with integration to inventory and warehouse management for real-time stock level and delivery updates.",
+          img: tm, // Image from the previous feature array
+          width: "65px" // Width from the previous feature array
+      },
+      {
+          key: 5,
+          heading: "Vendor Payment Tracking",
+          desc: "Monitor vendor payments, including invoices and due dates, ensuring smooth transactions with transparent payment status for both businesses and vendors.",
+          img: ips, // Image from the previous feature array
+          width: "65px" // Width from the previous feature array
+      },
+      {
+          key: 6,
+          heading: "Purchase Order Approvals",
+          desc: "Enable multi-level approval workflows for purchase orders to ensure alignment with internal budgets and procurement policies before sending to vendors.",
+          img: it, // Image from the previous feature array
+          width: "63px" // Width from the previous feature array
+      },
+      {
+          key: 7,
+          heading: "Supplier Performance Monitoring",
+          desc: "Evaluate vendor performance through comprehensive reports on delivery, product quality, and compliance, helping businesses strengthen supplier relationships.",
+          img: ufi, // Image reused for consistency
+          width: "64px" // Reused width for consistency
+      },
+      {
+          key: 8,
+          heading: "Document Management",
+          desc: "Securely store and access procurement-related documents like contracts, invoices, and agreements in a centralized repository for easy sharing with vendors.",
+          img: rtmm, // Reused image for consistency
+          width: "65px" // Reused width for consistency
+      },
+      {
+          key: 9,
+          heading: "Purchase Forecasting and Budgeting",
+          desc: "Forecast purchasing needs based on historical data and trends, set procurement budgets, and track spending to ensure financial control.",
+          img: oc, // Reused image for consistency
+          width: "54px" // Reused width for consistency
+      }
+  ];
+  
 
 
 
+  const benefits = [
+    {
+        key: 1,
+        heading: "Efficient Vendor Management",
+        desc: "Centralized vendor profiles allow businesses to maintain organized and up-to-date records, making it easier to track relationships and performance over time.",
+        img: b1, // Reused or placeholder image
+        width: "79%", // Reused from previous benefit array
+        imgwidth: "356px" // Reused from previous benefit array
+    },
+    {
+        key: 2,
+        heading: "Time and Cost Savings",
+        desc: "Streamlining the RFP and RFQ processes reduces the time spent on sourcing and vendor selection, allowing businesses to make quicker procurement decisions and secure better prices.",
+        img: b2, // Reused or placeholder image
+        width: "86%", // Reused from previous benefit array
+        imgwidth: "315px" // Reused from previous benefit array
+    },
+    {
+        key: 3,
+        heading: "Transparency and Accountability",
+        desc: "Vendors can easily track payment statuses and purchase orders, reducing disputes and fostering trust between businesses and suppliers.",
+        img: b3, // Reused or placeholder image
+        width: "75%", // Reused from previous benefit array
+        imgwidth: "410px" // Reused from previous benefit array
+    },
+    {
+        key: 4,
+        heading: "Improved Supplier Relationships",
+        desc: "By evaluating supplier performance and maintaining clear, direct communication through the portal, businesses can build stronger, more collaborative partnerships with vendors.",
+        img: b4, // Reused or placeholder image
+        width: "86%", // Reused from previous benefit array
+        imgwidth: "642px" // Reused from previous benefit array
+    },
+    {
+        key: 5,
+        heading: "Better Financial Control",
+        desc: "Integration with finance modules ensures that payment terms, budgets, and spending are tracked efficiently, enabling businesses to stay within budget and manage cash flow effectively.",
+        img: b5, // Reused or placeholder image
+        width: "88%", // Reused from previous benefit array
+        imgwidth: "635px" // Reused from previous benefit array
+    },
+    {
+        key: 6,
+        heading: "Enhanced Reporting and Insights",
+        desc: "Comprehensive reports and analytics provide businesses with insights into purchasing trends, vendor performance, and cost-saving opportunities, aiding strategic procurement decisions.",
+        img: b3, // Reused or placeholder image
+        width: "75%", // Reused from previous benefit array
+        imgwidth: "410px" // Reused from previous benefit array
+    }
+];
 
-    const benefits = [
-        {
-            key: 1,
-            heading: "Enhanced Customer Satisfaction",
-            desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
-            img: b1,
-            width: "79%",
-            imgwidth: "590px"
-        },
-        {
-            key: 2,
-            heading: "Operational Efficiency",
-            desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
-            img: b2,
-            width: "86%",
-            imgwidth: "520px"
-        },
-        {
-            key: 3,
-            heading: "Personalized Dining Experience",
-            desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
-            img: b3,
-            width: "75%",
-            imgwidth: "555px"
-        },
-        {
-            key: 4,
-            heading: "Optimized Resource Utilization",
-            desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
-            img: b4,
-            width: "86%",
-            imgwidth: "603px"
-        },
-
-        {
-            key: 5,
-            heading: "Data-Driven Decision Making",
-            desc: "Real-time sales reporting and analytics provide valuable insights into customer preferences, top-selling items, and daily performance, enabling data-driven business decisions",
-            img: b5,
-            width: "88%",
-            imgwidth: "635px"
-
-        }
-    ];
 
 
 
@@ -199,8 +273,8 @@ export default function PurchaseAndVendor() {
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div style={{ width: "33%" }}>
                         <div className={`${style.section1Heading} font4`}>
-                            <span style={{ color: "#012060" }}>DINNING</span>
-                            <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> (POS)</span>
+                            <span style={{ color: "#012060" }}>PURCHASE & VENDOR</span>
+                            <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> PORTAL</span>
                         </div>
                     </div>
 
@@ -292,7 +366,8 @@ export default function PurchaseAndVendor() {
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                                The <strong className="font2">Dining (POS)</strong>  module of EICE Rise ERP is designed to revolutionize the food and beverage services in your hospitality establishment. It offers a robust, user-friendly Point of Sale (POS) system tailored for <strong className="font2" >Restaurants, Cafes, Bars, and Banquet services</strong> . Whether you are managing a <strong className="font2">single restaurant or multiple dining outlets</strong> , this module provides a seamless, integrated experience that enhances operational efficiency and customer satisfaction
+                            EICE Rise ERP’s Purchase & Vendor Portal streamlines procurement by enhancing communication between businesses and suppliers. It simplifies the RFP and RFQ processes, allows vendors to track payment statuses, and ensures transparency and efficiency in transactions, optimizing procurement operations and supplier management.
+
                             </div>
 
                         </div>

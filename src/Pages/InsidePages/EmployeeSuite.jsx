@@ -48,95 +48,126 @@ export default function EmployeeSuite() {
 
   const features = [
     {
-      key: 1,
-      heading: "Customized Packages and Pricing",
-      desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-      img: ufi, // Image from the previous array
-      width: "64px", // Width from the previous array
+        key: 1,
+        heading: "Personal Information Management",
+        desc: "Employees can update their contact details, emergency contacts, and tax information, ensuring accurate and up-to-date records.",
+        img: ufi, // Replace with the appropriate image from your existing feature array
+        width: "64px", // Adjust to match the previous feature array
     },
     {
-      key: 2,
-      heading: "Digital Contracts and Invoicing",
-      desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-      img: rtmm, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 2,
+        heading: "Payroll and Compensation",
+        desc: "Employees can access payslips, track salary history, and view deductions and bonuses, providing full transparency on compensation.",
+        img: rtmm, // Replace with the appropriate image from your existing feature array
+        width: "65px", // Adjust to match the previous feature array
     },
     {
-      key: 3,
-      heading: "Integrated Resource Management",
-      desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-      img: oc, // Image from the previous array
-      width: "54px", // Width from the previous array
+        key: 3,
+        heading: "Leave and Attendance Management",
+        desc: "Employees can submit leave requests, track attendance, and view leave balances, making time-off management easier.",
+        img: oc, // Replace with the appropriate image from your existing feature array
+        width: "54px", // Adjust to match the previous feature array
     },
     {
-      key: 4,
-      heading: "Automated Billing System",
-      desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-      img: tm, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 4,
+        heading: "Training and Development",
+        desc: "Employees can explore training programs, track progress, and enroll in courses to enhance their professional skills.",
+        img: tm, // Replace with the appropriate image from your existing feature array
+        width: "65px", // Adjust to match the previous feature array
     },
     {
-      key: 5,
-      heading: "Comprehensive Reports",
-      desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-      img: ips, // Image from the previous array
-      width: "65px", // Width from the previous array
+        key: 5,
+        heading: "Document Access",
+        desc: "Employees can access important documents such as policies, contracts, benefits, and company announcements, ensuring quick access to essential information.",
+        img: ips, // Replace with the appropriate image from your existing feature array
+        width: "65px", // Adjust to match the previous feature array
     },
     {
-      key: 6,
-      heading: "Client Portal Access",
-      desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-      img: it, // Image from the previous array
-      width: "63px", // Width from the previous array
+        key: 6,
+        heading: "Company Announcements and News",
+        desc: "Employees stay updated on company news, policy changes, and upcoming events, fostering better communication within the organization.",
+        img: it, // Replace with the appropriate image from your existing feature array
+        width: "63px", // Adjust to match the previous feature array
+    },
+    {
+        key: 7,
+        heading: "Performance Management",
+        desc: "Employees can track their goals, review feedback, and collaborate with managers to set development plans.",
+        img: ufi, // Replace with the appropriate image from your existing feature array
+        width: "64px", // Adjust to match the previous feature array
+    },
+    {
+        key: 8,
+        heading: "Benefits Management",
+        desc: "Employees can manage their benefits like health insurance, retirement plans, and wellness programs, ensuring they stay informed of all available options.",
+        img: rtmm, // Replace with the appropriate image from your existing feature array
+        width: "65px", // Adjust to match the previous feature array
+    },
+    {
+        key: 9,
+        heading: "Support and Requests",
+        desc: "Employees can submit HR inquiries, request support, or raise issues through the portal, streamlining communication and issue resolution.",
+        img: oc, // Replace with the appropriate image from your existing feature array
+        width: "54px", // Adjust to match the previous feature array
     }
-  ];
+];
 
 
 
 
-  const benefits = [
-    {
+
+
+const benefits = [
+  {
       key: 1,
-      heading: "Enhanced Client Experience",
-      desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: b1, // Reused or placeholder image
-      width: "79%",
-      imgwidth: "356px"
-    },
-    {
-      key: 2,
       heading: "Improved Efficiency",
-      desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: b2, // Reused or placeholder image
-      width: "86%",
-      imgwidth: "315px"
-    },
-    {
+      desc: "Reduces administrative work by centralizing HR services and allowing employees to manage their own data.",
+      img: b1, // Updated with new image reference
+      width: "79%", // Added width
+      imgwidth: "356px", // Added imgwidth
+  },
+  {
+      key: 2,
+      heading: "Enhanced Communication",
+      desc: "Ensures clear communication about company policies, events, and updates.",
+      img: b2, // Updated with new image reference
+      width: "86%", // Added width
+      imgwidth: "315px", // Added imgwidth
+  },
+  {
       key: 3,
-      heading: "Revenue Optimization",
-      desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: b3, // Reused or placeholder image
-      width: "75%",
-      imgwidth: "410px"
-    },
-    {
+      heading: "Employee Empowerment",
+      desc: "Increases engagement by giving employees control over their personal and professional information.",
+      img: b3, // Updated with new image reference
+      width: "75%", // Added width
+      imgwidth: "410px", // Added imgwidth
+  },
+  {
       key: 4,
-      heading: "Centralized Management",
-      desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
-      img: b4, // Reused or placeholder image
-      width: "86%",
-      imgwidth: "642px"
-    },
-    {
+      heading: "Transparency and Trust",
+      desc: "Promotes trust by providing full visibility into payroll, benefits, and performance.",
+      img: b4, // Updated with new image reference
+      width: "86%", // Added width
+      imgwidth: "642px", // Added imgwidth
+  },
+  {
       key: 5,
-      heading: "Better Resource Utilization",
-      desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: b5, // Reused or placeholder image
-      width: "88%",
-      imgwidth: "635px"
-    },
+      heading: "Time Savings",
+      desc: "Automates HR processes, freeing up time for HR teams to focus on strategic tasks.",
+      img: b5, // Updated with new image reference
+      width: "88%", // Added width
+      imgwidth: "635px", // Added imgwidth
+  },
+  {
+      key: 6,
+      heading: "Compliance and Security",
+      desc: "Ensures secure storage and compliance with data privacy regulations, protecting sensitive employee information.",
+      img: b1, // Reused first image for consistency
+      width: "79%", // Reused width from first item
+      imgwidth: "356px", // Reused imgwidth from first item
+  }
+];
 
-  ];
 
 
 
@@ -181,8 +212,8 @@ export default function EmployeeSuite() {
         <div className={`${style.section1} insidePageUpperSection`}>
           <div style={{ width: "33%" }}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>BANQUET &</span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BILLING</span>
+              <span style={{ color: "#012060" }}>EMPLOYEE </span>
+              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass">SUITE</span>
             </div>
           </div>
 
@@ -274,7 +305,7 @@ export default function EmployeeSuite() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                EICE Rise ERP’s Banquet & Billing module is designed to simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties. The module offers comprehensive tools for Booking, Scheduling, and Billing, enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures accurate resource allocation, efficient billing, and enhanced customer satisfaction.
+              The Employee Portal provides centralized access to work-related information, resources, and services. It streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience.
 
               </div>
 
