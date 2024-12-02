@@ -1,0 +1,318 @@
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+
+}
+
+.section1ImgBox {
+    background-image: url("../../../assets/insidePages/pos/posPage/H2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60%;
+    height: 500px;
+    position: relative;
+    left: 86px;
+
+}
+
+@media (min-width : 1600px)
+{
+    .section1ImgBox {
+        
+        left: unset;
+    
+    }
+}
+
+
+.section1Heading {
+    font-size: 40px;
+    font-weight: 700;
+    /* padding-left: 180px; */
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(244, 244, 244));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    padding: 20px 0px;
+    /* margin-bottom: 12rem; */
+
+}
+
+.section2Icon {
+
+    width: 66px;
+}
+
+.section2IconAndName {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.iconName {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+
+.section3 {
+
+    width: 100%;
+    /* max-width: 1600px; */
+    margin: 0px auto;
+    margin-bottom: 52px;
+}
+
+
+
+
+.blueBoxSetion3 {
+    background-image: url("../../../assets/insidePages/room/roomPage/overview.webp");
+    /* height: 700px; */
+    /* height: 970px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* position: relative; */
+
+    display: flex;
+    /* Centering horizontally can also use flexbox */
+    justify-content: center;
+
+
+    flex-direction: column;
+    padding: 30px 0px;
+
+}
+
+
+
+
+.laptopImgSection3 {
+
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    top: -140px; */
+
+
+
+}
+
+.laptopImgBox {
+    width: 28em;
+    margin-bottom: 20px;
+}
+
+
+
+.section3Para {
+
+    font-size: 26px;
+    color: white;
+    /* position: absolute;
+    bottom: 28px; */
+    text-align: center;
+}
+
+.paragraph {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 90px;
+
+}
+
+.section3Spiral {
+    position: absolute;
+    bottom: -398px;
+    right: -477px;
+    width: 55%;
+    z-index: -1;
+    overflow-x: hidden;
+
+
+
+
+}
+
+
+.section4 {
+    margin-bottom: 22px;
+
+
+
+}
+
+.section4heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+
+.featureContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 48px;
+    row-gap: 70px;
+
+}
+
+
+.featureInnerBox {
+    width: 350px;
+    /* height: 200px; */
+}
+
+
+.headingAndIconFeatures {
+    display: flex;
+    /* margin-bottom: 25px; */
+    height: 85px;
+    align-items: center;
+}
+
+
+
+
+.featureHeading {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 15px;
+
+
+}
+
+.demoButton {
+
+    background-color: rgba(1, 176, 241, 1);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    color: white;
+    width: 25%;
+    margin-top: 30px;
+
+
+}
+
+.demoButton:hover {
+    background-color: rgba(20, 176, 241, 1);
+}
+
+.demoArrowButton {
+    padding-top: 3.5px;
+}
+
+
+.section5 {
+    margin-bottom: 3rem;
+    padding: 30px 0px;
+    margin-top: 62px;
+
+
+}
+
+
+.section5heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.benifitContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 95px;
+    row-gap: 50px;
+
+}
+
+.innerBenifitBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+
+}
+
+.innerBenifitBox2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefitImages {
+    width: 400px;
+}
+
+.benefitHeadingAndDesc {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 30px; */
+}
+
+.innerHeadingBenifit {
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+.innerDescBenifit {
+    font-size: 22px;
+    margin-top: 20px;
+
+
+}
+
+.FAQsection {
+    margin-top: 58px;
+    padding: 0px 74px;
+    margin-bottom: 70px;
+}
+
+.FAQHeading {
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
+.FAQContainer {
+    margin-top: 2rem;
+}
