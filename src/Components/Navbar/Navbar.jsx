@@ -55,16 +55,16 @@ export default function Navbar() {
         },
 
 
-        { label: 'Pricing', link: '', dropdown: [
+        { label: 'Pricing', link: '/', dropdown: [
             {productName: "Room Booking", path: "room-booking" }
         ] },
 
 
-        { label: 'About Us', link: 'about-us', dropdown: ['Our Story', 'Team', 'Careers'] },
+        { label: 'About Us', link: '/', dropdown: ['Our Story', 'Team', 'Careers'] },
 
 
 
-        { label: 'Blogs', link: 'blogs', dropdown: ['Tech', 'Lifestyle', 'Updates'] },
+        { label: 'Blogs', link: '/', dropdown: ['Tech', 'Lifestyle', 'Updates'] },
     ];
 
 
@@ -83,12 +83,8 @@ export default function Navbar() {
                 <div className={`${styles.navigationIcon} font1`}>
                     {navItems.map((item) => (
 
-                        <div
-                            key={item.label}
-                            style={{ display: 'flex', position: 'relative' }}
-                            onMouseEnter={() => handleOnMouseEnter(item.label)}
-                            onMouseLeave={() => handleOnMouseLeave(item.label)}
-                        >
+                        <div className={`${styles.navigationButton}`} key={item.label}  onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
+                            
                             <Link to={item.link} className="linkClass">
 
                                 <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
@@ -103,7 +99,6 @@ export default function Navbar() {
                                 </div>
                             )}
 
-                            {/* Render Dropdown Menu */}
                             {item.dropdown && hoverStates[item.label] && (
                                 <div className={styles.dropdownMenu}>
                                     {item.dropdown.map((dropdownItem, index) => (
@@ -121,8 +116,6 @@ export default function Navbar() {
                         </div>
                     ))}
                 </div>
-
-
 
             </div>
         </div>

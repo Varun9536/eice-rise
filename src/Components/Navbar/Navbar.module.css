@@ -32,6 +32,18 @@
     margin-left: 12rem;
 }
 
+
+
+.navigationButton
+{
+    display: flex;
+    position: relative;
+    column-gap: 8px;
+}
+
+
+
+
 .contactUsBtn {
 
     padding: 10px;

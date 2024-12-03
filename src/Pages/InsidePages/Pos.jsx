@@ -164,27 +164,27 @@ export default function Pos() {
 
 
 
-   
+
 
 
     const query = [
         {
-          question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-          answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+            question: "Q : How does the Dining (POS) module handle split bills or group payments?",
+            answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
         },
         {
-          question: "Q : Can the module manage menu customization and promotions in real-time?",
-          answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+            question: "Q : Can the module manage menu customization and promotions in real-time?",
+            answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
         },
         {
-          question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-          answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+            question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
+            answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
         },
         {
-          question:  "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-          answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+            question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
+            answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
         }
-      ];
+    ];
 
 
 
@@ -370,46 +370,46 @@ export default function Pos() {
 
 
             <section style={{ background: "#f5f5f5" }} >
-        <div className={`${style.section5} font4 globalSectionSize`}>
+                <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-          <div className={`${style.section5heading} font4`}>Benefits</div>
-          {benefits.map((item, index) =>
-          (
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
 
-            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-            </div>) : (<div className='GlobalBenefitBox2'>
+                            <div style={{ width: "25%" }}>
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
 
 
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
+                        </div>) : (<div className='GlobalBenefitBox2'>
 
 
-            </div>)
+                            <div style={{ width: "25%" }}>
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
 
 
-          ))}
+                        </div>)
 
-        </div>
-      </section>
+
+                    ))}
+
+                </div>
+            </section>
 
 
 
