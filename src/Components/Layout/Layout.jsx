@@ -8,12 +8,12 @@ import { Outlet } from 'react-router-dom';
 
 export default function Layout() {
 
-    const [isPhone, setIsPhone] = useState(window.innerWidth <= 1000);
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 1120);
 
 
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 1000); // Update based on screen size
+            setIsPhone(window.innerWidth <= 1120); // Update based on screen size
         };
         window.addEventListener('resize', handleResize);
         return () => {

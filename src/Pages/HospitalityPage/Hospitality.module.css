@@ -1,5 +1,5 @@
 .section1 {
-    background-image: url("../../assets/Hospitality/H.webp");
+    background-image: url("../../assets/Hospitality/h4.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,7 +386,7 @@
 
 
 
-@media (max-width :1000px) {
+@media (max-width :1120px) {
 
 
     .section1 {
@@ -407,7 +407,7 @@
 @media (min-width: 1700px) {
     .section1 {
 
-        max-width: 1900px;
+        max-width: 1906px;
         width: 100%;
         height: 1000px;
 
