@@ -4,31 +4,18 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 180px;
+    /* padding-left: 12rem; */
     max-width: 1600px;
     margin: 0px auto;
     width: 100%;
 }
 
-.footerLaptopImg
-{
+.footerLaptopImg {
     width: 39%;
 
 }
 
-@media (min-width : 1600px)
-{
-    .footerMainBoxUpper {
-        max-width: 1500px;
-        justify-content: unset;
-        
-    }
 
-    .footerLaptopImg
-{
-    width: 36%;
-
-}
-}
 
 
 .demoButton {
@@ -62,7 +49,7 @@
     display: flex;
     padding: 0px 68px;
     justify-content: space-between;
-   
+
 }
 
 
@@ -73,7 +60,7 @@
     background-repeat: no-repeat;
     height: 300px;
     max-width: 100%;
-   
+
 
     margin: 0px auto;
     margin-top: 5rem;
@@ -119,4 +106,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 58px;
+}
+
+
+
+@media (min-width : 1601px) {
+    .footerMainBoxUpper {
+        max-width: 1150px;
+
+        padding-left: unset;
+        /* width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px; */
+
+    }
+
+    .footerLaptopImg {
+        width: 36%;
+
+    }
+}
+
+@media (max-width : 1490px) {
+    .footerMainBoxUpper {
+        max-width: 1100px;
+        width: 100%;
+
+        padding-left: unset;
+        /* width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px; */
+
+    }
+
+
 }
