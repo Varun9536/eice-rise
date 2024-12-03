@@ -122,49 +122,37 @@ const benefits = [
       key: 1,
       heading: "Improved Efficiency",
       desc: "Reduces administrative work by centralizing HR services and allowing employees to manage their own data.",
-      img: b1, // Updated with new image reference
-      width: "79%", // Added width
-      imgwidth: "356px", // Added imgwidth
+      img: b1, 
   },
   {
       key: 2,
       heading: "Enhanced Communication",
       desc: "Ensures clear communication about company policies, events, and updates.",
-      img: b2, // Updated with new image reference
-      width: "86%", // Added width
-      imgwidth: "315px", // Added imgwidth
+      img: b2, 
   },
   {
       key: 3,
       heading: "Employee Empowerment",
       desc: "Increases engagement by giving employees control over their personal and professional information.",
-      img: b3, // Updated with new image reference
-      width: "75%", // Added width
-      imgwidth: "410px", // Added imgwidth
+      img: b3, 
   },
   {
       key: 4,
       heading: "Transparency and Trust",
       desc: "Promotes trust by providing full visibility into payroll, benefits, and performance.",
-      img: b4, // Updated with new image reference
-      width: "86%", // Added width
-      imgwidth: "642px", // Added imgwidth
+      img: b4, 
   },
   {
       key: 5,
       heading: "Time Savings",
       desc: "Automates HR processes, freeing up time for HR teams to focus on strategic tasks.",
-      img: b5, // Updated with new image reference
-      width: "88%", // Added width
-      imgwidth: "635px", // Added imgwidth
+      img: b5, 
   },
   {
       key: 6,
       heading: "Compliance and Security",
       desc: "Ensures secure storage and compliance with data privacy regulations, protecting sensitive employee information.",
-      img: b1, // Reused first image for consistency
-      width: "79%", // Reused width from first item
-      imgwidth: "356px", // Reused imgwidth from first item
+      img: b1, 
   }
 ];
 

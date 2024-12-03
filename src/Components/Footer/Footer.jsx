@@ -17,7 +17,7 @@ export default function Footer() {
     return (
         <>
 
-            {/* <div className={`${styles.footerMainBoxUpper} `}>
+            <div className={`${styles.footerMainBoxUpper} `}>
 
                 <div style={{ width: "50%" }}>
 
@@ -38,7 +38,7 @@ export default function Footer() {
                     <img style={{ width: "100%" }} src={footer} alt="" />
                 </div>
 
-            </div> */}
+            </div>
 
 
             <div className={`${styles.footerNavigationBox}`}>

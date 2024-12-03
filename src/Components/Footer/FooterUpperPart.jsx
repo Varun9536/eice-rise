@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from "./footer.module.css"
 import { FaArrowRightLong } from "react-icons/fa6";
-import footer from "../../assets/footer/foot.webp"
+// import footer from "../../assets/footer/foot.webp"
 
-export default function FooterUpperPart() {
+export default function FooterUpperPart({ text1, text2, text3, img }) {
     return (
         <div>
             <div className={`${styles.footerMainBoxUpper} `}>
@@ -11,7 +11,11 @@ export default function FooterUpperPart() {
                 <div style={{ width: "50%" }}>
 
                     <div  >
-                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font1" style={{ color: "black", fontWeight: "600" }}> tailored to your business needs</span> </span>
+                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > "{text1} {text2}
+
+                            <span className="font1" style={{ color: "black", fontWeight: "600" }}> {text3}"</span>
+
+                        </span>
                     </div>
 
 
@@ -24,7 +28,7 @@ export default function FooterUpperPart() {
                 </div>
 
                 <div className={`${styles.footerLaptopImg}`} >
-                    <img style={{ width: "100%" }} src={footer} alt="" />
+                    <img style={{ width: "100%" }} src={img} alt="" />
                 </div>
 
             </div>

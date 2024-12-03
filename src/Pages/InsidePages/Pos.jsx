@@ -118,32 +118,28 @@ export default function Pos() {
             heading: "Enhanced Customer Satisfaction",
             desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
             img: b1,
-            width: "79%",
-            imgwidth: "578px"
+          
         },
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
             img: b2,
-            width: "86%",
-            imgwidth: "520px"
+            
         },
         {
             key: 3,
             heading: "Personalized Dining Experience",
             desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
             img: b3,
-            width: "75%",
-            imgwidth: "555px"
+           
         },
         {
             key: 4,
             heading: "Optimized Resource Utilization",
             desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
             img: b4,
-            width: "86%",
-            imgwidth: "603px"
+          
         },
 
         {
@@ -151,8 +147,7 @@ export default function Pos() {
             heading: "Data-Driven Decision Making",
             desc: "Real-time sales reporting and analytics provide valuable insights into customer preferences, top-selling items, and daily performance, enabling data-driven business decisions",
             img: b5,
-            width: "88%",
-            imgwidth: "635px"
+            
 
         }
     ];

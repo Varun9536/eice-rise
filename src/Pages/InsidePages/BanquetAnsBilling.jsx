@@ -97,41 +97,31 @@ export default function BanquetAnsBilling() {
       key: 1,
       heading: "Enhanced Client Experience",
       desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: b1, // Reused or placeholder image
-      width: "79%",
-      imgwidth: "356px"
+      img: b1, 
     },
     {
       key: 2,
       heading: "Improved Efficiency",
       desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: b2, // Reused or placeholder image
-      width: "86%",
-      imgwidth: "315px"
+      img: b2, 
     },
     {
       key: 3,
       heading: "Revenue Optimization",
       desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: b3, // Reused or placeholder image
-      width: "75%",
-      imgwidth: "410px"
+      img: b3, 
     },
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
-      img: b4, // Reused or placeholder image
-      width: "86%",
-      imgwidth: "642px"
+      img: b4,
     },
     {
       key: 5,
       heading: "Better Resource Utilization",
       desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: b5, // Reused or placeholder image
-      width: "88%",
-      imgwidth: "635px"
+      img: b5, 
     },
 
   ];

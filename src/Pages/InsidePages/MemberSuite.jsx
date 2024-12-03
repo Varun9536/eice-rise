@@ -99,49 +99,37 @@ const benefits = [
       key: 1,
       heading: "Enhanced Member Experience",
       desc: "Provide a personalized and streamlined experience for your members, improving retention and satisfaction.",
-      img: b1, // Reusing image from previous array, replace with relevant image if needed
-      width: "79%",
-      imgwidth: "590px"
+      img: b1, 
   },
   {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automate routine tasks such as renewals and notifications, reducing administrative workload.",
-      img: b2, // Reusing image from previous array, replace with relevant image if needed
-      width: "86%",
-      imgwidth: "520px"
+      img: b2, 
   },
   {
       key: 3,
       heading: "Data-Driven Insights",
       desc: "Leverage analytics to understand member preferences and make informed decisions on services and offerings.",
-      img: b3, // Reusing image from previous array, replace with relevant image if needed
-      width: "75%",
-      imgwidth: "555px"
+      img: b3, 
   },
   {
       key: 4,
       heading: "Improved Communication",
       desc: "Streamline communication with members through automated alerts, reminders, and personalized messaging, fostering stronger relationships and engagement.",
-      img: b4, // Reusing image from previous array, replace with relevant image if needed
-      width: "86%",
-      imgwidth: "603px"
+      img: b4, 
   },
   {
       key: 5,
       heading: "Increased Member Retention",
       desc: "By offering targeted services and benefits based on member data, you can increase retention and reduce churn, creating long-term loyalty.",
-      img: b5, // Reusing image from previous array, replace with relevant image if needed
-      width: "88%",
-      imgwidth: "635px"
+      img: b5, 
   },
   {
       key: 6,
       heading: "Revenue Growth",
       desc: "Enable upselling and cross-selling opportunities through tailored offers and personalized services, driving additional revenue streams from your existing member base.",
-      img: b1, // Reusing image from previous array, replace with relevant image if needed
-      width: "79%",
-      imgwidth: "590px"
+      img: b1, 
   }
 ];
 

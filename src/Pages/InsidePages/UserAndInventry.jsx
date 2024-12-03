@@ -43,113 +43,100 @@ export default function UserAndInventry() {
 
 
 
-  const features = [
-    {
-        key: 1,
-        heading: "Centralized User Management",
-        desc: "Streamline user access store-wise with customizable roles and permissions.",
-        img: ufi, // Reused image from the previous features array
-        width: "64px" // Reused width from the previous features array
-    },
-    {
-        key: 2,
-        heading: "Efficient Store Management",
-        desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
-        img: rtmm, // Reused image from the previous features array
-        width: "65px" // Reused width from the previous features array
-    },
-    {
-        key: 3,
-        heading: "Real-Time Inventory Control",
-        desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
-        img: oc, // Reused image from the previous features array
-        width: "54px" // Reused width from the previous features array
-    },
-    {
-        key: 4,
-        heading: "Advanced Reporting and Analytics",
-        desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
-        img: tm, // Reused image from the previous features array
-        width: "65px" // Reused width from the previous features array
-    },
-    {
-        key: 5,
-        heading: "Multi-Location Support",
-        desc: "Manage multiple stores from a central platform, transfer stock between locations, and monitor regional inventory needs.",
-        img: ips, // Reused image from the previous features array
-        width: "65px" // Reused width from the previous features array
-    },
-    {
-        key: 6,
-        heading: "Seamless ERP Integration",
-        desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
-        img: it, // Reused image from the previous features array
-        width: "63px" // Reused width from the previous features array
-    }
-];
+    const features = [
+        {
+            key: 1,
+            heading: "Centralized User Management",
+            desc: "Streamline user access store-wise with customizable roles and permissions.",
+            img: ufi, // Reused image from the previous features array
+            width: "64px" // Reused width from the previous features array
+        },
+        {
+            key: 2,
+            heading: "Efficient Store Management",
+            desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
+            img: rtmm, // Reused image from the previous features array
+            width: "65px" // Reused width from the previous features array
+        },
+        {
+            key: 3,
+            heading: "Real-Time Inventory Control",
+            desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
+            img: oc, // Reused image from the previous features array
+            width: "54px" // Reused width from the previous features array
+        },
+        {
+            key: 4,
+            heading: "Advanced Reporting and Analytics",
+            desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
+            img: tm, // Reused image from the previous features array
+            width: "65px" // Reused width from the previous features array
+        },
+        {
+            key: 5,
+            heading: "Multi-Location Support",
+            desc: "Manage multiple stores from a central platform, transfer stock between locations, and monitor regional inventory needs.",
+            img: ips, // Reused image from the previous features array
+            width: "65px" // Reused width from the previous features array
+        },
+        {
+            key: 6,
+            heading: "Seamless ERP Integration",
+            desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
+            img: it, // Reused image from the previous features array
+            width: "63px" // Reused width from the previous features array
+        }
+    ];
 
 
 
 
 
-const benefits = [
-  {
-      key: 1,
-      heading: "Operational Efficiency",
-      desc: "Reduce manual errors, accelerate processes, and free up resources for strategic tasks.",
-      img: b1, // Reused image from the previous benefits array
-      width: "79%", // Reused width from the previous benefits array
-      imgwidth: "356px" // Reused imgwidth from the previous benefits array
-  },
-  {
-      key: 2,
-      heading: "Real-Time Insights",
-      desc: "Get instant visibility into inventory, store performance, and user activity to make faster decisions.",
-      img: b2, // Reused image from the previous benefits array
-      width: "86%", // Reused width from the previous benefits array
-      imgwidth: "315px" // Reused imgwidth from the previous benefits array
-  },
-  {
-      key: 3,
-      heading: "Cost Optimization",
-      desc: "Automate restocking and inventory updates to minimize costs, prevent overstocking, and boost profit margins.",
-      img: b3, // Reused image from the previous benefits array
-      width: "75%", // Reused width from the previous benefits array
-      imgwidth: "410px" // Reused imgwidth from the previous benefits array
-  },
-  {
-      key: 4,
-      heading: "Scalability",
-      desc: "Easily manage multiple locations as your business grows with customizable configurations and consistent performance.",
-      img: b4, // Reused image from the previous benefits array
-      width: "86%", // Reused width from the previous benefits array
-      imgwidth: "642px" // Reused imgwidth from the previous benefits array
-  },
-  {
-      key: 5,
-      heading: "Improved Inventory Control",
-      desc: "Accurate, automated inventory management ensures real-time stock updates, enhancing the customer experience.",
-      img: b5, // Reused image from the previous benefits array
-      width: "88%", // Reused width from the previous benefits array
-      imgwidth: "635px" // Reused imgwidth from the previous benefits array
-  },
-  {
-      key: 6,
-      heading: "Seamless Integration",
-      desc: "Integrate with ERP systems to eliminate manual entry and ensure smooth data flow across functions.",
-      img: b1, // Reused image for consistency
-      width: "79%", // Reused width for consistency
-      imgwidth: "356px" // Reused imgwidth for consistency
-  },
-  {
-      key: 7,
-      heading: "Enhanced User and Store Management",
-      desc: "Track store performance and employee roles efficiently with real-time insights to improve customer service.",
-      img: b2, // Reused image for consistency
-      width: "86%", // Reused width for consistency
-      imgwidth: "315px" // Reused imgwidth for consistency
-  }
-];
+    const benefits = [
+        {
+            key: 1,
+            heading: "Operational Efficiency",
+            desc: "Reduce manual errors, accelerate processes, and free up resources for strategic tasks.",
+            img: b1,
+        },
+        {
+            key: 2,
+            heading: "Real-Time Insights",
+            desc: "Get instant visibility into inventory, store performance, and user activity to make faster decisions.",
+            img: b2,
+        },
+        {
+            key: 3,
+            heading: "Cost Optimization",
+            desc: "Automate restocking and inventory updates to minimize costs, prevent overstocking, and boost profit margins.",
+            img: b3,
+
+        },
+        {
+            key: 4,
+            heading: "Scalability",
+            desc: "Easily manage multiple locations as your business grows with customizable configurations and consistent performance.",
+            img: b4,
+        },
+        {
+            key: 5,
+            heading: "Improved Inventory Control",
+            desc: "Accurate, automated inventory management ensures real-time stock updates, enhancing the customer experience.",
+            img: b5,
+        },
+        {
+            key: 6,
+            heading: "Seamless Integration",
+            desc: "Integrate with ERP systems to eliminate manual entry and ensure smooth data flow across functions.",
+            img: b1,
+        },
+        {
+            key: 7,
+            heading: "Enhanced User and Store Management",
+            desc: "Track store performance and employee roles efficiently with real-time insights to improve customer service.",
+            img: b2,
+        }
+    ];
 
 
 
@@ -158,27 +145,27 @@ const benefits = [
 
 
 
-   
+
 
 
     const query = [
         {
-          question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-          answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+            question: "Q : How does the Dining (POS) module handle split bills or group payments?",
+            answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
         },
         {
-          question: "Q : Can the module manage menu customization and promotions in real-time?",
-          answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+            question: "Q : Can the module manage menu customization and promotions in real-time?",
+            answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
         },
         {
-          question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-          answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+            question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
+            answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
         },
         {
-          question:  "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-          answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+            question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
+            answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
         }
-      ];
+    ];
 
 
 
@@ -194,7 +181,7 @@ const benefits = [
                     <div style={{ width: "33%" }}>
                         <div className={`${style.section1Heading} font4`}>
                             <span style={{ color: "#012060" }}>USER STORE &</span>
-                            <span style={{ color: "#01B0F1" ,textAlign : "center" }} className="blueTextGlobalClass"> INVENTORY</span>
+                            <span style={{ color: "#01B0F1", textAlign: "center" }} className="blueTextGlobalClass"> INVENTORY</span>
                         </div>
                     </div>
 
@@ -286,7 +273,7 @@ const benefits = [
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                            The User and Store Inventory Management Portal simplifies the management of users who place requests to stores for issuing raw materials, store operator supplies the material as per user request across locations. It enhances visibility, automates tracking, and optimizes performance, helping businesses reduce costs and improve efficiency.
+                                The User and Store Inventory Management Portal simplifies the management of users who place requests to stores for issuing raw materials, store operator supplies the material as per user request across locations. It enhances visibility, automates tracking, and optimizes performance, helping businesses reduce costs and improve efficiency.
 
                             </div>
 
@@ -365,46 +352,46 @@ const benefits = [
 
 
             <section style={{ background: "#f5f5f5" }} >
-        <div className={`${style.section5} font4 globalSectionSize`}>
+                <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-          <div className={`${style.section5heading} font4`}>Benefits</div>
-          {benefits.map((item, index) =>
-          (
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
 
-            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-            </div>) : (<div className='GlobalBenefitBox2'>
+                            <div style={{ width: "25%" }}>
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
 
 
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
+                        </div>) : (<div className='GlobalBenefitBox2'>
 
 
-            </div>)
+                            <div style={{ width: "25%" }}>
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
 
 
-          ))}
+                        </div>)
 
-        </div>
-      </section>
+
+                    ))}
+
+                </div>
+            </section>
 
 
 

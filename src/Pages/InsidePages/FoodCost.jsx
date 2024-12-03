@@ -142,41 +142,31 @@ const benefits = [
       key: 1,
       heading: "Profitability Optimization",
       desc: "Gain insights into ingredient costs, portion sizes, and menu profitability to adjust pricing, eliminate waste, and improve profit margins.",
-      img: b1, // Placeholder or reused image
-      width: "79%",
-      imgwidth: "356px"
+      img: b1,
   },
   {
       key: 2,
       heading: "Cost Control",
       desc: "Track F&B expenses in real-time from procurement to sale, reducing unexpected costs and ensuring better financial control.",
-      img: b2, // Placeholder or reused image
-      width: "86%",
-      imgwidth: "315px"
+      img: b2, 
   },
   {
       key: 3,
       heading: "Efficient Menu Management",
       desc: "Optimize menu items based on profitability, removing low-margin dishes and adjusting portions to meet customer demand while ensuring profitability.",
-      img: b3, // Placeholder or reused image
-      width: "75%",
-      imgwidth: "410px"
+      img: b3, 
   },
   {
       key: 4,
       heading: "Enhanced Supplier Negotiation",
       desc: "Track supplier prices and evaluate cost-effectiveness to negotiate better terms and reduce ingredient costs.",
-      img: b4, // Placeholder or reused image
-      width: "86%",
-      imgwidth: "642px"
+      img: b4, 
   },
   {
       key: 5,
       heading: "Waste Reduction",
       desc: "Identify food wastage trends and implement better inventory practices to reduce spoilage, prevent over/under-preparation, and boost profits.",
-      img: b5, // Placeholder or reused image
-      width: "88%",
-      imgwidth: "635px"
+      img: b5, 
   }
 ];
 

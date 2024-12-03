@@ -184,49 +184,37 @@ export default function PurchaseAndVendor() {
         key: 1,
         heading: "Efficient Vendor Management",
         desc: "Centralized vendor profiles allow businesses to maintain organized and up-to-date records, making it easier to track relationships and performance over time.",
-        img: b1, // Reused or placeholder image
-        width: "79%", // Reused from previous benefit array
-        imgwidth: "356px" // Reused from previous benefit array
+        img: b1, 
     },
     {
         key: 2,
         heading: "Time and Cost Savings",
         desc: "Streamlining the RFP and RFQ processes reduces the time spent on sourcing and vendor selection, allowing businesses to make quicker procurement decisions and secure better prices.",
-        img: b2, // Reused or placeholder image
-        width: "86%", // Reused from previous benefit array
-        imgwidth: "315px" // Reused from previous benefit array
+        img: b2,
     },
     {
         key: 3,
         heading: "Transparency and Accountability",
         desc: "Vendors can easily track payment statuses and purchase orders, reducing disputes and fostering trust between businesses and suppliers.",
-        img: b3, // Reused or placeholder image
-        width: "75%", // Reused from previous benefit array
-        imgwidth: "410px" // Reused from previous benefit array
+        img: b3,
     },
     {
         key: 4,
         heading: "Improved Supplier Relationships",
         desc: "By evaluating supplier performance and maintaining clear, direct communication through the portal, businesses can build stronger, more collaborative partnerships with vendors.",
-        img: b4, // Reused or placeholder image
-        width: "86%", // Reused from previous benefit array
-        imgwidth: "642px" // Reused from previous benefit array
+        img: b4,
     },
     {
         key: 5,
         heading: "Better Financial Control",
         desc: "Integration with finance modules ensures that payment terms, budgets, and spending are tracked efficiently, enabling businesses to stay within budget and manage cash flow effectively.",
-        img: b5, // Reused or placeholder image
-        width: "88%", // Reused from previous benefit array
-        imgwidth: "635px" // Reused from previous benefit array
+        img: b5, 
     },
     {
         key: 6,
         heading: "Enhanced Reporting and Insights",
         desc: "Comprehensive reports and analytics provide businesses with insights into purchasing trends, vendor performance, and cost-saving opportunities, aiding strategic procurement decisions.",
-        img: b3, // Reused or placeholder image
-        width: "75%", // Reused from previous benefit array
-        imgwidth: "410px" // Reused from previous benefit array
+        img: b3,
     }
 ];
 

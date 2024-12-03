@@ -8,15 +8,12 @@ import logo from '../../assets/logo/logo.svg';
 export default function Navbar() {
 
 
-
-
     const [hoverStates, setHoverStates] = useState({
         Products: false,
         Pricing: false,
         'About Us': false,
         Blogs: false,
     });
-
 
 
     const handleOnMouseEnter = (label) => {
@@ -30,12 +27,8 @@ export default function Navbar() {
 
 
 
-
-
     const navItems = [
         { label: 'Home', link: '/' },
-
-
 
         {
             label: 'Products',
@@ -61,8 +54,6 @@ export default function Navbar() {
 
 
         { label: 'About Us', link: '/', dropdown: ['Our Story', 'Team', 'Careers'] },
-
-
 
         { label: 'Blogs', link: '/', dropdown: ['Tech', 'Lifestyle', 'Updates'] },
     ];

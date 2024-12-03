@@ -37,6 +37,10 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+
+import footer from "../../assets/footer/foot.webp"
 
 export default function Payroll() {
 
@@ -100,49 +104,38 @@ export default function Payroll() {
       key: 1,
       heading: "Time Efficiency",
       desc: "Automates payroll tasks, reducing manual effort and the time spent on calculating, processing, and distributing payroll.",
-      img: b1, // Reused from the previous benefits array
-      width: "79%", // Reused from the previous benefits array
-      imgwidth: "356px" // Reused from the previous benefits array
+      img: b1, 
     },
     {
       key: 2,
       heading: "Accurate Payroll Processing",
       desc: "Reduces errors by automating calculations and ensuring compliance with tax laws, minimizing the risk of overpayments, underpayments, or compliance issues.",
-      img: b2, // Reused from the previous benefits array
-      width: "86%", // Reused from the previous benefits array
-      imgwidth: "315px" // Reused from the previous benefits array
+      img: b2, 
+      
     },
     {
       key: 3,
       heading: "Improved Compliance",
       desc: "Helps businesses stay up-to-date with changing tax regulations and labor laws, ensuring compliance and reducing legal risks.",
-      img: b3, // Reused from the previous benefits array
-      width: "75%", // Reused from the previous benefits array
-      imgwidth: "410px" // Reused from the previous benefits array
+      img: b3, 
     },
     {
       key: 4,
       heading: "Cost Savings",
       desc: "By automating payroll and reducing errors, businesses can save on administrative costs and avoid costly penalties for non-compliance.",
-      img: b4, // Reused from the previous benefits array
-      width: "86%", // Reused from the previous benefits array
-      imgwidth: "642px" // Reused from the previous benefits array
+      img: b4, 
     },
     {
       key: 5,
       heading: "Employee Satisfaction",
       desc: "Ensures timely and accurate payments, boosting employee trust and satisfaction.",
-      img: b5, // Reused from the previous benefits array
-      width: "88%", // Reused from the previous benefits array
-      imgwidth: "635px" // Reused from the previous benefits array
+      img: b5, 
     },
     {
       key: 6,
       heading: "Real-Time Insights",
       desc: "Provides detailed reports on payroll, taxes, and labor costs, helping businesses make informed financial decisions and manage budgets effectively.",
-      img: b3, // Reused from the previous benefits array
-      width: "75%", // Reused from the previous benefits array
-      imgwidth: "410px" // Reused from the previous benefits array
+      img: b3, 
     }
   ];
 
@@ -176,6 +169,15 @@ export default function Payroll() {
       answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
     }
   ];
+
+
+  const footerUpperText = {
+
+    text1 : "Streamline" ,
+    text2 : " bookings" ,
+    text3 : "effortlessly" ,
+    img : footer
+  }
 
 
 
@@ -424,7 +426,8 @@ export default function Payroll() {
 
 
       <div >
-        <Footer3 />
+        <FooterUpperPart text1={footerUpperText.text1}  text2 = {footerUpperText.text2} text3 = {footerUpperText.text3} img = {footerUpperText.img} />
+        <FooterLower />
 
       </div>
 

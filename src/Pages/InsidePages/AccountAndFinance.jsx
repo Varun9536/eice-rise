@@ -43,55 +43,6 @@ export default function AccountAndFinance() {
 
 
 
-
-
-  // const features = [
-  //   {
-  //     key: 1,
-  //     heading: "Customized Packages and Pricing",
-  //     desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-  //     img: ufi, // Image from the previous array
-  //     width: "64px", // Width from the previous array
-  //   },
-  //   {
-  //     key: 2,
-  //     heading: "Digital Contracts and Invoicing",
-  //     desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-  //     img: rtmm, // Image from the previous array
-  //     width: "65px", // Width from the previous array
-  //   },
-  //   {
-  //     key: 3,
-  //     heading: "Integrated Resource Management",
-  //     desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-  //     img: oc, // Image from the previous array
-  //     width: "54px", // Width from the previous array
-  //   },
-  //   {
-  //     key: 4,
-  //     heading: "Automated Billing System",
-  //     desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-  //     img: tm, // Image from the previous array
-  //     width: "65px", // Width from the previous array
-  //   },
-  //   {
-  //     key: 5,
-  //     heading: "Comprehensive Reports",
-  //     desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-  //     img: ips, // Image from the previous array
-  //     width: "65px", // Width from the previous array
-  //   },
-  //   {
-  //     key: 6,
-  //     heading: "Client Portal Access",
-  //     desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-  //     img: it, // Image from the previous array
-  //     width: "63px", // Width from the previous array
-  //   }
-  // ];
-
-
-
   const features = [
     {
       key: 1,
@@ -168,56 +119,48 @@ export default function AccountAndFinance() {
       heading: "Financial Accuracy",
       desc: "Reduce human error in financial reporting and ensure accuracy in all transactions and documentation.",
       img: b1,
-      width: "79%",
-      imgwidth: "590px"
+     
     },
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automate routine financial tasks, freeing up time for finance teams to focus on strategic decision-making.",
       img: b2,
-      width: "86%",
-      imgwidth: "520px"
+     
     },
     {
       key: 3,
       heading: "Cost Control",
       desc: "Monitor expenses, analyze spending patterns, and optimize cost management across departments.",
       img: b3,
-      width: "75%",
-      imgwidth: "555px"
+     
     },
     {
       key: 4,
       heading: "Compliance Assurance",
       desc: "Stay compliant with industry standards and tax regulations, avoiding penalties and ensuring financial transparency.",
       img: b4,
-      width: "86%",
-      imgwidth: "603px"
+      
     },
     {
       key: 5,
       heading: "Improved Cash Flow Management",
       desc: "With real-time tracking and reporting, businesses can manage their cash flow more effectively, improving financial stability.",
       img: b5,
-      width: "88%",
-      imgwidth: "635px"
+     
     },
     {
       key: 6,
       heading: "Enhanced Decision Making",
       desc: "Gain valuable financial insights that drive informed decision-making and business growth.",
-      img: b1, // Reusing as a placeholder; replace with a specific image if needed
-      width: "79%",
-      imgwidth: "590px"
+      img: b1, 
+     
     },
     {
       key: 7,
       heading: "Seamless Integration with Other Modules",
       desc: "Fully integrates with other EICE Rise ERP modules (like Room Booking, Banquet & Billing, Dining (POS), Member Portal, Employee Portal, Payroll, User & Store Inventory, Food & Beverage, and Purchase & Vendor Portal) for consistent data flow and synchronized financial records.",
-      img: b2, // Reusing as a placeholder; replace with a specific image if needed
-      width: "86%",
-      imgwidth: "520px"
+      img: b2, 
     }
   ];
 
