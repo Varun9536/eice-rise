@@ -136,14 +136,14 @@ export default function RoomBooking() {
 
 
 
-    const benifits = [
+    const benefits = [
         {
             key: 1,
             heading: "Enhanced Guest Experience",
             desc: "Provides a hassle-free booking process that enhances customer satisfaction and loyalty.",
             img: b1,
             width: "73%",
-            imgwidth: "400px"
+            imgwidth: "418px"
         },
         {
             key: 2,
@@ -168,7 +168,7 @@ export default function RoomBooking() {
             desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
             img: b4,
             width: "75%",
-            imgwidth: "440px"
+            imgwidth: "462px"
         },
         {
             key: 5,
@@ -363,56 +363,46 @@ export default function RoomBooking() {
 
 
             <section style={{ background: "#f5f5f5" }} >
-                <div className={`${style.section5} font4 globalSectionSize`}>
+        <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-                    <div className={`${style.section5heading} font4`}>Benefits</div>
-                    <div className={`${style.benifitContainer}`}>
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
 
-                        {benifits.map((item, i) => (
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-                            (i + 1) % 2 !== 0 ? (<div className={`${style.innerBenifitBox}`}>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
-                                    <img style={{ width: "100%" }} src={item.img} alt="" />
-                                </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                                <div className={`${style.benefitHeadingAndDesc}`}>
 
-                                    <div className={`${style.innerHeadingBenifit}`}>
-                                        {item.heading}
-                                    </div>
-                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
-                                        {item.desc}
-                                    </p>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
-                                </div>
 
-                            </div>) : (<div className={`${style.innerBenifitBox2}`}>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
-                                    <img style={{ width: "100%" }} src={item.img} alt="" />
-                                </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                                <div className={`${style.benefitHeadingAndDesc}`}>
-                                    <div className={`${style.innerHeadingBenifit}`}>
-                                        {item.heading}
-                                    </div>
-                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
-                                        {item.desc}
-                                    </p>
-                                </div>
 
-                            </div>)
-                        )
+            </div>)
 
-                        )}
 
-                    </div>
+          ))}
 
-                </div>
-            </section>
+        </div>
+      </section>
 
 
             <section >

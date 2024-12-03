@@ -34,9 +34,12 @@ export default function Navbar() {
 
     const navItems = [
         { label: 'Home', link: '/' },
+
+
+
         {
             label: 'Products',
-            link: '/products',
+            link: '',
             dropdown: [
                 { productName: "Room Booking", path: "room-booking" },
                 { productName: "Dining (POS)", path: "pos-dining" },
@@ -50,9 +53,18 @@ export default function Navbar() {
                 { productName: "Food & Beverage Cost Analysis", path: "food-cost", }
             ]
         },
-        { label: 'Pricing', link: '/pricing', dropdown: ['Plan 1', 'Plan 2', 'Plan 3'] },
-        { label: 'About Us', link: '/about-us', dropdown: ['Our Story', 'Team', 'Careers'] },
-        { label: 'Blogs', link: '/blogs', dropdown: ['Tech', 'Lifestyle', 'Updates'] },
+
+
+        { label: 'Pricing', link: '', dropdown: [
+            {productName: "Room Booking", path: "room-booking" }
+        ] },
+
+
+        { label: 'About Us', link: 'about-us', dropdown: ['Our Story', 'Team', 'Careers'] },
+
+
+
+        { label: 'Blogs', link: 'blogs', dropdown: ['Tech', 'Lifestyle', 'Updates'] },
     ];
 
 
@@ -70,14 +82,14 @@ export default function Navbar() {
 
                 <div className={`${styles.navigationIcon} font1`}>
                     {navItems.map((item) => (
-                        
+
                         <div
                             key={item.label}
                             style={{ display: 'flex', position: 'relative' }}
                             onMouseEnter={() => handleOnMouseEnter(item.label)}
                             onMouseLeave={() => handleOnMouseLeave(item.label)}
                         >
-                            <Link to={item.label === "Home" ? "/" : ""} className="linkClass">
+                            <Link to={item.link} className="linkClass">
 
                                 <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
                                     {item.label}

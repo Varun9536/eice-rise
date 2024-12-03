@@ -46,105 +46,105 @@ export default function Payroll() {
 
   const features = [
     {
-        key: 1,
-        heading: "Automated Payroll Processing",
-        desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
-        img: ufi, // Taken from the previous features array
-        width: "64px", // Taken from the previous features array
+      key: 1,
+      heading: "Automated Payroll Processing",
+      desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
+      img: ufi, // Taken from the previous features array
+      width: "64px", // Taken from the previous features array
     },
     {
-        key: 2,
-        heading: "Employee Data Management",
-        desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
-        img: rtmm, // Taken from the previous features array
-        width: "65px", // Taken from the previous features array
+      key: 2,
+      heading: "Employee Data Management",
+      desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
+      img: rtmm, // Taken from the previous features array
+      width: "65px", // Taken from the previous features array
     },
     {
-        key: 3,
-        heading: "Customizable Pay Structures",
-        desc: "Define multiple earnings & deduction pay types, to accommodate various employee compensation models.",
-        img: oc, // Taken from the previous features array
-        width: "54px", // Taken from the previous features array
+      key: 3,
+      heading: "Customizable Pay Structures",
+      desc: "Define multiple earnings & deduction pay types, to accommodate various employee compensation models.",
+      img: oc, // Taken from the previous features array
+      width: "54px", // Taken from the previous features array
     },
     {
-        key: 4,
-        heading: "Tax Compliance and Reporting",
-        desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
-        img: tm, // Taken from the previous features array
-        width: "65px", // Taken from the previous features array
+      key: 4,
+      heading: "Tax Compliance and Reporting",
+      desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
+      img: tm, // Taken from the previous features array
+      width: "65px", // Taken from the previous features array
     },
     {
-        key: 5,
-        heading: "Leave and Attendance Management",
-        desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
-        img: ips, // Taken from the previous features array
-        width: "65px", // Taken from the previous features array
+      key: 5,
+      heading: "Leave and Attendance Management",
+      desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
+      img: ips, // Taken from the previous features array
+      width: "65px", // Taken from the previous features array
     },
     {
-        key: 6,
-        heading: "Direct Deposit and Payment Processing",
-        desc: "Enables direct deposit to employees' bank accounts, reducing manual payment efforts and improving payment accuracy.",
-        img: it, // Taken from the previous features array
-        width: "63px", // Taken from the previous features array
+      key: 6,
+      heading: "Direct Deposit and Payment Processing",
+      desc: "Enables direct deposit to employees' bank accounts, reducing manual payment efforts and improving payment accuracy.",
+      img: it, // Taken from the previous features array
+      width: "63px", // Taken from the previous features array
     },
-    
-];
+
+  ];
 
 
 
 
 
 
-const benefits = [
-  {
+  const benefits = [
+    {
       key: 1,
       heading: "Time Efficiency",
       desc: "Automates payroll tasks, reducing manual effort and the time spent on calculating, processing, and distributing payroll.",
       img: b1, // Reused from the previous benefits array
       width: "79%", // Reused from the previous benefits array
       imgwidth: "356px" // Reused from the previous benefits array
-  },
-  {
+    },
+    {
       key: 2,
       heading: "Accurate Payroll Processing",
       desc: "Reduces errors by automating calculations and ensuring compliance with tax laws, minimizing the risk of overpayments, underpayments, or compliance issues.",
       img: b2, // Reused from the previous benefits array
       width: "86%", // Reused from the previous benefits array
       imgwidth: "315px" // Reused from the previous benefits array
-  },
-  {
+    },
+    {
       key: 3,
       heading: "Improved Compliance",
       desc: "Helps businesses stay up-to-date with changing tax regulations and labor laws, ensuring compliance and reducing legal risks.",
       img: b3, // Reused from the previous benefits array
       width: "75%", // Reused from the previous benefits array
       imgwidth: "410px" // Reused from the previous benefits array
-  },
-  {
+    },
+    {
       key: 4,
       heading: "Cost Savings",
       desc: "By automating payroll and reducing errors, businesses can save on administrative costs and avoid costly penalties for non-compliance.",
       img: b4, // Reused from the previous benefits array
       width: "86%", // Reused from the previous benefits array
       imgwidth: "642px" // Reused from the previous benefits array
-  },
-  {
+    },
+    {
       key: 5,
       heading: "Employee Satisfaction",
       desc: "Ensures timely and accurate payments, boosting employee trust and satisfaction.",
       img: b5, // Reused from the previous benefits array
       width: "88%", // Reused from the previous benefits array
       imgwidth: "635px" // Reused from the previous benefits array
-  },
-  {
+    },
+    {
       key: 6,
       heading: "Real-Time Insights",
       desc: "Provides detailed reports on payroll, taxes, and labor costs, helping businesses make informed financial decisions and manage budgets effectively.",
       img: b3, // Reused from the previous benefits array
       width: "75%", // Reused from the previous benefits array
       imgwidth: "410px" // Reused from the previous benefits array
-  }
-];
+    }
+  ];
 
 
 
@@ -283,7 +283,7 @@ const benefits = [
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-              The Payroll Management System automates payroll processing, simplifying salary, deduction, bonus, and tax management while ensuring regulatory compliance. It integrates with HR and accounting platforms to reduce errors, save time, and provide real-time payroll insights for better decision-making.
+                The Payroll Management System automates payroll processing, simplifying salary, deduction, bonus, and tax management while ensuring regulatory compliance. It integrates with HR and accounting platforms to reduce errors, save time, and provide real-time payroll insights for better decision-making.
 
 
               </div>
@@ -362,54 +362,46 @@ const benefits = [
 
 
 
+
+
       <section style={{ background: "#f5f5f5" }} >
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 
           <div className={`${style.section5heading} font4`}>Benefits</div>
-          <div className={`${style.benifitContainer}`}>
+          {benefits.map((item, index) =>
+          (
 
-            {benefits.map((item, i) => (
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-              (i + 1) % 2 !== 0 ? (<div className={`${style.innerBenifitBox}`}>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
-                  <img style={{ width: "100%" }} src={item.img} alt="" />
-                </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                <div className={`${style.benefitHeadingAndDesc}`}>
 
-                  <div className={`${style.innerHeadingBenifit}`}>
-                    {item.heading}
-                  </div>
-                  <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
-                    {item.desc}
-                  </p>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
-                </div>
 
-              </div>) : (<div className={`${style.innerBenifitBox2}`}>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
-                  <img style={{ width: "100%" }} src={item.img} alt="" />
-                </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                <div className={`${style.benefitHeadingAndDesc}`}>
-                  <div className={`${style.innerHeadingBenifit}`}>
-                    {item.heading}
-                  </div>
-                  <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
-                    {item.desc}
-                  </p>
-                </div>
 
-              </div>)
-            )
+            </div>)
 
-            )}
 
-          </div>
+          ))}
 
         </div>
       </section>

@@ -119,7 +119,7 @@ export default function Pos() {
             desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
             img: b1,
             width: "79%",
-            imgwidth: "590px"
+            imgwidth: "578px"
         },
         {
             key: 2,
@@ -370,56 +370,46 @@ export default function Pos() {
 
 
             <section style={{ background: "#f5f5f5" }} >
-                <div className={`${style.section5} font4 globalSectionSize`}>
+        <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-                    <div className={`${style.section5heading} font4`}>Benefits</div>
-                    <div className={`${style.benifitContainer}`}>
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
 
-                        {benefits.map((item, i) => (
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-                            (i + 1) % 2 !== 0 ? (<div className={`${style.innerBenifitBox}`}>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
-                                    <img style={{ width: "100%" }} src={item.img} alt="" />
-                                </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                                <div className={`${style.benefitHeadingAndDesc}`}>
 
-                                    <div className={`${style.innerHeadingBenifit}`}>
-                                        {item.heading}
-                                    </div>
-                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
-                                        {item.desc}
-                                    </p>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
-                                </div>
 
-                            </div>) : (<div className={`${style.innerBenifitBox2}`}>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                                <div style={{ width: item.imgwidth }} className={`${style.benefitImages}`} >
-                                    <img style={{ width: "100%" }} src={item.img} alt="" />
-                                </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                                <div className={`${style.benefitHeadingAndDesc}`}>
-                                    <div className={`${style.innerHeadingBenifit}`}>
-                                        {item.heading}
-                                    </div>
-                                    <p style={{ width: item.width }} className={`${style.innerDescBenifit}`}>
-                                        {item.desc}
-                                    </p>
-                                </div>
 
-                            </div>)
-                        )
+            </div>)
 
-                        )}
 
-                    </div>
+          ))}
 
-                </div>
-            </section>
+        </div>
+      </section>
 
 
 

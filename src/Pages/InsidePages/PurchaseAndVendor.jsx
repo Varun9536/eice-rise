@@ -387,48 +387,47 @@ export default function PurchaseAndVendor() {
 
 
 
-            <section >
-                <div className={`${style.section4} globalSectionSize`}>
+            <section style={{ background: "#f5f5f5" }} >
+        <div className={`${style.section5} font4 globalSectionSize`}>
 
-                    <div className={`${style.section4heading} font4`}>Key Features</div>
 
-                    <div className={`${style.featureContainer}`}>
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
 
-                        {features.map((item) =>
-                        (
-                            <div key={item.key} className={`${style.featureInnerBox} font4`}>
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
-                                <div className={`${style.headingAndIconFeatures}`}>
 
-                                    <div style={{ width: item.width }}>
-                                        <img style={{ width: "100%" }} src={item.img} alt="" />
-                                    </div>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                                    <div className={`${style.featureHeading}`}>
-                                        <div>
-                                            {item.heading}
-                                        </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                                        <div>
-                                            {item.heading2}
-                                        </div>
 
-                                    </div>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
-                                </div>
 
-                                <div className={`${style.featureDesc}`}>
-                                    {item.desc}
-                                </div>
+              <div style={{ width: "25%" }}>
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
 
-                            </div>
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
-                        ))}
 
-                    </div>
+            </div>)
 
-                </div>
-            </section>
+
+          ))}
+
+        </div>
+      </section>
 
             <section className={`${style.requestDemoBtn}`}>
 
