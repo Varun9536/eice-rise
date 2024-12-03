@@ -254,38 +254,6 @@
     margin-bottom: 3rem;
 }
 
-.benifitContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 95px;
-    row-gap: 50px;
-
-}
-
-.innerBenifitBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 80px;
-
-}
-
-.innerBenifitBox2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-.benefitImages {
-    width: 400px;
-}
-
-.benefitHeadingAndDesc {
-    display: flex;
-    flex-direction: column;
-    /* padding: 0px 30px; */
-}
 
 .innerHeadingBenifit {
     font-size: 26px;
