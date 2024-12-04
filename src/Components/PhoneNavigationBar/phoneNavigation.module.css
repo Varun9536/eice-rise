@@ -1,7 +1,7 @@
 .navigationBar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 20px;
     height: 65px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 0px 15px;
@@ -18,19 +18,20 @@
 
 
 .menuIcon {
-    background-color: rgba(1, 176, 241, 1);
-    color: white;
-    padding: 10px 13px;
-    border-radius: 7px;
+    /* background-color: rgba(1, 176, 241, 1); */
+    /* color: white; */
+    /* padding: 10px 13px;
+    border-radius: 7px; */
 
+    
 
 }
 
 
 .closeIcon {
-    background-color: white;
+    /* background-color: white;
     color: rgba(1, 176, 241, 1);
-    border-radius: 7px;
+    border-radius: 7px; */
 }
 
 @keyframes slideIn {

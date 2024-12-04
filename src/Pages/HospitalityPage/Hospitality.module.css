@@ -25,10 +25,11 @@
     display: flex;
     justify-content: flex-end;
     bottom: 11rem;
+    width: 54%;
 }
 
 .laptopImgDimension {
-    width: 54%;
+    width: 100%;
 }
 
 
@@ -125,16 +126,21 @@
 
     padding: 40px 15px;
     row-gap: 20px;
+
+    
 }
 
 
 .iconAndTextBox {
+    
     width: 214px;
     padding: 8px;
     background-color: white;
     height: 220px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+   
+  
 
 }
 
@@ -457,6 +463,9 @@
     .section1 {
 
         width: 100vw;
+        height: 860px;
+        background-size: cover;
+
     }
 
     .textBox {
@@ -465,7 +474,14 @@
         top: 1%;
         left: unset;
         transform: unset;
+        padding-top: 2rem;
+        /* text-align: left; */
 
+    }
+
+    .text1{
+        text-align: left;
+        padding: 10px 15px;
     }
 
     .text2 {
@@ -473,6 +489,15 @@
         padding: 10px 15px;
         /* margin-top: 15px; */
         font-size: 16px;
+        text-align: left;
+    }
+
+    .text3
+    {
+        
+        justify-content: flex-start;
+        padding: 10px 15px;
+        
     }
 
 
@@ -488,29 +513,64 @@
     .laptopImg {
 
 
-        justify-content: center;
-        bottom: 23rem;
-    }
-
-    .laptopImgDimension {
-        width: 84%;
+        width: 25rem;
+        bottom: 11rem;
     }
 
 
 
-    .section7Heading {
-        margin-bottom: 20px;
-        font-size: 18px;
-        font-weight: 900;
-        text-align: center;
 
+
+    /* section2 */
+
+    .section2
+    {
+        margin-top: -80px;
     }
+
 
     .section2Heading {
 
-        font-size: 20px;
+        font-size: 14px;
 
     }
+
+
+    .servicesBox {
+        column-gap: 16px;
+        padding: 40px 5px;
+        row-gap: 8px;
+    }
+
+
+
+    .iconAndTextBox {
+        width: 120px;
+        height: 155px;
+        
+    
+    }
+
+
+    .serviceName {
+       padding: unset;
+       margin-top: 5px;
+       font-size: 14px;
+       
+    }
+
+    .serviceName2 {
+        padding: unset;
+        margin-top: 5px;
+        font-size: 14px;
+        
+     }
+
+
+
+    
+
+    
 
     .section3Heading {
         font-size: 20px;
@@ -552,6 +612,14 @@
         text-align: center;
     }
 
+
+    .section7Heading {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        text-align: center;
+
+    }
 
 
 

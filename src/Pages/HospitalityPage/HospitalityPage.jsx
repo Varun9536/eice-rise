@@ -83,7 +83,7 @@ export default function HospitalityPage() {
 
         {
             // serviceName: "MEMBER SUITE ",
-            serviceName : (<span style={{padding : "0px 3px"}}>MEMBER SUITE</span>),
+            serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
             path: "member-suite",
             key: 4
@@ -255,13 +255,12 @@ export default function HospitalityPage() {
             <section className={styles.section1}>
 
                 <div className={styles.laptopImg}>
-                    <img
-                    className={`${styles.laptopImgDimension}`}  src={laptop} alt="" />
+                    <img className={`${styles.laptopImgDimension}`} src={laptop} alt="" />
                 </div>
 
                 <div className={styles.textBox}>
                     <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight : "600"}} className="font1">tailored to your business needs</span>
+                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight: "600" }} className="font1">tailored to your business needs</span>
                     </div>
 
                     <p className={`${styles.text2} font1`}>
@@ -545,7 +544,7 @@ export default function HospitalityPage() {
             </section>
 
             <div >
-              
+
                 <Footer />
             </div>
 

@@ -5,6 +5,8 @@ import styles from "./phoneNavigation.module.css";
 import logo from "../../assets/logo/logo.svg";
 import { Link } from 'react-router-dom';
 
+import { HiOutlineBars3 } from "react-icons/hi2";
+
 
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
@@ -69,14 +71,17 @@ export default function PhoneNavigationbar() {
         <>
 
             <div className={styles.navigationBar}>
+                <div>
+                    {navbarOpen ?
+                        (< HiOutlineBars3 className={styles.menuIcon} onClick={navbarIconChange} size={37} />) :
+                        (<IoCloseSharp className={styles.closeIcon} onClick={navbarIconChange} size={36} />)}
+                </div>
+
                 <div style={{ width: "100px" }}>
                     <img style={{ width: "100%" }} src={logo} alt="Logo" />
                 </div>
-                <div>
-                    {navbarOpen ?
-                        (<FaBars className={styles.menuIcon} onClick={navbarIconChange} size={47} />) :
-                        (<IoCloseSharp className={styles.closeIcon} onClick={navbarIconChange} size={47} />)}
-                </div>
+
+
             </div>
 
 
@@ -116,7 +121,7 @@ export default function PhoneNavigationbar() {
 
 
 
-{/* inner menu items */}
+                                        {/* inner menu items */}
                                         <div className={`${styles.innerNavItems}`}>
                                             {activeNavItem === item.navName && item.innerItem?.map((innerItem, index) => (
                                                 <div className={`${styles.innerNavItemStyle}`}>
