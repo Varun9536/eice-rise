@@ -255,7 +255,8 @@ export default function HospitalityPage() {
             <section className={styles.section1}>
 
                 <div className={styles.laptopImg}>
-                    <img style={{ maxWidth: "54%" }} src={laptop} alt="" />
+                    <img
+                    className={`${styles.laptopImgDimension}`}  src={laptop} alt="" />
                 </div>
 
                 <div className={styles.textBox}>
@@ -338,7 +339,7 @@ export default function HospitalityPage() {
 
 
                 <div className={`${styles.section3Video}`} >
-                    <img style={{ width: "65%" }} loading="lazy" src={vimg} alt="video" />
+                    <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" />
                 </div>
 
             </section>
@@ -363,7 +364,7 @@ export default function HospitalityPage() {
                     {/* <img style={{ width: "100%" }} src={client} alt="" /> */}
                     {clientLogo.map((item) =>
                     (
-                        <div style={{ width: "12%" }}>
+                        <div className={`${styles.clinetLogoSize}`} >
                             <img style={{ width: "100%" }} src={item.logo} alt="" />
                         </div>
 

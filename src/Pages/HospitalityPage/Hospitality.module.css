@@ -27,6 +27,10 @@
     bottom: 11rem;
 }
 
+.laptopImgDimension {
+    width: 54%;
+}
+
 
 .textBox {
 
@@ -196,7 +200,8 @@
 }
 
 .section3Video {
-    text-align: center;
+    width: 65%;
+    margin: 0px auto;
 }
 
 
@@ -229,6 +234,10 @@
     gap: 0px 38px;
 }
 
+.clinetLogoSize {
+    width: 12%;
+}
+
 
 
 .section5 {
@@ -246,6 +255,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
+
 
 }
 
@@ -271,6 +281,7 @@
     /* justify-content: space-evenly; */
     justify-content: center;
     column-gap: 16px;
+    row-gap: 30px;
 
 }
 
@@ -300,6 +311,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 16px;
+    row-gap: 30px;
 }
 
 .storyBox {
@@ -340,6 +352,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 20px;
+    row-gap: 30px;
 
 }
 
@@ -385,7 +398,7 @@
 }
 
 
-
+/* shift of top section when phone nav bar  appear */
 @media (max-width :1120px) {
 
 
@@ -400,9 +413,7 @@
 
 }
 
-/* section4 */
-
-
+/* width increase of herosection for bigger screen */
 
 @media (min-width: 1700px) {
     .section1 {
@@ -410,32 +421,141 @@
         max-width: 1906px;
         width: 100%;
         height: 1000px;
-
-
     }
 
     .laptopImg {
-
         bottom: 15rem;
+    }
+
+    .textBox {
+        padding: 0px 60px;
+    }
+
+    .text1 {
+        font-size: 58px;
+    }
+
+    .text2 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* media query for phone */
+
+@media (min-width: 800px) and (max-width: 1120px) {
+
+    .section1 {
+
+        width: 100vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .section1 {
+
+        width: 100vw;
     }
 
     .textBox {
 
 
-        padding: 0px 60px;
-
-    }
-
-    .text1 {
-        font-size: 58px;
+        top: 1%;
+        left: unset;
+        transform: unset;
 
     }
 
     .text2 {
 
+        padding: 10px 15px;
+        /* margin-top: 15px; */
+        font-size: 16px;
+    }
+
+
+
+
+
+    .demoButton {
+
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .laptopImg {
+
+
+        justify-content: center;
+        bottom: 23rem;
+    }
+
+    .laptopImgDimension {
+        width: 84%;
+    }
+
+
+
+    .section7Heading {
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        text-align: center;
+
+    }
+
+    .section2Heading {
 
         font-size: 20px;
+
     }
+
+    .section3Heading {
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+
+    }
+
+    .section3Para {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .section3Video {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+
+    .section4Heading {
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+    .section5Heading {
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    
+    .section6Heading {
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+
+
 
 
 }
