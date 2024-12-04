@@ -34,15 +34,15 @@ export default function PhoneNavigationbar() {
 
             <div className={styles.navigationBar}>
 
-                <div>
-                    <img src={logo} alt="" />
+                <div style={{width : "100px"}}>
+                    <img style={{width : "100%"}} src={logo} alt="" />
                 </div>
 
                 <div>
                     {navbarOpen ?
-                        (<FaBars className={styles.menuIcon} onClick={navbarIconChange} size={50} />)
+                        (<FaBars className={styles.menuIcon} onClick={navbarIconChange} size={47} />)
                         :
-                        (<IoCloseSharp className={styles.closeIcon} onClick={navbarIconChange} size={50} />)}
+                        (<IoCloseSharp className={styles.closeIcon} onClick={navbarIconChange} size={47} />)}
                 </div>
             </div>
 
