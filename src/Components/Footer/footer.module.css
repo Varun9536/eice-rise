@@ -77,6 +77,15 @@
 }
 
 
+.eiceLogoAndSocialMediaBox {
+    color: white;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    width: 30%;
+}
+
+
 .footerPoints {
     font-size: 14px;
     display: flex;
@@ -145,8 +154,37 @@
 
         .footerMainBoxUpper {
             display: none;
-            
+
         }
+
+
+        .footerInnerBox {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .footerNavigationBox {
+
+            height: unset;
+            padding: 10px 0px;
+
+
+        }
+
+
+        .eiceLogoAndSocialMediaBox {
+
+            width: 80%;
+        }
+
+        .footerPoints {
+           
+           
+        }
+
+
     }
 
 

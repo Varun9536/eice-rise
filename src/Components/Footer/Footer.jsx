@@ -45,7 +45,7 @@ export default function Footer() {
 
                 <div className={`${styles.footerInnerBox} globalSectionSize`}>
 
-                    <div className="font1" style={{ color: "white", display: "flex", rowGap: "10px", flexDirection: "column", width: "30%" }}>
+                    <div  className = {`${styles.eiceLogoAndSocialMediaBox} font1 `}>
 
                         <div>
                             <img className={styles.logoWhite} src={logo} alt="" />
