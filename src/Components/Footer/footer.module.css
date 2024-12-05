@@ -161,6 +161,7 @@
         .footerInnerBox {
             display: flex;
             flex-direction: column;
+            padding: 0px 20px;
 
         }
 
@@ -180,8 +181,12 @@
         }
 
         .footerPoints {
-           
-           
+
+        }
+
+        .copyRightSectionInnerBox {
+            
+            padding: 20px 5px;
         }
 
 

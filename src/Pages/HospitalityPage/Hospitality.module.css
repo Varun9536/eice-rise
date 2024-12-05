@@ -622,6 +622,19 @@
     }
 
 
+    .clientLogoBox {
+       
+        gap: 15px 38px;
+        flex-wrap: wrap;
+    }
+
+
+    .clinetLogoSize {
+        width: 40%;
+    }
+    
+
+
 
 
 
