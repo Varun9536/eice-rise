@@ -2,9 +2,11 @@
 import style from "./Styles/accountAndFinance.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+
+import afw from "../../assets/insidePages/account/financeSection2/afw.png"
+import ddfi from "../../assets/insidePages/account/financeSection2/ddfi.png"
+import rtet from "../../assets/insidePages/account/financeSection2/rtet.png"
+
 
 
 
@@ -248,7 +250,7 @@ export default function AccountAndFinance() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon1} alt="" />
+              <img style={{ width: "100%" }} src={ddfi} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -263,7 +265,7 @@ export default function AccountAndFinance() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon2} alt="" />
+              <img style={{ width: "100%" }} src={afw} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -281,7 +283,7 @@ export default function AccountAndFinance() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon3} alt="" />
+              <img style={{ width: "100%" }} src={rtet} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>
