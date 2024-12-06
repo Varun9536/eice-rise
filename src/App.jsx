@@ -24,6 +24,7 @@ import Blogs from './Pages/NavigationBarPages/Blogs'
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -150,7 +151,10 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
+
       <RouterProvider router={router} />
+
+
     </>
   )
 }

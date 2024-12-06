@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import PhoneNavigationbar from '../PhoneNavigationBar/PhoneNavigationbar';
 import { Outlet } from 'react-router-dom';
+import ScrollUp from "../ScrollUp/ScrollUp";
 
 export default function Layout() {
 
@@ -23,7 +24,9 @@ export default function Layout() {
 
     return (
         <>
+        <ScrollUp/>
             {
+
                 isPhone ? (<div className={styles.phoneNavBar}>
                     <PhoneNavigationbar />
                 </div>)

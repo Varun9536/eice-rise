@@ -177,18 +177,19 @@ export default function AccountAndFinance() {
 
   const query = [
     {
+      key : 1,
       question: "Q : How does the Dining (POS) module handle split bills or group payments?",
       answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
     },
-    {
+    { key : 2,
       question: "Q : Can the module manage menu customization and promotions in real-time?",
       answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
     },
-    {
+    { key : 3,
       question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
       answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
     },
-    {
+    { key : 4,
       question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
       answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
     }
@@ -430,7 +431,7 @@ export default function AccountAndFinance() {
 
           <div className={style.FAQContainer}>
             {query.map((faq, index) => (
-              <Accordion key={index} question={faq.question} answer={faq.answer} />
+              <Accordion key={faq.key} question={faq.question} answer={faq.answer} />
             ))}
           </div>
 
