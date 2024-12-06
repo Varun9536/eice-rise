@@ -19,10 +19,10 @@ export default function Footer() {
 
             <div className={`${styles.footerMainBoxUpper} `}>
 
-                <div style={{ width: "50%" }}>
+                <div className={`${styles.footerHeadAndIconBox}`}>
 
                     <div  >
-                        <span style={{ fontSize: "46px" }} className="font2 blueTextGlobalClass" > Flexible, Modular Solutions <span className="font1" style={{ color: "black"  , fontWeight : "600"}}> tailored to your business needs</span> </span>
+                        <span className = {`${styles.footerUpperPartHeading} font2 blueTextGlobalClass`}  > Flexible, Modular Solutions <span className="font1" style={{ color: "black"  , fontWeight : "600"}}> tailored to your business needs</span> </span>
                     </div>
 
 

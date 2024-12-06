@@ -37,6 +37,14 @@
 
 }
 
+.footerUpperPartHeading {
+    font-size: 46px;
+}
+
+.footerHeadAndIconBox {
+    width: 50%;
+}
+
 .demoButton:hover {
     background-color: rgba(20, 176, 241, 1);
 }
@@ -153,8 +161,15 @@
     @media (max-width : 800px) {
 
         .footerMainBoxUpper {
-            display: none;
+            flex-direction: column;
+            padding-left: unset;
+            margin-top: 30px;
 
+
+        }
+
+        .footerUpperPartHeading {
+            font-size: 26px;
         }
 
 
@@ -180,13 +195,31 @@
             width: 80%;
         }
 
-        .footerPoints {
+        .footerPoints {}
+
+        .copyRightSectionInnerBox {
+
+            padding: 20px 5px;
+        }
+
+        .footerHeadAndIconBox {
+            width: unset;
+            padding: 0px 30px;
+        }
+
+        .demoButton {
+            padding: 5px 5px;
+            font-size: 16px;
+            width: 65%;
+            margin-top: 30px;
+
 
         }
 
-        .copyRightSectionInnerBox {
-            
-            padding: 20px 5px;
+        .footerLaptopImg {
+            width: 260px;
+            margin-top: 30px;
+        
         }
 
 

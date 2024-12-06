@@ -3,6 +3,7 @@ import styles from "./Hospitality.module.css"
 import laptop from "../../assets/Hospitality/laptoplatest.webp"
 import { Link } from "react-router-dom"
 
+import { useState, useEffect } from "react"
 
 import account from "../../assets/Hospitality/allPageIcon/Account.png"
 import pos from "../../assets/Hospitality/allPageIcon/POS.png"
@@ -57,6 +58,14 @@ import Footer from "../../Components/Footer/Footer"
 
 
 export default function HospitalityPage() {
+
+
+
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [insightsIndex, setInsightsIndex] = useState(0);
+    const [feedbackIndex, setFeedbackIndex] = useState(0);
+
 
 
     const services = [
@@ -246,6 +255,33 @@ export default function HospitalityPage() {
         }
 
     ]
+
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [stories.length]);
+
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setInsightsIndex((prevIndex) => (prevIndex + 1) % insights.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [insights.length]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [feedback.length]);
+
 
 
     return (
@@ -440,6 +476,76 @@ export default function HospitalityPage() {
 
 
 
+            <div className={`${styles.reviewSectionForPhone}`}>
+                <section className={`${styles.section5} globalSectionSize`}>
+
+                    <div className={`${styles.section5Heading} font1`}>
+                        <div className={`${styles.section5HeadingAndIconBox}`} >
+
+                            <div style={{ width: "40px",  }}>
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
+                            </div>
+
+                            <div style={{textAlign : "left" , paddingLeft : "20px"}} className="font3">
+                                What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div className={`${styles.section5Subheading} font1`}>
+                        <span style={{ fontWeight: "600" }} >"Proven Excellence:</span> Trusted by Leading  <span className={` blueTextGlobalClass font2`}>Hotels, Resorts, and Restaurants</span>."
+                    </div>
+
+
+
+                    <main className={`${styles.feedBack}`}>
+
+
+                        <article key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
+
+                            <figure >
+
+                                <div style={{ textAlign: "center" }}  >
+                                    <img style={{ width: "28%" }} src={feedback[feedbackIndex].img} alt="" />
+                                </div>
+
+                                <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{feedback[feedbackIndex].position}</span> <span>{feedback[feedbackIndex].company}</span></figcaption>
+
+                            </figure>
+                            <div>
+                                {feedback[feedbackIndex].key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>)}
+                            </div>
+
+
+
+                            <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
+
+                        </article>
+
+                    </main>
+
+
+                    <div className="indicators">
+                    {feedback.map((_, index) => (
+                        <span
+                            key={index}
+                            className={`indicator ${feedbackIndex === index ? 'active' : ''}`}
+                            onClick={() => setFeedbackIndex(index)}
+                        ></span>
+                    ))}
+                </div>
+
+
+                </section>
+            </div>
+
+
+
 
 
 
@@ -499,6 +605,56 @@ export default function HospitalityPage() {
             </section>
 
 
+            <section className={`${styles.section6ForPhone} globalSectionSize`}>
+                <div className={`${styles.section6Heading} font1`}>
+
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                        <div style={{ width: "50px", paddingTop: "12px" }}>
+                            <img style={{ width: "100%" }} src={h2} alt="" />
+                        </div>
+
+                        <div className="font3">
+                            Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className={`${styles.storySection} font1`}>
+
+
+                    <div className={`${styles.storyBox}`}>
+
+                        <div>
+                            <img style={{ width: "100%" }} src={stories[currentIndex].img} alt="storyimg" />
+                        </div>
+
+                        <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
+                            {stories[currentIndex].heading}
+                        </div>
+
+                        <p style={{ lineHeight: "1.8rem", marginBottom: stories[currentIndex].margin }} >{stories[currentIndex].para}</p>
+
+                        <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
+                            View More
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="indicators">
+                    {stories.map((_, index) => (
+                        <span
+                            key={index}
+                            className={`indicator ${currentIndex === index ? 'active' : ''}`}
+                            onClick={() => setCurrentIndex(index)}
+                        ></span>
+                    ))}
+                </div>
+
+
+            </section>
+
 
 
 
@@ -540,6 +696,52 @@ export default function HospitalityPage() {
                     ))}
                 </div>
 
+
+            </section>
+
+            <section className={`${styles.section7ForPhone} globalSectionSize`}>
+
+
+                <div className={`${styles.section7Heading} font1`}>
+
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                        <div style={{ width: "50px" }}>
+                            <img style={{ width: "100%" }} src={h1} alt="" />
+                        </div>
+
+                        <div className="font3">
+                            Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div className={`${styles.insightSection} font1`}>
+
+
+                    <div className={`${styles.insightBox}`}>
+
+                        <div>
+                            <img style={{ width: "100%" }} src={insights[insightsIndex].img} alt="" />
+                        </div>
+
+                        <div className={`${styles.cardBoxInsightsInnerHeading} blueTextGlobalClass font1`}>{insights[insightsIndex].heading}</div>
+                        <p style={{ lineHeight: "1.8rem" }}  >{insights[insightsIndex].para}</p>
+                    </div>
+
+                </div>
+
+                <div className="indicators">
+                    {insights.map((_, index) => (
+                        <span
+                            key={index}
+                            className={`indicator ${insightsIndex === index ? 'active' : ''}`}
+                            onClick={() => setInsightsIndex(index)}
+                        ></span>
+                    ))}
+                </div>
 
             </section>
 

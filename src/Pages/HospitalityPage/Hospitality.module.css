@@ -127,20 +127,20 @@
     padding: 40px 15px;
     row-gap: 20px;
 
-    
+
 }
 
 
 .iconAndTextBox {
-    
+
     width: 214px;
     padding: 8px;
     background-color: white;
     height: 220px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-   
-  
+
+
 
 }
 
@@ -253,6 +253,8 @@
 
 }
 
+
+
 .reviewSection {
     background-color: #f5f5f5;
     padding-top: 50px;
@@ -265,11 +267,34 @@
 
 }
 
+
+@media (max-width : 800px) {
+    .reviewSection {
+        display: none;
+    }
+
+
+}
+
+@media (min-width : 800px) {
+
+    .reviewSectionForPhone {
+        display: none;
+    }
+}
+
 .section5Heading {
     margin-bottom: 0px;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
+}
+
+.section5HeadingAndIconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
 }
 
 
@@ -284,7 +309,7 @@
 .feedBack {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+
     justify-content: center;
     column-gap: 16px;
     row-gap: 30px;
@@ -302,6 +327,21 @@
 
 .section6 {
     margin-bottom: 3rem;
+}
+
+@media (max-width : 800px) {
+    .section6 {
+        display: none;
+    }
+
+
+}
+
+@media (min-width : 800px) {
+
+    .section6ForPhone {
+        display: none;
+    }
 }
 
 .section6Heading {
@@ -337,7 +377,7 @@
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    border:2px solid rgba(20, 176, 241, 1);
+    border: 2px solid rgba(20, 176, 241, 1);
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
@@ -345,6 +385,22 @@
 
 .section7 {
     margin-bottom: 3rem;
+}
+
+
+@media (max-width : 800px) {
+    .section7 {
+        display: none;
+    }
+
+
+}
+
+@media (min-width : 800px) {
+
+    .section7ForPhone {
+        display: none;
+    }
 }
 
 .section7Heading {
@@ -481,7 +537,7 @@
 
     }
 
-    .text1{
+    .text1 {
         text-align: left;
         padding: 10px 15px;
     }
@@ -494,12 +550,11 @@
         text-align: left;
     }
 
-    .text3
-    {
-        
+    .text3 {
+
         justify-content: flex-start;
         padding: 10px 15px;
-        
+
     }
 
 
@@ -525,8 +580,7 @@
 
     /* section2 */
 
-    .section2
-    {
+    .section2 {
         margin-top: -80px;
     }
 
@@ -547,35 +601,35 @@
 
 
     .iconAndTextBox {
-        width: 140px;
-        height: 155px;
-        
-    
+        width: 130px;
+        height: 145px;
+
+
     }
 
 
     .serviceName {
-       padding: unset;
-       margin-top: 5px;
-       font-size: 14px;
-       
+        padding: unset;
+        margin-top: 5px;
+        font-size: 12px;
+
     }
 
     .serviceName2 {
         padding: unset;
         margin-top: 5px;
-        font-size: 14px;
-        
-     }
+        font-size: 12px;
+
+    }
 
 
 
-    
 
-    
+
+
 
     .section3Heading {
-        font-size: 20px;
+        font-size: 18px;
         width: 100%;
         text-align: left;
 
@@ -585,6 +639,7 @@
         width: 100%;
         margin-bottom: 20px;
         text-align: left;
+        font-size: 14px;
     }
 
     .section3Video {
@@ -593,21 +648,60 @@
     }
 
 
+
+
+
     .section4Heading {
 
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
     }
 
-    
+    .clientSection {
+        margin-bottom: 3rem;
+    }
+
+
+
+
     .section5Heading {
 
         font-size: 20px;
         text-align: center;
+
     }
 
 
+
     
+
+
+    .clientLogoBox {
+        gap: 15px 38px;
+        flex-wrap: wrap;
+    }
+
+
+    .clinetLogoSize {
+        width: 100px;
+    }
+
+    .section5HeadingAndIconBox {
+        gap: 0px 0px;
+        align-items: center;
+        font-size: 18px;
+
+    }
+
+    .section5Subheading {
+
+        /* text-align: unset; */
+        font-size: 16px;
+        margin-top: 20px;
+      
+    }
+
+
     .section6Heading {
 
         font-size: 20px;
@@ -622,19 +716,6 @@
         text-align: center;
 
     }
-
-
-    .clientLogoBox {
-       
-        gap: 15px 38px;
-        flex-wrap: wrap;
-    }
-
-
-    .clinetLogoSize {
-        width: 100px;
-    }
-    
 
 
 
