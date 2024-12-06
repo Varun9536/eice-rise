@@ -61,6 +61,12 @@ import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
+
+import footer from "../../assets/footer/foot.webp"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+
+
 export default function MemberSuite() {
 
 
@@ -185,6 +191,15 @@ const query = [
     answer: "A : Yes, it features multi-layered authentication and complies with privacy regulations to protect member data."
   }
 ];
+
+
+const footerUpperText = {
+
+  text1 : "Engage members" ,
+  text2 : "" ,
+  text3 : "and grow loyalty with our all-in-one Membership Portal" ,
+  img : footer
+}
 
 
 
@@ -442,7 +457,8 @@ const query = [
 
 
       <div >
-        <Footer3 />
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterLower />
 
       </div>
 

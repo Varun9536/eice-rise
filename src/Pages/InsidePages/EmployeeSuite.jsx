@@ -62,6 +62,11 @@ import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
+
+import footer from "../../assets/footer/foot.webp"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+
 export default function EmployeeSuite() {
 
 
@@ -209,7 +214,13 @@ const query = [
 
 
 
+const footerUpperText = {
 
+  text1 : "Empower your workforce" ,
+  text2 : "" ,
+  text3 : "with a streamlined Employee Portal" ,
+  img : footer
+}
 
 
 
@@ -463,7 +474,8 @@ const query = [
 
 
       <div >
-        <Footer3 />
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterLower />
 
       </div>
 

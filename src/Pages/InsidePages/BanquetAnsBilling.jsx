@@ -55,6 +55,11 @@ import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
+
+import footer from "../../assets/footer/foot.webp"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+
 export default function BanquetAnsBilling() {
 
 
@@ -66,48 +71,48 @@ export default function BanquetAnsBilling() {
       key: 1,
       heading: "Customized Packages and Pricing",
       desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-      img: cpp, 
-      width: "64px", 
+      img: cpp,
+      width: "64px",
     },
-    
+
     {
       key: 2,
       heading: "Digital Contracts and Invoicing",
       desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-      img: dci, 
-      width: "65px", 
+      img: dci,
+      width: "65px",
     },
 
     {
       key: 3,
       heading: "Integrated Resource Management",
       desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-      img: irm, 
-      width: "54px", 
+      img: irm,
+      width: "54px",
     },
 
     {
       key: 4,
       heading: "Automated Billing System",
       desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-      img: abs, 
-      width: "65px", 
+      img: abs,
+      width: "65px",
     },
 
     {
       key: 5,
       heading: "Comprehensive Reports",
       desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-      img: cr, 
-      width: "65px", 
+      img: cr,
+      width: "65px",
     },
 
     {
       key: 6,
       heading: "Client Portal Access",
       desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-      img: cpa, 
-      width: "63px", 
+      img: cpa,
+      width: "63px",
     }
   ];
 
@@ -119,19 +124,19 @@ export default function BanquetAnsBilling() {
       key: 1,
       heading: "Enhanced Client Experience",
       desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: ece, 
+      img: ece,
     },
     {
       key: 2,
       heading: "Improved Efficiency",
       desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: ie, 
+      img: ie,
     },
     {
       key: 3,
       heading: "Revenue Optimization",
       desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: ro, 
+      img: ro,
     },
     {
       key: 4,
@@ -143,7 +148,7 @@ export default function BanquetAnsBilling() {
       key: 5,
       heading: "Better Resource Utilization",
       desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: bru, 
+      img: bru,
     },
 
   ];
@@ -186,7 +191,15 @@ export default function BanquetAnsBilling() {
       answer: "A : Resource allocation for staff, catering, and equipment is automated to optimize event logistics and prevent overbooking."
     }
   ];
-  
+
+  const footerUpperText = {
+
+    text1 : "Manage events" ,
+    text2 : "" ,
+    text3 : "and simplify billing with our Banquet solution" ,
+    img : footer
+  }
+
 
 
 
@@ -430,8 +443,14 @@ export default function BanquetAnsBilling() {
       </section>
 
 
-      <div >
+      {/* <div >
         <Footer3 />
+
+      </div> */}
+
+      <div >
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterLower />
 
       </div>
 
