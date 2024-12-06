@@ -405,9 +405,9 @@ export default function RoomBooking() {
 
 
                     <div className={style.FAQContainer}>
-                        {query.map((faq, index) => (
-                            <Accordion key={index} question={faq.question} answer={faq.answer} />
-                        ))}
+                    {query.map((item) => (
+              <Accordion key={item.key} question={item.question} answer={item.answer} />
+            ))}
                     </div>
 
                 </div>

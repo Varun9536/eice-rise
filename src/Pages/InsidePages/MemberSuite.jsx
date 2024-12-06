@@ -158,6 +158,33 @@ const benefits = [
 
 
 
+const query = [
+  {
+    key: 1,
+    question: "Q : Can members manage their own profiles?",
+    answer: "A : Yes, members can update their profiles, renew subscriptions, and view membership benefits via a self-service portal."
+  },
+  {
+    key: 2,
+    question: "Q : Does the system offer automated subscription renewals?",
+    answer: "A : Yes, subscriptions and payments are automated with reminders to keep members engaged."
+  },
+  {
+    key: 3,
+    question: "Q : Are exclusive member benefits available?",
+    answer: "A : Yes, members can access exclusive benefits like priority bookings, special discounts, and events."
+  },
+  {
+    key: 4,
+    question: "Q : How can I track member engagement?",
+    answer: "A : An analytics dashboard provides insights into member activity, preferences, and engagement levels."
+  },
+  {
+    key: 5,
+    question: "Q : Is the platform secure for member data?",
+    answer: "A : Yes, it features multi-layered authentication and complies with privacy regulations to protect member data."
+  }
+];
 
 
 
@@ -168,24 +195,8 @@ const benefits = [
 
 
 
-  const query = [
-    {
-      question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-      answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
-    },
-    {
-      question: "Q : Can the module manage menu customization and promotions in real-time?",
-      answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
-    },
-    {
-      question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-      answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
-    },
-    {
-      question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-      answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
-    }
-  ];
+
+ 
 
 
 
@@ -421,8 +432,8 @@ const benefits = [
 
 
           <div className={style.FAQContainer}>
-            {query.map((faq, index) => (
-              <Accordion key={index} question={faq.question} answer={faq.answer} />
+          {query.map((item) => (
+              <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>
 

@@ -187,37 +187,43 @@ export default function AccountAndFinance() {
 
 
 
-
-
-
-
-
-
-
-
-
   const query = [
     {
       key: 1,
-      question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-      answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+      question: "Q : What financial functions does the Accounts & Finance module manage?",
+      answer: "A : The module manages accounts receivable, accounts payable, debit & credit notes, taxation, balance sheets, and general ledger. It streamlines processes and ensures accurate financial operations."
     },
     {
       key: 2,
-      question: "Q : Can the module manage menu customization and promotions in real-time?",
-      answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+      question: "Q : How does the module help in financial decision-making?",
+      answer: "A : It provides real-time financial data and advanced reporting tools, enabling managers to make data-driven decisions that enhance profitability and financial stability."
     },
     {
       key: 3,
-      question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-      answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+      question: "Q : How does the system handle tax compliance?",
+      answer: "A : The module automates tax calculations based on regional and international tax regulations, ensuring compliance and applying taxes seamlessly to invoices and payments."
     },
     {
       key: 4,
-      question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-      answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+      question: "Q : Can the Accounts & Finance module integrate with other systems?",
+      answer: "A : Yes, it integrates fully with other EICE Rise ERP modules like Room Booking, Banquet & Billing, Dining (POS), and more, ensuring synchronized financial records and consistent data flow."
+    },
+    {
+      key: 5,
+      question: "Q : How does the system assist in managing cash flow?",
+      answer: "A : It provides real-time tracking and reporting, helping businesses monitor cash flow, ensuring liquidity, and optimizing cash reserves."
     }
   ];
+  
+
+
+
+
+
+
+
+
+
 
 
 
@@ -454,8 +460,8 @@ export default function AccountAndFinance() {
 
 
           <div className={style.FAQContainer}>
-            {query.map((faq, index) => (
-              <Accordion key={faq.key} question={faq.question} answer={faq.answer} />
+          {query.map((item) => (
+              <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>
 

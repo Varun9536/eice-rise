@@ -161,23 +161,32 @@ export default function BanquetAnsBilling() {
 
   const query = [
     {
-      question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-      answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+      key: 1,
+      question: "Q : How can I manage event bookings?",
+      answer: "A : You can easily reserve venues and manage multiple event bookings with real-time availability updates."
     },
     {
-      question: "Q : Can the module manage menu customization and promotions in real-time?",
-      answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+      key: 2,
+      question: "Q : Does the system handle customized event packages?",
+      answer: "A : Yes, it allows you to create tailored event packages with various service and F&B options."
     },
     {
-      question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-      answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+      key: 3,
+      question: "Q : Are digital contracts and invoicing available?",
+      answer: "A : Yes, digital contracts and detailed invoices with transparent service breakdowns are generated automatically."
     },
     {
-      question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-      answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+      key: 4,
+      question: "Q : Can I track event revenue?",
+      answer: "A : Yes, you can access real-time reports on event bookings, revenue, and client preferences."
+    },
+    {
+      key: 5,
+      question: "Q : How is resource management handled?",
+      answer: "A : Resource allocation for staff, catering, and equipment is automated to optimize event logistics and prevent overbooking."
     }
   ];
-
+  
 
 
 
@@ -412,8 +421,8 @@ export default function BanquetAnsBilling() {
 
 
           <div className={style.FAQContainer}>
-            {query.map((faq, index) => (
-              <Accordion key={index} question={faq.question} answer={faq.answer} />
+            {query.map((item) => (
+              <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>
 

@@ -171,6 +171,33 @@ const benefits = [
 ];
 
 
+const query = [
+  {
+    key: 1,
+    question: "Q : How does the module track food and beverage costs?",
+    answer: "A : The system tracks the cost of ingredients, resources, and overhead in real-time, helping businesses maintain control over food and beverage transactions."
+  },
+  {
+    key: 2,
+    question: "Q : Can the module help with menu pricing?",
+    answer: "A : Yes, it analyzes menu item profitability by evaluating cost vs. price, helping businesses adjust pricing and optimize menu offerings."
+  },
+  {
+    key: 3,
+    question: "Q : Does the module assist with waste reduction?",
+    answer: "A : Yes, it identifies and reduces food wastage by tracking over-portioning, spoilage, and inefficient inventory practices, helping optimize resource utilization."
+  },
+  {
+    key: 4,
+    question: "Q : How does the system manage suppliers and inventory?",
+    answer: "A : It helps businesses monitor supplier prices, manage purchase orders, and maintain optimal inventory levels to reduce food costs and ensure efficient stock management."
+  },
+  {
+    key: 5,
+    question: "Q : Can I generate detailed financial reports for F&B costs?",
+    answer: "A : Yes, the system provides detailed reports on F&B costs, profit margins, and pricing strategies, helping businesses make informed decisions for operational efficiency."
+  }
+];
 
 
 
@@ -182,24 +209,7 @@ const benefits = [
 
 
 
-  const query = [
-    {
-      question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-      answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
-    },
-    {
-      question: "Q : Can the module manage menu customization and promotions in real-time?",
-      answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
-    },
-    {
-      question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-      answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
-    },
-    {
-      question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-      answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
-    }
-  ];
+ 
 
 
 
@@ -435,8 +445,8 @@ const benefits = [
 
 
           <div className={style.FAQContainer}>
-            {query.map((faq, index) => (
-              <Accordion key={index} question={faq.question} answer={faq.answer} />
+          {query.map((item) => (
+              <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>
 

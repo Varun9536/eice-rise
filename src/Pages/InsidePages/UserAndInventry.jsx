@@ -139,33 +139,43 @@ export default function UserAndInventry() {
     ];
 
 
-
-
-
-
-
-
-
-
-
     const query = [
         {
-            question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-            answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+          key: 1,
+          question: "Q : How does the User and Store Inventory Management Portal streamline inventory management?",
+          answer: "A : The portal offers real-time inventory updates, automates restocking, and provides centralized visibility of inventory across multiple store locations."
         },
         {
-            question: "Q : Can the module manage menu customization and promotions in real-time?",
-            answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+          key: 2,
+          question: "Q : Does the system allow management of multiple store locations?",
+          answer: "A : Yes, businesses can manage multiple stores from a single platform, transferring stock between locations and tracking regional inventory needs."
         },
         {
-            question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-            answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+          key: 3,
+          question: "Q : How does the portal help in tracking store performance?",
+          answer: "A : It provides real-time reports on sales, stock turnover, and user activity, giving businesses the insights needed to optimize operations and boost performance."
         },
         {
-            question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-            answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+          key: 4,
+          question: "Q : Can I integrate the system with other ERP modules?",
+          answer: "A : Yes, the portal seamlessly integrates with other ERP systems, reducing manual data entry and ensuring smooth data flow across functions."
+        },
+        {
+          key: 5,
+          question: "Q : How does the portal help reduce inventory costs?",
+          answer: "A : The portal automates inventory updates, prevents overstocking, and optimizes restocking processes, reducing unnecessary costs and improving profit margins."
         }
-    ];
+      ];
+      
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -401,8 +411,8 @@ export default function UserAndInventry() {
 
 
                     <div className={style.FAQContainer}>
-                        {query.map((faq, index) => (
-                            <Accordion key={index} question={faq.question} answer={faq.answer} />
+                        {query.map((item) => (
+                            <Accordion key={item.key} question={item.question} answer={item.answer} />
                         ))}
                     </div>
 

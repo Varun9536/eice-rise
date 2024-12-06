@@ -219,34 +219,44 @@ export default function PurchaseAndVendor() {
     ];
 
 
-
-
-
-
-
-
-
-
-
-
     const query = [
         {
-            question: "Q : How does the Dining (POS) module handle split bills or group payments?",
-            answer: "A: The Dining (POS) module offers an intuitive split-billing feature, allowing guests to divide payments among multiple parties or payment methods seamlessly."
+          key: 1,
+          question: "Q : How does the Purchase & Vendor Portal simplify vendor management?",
+          answer: "A : The portal centralizes vendor profiles, streamlines communication, and allows businesses to track vendor performance, payment statuses, and contract terms."
         },
         {
-            question: "Q : Can the module manage menu customization and promotions in real-time?",
-            answer: "A : Absolutely. The system allows real-time updates to menus, pricing, and promotional offers, ensuring your dining services are always up-to-date and aligned with your marketing strategies."
+          key: 2,
+          question: "Q : Can I compare vendor quotations easily?",
+          answer: "A : Yes, the system automatically compares vendor quotations based on price, delivery, and quality to help businesses make quick, data-driven procurement decisions."
         },
         {
-            question: "Q : Does the Dining (POS) module support table reservations and service tracking?",
-            answer: "A : Yes, the module includes features for managing table reservations and tracking service status, helping staff deliver timely and personalized guest experiences."
+          key: 3,
+          question: "Q : How does the module help with purchase orders?",
+          answer: "A : It tracks purchase orders from creation to fulfillment, integrates with inventory systems, and ensures accurate order management with real-time updates."
         },
         {
-            question: "Q : What analytics and reporting capabilities does the Dining (POS) module offer?",
-            answer: "A : The system provides detailed insights into sales trends, popular menu items, and customer preferences through customizable reports, empowering data-driven decision-making."
+          key: 4,
+          question: "Q : Is the portal integrated with financial systems?",
+          answer: "A : Yes, the portal integrates with finance modules to track spending, manage budgets, and monitor vendor payments efficiently."
+        },
+        {
+          key: 5,
+          question: "Q : Can I forecast future procurement needs?",
+          answer: "A : Yes, the module helps businesses forecast purchasing needs, set procurement budgets, and track spending based on historical data and trends."
         }
-    ];
+      ];
+      
+
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -484,9 +494,9 @@ export default function PurchaseAndVendor() {
 
 
                     <div className={style.FAQContainer}>
-                        {query.map((faq, index) => (
-                            <Accordion key={index} question={faq.question} answer={faq.answer} />
-                        ))}
+                    {query.map((item) => (
+              <Accordion key={item.key} question={item.question} answer={item.answer} />
+            ))}
                     </div>
 
                 </div>
