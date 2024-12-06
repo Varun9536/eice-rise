@@ -9,15 +9,25 @@ import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
 
 // features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+// import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
+// import it from "../../assets/insidePages/pos/posPage/feature/it.png"
+// import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
+// import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
+// import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
+// import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
+// import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
+// import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
+// import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
+
+import ad from "../../assets/insidePages/member/icon/ad.png"
+import emb from "../../assets/insidePages/member/icon/emb.png"
+import ict from "../../assets/insidePages/member/icon/ict.png"
+import mrm from "../../assets/insidePages/member/icon/mrm.png"
+import sadp from "../../assets/insidePages/member/icon/sadp.png"
+import scm from "../../assets/insidePages/member/icon/scm.png"
+import sm from "../../assets/insidePages/member/icon/sm.png"
+import ssp from "../../assets/insidePages/member/icon/ssp.png"
 
 
 
@@ -28,6 +38,14 @@ import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
 import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
 import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
 import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+
+
+// benefits
+import ddi from "../../assets/insidePages/member/memberBenefit/ddi.webp"
+import eme from "../../assets/insidePages/member/memberBenefit/eme.webp"
+import ic from "../../assets/insidePages/member/memberBenefit/ic.webp"
+import imr from "../../assets/insidePages/member/memberBenefit/imr.webp"
+import oe from "../../assets/insidePages/member/memberBenefit/oe.webp"
 
 
 
@@ -50,42 +68,42 @@ export default function MemberSuite() {
         key: 1,
         heading: "Membership Registration and Management",
         desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
-        img: ufi, // Reusing image from previous array, replace with relevant image if needed
+        img: mrm, // Reusing image from previous array, replace with relevant image if needed
         width: "64px"
     },
     {
         key: 2,
         heading: "Self-Service Portal",
         desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
-        img: rtmm, // Reusing image from previous array, replace with relevant image if needed
+        img: ssp, // Reusing image from previous array, replace with relevant image if needed
         width: "65px"
     },
     {
         key: 3,
         heading: "Subscription Management",
         desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
-        img: oc, // Reusing image from previous array, replace with relevant image if needed
+        img: sm, // Reusing image from previous array, replace with relevant image if needed
         width: "54px"
     },
     {
         key: 4,
         heading: "Exclusive Member Benefits",
         desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
-        img: tm, // Reusing image from previous array, replace with relevant image if needed
+        img: emb, // Reusing image from previous array, replace with relevant image if needed
         width: "65px"
     },
     {
         key: 5,
         heading: "Integrated Communication Tools",
         desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
-        img: ips, // Reusing image from previous array, replace with relevant image if needed
+        img: ict, // Reusing image from previous array, replace with relevant image if needed
         width: "65px"
     },
     {
         key: 6,
         heading: "Analytics Dashboard",
         desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
-        img: it, // Reusing image from previous array, replace with relevant image if needed
+        img: ad, // Reusing image from previous array, replace with relevant image if needed
         width: "63px"
     }
 ];
@@ -99,38 +117,39 @@ const benefits = [
       key: 1,
       heading: "Enhanced Member Experience",
       desc: "Provide a personalized and streamlined experience for your members, improving retention and satisfaction.",
-      img: b1, 
+      img: eme, 
   },
   {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automate routine tasks such as renewals and notifications, reducing administrative workload.",
-      img: b2, 
+      img: oe, 
   },
   {
       key: 3,
       heading: "Data-Driven Insights",
       desc: "Leverage analytics to understand member preferences and make informed decisions on services and offerings.",
-      img: b3, 
+      img: ddi, 
   },
   {
       key: 4,
       heading: "Improved Communication",
       desc: "Streamline communication with members through automated alerts, reminders, and personalized messaging, fostering stronger relationships and engagement.",
-      img: b4, 
+      img: ic, 
   },
   {
       key: 5,
       heading: "Increased Member Retention",
       desc: "By offering targeted services and benefits based on member data, you can increase retention and reduce churn, creating long-term loyalty.",
-      img: b5, 
+      img: imr, 
   },
-  {
-      key: 6,
-      heading: "Revenue Growth",
-      desc: "Enable upselling and cross-selling opportunities through tailored offers and personalized services, driving additional revenue streams from your existing member base.",
-      img: b1, 
-  }
+
+  // {
+  //     key: 6,
+  //     heading: "Revenue Growth",
+  //     desc: "Enable upselling and cross-selling opportunities through tailored offers and personalized services, driving additional revenue streams from your existing member base.",
+  //     img: r, 
+  // }
 ];
 
 

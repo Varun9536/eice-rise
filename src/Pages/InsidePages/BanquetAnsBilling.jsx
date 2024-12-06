@@ -19,6 +19,14 @@ import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
 import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
 
+import abs from "../../assets/insidePages/banquet/icon/abs.png"
+import cpa from "../../assets/insidePages/banquet/icon/cpa.png"
+import cpp from "../../assets/insidePages/banquet/icon/cpp.png"
+import cr from "../../assets/insidePages/banquet/icon/cr.png"
+import dci from "../../assets/insidePages/banquet/icon/dci.png"
+import irm from "../../assets/insidePages/banquet/icon/irm.png"
+
+
 
 // benifits
 
@@ -49,43 +57,48 @@ export default function BanquetAnsBilling() {
       key: 1,
       heading: "Customized Packages and Pricing",
       desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
-      img: ufi, // Image from the previous array
-      width: "64px", // Width from the previous array
+      img: cpp, 
+      width: "64px", 
     },
+    
     {
       key: 2,
       heading: "Digital Contracts and Invoicing",
       desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
-      img: rtmm, // Image from the previous array
-      width: "65px", // Width from the previous array
+      img: dci, 
+      width: "65px", 
     },
+
     {
       key: 3,
       heading: "Integrated Resource Management",
       desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
-      img: oc, // Image from the previous array
-      width: "54px", // Width from the previous array
+      img: irm, 
+      width: "54px", 
     },
+
     {
       key: 4,
       heading: "Automated Billing System",
       desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
-      img: tm, // Image from the previous array
-      width: "65px", // Width from the previous array
+      img: abs, 
+      width: "65px", 
     },
+
     {
       key: 5,
       heading: "Comprehensive Reports",
       desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
-      img: ips, // Image from the previous array
-      width: "65px", // Width from the previous array
+      img: cr, 
+      width: "65px", 
     },
+
     {
       key: 6,
       heading: "Client Portal Access",
       desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
-      img: it, // Image from the previous array
-      width: "63px", // Width from the previous array
+      img: cpa, 
+      width: "63px", 
     }
   ];
 
