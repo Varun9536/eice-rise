@@ -21,6 +21,18 @@ import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
 import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
 
+// features
+import bm from "../../assets/insidePages/emp/icon/bm.png"
+import can from "../../assets/insidePages/emp/icon/can.png"
+import da from "../../assets/insidePages/emp/icon/da.png"
+import lam from "../../assets/insidePages/emp/icon/lam.png"
+import pc from "../../assets/insidePages/emp/icon/pc.png"
+import pim from "../../assets/insidePages/emp/icon/pim.png"
+import pm from "../../assets/insidePages/emp/icon/pm.png"
+import sr from "../../assets/insidePages/emp/icon/sr.png"
+import td from "../../assets/insidePages/emp/icon/td.png"
+
+
 
 // benifits
 
@@ -29,6 +41,13 @@ import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
 import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
 import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
 import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+
+
+import ec from "../../assets/insidePages/emp/empBenefits/ec.webp"
+import ee from "../../assets/insidePages/emp/empBenefits/ee.webp"
+import ie from "../../assets/insidePages/emp/empBenefits/ie.webp"
+import ts from "../../assets/insidePages/emp/empBenefits/ts.webp"
+import tt from "../../assets/insidePages/emp/empBenefits/tt.webp"
 
 
 
@@ -51,63 +70,63 @@ export default function EmployeeSuite() {
         key: 1,
         heading: "Personal Information Management",
         desc: "Employees can update their contact details, emergency contacts, and tax information, ensuring accurate and up-to-date records.",
-        img: ufi, // Replace with the appropriate image from your existing feature array
+        img: pim, // Replace with the appropriate image from your existing feature array
         width: "64px", // Adjust to match the previous feature array
     },
     {
         key: 2,
         heading: "Payroll and Compensation",
         desc: "Employees can access payslips, track salary history, and view deductions and bonuses, providing full transparency on compensation.",
-        img: rtmm, // Replace with the appropriate image from your existing feature array
+        img: pc, // Replace with the appropriate image from your existing feature array
         width: "65px", // Adjust to match the previous feature array
     },
     {
         key: 3,
         heading: "Leave and Attendance Management",
         desc: "Employees can submit leave requests, track attendance, and view leave balances, making time-off management easier.",
-        img: oc, // Replace with the appropriate image from your existing feature array
+        img: lam, // Replace with the appropriate image from your existing feature array
         width: "54px", // Adjust to match the previous feature array
     },
     {
         key: 4,
         heading: "Training and Development",
         desc: "Employees can explore training programs, track progress, and enroll in courses to enhance their professional skills.",
-        img: tm, // Replace with the appropriate image from your existing feature array
+        img: td, // Replace with the appropriate image from your existing feature array
         width: "65px", // Adjust to match the previous feature array
     },
     {
         key: 5,
         heading: "Document Access",
         desc: "Employees can access important documents such as policies, contracts, benefits, and company announcements, ensuring quick access to essential information.",
-        img: ips, // Replace with the appropriate image from your existing feature array
+        img: da, // Replace with the appropriate image from your existing feature array
         width: "65px", // Adjust to match the previous feature array
     },
     {
         key: 6,
         heading: "Company Announcements and News",
         desc: "Employees stay updated on company news, policy changes, and upcoming events, fostering better communication within the organization.",
-        img: it, // Replace with the appropriate image from your existing feature array
+        img: can, // Replace with the appropriate image from your existing feature array
         width: "63px", // Adjust to match the previous feature array
     },
     {
         key: 7,
         heading: "Performance Management",
         desc: "Employees can track their goals, review feedback, and collaborate with managers to set development plans.",
-        img: ufi, // Replace with the appropriate image from your existing feature array
+        img: pm, // Replace with the appropriate image from your existing feature array
         width: "64px", // Adjust to match the previous feature array
     },
     {
         key: 8,
         heading: "Benefits Management",
         desc: "Employees can manage their benefits like health insurance, retirement plans, and wellness programs, ensuring they stay informed of all available options.",
-        img: rtmm, // Replace with the appropriate image from your existing feature array
+        img: bm, // Replace with the appropriate image from your existing feature array
         width: "65px", // Adjust to match the previous feature array
     },
     {
         key: 9,
         heading: "Support and Requests",
         desc: "Employees can submit HR inquiries, request support, or raise issues through the portal, streamlining communication and issue resolution.",
-        img: oc, // Replace with the appropriate image from your existing feature array
+        img: sr, // Replace with the appropriate image from your existing feature array
         width: "54px", // Adjust to match the previous feature array
     }
 ];
@@ -122,38 +141,38 @@ const benefits = [
       key: 1,
       heading: "Improved Efficiency",
       desc: "Reduces administrative work by centralizing HR services and allowing employees to manage their own data.",
-      img: b1, 
+      img: ie, 
   },
   {
       key: 2,
       heading: "Enhanced Communication",
       desc: "Ensures clear communication about company policies, events, and updates.",
-      img: b2, 
+      img: ec, 
   },
   {
       key: 3,
       heading: "Employee Empowerment",
       desc: "Increases engagement by giving employees control over their personal and professional information.",
-      img: b3, 
+      img: ee, 
   },
   {
       key: 4,
       heading: "Transparency and Trust",
       desc: "Promotes trust by providing full visibility into payroll, benefits, and performance.",
-      img: b4, 
+      img: tt, 
   },
   {
       key: 5,
       heading: "Time Savings",
       desc: "Automates HR processes, freeing up time for HR teams to focus on strategic tasks.",
-      img: b5, 
+      img: ts 
   },
-  {
-      key: 6,
-      heading: "Compliance and Security",
-      desc: "Ensures secure storage and compliance with data privacy regulations, protecting sensitive employee information.",
-      img: b1, 
-  }
+  // {
+  //     key: 6,
+  //     heading: "Compliance and Security",
+  //     desc: "Ensures secure storage and compliance with data privacy regulations, protecting sensitive employee information.",
+  //     img: c, 
+  // }
 ];
 
 

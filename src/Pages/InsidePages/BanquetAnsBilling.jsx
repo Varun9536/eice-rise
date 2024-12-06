@@ -1,9 +1,9 @@
 import style from "./Styles/banquetAndBilling.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+import artb from "../../assets/insidePages/banquet/section2B/artb.png"
+import eem from "../../assets/insidePages/banquet/section2B/eem.png"
+import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
 
 
 
@@ -35,6 +35,15 @@ import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
 import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
 import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
 import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+
+
+// benefits
+
+import bru from "../../assets/insidePages/banquet/banquetbenefits/bru.webp"
+import cm from "../../assets/insidePages/banquet/banquetbenefits/cm.webp"
+import ece from "../../assets/insidePages/banquet/banquetbenefits/ece.webp"
+import ie from "../../assets/insidePages/banquet/banquetbenefits/ie.webp"
+import ro from "../../assets/insidePages/banquet/banquetbenefits/ro.webp"
 
 
 
@@ -110,31 +119,31 @@ export default function BanquetAnsBilling() {
       key: 1,
       heading: "Enhanced Client Experience",
       desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
-      img: b1, 
+      img: ece, 
     },
     {
       key: 2,
       heading: "Improved Efficiency",
       desc: "Automates event management and billing, reducing manual errors and saving time.",
-      img: b2, 
+      img: ie, 
     },
     {
       key: 3,
       heading: "Revenue Optimization",
       desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
-      img: b3, 
+      img: ro, 
     },
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
-      img: b4,
+      img: cm,
     },
     {
       key: 5,
       heading: "Better Resource Utilization",
       desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
-      img: b5, 
+      img: bru, 
     },
 
   ];
@@ -200,7 +209,7 @@ export default function BanquetAnsBilling() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon1} alt="" />
+              <img style={{ width: "100%" }} src={artb} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -215,7 +224,7 @@ export default function BanquetAnsBilling() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon2} alt="" />
+              <img style={{ width: "100%" }} src={eem} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -233,7 +242,7 @@ export default function BanquetAnsBilling() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon3} alt="" />
+              <img style={{ width: "100%" }} src={fcb} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>

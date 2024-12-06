@@ -2,10 +2,14 @@
 import style from "./Styles/memberSuite.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+// import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
+// import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
+// import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
+
+import cag from "../../assets/insidePages/member/memberSection2/cag.png"
+import pme from "../../assets/insidePages/member/memberSection2/pme.png"
+import smo from "../../assets/insidePages/member/memberSection2/smo.png"
 
 
 // features
@@ -214,7 +218,7 @@ const benefits = [
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon1} alt="" />
+              <img style={{ width: "100%" }} src={cag} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -229,7 +233,7 @@ const benefits = [
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon2} alt="" />
+              <img style={{ width: "100%" }} src={smo} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -247,7 +251,7 @@ const benefits = [
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon3} alt="" />
+              <img style={{ width: "100%" }} src={pme} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>

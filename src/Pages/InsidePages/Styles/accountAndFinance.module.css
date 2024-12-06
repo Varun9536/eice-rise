@@ -9,14 +9,14 @@
 }
 
 .section1ImgBox {
-    background-image: url("../../../assets/insidePages/pos/posPage/H3.webp");
+    background-image: url("../../../assets/insidePages/account/h.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 60%;
     height: 500px;
     position: relative;
-    left: 86px;
+    /* left: 86px; */
 
 }
 
