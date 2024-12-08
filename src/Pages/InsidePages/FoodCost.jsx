@@ -36,6 +36,9 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 import Footer3 from "../../Components/Footer/Footer3.jsx"
+import footer from "../../assets/footer/foot.webp"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -206,7 +209,13 @@ const query = [
 
 
 
+const footerUpperText = {
 
+  text1: "Empower your workforce",
+  text2: "",
+  text3: "with a streamlined Employee Portal",
+  img: footer
+}
 
 
  
@@ -395,7 +404,7 @@ const query = [
 
 
 
-      <section style={{ background: "#f5f5f5" }} >
+      {/* <section style={{ background: "#f5f5f5" }} >
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -435,7 +444,49 @@ const query = [
           ))}
 
         </div>
-      </section>
+      </section> */}
+
+<section style={{ background: "#f5f5f5" }} >
+                <div className={`${style.section5} font4 globalSectionSize`}>
+
+
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
+
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
+
+
+                            <div className="GlobalBenefitImgBox" >
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>) : (<div className='GlobalBenefitBox2'>
+
+
+                            <div className="GlobalBenefitImgBox">
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>)
+
+
+                    ))}
+
+                </div>
+            </section>
 
 
 
@@ -455,7 +506,8 @@ const query = [
 
 
       <div >
-        <Footer3 />
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterLower />
 
       </div>
 

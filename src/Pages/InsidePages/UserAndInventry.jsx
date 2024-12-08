@@ -36,6 +36,10 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 import Footer3 from "../../Components/Footer/Footer3.jsx"
 
+import footer from "../../assets/footer/foot.webp"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function UserAndInventry() {
@@ -141,41 +145,47 @@ export default function UserAndInventry() {
 
     const query = [
         {
-          key: 1,
-          question: "Q : How does the User and Store Inventory Management Portal streamline inventory management?",
-          answer: "A : The portal offers real-time inventory updates, automates restocking, and provides centralized visibility of inventory across multiple store locations."
+            key: 1,
+            question: "Q : How does the User and Store Inventory Management Portal streamline inventory management?",
+            answer: "A : The portal offers real-time inventory updates, automates restocking, and provides centralized visibility of inventory across multiple store locations."
         },
         {
-          key: 2,
-          question: "Q : Does the system allow management of multiple store locations?",
-          answer: "A : Yes, businesses can manage multiple stores from a single platform, transferring stock between locations and tracking regional inventory needs."
+            key: 2,
+            question: "Q : Does the system allow management of multiple store locations?",
+            answer: "A : Yes, businesses can manage multiple stores from a single platform, transferring stock between locations and tracking regional inventory needs."
         },
         {
-          key: 3,
-          question: "Q : How does the portal help in tracking store performance?",
-          answer: "A : It provides real-time reports on sales, stock turnover, and user activity, giving businesses the insights needed to optimize operations and boost performance."
+            key: 3,
+            question: "Q : How does the portal help in tracking store performance?",
+            answer: "A : It provides real-time reports on sales, stock turnover, and user activity, giving businesses the insights needed to optimize operations and boost performance."
         },
         {
-          key: 4,
-          question: "Q : Can I integrate the system with other ERP modules?",
-          answer: "A : Yes, the portal seamlessly integrates with other ERP systems, reducing manual data entry and ensuring smooth data flow across functions."
+            key: 4,
+            question: "Q : Can I integrate the system with other ERP modules?",
+            answer: "A : Yes, the portal seamlessly integrates with other ERP systems, reducing manual data entry and ensuring smooth data flow across functions."
         },
         {
-          key: 5,
-          question: "Q : How does the portal help reduce inventory costs?",
-          answer: "A : The portal automates inventory updates, prevents overstocking, and optimizes restocking processes, reducing unnecessary costs and improving profit margins."
+            key: 5,
+            question: "Q : How does the portal help reduce inventory costs?",
+            answer: "A : The portal automates inventory updates, prevents overstocking, and optimizes restocking processes, reducing unnecessary costs and improving profit margins."
         }
-      ];
-      
+    ];
+
+
+
+    const footerUpperText = {
+
+        text1: "Empower your workforce",
+        text2: "",
+        text3: "with a streamlined Employee Portal",
+        img: footer
+      }
 
 
 
 
 
 
-
-
- 
 
 
 
@@ -361,7 +371,7 @@ export default function UserAndInventry() {
 
 
 
-            <section style={{ background: "#f5f5f5" }} >
+            {/* <section style={{ background: "#f5f5f5" }} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -401,6 +411,48 @@ export default function UserAndInventry() {
                     ))}
 
                 </div>
+            </section> */}
+
+            <section style={{ background: "#f5f5f5" }} >
+                <div className={`${style.section5} font4 globalSectionSize`}>
+
+
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
+
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
+
+
+                            <div className="GlobalBenefitImgBox" >
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>) : (<div className='GlobalBenefitBox2'>
+
+
+                            <div className="GlobalBenefitImgBox">
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>)
+
+
+                    ))}
+
+                </div>
             </section>
 
 
@@ -421,7 +473,8 @@ export default function UserAndInventry() {
 
 
             <div >
-                <Footer3 />
+                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+                <FooterLower />
 
             </div>
 

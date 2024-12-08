@@ -12,15 +12,15 @@ import rtet from "../../assets/insidePages/account/financeSection2/rtet.png"
 
 
 
-import  ara from "../../assets/insidePages/account/icon/ara.png"
-import  bf from "../../assets/insidePages/account/icon/bf.png"
-import  cf from "../../assets/insidePages/account/icon/cf.png"
-import  cfm from "../../assets/insidePages/account/icon/cfm.png"
-import  iib from "../../assets/insidePages/account/icon/iib.png"
-import  pgi from "../../assets/insidePages/account/icon/pgi.png"
-import  rtfd from "../../assets/insidePages/account/icon/rtfd.png"
-import  tmc from "../../assets/insidePages/account/icon/tmc.png"
-import  vsp from "../../assets/insidePages/account/icon/vsp.png"
+import ara from "../../assets/insidePages/account/icon/ara.png"
+import bf from "../../assets/insidePages/account/icon/bf.png"
+import cf from "../../assets/insidePages/account/icon/cf.png"
+import cfm from "../../assets/insidePages/account/icon/cfm.png"
+import iib from "../../assets/insidePages/account/icon/iib.png"
+import pgi from "../../assets/insidePages/account/icon/pgi.png"
+import rtfd from "../../assets/insidePages/account/icon/rtfd.png"
+import tmc from "../../assets/insidePages/account/icon/tmc.png"
+import vsp from "../../assets/insidePages/account/icon/vsp.png"
 
 
 
@@ -203,16 +203,16 @@ export default function AccountAndFinance() {
       answer: "A : It provides real-time tracking and reporting, helping businesses monitor cash flow, ensuring liquidity, and optimizing cash reserves."
     }
   ];
-  
+
 
 
 
   const footerUpperText = {
 
-    text1 : "Gain control " ,
-    text2 : "" ,
-    text3 : "of your finances with automated workflows and insights." ,
-    img : footer
+    text1: "Gain control ",
+    text2: "",
+    text3: "of your finances with automated workflows and insights.",
+    img: footer
   }
 
 
@@ -419,7 +419,7 @@ export default function AccountAndFinance() {
             index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-              <div style={{ width: "25%" }}>
+              <div className="GlobalBenefitImgBox" >
                 <img style={{ width: "100%" }} src={item.img} alt="" />
               </div>
 
@@ -432,7 +432,7 @@ export default function AccountAndFinance() {
             </div>) : (<div className='GlobalBenefitBox2'>
 
 
-              <div style={{ width: "25%" }}>
+              <div className="GlobalBenefitImgBox">
                 <img style={{ width: "100%" }} src={item.img} alt="" />
               </div>
 
@@ -458,7 +458,7 @@ export default function AccountAndFinance() {
 
 
           <div className={style.FAQContainer}>
-          {query.map((item) => (
+            {query.map((item) => (
               <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>

@@ -75,152 +75,152 @@ export default function EmployeeSuite() {
 
   const features = [
     {
-        key: 1,
-        heading: "Personal Information Management",
-        desc: "Employees can update their contact details, emergency contacts, and tax information, ensuring accurate and up-to-date records.",
-        img: pim, // Replace with the appropriate image from your existing feature array
-        width: "64px", // Adjust to match the previous feature array
+      key: 1,
+      heading: "Personal Information Management",
+      desc: "Employees can update their contact details, emergency contacts, and tax information, ensuring accurate and up-to-date records.",
+      img: pim, // Replace with the appropriate image from your existing feature array
+      width: "64px", // Adjust to match the previous feature array
     },
     {
-        key: 2,
-        heading: "Payroll and Compensation",
-        desc: "Employees can access payslips, track salary history, and view deductions and bonuses, providing full transparency on compensation.",
-        img: pc, // Replace with the appropriate image from your existing feature array
-        width: "65px", // Adjust to match the previous feature array
+      key: 2,
+      heading: "Payroll and Compensation",
+      desc: "Employees can access payslips, track salary history, and view deductions and bonuses, providing full transparency on compensation.",
+      img: pc, // Replace with the appropriate image from your existing feature array
+      width: "65px", // Adjust to match the previous feature array
     },
     {
-        key: 3,
-        heading: "Leave and Attendance Management",
-        desc: "Employees can submit leave requests, track attendance, and view leave balances, making time-off management easier.",
-        img: lam, // Replace with the appropriate image from your existing feature array
-        width: "54px", // Adjust to match the previous feature array
+      key: 3,
+      heading: "Leave and Attendance Management",
+      desc: "Employees can submit leave requests, track attendance, and view leave balances, making time-off management easier.",
+      img: lam, // Replace with the appropriate image from your existing feature array
+      width: "54px", // Adjust to match the previous feature array
     },
     {
-        key: 4,
-        heading: "Training and Development",
-        desc: "Employees can explore training programs, track progress, and enroll in courses to enhance their professional skills.",
-        img: td, // Replace with the appropriate image from your existing feature array
-        width: "65px", // Adjust to match the previous feature array
+      key: 4,
+      heading: "Training and Development",
+      desc: "Employees can explore training programs, track progress, and enroll in courses to enhance their professional skills.",
+      img: td, // Replace with the appropriate image from your existing feature array
+      width: "65px", // Adjust to match the previous feature array
     },
     {
-        key: 5,
-        heading: "Document Access",
-        desc: "Employees can access important documents such as policies, contracts, benefits, and company announcements, ensuring quick access to essential information.",
-        img: da, // Replace with the appropriate image from your existing feature array
-        width: "65px", // Adjust to match the previous feature array
+      key: 5,
+      heading: "Document Access",
+      desc: "Employees can access important documents such as policies, contracts, benefits, and company announcements, ensuring quick access to essential information.",
+      img: da, // Replace with the appropriate image from your existing feature array
+      width: "65px", // Adjust to match the previous feature array
     },
     {
-        key: 6,
-        heading: "Company Announcements and News",
-        desc: "Employees stay updated on company news, policy changes, and upcoming events, fostering better communication within the organization.",
-        img: can, // Replace with the appropriate image from your existing feature array
-        width: "63px", // Adjust to match the previous feature array
+      key: 6,
+      heading: "Company Announcements and News",
+      desc: "Employees stay updated on company news, policy changes, and upcoming events, fostering better communication within the organization.",
+      img: can, // Replace with the appropriate image from your existing feature array
+      width: "63px", // Adjust to match the previous feature array
     },
     {
-        key: 7,
-        heading: "Performance Management",
-        desc: "Employees can track their goals, review feedback, and collaborate with managers to set development plans.",
-        img: pm, // Replace with the appropriate image from your existing feature array
-        width: "64px", // Adjust to match the previous feature array
+      key: 7,
+      heading: "Performance Management",
+      desc: "Employees can track their goals, review feedback, and collaborate with managers to set development plans.",
+      img: pm, // Replace with the appropriate image from your existing feature array
+      width: "64px", // Adjust to match the previous feature array
     },
     {
-        key: 8,
-        heading: "Benefits Management",
-        desc: "Employees can manage their benefits like health insurance, retirement plans, and wellness programs, ensuring they stay informed of all available options.",
-        img: bm, // Replace with the appropriate image from your existing feature array
-        width: "65px", // Adjust to match the previous feature array
+      key: 8,
+      heading: "Benefits Management",
+      desc: "Employees can manage their benefits like health insurance, retirement plans, and wellness programs, ensuring they stay informed of all available options.",
+      img: bm, // Replace with the appropriate image from your existing feature array
+      width: "65px", // Adjust to match the previous feature array
     },
     {
-        key: 9,
-        heading: "Support and Requests",
-        desc: "Employees can submit HR inquiries, request support, or raise issues through the portal, streamlining communication and issue resolution.",
-        img: sr, // Replace with the appropriate image from your existing feature array
-        width: "54px", // Adjust to match the previous feature array
+      key: 9,
+      heading: "Support and Requests",
+      desc: "Employees can submit HR inquiries, request support, or raise issues through the portal, streamlining communication and issue resolution.",
+      img: sr, // Replace with the appropriate image from your existing feature array
+      width: "54px", // Adjust to match the previous feature array
     }
-];
+  ];
 
 
 
 
 
 
-const benefits = [
-  {
+  const benefits = [
+    {
       key: 1,
       heading: "Improved Efficiency",
       desc: "Reduces administrative work by centralizing HR services and allowing employees to manage their own data.",
-      img: ie, 
-  },
-  {
+      img: ie,
+    },
+    {
       key: 2,
       heading: "Enhanced Communication",
       desc: "Ensures clear communication about company policies, events, and updates.",
-      img: ec, 
-  },
-  {
+      img: ec,
+    },
+    {
       key: 3,
       heading: "Employee Empowerment",
       desc: "Increases engagement by giving employees control over their personal and professional information.",
-      img: ee, 
-  },
-  {
+      img: ee,
+    },
+    {
       key: 4,
       heading: "Transparency and Trust",
       desc: "Promotes trust by providing full visibility into payroll, benefits, and performance.",
-      img: tt, 
-  },
-  {
+      img: tt,
+    },
+    {
       key: 5,
       heading: "Time Savings",
       desc: "Automates HR processes, freeing up time for HR teams to focus on strategic tasks.",
-      img: ts 
-  },
-  // {
-  //     key: 6,
-  //     heading: "Compliance and Security",
-  //     desc: "Ensures secure storage and compliance with data privacy regulations, protecting sensitive employee information.",
-  //     img: c, 
-  // }
-];
+      img: ts
+    },
+    // {
+    //     key: 6,
+    //     heading: "Compliance and Security",
+    //     desc: "Ensures secure storage and compliance with data privacy regulations, protecting sensitive employee information.",
+    //     img: c, 
+    // }
+  ];
 
 
-const query = [
-  {
-    key: 1,
-    question: "Q : What services does the Employee Portal provide?",
-    answer: "A : The portal offers access to payroll information, leave management, training, benefits, and company announcements, empowering employees to manage their professional data."
-  },
-  {
-    key: 2,
-    question: "Q : How does the portal improve communication within the company?",
-    answer: "A : It ensures employees stay updated on company policies, news, and events, fostering better communication across the organization."
-  },
-  {
-    key: 3,
-    question: "Q : Can employees track their performance through the portal?",
-    answer: "A : Yes, employees can track their goals, review feedback, and collaborate with managers on development plans to improve performance."
-  },
-  {
-    key: 4,
-    question: "Q : How does the portal ensure data security?",
-    answer: "A : The portal ensures secure storage of sensitive employee information and complies with data privacy regulations, protecting employee data."
-  },
-  {
-    key: 5,
-    question: "Q : How does the portal enhance HR efficiency?",
-    answer: "A : By centralizing HR services and automating processes like leave requests and payroll management, the portal reduces administrative workload and enhances HR productivity."
+  const query = [
+    {
+      key: 1,
+      question: "Q : What services does the Employee Portal provide?",
+      answer: "A : The portal offers access to payroll information, leave management, training, benefits, and company announcements, empowering employees to manage their professional data."
+    },
+    {
+      key: 2,
+      question: "Q : How does the portal improve communication within the company?",
+      answer: "A : It ensures employees stay updated on company policies, news, and events, fostering better communication across the organization."
+    },
+    {
+      key: 3,
+      question: "Q : Can employees track their performance through the portal?",
+      answer: "A : Yes, employees can track their goals, review feedback, and collaborate with managers on development plans to improve performance."
+    },
+    {
+      key: 4,
+      question: "Q : How does the portal ensure data security?",
+      answer: "A : The portal ensures secure storage of sensitive employee information and complies with data privacy regulations, protecting employee data."
+    },
+    {
+      key: 5,
+      question: "Q : How does the portal enhance HR efficiency?",
+      answer: "A : By centralizing HR services and automating processes like leave requests and payroll management, the portal reduces administrative workload and enhances HR productivity."
+    }
+  ];
+
+
+
+  const footerUpperText = {
+
+    text1: "Empower your workforce",
+    text2: "",
+    text3: "with a streamlined Employee Portal",
+    img: footer
   }
-];
-
-
-
-const footerUpperText = {
-
-  text1 : "Empower your workforce" ,
-  text2 : "" ,
-  text3 : "with a streamlined Employee Portal" ,
-  img : footer
-}
 
 
 
@@ -228,7 +228,7 @@ const footerUpperText = {
 
 
 
- 
+
 
 
 
@@ -305,7 +305,7 @@ const footerUpperText = {
               </div>
 
               <div>
-              Collaboration
+                Collaboration
               </div>
             </div>
 
@@ -336,7 +336,7 @@ const footerUpperText = {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-              The Employee Portal provides centralized access to work-related information, resources, and services. It streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience.
+                The Employee Portal provides centralized access to work-related information, resources, and services. It streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience.
 
               </div>
 
@@ -414,7 +414,7 @@ const footerUpperText = {
 
 
 
-      <section style={{ background: "#f5f5f5" }} >
+      {/* <section style={{ background: "#f5f5f5" }} >
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -454,6 +454,48 @@ const footerUpperText = {
           ))}
 
         </div>
+      </section> */}
+
+      <section style={{ background: "#f5f5f5" }} >
+        <div className={`${style.section5} font4 globalSectionSize`}>
+
+
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
+
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
+
+
+              <div className="GlobalBenefitImgBox" >
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
+
+
+            </div>) : (<div className='GlobalBenefitBox2'>
+
+
+              <div className="GlobalBenefitImgBox">
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
+
+
+            </div>)
+
+
+          ))}
+
+        </div>
       </section>
 
 
@@ -464,7 +506,7 @@ const footerUpperText = {
 
 
           <div className={style.FAQContainer}>
-          {query.map((item) => (
+            {query.map((item) => (
               <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>

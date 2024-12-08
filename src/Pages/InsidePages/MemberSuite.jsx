@@ -401,7 +401,7 @@ export default function MemberSuite() {
 
 
 
-      <section style={{ background: "#f5f5f5" }} >
+      {/* <section style={{ background: "#f5f5f5" }} >
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -441,7 +441,49 @@ export default function MemberSuite() {
           ))}
 
         </div>
-      </section>
+      </section> */}
+
+<section style={{ background: "#f5f5f5" }} >
+                <div className={`${style.section5} font4 globalSectionSize`}>
+
+
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
+
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
+
+
+                            <div className="GlobalBenefitImgBox" >
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>) : (<div className='GlobalBenefitBox2'>
+
+
+                            <div className="GlobalBenefitImgBox">
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>)
+
+
+                    ))}
+
+                </div>
+            </section>
 
 
 

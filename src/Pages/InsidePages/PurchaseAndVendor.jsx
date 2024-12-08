@@ -37,6 +37,9 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import footer from "../../assets/footer/foot.webp"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 export default function PurchaseAndVendor() {
 
@@ -249,7 +252,13 @@ export default function PurchaseAndVendor() {
       
 
 
+      const footerUpperText = {
 
+        text1: "Empower your workforce",
+        text2: "",
+        text3: "with a streamlined Employee Portal",
+        img: footer
+      }
 
 
 
@@ -438,7 +447,7 @@ export default function PurchaseAndVendor() {
 
 
 
-            <section style={{ background: "#f5f5f5" }} >
+            {/* <section style={{ background: "#f5f5f5" }} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -463,6 +472,48 @@ export default function PurchaseAndVendor() {
 
 
                             <div style={{ width: "25%" }}>
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>)
+
+
+                    ))}
+
+                </div>
+            </section> */}
+
+<section style={{ background: "#f5f5f5" }} >
+                <div className={`${style.section5} font4 globalSectionSize`}>
+
+
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
+
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
+
+
+                            <div className="GlobalBenefitImgBox" >
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
+
+
+                        </div>) : (<div className='GlobalBenefitBox2'>
+
+
+                            <div className="GlobalBenefitImgBox">
                                 <img style={{ width: "100%" }} src={item.img} alt="" />
                             </div>
 
@@ -504,9 +555,10 @@ export default function PurchaseAndVendor() {
 
 
             <div >
-                <Footer3 />
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterLower />
 
-            </div>
+      </div>
 
         </>
     )
