@@ -120,22 +120,6 @@ export default function Footer() {
 
 
 
-            {/* <div className={`${styles.copyRightSectionBox}`}>
-
-                <div className="globalSectionSize">
-
-                    <div>
-
-                    </div>
-
-                    <div>
-
-                    </div>
-
-                </div>
-
-            </div> */}
-
 
             <div  className={`${styles.copyRightSectionBox} font4  `}  >
                 <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
