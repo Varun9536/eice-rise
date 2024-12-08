@@ -52,7 +52,7 @@ export default function RoomBooking() {
 
 
 
-    
+
 
 
 
@@ -142,35 +142,35 @@ export default function RoomBooking() {
             heading: "Enhanced Guest Experience",
             desc: "Provides a hassle-free booking process that enhances customer satisfaction and loyalty.",
             img: b1,
-            
+
         },
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Reduces manual workload for staff and minimizes booking errors, resulting in smoother operations.",
             img: b2,
-           
+
         },
         {
             key: 3,
             heading: "Revenue Optimization",
             desc: "Maximizes room occupancy and boosts revenue through dynamic pricing and promotional features.",
             img: b3,
-           
+
         },
         {
             key: 4,
             heading: "Centralized Management",
             desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
             img: b4,
-          
+
         },
         {
             key: 5,
             heading: "Real-time Availability",
             desc: "Ensures guests have access to up-to-date room availability, preventing overbooking and improving guest trust.",
             img: b5,
-            
+
         }
     ];
 
@@ -203,7 +203,7 @@ export default function RoomBooking() {
 
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
-                    <div style={{ width: "33%" }}>
+                    <div className={`${style.pageHeadingBox}`}>
                         <div className={`${style.section1Heading} font4`}>
                             <span style={{ color: "#012060" }}>ROOM </span>
                             <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
@@ -357,46 +357,46 @@ export default function RoomBooking() {
 
 
             <section style={{ background: "#f5f5f5" }} >
-        <div className={`${style.section5} font4 globalSectionSize`}>
+                <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-          <div className={`${style.section5heading} font4`}>Benefits</div>
-          {benefits.map((item, index) =>
-          (
+                    <div className={`${style.section5heading} font4`}>Benefits</div>
+                    {benefits.map((item, index) =>
+                    (
 
-            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
+                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-            </div>) : (<div className='GlobalBenefitBox2'>
+                            <div className="GlobalBenefitImgBox" >
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
 
 
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
+                        </div>) : (<div className='GlobalBenefitBox2'>
 
 
-            </div>)
+                            <div className="GlobalBenefitImgBox">
+                                <img style={{ width: "100%" }} src={item.img} alt="" />
+                            </div>
+
+                            <div className='GlobalBenefitTextBox' >
+                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+                            </div>
 
 
-          ))}
+                        </div>)
 
-        </div>
-      </section>
+
+                    ))}
+
+                </div>
+            </section>
 
 
             <section >
@@ -405,16 +405,16 @@ export default function RoomBooking() {
 
 
                     <div className={style.FAQContainer}>
-                    {query.map((item) => (
-              <Accordion key={item.key} question={item.question} answer={item.answer} />
-            ))}
+                        {query.map((item) => (
+                            <Accordion key={item.key} question={item.question} answer={item.answer} />
+                        ))}
                     </div>
 
                 </div>
             </section>
 
             <div >
-                <Footer2  />
+                <Footer2 />
 
             </div>
 

@@ -364,7 +364,8 @@ export default function Pos() {
 
 
 
-            <section style={{ background: "#f5f5f5" }} >
+          
+    <section style={{ background: "#f5f5f5" }} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -375,7 +376,7 @@ export default function Pos() {
                         index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-                            <div style={{ width: "25%" }}>
+                            <div className="GlobalBenefitImgBox" >
                                 <img style={{ width: "100%" }} src={item.img} alt="" />
                             </div>
 
@@ -388,7 +389,7 @@ export default function Pos() {
                         </div>) : (<div className='GlobalBenefitBox2'>
 
 
-                            <div style={{ width: "25%" }}>
+                            <div className="GlobalBenefitImgBox">
                                 <img style={{ width: "100%" }} src={item.img} alt="" />
                             </div>
 
@@ -405,7 +406,6 @@ export default function Pos() {
 
                 </div>
             </section>
-
 
 
             <section >
