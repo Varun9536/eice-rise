@@ -8,6 +8,10 @@
     max-width: 1600px;
     margin: 0px auto;
     width: 100%;
+    overflow-x: hidden;
+
+
+
 }
 
 .footerLaptopImg {
@@ -123,6 +127,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 58px;
+    font-size: 14px;
 }
 
 
@@ -164,13 +169,38 @@
             flex-direction: column;
             padding-left: unset;
             margin-top: 30px;
+            align-items: unset;
+            justify-content: unset;
 
 
         }
 
         .footerUpperPartHeading {
-            font-size: 26px;
+            font-size: 22px;
         }
+
+        .footerLaptopImg {
+
+           
+
+            width: 400px;
+            left: 30px;
+            position: relative;
+            margin: 0px auto;
+            margin-top: 30px;
+
+
+
+        }
+
+        .footerHeadAndIconBox {
+            /* width: unset; */
+            width: 370px;
+            padding: 0px 10px;
+            margin: 0px auto;
+
+        }
+
 
 
         .footerInnerBox {
@@ -184,7 +214,7 @@
         .footerNavigationBox {
 
             height: unset;
-            padding: 10px 0px;
+            padding: 25px 0px;
 
 
         }
@@ -195,20 +225,34 @@
             width: 80%;
         }
 
-        .footerPoints {}
+        .footerPoints {
+            font-size: 11px;
+            column-gap: 68px;
+            row-gap: 20px;
 
-        .copyRightSectionInnerBox {
 
-            padding: 20px 5px;
         }
 
-        .footerHeadAndIconBox {
-            width: unset;
-            padding: 0px 30px;
+        .footerPointsSubheading {
+
+
+            font-size: 12px;
+
         }
+
+
+        .footerParagraph {
+            font-size: 12px;
+        }
+
+
+
+
+
+        
 
         .demoButton {
-            padding: 5px 5px;
+            padding: 10px 5px;
             font-size: 16px;
             width: 65%;
             margin-top: 30px;
@@ -216,11 +260,20 @@
 
         }
 
-        .footerLaptopImg {
-            width: 260px;
-            margin-top: 30px;
-        
+
+
+        .copyRightSectionInnerBox {
+
+            padding: 20px 5px;
+
+            font-size: 10px;
+
         }
+
+
+
+
+
 
 
     }

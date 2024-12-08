@@ -51,7 +51,7 @@ export default function Footer() {
                             <img className={styles.logoWhite} src={logo} alt="" />
                         </div>
 
-                        <div>
+                        <div className={`${styles.footerParagraph}`}>
                             Delivering innovative ERP solutions since 2010. Simplifying operations, enhancing efficiency, and empowering businesses worldwide.
                         </div>
 
@@ -139,11 +139,11 @@ export default function Footer() {
 
             <div  className={`${styles.copyRightSectionBox} font4  `}  >
                 <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
-                    <div style={{fontSize : "14px"}}>
+                    <div >
                         ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
                     </div>
 
-                    <div style={{fontSize : "14px"}}>
+                    <div>
                         Terms & Conditions
                     </div>
                 </div>

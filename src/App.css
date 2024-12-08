@@ -31,8 +31,7 @@
 
 }
 
-@media (min-width : 1600px)
-{
+@media (min-width : 1600px) {
     .insidePageUpperSection {
         width: 100%;
         margin: 0 auto;
@@ -46,17 +45,21 @@
 .indicators {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    column-gap: 18px;
     margin-top: 15px;
 }
+
 .indicator {
-    width: 34px;
-    height: 11px;
-    border-radius: 40%;
-    background-color: #ccc;
+    width: 24px;
+    height: 7px;
+    border-radius: 30%;
+    /* background-color: #ccc; */
     cursor: pointer;
     transition: background-color 0.3s;
+    border: 1px solid black;
 }
+
 .indicator.active {
-    background-color: #007bff;
+    /* background-color: #007bff; */
+    background-color: rgb(49, 49, 214);
 }
