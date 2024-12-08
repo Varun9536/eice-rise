@@ -75,131 +75,131 @@ export default function MemberSuite() {
 
   const features = [
     {
-        key: 1,
-        heading: "Membership Registration and Management",
-        desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
-        img: mrm, // Reusing image from previous array, replace with relevant image if needed
-        width: "64px"
+      key: 1,
+      heading: "Membership Registration and Management",
+      desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
+      img: mrm, // Reusing image from previous array, replace with relevant image if needed
+      width: "64px"
     },
     {
-        key: 2,
-        heading: "Self-Service Portal",
-        desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
-        img: ssp, // Reusing image from previous array, replace with relevant image if needed
-        width: "65px"
+      key: 2,
+      heading: "Self-Service Portal",
+      desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
+      img: ssp, // Reusing image from previous array, replace with relevant image if needed
+      width: "65px"
     },
     {
-        key: 3,
-        heading: "Subscription Management",
-        desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
-        img: sm, // Reusing image from previous array, replace with relevant image if needed
-        width: "54px"
+      key: 3,
+      heading: "Subscription Management",
+      desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
+      img: sm, // Reusing image from previous array, replace with relevant image if needed
+      width: "54px"
     },
     {
-        key: 4,
-        heading: "Exclusive Member Benefits",
-        desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
-        img: emb, // Reusing image from previous array, replace with relevant image if needed
-        width: "65px"
+      key: 4,
+      heading: "Exclusive Member Benefits",
+      desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
+      img: emb, // Reusing image from previous array, replace with relevant image if needed
+      width: "65px"
     },
     {
-        key: 5,
-        heading: "Integrated Communication Tools",
-        desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
-        img: ict, // Reusing image from previous array, replace with relevant image if needed
-        width: "65px"
+      key: 5,
+      heading: "Integrated Communication Tools",
+      desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
+      img: ict, // Reusing image from previous array, replace with relevant image if needed
+      width: "65px"
     },
     {
-        key: 6,
-        heading: "Analytics Dashboard",
-        desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
-        img: ad, // Reusing image from previous array, replace with relevant image if needed
-        width: "63px"
+      key: 6,
+      heading: "Analytics Dashboard",
+      desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
+      img: ad, // Reusing image from previous array, replace with relevant image if needed
+      width: "63px"
     }
-];
+  ];
 
 
 
 
 
-const benefits = [
-  {
+  const benefits = [
+    {
       key: 1,
       heading: "Enhanced Member Experience",
       desc: "Provide a personalized and streamlined experience for your members, improving retention and satisfaction.",
-      img: eme, 
-  },
-  {
+      img: eme,
+    },
+    {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automate routine tasks such as renewals and notifications, reducing administrative workload.",
-      img: oe, 
-  },
-  {
+      img: oe,
+    },
+    {
       key: 3,
       heading: "Data-Driven Insights",
       desc: "Leverage analytics to understand member preferences and make informed decisions on services and offerings.",
-      img: ddi, 
-  },
-  {
+      img: ddi,
+    },
+    {
       key: 4,
       heading: "Improved Communication",
       desc: "Streamline communication with members through automated alerts, reminders, and personalized messaging, fostering stronger relationships and engagement.",
-      img: ic, 
-  },
-  {
+      img: ic,
+    },
+    {
       key: 5,
       heading: "Increased Member Retention",
       desc: "By offering targeted services and benefits based on member data, you can increase retention and reduce churn, creating long-term loyalty.",
-      img: imr, 
-  },
+      img: imr,
+    },
 
-  // {
-  //     key: 6,
-  //     heading: "Revenue Growth",
-  //     desc: "Enable upselling and cross-selling opportunities through tailored offers and personalized services, driving additional revenue streams from your existing member base.",
-  //     img: r, 
-  // }
-];
+    // {
+    //     key: 6,
+    //     heading: "Revenue Growth",
+    //     desc: "Enable upselling and cross-selling opportunities through tailored offers and personalized services, driving additional revenue streams from your existing member base.",
+    //     img: r, 
+    // }
+  ];
 
 
 
-const query = [
-  {
-    key: 1,
-    question: "Q : Can members manage their own profiles?",
-    answer: "A : Yes, members can update their profiles, renew subscriptions, and view membership benefits via a self-service portal."
-  },
-  {
-    key: 2,
-    question: "Q : Does the system offer automated subscription renewals?",
-    answer: "A : Yes, subscriptions and payments are automated with reminders to keep members engaged."
-  },
-  {
-    key: 3,
-    question: "Q : Are exclusive member benefits available?",
-    answer: "A : Yes, members can access exclusive benefits like priority bookings, special discounts, and events."
-  },
-  {
-    key: 4,
-    question: "Q : How can I track member engagement?",
-    answer: "A : An analytics dashboard provides insights into member activity, preferences, and engagement levels."
-  },
-  {
-    key: 5,
-    question: "Q : Is the platform secure for member data?",
-    answer: "A : Yes, it features multi-layered authentication and complies with privacy regulations to protect member data."
+  const query = [
+    {
+      key: 1,
+      question: "Q : Can members manage their own profiles?",
+      answer: "A : Yes, members can update their profiles, renew subscriptions, and view membership benefits via a self-service portal."
+    },
+    {
+      key: 2,
+      question: "Q : Does the system offer automated subscription renewals?",
+      answer: "A : Yes, subscriptions and payments are automated with reminders to keep members engaged."
+    },
+    {
+      key: 3,
+      question: "Q : Are exclusive member benefits available?",
+      answer: "A : Yes, members can access exclusive benefits like priority bookings, special discounts, and events."
+    },
+    {
+      key: 4,
+      question: "Q : How can I track member engagement?",
+      answer: "A : An analytics dashboard provides insights into member activity, preferences, and engagement levels."
+    },
+    {
+      key: 5,
+      question: "Q : Is the platform secure for member data?",
+      answer: "A : Yes, it features multi-layered authentication and complies with privacy regulations to protect member data."
+    }
+  ];
+
+
+  const footerUpperText = {
+
+    text1: "Engage members",
+    text2: "",
+    text3: "and grow loyalty with our all-in-one Membership Portal",
+    img: footer
   }
-];
-
-
-const footerUpperText = {
-
-  text1 : "Engage members" ,
-  text2 : "" ,
-  text3 : "and grow loyalty with our all-in-one Membership Portal" ,
-  img : footer
-}
 
 
 
@@ -211,7 +211,7 @@ const footerUpperText = {
 
 
 
- 
+
 
 
 
@@ -249,8 +249,8 @@ const footerUpperText = {
 
             <div className={`${style.iconName} `}>
 
-              <div> Effortless</div>
-              <div> Operations</div>
+              <div> Comprehensive Analytics</div>
+              <div> For Growing</div>
             </div>
           </div>
 
@@ -266,8 +266,17 @@ const footerUpperText = {
 
 
 
-              <div> Personalized</div>
-              <div>Experience</div>
+
+
+
+
+              <div>
+                Seamless Member
+              </div>
+
+              <div>
+                Onboarding
+              </div>
 
             </div>
           </div>
@@ -282,14 +291,9 @@ const footerUpperText = {
 
             <div className={`${style.iconName}`}>
 
+              <div> Personalized Member</div>
+              <div>Engagement</div>
 
-              <div>
-                Smart
-              </div>
-
-              <div>
-                Insights
-              </div>
             </div>
 
           </div>
@@ -318,7 +322,7 @@ const footerUpperText = {
 
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
-              EICE Rise ERP’s Member Suite offers a centralized solution for managing diverse membership types, subscriptions, and engagement activities. Designed specifically for Clubs, Institutions, Hotels, and Resorts, this module streamlines membership processes, enhances communication, and provides personalized services to members, all within a secure, user-friendly platform.
+                EICE Rise ERP’s Member Suite offers a centralized solution for managing diverse membership types, subscriptions, and engagement activities. Designed specifically for Clubs, Institutions, Hotels, and Resorts, this module streamlines membership processes, enhances communication, and provides personalized services to members, all within a secure, user-friendly platform.
 
 
               </div>
@@ -447,7 +451,7 @@ const footerUpperText = {
 
 
           <div className={style.FAQContainer}>
-          {query.map((item) => (
+            {query.map((item) => (
               <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>

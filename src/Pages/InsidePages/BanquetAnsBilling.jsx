@@ -236,8 +236,8 @@ export default function BanquetAnsBilling() {
 
             <div className={`${style.iconName} `}>
 
-              <div> Effortless</div>
-              <div> Operations</div>
+              <div>Accurate Real Time</div>
+              <div> Billing</div>
             </div>
           </div>
 
@@ -253,8 +253,8 @@ export default function BanquetAnsBilling() {
 
 
 
-              <div> Personalized</div>
-              <div>Experience</div>
+              <div> EffortLess Event</div>
+              <div>Mangement</div>
 
             </div>
           </div>
@@ -271,11 +271,11 @@ export default function BanquetAnsBilling() {
 
 
               <div>
-                Smart
+                Flexible Custom
               </div>
 
               <div>
-                Insights
+                Packages
               </div>
             </div>
 

@@ -266,8 +266,8 @@ const footerUpperText = {
 
             <div className={`${style.iconName} `}>
 
-              <div> Effortless</div>
-              <div> Operations</div>
+              <div> Automated</div>
+              <div> Shifts</div>
             </div>
           </div>
 
@@ -283,8 +283,8 @@ const footerUpperText = {
 
 
 
-              <div> Personalized</div>
-              <div>Experience</div>
+              <div>Centailised</div>
+              <div>Data</div>
 
             </div>
           </div>
@@ -301,11 +301,11 @@ const footerUpperText = {
 
 
               <div>
-                Smart
+                Team
               </div>
 
               <div>
-                Insights
+              Collaboration
               </div>
             </div>
 

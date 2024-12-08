@@ -1,5 +1,5 @@
 import styles from "./Hospitality.module.css"
-// import laptop from "../../assets/Hospitality/laptop.png"
+
 import laptop from "../../assets/Hospitality/laptoplatest.webp"
 import { Link } from "react-router-dom"
 
@@ -91,7 +91,7 @@ export default function HospitalityPage() {
         },
 
         {
-            // serviceName: "MEMBER SUITE ",
+           
             serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
             path: "member-suite",

@@ -10,16 +10,6 @@ import rtet from "../../assets/insidePages/account/financeSection2/rtet.png"
 
 
 
-// features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
 
 import  ara from "../../assets/insidePages/account/icon/ara.png"
@@ -34,13 +24,7 @@ import  vsp from "../../assets/insidePages/account/icon/vsp.png"
 
 
 
-// benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 
@@ -56,7 +40,7 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import Footer3 from "../../Components/Footer/Footer3.jsx"
+
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -275,8 +259,8 @@ export default function AccountAndFinance() {
 
             <div className={`${style.iconName} `}>
 
-              <div> Effortless</div>
-              <div> Operations</div>
+              <div> Data Driver</div>
+              <div> Financial Insights</div>
             </div>
           </div>
 
@@ -292,8 +276,8 @@ export default function AccountAndFinance() {
 
 
 
-              <div> Personalized</div>
-              <div>Experience</div>
+              <div>Automated Financial</div>
+              <div>Workflows</div>
 
             </div>
           </div>
@@ -310,11 +294,11 @@ export default function AccountAndFinance() {
 
 
               <div>
-                Smart
+                Real Time
               </div>
 
               <div>
-                Insights
+                Expense Tracking
               </div>
             </div>
 

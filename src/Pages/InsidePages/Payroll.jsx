@@ -7,27 +7,18 @@ import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
 
 
-// features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
 
 // features
 
-import  app from "../../assets/insidePages/pay/payFeatures/app.png"
-import  cps from "../../assets/insidePages/pay/payFeatures/cps.png"
-import  ddpp from "../../assets/insidePages/pay/payFeatures/ddpp.png"
-import  edm from "../../assets/insidePages/pay/payFeatures/edm.png"
-import  lam from "../../assets/insidePages/pay/payFeatures/lam.png"
-import  par from "../../assets/insidePages/pay/payFeatures/par.png"
-import  sds from "../../assets/insidePages/pay/payFeatures/sds.png"
-import  tcr from "../../assets/insidePages/pay/payFeatures/tcr.png"
+import app from "../../assets/insidePages/pay/payFeatures/app.png"
+import cps from "../../assets/insidePages/pay/payFeatures/cps.png"
+import ddpp from "../../assets/insidePages/pay/payFeatures/ddpp.png"
+import edm from "../../assets/insidePages/pay/payFeatures/edm.png"
+import lam from "../../assets/insidePages/pay/payFeatures/lam.png"
+import par from "../../assets/insidePages/pay/payFeatures/par.png"
+import sds from "../../assets/insidePages/pay/payFeatures/sds.png"
+import tcr from "../../assets/insidePages/pay/payFeatures/tcr.png"
 
 
 
@@ -38,6 +29,14 @@ import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
 import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
 import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
 import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+
+
+
+import appb from "../../assets/insidePages/pay/payrollBenefit/app.webp"
+import cs from "../../assets/insidePages/pay/payrollBenefit/cs.webp"
+import es from "../../assets/insidePages/pay/payrollBenefit/es.webp"
+import ic from "../../assets/insidePages/pay/payrollBenefit/ic.webp"
+import te from "../../assets/insidePages/pay/payrollBenefit/te.webp"
 
 
 
@@ -115,39 +114,45 @@ export default function Payroll() {
       key: 1,
       heading: "Time Efficiency",
       desc: "Automates payroll tasks, reducing manual effort and the time spent on calculating, processing, and distributing payroll.",
-      img: b1, 
+      img: te,
     },
     {
       key: 2,
       heading: "Accurate Payroll Processing",
       desc: "Reduces errors by automating calculations and ensuring compliance with tax laws, minimizing the risk of overpayments, underpayments, or compliance issues.",
-      img: b2, 
-      
+      img: appb,
+
     },
     {
       key: 3,
       heading: "Improved Compliance",
       desc: "Helps businesses stay up-to-date with changing tax regulations and labor laws, ensuring compliance and reducing legal risks.",
-      img: b3, 
+      img: ic,
     },
     {
       key: 4,
       heading: "Cost Savings",
       desc: "By automating payroll and reducing errors, businesses can save on administrative costs and avoid costly penalties for non-compliance.",
-      img: b4, 
+      img: cs,
     },
+
     {
       key: 5,
       heading: "Employee Satisfaction",
       desc: "Ensures timely and accurate payments, boosting employee trust and satisfaction.",
-      img: b5, 
+      img: es,
     },
-    {
-      key: 6,
-      heading: "Real-Time Insights",
-      desc: "Provides detailed reports on payroll, taxes, and labor costs, helping businesses make informed financial decisions and manage budgets effectively.",
-      img: b3, 
-    }
+
+
+
+    // {
+    //   key: 6,
+    //   heading: "Real-Time Insights",
+    //   desc: "Provides detailed reports on payroll, taxes, and labor costs, helping businesses make informed financial decisions and manage budgets effectively.",
+    //   img: , 
+    // }
+
+
   ];
 
 
@@ -180,7 +185,6 @@ export default function Payroll() {
       answer: "A : It provides detailed reports on payroll expenses, taxes, and deductions, helping businesses track labor costs and manage budgets effectively."
     }
   ];
-  
 
 
 
@@ -189,15 +193,16 @@ export default function Payroll() {
 
 
 
- 
+
+
 
 
   const footerUpperText = {
 
-    text1 : "Streamline" ,
-    text2 : " bookings" ,
-    text3 : "effortlessly" ,
-    img : footer
+    text1: "Streamline",
+    text2: " bookings",
+    text3: "effortlessly",
+    img: footer
   }
 
 
@@ -437,7 +442,7 @@ export default function Payroll() {
 
 
           <div className={style.FAQContainer}>
-          {query.map((item) => (
+            {query.map((item) => (
               <Accordion key={item.key} question={item.question} answer={item.answer} />
             ))}
           </div>
@@ -447,7 +452,7 @@ export default function Payroll() {
 
 
       <div >
-        <FooterUpperPart text1={footerUpperText.text1}  text2 = {footerUpperText.text2} text3 = {footerUpperText.text3} img = {footerUpperText.img} />
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
         <FooterLower />
 
       </div>
