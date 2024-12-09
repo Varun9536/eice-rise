@@ -48,9 +48,11 @@ export default function Navbar() {
         },
 
 
-        { label: 'Pricing', link: '/', dropdown: [
-            {productName: "Room Booking", path: "room-booking" }
-        ] },
+        {
+            label: 'Pricing', link: '/', dropdown: [
+                { productName: "Room Booking", path: "room-booking" }
+            ]
+        },
 
 
         { label: 'About Us', link: '/', dropdown: ['Our Story', 'Team', 'Careers'] },
@@ -68,14 +70,17 @@ export default function Navbar() {
             <div className={styles.logoAndNavigationIcon}>
 
                 <div>
-                    <img src={logo} alt="Logo" />
+                    <Link to={"/"}>
+                        <img src={logo} alt="Logo" />
+                    </Link>
+
                 </div>
 
                 <div className={`${styles.navigationIcon} font1`}>
                     {navItems.map((item) => (
 
-                        <div className={`${styles.navigationButton}`} key={item.label}  onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
-                            
+                        <div className={`${styles.navigationButton}`} key={item.label} onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
+
                             <Link to={item.link} className="linkClass">
 
                                 <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>

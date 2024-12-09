@@ -59,7 +59,7 @@ export default function AccountAndFinance() {
       heading: "Comprehensive Financial Management",
       desc: "Manage all core financial functions, including accounts receivable, accounts payable, debit & credit notes, taxation, balance sheets, and general ledger. Streamline processes and ensure timely payments and collections.",
       img: cfm,
-      width: "64px",
+      width: "65px",
     },
     {
       key: 2,
@@ -73,7 +73,7 @@ export default function AccountAndFinance() {
       heading: "Integrated Invoicing and Billing",
       desc: "Automatically generate invoices and billing statements for room bookings, event bookings, dining, and more. Customizable invoice templates ensure branding consistency and accuracy.",
       img: iib,
-      width: "54px",
+      width: "65px",
     },
     {
       key: 4,
@@ -94,14 +94,14 @@ export default function AccountAndFinance() {
       heading: "Payment Gateway Integration",
       desc: "Integrated with secure payment gateways, businesses can process payments efficiently and track financial transactions in real-time.",
       img: pgi,
-      width: "63px",
+      width: "65px",
     },
     {
       key: 7,
       heading: "Budgeting and Forecasting",
       desc: "Plan and monitor your budget effectively with integrated forecasting tools. Track expenses, and revenues, and allocate resources for better financial planning.",
       img: bf,
-      width: "70px",
+      width: "65px",
     },
     {
       key: 8,
@@ -115,7 +115,7 @@ export default function AccountAndFinance() {
       heading: "Vendor and Supplier Payments",
       desc: "Easily manage payments to vendors and suppliers, track due invoices, and ensure timely settlements with the automated payment tracking system.",
       img: vsp,
-      width: "60px",
+      width: "65px",
     },
 
   ];
@@ -373,9 +373,9 @@ export default function AccountAndFinance() {
                       {item.heading}
                     </div>
 
-                    <div>
+                    {/* <div>
                       {item.heading2}
-                    </div>
+                    </div> */}
 
                   </div>
 
