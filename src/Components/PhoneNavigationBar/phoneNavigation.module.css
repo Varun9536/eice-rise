@@ -17,22 +17,10 @@
 }
 
 
-.menuIcon {
-    /* background-color: rgba(1, 176, 241, 1); */
-    /* color: white; */
-    /* padding: 10px 13px;
-    border-radius: 7px; */
-
-    
-
-}
 
 
-.closeIcon {
-    /* background-color: white;
-    color: rgba(1, 176, 241, 1);
-    border-radius: 7px; */
-}
+
+
 
 @keyframes slideIn {
     from {
