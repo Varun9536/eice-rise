@@ -20,12 +20,11 @@
 
 }
 
-@media (min-width : 1600px)
-{
+@media (min-width : 1600px) {
     .section1ImgBox {
-        
+
         left: unset;
-    
+
     }
 }
 
@@ -42,6 +41,9 @@
 
 }
 
+.pageHeadingBox {
+    width: 33%;
+}
 
 .section2 {
     display: flex;
@@ -301,7 +303,7 @@
     }
 
     .pageHeadingBox {
-        width: 70%;
+        width: 90%;
         margin: 0px auto;
 
     }
@@ -383,14 +385,14 @@
 
 
     .FAQsection {
-        
+
         padding: 0px 15px;
-        
+
     }
 
     .FAQHeading {
         /* text-align: center; */
-        
+
         font-size: 20px;
     }
 

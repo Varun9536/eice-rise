@@ -234,7 +234,7 @@ export default function AccountAndFinance() {
 
       <section>
         <div className={`${style.section1} insidePageUpperSection`}>
-          <div style={{ width: "33%" }}>
+          <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
               <span style={{ color: "#012060" }}>ACCOUNTS &</span>
               <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> FINANCE</span>

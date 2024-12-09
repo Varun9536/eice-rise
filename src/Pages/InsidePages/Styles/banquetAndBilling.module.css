@@ -44,6 +44,10 @@
 
 }
 
+.pageHeadingBox {
+    width: 33%;
+}
+
 
 .section2 {
     display: flex;
@@ -304,7 +308,7 @@
     }
 
     .pageHeadingBox {
-        width: 70%;
+        width: 80%;
         margin: 0px auto;
 
     }

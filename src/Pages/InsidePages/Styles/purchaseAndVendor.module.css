@@ -22,6 +22,10 @@
 
 }
 
+.pageHeadingBox {
+    width: 33%;
+}
+
 @media (min-width : 1600px)
 {
     .section1ImgBox {
