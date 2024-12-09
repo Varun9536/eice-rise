@@ -50,16 +50,19 @@
 }
 
 .indicator {
-    width: 24px;
-    height: 7px;
-    border-radius: 30%;
-    /* background-color: #ccc; */
+    width: 23px; /* Adjust width for a more elliptical shape */
+    height: 6px; /* Slightly decrease height */
+    border-radius: 50px; /* Higher value for a smoother ellipse */
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 1px solid black;
+    border: 1px solid black; /* Optional for a clean border */
+   /* Default background color */
+    margin: 0 4px; 
+   
 }
 
 .indicator.active {
     /* background-color: #007bff; */
-    background-color: rgb(49, 49, 214);
+    /* background-color: rgb(49, 49, 214); */
+    background-color: #012060;
 }

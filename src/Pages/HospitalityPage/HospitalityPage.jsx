@@ -257,30 +257,30 @@ export default function HospitalityPage() {
     ]
 
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, [stories.length]);
+    //     return () => clearInterval(interval);
+    // }, [stories.length]);
 
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setInsightsIndex((prevIndex) => (prevIndex + 1) % insights.length);
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setInsightsIndex((prevIndex) => (prevIndex + 1) % insights.length);
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, [insights.length]);
+    //     return () => clearInterval(interval);
+    // }, [insights.length]);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, [feedback.length]);
+    //     return () => clearInterval(interval);
+    // }, [feedback.length]);
 
 
 
