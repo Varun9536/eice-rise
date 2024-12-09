@@ -47,17 +47,10 @@ export default function Navbar() {
             ]
         },
 
-
-        {
-            label: 'Pricing', link: '/', dropdown: [
-                { productName: "Room Booking", path: "room-booking" }
-            ]
-        },
+       
 
 
-        { label: 'About Us', link: '/', dropdown: ['Our Story', 'Team', 'Careers'] },
 
-        { label: 'Blogs', link: '/', dropdown: ['Tech', 'Lifestyle', 'Updates'] },
     ];
 
 
@@ -89,7 +82,7 @@ export default function Navbar() {
 
                             </Link>
 
-                            {item.label !== 'Home' && (
+                            {item.label == 'Products' && (
                                 <div style={{ paddingTop: "3px" }}>
                                     {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
                                 </div>
@@ -105,12 +98,25 @@ export default function Navbar() {
                                         </div>
 
                                     ))}
+
+
                                 </div>
                             )}
+
+                           
+
+
 
 
                         </div>
                     ))}
+
+
+
+
+                    <div ><a className="linkClass" href="">Products</a></div>
+                    <div><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/About">About Us</a></div>
+                    <div ><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/Resources">Blogs</a></div>
                 </div>
 
             </div>

@@ -33,14 +33,12 @@ export default function PhoneNavigationbar() {
                 { productName: "Food & Beverage Cost Analysis", path: "food-cost" }
             ]
         },
+
+
         {
             key: 3,
-            navName: "About Us", path: "",
-            innerItem: [
-                { productName: "Room Booking", path: "room-booking" },
-                { productName: "Dining (POS)", path: "pos-dining" },
-
-            ]
+            navName: "About Us", path: "https://www.eicetechnology.com/About",
+            
 
         },
         {
@@ -49,7 +47,7 @@ export default function PhoneNavigationbar() {
         },
         {
             key: 5,
-            navName: "Blogs", path: ""
+            navName: "Blogs", path: "https://www.eicetechnology.com/Resources"
         },
     ];
 
@@ -94,54 +92,65 @@ export default function PhoneNavigationbar() {
                 {
                     navbarOpen ? (<div></div>) :
                         (
-                            <div className={styles.menuMainBox}>
-                                {navigationItems.map((item) => (
-                                    <div key={item.key}>
-                                        <Link
-                                            onClick={() => toggleNavItem(item.navName)}
-                                            to={item.path}
-                                            className='linkClass'
-                                        >
-                                            <div style={{ fontWeight: "600" }}>
-                                                {item.navName === "Home" ?
-                                                    (<div onClick={navbarIconChange}>{item.navName}</div>)
-                                                    :
-                                                    (<div style={{ display: "flex", justifyContent: "space-between" }}>
+                            <>
 
-                                                        <div>{item.navName} </div>
-                                                        <div>
+                                <div className={styles.menuMainBox}>
+                                    {navigationItems.map((item) => (
+                                        <div key={item.key}>
+                                            <Link
+                                                onClick={() => toggleNavItem(item.navName)}
+                                                to={item.path}
+                                                className='linkClass'
+                                            >
+                                                <div style={{ fontWeight: "600" }}>
+                                                    {item.navName !== "Products" ?
+                                                        (<div onClick={navbarIconChange}>{item.navName}</div>)
+                                                        :
+                                                        (<div style={{ display: "flex", justifyContent: "space-between" }}>
 
-                                                            {activeNavItem === item.navName ? (<IoIosArrowUp />) : (<IoIosArrowDown />)}
-                                                        </div>
+                                                            <div>{item.navName} </div>
+                                                            <div>
 
-                                                    </div>)}
-                                            </div>
+                                                                {activeNavItem === item.navName ? (<IoIosArrowUp />) : (<IoIosArrowDown />)}
+                                                            </div>
 
-                                        </Link>
-
-
-
-                                        {/* inner menu items */}
-                                        <div className={`${styles.innerNavItems}`}>
-                                            {activeNavItem === item.navName && item.innerItem?.map((innerItem, index) => (
-                                                <div className={`${styles.innerNavItemStyle}`}>
-                                                    <Link
-                                                        key={index}
-                                                        onClick={navbarIconChange}
-                                                        to={innerItem.path}
-                                                        className='linkClass'
-                                                    >
-                                                        <div>{innerItem.productName}</div>
-                                                    </Link>
+                                                        </div>)}
                                                 </div>
 
-                                            ))}
+                                            </Link>
+
+
+
+                                            {/* inner menu items */}
+                                            <div className={`${styles.innerNavItems}`}>
+                                                {activeNavItem === item.navName && item.innerItem?.map((innerItem, index) => (
+                                                    <div className={`${styles.innerNavItemStyle}`}>
+                                                        <Link
+                                                            key={index}
+                                                            onClick={navbarIconChange}
+                                                            to={innerItem.path}
+                                                            className='linkClass'
+                                                        >
+                                                            <div>{innerItem.productName}</div>
+                                                        </Link>
+                                                    </div>
+
+                                                ))}
+                                            </div>
+
+
                                         </div>
+                                    ))}
+
+                                    
+
+                                   
+                                </div>
 
 
-                                    </div>
-                                ))}
-                            </div>
+
+                            </>
+
                         )
                 }
             </div>
