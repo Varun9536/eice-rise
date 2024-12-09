@@ -95,7 +95,7 @@ export default function FooterLower() {
                         ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
                     </div>
 
-                    <div>
+                    <div style={{fontWeight : "bold"}}>
                         Terms & Conditions
                     </div>
                 </div>
