@@ -159,6 +159,8 @@ export default function AccountAndFinance() {
       img: icfm,
 
     },
+
+    
     // {
     //   key: 6,
     //   heading: "Enhanced Decision Making",
