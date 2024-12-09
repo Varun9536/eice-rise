@@ -91,7 +91,7 @@ export default function HospitalityPage() {
         },
 
         {
-           
+
             serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
             path: "member-suite",
@@ -372,14 +372,20 @@ export default function HospitalityPage() {
 
                 <p className={`${styles.section3Para} font1`} >With a deep understanding of the hospitality industry's unique needs, we deliver cutting-edge software solutions tailored for hotels, restaurants, and event spaces. From full-stack cloud ERP systems to focused modules for specific operations, our tools enhance efficiency and elevate guest experiences across wellness, leisure, and meetings.</p>
 
-
+                
                 <div className={`${styles.section3Video}`} >
                     <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" />
                 </div>
 
-                <div className={`${styles.section3VideoPhone}`} >
-                    {/* <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" /> */}
+
+
+                <div>
+                    <div className={`${styles.videoImgBox}`}>
+                        
+                    </div>
                 </div>
+
+
 
             </section>
 
@@ -486,11 +492,11 @@ export default function HospitalityPage() {
                     <div className={`${styles.section5Heading} font1`}>
                         <div className={`${styles.section5HeadingAndIconBox}`} >
 
-                            <div style={{ width: "40px",  }}>
+                            <div style={{ width: "40px", }}>
                                 <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
                             </div>
 
-                            <div style={{textAlign : "left" , paddingLeft : "20px"}} className="font3">
+                            <div style={{ textAlign: "left", paddingLeft: "20px" }} className="font3">
                                 What our <span className={` blueTextGlobalClass font2`}>Customers</span> say about us ?
                             </div>
                         </div>
@@ -535,14 +541,14 @@ export default function HospitalityPage() {
 
 
                     <div className="indicators">
-                    {feedback.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`indicator ${feedbackIndex === index ? 'active' : ''}`}
-                            onClick={() => setFeedbackIndex(index)}
-                        ></span>
-                    ))}
-                </div>
+                        {feedback.map((_, index) => (
+                            <span
+                                key={index}
+                                className={`indicator ${feedbackIndex === index ? 'active' : ''}`}
+                                onClick={() => setFeedbackIndex(index)}
+                            ></span>
+                        ))}
+                    </div>
 
 
                 </section>

@@ -210,7 +210,23 @@
     margin: 0px auto;
 }
 
+@media (max-width : 800px)
+{
+    .videoImgBox
+    {
+        width: 97%;
+        height: 200px;
+        background-image: url("../../assets/insidePages/vimg.webp");
+        background-size: cover;
+        background-position: center;
+        margin: 0px auto;
+        border-radius: 20px;
+    }
 
+    .section3Video {
+        display: none;
+    }
+}
 
 
 
