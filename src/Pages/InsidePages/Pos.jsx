@@ -36,7 +36,16 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 import Footer3 from "../../Components/Footer/Footer3.jsx"
 
+
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+
+import footer from "../../assets/footer/foot.webp"
+
 import { FaArrowRightLong } from "react-icons/fa6";
+
+
+import footerRoomLaptop from "../../assets/insidePages/pos/posPage/FooterPos.webp"
 
 export default function Pos() {
 
@@ -181,6 +190,15 @@ export default function Pos() {
         }
     ];
 
+
+    const footerUpperText = {
+
+        text1: ' "Revolutionize',
+        text2: "",
+        text3: 'your dining experience."',
+        img: footerRoomLaptop
+      }
+    
 
 
 
@@ -422,11 +440,17 @@ export default function Pos() {
                 </div>
             </section>
 
-
+{/* 
             <div >
                 <Footer3 />
 
-            </div>
+            </div> */}
+
+            <div >
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterLower />
+
+      </div>
 
         </>
     )

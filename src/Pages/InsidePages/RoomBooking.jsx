@@ -48,10 +48,27 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import Footer2 from "../../Components/Footer/Footer2.jsx"
 
+
+import FooterLower from "../../Components/Footer/FooterLower.jsx"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
+
+import footer from "../../assets/footer/foot.webp"
+
+
+import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp"
+
+
 export default function RoomBooking() {
 
 
 
+    const footerUpperText = {
+
+        text1: '"Streamline',
+        text2: "",
+        text3: 'bookings effortlessly "',
+        img: footerRoomLaptop
+    }
 
 
 
@@ -412,9 +429,16 @@ export default function RoomBooking() {
 
                 </div>
             </section>
-
+            {/* 
             <div >
                 <Footer2 />
+
+            </div> */}
+
+
+            <div >
+                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+                <FooterLower />
 
             </div>
 
