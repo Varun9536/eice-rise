@@ -377,6 +377,10 @@ export default function HospitalityPage() {
                     <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" />
                 </div>
 
+                <div className={`${styles.section3VideoPhone}`} >
+                    {/* <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" /> */}
+                </div>
+
             </section>
 
 
