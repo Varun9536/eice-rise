@@ -7,16 +7,7 @@ import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
 
 
 
-// features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
 
 
 import abs from "../../assets/insidePages/banquet/icon/abs.png"
@@ -28,13 +19,7 @@ import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 
 
-// benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 // benefits
@@ -51,7 +36,6 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -72,7 +56,7 @@ export default function BanquetAnsBilling() {
       heading: "Customized Packages and Pricing",
       desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
       img: cpp,
-      width: "64px",
+      width: "69px",
     },
 
     {
@@ -80,7 +64,7 @@ export default function BanquetAnsBilling() {
       heading: "Digital Contracts and Invoicing",
       desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
       img: dci,
-      width: "65px",
+      width: "58px",
     },
 
     {
@@ -88,7 +72,7 @@ export default function BanquetAnsBilling() {
       heading: "Integrated Resource Management",
       desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
       img: irm,
-      width: "54px",
+      width: "72px",
     },
 
     {
@@ -104,7 +88,7 @@ export default function BanquetAnsBilling() {
       heading: "Comprehensive Reports",
       desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
       img: cr,
-      width: "65px",
+      width: "58px",
     },
 
     {
@@ -112,7 +96,7 @@ export default function BanquetAnsBilling() {
       heading: "Client Portal Access",
       desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
       img: cpa,
-      width: "63px",
+      width: "54px",
     }
   ];
 

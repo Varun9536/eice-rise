@@ -46,73 +46,7 @@ export default function PurchaseAndVendor() {
 
 
 
-    // const features = [
-    //     {
-    //         key: 1,
-    //         heading: "User-Friendly Interface",
-    //         desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
-    //         img: ufi,
-    //         width: "64px",
-    //     },
-    //     {
-    //         key: 2,
-    //         heading: "Real-Time Menu Management",
-    //         desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
-    //         img: rtmm,
-    //         width: "65px",
-    //     },
-    //     {
-    //         key: 3,
-    //         heading: "Order Customization",
-    //         desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
-    //         img: oc,
-    //         width: "54px",
-    //     },
-    //     {
-    //         key: 4,
-    //         heading: "Table Management",
-    //         desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
-    //         img: tm,
-    //         width: "65px",
-    //     },
-    //     {
-    //         key: 5,
-    //         heading: "Integrated Payment Solutions",
-    //         desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
-    //         img: ips,
-    //         width: "65px",
-    //     },
-    //     {
-    //         key: 6,
-    //         heading: "Inventory Tracking",
-    //         desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
-    //         img: it,
-    //         width: "63px",
-    //     },
-    //     {
-    //         key: 7,
-    //         heading: "Kitchen Display System (KDS) Integration",
-    //         desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
-    //         img: kds,
-    //         width: "70px",
-    //     },
-    //     {
-    //         key: 8,
-    //         heading: "Promotions and Loyalty Programs",
-    //         desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
-    //         img: plp,
-    //         width: "65px",
-    //     },
-    //     {
-    //         key: 9,
-    //         heading: "Real-Time Sales Reporting",
-    //         desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
-    //         img: rtsr,
-    //         width: "60px",
-    //     }
-    // ];
-
-
+ 
     const features = [
         {
             key: 1,

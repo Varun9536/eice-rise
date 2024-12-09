@@ -2,9 +2,7 @@
 import style from "./Styles/memberSuite.module.css"
 
 
-// import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-// import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-// import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+
 
 
 import cag from "../../assets/insidePages/member/memberSection2/cag.png"
@@ -12,36 +10,18 @@ import pme from "../../assets/insidePages/member/memberSection2/pme.png"
 import smo from "../../assets/insidePages/member/memberSection2/smo.png"
 
 
-// features
-// import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-// import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-// import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-// import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-// import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-// import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-// import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-// import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-// import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
 
 
 import ad from "../../assets/insidePages/member/icon/ad.png"
 import emb from "../../assets/insidePages/member/icon/emb.png"
 import ict from "../../assets/insidePages/member/icon/ict.png"
 import mrm from "../../assets/insidePages/member/icon/mrm.png"
-import sadp from "../../assets/insidePages/member/icon/sadp.png"
-import scm from "../../assets/insidePages/member/icon/scm.png"
 import sm from "../../assets/insidePages/member/icon/sm.png"
 import ssp from "../../assets/insidePages/member/icon/ssp.png"
 
 
 
-// benifits
-
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 // benefits
@@ -57,7 +37,7 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import Footer3 from "../../Components/Footer/Footer3.jsx"
+
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -79,21 +59,21 @@ export default function MemberSuite() {
       heading: "Membership Registration and Management",
       desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
       img: mrm, // Reusing image from previous array, replace with relevant image if needed
-      width: "64px"
+      width: "86px"
     },
     {
       key: 2,
       heading: "Self-Service Portal",
       desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
       img: ssp, // Reusing image from previous array, replace with relevant image if needed
-      width: "65px"
+      width: "60px"
     },
     {
       key: 3,
       heading: "Subscription Management",
       desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
       img: sm, // Reusing image from previous array, replace with relevant image if needed
-      width: "54px"
+      width: "60px"
     },
     {
       key: 4,
@@ -114,7 +94,7 @@ export default function MemberSuite() {
       heading: "Analytics Dashboard",
       desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
       img: ad, // Reusing image from previous array, replace with relevant image if needed
-      width: "63px"
+      width: "60px"
     }
   ];
 

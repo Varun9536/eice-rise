@@ -46,13 +46,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 
 
-import Footer2 from "../../Components/Footer/Footer2.jsx"
+
 
 
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
-import footer from "../../assets/footer/foot.webp"
+
 
 
 import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp"

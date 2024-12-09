@@ -94,28 +94,28 @@ export default function AccountAndFinance() {
       heading: "Payment Gateway Integration",
       desc: "Integrated with secure payment gateways, businesses can process payments efficiently and track financial transactions in real-time.",
       img: pgi,
-      width: "65px",
+      width: "58px",
     },
     {
       key: 7,
       heading: "Budgeting and Forecasting",
       desc: "Plan and monitor your budget effectively with integrated forecasting tools. Track expenses, and revenues, and allocate resources for better financial planning.",
       img: bf,
-      width: "65px",
+      width: "58px",
     },
     {
       key: 8,
       heading: "Cash Flow Management",
       desc: "Monitor cash flow with real-time reporting to ensure liquidity, helping businesses manage operational costs and optimize cash reserves.",
       img: cfm,
-      width: "65px",
+      width: "60px",
     },
     {
       key: 9,
       heading: "Vendor and Supplier Payments",
       desc: "Easily manage payments to vendors and suppliers, track due invoices, and ensure timely settlements with the automated payment tracking system.",
       img: vsp,
-      width: "65px",
+      width: "60px",
     },
 
   ];

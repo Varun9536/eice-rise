@@ -12,16 +12,7 @@ import cd from "../../assets/insidePages/emp/empSection2/cd.png"
 import tc from "../../assets/insidePages/emp/empSection2/tc.png"
 
 
-// features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
 
 
 // features
@@ -37,13 +28,7 @@ import td from "../../assets/insidePages/emp/icon/td.png"
 
 
 
-// benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 import ec from "../../assets/insidePages/emp/empBenefits/ec.webp"
@@ -86,42 +71,42 @@ export default function EmployeeSuite() {
       heading: "Payroll and Compensation",
       desc: "Employees can access payslips, track salary history, and view deductions and bonuses, providing full transparency on compensation.",
       img: pc, // Replace with the appropriate image from your existing feature array
-      width: "65px", // Adjust to match the previous feature array
+      width: "58px", // Adjust to match the previous feature array
     },
     {
       key: 3,
       heading: "Leave and Attendance Management",
       desc: "Employees can submit leave requests, track attendance, and view leave balances, making time-off management easier.",
       img: lam, // Replace with the appropriate image from your existing feature array
-      width: "54px", // Adjust to match the previous feature array
+      width: "66px", // Adjust to match the previous feature array
     },
     {
       key: 4,
       heading: "Training and Development",
       desc: "Employees can explore training programs, track progress, and enroll in courses to enhance their professional skills.",
       img: td, // Replace with the appropriate image from your existing feature array
-      width: "65px", // Adjust to match the previous feature array
+      width: "53px", // Adjust to match the previous feature array
     },
     {
       key: 5,
       heading: "Document Access",
       desc: "Employees can access important documents such as policies, contracts, benefits, and company announcements, ensuring quick access to essential information.",
       img: da, // Replace with the appropriate image from your existing feature array
-      width: "65px", // Adjust to match the previous feature array
+      width: "56px", // Adjust to match the previous feature array
     },
     {
       key: 6,
       heading: "Company Announcements and News",
       desc: "Employees stay updated on company news, policy changes, and upcoming events, fostering better communication within the organization.",
       img: can, // Replace with the appropriate image from your existing feature array
-      width: "63px", // Adjust to match the previous feature array
+      width: "71px", // Adjust to match the previous feature array
     },
     {
       key: 7,
       heading: "Performance Management",
       desc: "Employees can track their goals, review feedback, and collaborate with managers to set development plans.",
       img: pm, // Replace with the appropriate image from your existing feature array
-      width: "64px", // Adjust to match the previous feature array
+      width: "60px", // Adjust to match the previous feature array
     },
     {
       key: 8,
@@ -135,7 +120,7 @@ export default function EmployeeSuite() {
       heading: "Support and Requests",
       desc: "Employees can submit HR inquiries, request support, or raise issues through the portal, streamlining communication and issue resolution.",
       img: sr, // Replace with the appropriate image from your existing feature array
-      width: "54px", // Adjust to match the previous feature array
+      width: "61px", // Adjust to match the previous feature array
     }
   ];
 

@@ -71,7 +71,7 @@ export default function FooterLower() {
                                 <div className="font4"> Sec-60, Noida 201301</div>
 
                             </div>
-                            <div>
+                            <div >
 
                                 <div className={`${styles.footerPointsSubheading} font1`}>Address (USA) :</div>
                                 <div className="font4">440 Cobia Drive, #901 </div>

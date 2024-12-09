@@ -16,19 +16,10 @@ import cps from "../../assets/insidePages/pay/payFeatures/cps.png"
 import ddpp from "../../assets/insidePages/pay/payFeatures/ddpp.png"
 import edm from "../../assets/insidePages/pay/payFeatures/edm.png"
 import lam from "../../assets/insidePages/pay/payFeatures/lam.png"
-import par from "../../assets/insidePages/pay/payFeatures/par.png"
-import sds from "../../assets/insidePages/pay/payFeatures/sds.png"
 import tcr from "../../assets/insidePages/pay/payFeatures/tcr.png"
 
 
 
-// benifits
-
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 
@@ -44,7 +35,6 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
@@ -64,14 +54,14 @@ export default function Payroll() {
       heading: "Automated Payroll Processing",
       desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
       img: app, // Taken from the previous features array
-      width: "64px", // Taken from the previous features array
+      width: "58px", // Taken from the previous features array
     },
     {
       key: 2,
       heading: "Employee Data Management",
       desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
       img: edm, // Taken from the previous features array
-      width: "65px", // Taken from the previous features array
+      width: "59px", // Taken from the previous features array
     },
     {
       key: 3,
@@ -85,14 +75,14 @@ export default function Payroll() {
       heading: "Tax Compliance and Reporting",
       desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
       img: tcr, // Taken from the previous features array
-      width: "65px", // Taken from the previous features array
+      width: "62px", // Taken from the previous features array
     },
     {
       key: 5,
       heading: "Leave and Attendance Management",
       desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
       img: lam, // Taken from the previous features array
-      width: "65px", // Taken from the previous features array
+      width: "71px", // Taken from the previous features array
     },
     {
       key: 6,
