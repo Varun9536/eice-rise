@@ -127,28 +127,28 @@ export default function Pos() {
             heading: "Enhanced Customer Satisfaction",
             desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
             img: b1,
-          
+
         },
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
             img: b2,
-            
+
         },
         {
             key: 3,
             heading: "Personalized Dining Experience",
             desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
             img: b3,
-           
+
         },
         {
             key: 4,
             heading: "Optimized Resource Utilization",
             desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
             img: b4,
-          
+
         },
 
         {
@@ -156,7 +156,7 @@ export default function Pos() {
             heading: "Data-Driven Decision Making",
             desc: "Real-time sales reporting and analytics provide valuable insights into customer preferences, top-selling items, and daily performance, enabling data-driven business decisions",
             img: b5,
-            
+
 
         }
     ];
@@ -197,8 +197,8 @@ export default function Pos() {
         text2: "",
         text3: 'your dining experience."',
         img: footerRoomLaptop
-      }
-    
+    }
+
 
 
 
@@ -382,8 +382,8 @@ export default function Pos() {
 
 
 
-          
-    <section style={{ background: "#f5f5f5" }} >
+
+            <section style={{ background: "#f5f5f5" }} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -432,25 +432,25 @@ export default function Pos() {
 
 
                     <div className={style.FAQContainer}>
-                    {query.map((item) => (
-              <Accordion key={item.key} question={item.question} answer={item.answer} />
-            ))}
+                        {query.map((item) => (
+                            <Accordion key={item.key} question={item.question} answer={item.answer} />
+                        ))}
                     </div>
 
                 </div>
             </section>
 
-{/* 
+            {/* 
             <div >
                 <Footer3 />
 
             </div> */}
 
             <div >
-        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
-        <FooterLower />
+                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+                <FooterLower />
 
-      </div>
+            </div>
 
         </>
     )
