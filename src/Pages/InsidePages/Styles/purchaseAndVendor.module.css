@@ -11,7 +11,8 @@
 }
 
 .section1ImgBox {
-    background-image: url("../../../assets/insidePages/pos/posPage/H3.webp");
+    /* background-image: url("../../../assets/insidePages/pos/posPage/H3.webp"); */
+    background-image: url("../../../assets/insidePages/vendor/vendorHero.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

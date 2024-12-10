@@ -66,8 +66,7 @@
 }
 
 .indicator.active {
-    /* background-color: #007bff; */
-    /* background-color: rgb(49, 49, 214); */
+  
     background-color: #012060;
 }
 

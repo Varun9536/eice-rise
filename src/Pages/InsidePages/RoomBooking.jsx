@@ -64,9 +64,9 @@ export default function RoomBooking() {
 
     const footerUpperText = {
 
-        text1: '"Streamline',
+        text1: 'Streamline',
         text2: "",
-        text3: 'bookings effortlessly "',
+        text3: 'bookings effortlessly ',
         img: footerRoomLaptop
     }
 

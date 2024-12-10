@@ -1,9 +1,9 @@
 import style from "./Styles/userAndInventry.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+import au from "../../assets/insidePages/inventry/section2icon/au.png"
+import ir from "../../assets/insidePages/inventry/section2icon/ir.png"
+import sv from "../../assets/insidePages/inventry/section2icon/sv.png"
 
 
 
@@ -17,6 +17,14 @@ import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
 import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
 import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
 import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
+
+import ara from "../../assets/insidePages/inventry/featuresIcon/ara.png"
+import cum from "../../assets/insidePages/inventry/featuresIcon/cum.png"
+import esm from "../../assets/insidePages/inventry/featuresIcon/esm.png"
+import mls from "../../assets/insidePages/inventry/featuresIcon/mls.png"
+import rtic from "../../assets/insidePages/inventry/featuresIcon/rtic.png"
+import serpi from "../../assets/insidePages/inventry/featuresIcon/serpi.png"
 
 
 
@@ -52,43 +60,43 @@ export default function UserAndInventry() {
             key: 1,
             heading: "Centralized User Management",
             desc: "Streamline user access store-wise with customizable roles and permissions.",
-            img: ufi, // Reused image from the previous features array
+            img: cum, // Reused image from the previous features array
             width: "64px" // Reused width from the previous features array
         },
         {
             key: 2,
             heading: "Efficient Store Management",
             desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
-            img: rtmm, // Reused image from the previous features array
+            img: esm, // Reused image from the previous features array
             width: "65px" // Reused width from the previous features array
         },
         {
             key: 3,
             heading: "Real-Time Inventory Control",
             desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
-            img: oc, // Reused image from the previous features array
+            img: rtic, // Reused image from the previous features array
             width: "54px" // Reused width from the previous features array
         },
         {
             key: 4,
             heading: "Advanced Reporting and Analytics",
             desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
-            img: tm, // Reused image from the previous features array
+            img: ara, // Reused image from the previous features array
             width: "65px" // Reused width from the previous features array
         },
         {
             key: 5,
             heading: "Multi-Location Support",
             desc: "Manage multiple stores from a central platform, transfer stock between locations, and monitor regional inventory needs.",
-            img: ips, // Reused image from the previous features array
-            width: "65px" // Reused width from the previous features array
+            img: mls,
+            width: "65px"
         },
         {
             key: 6,
             heading: "Seamless ERP Integration",
             desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
-            img: it, // Reused image from the previous features array
-            width: "63px" // Reused width from the previous features array
+            img: serpi, 
+            width: "63px" 
         }
     ];
 
@@ -218,13 +226,13 @@ export default function UserAndInventry() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon1} alt="" />
+                            <img style={{ width: "100%" }} src={au} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
 
-                            <div> Effortless</div>
-                            <div> Operations</div>
+                            <div>Automated</div>
+                            <div>Updates</div>
                         </div>
                     </div>
 
@@ -233,15 +241,15 @@ export default function UserAndInventry() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon2} alt="" />
+                            <img style={{ width: "100%" }} src={ir} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
 
 
 
-                            <div> Personalized</div>
-                            <div>Experience</div>
+                            <div>Inventary</div>
+                            <div>Reports</div>
 
                         </div>
                     </div>
@@ -251,18 +259,18 @@ export default function UserAndInventry() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon3} alt="" />
+                            <img style={{ width: "100%" }} src={sv} alt="" />
                         </div>
 
                         <div className={`${style.iconName}`}>
 
 
                             <div>
-                                Smart
+                                Stock
                             </div>
 
                             <div>
-                                Insights
+                                Visibility
                             </div>
                         </div>
 

@@ -6,6 +6,11 @@ import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
 import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
 
+import sp from "../../assets/insidePages/vendor/section2icon/sp.png"
+import vm from "../../assets/insidePages/vendor/section2icon/vm.png"
+
+
+
 
 // features
 import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
@@ -17,6 +22,17 @@ import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
 import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
 import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
 import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
+
+
+import aqc from "../../assets/insidePages/vendor/featuresIcon/aqc.png"
+import dm from "../../assets/insidePages/vendor/featuresIcon/dm.png"
+import pfb from "../../assets/insidePages/vendor/featuresIcon/pfb.png"
+import poa from "../../assets/insidePages/vendor/featuresIcon/poa.png"
+import poa1 from "../../assets/insidePages/vendor/featuresIcon/poa1.png"
+import spm from "../../assets/insidePages/vendor/featuresIcon/spm.png"
+import vmfeature from "../../assets/insidePages/vendor/featuresIcon/vm.png"
+import vpt from "../../assets/insidePages/vendor/featuresIcon/vpt.png"
 
 
 
@@ -46,13 +62,13 @@ export default function PurchaseAndVendor() {
 
 
 
- 
+
     const features = [
         {
             key: 1,
             heading: "Vendor Management",
             desc: "Maintain a centralized database with detailed vendor profiles, including contact information, product offerings, and contract terms, helping businesses efficiently track and manage supplier relationships.",
-            img: ufi, // Image from the previous feature array
+            img: vmfeature, // Image from the previous feature array
             width: "64px" // Width from the previous feature array
         },
         {
@@ -66,7 +82,7 @@ export default function PurchaseAndVendor() {
             key: 3,
             heading: "Automated Quotation Comparison",
             desc: "Automatically compare vendor quotations based on price, delivery, and quality, helping businesses make data-driven procurement decisions quickly.",
-            img: oc, // Image from the previous feature array
+            img: aqc, // Image from the previous feature array
             width: "54px" // Width from the previous feature array
         },
         {
@@ -80,35 +96,35 @@ export default function PurchaseAndVendor() {
             key: 5,
             heading: "Vendor Payment Tracking",
             desc: "Monitor vendor payments, including invoices and due dates, ensuring smooth transactions with transparent payment status for both businesses and vendors.",
-            img: ips, // Image from the previous feature array
+            img: vpt, // Image from the previous feature array
             width: "65px" // Width from the previous feature array
         },
         {
             key: 6,
             heading: "Purchase Order Approvals",
             desc: "Enable multi-level approval workflows for purchase orders to ensure alignment with internal budgets and procurement policies before sending to vendors.",
-            img: it, // Image from the previous feature array
+            img: poa, // Image from the previous feature array
             width: "63px" // Width from the previous feature array
         },
         {
             key: 7,
             heading: "Supplier Performance Monitoring",
             desc: "Evaluate vendor performance through comprehensive reports on delivery, product quality, and compliance, helping businesses strengthen supplier relationships.",
-            img: ufi, // Image reused for consistency
+            img: spm, // Image reused for consistency
             width: "64px" // Reused width for consistency
         },
         {
             key: 8,
             heading: "Document Management",
             desc: "Securely store and access procurement-related documents like contracts, invoices, and agreements in a centralized repository for easy sharing with vendors.",
-            img: rtmm, // Reused image for consistency
+            img: dm, // Reused image for consistency
             width: "65px" // Reused width for consistency
         },
         {
             key: 9,
             heading: "Purchase Forecasting and Budgeting",
             desc: "Forecast purchasing needs based on historical data and trends, set procurement budgets, and track spending to ensure financial control.",
-            img: oc, // Reused image for consistency
+            img: pfb, // Reused image for consistency
             width: "54px" // Reused width for consistency
         }
     ];
@@ -158,48 +174,48 @@ export default function PurchaseAndVendor() {
 
     const query = [
         {
-          key: 1,
-          question: "Q : How does the Purchase & Vendor Portal simplify vendor management?",
-          answer: "A : The portal centralizes vendor profiles, streamlines communication, and allows businesses to track vendor performance, payment statuses, and contract terms."
+            key: 1,
+            question: "Q : How does the Purchase & Vendor Portal simplify vendor management?",
+            answer: "A : The portal centralizes vendor profiles, streamlines communication, and allows businesses to track vendor performance, payment statuses, and contract terms."
         },
         {
-          key: 2,
-          question: "Q : Can I compare vendor quotations easily?",
-          answer: "A : Yes, the system automatically compares vendor quotations based on price, delivery, and quality to help businesses make quick, data-driven procurement decisions."
+            key: 2,
+            question: "Q : Can I compare vendor quotations easily?",
+            answer: "A : Yes, the system automatically compares vendor quotations based on price, delivery, and quality to help businesses make quick, data-driven procurement decisions."
         },
         {
-          key: 3,
-          question: "Q : How does the module help with purchase orders?",
-          answer: "A : It tracks purchase orders from creation to fulfillment, integrates with inventory systems, and ensures accurate order management with real-time updates."
+            key: 3,
+            question: "Q : How does the module help with purchase orders?",
+            answer: "A : It tracks purchase orders from creation to fulfillment, integrates with inventory systems, and ensures accurate order management with real-time updates."
         },
         {
-          key: 4,
-          question: "Q : Is the portal integrated with financial systems?",
-          answer: "A : Yes, the portal integrates with finance modules to track spending, manage budgets, and monitor vendor payments efficiently."
+            key: 4,
+            question: "Q : Is the portal integrated with financial systems?",
+            answer: "A : Yes, the portal integrates with finance modules to track spending, manage budgets, and monitor vendor payments efficiently."
         },
         {
-          key: 5,
-          question: "Q : Can I forecast future procurement needs?",
-          answer: "A : Yes, the module helps businesses forecast purchasing needs, set procurement budgets, and track spending based on historical data and trends."
+            key: 5,
+            question: "Q : Can I forecast future procurement needs?",
+            answer: "A : Yes, the module helps businesses forecast purchasing needs, set procurement budgets, and track spending based on historical data and trends."
         }
-      ];
-      
+    ];
 
 
-      const footerUpperText = {
+
+    const footerUpperText = {
 
         text1: "Empower your workforce",
         text2: "",
         text3: "with a streamlined Employee Portal",
         img: footer
-      }
+    }
 
 
 
 
 
 
- 
+
 
 
 
@@ -232,13 +248,13 @@ export default function PurchaseAndVendor() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon1} alt="" />
+                            <img style={{ width: "100%" }} src={sp} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
 
-                            <div> Effortless</div>
-                            <div> Operations</div>
+                            <div>Streamlining</div>
+                            <div>Procurement</div>
                         </div>
                     </div>
 
@@ -247,15 +263,15 @@ export default function PurchaseAndVendor() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon2} alt="" />
+                            <img style={{ width: "100%" }} src={vm} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
 
 
 
-                            <div> Personalized</div>
-                            <div>Experience</div>
+                            <div>Vendor</div>
+                            <div>Managements</div>
 
                         </div>
                     </div>
@@ -423,7 +439,7 @@ export default function PurchaseAndVendor() {
                 </div>
             </section> */}
 
-<section style={{ background: "#f5f5f5" }} >
+            <section style={{ background: "#f5f5f5" }} >
                 <div className={`${style.section5} font4 globalSectionSize`}>
 
 
@@ -479,9 +495,9 @@ export default function PurchaseAndVendor() {
 
 
                     <div className={style.FAQContainer}>
-                    {query.map((item) => (
-              <Accordion key={item.key} question={item.question} answer={item.answer} />
-            ))}
+                        {query.map((item) => (
+                            <Accordion key={item.key} question={item.question} answer={item.answer} />
+                        ))}
                     </div>
 
                 </div>
@@ -489,10 +505,10 @@ export default function PurchaseAndVendor() {
 
 
             <div >
-        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
-        <FooterLower />
+                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+                <FooterLower />
 
-      </div>
+            </div>
 
         </>
     )
