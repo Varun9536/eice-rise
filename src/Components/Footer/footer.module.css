@@ -297,6 +297,43 @@
 
         }
 
+        
+        .footerUpperPartHeading {
+            font-size: 30px;
+        }
+
+    }
+
+    @media  (max-width : 350px) 
+    {
+        .footerHeadAndIconBox {
+            
+            padding: 0px 10px;
+            
+            
+
+        }
+
+        .footerUpperPartHeading {
+            font-size: 16px;
+        }
+
+        .demoButton {
+            padding: 7px 5px;
+            font-size: 12px;
+            width: 150px;
+            margin-top: 30px;
+
+
+        }
+
+
+        .footerLaptopImg {
+            width: 86%;
+            
+    
+        }
+
     }
 
 
