@@ -280,7 +280,7 @@ export default function PurchaseAndVendor() {
                     </div>
 
 
-
+{/* 
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
@@ -299,7 +299,7 @@ export default function PurchaseAndVendor() {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
 
 
