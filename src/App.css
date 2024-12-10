@@ -29,17 +29,17 @@
     padding-top: 90px;
     max-width: 1900px;
     justify-content: right;
-    
+
+
 
 }
 
-@media (min-width : 1600px)
-{
+@media (min-width : 1600px) {
     .insidePageUpperSection {
-        
+
         padding-top: 120px;
-        
-    
+
+
     }
 }
 
@@ -49,6 +49,7 @@
         margin: 0 auto;
         padding-top: 90px;
         max-width: 1150px;
+        column-gap: 40px;
     }
 }
 
@@ -74,5 +75,3 @@
 .indicator.active {
     background-color: #012060;
 }
-
-

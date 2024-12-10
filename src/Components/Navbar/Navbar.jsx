@@ -47,7 +47,7 @@ export default function Navbar() {
             ]
         },
 
-       
+
 
 
 
@@ -74,15 +74,32 @@ export default function Navbar() {
 
                         <div className={`${styles.navigationButton}`} key={item.label} onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
 
-                            <Link to={item.link} className="linkClass">
+                            {/* <Link to={item.link} className="linkClass">
 
                                 <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
                                     {item.label}
                                 </div>
 
-                            </Link>
+                            </Link> */}
 
-                            {item.label == 'Products' && (
+
+                            {item.label === 'Products' ? (<div className="linkClass">
+
+                                <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
+                                    {item.label}
+                                </div>
+
+                            </div>) : (<Link to={item.link} className="linkClass">
+
+                                <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
+                                    {item.label}
+                                </div>
+
+                            </Link>)}
+
+                            
+
+                            {item.label === 'Products' && (
                                 <div style={{ paddingTop: "3px" }}>
                                     {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
                                 </div>
@@ -103,7 +120,7 @@ export default function Navbar() {
                                 </div>
                             )}
 
-                           
+
 
 
 

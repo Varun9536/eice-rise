@@ -46,6 +46,14 @@ import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 
+import bfc from "../../assets/insidePages/vendor/vendorBenefits/bfc.webp"
+import evm from "../../assets/insidePages/vendor/vendorBenefits/evm.webp"
+import isr from "../../assets/insidePages/vendor/vendorBenefits/isr.webp"
+import ta from "../../assets/insidePages/vendor/vendorBenefits/ta.webp"
+import tcs from "../../assets/insidePages/vendor/vendorBenefits/tcs.webp"
+
+
+
 import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
@@ -137,38 +145,33 @@ export default function PurchaseAndVendor() {
             key: 1,
             heading: "Efficient Vendor Management",
             desc: "Centralized vendor profiles allow businesses to maintain organized and up-to-date records, making it easier to track relationships and performance over time.",
-            img: b1,
+            img: evm,
         },
         {
             key: 2,
             heading: "Time and Cost Savings",
             desc: "Streamlining the RFP and RFQ processes reduces the time spent on sourcing and vendor selection, allowing businesses to make quicker procurement decisions and secure better prices.",
-            img: b2,
+            img: tcs,
         },
         {
             key: 3,
             heading: "Transparency and Accountability",
             desc: "Vendors can easily track payment statuses and purchase orders, reducing disputes and fostering trust between businesses and suppliers.",
-            img: b3,
+            img: ta,
         },
         {
             key: 4,
             heading: "Improved Supplier Relationships",
             desc: "By evaluating supplier performance and maintaining clear, direct communication through the portal, businesses can build stronger, more collaborative partnerships with vendors.",
-            img: b4,
+            img: isr,
         },
         {
             key: 5,
             heading: "Better Financial Control",
             desc: "Integration with finance modules ensures that payment terms, budgets, and spending are tracked efficiently, enabling businesses to stay within budget and manage cash flow effectively.",
-            img: b5,
+            img: bfc,
         },
-        {
-            key: 6,
-            heading: "Enhanced Reporting and Insights",
-            desc: "Comprehensive reports and analytics provide businesses with insights into purchasing trends, vendor performance, and cost-saving opportunities, aiding strategic procurement decisions.",
-            img: b3,
-        }
+       
     ];
 
 

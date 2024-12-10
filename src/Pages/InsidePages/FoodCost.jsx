@@ -20,6 +20,19 @@ import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
 import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
 
+import COGSc from "../../assets/insidePages/food/foodFeatures/COGSc.png"
+import dpca from "../../assets/insidePages/food/foodFeatures/dpca.png"
+import im from "../../assets/insidePages/food/foodFeatures/im.png"
+import me from "../../assets/insidePages/food/foodFeatures/me.png"
+import rc from "../../assets/insidePages/food/foodFeatures/rc.png"
+import rtct from "../../assets/insidePages/food/foodFeatures/rtct.png"
+import smpo from "../../assets/insidePages/food/foodFeatures/smpo.png"
+import spi from "../../assets/insidePages/food/foodFeatures/spi.png"
+import wlm from "../../assets/insidePages/food/foodFeatures/wlm.png"
+
+
+
+
 
 // benifits
 
@@ -53,86 +66,66 @@ export default function FoodCost() {
         key: 1,
         heading: "Real-Time Cost Tracking",
         desc: "Monitor the cost of ingredients, resources, and overhead in real time, ensuring that all food and beverage transactions, from procurement to sale, are tracked and analyzed for accurate cost control.",
-        img: ufi, // Placeholder based on your original provided array
+        img: rtct, 
         width: "64px",
     },
     {
         key: 2,
         heading: "Recipe Costing",
         desc: "Track detailed recipes, including ingredient quantities, preparation methods, and associated costs. The system automatically calculates the cost per dish or drink, helping businesses make accurate pricing decisions.",
-        img: rtmm, // Placeholder based on your original provided array
+        img: rc, 
         width: "65px",
     },
     {
         key: 3,
         heading: "Menu Engineering",
         desc: "Analyze the profitability of menu items by evaluating cost versus price. This helps identify high-cost or low-margin items and suggests ways to adjust pricing, optimize menu offerings, and implement portion control to boost profitability.",
-        img: oc, // Placeholder based on your original provided array
+        img: me, 
         width: "54px",
     },
     {
         key: 4,
         heading: "Supplier Management & Purchase Orders",
         desc: "Monitor supplier prices and purchase orders to ensure the best deals on ingredients. The system helps compare supplier prices, manage inventory efficiently, and negotiate better prices to reduce the cost of goods sold (COGS).",
-        img: tm, // Placeholder based on your original provided array
+        img: smpo, 
         width: "65px",
     },
     {
         key: 5,
         heading: "COGS Calculation",
         desc: "Track and calculate the cost of goods sold on a daily, weekly, or monthly basis. This feature provides insights into the total cost of ingredients used and evaluates the profitability of each food and beverage sale.",
-        img: ips, // Placeholder based on your original provided array
+        img: COGSc, 
         width: "65px",
     },
     {
         key: 6,
         heading: "Waste and Loss Management",
         desc: "Identify and reduce food and beverage wastage, whether caused by over-portioning, spoilage, or incorrect inventory practices. This feature helps minimize loss and optimize resource utilization.",
-        img: it, // Placeholder based on your original provided array
+        img: wlm, 
         width: "63px",
     },
     {
         key: 7,
         heading: "Dynamic Pricing and Cost Adjustments",
         desc: "Adjust pricing strategies based on demand fluctuations, seasonality, or special events. The system enables businesses to set flexible pricing options for peak periods, offering promotions or discounts while maintaining profitability.",
-        img: kds, // Placeholder based on your original provided array
+        img: dpca, 
         width: "70px",
     },
     {
         key: 8,
         heading: "Inventory Management",
         desc: "Efficiently manage inventory levels to avoid overstocking or stockouts. This system integrates inventory and purchasing to ensure stock availability, reduce waste, and maintain optimal ingredient levels.",
-        img: plp, // Placeholder based on your original provided array
+        img: im, 
         width: "65px",
     },
     {
         key: 9,
         heading: "Sales Performance Insights",
         desc: "Analyze the sales performance of menu items and identify top-performing dishes and beverages. Use these insights to adjust menu offerings and match customer preferences.",
-        img: rtsr, // Placeholder based on your original provided array
+        img: spi, 
         width: "60px",
     },
-    {
-        key: 10,
-        heading: "Financial Reporting and Analytics",
-        desc: "Generate detailed financial reports on F&B costs, profit margins, and pricing strategies. These reports provide essential data to help businesses make informed decisions and improve operational efficiency.",
-        img: ufi, // Reuse image identifier from provided array
-        width: "64px",
-    },
-    {
-        key: 11,
-        heading: "Budgeting and Forecasting",
-        desc: "Create budgets and forecast future F&B costs using historical data and trends. This feature allows businesses to plan for high-demand periods and optimize menu pricing.",
-        img: rtmm, // Reuse image identifier from provided array
-        width: "65px",
-    },
-    {
-        key: 12,
-        heading: "Nutritional and Dietary Costing",
-        desc: "Track and cost menu items based on their nutritional value, catering to health-conscious guests or dietary-specific needs. The system helps optimize the health and wellness aspects of the menu while ensuring accurate costing.",
-        img: oc, // Reuse image identifier from provided array
-        width: "54px",
-    }
+    
 ];
 
 
