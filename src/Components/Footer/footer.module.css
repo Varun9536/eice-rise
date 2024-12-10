@@ -181,8 +181,6 @@
 
         .footerLaptopImg {
 
-           
-
             width: 400px;
             left: 30px;
             position: relative;
@@ -195,9 +193,12 @@
 
         .footerHeadAndIconBox {
             /* width: unset; */
-            width: 18rem;
+            /* width: 18rem; */
             /* padding: 0px 10px; */
             /* margin: 0px auto; */
+            width: 100vw;
+            /* margin: 0px auto; */
+            padding: 0px 20px;
             
 
         }
@@ -256,7 +257,7 @@
         .demoButton {
             padding: 10px 5px;
             font-size: 16px;
-            width: 65%;
+            width: 200px;
             margin-top: 30px;
 
 
@@ -277,6 +278,24 @@
 
 
 
+
+    }
+
+
+
+    @media  (min-width : 800px) and (max-width : 1120px)
+    {
+        .footerHeadAndIconBox {
+            /* width: unset; */
+            /* width: 18rem; */
+            /* padding: 0px 10px; */
+            /* margin: 0px auto; */
+            /* width: 100vw; */
+            /* margin: 0px auto; */
+            padding: 0px 40px;
+            
+
+        }
 
     }
 
