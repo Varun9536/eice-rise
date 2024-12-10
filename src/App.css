@@ -27,11 +27,23 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 90px;
-    max-width: 1600px;
+    max-width: 1900px;
+    justify-content: right;
+    
 
 }
 
-@media (min-width : 1600px) {
+@media (min-width : 1600px)
+{
+    .insidePageUpperSection {
+        
+        padding-top: 120px;
+        
+    
+    }
+}
+
+@media (min-width : 2000px) {
     .insidePageUpperSection {
         width: 100%;
         margin: 0 auto;
