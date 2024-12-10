@@ -180,9 +180,9 @@ export default function UserAndInventry() {
 
     const footerUpperText = {
 
-        text1: "Empower your workforce",
+        text1: "Track inventory",
         text2: "",
-        text3: "with a streamlined Employee Portal",
+        text3: "with precision using our robust management syste",
         img: footer
       }
 

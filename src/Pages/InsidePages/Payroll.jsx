@@ -189,9 +189,9 @@ export default function Payroll() {
 
   const footerUpperText = {
 
-    text1: "Streamline",
-    text2: " bookings",
-    text3: "effortlessly",
+    text1: "Streamlined payrol",
+    text2: "",
+    text3: "processing with accuracy, compliance, and efficiency",
     img: footer
   }
 

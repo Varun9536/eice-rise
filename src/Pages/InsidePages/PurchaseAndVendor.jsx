@@ -207,9 +207,9 @@ export default function PurchaseAndVendor() {
 
     const footerUpperText = {
 
-        text1: "Empower your workforce",
+        text1: "Collaborate seamlessly",
         text2: "",
-        text3: "with a streamlined Employee Portal",
+        text3: "with vendors using our comprehensive portall",
         img: footer
     }
 
