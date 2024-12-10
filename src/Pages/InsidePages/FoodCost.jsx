@@ -6,18 +6,13 @@ import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
 import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
 import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
+import eh from "../../assets/insidePages/food/ICONS/EH.png"
+import ep from "../../assets/insidePages/food/ICONS/EP.png"
 
 
-// features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
+
+
 
 
 import COGSc from "../../assets/insidePages/food/foodFeatures/COGSc.png"
@@ -41,6 +36,13 @@ import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
 import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
 import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
 import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+
+
+import cc from "../../assets/insidePages/food/benefits/cc.webp"
+import emm from "../../assets/insidePages/food/benefits/emm.webp"
+import esn from "../../assets/insidePages/food/benefits/esn.webp"
+import ioe from "../../assets/insidePages/food/benefits/ioe.webp"
+import po from "../../assets/insidePages/food/benefits/po.webp"
 
 
 
@@ -138,31 +140,31 @@ const benefits = [
       key: 1,
       heading: "Profitability Optimization",
       desc: "Gain insights into ingredient costs, portion sizes, and menu profitability to adjust pricing, eliminate waste, and improve profit margins.",
-      img: b1,
+      img: po,
   },
   {
       key: 2,
       heading: "Cost Control",
       desc: "Track F&B expenses in real-time from procurement to sale, reducing unexpected costs and ensuring better financial control.",
-      img: b2, 
+      img: cc, 
   },
   {
       key: 3,
       heading: "Efficient Menu Management",
       desc: "Optimize menu items based on profitability, removing low-margin dishes and adjusting portions to meet customer demand while ensuring profitability.",
-      img: b3, 
+      img: emm, 
   },
   {
       key: 4,
       heading: "Enhanced Supplier Negotiation",
       desc: "Track supplier prices and evaluate cost-effectiveness to negotiate better terms and reduce ingredient costs.",
-      img: b4, 
+      img: esn, 
   },
   {
       key: 5,
-      heading: "Waste Reduction",
-      desc: "Identify food wastage trends and implement better inventory practices to reduce spoilage, prevent over/under-preparation, and boost profits.",
-      img: b5, 
+      heading: "Increased Operational Efficiency",
+      desc: "Automated calculations, real-time tracking, and insightful analytics streamline daily operations, improving efficiency and guest experiences.",
+      img: ioe, 
   }
 ];
 
@@ -244,13 +246,13 @@ const footerUpperText = {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon1} alt="" />
+              <img style={{ width: "100%" }} src={eh} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
 
-              <div> Effortless</div>
-              <div> Operations</div>
+              <div> Efficiency in</div>
+              <div> Hospitality</div>
             </div>
           </div>
 
@@ -259,22 +261,22 @@ const footerUpperText = {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon2} alt="" />
+              <img style={{ width: "100%" }} src={ep} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
 
 
 
-              <div> Personalized</div>
-              <div>Experience</div>
+              <div>Enhancing</div>
+              <div>Profitability</div>
 
             </div>
           </div>
 
 
 
-          <div className={style.section2IconAndName}>
+          {/* <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
               <img style={{ width: "100%" }} src={icon3} alt="" />
@@ -292,7 +294,7 @@ const footerUpperText = {
               </div>
             </div>
 
-          </div>
+          </div> */}
 
 
 

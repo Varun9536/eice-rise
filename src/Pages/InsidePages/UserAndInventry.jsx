@@ -37,6 +37,13 @@ import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
 import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
+import co from "../../assets/insidePages/inventry/benefits/co.webp"
+import iic from "../../assets/insidePages/inventry/benefits/iic.webp"
+import oe from "../../assets/insidePages/inventry/benefits/oe.webp"
+import rti from "../../assets/insidePages/inventry/benefits/rti.webp"
+import s from "../../assets/insidePages/inventry/benefits/s.webp"
+
+
 
 import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
@@ -109,45 +116,35 @@ export default function UserAndInventry() {
             key: 1,
             heading: "Operational Efficiency",
             desc: "Reduce manual errors, accelerate processes, and free up resources for strategic tasks.",
-            img: b1,
+            img: oe,
         },
         {
             key: 2,
             heading: "Real-Time Insights",
             desc: "Get instant visibility into inventory, store performance, and user activity to make faster decisions.",
-            img: b2,
+            img: rti,
         },
         {
             key: 3,
             heading: "Cost Optimization",
             desc: "Automate restocking and inventory updates to minimize costs, prevent overstocking, and boost profit margins.",
-            img: b3,
+            img: co,
 
         },
         {
             key: 4,
             heading: "Scalability",
             desc: "Easily manage multiple locations as your business grows with customizable configurations and consistent performance.",
-            img: b4,
+            img: s,
         },
         {
             key: 5,
             heading: "Improved Inventory Control",
             desc: "Accurate, automated inventory management ensures real-time stock updates, enhancing the customer experience.",
-            img: b5,
+            img: iic,
         },
-        {
-            key: 6,
-            heading: "Seamless Integration",
-            desc: "Integrate with ERP systems to eliminate manual entry and ensure smooth data flow across functions.",
-            img: b1,
-        },
-        {
-            key: 7,
-            heading: "Enhanced User and Store Management",
-            desc: "Track store performance and employee roles efficiently with real-time insights to improve customer service.",
-            img: b2,
-        }
+
+        
     ];
 
 
