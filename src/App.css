@@ -27,16 +27,18 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 90px;
-    max-width: 1900px;
-    justify-content: right;
-
-
+    max-width: 1600px;
 
 }
 
-
-
-
+@media (min-width : 1600px) {
+    .insidePageUpperSection {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 90px;
+        max-width: 1150px;
+    }
+}
 
 
 
@@ -48,15 +50,16 @@
 }
 
 .indicator {
-    width: 23px;
-    height: 6px;
-    border-radius: 50px;
+    width: 24px;
+    height: 7px;
+    border-radius: 30%;
+    /* background-color: #ccc; */
     cursor: pointer;
     transition: background-color 0.3s;
     border: 1px solid black;
-    margin: 0 4px;
 }
 
 .indicator.active {
-    background-color: #012060;
+    /* background-color: #007bff; */
+    background-color: rgb(49, 49, 214);
 }
