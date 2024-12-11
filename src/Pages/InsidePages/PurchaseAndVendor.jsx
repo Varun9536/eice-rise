@@ -1,9 +1,7 @@
 import style from "./Styles/purchaseAndVendor.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+
 
 
 import sp from "../../assets/insidePages/vendor/section2icon/sp.png"
@@ -13,15 +11,11 @@ import vm from "../../assets/insidePages/vendor/section2icon/vm.png"
 
 
 // features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
+
 import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
+
 import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
 
 
 
@@ -36,13 +30,7 @@ import vpt from "../../assets/insidePages/vendor/featuresIcon/vpt.png"
 
 
 
-// benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 

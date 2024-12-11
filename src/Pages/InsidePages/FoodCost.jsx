@@ -2,9 +2,6 @@
 import style from "./Styles/foodCost.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
 import eh from "../../assets/insidePages/food/ICONS/EH.png"
 import ep from "../../assets/insidePages/food/ICONS/EP.png"
@@ -29,13 +26,7 @@ import wlm from "../../assets/insidePages/food/foodFeatures/wlm.png"
 
 
 
-// benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 import cc from "../../assets/insidePages/food/benefits/cc.webp"

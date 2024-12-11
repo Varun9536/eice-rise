@@ -53,43 +53,43 @@ export default function Payroll() {
       key: 1,
       heading: "Automated Payroll Processing",
       desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
-      img: app, // Taken from the previous features array
-      width: "58px", // Taken from the previous features array
+      img: app, 
+      width: "58px", 
     },
     {
       key: 2,
       heading: "Employee Data Management",
       desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
-      img: edm, // Taken from the previous features array
-      width: "59px", // Taken from the previous features array
+      img: edm, 
+      width: "59px", 
     },
     {
       key: 3,
       heading: "Customizable Pay Structures",
       desc: "Define multiple earnings & deduction pay types, to accommodate various employee compensation models.",
-      img: cps, // Taken from the previous features array
-      width: "54px", // Taken from the previous features array
+      img: cps, 
+      width: "54px", 
     },
     {
       key: 4,
       heading: "Tax Compliance and Reporting",
       desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
-      img: tcr, // Taken from the previous features array
-      width: "62px", // Taken from the previous features array
+      img: tcr, 
+      width: "62px", 
     },
     {
       key: 5,
       heading: "Leave and Attendance Management",
       desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
-      img: lam, // Taken from the previous features array
-      width: "71px", // Taken from the previous features array
+      img: lam, 
+      width: "71px", 
     },
     {
       key: 6,
       heading: "Direct Deposit and Payment Processing",
       desc: "Enables direct deposit to employees' bank accounts, reducing manual payment efforts and improving payment accuracy.",
-      img: ddpp, // Taken from the previous features array
-      width: "63px", // Taken from the previous features array
+      img: ddpp, 
+      width: "63px", 
     },
 
   ];

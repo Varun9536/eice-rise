@@ -3,9 +3,7 @@
 import style from "./Styles/employeeSuite.module.css"
 
 
-// import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-// import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-// import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+
 
 import as from "../../assets/insidePages/emp/empSection2/as.png"
 import cd from "../../assets/insidePages/emp/empSection2/cd.png"

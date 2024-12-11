@@ -7,16 +7,7 @@ import sv from "../../assets/insidePages/inventry/section2icon/sv.png"
 
 
 
-// features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+
 
 
 import ara from "../../assets/insidePages/inventry/featuresIcon/ara.png"
@@ -28,13 +19,8 @@ import serpi from "../../assets/insidePages/inventry/featuresIcon/serpi.png"
 
 
 
-// benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+
 
 
 import co from "../../assets/insidePages/inventry/benefits/co.webp"
@@ -67,29 +53,29 @@ export default function UserAndInventry() {
             key: 1,
             heading: "Centralized User Management",
             desc: "Streamline user access store-wise with customizable roles and permissions.",
-            img: cum, // Reused image from the previous features array
-            width: "64px" // Reused width from the previous features array
+            img: cum, 
+            width: "64px" 
         },
         {
             key: 2,
             heading: "Efficient Store Management",
             desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
-            img: esm, // Reused image from the previous features array
-            width: "65px" // Reused width from the previous features array
+            img: esm, 
+            width: "65px" 
         },
         {
             key: 3,
             heading: "Real-Time Inventory Control",
             desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
-            img: rtic, // Reused image from the previous features array
-            width: "54px" // Reused width from the previous features array
+            img: rtic, 
+            width: "54px" 
         },
         {
             key: 4,
             heading: "Advanced Reporting and Analytics",
             desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
-            img: ara, // Reused image from the previous features array
-            width: "65px" // Reused width from the previous features array
+            img: ara, 
+            width: "65px" 
         },
         {
             key: 5,
