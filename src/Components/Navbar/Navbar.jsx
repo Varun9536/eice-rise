@@ -119,19 +119,13 @@ export default function Navbar() {
 
                                 </div>
                             )}
-
-
-
-
-
-
                         </div>
                     ))}
 
 
 
 
-                    <div ><a className="linkClass" href="">Products</a></div>
+                    <div ><a className="linkClass" href="">Pricing</a></div>
                     <div><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/About">About Us</a></div>
                     <div ><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/Resources">Blogs</a></div>
                 </div>

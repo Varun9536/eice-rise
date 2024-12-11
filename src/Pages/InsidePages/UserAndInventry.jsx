@@ -49,7 +49,7 @@ import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-
+import main from "../../assets/insidePages/inventry/inventryHero.webp"
 
 import footer from "../../assets/footer/foot.webp"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
@@ -201,17 +201,17 @@ export default function UserAndInventry() {
 
 
 
-            <section>
+<section>
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div className={`${style.pageHeadingBox}`}>
                         <div className={`${style.section1Heading} font4`}>
-                            <span style={{ color: "#012060" }}>USER STORE &</span>
-                            <span style={{ color: "#01B0F1", textAlign: "center" }} className="blueTextGlobalClass"> INVENTORY</span>
+                            <div style={{ color: "#012060" }}>USER STORE </div>
+                            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> & INVENTORY</div>
                         </div>
                     </div>
 
                     <div className={style.section1ImgBox}>
-
+                        <img style={{ width: "100%" }} src={main} alt="" />
                     </div>
                 </div>
 

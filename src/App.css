@@ -26,12 +26,12 @@
 .insidePageUpperSection {
     width: 100%;
     margin: 0 auto;
-    padding-top: 90px;
-    max-width: 1600px;
+    padding-top: 130px;
+    max-width: 1900px;
 
 }
 
-@media (min-width : 1600px) {
+@media (min-width : 2000px) {
     .insidePageUpperSection {
         width: 100%;
         margin: 0 auto;

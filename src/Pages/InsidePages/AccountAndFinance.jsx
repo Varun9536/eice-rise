@@ -24,7 +24,7 @@ import vsp from "../../assets/insidePages/account/icon/vsp.png"
 
 
 
-
+import main from "../../assets/insidePages/account/h.webp"
 
 
 
@@ -234,17 +234,18 @@ export default function AccountAndFinance() {
 
 
 
-      <section>
+     
+<section>
         <div className={`${style.section1} insidePageUpperSection`}>
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>ACCOUNTS &</span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> FINANCE</span>
+              <div style={{ color: "#012060" }}>ACCOUNTS </div>
+              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass">& FINANCE</div>
             </div>
           </div>
 
           <div className={style.section1ImgBox}>
-
+            <img style={{ width: "100%" }} src={main} alt="" />
           </div>
         </div>
 

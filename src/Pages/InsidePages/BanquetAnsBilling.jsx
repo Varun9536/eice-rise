@@ -20,7 +20,7 @@ import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 
 
-
+import main from "../../assets/insidePages/banquet/h.webp"
 
 // benefits
 
@@ -192,18 +192,17 @@ export default function BanquetAnsBilling() {
     <>
 
 
-
-      <section>
+<section>
         <div className={`${style.section1} insidePageUpperSection`}>
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>BANQUET &</span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BILLING</span>
+              <div style={{ color: "#012060" }}>BANQUET </div>
+              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> & BILLING</div>
             </div>
           </div>
 
           <div className={style.section1ImgBox}>
-
+            <img style={{width : "100%"}} src={main} alt="" />
           </div>
         </div>
 

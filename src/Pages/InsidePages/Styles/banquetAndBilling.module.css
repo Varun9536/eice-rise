@@ -4,32 +4,48 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 20px;
-    justify-content: space-between;
-
+    margin-bottom: 80px;
 
 }
+
+
+
 
 .section1ImgBox {
-    background-image: url("../../../assets/insidePages/banquet/h.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+
     width: 60%;
-    height: 500px;
     position: relative;
-    /* left: 86px; */
+    left: 66px;
 
 }
 
-@media (min-width : 1600px)
-{
+@media (min-width : 2000px) {
+
     .section1ImgBox {
-        
+
+        width: 60%;
+        position: relative;
         left: unset;
-    
+
     }
 }
+
+
+
+.pageHeadingBox {
+    width: 40%;
+    padding-right: 60px;
+}
+
+
+@media (max-width : 1600px) {
+    .pageHeadingBox {
+        width: 40%;
+        padding-right: 90px;
+    }
+}
+
+
 
 
 .section1Heading {
@@ -39,13 +55,28 @@
     background: linear-gradient(to left, rgb(255, 255, 255), rgb(244, 244, 244));
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: right;
-    padding-right: 20px;
+    text-align: left;
+    padding-left: 180px;
 
 }
 
-.pageHeadingBox {
-    width: 33%;
+
+@media (min-width : 1630px) and (max-width : 1750px) {
+
+    .section1Heading {
+        padding-left: 270px;
+
+    }
+
+}
+
+@media (min-width : 1900px) and (max-width : 1950px) {
+
+    .section1Heading {
+        padding-left: 370px;
+
+    }
+
 }
 
 

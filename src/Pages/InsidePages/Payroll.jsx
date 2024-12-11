@@ -29,7 +29,7 @@ import es from "../../assets/insidePages/pay/payrollBenefit/es.webp"
 import ic from "../../assets/insidePages/pay/payrollBenefit/ic.webp"
 import te from "../../assets/insidePages/pay/payrollBenefit/te.webp"
 
-
+import main from "../../assets/insidePages/pay/payrollHero.webp"
 
 import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
@@ -204,22 +204,21 @@ export default function Payroll() {
 
 
 
-      <section>
+<section>
         <div className={`${style.section1} insidePageUpperSection`}>
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>PAYROLL</span>
-              {/* <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> MANAGEMENT</span> */}
+              <div style={{ color: "#012060" }}>PAYROLL</div>
+              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> MANAGEMENT</div>
             </div>
           </div>
 
           <div className={style.section1ImgBox}>
-
+          <img style={{ width: "100%" }} src={main} alt="" />
           </div>
         </div>
 
       </section>
-
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

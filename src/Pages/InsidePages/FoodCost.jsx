@@ -44,7 +44,7 @@ import esn from "../../assets/insidePages/food/benefits/esn.webp"
 import ioe from "../../assets/insidePages/food/benefits/ioe.webp"
 import po from "../../assets/insidePages/food/benefits/po.webp"
 
-
+import main from "../../assets/insidePages/food/foodHero.webp"
 
 import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
@@ -224,17 +224,18 @@ const footerUpperText = {
 
 
 
-      <section>
+     
+<section>
         <div className={`${style.section1} insidePageUpperSection`}>
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>FOOD & BEVERAGE </span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass" >COST ANALYSIS</span>
+              <div style={{ color: "#012060" }}>FOOD & BEVERAGE </div>
+              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass" >COST ANALYSIS</div>
             </div>
           </div>
 
           <div className={style.section1ImgBox}>
-
+          <img style={{ width: "100%" }} src={main} alt="" />
           </div>
         </div>
 

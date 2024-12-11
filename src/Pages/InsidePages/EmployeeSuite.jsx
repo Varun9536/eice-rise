@@ -37,7 +37,7 @@ import ie from "../../assets/insidePages/emp/empBenefits/ie.webp"
 import ts from "../../assets/insidePages/emp/empBenefits/ts.webp"
 import tt from "../../assets/insidePages/emp/empBenefits/tt.webp"
 
-
+import main from "../../assets/insidePages/emp/empH.webp"
 
 import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
 
@@ -224,17 +224,17 @@ export default function EmployeeSuite() {
 
 
 
-      <section>
+<section>
         <div className={`${style.section1} insidePageUpperSection`}>
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>EMPLOYEE </span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass">SUITE</span>
+              <div style={{ color: "#012060" }}>EMPLOYEE </div>
+              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass">SUITE</div>
             </div>
           </div>
 
           <div className={style.section1ImgBox}>
-
+          <img style={{ width: "100%" }} src={main} alt="" />
           </div>
         </div>
 

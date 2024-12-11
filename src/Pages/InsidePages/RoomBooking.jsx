@@ -57,6 +57,8 @@ import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
 import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp"
 
+import main from "../../assets/insidePages/room/roomPage/H.webp"
+
 
 export default function RoomBooking() {
 
@@ -221,14 +223,14 @@ export default function RoomBooking() {
             <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div className={`${style.pageHeadingBox}`}>
-                        <div className={`${style.section1Heading} font4`}>
-                            <span style={{ color: "#012060" }}>ROOM </span>
-                            <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BOOKING</span>
+                        <div  className={`${style.section1Heading} font4`}>
+                            <div style={{ color: "#012060" }}>ROOM </div>
+                            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> BOOKING</div>
                         </div>
                     </div>
 
                     <div className={style.section1ImgBox}>
-
+                        <img style={{width : "100%"}} src={main} alt="" />
                     </div>
                 </div>
 

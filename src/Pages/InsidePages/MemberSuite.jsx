@@ -9,7 +9,7 @@ import cag from "../../assets/insidePages/member/memberSection2/cag.png"
 import pme from "../../assets/insidePages/member/memberSection2/pme.png"
 import smo from "../../assets/insidePages/member/memberSection2/smo.png"
 
-
+import main from "../../assets/insidePages/member/hero.webp"
 
 
 
@@ -202,17 +202,18 @@ export default function MemberSuite() {
 
 
 
-      <section>
+     
+<section>
         <div className={`${style.section1} insidePageUpperSection`}>
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
-              <span style={{ color: "#012060" }}>MEMBER </span>
-              <span style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> SUITE</span>
+              <div style={{ color: "#012060" }}>MEMBER </div>
+              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> SUITE</div>
             </div>
           </div>
 
           <div className={style.section1ImgBox}>
-
+            <img style={{ width: "100%" }} src={main} alt="" />
           </div>
         </div>
 
