@@ -58,42 +58,42 @@ export default function MemberSuite() {
       key: 1,
       heading: "Membership Registration and Management",
       desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
-      img: mrm, // Reusing image from previous array, replace with relevant image if needed
+      img: mrm, 
       width: "86px"
     },
     {
       key: 2,
       heading: "Self-Service Portal",
       desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
-      img: ssp, // Reusing image from previous array, replace with relevant image if needed
+      img: ssp, 
       width: "60px"
     },
     {
       key: 3,
       heading: "Subscription Management",
       desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
-      img: sm, // Reusing image from previous array, replace with relevant image if needed
+      img: sm, 
       width: "60px"
     },
     {
       key: 4,
       heading: "Exclusive Member Benefits",
       desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
-      img: emb, // Reusing image from previous array, replace with relevant image if needed
+      img: emb, 
       width: "65px"
     },
     {
       key: 5,
       heading: "Integrated Communication Tools",
       desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
-      img: ict, // Reusing image from previous array, replace with relevant image if needed
+      img: ict, 
       width: "65px"
     },
     {
       key: 6,
       heading: "Analytics Dashboard",
       desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
-      img: ad, // Reusing image from previous array, replace with relevant image if needed
+      img: ad, 
       width: "60px"
     }
   ];
@@ -303,7 +303,7 @@ export default function MemberSuite() {
 
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
-                EICE Rise ERP’s Member Suite offers a centralized solution for managing diverse membership types, subscriptions, and engagement activities. Designed specifically for Clubs, Institutions, Hotels, and Resorts, this module streamlines membership processes, enhances communication, and provides personalized services to members, all within a secure, user-friendly platform.
+                EICE Rise ERP’s <strong className="2">Member Suite</strong>  offers a centralized solution for managing diverse membership types, subscriptions, and engagement activities. <strong className="font2">Designed specifically for Clubs, Institutions, Hotels, and Resorts</strong> , this module streamlines membership processes, enhances communication, and provides personalized <strong className="font2">services to members, all within a secure, user-friendly platform</strong> .
 
 
               </div>
