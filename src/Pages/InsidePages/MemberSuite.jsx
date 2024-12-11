@@ -33,7 +33,7 @@ import oe from "../../assets/insidePages/member/memberBenefit/oe.webp"
 
 
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/member.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

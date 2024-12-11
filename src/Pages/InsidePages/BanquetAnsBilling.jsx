@@ -32,7 +32,7 @@ import ro from "../../assets/insidePages/banquet/banquetbenefits/ro.webp"
 
 
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/banquet.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -289,7 +289,8 @@ export default function BanquetAnsBilling() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                EICE Rise ERP’s Banquet & Billing module is designed to simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties. The module offers comprehensive tools for Booking, Scheduling, and Billing, enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures accurate resource allocation, efficient billing, and enhanced customer satisfaction.
+                EICE Rise ERP’s Banquet & Billing module is designed to <strong className="font2">simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties</strong> . The module offers comprehensive tools for
+                <strong className="font2">Booking, Scheduling, and Billing</strong> , enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures <strong className="font2">accurate resource allocation, efficient billing, and enhanced customer satisfaction.</strong> 
 
               </div>
 

@@ -31,7 +31,7 @@ import te from "../../assets/insidePages/pay/payrollBenefit/te.webp"
 
 import main from "../../assets/insidePages/pay/payrollHero.webp"
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/pay.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -300,7 +300,7 @@ export default function Payroll() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                The Payroll Management System automates payroll processing, simplifying salary, deduction, bonus, and tax management while ensuring regulatory compliance. It integrates with HR and accounting platforms to reduce errors, save time, and provide real-time payroll insights for better decision-making.
+                The <strong className="font2">automates payroll processing, simplifying salary, deduction, bonus, and tax management</strong> Payroll Management System  while ensuring regulatory compliance. It <strong className="font2">integrates with HR and accounting platforms</strong>  to reduce errors, save time, and provide real-time payroll insights for better decision-making.
 
 
               </div>

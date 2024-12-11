@@ -46,7 +46,7 @@ import po from "../../assets/insidePages/food/benefits/po.webp"
 
 import main from "../../assets/insidePages/food/foodHero.webp"
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/food.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -322,7 +322,7 @@ const footerUpperText = {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-              The Food & Beverage (F&B) Cost Analysis module in EICE Rise ERP helps hospitality businesses monitor and optimize F&B costs. It offers real-time tracking, cost analysis, and strategic insights to improve efficiency, reduce wastage, and enhance profitability.
+              The  <strong className="font2">Food & Beverage (F&B) Cost Analysis module</strong>   in EICE Rise ERP helps hospitality businesses <strong className="font2">monitor and optimize F&B costs</strong> monitor and optimize F&B costs. It offers <strong className="font2">real-time tracking, cost analysis, and strategic insights</strong>  to improve efficiency, reduce wastage, and enhance profitability.
 
               </div>
 

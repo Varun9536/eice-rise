@@ -31,8 +31,7 @@ import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.webp"
 
 
 // overview 
-import laptop from "../../assets/insidePages/room/roomPage/laptop.webp"
-
+import laptop from "../../assets/section3Laptop/room.webp"
 
 
 // import spiral from "../../assets/insidePages/room/roomPage/spiral.jpg"

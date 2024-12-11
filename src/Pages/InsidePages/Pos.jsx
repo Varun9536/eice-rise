@@ -30,12 +30,12 @@ import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/pos.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 
-import mainimg from "../../assets/insidePages/pos/pospage/H3.webp"
+import main from "../../assets/insidePages/pos/posPage/H3.webp"
 
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
@@ -208,7 +208,7 @@ export default function Pos() {
 
 
 
-<section>
+            <section>
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div className={`${style.pageHeadingBox}`}>
                         <div className={`${style.section1Heading} font4`}>
@@ -218,7 +218,7 @@ export default function Pos() {
                     </div>
 
                     <div className={style.section1ImgBox}>
-                        <img style={{ width: "100%" }} src={mainimg} alt="" />
+                        <img style={{ width: "100%" }} src={main} alt="" />
                     </div>
                 </div>
 

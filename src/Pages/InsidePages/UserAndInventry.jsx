@@ -45,7 +45,7 @@ import s from "../../assets/insidePages/inventry/benefits/s.webp"
 
 
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/store.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -221,35 +221,10 @@ export default function UserAndInventry() {
             <section style={{ backgroundColor: "#f5f5f5" }}>
                 <div className={`${style.section2} font4 globalSectionSize`}>
 
-                    <div className={style.section2IconAndName}>
-                        <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={au} alt="" />
-                        </div>
-
-                        <div className={`${style.iconName} `}>
-
-                            <div>Automated</div>
-                            <div>Updates</div>
-                        </div>
-                    </div>
+                   
 
 
 
-                    <div className={style.section2IconAndName}>
-
-                        <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={ir} alt="" />
-                        </div>
-
-                        <div className={`${style.iconName} `}>
-
-
-
-                            <div>Inventary</div>
-                            <div>Reports</div>
-
-                        </div>
-                    </div>
 
 
 
@@ -271,6 +246,35 @@ export default function UserAndInventry() {
                             </div>
                         </div>
 
+                    </div>
+
+                    <div className={style.section2IconAndName}>
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={au} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName} `}>
+
+                            <div>Automated</div>
+                            <div>Updates</div>
+                        </div>
+                    </div>
+
+                    
+                    <div className={style.section2IconAndName}>
+
+                        <div className={`${style.section2Icon}`}>
+                            <img style={{ width: "100%" }} src={ir} alt="" />
+                        </div>
+
+                        <div className={`${style.iconName} `}>
+
+
+
+                            <div>Inventary</div>
+                            <div>Reports</div>
+
+                        </div>
                     </div>
 
 
@@ -298,7 +302,7 @@ export default function UserAndInventry() {
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                                The User and Store Inventory Management Portal simplifies the management of users who place requests to stores for issuing raw materials, store operator supplies the material as per user request across locations. It enhances visibility, automates tracking, and optimizes performance, helping businesses reduce costs and improve efficiency.
+                                The User and Store Inventory Management Portal <strong className="font2">simplifies the management of users</strong>  who place requests to stores for issuing raw materials, store operator supplies the material as per user request across locations. It <strong className="font2">enhances visibility, automates tracking, and optimizes performance, helping businesses reduce costs and improve efficiency</strong>  .
 
                             </div>
 

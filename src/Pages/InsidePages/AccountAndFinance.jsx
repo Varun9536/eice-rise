@@ -36,7 +36,7 @@ import oe from "../../assets/insidePages/account/financebenefit/oe.webp"
 
 
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/account.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -332,7 +332,7 @@ export default function AccountAndFinance() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                The Accounts and Finance module in EICE Rise ERP streamlines financial management for hospitality operations. It automates workflows, ensuring accurate records, compliance, and improved financial decision-making. This module enhances control and transparency in financial activities from budgeting, forecasting, invoicing, and taxation to financial reporting.
+                The Accounts and Finance module in EICE Rise ERP <strong className="font2">streamlines financial management for hospitality operations</strong> . It automates workflows, ensuring accurate records, compliance, and improved financial decision-making. This module enhances control and transparency in financial activities from budgeting, forecasting, invoicing, and taxation to financial reporting.
 
 
               </div>

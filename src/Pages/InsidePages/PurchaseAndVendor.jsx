@@ -54,7 +54,7 @@ import tcs from "../../assets/insidePages/vendor/vendorBenefits/tcs.webp"
 
 
 import main from "../../assets/insidePages/vendor/vendorHero.webp"
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+import laptop from "../../assets/section3Laptop/vendor.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -327,7 +327,7 @@ export default function PurchaseAndVendor() {
                         <div className={`${style.section3Para} font4`}>
                             <div className={`${style.paragraph}`}>
 
-                                EICE Rise ERP’s Purchase & Vendor Portal streamlines procurement by enhancing communication between businesses and suppliers. It simplifies the RFP and RFQ processes, allows vendors to track payment statuses, and ensures transparency and efficiency in transactions, optimizing procurement operations and supplier management.
+                            The <strong className="font2">Purchase & Vendor Portal</strong>  in EICE Rise ERP streamlines procurement and vendor management processes. It automates workflows, ensuring seamless order tracking, improved vendor communication, and better decision-making. This <strong className="font2">portal enhances control and efficiency in managing purchases, supplier relationships, and procurement reporting</strong> .
 
                             </div>
 

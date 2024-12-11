@@ -39,7 +39,7 @@ import tt from "../../assets/insidePages/emp/empBenefits/tt.webp"
 
 import main from "../../assets/insidePages/emp/empH.webp"
 
-import laptop from "../../assets/insidePages/pos/posPage/laptop.webp"
+
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -47,6 +47,8 @@ import Footer3 from "../../Components/Footer/Footer3.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
+
+import laptop from "../../assets/section3Laptop/emp.webp"
 
 import footer from "../../assets/footer/foot.webp"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
@@ -321,7 +323,7 @@ export default function EmployeeSuite() {
             <div className={`${style.section3Para} font4`}>
               <div className={`${style.paragraph}`}>
 
-                The Employee Portal provides centralized access to work-related information, resources, and services. It streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience.
+                The <strong className="font2"> Employee Portal</strong> provides centralized access to work-related information, resources, and services. It <strong className="font2">streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience</strong> .
 
               </div>
 
