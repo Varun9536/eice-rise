@@ -20,7 +20,7 @@ import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 
 
-import main from "../../assets/insidePages/banquet/h.webp"
+import main from "../../assets/insidePages/banquet/banquetHero.webp"
 
 // benefits
 
