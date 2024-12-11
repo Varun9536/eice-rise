@@ -233,8 +233,8 @@ export default function PurchaseAndVendor() {
                 <div className={`${style.section1} insidePageUpperSection`}>
                     <div className={`${style.pageHeadingBox}`}>
                         <div className={`${style.section1Heading} font4`}>
-                            <div style={{ color: "#012060" }}>PURCHASE & VENDOR</div>
-                            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> PORTAL</div>
+                            <div style={{ color: "#012060" }}>PURCHASE </div>
+                            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> & VENDOR PORTAL</div>
                         </div>
                     </div>
 

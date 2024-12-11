@@ -13,9 +13,9 @@
 
 .section1ImgBox {
 
-    width: 60%;
+    width: 55%;
     position: relative;
-    left: 156px;
+    left: 76px;
 
 }
 
@@ -34,14 +34,14 @@
 
 .pageHeadingBox {
     width: 40%;
-    padding-right: 60px;
+    /* padding-right: 60px; */
 }
 
 
 @media (max-width : 1600px) {
     .pageHeadingBox {
         width: 40%;
-        padding-right: 90px;
+        /* padding-right: 90px; */
     }
 }
 
