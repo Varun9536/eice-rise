@@ -130,9 +130,10 @@ export default function Club() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara}`}>
 
                         The Club Suite is designed for <strong className="font2">exclusive clubs and high-end hospitality establishments</strong>  looking to deliver seamless and personalized guest experiences. This <strong className="font2"> suite offers a combination of modules</strong>  tailored to streamline club operations, enhance member satisfaction, and optimize financial management.
+                        
                     </div>
 
                 </div>

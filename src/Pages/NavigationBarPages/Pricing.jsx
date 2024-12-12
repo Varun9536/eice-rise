@@ -111,54 +111,37 @@ export default function Pricing() {
 
   return (
     <>
-      <section>
+      <section className={`${styles.animationSection} insidePageUpperSection`}>
 
-        <div className={`${styles.animationSection} insidePageUpperSection`}>
 
-          <div className={`${styles.animationImgSize} ${styles.sideImgCutLeft}`}>
-            <img style={{ width: "100%" }} src={img1} alt="" />
-          </div>
-          <div className={`${styles.animationImgSize} ${styles.middleimage}`}>
-            <img style={{ width: "100%" }} src={img2} alt="" />
-          </div>
-          <div className={`${styles.animationImgSize} ${styles.sideImgCutRight}`}>
-            <img style={{ width: "100%" }} src={img3} alt="" />
-          </div>
-
+        <div className={`${styles.animationImgSize} ${styles.sideImgCutLeft}`}>
+          <img style={{ width: "100%" }} src={img1} alt="" />
         </div>
+        <div className={`${styles.animationImgSize} ${styles.middleimage}`}>
+          <img style={{ width: "100%" }} src={img2} alt="" />
+        </div>
+        <div className={`${styles.animationImgSize} ${styles.sideImgCutRight}`}>
+          <img style={{ width: "100%" }} src={img3} alt="" />
+        </div>
+
+
 
       </section>
 
 
-      <section >
-
-        <div className={`${styles.moduleSuiteSection} globalSectionSize`}>
+      <section className={`${styles.moduleSuiteSection} globalSectionSize`}  >
 
 
 
+        <div className={`${styles.SuiteSectionHeading} font3`}>
+          Suites For Your Needs
+        </div>
 
-          <div>
-            Suites For Your Needs
-          </div>
-
-
-
-
-
-          <div className={`${styles.modulesTabHeadings}`}>
-            {suites.map((item) =>
-            (
-              <div onClick={(e) => { handleSuitPage(e, item.key) }} key={item.key}>{item.suiteName}</div>
-            ))}
-          </div>
-
-
-
-
-
-
-
-
+        <div className={`${styles.modulesTabHeadings} font3`}>
+          {suites.map((item) =>
+          (
+            <div style={{ cursor: "pointer" }} onClick={(e) => { handleSuitPage(e, item.key) }} key={item.key}>{item.suiteName}</div>
+          ))}
         </div>
 
       </section>
