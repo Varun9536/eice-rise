@@ -11,6 +11,23 @@ import FrontDesk from "../PricePages/FrontDesk"
 import Banquet from "../PricePages/Banquet"
 import Vanilla from "../PricePages/Vanilla"
 import { useState } from "react"
+import FooterLower from "../../Components/Footer/FooterLower"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default function Pricing() {
 
@@ -113,16 +130,22 @@ export default function Pricing() {
       </section>
 
 
-      <section>
-        <div>
-          Suites For Your Needs
-        </div>
+      <section >
+
+        <div className={`${styles.moduleSuiteSection} globalSectionSize`}>
 
 
-        <div>
 
 
           <div>
+            Suites For Your Needs
+          </div>
+
+
+
+
+
+          <div className={`${styles.modulesTabHeadings}`}>
             {suites.map((item) =>
             (
               <div onClick={(e) => { handleSuitPage(e, item.key) }} key={item.key}>{item.suiteName}</div>
@@ -131,7 +154,13 @@ export default function Pricing() {
 
 
 
+
+
+
+
+
         </div>
+
       </section>
 
 
@@ -139,6 +168,10 @@ export default function Pricing() {
         {suitPage[showSuitPage].page}
 
       </section>
+
+      <div>
+        <FooterLower />
+      </div>
 
 
 

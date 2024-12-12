@@ -63,3 +63,24 @@
     /* background-color: #007bff; */
     background-color: rgb(49, 49, 214);
 }
+
+
+.globalBlueOverviewSection {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    color: white;
+
+}
+
+
+@media (min-width : 2000px) {
+    .globalBlueOverviewSection {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+
+
+

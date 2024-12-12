@@ -27,3 +27,18 @@
 {
     position: relative;
 }
+
+.moduleSuiteSection
+{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0px 80px;
+
+}
+
+.modulesTabHeadings
+{
+    display: flex;
+    justify-content: space-between;
+}
