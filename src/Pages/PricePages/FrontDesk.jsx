@@ -125,7 +125,7 @@ export default function FrontDesk() {
 
                     <div className={`${styles.overviewPara} font1`}>
 
-                    The Front Desk Suite is ideal for hospitality operations, ensuring smooth room management and accurate financial tracking. Designed for hotels and guest services, this suite is your go-to solution for handling bookings and payments effortlessly.
+                        The Front Desk Suite is ideal for hospitality operations, ensuring smooth room management and accurate financial tracking. Designed for hotels and guest services, this suite is your go-to solution for handling bookings and payments effortlessly.
 
 
                     </div>
@@ -183,14 +183,14 @@ export default function FrontDesk() {
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
                     <div className={`${styles.chooseUsHeading} font3`}>Why Choose Club Suite</div>
-                    <div>
+                    <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>
 
-                            <div key={item.key}>
+                            <div className="font4" key={item.key} >
 
-                                <span>{item.title}</span>
-                                <span>{item.description}</span>
+                                <span className={`${styles.titleHeading}`}>{item.title} : </span>
+                                <span className={`${styles.titleDesc}`}>{item.description}</span>
 
 
                             </div>

@@ -128,7 +128,7 @@ export default function Banquet() {
 
                     <div className={`${styles.overviewPara} font1`}>
 
-                    The Banquet Suite is perfect for venues hosting events of all sizes. Manage event bookings, billing, and financial records seamlessly with this dedicated suite, ensuring client satisfaction every time.
+                        The Banquet Suite is perfect for venues hosting events of all sizes. Manage event bookings, billing, and financial records seamlessly with this dedicated suite, ensuring client satisfaction every time.
 
                     </div>
 
@@ -185,14 +185,16 @@ export default function Banquet() {
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
                     <div className={`${styles.chooseUsHeading} font3`}>Why Choose Banquet Suite</div>
-                    <div>
+
+
+                    <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>
 
-                            <div key={item.key}>
+                            <div className="font4" key={item.key} >
 
-                                <span>{item.title}</span>
-                                <span>{item.description}</span>
+                                <span className={`${styles.titleHeading}`}>{item.title} : </span>
+                                <span className={`${styles.titleDesc}`}>{item.description}</span>
 
 
                             </div>

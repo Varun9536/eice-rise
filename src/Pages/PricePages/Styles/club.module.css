@@ -22,7 +22,7 @@
 
 .section2 {
     margin-bottom: 3rem;
-   
+    
 }
 
 
@@ -99,7 +99,8 @@
     font-weight: 600;
 }
 
-.whyChooseSection {
+.whyChooseSection
+{
     padding: 0px 80px;
 }
 
@@ -119,6 +120,7 @@
     color: white;
     width: 25%;
     margin-top: 30px;
+    margin-bottom: 6rem;
 }
 
 .demoButton:hover {
@@ -129,8 +131,35 @@
     padding-top: 3.5px;
 }
 
+.whyChooseSection
+{
+    margin-bottom: 10rem;
+}
+
+.titleAndDescBox
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 36px;
+}
+
 .chooseUsHeading
 {
     font-size: 32px;
+    
+}
+
+.titleHeading
+{
+    font-size: 24px;
     font-weight: 600;
+
+}
+
+
+.titleDesc
+{
+    font-size: 24px;
+
 }

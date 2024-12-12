@@ -129,7 +129,7 @@ export default function Inventary() {
                     </div>
 
                     <div className={`${styles.overviewPara} font1`}>
-                    The Inventory Suite is designed to streamline stock and supply chain management, ensuring businesses maintain optimal inventory levels while fostering strong vendor relationships. This suite is ideal for organizations looking to enhance operational efficiency and minimize waste through advanced tracking and management tools.
+                        The Inventory Suite is designed to streamline stock and supply chain management, ensuring businesses maintain optimal inventory levels while fostering strong vendor relationships. This suite is ideal for organizations looking to enhance operational efficiency and minimize waste through advanced tracking and management tools.
                     </div>
 
                 </div>
@@ -185,14 +185,14 @@ export default function Inventary() {
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
                     <div className={`${styles.chooseUsHeading} font3`}>Why Choose Inventory Suite</div>
-                    <div>
+                    <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>
 
-                            <div key={item.key}>
+                            <div className="font4" key={item.key} >
 
-                                <span>{item.title} : </span>
-                                <span>{item.description}</span>
+                                <span className={`${styles.titleHeading}`}>{item.title} : </span>
+                                <span className={`${styles.titleDesc}`}>{item.description}</span>
 
 
                             </div>

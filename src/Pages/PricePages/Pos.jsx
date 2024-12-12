@@ -126,7 +126,7 @@ export default function Pos() {
 
                     <div className={`${styles.overviewPara} font1`}>
 
-                    The POS Suite is tailored for seamless point-of-sale operations and robust financial oversight. Perfect for businesses requiring streamlined billing and real-time transaction tracking, this suite ensures operational efficiency and accurate financial management.
+                        The POS Suite is tailored for seamless point-of-sale operations and robust financial oversight. Perfect for businesses requiring streamlined billing and real-time transaction tracking, this suite ensures operational efficiency and accurate financial management.
 
                     </div>
 
@@ -183,14 +183,14 @@ export default function Pos() {
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
                     <div className={`${styles.chooseUsHeading} font3`}>Why Choose POS Suite</div>
-                    <div>
+                    <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>
 
-                            <div key={item.key}>
+                            <div className="font4" key={item.key} >
 
-                                <span>{item.title}</span>
-                                <span>{item.description}</span>
+                                <span className={`${styles.titleHeading}`}>{item.title} : </span>
+                                <span className={`${styles.titleDesc}`}>{item.description}</span>
 
 
                             </div>
