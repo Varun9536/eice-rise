@@ -182,7 +182,7 @@ export default function FrontDesk() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div>Why choose club suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Club Suite</div>
                     <div>
 
                         {whyToChooseUs.map((item) =>

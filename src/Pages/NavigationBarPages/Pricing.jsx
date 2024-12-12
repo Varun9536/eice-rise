@@ -140,7 +140,7 @@ export default function Pricing() {
         <div className={`${styles.modulesTabHeadings} font3`}>
           {suites.map((item) =>
           (
-            <div style={{ cursor: "pointer" }} onClick={(e) => { handleSuitPage(e, item.key) }} key={item.key}>{item.suiteName}</div>
+            <div style={{ padding: "7px 5px"  , cursor : "pointer" ,  color : item.key === showSuitPage ? '#01B0F1' : 'rgb(156, 153, 153)', borderBottom : item.key === showSuitPage ? ' 2px solid #01B0F1' : ''}}  onClick={(e) => { handleSuitPage(e, item.key) }} key={item.key}>{item.suiteName}</div>
           ))}
         </div>
 

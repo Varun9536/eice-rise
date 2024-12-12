@@ -184,7 +184,7 @@ export default function Inventary() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div>Why choose club suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Inventory Suite</div>
                     <div>
 
                         {whyToChooseUs.map((item) =>

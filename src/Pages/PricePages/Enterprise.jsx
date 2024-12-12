@@ -185,7 +185,7 @@ export default function Enterprise() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div>Why choose club suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Enterprise Suite</div>
                     <div>
 
                         {whyToChooseUs.map((item) =>

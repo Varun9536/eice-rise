@@ -22,7 +22,7 @@
 
 .section2 {
     margin-bottom: 3rem;
-    margin-top: 30px;
+    
 }
 
 
@@ -43,7 +43,7 @@
     /* justify-content: center; */
     column-gap: 16px;
 
-    padding: 40px 15px;
+    padding: 40px 75px;
     row-gap: 20px;
 
 
@@ -128,4 +128,12 @@
 
 .demoArrowButton {
     padding-top: 3.5px;
+}
+
+
+
+.chooseUsHeading
+{
+    font-size: 32px;
+    font-weight: 600;
 }

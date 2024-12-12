@@ -181,7 +181,7 @@ export default function Vanilla() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div>Why choose club suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Vaniila Suite</div>
                     <div>
 
                         {whyToChooseUs.map((item) =>

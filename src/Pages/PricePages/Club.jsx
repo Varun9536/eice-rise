@@ -188,7 +188,7 @@ export default function Club() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div>Why choose club suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Club Suite</div>
                     <div>
 
                         {whyToChooseUs.map((item) =>

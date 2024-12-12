@@ -53,14 +53,14 @@
     width: 24px;
     height: 7px;
     border-radius: 30%;
-    /* background-color: #ccc; */
+    
     cursor: pointer;
     transition: background-color 0.3s;
     border: 1px solid black;
 }
 
 .indicator.active {
-    /* background-color: #007bff; */
+    
     background-color: rgb(49, 49, 214);
 }
 

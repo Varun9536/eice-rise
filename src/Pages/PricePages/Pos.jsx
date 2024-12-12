@@ -182,7 +182,7 @@ export default function Pos() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div>Why choose club suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose POS Suite</div>
                     <div>
 
                         {whyToChooseUs.map((item) =>
