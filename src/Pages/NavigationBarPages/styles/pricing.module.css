@@ -1,0 +1,29 @@
+.animationSection {
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    /* position: relative; */
+
+
+}
+
+
+.animationImgSize {
+    width: 30%;
+}
+
+.sideImgCutLeft {
+
+    position:relative;
+    /* left: 0px; */
+}
+
+.sideImgCutRight {
+    position: relative;
+    /* right: 0px; */
+}
+
+.middleimage
+{
+    position: relative;
+}

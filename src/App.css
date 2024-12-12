@@ -27,7 +27,7 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 130px;
-    max-width: 1900px;
+    max-width: 1920px;
 
 }
 
@@ -35,7 +35,7 @@
     .insidePageUpperSection {
         width: 100%;
         margin: 0 auto;
-        padding-top: 140px;
+        padding-top: 130px;
         max-width: 1150px;
     }
 }

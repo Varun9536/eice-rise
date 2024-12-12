@@ -97,7 +97,7 @@ export default function Navbar() {
 
                             </Link>)}
 
-                            
+
 
                             {item.label === 'Products' && (
                                 <div style={{ paddingTop: "3px" }}>
@@ -125,7 +125,9 @@ export default function Navbar() {
 
 
 
-                    <div ><a className="linkClass" href="">Pricing</a></div>
+                    <div >
+                        <Link className="linkClass" to={"/pricing"}>Pricing</Link>
+                    </div>
                     <div><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/About">About Us</a></div>
                     <div ><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/Resources">Blogs</a></div>
                 </div>

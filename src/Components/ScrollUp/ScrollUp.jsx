@@ -10,7 +10,7 @@ const ScrollUp = () => {
 
     useEffect(() => {
         // Scroll the window to the top
-        console.log("Navigated to:", location.pathname);
+        // console.log("Navigated to:", location.pathname);
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
         // If your app has a scrollable container, scroll it instead
