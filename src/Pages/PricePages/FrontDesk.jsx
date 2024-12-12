@@ -123,7 +123,7 @@ export default function FrontDesk() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara} font1`}>
 
                     The Front Desk Suite is ideal for hospitality operations, ensuring smooth room management and accurate financial tracking. Designed for hotels and guest services, this suite is your go-to solution for handling bookings and payments effortlessly.
 

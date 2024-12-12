@@ -123,7 +123,7 @@ export default function Vanilla() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara} font1`}>
 
                     The Vanilla Suite is a versatile and comprehensive suite that empowers businesses with inventory control, financial management, procurement, and operational cost tracking. Ideal for diverse industries, it offers the perfect blend of essential modules for efficient operations.
 

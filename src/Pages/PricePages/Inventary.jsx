@@ -128,7 +128,7 @@ export default function Inventary() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara} font1`}>
                     The Inventory Suite is designed to streamline stock and supply chain management, ensuring businesses maintain optimal inventory levels while fostering strong vendor relationships. This suite is ideal for organizations looking to enhance operational efficiency and minimize waste through advanced tracking and management tools.
                     </div>
 

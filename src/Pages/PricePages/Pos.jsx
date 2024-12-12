@@ -124,7 +124,7 @@ export default function Pos() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara} font1`}>
 
                     The POS Suite is tailored for seamless point-of-sale operations and robust financial oversight. Perfect for businesses requiring streamlined billing and real-time transaction tracking, this suite ensures operational efficiency and accurate financial management.
 

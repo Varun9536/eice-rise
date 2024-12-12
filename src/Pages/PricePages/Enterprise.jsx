@@ -128,7 +128,7 @@ export default function Enterprise() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara} font1`}>
 
                     The Enterprise Suite is a comprehensive solution designed for large- scale operations and businesses aiming to achieve seamless integration across all departments. This suite combines advanced tools and modules to optimize resource management, improve operational efficiency, and enhance decision-making.
                     </div>

@@ -1,20 +1,21 @@
-.overviewSection
-{
+.overviewSection {
     background-color: #012060;
     display: flex;
     padding: 20px 0px;
     justify-content: space-between;
-   
+    align-items: center;
+
 }
 
 
-.overviewEyeImgSize{
+.overviewEyeImgSize {
     width: 31%;
 }
 
-.overviewPara
-{
+.overviewPara {
     width: 67%;
+    font-size: 28px;
+    padding-right: 140px;
 
 }
 
@@ -98,8 +99,7 @@
     font-weight: 600;
 }
 
-.whyChooseSection
-{
+.whyChooseSection {
     padding: 0px 80px;
 }
 

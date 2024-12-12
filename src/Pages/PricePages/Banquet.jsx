@@ -126,7 +126,7 @@ export default function Banquet() {
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
-                    <div>
+                    <div className={`${styles.overviewPara} font1`}>
 
                     The Banquet Suite is perfect for venues hosting events of all sizes. Manage event bookings, billing, and financial records seamlessly with this dedicated suite, ensuring client satisfaction every time.
 
