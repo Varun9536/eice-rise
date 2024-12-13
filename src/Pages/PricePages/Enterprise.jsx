@@ -27,21 +27,21 @@ export default function Enterprise() {
         {
             serviceName: "ROOM BOOKING",
             icon: room,
-            path: "room-booking",
+            path: "/room-booking",
             key: 1
         },
 
         {
             serviceName: "DINNING (POS)",
             icon: pos,
-            path: "pos-dining",
+            path: "/pos-dining",
             key: 2
         },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -49,49 +49,49 @@ export default function Enterprise() {
 
             serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
-            path: "member-suite",
+            path: "/member-suite",
             key: 4
         },
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
-            path: "account-finance",
+            path: "/account-finance",
             key: 5
         },
 
         {
             serviceName: "EMPLOYEE SUITE",
             icon: emp,
-            path: "employee-suite",
+            path: "/employee-suite",
             key: 6
         },
 
         {
             serviceName: "PAYROLL",
             icon: pay,
-            path: "payroll",
+            path: "/payroll",
             key: 7
         },
 
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "userstore-inventry",
+            path: "/userstore-inventry",
             key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "purchase-vendor",
+            path: "/purchase-vendor",
             key: 9
         },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "food-cost",
+            path: "/food-cost",
             key: 10
         }
     ]
@@ -121,8 +121,12 @@ export default function Enterprise() {
 
     return (
         <>
-            <section>
-                <div className={`${styles.overviewSection} globalBlueOverviewSection`}>
+
+
+
+            <section className={`${styles.overviewSection}`}>
+                <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
+
 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
@@ -130,43 +134,51 @@ export default function Enterprise() {
 
                     <div className={`${styles.overviewPara} font1`}>
 
-                    The Enterprise Suite is a comprehensive solution designed for large- scale operations and businesses aiming to achieve seamless integration across all departments. This suite combines advanced tools and modules to optimize resource management, improve operational efficiency, and enhance decision-making.
+                        The Enterprise Suite is a comprehensive solution <strong className="font2">designed for large- scale operations and businesses</strong>  aiming to achieve seamless integration across all departments. This suite combines <strong className="font2">advanced tools and modules</strong>  to optimize resource management, <strong className="font2">improve operational efficiency, and enhance decision-making</strong> .
                     </div>
 
                 </div>
             </section>
-
-
-
 
             <section className={`${styles.section2} `}>
 
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
-                        {services.map((item) =>
-                        (
-                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div className={`${styles.iconAndTextBox} `}>
 
-                                    <div className={styles.imgBox} >
-                                        <img src={item.icon} alt="" />
-                                    </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-                                </div>
+    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-                            </Link>
+    <div className={`${styles.servicesBox} `}>
 
-                        ))}
+
+        {services.map((item) =>
+        (
+            <Link className="linkClass" key={item.key} to={item.path}>
+
+                <div className={`${styles.iconAndTextBox} `}>
+
+                    <div className={styles.imgBox} >
+                        <img src={item.icon} alt="" />
+                    </div>
+                    <div>
+                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
                     </div>
 
                 </div>
 
+            </Link>
 
-            </section>
+        ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</section>
 
 
 
@@ -185,7 +197,7 @@ export default function Enterprise() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Enterprise Suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Enterprise Suite ?</div>
                     <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>

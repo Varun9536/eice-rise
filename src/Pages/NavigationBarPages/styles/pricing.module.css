@@ -2,7 +2,7 @@
     display: flex;
     overflow-x: hidden;
     justify-content: space-between;
-    /* position: relative; */
+    position: relative;
     margin-bottom: 5.5rem;
 
 
@@ -15,7 +15,7 @@
 
 .sideImgCutLeft {
 
-    position:relative;
+    position: relative;
     left: -38px;
 }
 
@@ -24,37 +24,41 @@
     right: -38px;
 }
 
-.middleimage
-{
+.middleimage {
     position: relative;
+
 }
 
-.moduleSuiteSection
-{
+.moduleSuiteSection {
     display: flex;
     flex-direction: column;
     padding: 0px 80px;
     row-gap: 20px;
 
     margin-bottom: 4rem;
-    
+
 
 }
 
-.SuiteSectionHeading
-{
+.SuiteSectionHeading {
     font-size: 34px;
     font-weight: 700;
 }
 
-.modulesTabHeadings
-{
+.modulesTabHeadings {
     display: flex;
     justify-content: space-between;
     background-color: rgb(245, 245, 245);
     padding: 16px 25px;
-    font-size: 18px;
-    /* color: rgb(156, 153, 153); */
-    
-    
+    font-size: 16px;
+}
+
+
+.pricing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
 }

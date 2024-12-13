@@ -77,14 +77,14 @@ export default function Inventary() {
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "userstore-inventry",
+            path: "/userstore-inventry",
             key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "purchase-vendor",
+            path: "/purchase-vendor",
             key: 9
         },
 
@@ -121,51 +121,66 @@ export default function Inventary() {
 
     return (
         <>
-            <section>
-                <div className={`${styles.overviewSection} globalBlueOverviewSection`}>
+
+
+            <section className={`${styles.overviewSection}`}>
+                <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
+
 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
                     <div className={`${styles.overviewPara} font1`}>
-                        The Inventory Suite is designed to streamline stock and supply chain management, ensuring businesses maintain optimal inventory levels while fostering strong vendor relationships. This suite is ideal for organizations looking to enhance operational efficiency and minimize waste through advanced tracking and management tools.
+
+                        The Inventory Suite is designed to <strong className="font2">streamline stock and supply chain management</strong> , ensuring businesses maintain optimal inventory levels while fostering strong vendor relationships. This suite is ideal for organizations looking to <strong className="font2">enhance operational efficiency and minimize waste</strong>  through advanced tracking and management tools.
+
                     </div>
 
                 </div>
             </section>
-
 
 
 
             <section className={`${styles.section2} `}>
 
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
-                        {services.map((item) =>
-                        (
-                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div className={`${styles.iconAndTextBox} `}>
 
-                                    <div className={styles.imgBox} >
-                                        <img src={item.icon} alt="" />
-                                    </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-                                </div>
+    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-                            </Link>
+    <div className={`${styles.servicesBox} `}>
 
-                        ))}
+
+        {services.map((item) =>
+        (
+            <Link className="linkClass" key={item.key} to={item.path}>
+
+                <div className={`${styles.iconAndTextBox} `}>
+
+                    <div className={styles.imgBox} >
+                        <img src={item.icon} alt="" />
+                    </div>
+                    <div>
+                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
                     </div>
 
                 </div>
 
+            </Link>
 
-            </section>
+        ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</section>
 
 
 
@@ -184,7 +199,7 @@ export default function Inventary() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Inventory Suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Inventory Suite ?</div>
                     <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>

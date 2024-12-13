@@ -39,7 +39,7 @@ export default function Banquet() {
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -54,7 +54,7 @@ export default function Banquet() {
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
-            path: "account-finance",
+            path: "/account-finance",
             key: 5
         },
 
@@ -119,8 +119,9 @@ export default function Banquet() {
 
     return (
         <>
-            <section>
-                <div className={`${styles.overviewSection} globalBlueOverviewSection`}>
+            <section className={`${styles.overviewSection}`}>
+                <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
+
 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
@@ -128,7 +129,7 @@ export default function Banquet() {
 
                     <div className={`${styles.overviewPara} font1`}>
 
-                        The Banquet Suite is perfect for venues hosting events of all sizes. Manage event bookings, billing, and financial records seamlessly with this dedicated suite, ensuring client satisfaction every time.
+                        The <strong className="font2">Banquet Suite is perfect for venues hosting events of all sizes</strong> . Manage event <strong className="font2">bookings, billing, and financial records</strong>  seamlessly with this dedicated suite, ensuring client satisfaction every time.
 
                     </div>
 
@@ -140,8 +141,15 @@ export default function Banquet() {
 
             <section className={`${styles.section2} `}>
 
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
+
+
+                <div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
+
+                    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
+
+                    <div className={`${styles.servicesBox} `}>
+
+
                         {services.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
@@ -165,6 +173,10 @@ export default function Banquet() {
                 </div>
 
 
+
+
+
+
             </section>
 
 
@@ -184,7 +196,7 @@ export default function Banquet() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Banquet Suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Banquet Suite ?</div>
 
 
                     <div className={`${styles.titleAndDescBox}`}>

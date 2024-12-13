@@ -34,7 +34,7 @@ export default function Pos() {
         {
             serviceName: "DINNING (POS)",
             icon: pos,
-            path: "pos-dining",
+            path: "/pos-dining",
             key: 2
         },
 
@@ -57,7 +57,7 @@ export default function Pos() {
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
-            path: "account-finance",
+            path: "/account-finance",
             key: 5
         },
 
@@ -117,8 +117,11 @@ export default function Pos() {
 
     return (
         <>
-            <section>
-                <div className={`${styles.overviewSection} globalBlueOverviewSection`}>
+
+
+            <section className={`${styles.overviewSection}`}>
+                <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
+
 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
@@ -126,44 +129,54 @@ export default function Pos() {
 
                     <div className={`${styles.overviewPara} font1`}>
 
-                        The POS Suite is tailored for seamless point-of-sale operations and robust financial oversight. Perfect for businesses requiring streamlined billing and real-time transaction tracking, this suite ensures operational efficiency and accurate financial management.
+                        The POS Suite is tailored for <strong className="font2">seamless point-of-sale operations and robust financial oversight</strong> . Perfect for businesses requiring streamlined billing and real-time transaction tracking, this suite ensures  <strong className="font2">operational efficiency and accurate financial management</strong> .
+
 
                     </div>
 
                 </div>
             </section>
-
-
 
 
             <section className={`${styles.section2} `}>
 
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
-                        {services.map((item) =>
-                        (
-                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div className={`${styles.iconAndTextBox} `}>
 
-                                    <div className={styles.imgBox} >
-                                        <img src={item.icon} alt="" />
-                                    </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-                                </div>
+    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-                            </Link>
+    <div className={`${styles.servicesBox} `}>
 
-                        ))}
+
+        {services.map((item) =>
+        (
+            <Link className="linkClass" key={item.key} to={item.path}>
+
+                <div className={`${styles.iconAndTextBox} `}>
+
+                    <div className={styles.imgBox} >
+                        <img src={item.icon} alt="" />
+                    </div>
+                    <div>
+                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
                     </div>
 
                 </div>
 
+            </Link>
 
-            </section>
+        ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</section>
 
 
 
@@ -182,7 +195,7 @@ export default function Pos() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose POS Suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose POS Suite ?</div>
                     <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>

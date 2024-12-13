@@ -34,14 +34,14 @@ export default function Vanilla() {
         {
             serviceName: "DINNING (POS)",
             icon: pos,
-            path: "pos-dining",
+            path: "/pos-dining",
             key: 2
         },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -77,7 +77,7 @@ export default function Vanilla() {
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "userstore-inventry",
+            path: "/userstore-inventry",
             key: 8
         },
 
@@ -91,7 +91,7 @@ export default function Vanilla() {
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "food-cost",
+            path: "/food-cost",
             key: 10
         }
     ]
@@ -116,53 +116,65 @@ export default function Vanilla() {
 
     return (
         <>
-            <section>
-                <div className={`${styles.overviewSection} globalBlueOverviewSection`}>
+            
+
+            <section className={`${styles.overviewSection}`}>
+                <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
+
 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div>
 
                     <div className={`${styles.overviewPara} font1`}>
-
-                    The Vanilla Suite is a versatile and comprehensive suite that empowers businesses with inventory control, financial management, procurement, and operational cost tracking. Ideal for diverse industries, it offers the perfect blend of essential modules for efficient operations.
+                    The Vanilla Suite is a <strong className="font2">versatile and comprehensive suite</strong>  that  <strong className="font2"> empowers businesses with inventory control, financial management</strong>, procurement, and operational cost tracking. <strong className="font2">Ideal for diverse industries</strong> , it offers the perfect blend of essential modules for efficient operations.
 
                     </div>
 
                 </div>
             </section>
-
 
 
 
             <section className={`${styles.section2} `}>
 
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
-                        {services.map((item) =>
-                        (
-                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div className={`${styles.iconAndTextBox} `}>
 
-                                    <div className={styles.imgBox} >
-                                        <img src={item.icon} alt="" />
-                                    </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-                                </div>
+    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-                            </Link>
+    <div className={`${styles.servicesBox} `}>
 
-                        ))}
+
+        {services.map((item) =>
+        (
+            <Link className="linkClass" key={item.key} to={item.path}>
+
+                <div className={`${styles.iconAndTextBox} `}>
+
+                    <div className={styles.imgBox} >
+                        <img src={item.icon} alt="" />
+                    </div>
+                    <div>
+                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
                     </div>
 
                 </div>
 
+            </Link>
 
-            </section>
+        ))}
+    </div>
+
+</div>
+
+
+
+
+
+
+</section>
 
 
 
@@ -179,26 +191,26 @@ export default function Vanilla() {
             </section>
 
 
-            <section  className={`${styles.whyChooseSection} globalSectionSize`}>
-                
-                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Vanilla Suite</div>
+            <section className={`${styles.whyChooseSection} globalSectionSize`}>
 
-                    <div className={`${styles.titleAndDescBox}`} >
+                <div className={`${styles.chooseUsHeading} font3`}>Why Choose Vanilla Suite ?</div>
 
-                        {whyToChooseUs.map((item) =>
+                <div className={`${styles.titleAndDescBox}`} >
 
-                            <div className="font4" key={item.key} >
+                    {whyToChooseUs.map((item) =>
 
-                                <span className={`${styles.titleHeading}`}>{item.title} : </span>
-                                <span className={`${styles.titleDesc}`}>{item.description}</span>
+                        <div className="font4" key={item.key} >
 
-
-                            </div>
-                        )}
+                            <span className={`${styles.titleHeading}`}>{item.title} : </span>
+                            <span className={`${styles.titleDesc}`}>{item.description}</span>
 
 
-                    </div>
-            
+                        </div>
+                    )}
+
+
+                </div>
+
             </section>
 
         </>

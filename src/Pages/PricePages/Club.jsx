@@ -28,21 +28,21 @@ export default function Club() {
         {
             serviceName: "ROOM BOOKING",
             icon: room,
-            path: "room-booking",
+            path: "/room-booking",
             key: 1
         },
 
         {
             serviceName: "DINNING (POS)",
             icon: pos,
-            path: "pos-dining",
+            path: "/pos-dining",
             key: 2
         },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -50,14 +50,14 @@ export default function Club() {
 
             serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
-            path: "member-suite",
+            path: "/member-suite",
             key: 4
         },
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
-            path: "account-finance",
+            path: "/account-finance",
             key: 5
         },
 
@@ -123,8 +123,10 @@ export default function Club() {
 
     return (
         <>
-            <section>
-                <div className={`${styles.overviewSection} globalBlueOverviewSection`}>
+
+            <section className={`${styles.overviewSection}`}>
+                <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
+
 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
@@ -141,36 +143,45 @@ export default function Club() {
 
 
 
-
             <section className={`${styles.section2} `}>
 
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
-                        {services.map((item) =>
-                        (
-                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div className={`${styles.iconAndTextBox} `}>
 
-                                    <div className={styles.imgBox} >
-                                        <img src={item.icon} alt="" />
-                                    </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-                                </div>
+    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-                            </Link>
+    <div className={`${styles.servicesBox} `}>
 
-                        ))}
+
+        {services.map((item) =>
+        (
+            <Link className="linkClass" key={item.key} to={item.path}>
+
+                <div className={`${styles.iconAndTextBox} `}>
+
+                    <div className={styles.imgBox} >
+                        <img src={item.icon} alt="" />
+                    </div>
+                    <div>
+                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
                     </div>
 
                 </div>
 
+            </Link>
 
-            </section>
+        ))}
+    </div>
 
+</div>
+
+
+
+
+
+
+</section>
 
 
             <section className={`${styles.requestDemoBtn}`}>
@@ -188,7 +199,7 @@ export default function Club() {
 
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
-                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Club Suite</div>
+                    <div className={`${styles.chooseUsHeading} font3`}>Why Choose Club Suite ?</div>
                     <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>
