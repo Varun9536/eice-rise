@@ -341,6 +341,7 @@
     .pageHeadingBox {
         width: 80%;
         margin: 0px auto;
+        padding-right: unset;
 
     }
 

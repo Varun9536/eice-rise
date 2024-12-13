@@ -68,9 +68,9 @@
 
     .section1ImgBox {
 
-       
+
         left: 135px;
-    
+
     }
 
 }
@@ -84,9 +84,9 @@
 
     .section1ImgBox {
 
-      
+
         left: 150px;
-    
+
     }
 
 }
@@ -351,6 +351,7 @@
     .pageHeadingBox {
         width: 90%;
         margin: 0px auto;
+        padding-right: unset;
 
     }
 
