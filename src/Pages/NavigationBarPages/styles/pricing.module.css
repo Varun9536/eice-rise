@@ -10,8 +10,9 @@
 
 
 .animationImgSize {
-    width: 32%;
+    width: 31%;
 }
+
 
 .sideImgCutLeft {
 
@@ -22,6 +23,19 @@
 .sideImgCutRight {
     position: relative;
     right: -38px;
+}
+
+@media (min-width : 2000px) {
+    .sideImgCutLeft {
+
+
+        left: unset;
+    }
+
+    .sideImgCutRight {
+
+        right: unset;
+    }
 }
 
 .middleimage {
@@ -41,7 +55,7 @@
 }
 
 .SuiteSectionHeading {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -56,9 +70,9 @@
 
 .pricing {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 3em;
     color: white;
 }

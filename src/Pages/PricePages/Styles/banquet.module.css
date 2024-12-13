@@ -7,9 +7,8 @@
 
     display: flex;
     padding: 20px 0px;
-   
     align-items: center;
-    /* column-gap: 3rem; */
+   
 
 
 }
@@ -22,8 +21,8 @@
 
 
 .overviewPara {
-    width: 47%;
-    font-size: 28px;
+    width: 52%;
+    font-size: 26px;
     padding-left: 3rem;
 }
 
@@ -31,7 +30,7 @@
 {
     .overviewPara {
         width: 67%;
-        font-size: 28px;
+      
     }
 }
 
@@ -55,7 +54,7 @@
 }
 
 .moduleIncludedHeading {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 30px;
 
@@ -162,18 +161,18 @@
 }
 
 .chooseUsHeading {
-    font-size: 32px;
+    font-size: 28px;
 
 }
 
 .titleHeading {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
 
 }
 
 
 .titleDesc {
-    font-size: 24px;
+    font-size: 20px;
 
 }
