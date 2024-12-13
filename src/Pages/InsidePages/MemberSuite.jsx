@@ -203,8 +203,8 @@ export default function MemberSuite() {
 
 
      
-<section>
-        <div className={`${style.section1} insidePageUpperSection`}>
+<section className={`${style.section1} insidePageUpperSection`}>
+       
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
               <div style={{ color: "#012060" }}>MEMBER </div>
@@ -215,7 +215,7 @@ export default function MemberSuite() {
           <div className={style.section1ImgBox}>
             <img style={{ width: "100%" }} src={main} alt="" />
           </div>
-        </div>
+     
 
       </section>
 

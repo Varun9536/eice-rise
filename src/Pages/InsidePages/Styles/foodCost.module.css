@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 80px;
+    margin-bottom: 4rem;
 
 }
 
@@ -11,7 +11,7 @@
 
 .section1ImgBox {
 
-    width: 60%;
+    width: 53%;
     position: relative;
     left: 96px;
 
@@ -21,7 +21,7 @@
 
     .section1ImgBox {
 
-        width: 60%;
+        width: 53%;
         position: relative;
         left: unset;
 
@@ -45,7 +45,7 @@
     .section1ImgBox {
 
 
-        left: 78px;
+        left: 10.8rem;
 
     }
 }

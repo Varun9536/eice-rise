@@ -178,10 +178,10 @@ export default function BanquetAnsBilling() {
 
   const footerUpperText = {
 
-    text1 : "Manage events" ,
-    text2 : "" ,
-    text3 : "and simplify billing with our Banquet solution" ,
-    img : footer
+    text1: "Manage events",
+    text2: "",
+    text3: "and simplify billing with our Banquet solution",
+    img: footer
   }
 
 
@@ -192,8 +192,8 @@ export default function BanquetAnsBilling() {
     <>
 
 
-<section>
-        <div className={`${style.section1} insidePageUpperSection`}>
+      <section className={`${style.section1} insidePageUpperSection`}>
+        
           <div className={`${style.pageHeadingBox}`}>
             <div className={`${style.section1Heading} font4`}>
               <div style={{ color: "#012060" }}>BANQUET </div>
@@ -202,9 +202,9 @@ export default function BanquetAnsBilling() {
           </div>
 
           <div className={style.section1ImgBox}>
-            <img style={{width : "100%"}} src={main} alt="" />
+            <img style={{ width: "100%" }} src={main} alt="" />
           </div>
-        </div>
+      
 
       </section>
 
@@ -290,7 +290,7 @@ export default function BanquetAnsBilling() {
               <div className={`${style.paragraph}`}>
 
                 EICE Rise ERP’s Banquet & Billing module is designed to <strong className="font2">simplify the management of Events, Weddings, Corporate Gatherings, and Private Parties</strong> . The module offers comprehensive tools for
-                <strong className="font2">Booking, Scheduling, and Billing</strong> , enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures <strong className="font2">accurate resource allocation, efficient billing, and enhanced customer satisfaction.</strong> 
+                <strong className="font2">Booking, Scheduling, and Billing</strong> , enabling hospitality businesses to deliver seamless event experiences. By integrating with other operational functions, it ensures <strong className="font2">accurate resource allocation, efficient billing, and enhanced customer satisfaction.</strong>
 
               </div>
 
@@ -410,47 +410,47 @@ export default function BanquetAnsBilling() {
         </div>
       </section> */}
 
-<section style={{ background: "#f5f5f5" }} >
-                <div className={`${style.section5} font4 globalSectionSize`}>
+      <section style={{ background: "#f5f5f5" }} >
+        <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-                    <div className={`${style.section5heading} font4`}>Benefits</div>
-                    {benefits.map((item, index) =>
-                    (
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
 
-                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-                            <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className='GlobalBenefitTextBox' >
-                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-                            </div>
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-                        </div>) : (<div className='GlobalBenefitBox2'>
+              <div className="GlobalBenefitImgBox" >
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
 
-                            <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className='GlobalBenefitTextBox' >
-                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-                            </div>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
 
-                        </div>)
+              <div className="GlobalBenefitImgBox">
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
 
-                    ))}
+            </div>)
 
-                </div>
-            </section>
+
+          ))}
+
+        </div>
+      </section>
 
 
 

@@ -160,7 +160,7 @@ export default function AccountAndFinance() {
 
     },
 
-    
+
     // {
     //   key: 6,
     //   heading: "Enhanced Decision Making",
@@ -234,20 +234,20 @@ export default function AccountAndFinance() {
 
 
 
-     
-<section>
-        <div className={`${style.section1} insidePageUpperSection`}>
-          <div className={`${style.pageHeadingBox}`}>
-            <div className={`${style.section1Heading} font4`}>
-              <div style={{ color: "#012060" }}>ACCOUNTS </div>
-              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass">& FINANCE</div>
-            </div>
-          </div>
 
-          <div className={style.section1ImgBox}>
-            <img style={{ width: "100%" }} src={main} alt="" />
+      <section className={`${style.section1} insidePageUpperSection`}>
+
+        <div className={`${style.pageHeadingBox}`}>
+          <div className={`${style.section1Heading} font4`}>
+            <div style={{ color: "#012060" }}>ACCOUNTS </div>
+            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass">& FINANCE</div>
           </div>
         </div>
+
+        <div className={style.section1ImgBox}>
+          <img style={{ width: "100%" }} src={main} alt="" />
+        </div>
+
 
       </section>
 
