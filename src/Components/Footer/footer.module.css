@@ -221,8 +221,8 @@
 
     .footerLaptopImg {
 
-        width: 400px;
-        left: 30px;
+        width: 340px;
+        /* left: 30px; */
         position: relative;
         margin: 0px auto;
         margin-top: 30px;
