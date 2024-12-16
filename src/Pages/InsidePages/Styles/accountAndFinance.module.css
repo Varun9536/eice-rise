@@ -54,9 +54,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: left;
-    padding-left: 180px;
+    /* padding-left: 180px; */
+    padding-left: 36%;
 
 }
+
+
 
 
 @media (min-width : 1630px) and (max-width : 1750px) {
@@ -447,11 +450,14 @@
 
 }
 
-@media (min-width : 800px) and (max-width : 1300px)
+@media (min-width : 800px) and (max-width : 1400px)
 {
+   
+
     .section1Heading {
-        font-size: 30px;
         
+        padding-left: 26%;
+        font-size: 30px;
     
     }
 }

@@ -40,6 +40,17 @@
     }
 }
 
+@media (max-width : 800px) {
+    .insidePageUpperSection {
+        /* width: 100%;
+        margin: 0 auto; */
+        padding-top: 90px;
+        /* max-width: 1150px; */
+    }
+}
+
+
+
 
 
 .indicators {

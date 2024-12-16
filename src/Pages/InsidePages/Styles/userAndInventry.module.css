@@ -450,11 +450,14 @@
 
 }
 
-@media (min-width : 800px) and (max-width : 1300px)
+@media (min-width : 800px) and (max-width : 1400px)
 {
+   
+
     .section1Heading {
-        font-size: 30px;
         
+        padding-left: 26%;
+        font-size: 30px;
     
     }
 }

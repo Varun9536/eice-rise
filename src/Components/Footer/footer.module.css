@@ -208,7 +208,7 @@
     .footerMainBoxUpper2 {
         flex-direction: column;
         padding-left: unset;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         align-items: unset;
         justify-content: unset;
 
@@ -358,7 +358,7 @@
     {
         padding-left: 5vw;
     }
-    
+
 
     .footerUpperPartHeading {
         font-size: 30px;
