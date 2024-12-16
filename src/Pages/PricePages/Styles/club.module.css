@@ -278,3 +278,11 @@
 
 
 }
+
+@media (max-width : 340px)
+{
+    .overviewEyeImgSize {
+        width: 90vw;
+
+    }
+}
