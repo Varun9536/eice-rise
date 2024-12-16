@@ -334,6 +334,7 @@
 @media (max-width : 800px) {
     .section1 {
         flex-direction: column-reverse;
+        margin-bottom: unset;
 
 
     }

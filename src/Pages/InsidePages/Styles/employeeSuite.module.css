@@ -26,6 +26,7 @@
         width: 60%;
         position: relative;
         left: unset;
+        margin-bottom: unset;
 
     }
 }
@@ -340,6 +341,7 @@
 @media (max-width : 800px) {
     .section1 {
         flex-direction: column-reverse;
+        margin-bottom: unset;
 
 
     }

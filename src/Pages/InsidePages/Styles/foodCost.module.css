@@ -331,6 +331,7 @@
     .section1 {
         flex-direction: column-reverse;
         margin-top: unset;
+        margin-bottom: unset;
 
 
     }
