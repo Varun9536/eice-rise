@@ -449,3 +449,12 @@
 
 
 }
+
+@media (min-width : 800px) and (max-width : 1300px)
+{
+    .section1Heading {
+        font-size: 30px;
+        
+    
+    }
+}

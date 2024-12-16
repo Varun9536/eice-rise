@@ -325,9 +325,7 @@
     }
 
 
-    .footerUpperPartHeading {
-        font-size: 30px;
-    }
+   
 
 }
 
@@ -353,3 +351,17 @@
     }
 
 }
+
+@media (max-width : 1400px) and (min-width : 800px)
+{
+    .footerHeadAndIconBox
+    {
+        padding-left: 5vw;
+    }
+    
+
+    .footerUpperPartHeading {
+        font-size: 30px;
+    }
+}
+
