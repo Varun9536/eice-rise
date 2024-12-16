@@ -8,7 +8,6 @@
     display: flex;
     padding: 20px 0px;
     align-items: center;
-   
 
 
 }
@@ -26,18 +25,17 @@
     padding-left: 3rem;
 }
 
-@media (min-width : 2000px)
-{
+@media (min-width : 2000px) {
     .overviewPara {
         width: 67%;
-      
+
     }
 }
 
 .section2 {
     margin-bottom: 2rem;
     background-color: #F0FBFF;
-    padding-top: 2rem ;
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
 
 
@@ -174,5 +172,108 @@
 
 .titleDesc {
     font-size: 20px;
+
+}
+
+
+@media (max-width : 800px) {
+    .overviewBox {
+        flex-direction: column;
+        align-items: unset;
+        padding-left: 10px;
+
+    }
+
+    .overviewEyeImgSize {
+        /* width: 31%; */
+        width: 300px;
+
+    }
+
+    .overviewPara {
+        width: 92%;
+        padding-left: unset;
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+    .moduleboxAndHeading {
+        padding: 0px 0px;
+
+    }
+
+    .moduleIncludedHeading {
+        text-align: center;
+
+    }
+
+    .servicesBox {
+        justify-content: center;
+    }
+
+    .iconAndTextBox {
+        width: 130px;
+        height: 145px;
+
+
+    }
+
+
+    .serviceName {
+        padding: unset;
+        margin-top: 5px;
+        font-size: 12px;
+
+    }
+
+    .serviceName2 {
+        padding: unset;
+        margin-top: 5px;
+        font-size: 12px;
+
+    }
+
+    .demoButton {
+
+
+
+        width: 12rem;
+        font-size: 16px;
+        padding: 12px 12px;
+        margin-bottom: 4rem;
+
+    }
+
+    .whyChooseSection {
+        padding: 0px 10px;
+        margin-bottom: 2rem;
+    }
+
+    .chooseUsHeading {
+        font-size: 22px;
+
+    }
+
+    .titleAndDescBox {
+
+        row-gap: 2rem;
+        margin-top: 1.5rem;
+
+
+    }
+
+    .titleHeading {
+        font-size: 18px;
+
+
+    }
+
+
+    .titleDesc {
+        font-size: 18px;
+
+    }
+
 
 }

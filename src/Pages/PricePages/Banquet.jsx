@@ -3,6 +3,7 @@ import eyeImg from "../../assets/pricing/eye/eye.webp"
 import { Link } from "react-router-dom"
 
 
+
 import account from "../../assets/Hospitality/allPageIcon/Account.png"
 import pos from "../../assets/Hospitality/allPageIcon/POS.png"
 import banquet from "../../assets/Hospitality/allPageIcon/Banquet.png"
@@ -16,6 +17,7 @@ import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
+
 
 
 export default function Banquet() {
@@ -117,6 +119,7 @@ export default function Banquet() {
         }
     ];
 
+   
     return (
         <>
             <section className={`${styles.overviewSection}`}>
@@ -154,7 +157,7 @@ export default function Banquet() {
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div className={`${styles.iconAndTextBox} `}>
+                                <div  className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />

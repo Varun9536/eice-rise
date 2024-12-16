@@ -4,8 +4,6 @@
     justify-content: space-between;
     position: relative;
     margin-bottom: 5.5rem;
-
-
 }
 
 
@@ -77,10 +75,13 @@
 
 .modulesTabHeadings {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(245, 245, 245);
     padding: 16px 25px;
     font-size: 16px;
+    row-gap: 20px;
+    
 }
 
 
@@ -95,8 +96,74 @@
     font-weight: 700;
 }
 
+@media (max-width :1130px) {
+    .pricing {
+
+        font-size: 2em;
+
+    }
+}
+
+@media (min-width : 800px) {
+    .phoneAnimationSection {
+        display: none;
+    }
+}
 
 
 
 
+@media (max-width : 800px) {
+    .animationSection {
+        display: none;
+    }
 
+    .phoneAnimationSection {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .moduleSuiteSection {
+        
+        padding: 0px 8px;
+        
+    
+    
+    }
+    .modulesTabHeadings
+    {
+        /* row-gap: 50px; */
+        flex-direction: column;
+
+    }
+
+
+    
+
+
+}
+
+
+
+.container {
+    width: 95%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    margin: 0px auto;
+
+}
+
+
+.text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}

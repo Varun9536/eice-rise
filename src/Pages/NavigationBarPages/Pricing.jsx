@@ -1,5 +1,7 @@
 import styles from "./styles/pricing.module.css"
 
+import { useEffect } from "react"
+
 import img1 from "../../assets/pricing/upperPart/1.webp"
 import img2 from "../../assets/pricing/upperPart/2.webp"
 import img3 from "../../assets/pricing/upperPart/3.webp"
@@ -12,6 +14,8 @@ import Banquet from "../PricePages/Banquet"
 import Vanilla from "../PricePages/Vanilla"
 import { useState } from "react"
 import FooterLower from "../../Components/Footer/FooterLower"
+
+import { useRef } from "react"
 
 
 
@@ -100,14 +104,36 @@ export default function Pricing() {
 
   const [showSuitPage, setShowSuitPage] = useState(0)
 
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [
+    img1, img2, img3
+
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage(prev => (prev + 1) % images.length); // Cycle through images
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(interval); // Clean up the interval on unmount
+  }, []);
+
   const handleSuitPage = (e, key) => {
 
     setShowSuitPage(key)
 
   }
 
+  const targetDivRef = useRef(null);
+
+  const handleScroll = () => {
+    if (targetDivRef.current) {
+      targetDivRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
 
+  
 
   return (
     <>
@@ -131,6 +157,13 @@ export default function Pricing() {
 
       </section>
 
+      <section className={`${styles.phoneAnimationSection} `}>
+
+        <div className={styles.container} style={{ backgroundImage: `url(${images[currentImage]})` }}>
+          <div className={styles.text}>$$ PRICING $$</div>
+        </div>
+      </section>
+
 
       <section className={`${styles.moduleSuiteSection} globalSectionSize`}  >
 
@@ -143,14 +176,14 @@ export default function Pricing() {
         <div className={`${styles.modulesTabHeadings} font3`}>
           {suites.map((item) =>
           (
-            <div style={{ padding: "7px 5px"  , cursor : "pointer" ,  color : item.key === showSuitPage ? '#01B0F1' : 'rgb(156, 153, 153)', borderBottom : item.key === showSuitPage ? ' 2px solid #01B0F1' : ''}}  onClick={(e) => { handleSuitPage(e, item.key) }} key={item.key}>{item.suiteName}</div>
+            <div  style={{   padding: "7px 5px", cursor: "pointer", color: item.key === showSuitPage ? '#01B0F1' : 'rgb(156, 153, 153)', borderBottom: item.key === showSuitPage ? ' 2px solid #01B0F1' : '' }} onClick={(e) => { handleSuitPage(e, item.key) , handleScroll() }} key={item.key}>{item.suiteName}</div>
           ))}
         </div>
 
       </section>
 
 
-      <section>
+      <section  ref={targetDivRef}>
         {suitPage[showSuitPage].page}
 
       </section>
