@@ -37,7 +37,8 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 import main from "../../assets/insidePages/inventry/inventryHero.webp"
 
-import footer from "../../assets/footer/foot.webp"
+// import footer from "../../assets/footer/foot.webp"
+import footer from "../../assets/footerLaptop/inventary.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 

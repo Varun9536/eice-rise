@@ -34,17 +34,19 @@ export default function PhoneNavigationbar() {
             ]
         },
 
+        {
+            key: 4,
+            navName: "Pricing", path: "/pricing"
+        },
+
 
         {
             key: 3,
             navName: "About Us", path: "https://www.eicetechnology.com/About",
-            
+
 
         },
-        {
-            key: 4,
-            navName: "Pricing", path: ""
-        },
+
         {
             key: 5,
             navName: "Blogs", path: "https://www.eicetechnology.com/Resources"
@@ -142,9 +144,9 @@ export default function PhoneNavigationbar() {
                                         </div>
                                     ))}
 
-                                    
 
-                                   
+
+
                                 </div>
 
 

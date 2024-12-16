@@ -40,7 +40,8 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-import footer from "../../assets/footer/foot.webp"
+// import footer from "../../assets/footer/foot.webp"
+import footer from "../../assets/footerLaptop/banquetL.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 

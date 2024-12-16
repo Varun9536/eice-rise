@@ -24,7 +24,7 @@ export default function Layout() {
 
     return (
         <>
-        <ScrollUp/>
+        {/* <ScrollUp/> */}
             {
 
                 isPhone ? (<div className={styles.phoneNavBar}>

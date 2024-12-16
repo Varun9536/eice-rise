@@ -1,21 +1,69 @@
-.footerMainBoxUpper {
+.footerMainBoxUpper1 {
     display: flex;
+    justify-content: flex-end;
+
+}
+
+.footerMainBoxUpper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1530px;
+
+}
+
+
+@media (max-width : 1540px) {
+    .footerMainBoxUpper2 {
+
+        width: 1340px;
+
+    }
+}
+
+@media (min-width : 1700px) and (max-width : 1750px)
+{
+    .footerMainBoxUpper2 {
+
+        width: 1415px;
+
+    }
+}
+
+@media (min-width : 2000px) {
+    .footerMainBoxUpper2 {
+
+        width: 1150px;
+        margin: 0px auto;
+
+    }
+
+    .footerHeadAndIconBox {
+        width: 60%;
+    }
+}
+
+
+
+
+.footerMainBoxUpper {
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-left: 180px;
-    /* padding-left: 12rem; */
-    max-width: 1600px;
+    padding-left: 12rem;
+    max-width: 2000px;
     margin: 0px auto;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 
 
 
 }
 
 .footerLaptopImg {
-    width: 39%;
+    width: 40%;
 
 }
 
@@ -46,7 +94,7 @@
 }
 
 .footerHeadAndIconBox {
-    width: 50%;
+    width: 52%;
 }
 
 .demoButton:hover {
@@ -132,32 +180,32 @@
 
 
 
-@media (min-width : 1601px) {
-    .footerMainBoxUpper {
+@media (max-width : 2000px) {
+    /* .footerMainBoxUpper {
         max-width: 1150px;
         padding-left: unset;
 
-    }
+    } */
 
-    .footerLaptopImg {
+    /* .footerLaptopImg {
         width: 36%;
 
-    }
+    } */
 }
 
 @media (max-width : 1490px) {
-    .footerMainBoxUpper {
+    /* .footerMainBoxUpper {
         max-width: 1100px;
         width: 100%;
         padding-left: unset;
-    }
+    } */
 }
 
 
 
 @media (max-width : 800px) {
 
-    .footerMainBoxUpper {
+    .footerMainBoxUpper2 {
         flex-direction: column;
         padding-left: unset;
         margin-top: 30px;
@@ -184,10 +232,10 @@
     }
 
     .footerHeadAndIconBox {
-        
+
         width: 100vw;
         padding: 0px 20px;
-        
+
 
     }
 
@@ -205,7 +253,7 @@
 
         height: unset;
         padding: 25px 0px;
-       
+
 
 
     }
@@ -240,7 +288,7 @@
 
 
 
-    
+
 
     .demoButton {
         padding: 10px 5px;
@@ -271,21 +319,19 @@
 
 
 
-@media  (min-width : 800px) and (max-width : 1120px)
-{
+@media (min-width : 800px) and (max-width : 1120px) {
     .footerHeadAndIconBox {
         padding: 0px 40px;
     }
 
-    
+
     .footerUpperPartHeading {
         font-size: 30px;
     }
 
 }
 
-@media  (max-width : 350px) 
-{
+@media (max-width : 350px) {
     .footerHeadAndIconBox {
         padding: 0px 10px;
     }

@@ -5,10 +5,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function FooterUpperPart({ text1, text2, text3, img }) {
     return (
-        <div>
-           
+        <div className={`${styles.footerMainBoxUpper1} `}>
 
-            <div className={`${styles.footerMainBoxUpper} `}>
+
+            <div className={`${styles.footerMainBoxUpper2} `}>
 
                 <div className={`${styles.footerHeadAndIconBox}`}>
 

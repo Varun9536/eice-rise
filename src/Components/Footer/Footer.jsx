@@ -13,39 +13,42 @@ export default function Footer() {
 
 
 
-   
+
     return (
         <>
+            <div className={`${styles.footerMainBoxUpper1} `}>
+                <div className={`${styles.footerMainBoxUpper2} `}>
 
-            <div className={`${styles.footerMainBoxUpper} `}>
+                    <div className={`${styles.footerHeadAndIconBox}`}>
 
-                <div className={`${styles.footerHeadAndIconBox}`}>
+                        <div  >
+                            <span className={`${styles.footerUpperPartHeading} font2 blueTextGlobalClass`}  > Flexible, Modular Solutions <span className="font1" style={{ color: "black", fontWeight: "600" }}> tailored to your business needs</span> </span>
+                        </div>
 
-                    <div  >
-                        <span className = {`${styles.footerUpperPartHeading} font2 blueTextGlobalClass`}  > Flexible, Modular Solutions <span className="font1" style={{ color: "black"  , fontWeight : "600"}}> tailored to your business needs</span> </span>
+
+
+                        <div className={`${styles.demoButton} font1`}>
+                            <div > Request a Demo </div>
+                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+
                     </div>
 
-
-
-                    <div className={`${styles.demoButton} font1`}>
-                        <div > Request a Demo </div>
-                        <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                    <div className={`${styles.footerLaptopImg}`} >
+                        <img style={{ width: "100%" }} src={footer} alt="" />
                     </div>
 
-                </div>
-
-                <div className={`${styles.footerLaptopImg}`} >
-                    <img style={{ width: "100%" }} src={footer} alt="" />
                 </div>
 
             </div>
+
 
 
             <div className={`${styles.footerNavigationBox}`}>
 
                 <div className={`${styles.footerInnerBox} globalSectionSize`}>
 
-                    <div  className = {`${styles.eiceLogoAndSocialMediaBox} font1 `}>
+                    <div className={`${styles.eiceLogoAndSocialMediaBox} font1 `}>
 
                         <div>
                             <img className={styles.logoWhite} src={logo} alt="" />
@@ -121,7 +124,7 @@ export default function Footer() {
 
 
 
-            <div  className={`${styles.copyRightSectionBox} font4  `}  >
+            <div className={`${styles.copyRightSectionBox} font4  `}  >
                 <div className={`${styles.copyRightSectionInnerBox} globalSectionSize `}>
                     <div >
                         ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
