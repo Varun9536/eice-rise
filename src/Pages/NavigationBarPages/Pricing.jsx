@@ -107,7 +107,7 @@ export default function Pricing() {
 
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    img1, img2, img3
+    img3, img2, img1
 
   ];
 
