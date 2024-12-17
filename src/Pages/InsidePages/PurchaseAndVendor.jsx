@@ -198,7 +198,7 @@ export default function PurchaseAndVendor() {
 
         text1: "Collaborate seamlessly",
         text2: "",
-        text3: "with vendors using our comprehensive portall",
+        text3: "with vendors using our comprehensive portal",
         img: footer
     }
 
