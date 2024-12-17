@@ -193,7 +193,7 @@
     .overviewPara {
         width: 92%;
         padding-left: unset;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 20px;
 
     }
@@ -205,6 +205,7 @@
 
     .moduleIncludedHeading {
         text-align: center;
+        font-size: 20px;
 
     }
 
@@ -251,7 +252,7 @@
     }
 
     .chooseUsHeading {
-        font-size: 22px;
+        font-size: 20px;
 
     }
 
@@ -264,7 +265,7 @@
     }
 
     .titleHeading {
-        font-size: 18px;
+        font-size: 16px;
 
 
     }
