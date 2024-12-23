@@ -209,7 +209,7 @@ export default function RequestForm() {
                         </div>
 
                         <div>
-                            <textarea className={`${styles.messageTextAreaInput}`} rows="5" required placeholder="Write your message here">
+                            <textarea className={`${styles.messageTextAreaInput}`} rows="5" placeholder="Write your message here">
                             </textarea>
                         </div>
 
@@ -230,7 +230,7 @@ export default function RequestForm() {
                         <div className={`${styles.checkBox}`}>
 
                             <div>
-                                <input type="checkbox" />
+                                <input required type="checkbox" />
                             </div>
                             <div style={{ paddingBottom: "3px" }}>
                                 I have agreed to EICE Technology Private policy
@@ -245,7 +245,7 @@ export default function RequestForm() {
                         <div className={`${styles.buttonbox}`} >
 
                             <div >
-                                <input className=" font3" style={{ fontSize: "17px", border: "none", color: "white", background: "rgba(1, 176, 241, 1)" }} type="submit" name="submit" id="" />
+                                <input required className=" font3" style={{ fontSize: "17px", border: "none", color: "white", background: "rgba(1, 176, 241, 1)" }} type="submit" name="submit" id="" />
                             </div>
 
                             <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
