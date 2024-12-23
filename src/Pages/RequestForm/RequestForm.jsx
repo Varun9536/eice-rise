@@ -4,7 +4,8 @@ import c3 from "../../assets/Hospitality/customer/c1.png"
 import c2 from "../../assets/Hospitality/customer/c2.png"
 import c1 from "../../assets/Hospitality/customer/c3.png"
 
-
+import React, { useEffect, useState } from 'react';
+import Select from 'react-select';
 // feedback
 
 import ak from "../../assets/form/feedback/AK.png"
@@ -30,6 +31,25 @@ export default function RequestForm() {
         console.log(e)
 
     }
+
+    const [countries, setCountries] = useState([]);
+
+
+    useEffect(() => {
+        fetch('https://restcountries.com/v3.1/all')
+            .then((response) => response.json()) // Convert response to JSON
+            .then((data) => {
+                // Map the response data to get country names and codes
+                const countryList = data.map((country) => ({
+                    label: country.name.common,  // The name of the country
+                    value: country.cca2,         // The country code (ISO 3166-1 alpha-2)
+                }));
+                setCountries(countryList);
+            })
+            .catch((error) => {
+                console.error('Error fetching country data:', error);
+            });
+    }, []);
 
     const feedback = [
         {
@@ -91,6 +111,21 @@ export default function RequestForm() {
             answer: "A : It provides real-time tracking and reporting, helping businesses monitor cash flow, ensuring liquidity, and optimizing cash reserves."
         }
     ];
+
+    const customStyles = {
+        control: (provided) => ({
+            ...provided,
+            paddingTop: '3px',  // Padding inside the input field
+            paddingBottom: '3px',  // Padding inside the input field
+            width: '31rem',  // Custom width
+        }),
+        menu: (provided) => ({
+            ...provided,
+            paddingTop: '5px',  // Padding for the dropdown menu
+            paddingBottom: '3px',
+            width: '31rem',  // Padding for the dropdown menu
+        }),
+    };
 
     return (
         <>
@@ -165,10 +200,26 @@ export default function RequestForm() {
                     <div className={`${styles.line3}`}>
 
                         <div>
-                            <label>Country*</label>
+                            {/* <label>Country*</label>
                             <div>
                                 <input required className={`${styles.line3Input}`} type="text" />
-                            </div>
+                            </div> */}
+
+
+                            <label htmlFor="country">Country:</label>
+
+
+                            <Select className={`${styles.line6Input}`}
+                                id="country"
+                                options={countries}          // Pass the country options here
+                                isSearchable={true}          // Enables the search functionality
+                                placeholder=" --Please select--"
+                                styles={customStyles}
+                            />
+
+
+
+
                         </div>
 
                         <div>

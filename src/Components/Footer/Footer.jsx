@@ -4,6 +4,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import logo from '../../assets/logo/logo.svg';
 
+import { Link } from "react-router-dom";
+
 
 import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -27,10 +29,16 @@ export default function Footer() {
 
 
 
+
+                         <Link style={{ color: "white" }} className="linkClass" to={"form"}>
+                                               
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request a Demo </div>
                             <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
                         </div>
+                                            </Link>
+
+                        
 
                     </div>
 
