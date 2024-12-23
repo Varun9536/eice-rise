@@ -83,6 +83,21 @@
     margin-bottom: 1.5rem;
 }
 
+select option:disabled {
+    color: grey; /* Color for the "Please Select" placeholder */
+  }
+
+
+select {
+   color: black;
+    /* Default color for the select text */
+}
+
+select option {
+    color: black;
+    /* Color for the option text */
+}
+
 .line3Input {
 
     width: 33rem;
@@ -98,7 +113,7 @@
 
     width: 33rem;
     font-size: 16px;
-   
+
     /* border: 1px solid rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
     margin-top: 0.8rem;
@@ -235,8 +250,7 @@ input[type="checkbox"] {
 }
 
 
-.quoteHeading
-{
+.quoteHeading {
     text-align: center;
     margin: 1rem 0px;
     font-size: 18px;
