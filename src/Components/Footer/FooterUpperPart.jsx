@@ -13,7 +13,7 @@ export default function FooterUpperPart({ text1, text2, text3, img }) {
                 <div className={`${styles.footerHeadAndIconBox}`}>
 
                     <div  >
-                        <span className={`${styles.footerUpperPartHeading} font2 blueTextGlobalClass`}  > "{text1} {text2} <span className="font1" style={{ color: "black", fontWeight: "600" }}> {text3}"</span> </span>
+                        <span className={`${styles.footerUpperPartHeading} font2 blueTextGlobalClass`}  >"{text1} {text2}<span className="font1" style={{ color: "black", fontWeight: "600" }}>{text3}"</span> </span>
                     </div>
 
 

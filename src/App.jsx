@@ -21,6 +21,7 @@ import AboutUs from './Pages/NavigationBarPages/AboutUs'
 import Products from './Pages/NavigationBarPages/Products'
 import Pricing from './Pages/NavigationBarPages/Pricing'
 import Blogs from './Pages/NavigationBarPages/Blogs'
+import RequestForm from './Pages/RequestForm/RequestForm'
 
 
 
@@ -119,6 +120,12 @@ const router = createBrowserRouter([
         path: "food-cost",
         element: <FoodCost />
       },
+
+
+      {
+        path : "form",
+        element : <RequestForm/>
+      }
 
     ]
 

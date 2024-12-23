@@ -81,7 +81,7 @@
     padding: 16px 25px;
     font-size: 16px;
     row-gap: 20px;
-    
+
 }
 
 
@@ -124,26 +124,26 @@
     }
 
     .moduleSuiteSection {
-        
+
         padding: 0px 8px;
-        
-    
-    
+
+
+
     }
-    .modulesTabHeadings
-    {
-        /* row-gap: 50px; */
+
+    .modulesTabHeadings {
+        
         flex-direction: column;
 
     }
 
     .SuiteSectionHeading {
         font-size: 22px;
-       
+
     }
 
 
-    
+
 
 
 }
