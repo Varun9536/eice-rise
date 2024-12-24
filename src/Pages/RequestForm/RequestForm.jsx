@@ -37,13 +37,20 @@ export default function RequestForm() {
     const [isDisabled, setIsDisabled] = useState(true);
 
     useEffect(() => {
-        fetch('https://restcountries.com/v3.1/all')
+        fetch('https://restcountries.com/v2/all')
             .then((response) => response.json())
             .then((data) => {
                 const countryList = data.map((country) => ({
-                    label: country.name.common,
-                    value: country.name.common,
+                    label: country.name,
+                    value: country.name,
+                    
                 }));
+
+                data.map((item)=>
+                {
+                    console.log(item.name.common)
+                })
+               
                 setCountries(countryList);
                 // console.log(data)
             })
