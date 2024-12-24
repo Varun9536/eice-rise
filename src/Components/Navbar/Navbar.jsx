@@ -101,9 +101,9 @@ export default function Navbar() {
 
                             </Link>)} */}
 
-                            <div  className={`${styles.navigationHoverEffect1} `} style={{ display:"flex", columnGap : "5px" , alignItems : "center"}}>
+                            <div  className={`${styles.navigationHoverEffect} `} style={{ display:"flex", columnGap : "5px" , alignItems : "center"}}>
                                 {item.label}
-                                <div  style={{ paddingTop: "5px" }}>
+                                <div  style={{ paddingTop: "3px" }}>
                                     {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
                                 </div>
                             </div>

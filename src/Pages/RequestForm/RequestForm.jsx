@@ -29,6 +29,7 @@ export default function RequestForm() {
         address: '',
         requirement: '',
         message: '',
+        phoneCode: '',
         subscribe: false,
         policyAgree: false,
     });
@@ -43,6 +44,7 @@ export default function RequestForm() {
                 const countryList = data.map((country) => ({
                     label: country.name,
                     value: country.name,
+                    phoneCode: country.callingCodes[0] || '',
                     
                 }));
 
@@ -69,6 +71,7 @@ export default function RequestForm() {
         setFormData((prevData) => ({
             ...prevData,
             country: selectedOption ? selectedOption.value : '',
+            phoneCode: selectedOption ? selectedOption.phoneCode : '', 
         }));
     };
 
@@ -118,26 +121,34 @@ export default function RequestForm() {
     const feedback = [
         {
             img: kd,
+            client : "Kevin Droid" ,
             position: "Operations Manager",
-            company: ", LuxeStay Hotels",
-            heading: "Transformative Technology Partner",
-            para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span> our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
+            company: ", Zenith Hospitality",
+            heading: "Transformative Technology Partner !",
+            // para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span> our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
+            para : "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!" ,
             key: 1
         },
         {
             img: pd,
-            position: " General Manager ",
-            company: ", Serenity Resorts",
-            heading: "Exceptional Support & Innovation",
-            para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
+            client :"Priya Desai" ,
+            position: "Owner",
+            company: ", Gourmet haven",
+            heading: "Exceptional Efficiency and Customization!",
+            // para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
+            para : "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business." ,
             key: 2
         },
         {
             img: ak,
-            position: " Director of Operations",
-            company: ", Gourmet Suites",
-            heading: "Elevated, Efficiency Guaranteed",
-            para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span> like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span> and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
+            client : "Amit Khanna" ,
+
+            position: "CEO",
+            company: ",Elite Club International",
+            heading: "Impressive All-In-One Solution !",
+            para : "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn’t be happier!" ,
+
+            // para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span> like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span> and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
         }
     ];
@@ -145,29 +156,29 @@ export default function RequestForm() {
     const query = [
         {
             key: 1,
-            question: "Q : What financial functions does the Accounts & Finance module manage?",
-            answer: "A : The module manages accounts receivable, accounts payable, debit & credit notes, taxation, balance sheets, and general ledger. It streamlines processes and ensures accurate financial operations."
+            question: "Q :  What will the demo include?",
+            answer: "A : Our demo will provide a comprehensive walk-through of the selected suite or modules, tailored to your business needs. You'll see how the solution works in real-time and learn about its key features and benefits."
         },
         {
             key: 2,
-            question: "Q : How does the module help in financial decision-making?",
+            question: "Q : How long does the demo take?",
             answer: "A : It provides real-time financial data and advanced reporting tools, enabling managers to make data-driven decisions that enhance profitability and financial stability."
         },
         {
             key: 3,
-            question: "Q : How does the system handle tax compliance?",
+            question: "Q : Can I customize the demo based on my business requirements?",
             answer: "A : The module automates tax calculations based on regional and international tax regulations, ensuring compliance and applying taxes seamlessly to invoices and payments."
         },
-        {
-            key: 4,
-            question: "Q : Can the Accounts & Finance module integrate with other systems?",
-            answer: "A : Yes, it integrates fully with other EICE Rise ERP modules like Room Booking, Banquet & Billing, Dining (POS), and more, ensuring synchronized financial records and consistent data flow."
-        },
-        {
-            key: 5,
-            question: "Q : How does the system assist in managing cash flow?",
-            answer: "A : It provides real-time tracking and reporting, helping businesses monitor cash flow, ensuring liquidity, and optimizing cash reserves."
-        }
+        // {
+        //     key: 4,
+        //     question: "Q : Can the Accounts & Finance module integrate with other systems?",
+        //     answer: "A : Yes, it integrates fully with other EICE Rise ERP modules like Room Booking, Banquet & Billing, Dining (POS), and more, ensuring synchronized financial records and consistent data flow."
+        // },
+        // {
+        //     key: 5,
+        //     question: "Q : How does the system assist in managing cash flow?",
+        //     answer: "A : It provides real-time tracking and reporting, helping businesses monitor cash flow, ensuring liquidity, and optimizing cash reserves."
+        // }
     ];
 
     const customStyles = {
@@ -203,14 +214,14 @@ export default function RequestForm() {
                         <div>
                             <label>Name*</label>
                             <div>
-                                <input autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
+                                <input placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div>
                             <label>Company Name*</label>
                             <div>
-                                <input autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                <input  placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
@@ -232,6 +243,28 @@ export default function RequestForm() {
 
                         <div>
                             <label>Phone Number*</label>
+                            <div>
+                           
+                            {/* <Select
+                                className={`${styles.line6Input}`}
+                                id="country"
+                                options={countries}
+                                isSearchable={true}
+                                placeholder=" -- Please Select --"
+                                styles={customStyles}
+                                value={countries.find((option) => option.value === formData.country)}
+                                onChange={handleSelectChange}
+                            /> */}
+
+{/* <input
+                        id="phone"
+                        name="phone"
+                        type="text"
+                        value={formData.phoneCode + formData.phone}  // Show the phone code + user input
+                        onChange={handleChange}
+                        placeholder="Enter phone number"
+                    /> */}
+                        </div>
                             <div>
                                 <input autoComplete="off" required className={`${styles.line2Input}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
                             </div>
@@ -286,12 +319,13 @@ export default function RequestForm() {
                         </div>
                         <div>
                             <textarea
-                                className={`${styles.messageTextAreaInput}`}
+                                className={`${styles.messageTextAreaInput} font1`}
                                 rows="5"
                                 placeholder="Write your message here"
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
+                                
                                
                             />
                         </div>
@@ -365,7 +399,7 @@ export default function RequestForm() {
                                         <img style={{ width: "28%" }} src={item.img} alt="" />
                                     </div>
 
-                                    <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
+                                    <figcaption style={{ textAlign: "center" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
 
                                 </figure>
                                 <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>

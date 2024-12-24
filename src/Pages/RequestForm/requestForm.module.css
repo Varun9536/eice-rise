@@ -144,6 +144,12 @@ select option {
     border-radius: 5px;
     margin-top: 0.8rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    resize: none;
+   
+}
+
+.messageTextAreaInput::placeholder {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .checkBoxContainer {

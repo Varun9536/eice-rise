@@ -99,8 +99,8 @@
 
 .dropdownMenu {
     position: absolute;
-    /* top: 100%; */
-    top: 3rem;
+    top: 100%;
+    /* top: 3rem; */
     left: 0px;
     background-color: #fff;
     border: 1px solid #ddd;
