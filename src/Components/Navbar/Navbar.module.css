@@ -36,17 +36,45 @@
 
 
 
-.navigationButton
-{
+.navigationButton {
     display: flex;
     position: relative;
     column-gap: 8px;
 }
 
-.navigationButton:hover
-{
+
+
+.navigationHoverEffect {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navigationHoverEffect:hover {
+    /* text-decoration: underline; */
+    color: rgba(1, 176, 241, 1);
+    border-bottom: 2px solid rgba(1, 176, 241, 1);;
+    padding-bottom: 3px;
+}
+
+
+
+
+
+.navigationHoverEffect1 {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navigationHoverEffect1:hover {
+    /* text-decoration: underline; */
+    color: rgba(1, 176, 241, 1);
+    border-bottom: 2px solid rgba(1, 176, 241, 1);
+    transition: transform 0.3s ease;
     
 }
+
 
 
 
@@ -71,7 +99,8 @@
 
 .dropdownMenu {
     position: absolute;
-    top: 100%;
+    /* top: 100%; */
+    top: 3rem;
     left: 0px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -98,7 +127,7 @@
 }
 
 .dropdownItem:hover {
-  
+
     color: #007bff;
     background: rgb(245, 245, 245);
 }

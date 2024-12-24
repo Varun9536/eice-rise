@@ -28,7 +28,7 @@ export default function Navbar() {
 
 
     const navItems = [
-        { label: 'Home', link: '/' },
+        // { label: 'Home', link: '/' },
 
         {
             label: 'Products',
@@ -70,40 +70,51 @@ export default function Navbar() {
                 </div>
 
                 <div className={`${styles.navigationIcon} font1`}>
+
+                    <div >
+                        <Link className={`${styles.navigationHoverEffect} `} to={"/"}>Home</Link>
+                    </div>
                     {navItems.map((item) => (
 
-                        <div className={`${styles.navigationButton}`} key={item.label} onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
+                        <div className={`${styles.navigationButton}  `} key={item.label} onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
 
                             {/* <Link to={item.link} className="linkClass">
 
                                 <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
-                                    {item.label}
+                                    {item.label}  
                                 </div>
 
                             </Link> */}
 
 
-                            {item.label === 'Products' ? (<div className="linkClass">
+                            {/* {item.label === 'Products' ? (<div className="linkClass">
 
-                                <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
+                                <div  style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
                                     {item.label}
                                 </div>
 
                             </div>) : (<Link to={item.link} className="linkClass">
 
-                                <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
+                                <div  style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
                                     {item.label}
                                 </div>
 
-                            </Link>)}
+                            </Link>)} */}
 
-
-
-                            {item.label === 'Products' && (
-                                <div style={{ paddingTop: "3px" }}>
+                            <div  className={`${styles.navigationHoverEffect1} `} style={{ display:"flex", columnGap : "5px" , alignItems : "center"}}>
+                                {item.label}
+                                <div  style={{ paddingTop: "5px" }}>
                                     {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
                                 </div>
-                            )}
+                            </div>
+
+
+
+                            {/* {item.label === 'Products' && (
+                                <div  style={{ paddingTop: "3px" }}>
+                                    {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                                </div>
+                            )} */}
 
                             {item.dropdown && hoverStates[item.label] && (
                                 <div className={styles.dropdownMenu}>
@@ -126,10 +137,10 @@ export default function Navbar() {
 
 
                     <div >
-                        <Link className="linkClass" to={"/pricing"}>Pricing</Link>
+                        <Link className={`${styles.navigationHoverEffect} `} to={"/pricing"}>Pricing</Link>
                     </div>
-                    <div><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/About">About Us</a></div>
-                    <div ><a className="linkClass" target='_blank' href="https://www.eicetechnology.com/Resources">Blogs</a></div>
+                    <div><Link className={`${styles.navigationHoverEffect} `} target='_blank' to="https://www.eicetechnology.com/About">About Us</Link></div>
+                    <div ><Link className={`${styles.navigationHoverEffect} `} target='_blank' to="https://www.eicetechnology.com/Resources">Blogs</Link></div>
                 </div>
 
             </div>
