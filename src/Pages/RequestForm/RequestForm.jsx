@@ -34,6 +34,7 @@ export default function RequestForm() {
     });
 
     const [countries, setCountries] = useState([]);
+    const [isDisabled, setIsDisabled] = useState(true);
 
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
@@ -41,9 +42,10 @@ export default function RequestForm() {
             .then((data) => {
                 const countryList = data.map((country) => ({
                     label: country.name.common,
-                    value: country.cca2,
+                    value: country.name.common,
                 }));
                 setCountries(countryList);
+                // console.log(data)
             })
             .catch((error) => console.error('Error fetching country data:', error));
     }, []);
@@ -66,7 +68,7 @@ export default function RequestForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log(formData)
+        // console.log(formData)
 
         // Check if both checkboxes are checked before submitting
         if (!formData.subscribe || !formData.policyAgree) {
@@ -95,11 +97,11 @@ export default function RequestForm() {
             //     body: JSON.stringify(dataToSend),
             // });
             console.log(dataToSend)
-            if (response.ok) {
-                alert("Your form has been submitted successfully.");
-            } else {
-                alert("Failed to submit the form. Please try again.");
-            }
+            // if (response.ok) {
+            //     alert("Your form has been submitted successfully.");
+            // } else {
+            //     alert("Failed to submit the form. Please try again.");
+            // }
         } catch (error) {
             console.error("Error submitting form:", error);
             alert("An error occurred. Please try again.");
@@ -194,14 +196,14 @@ export default function RequestForm() {
                         <div>
                             <label>Name*</label>
                             <div>
-                                <input required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
+                                <input autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div>
                             <label>Company Name*</label>
                             <div>
-                                <input required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                <input autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
@@ -210,21 +212,21 @@ export default function RequestForm() {
                         <div>
                             <label>Role/Designation (optional)</label>
                             <div>
-                                <input className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                <input autoComplete="off" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div>
                             <label>Email ID*</label>
                             <div>
-                                <input required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                <input autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div>
                             <label>Phone Number*</label>
                             <div>
-                                <input required className={`${styles.line2Input}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                <input autoComplete="off" required className={`${styles.line2Input}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
                             </div>
                         </div>
                     </div>
@@ -247,7 +249,7 @@ export default function RequestForm() {
                         <div>
                             <div>Address*</div>
                             <div>
-                                <input required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
+                                <input autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
@@ -283,6 +285,7 @@ export default function RequestForm() {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
+                               
                             />
                         </div>
                     </div>
@@ -294,6 +297,7 @@ export default function RequestForm() {
                                 name="subscribe"
                                 checked={formData.subscribe}
                                 onChange={handleChange}
+
                             />
                             <span>Recieve EICE Rise Products, Services, Events and more</span>
                         </div>

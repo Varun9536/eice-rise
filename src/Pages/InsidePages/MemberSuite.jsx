@@ -2,7 +2,7 @@
 import style from "./Styles/memberSuite.module.css"
 
 
-
+import { Link } from "react-router-dom"
 
 
 import cag from "../../assets/insidePages/member/memberSection2/cag.png"
@@ -59,42 +59,42 @@ export default function MemberSuite() {
       key: 1,
       heading: "Membership Registration and Management",
       desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
-      img: mrm, 
+      img: mrm,
       width: "86px"
     },
     {
       key: 2,
       heading: "Self-Service Portal",
       desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
-      img: ssp, 
+      img: ssp,
       width: "60px"
     },
     {
       key: 3,
       heading: "Subscription Management",
       desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
-      img: sm, 
+      img: sm,
       width: "60px"
     },
     {
       key: 4,
       heading: "Exclusive Member Benefits",
       desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
-      img: emb, 
+      img: emb,
       width: "65px"
     },
     {
       key: 5,
       heading: "Integrated Communication Tools",
       desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
-      img: ict, 
+      img: ict,
       width: "65px"
     },
     {
       key: 6,
       heading: "Analytics Dashboard",
       desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
-      img: ad, 
+      img: ad,
       width: "60px"
     }
   ];
@@ -203,20 +203,20 @@ export default function MemberSuite() {
 
 
 
-     
-<section className={`${style.section1} insidePageUpperSection`}>
-       
-          <div className={`${style.pageHeadingBox}`}>
-            <div className={`${style.section1Heading} font4`}>
-              <div style={{ color: "#012060" }}>MEMBER </div>
-              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> SUITE</div>
-            </div>
-          </div>
 
-          <div className={style.section1ImgBox}>
-            <img style={{ width: "100%" }} src={main} alt="" />
+      <section className={`${style.section1} insidePageUpperSection`}>
+
+        <div className={`${style.pageHeadingBox}`}>
+          <div className={`${style.section1Heading} font4`}>
+            <div style={{ color: "#012060" }}>MEMBER </div>
+            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> SUITE</div>
           </div>
-     
+        </div>
+
+        <div className={style.section1ImgBox}>
+          <img style={{ width: "100%" }} src={main} alt="" />
+        </div>
+
 
       </section>
 
@@ -369,7 +369,7 @@ export default function MemberSuite() {
         </div>
       </section>
 
-      <section className={`${style.requestDemoBtn}`}>
+      {/* <section className={`${style.requestDemoBtn}`}>
 
         <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
           <div className={`${style.demoButton} font1`}>
@@ -378,6 +378,21 @@ export default function MemberSuite() {
           </div>
 
         </div>
+
+      </section> */}
+
+      <section className={`${style.requestDemoBtn}`}>
+
+        <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+          <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+            <div className={`${style.demoButton} font1`}>
+              <div > Request a Demo </div>
+              <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+            </div>
+
+          </div>
+        </Link>
+
 
       </section>
 
@@ -425,47 +440,47 @@ export default function MemberSuite() {
         </div>
       </section> */}
 
-<section style={{ background: "#f5f5f5" }} >
-                <div className={`${style.section5} font4 globalSectionSize`}>
+      <section style={{ background: "#f5f5f5" }} >
+        <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-                    <div className={`${style.section5heading} font4`}>Benefits</div>
-                    {benefits.map((item, index) =>
-                    (
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
 
-                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-                            <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className='GlobalBenefitTextBox' >
-                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-                            </div>
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-                        </div>) : (<div className='GlobalBenefitBox2'>
+              <div className="GlobalBenefitImgBox" >
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
 
-                            <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className='GlobalBenefitTextBox' >
-                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-                            </div>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
 
-                        </div>)
+              <div className="GlobalBenefitImgBox">
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
 
-                    ))}
+            </div>)
 
-                </div>
-            </section>
+
+          ))}
+
+        </div>
+      </section>
 
 
 

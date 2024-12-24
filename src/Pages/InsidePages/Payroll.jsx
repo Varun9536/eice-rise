@@ -7,7 +7,7 @@ import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
 
 
-
+import { Link } from "react-router-dom"
 
 // features
 
@@ -54,43 +54,43 @@ export default function Payroll() {
       key: 1,
       heading: "Automated Payroll Processing",
       desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
-      img: app, 
-      width: "58px", 
+      img: app,
+      width: "58px",
     },
     {
       key: 2,
       heading: "Employee Data Management",
       desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
-      img: edm, 
-      width: "59px", 
+      img: edm,
+      width: "59px",
     },
     {
       key: 3,
       heading: "Customizable Pay Structures",
       desc: "Define multiple earnings & deduction pay types, to accommodate various employee compensation models.",
-      img: cps, 
-      width: "54px", 
+      img: cps,
+      width: "54px",
     },
     {
       key: 4,
       heading: "Tax Compliance and Reporting",
       desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
-      img: tcr, 
-      width: "62px", 
+      img: tcr,
+      width: "62px",
     },
     {
       key: 5,
       heading: "Leave and Attendance Management",
       desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
-      img: lam, 
-      width: "71px", 
+      img: lam,
+      width: "71px",
     },
     {
       key: 6,
       heading: "Direct Deposit and Payment Processing",
       desc: "Enables direct deposit to employees' bank accounts, reducing manual payment efforts and improving payment accuracy.",
-      img: ddpp, 
-      width: "63px", 
+      img: ddpp,
+      width: "63px",
     },
 
   ];
@@ -205,19 +205,19 @@ export default function Payroll() {
 
 
 
-<section className={`${style.section1} insidePageUpperSection`}>
-       
-          <div className={`${style.pageHeadingBox}`}>
-            <div className={`${style.section1Heading} font4`}>
-              <div style={{ color: "#012060" }}>PAYROLL</div>
-              <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> MANAGEMENT</div>
-            </div>
-          </div>
+      <section className={`${style.section1} insidePageUpperSection`}>
 
-          <div className={style.section1ImgBox}>
-          <img style={{ width: "100%" }} src={mainImg} alt="" />
+        <div className={`${style.pageHeadingBox}`}>
+          <div className={`${style.section1Heading} font4`}>
+            <div style={{ color: "#012060" }}>PAYROLL</div>
+            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> MANAGEMENT</div>
           </div>
-        
+        </div>
+
+        <div className={style.section1ImgBox}>
+          <img style={{ width: "100%" }} src={mainImg} alt="" />
+        </div>
+
 
       </section>
 
@@ -366,7 +366,7 @@ export default function Payroll() {
         </div>
       </section>
 
-      <section className={`${style.requestDemoBtn}`}>
+      {/* <section className={`${style.requestDemoBtn}`}>
 
         <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
           <div className={`${style.demoButton} font1`}>
@@ -376,9 +376,21 @@ export default function Payroll() {
 
         </div>
 
-      </section>
-
-
+      </section> */}
+       <section className={`${style.requestDemoBtn}`}>
+      
+              <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                  <div className={`${style.demoButton} font1`}>
+                    <div > Request a Demo </div>
+                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                  </div>
+      
+                </div>
+              </Link>
+      
+      
+            </section>
 
 
 
@@ -424,47 +436,47 @@ export default function Payroll() {
         </div>
       </section> */}
 
-<section style={{ background: "#f5f5f5" }} >
-                <div className={`${style.section5} font4 globalSectionSize`}>
+      <section style={{ background: "#f5f5f5" }} >
+        <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-                    <div className={`${style.section5heading} font4`}>Benefits</div>
-                    {benefits.map((item, index) =>
-                    (
+          <div className={`${style.section5heading} font4`}>Benefits</div>
+          {benefits.map((item, index) =>
+          (
 
-                        index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-                            <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className='GlobalBenefitTextBox' >
-                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-                            </div>
+            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
 
 
-                        </div>) : (<div className='GlobalBenefitBox2'>
+              <div className="GlobalBenefitImgBox" >
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
 
-                            <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className='GlobalBenefitTextBox' >
-                                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-                            </div>
+            </div>) : (<div className='GlobalBenefitBox2'>
 
 
-                        </div>)
+              <div className="GlobalBenefitImgBox">
+                <img style={{ width: "100%" }} src={item.img} alt="" />
+              </div>
+
+              <div className='GlobalBenefitTextBox' >
+                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
+                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
+              </div>
 
 
-                    ))}
+            </div>)
 
-                </div>
-            </section>
+
+          ))}
+
+        </div>
+      </section>
 
 
 

@@ -7,6 +7,8 @@ import icon2 from "../../assets/insidePages/room/roomPage/Icons/2.png"
 import icon3 from "../../assets/insidePages/room/roomPage/Icons/3.png"
 
 
+import { Link } from "react-router-dom"
+
 
 // features
 import rt from "../../assets/insidePages/room/roomPage/feature/rt.png"
@@ -362,16 +364,19 @@ export default function RoomBooking() {
 
 
             <section className={`${style.requestDemoBtn}`}>
-
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                    <div className={`${style.demoButton} font1`}>
-                        <div > Request a Demo </div>
-                        <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                    </div>
-
-                </div>
-
-            </section>
+           
+                   <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                       <div className={`${style.demoButton} font1`}>
+                         <div > Request a Demo </div>
+                         <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                       </div>
+           
+                     </div>
+                   </Link>
+           
+           
+                 </section>
 
 
             <section style={{ background: "#f5f5f5" }} >

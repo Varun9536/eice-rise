@@ -6,7 +6,7 @@ import eem from "../../assets/insidePages/banquet/section2B/eem.png"
 import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
 
 
-
+import { Link } from "react-router-dom"
 
 
 
@@ -357,15 +357,19 @@ export default function BanquetAnsBilling() {
 
       <section className={`${style.requestDemoBtn}`}>
 
-        <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-          <div className={`${style.demoButton} font1`}>
-            <div > Request a Demo </div>
-            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-          </div>
-
-        </div>
+      <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                  <div className={`${style.demoButton} font1`}>
+                    <div > Request a Demo </div>
+                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                  </div>
+      
+                </div>
+              </Link>
 
       </section>
+
+      
 
 
 

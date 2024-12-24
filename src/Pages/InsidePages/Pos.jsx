@@ -5,7 +5,7 @@ import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
 import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
 import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
-
+import { Link } from "react-router-dom"
 
 // features
 import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
@@ -369,16 +369,19 @@ export default function Pos() {
             </section>
 
             <section className={`${style.requestDemoBtn}`}>
-
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                    <div className={`${style.demoButton} font1`}>
-                        <div > Request a Demo </div>
-                        <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                    </div>
-
-                </div>
-
-            </section>
+           
+                   <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                       <div className={`${style.demoButton} font1`}>
+                         <div > Request a Demo </div>
+                         <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                       </div>
+           
+                     </div>
+                   </Link>
+           
+           
+                 </section>
 
 
 

@@ -8,6 +8,8 @@ import sp from "../../assets/insidePages/vendor/section2icon/sp.png"
 import vm from "../../assets/insidePages/vendor/section2icon/vm.png"
 
 
+import { Link } from "react-router-dom"
+
 
 
 // features
@@ -376,17 +378,20 @@ export default function PurchaseAndVendor() {
                 </div>
             </section>
 
-            <section className={`${style.requestDemoBtn}`}>
-
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                    <div className={`${style.demoButton} font1`}>
-                        <div > Request a Demo </div>
-                        <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                    </div>
-
-                </div>
-
-            </section>
+             <section className={`${style.requestDemoBtn}`}>
+            
+                    <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                      <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                        <div className={`${style.demoButton} font1`}>
+                          <div > Request a Demo </div>
+                          <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+            
+                      </div>
+                    </Link>
+            
+            
+                  </section>
 
 
 

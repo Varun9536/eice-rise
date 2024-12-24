@@ -152,7 +152,7 @@ export default function Pricing() {
         </div>
 
 
-        <div className={`${styles.pricing}`}>$$ PRICING $$</div>
+        <div className={`${styles.pricing}`}>PRICING</div>
 
 
 

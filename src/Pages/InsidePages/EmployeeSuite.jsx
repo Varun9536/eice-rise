@@ -11,7 +11,7 @@ import tc from "../../assets/insidePages/emp/empSection2/tc.png"
 
 
 
-
+import { Link } from "react-router-dom"
 
 // features
 import bm from "../../assets/insidePages/emp/icon/bm.png"
@@ -387,16 +387,20 @@ export default function EmployeeSuite() {
 
       <section className={`${style.requestDemoBtn}`}>
 
-        <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-          <div className={`${style.demoButton} font1`}>
-            <div > Request a Demo </div>
-            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-          </div>
+      <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                  <div className={`${style.demoButton} font1`}>
+                    <div > Request a Demo </div>
+                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                  </div>
+      
+                </div>
+              </Link>
 
-        </div>
 
       </section>
 
+       
 
 
       {/* <section style={{ background: "#f5f5f5" }} >
