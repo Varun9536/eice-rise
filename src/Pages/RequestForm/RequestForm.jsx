@@ -185,11 +185,11 @@ export default function RequestForm() {
         {
             key: 2,
             question: "Q : How long does the demo take?",
-            answer: "A : It provides real-time financial data and advanced reporting tools, enabling managers to make data-driven decisions that enhance profitability and financial stability."
+            answer: "A : A typical demo lasts between 30 to 45 minutes, depending on the number of suites or modules you'd like to explore."
         },
         {
             key: 3,
-            question: "Q : Can I customize the demo based on my business requirements?",
+            question: "Q : Can I customize the demo based on my business requirements?",
             answer: "A : The module automates tax calculations based on regional and international tax regulations, ensuring compliance and applying taxes seamlessly to invoices and payments."
         },
         // {
