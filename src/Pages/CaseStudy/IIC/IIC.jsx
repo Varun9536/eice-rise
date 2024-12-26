@@ -40,7 +40,7 @@ export default function IIC() {
 
             <header className={`${styles.pageMainHeading}`}>
 
-                <span className="font4" >The</span>   <span className={`font2 blueTextGlobalClass `} >SalesVu </span>  <span className="font4" > Android App</span>
+                <span className={`font2 blueTextGlobalClass `} >IIC</span>  <span className="font4" > SKY</span>
 
             </header>
 
@@ -59,7 +59,7 @@ export default function IIC() {
                         </div>
 
                         <div className={`${styles.briefPara} font1`}>
-                            The SalesVu Android App enhances POS functionality with features like order management, payment processing, and barcode scanning. These features streamline operations, improve inventory management, and provide secure, fast transactions, all while boosting user accessibility. The app delivers an intuitive solution for businesses to efficiently manage their operations on Android devices.
+                        Implement Role-Based Access Control (RBAC), enabling tailored access for different user roles such as admin, user, and guest. This approach ensured secure, organized access to relevant data and features. We also tackled challenges around unclear client requirements, scope creep, and testing delays, delivering a secure, scalable system aligned with IICC's goals while maintaining clear communication and focused development
                         </div>
 
                     </div>
@@ -78,7 +78,9 @@ export default function IIC() {
                 <div className={`${styles.informationBox} font1 `}>
 
                     <div className={`${styles.statement1}`} >
-                        Salevsu faced a unique design challenge in optimizing the user experience across different device types. The application consisted of two key screens: one for selecting the category and product, and the other for displaying order details.
+                    Challenges with User Interaction in Multi-User Software Systems
+
+
 
 
                     </div>
@@ -129,19 +131,24 @@ export default function IIC() {
                 <div className={`${styles.technology} font1 `}>
 
                     <div className={`${styles.technologyName}`}  >
-                        Android
+                        .Net Framework
                     </div>
 
                     <div className={`${styles.technologyName}`}  >
-                        Core Java
+                        HTML/CSS/JS
+
                     </div>
 
                     <div className={`${styles.technologyName}`}  >
-                        Eclipse
+                        C#
                     </div>
 
                     <div className={`${styles.technologyName}`}  >
-                        Mercury Payment Gateway
+                        jQuery
+                    </div>
+
+                    <div className={`${styles.technologyName}`}  >
+                        Oracle Database
 
                     </div>
 

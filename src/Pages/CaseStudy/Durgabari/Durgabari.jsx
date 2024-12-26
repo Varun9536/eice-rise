@@ -6,55 +6,60 @@ import FooterLower from "../../../Components/Footer/FooterLower"
 export default function Durgabari() {
 
 
-    const challenges = [
-        {
-            key: "Mobile Phones",
-            value: "On phones, only one screen could be viewed at a time, limiting the user's ability to multitask"
-        },
+    // const challenges = [
+    //     {
+    //         key: "Mobile Phones",
+    //         value: "On phones, only one screen could be viewed at a time, limiting the user's ability to multitask"
+    //     },
 
-        {
-            key: "Tablets",
-            value: "On tablets, the expectation was to have both screens displayed side by side for better productivity and a more efficient workflow."
-        }
-    ]
+    //     {
+    //         key: "Tablets",
+    //         value: "On tablets, the expectation was to have both screens displayed side by side for better productivity and a more efficient workflow."
+    //     }
+    // ]
 
 
-    const roleHighlights = [
-        {
-            key: "Adaptive UI",
-            value: "Utilized fragments for a responsive layout that adapts to both phones and tablets."
-        },
+    // const roleHighlights = [
+    //     {
+    //         key: "Adaptive UI",
+    //         value: "Utilized fragments for a responsive layout that adapts to both phones and tablets."
+    //     },
 
-        {
-            key: "Efficient Workflow",
-            value: "Enabled side-by-side views on tablets, optimizing the user's workflow while maintaining simplicity on mobile"
-        },
+    //     {
+    //         key: "Efficient Workflow",
+    //         value: "Enabled side-by-side views on tablets, optimizing the user's workflow while maintaining simplicity on mobile"
+    //     },
 
-        {
-            key: "Efficient Workflow",
-            value: "Avoided the need for creating separate layouts for different devices, ensuring a more streamlined development process and easier maintenance."
-        }
-    ]
+    //     {
+    //         key: "Efficient Workflow",
+    //         value: "Avoided the need for creating separate layouts for different devices, ensuring a more streamlined development process and easier maintenance."
+    //     }
+    // ]
 
 
     const empoweringList = [
         {
+            id: "e1",
             key: "Website Development",
             value: "We created a modern, user-friendly website that serves as a central hub for all HDBS activities, ensuring seamless access to information and updates."
         },
         {
+            id: "e2",
             key: "E-Puja Platform",
             value: "Our team developed an innovative online service, enabling devotees to participate in religious ceremonies virtually, fostering inclusivity for community members worldwide."
         },
         {
+            id: "e3",
             key: "Member Portal",
             value: "We designed an integrated member portal where users can manage their profiles, book venues, recharge smart cards, and handle POS bookings with ease, enhancing convenience and engagement."
         },
         {
+            id: "e4",
             key: "Event and Resource Management",
             value: "We implemented systems for online event registrations, donations, and auditorium reservations, streamlining operational workflows and improving event participation."
         },
         {
+            id: "e5",
             key: "Membership Management System",
             value: "To support HDBS's growing community, we built a robust membership management solution for smooth renewal processes, payment handling, and member communications."
         }
@@ -63,30 +68,36 @@ export default function Durgabari() {
 
     const valueToClient = [
         {
-          key: "Enhanced Accessibility",
-          value: "The new platform allowed members to access religious services, event registrations, and organizational updates from anywhere, fostering a stronger connection with the community."
+            id: "v1",
+            key: "Enhanced Accessibility",
+            value: "The new platform allowed members to access religious services, event registrations, and organizational updates from anywhere, fostering a stronger connection with the community."
         },
         {
-          key: "Streamlined Operations",
-          value: "With automated processes for venue reservations, event management, and membership renewals, HDBS significantly reduced administrative burdens and improved efficiency."
+            id: "v6",
+            key: "Streamlined Operations",
+            value: "With automated processes for venue reservations, event management, and membership renewals, HDBS significantly reduced administrative burdens and improved efficiency."
         },
         {
-          key: "Improved Member Engagement",
-          value: "The integrated member portal enabled seamless interaction with HDBS services, empowering members to manage bookings, recharge smart cards, and participate in events with ease."
+            id: "v2",
+            key: "Improved Member Engagement",
+            value: "The integrated member portal enabled seamless interaction with HDBS services, empowering members to manage bookings, recharge smart cards, and participate in events with ease."
         },
         {
-          key: "Global Reach",
-          value: "The introduction of the e-Puja platform allowed devotees worldwide to participate in religious ceremonies, ensuring inclusivity and preserving cultural traditions across distances."
+            id: "v3",
+            key: "Global Reach",
+            value: "The introduction of the e-Puja platform allowed devotees worldwide to participate in religious ceremonies, ensuring inclusivity and preserving cultural traditions across distances."
         },
         {
-          key: "Increased Revenue Opportunities",
-          value: "By enabling online donations, event registrations, and auditorium bookings, the platform opened new avenues for fundraising and resource optimization."
+            id: "v4",
+            key: "Increased Revenue Opportunities",
+            value: "By enabling online donations, event registrations, and auditorium bookings, the platform opened new avenues for fundraising and resource optimization."
         },
         {
-          key: "Future-Ready Digital Presence",
-          value: "The modern, scalable platform positions HDBS to adapt and grow with changing community needs, ensuring long-term sustainability and relevance."
+            id: "v5",
+            key: "Future-Ready Digital Presence",
+            value: "The modern, scalable platform positions HDBS to adapt and grow with changing community needs, ensuring long-term sustainability and relevance."
         }
-      ];
+    ];
 
 
 
@@ -187,7 +198,7 @@ export default function Durgabari() {
 
                         {empoweringList.map((item) =>
                         (
-                            <li>
+                            <li key={item.id}>
                                 <strong>{item.key}:</strong>
                                 <span> {item.value} </span>
                             </li>
@@ -209,19 +220,25 @@ export default function Durgabari() {
                 <div className={`${styles.technology} font1 `}>
 
                     <div className={`${styles.technologyName}`}  >
-                        Android
+                        Core PHP (MVC)
                     </div>
 
                     <div className={`${styles.technologyName}`}  >
-                        Core Java
+                        HTML/CSS/JS
+                    </div>
+
+
+
+                    <div className={`${styles.technologyName}`}  >
+                        MY-SQL
                     </div>
 
                     <div className={`${styles.technologyName}`}  >
-                        Eclipse
+                        Bootstrap
                     </div>
 
                     <div className={`${styles.technologyName}`}  >
-                        Mercury Payment Gateway
+                        jQuery
 
                     </div>
 
@@ -244,7 +261,7 @@ export default function Durgabari() {
                     </div> */}
 
                     <div className={`${styles.highlightDesc} font4 `}>
-                    Our digital solutions provided Houston Durga Bari Society (HDBS) with transformative benefits that enhanced their operational efficiency, expanded their reach, and elevated the overall member experience
+                        Our digital solutions provided Houston Durga Bari Society (HDBS) with transformative benefits that enhanced their operational efficiency, expanded their reach, and elevated the overall member experience
                     </div>
 
                     <div className={`${styles.highlightsList} font4 `}>
@@ -252,7 +269,7 @@ export default function Durgabari() {
                         <ul>
                             {valueToClient.map((item) =>
                             (
-                                <li>
+                                <li key={item.id}>
                                     <strong>{item.key}:</strong>
                                     <span> {item.value} </span>
                                 </li>

@@ -8,11 +8,13 @@ export default function Android() {
 
     const challenges = [
         {
+            id : "1" ,
             key: "Mobile Phones",
             value: "On phones, only one screen could be viewed at a time, limiting the user's ability to multitask"
         },
 
         {
+            id : "2",
             key: "Tablets",
             value: "On tablets, the expectation was to have both screens displayed side by side for better productivity and a more efficient workflow."
         }
@@ -21,16 +23,19 @@ export default function Android() {
 
     const roleHighlights = [
         {
+            id : "r1" ,
             key: "Adaptive UI",
             value: "Utilized fragments for a responsive layout that adapts to both phones and tablets."
         },
 
         {
+            id : "r2" ,
             key: "Efficient Workflow",
             value: "Enabled side-by-side views on tablets, optimizing the user's workflow while maintaining simplicity on mobile"
         },
 
         {
+            id : "r3" ,
             key: "Code Reuseability",
             value: "Avoided the need for creating separate layouts for different devices, ensuring a more streamlined development process and easier maintenance."
         }
@@ -89,7 +94,7 @@ export default function Android() {
 
                             {challenges.map((item) =>
                             (
-                                <li>
+                                <li key={item.id}>
                                     <strong>{item.key}:</strong>
                                     <span> {item.value} </span>
                                 </li>
@@ -169,7 +174,7 @@ export default function Android() {
                         <ul>
                             {roleHighlights.map((item) =>
                             (
-                                <li>
+                                <li key={item.id}>
                                     <strong>{item.key}:</strong>
                                     <span> {item.value} </span>
                                 </li>
