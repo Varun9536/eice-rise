@@ -25,14 +25,15 @@ export default function RequestForm() {
         role: '',
         email: '',
         phone: '',
-        country: '',
+        country: '',       // Selected country
+        phoneCode: '',     // Selected phone code
         address: '',
         requirement: '',
         message: '',
-        phoneCode: '',
         subscribe: false,
         policyAgree: false,
     });
+
 
     const [countries, setCountries] = useState([]);
     const [isDisabled, setIsDisabled] = useState(true);
@@ -44,15 +45,14 @@ export default function RequestForm() {
                 const countryList = data.map((country) => ({
                     label: country.name,
                     value: country.name,
-                    phoneCode: country.callingCodes[0] || '',
-                    
+                    code: country.callingCodes[0] || '',
+
                 }));
 
-                data.map((item)=>
-                {
-                    console.log(item.name.common)
-                })
-               
+                // data.map((item) => {
+                //     console.log(item)
+                // })
+
                 setCountries(countryList);
                 // console.log(data)
             })
@@ -71,9 +71,26 @@ export default function RequestForm() {
         setFormData((prevData) => ({
             ...prevData,
             country: selectedOption ? selectedOption.value : '',
-            phoneCode: selectedOption ? selectedOption.phoneCode : '', 
+
         }));
     };
+
+    const handleCountryCodeChange = (selectedOption) => {
+        setFormData((prevData) => ({
+            ...prevData,
+            phoneCode: selectedOption ? selectedOption.code : '',  // Store country code
+            // country: selectedOption ? selectedOption.value : '',   // Store country name
+        }));
+    };
+
+
+    // const handlePhoneCodeChange = (e) => {
+    //     const { value } = e.target;
+    //     setFormData((prevData) => ({
+    //         ...prevData,
+    //         phoneCode: value,  // Store phone code entered
+    //     }));
+    // };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -92,13 +109,16 @@ export default function RequestForm() {
             role: formData.role,
             email: formData.email,
             phone: formData.phone,
+            phoneCode: formData.phoneCode,
             country: formData.country,
             address: formData.address,
             requirement: formData.requirement,
             message: formData.message,
+
         };
 
         try {
+
             // const response = await fetch("YOUR_API_ENDPOINT_HERE", {
             //     method: "POST",
             //     headers: {
@@ -106,12 +126,15 @@ export default function RequestForm() {
             //     },
             //     body: JSON.stringify(dataToSend),
             // });
+
             console.log(dataToSend)
+
             // if (response.ok) {
             //     alert("Your form has been submitted successfully.");
             // } else {
             //     alert("Failed to submit the form. Please try again.");
             // }
+
         } catch (error) {
             console.error("Error submitting form:", error);
             alert("An error occurred. Please try again.");
@@ -121,32 +144,32 @@ export default function RequestForm() {
     const feedback = [
         {
             img: kd,
-            client : "Kevin Droid" ,
+            client: "Kevin Droid",
             position: "Operations Manager",
             company: ", Zenith Hospitality",
             heading: "Transformative Technology Partner !",
             // para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span> our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
-            para : "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!" ,
+            para: "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!",
             key: 1
         },
         {
             img: pd,
-            client :"Priya Desai" ,
+            client: "Priya Desai",
             position: "Owner",
             company: ", Gourmet haven",
             heading: "Exceptional Efficiency and Customization!",
             // para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
-            para : "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business." ,
+            para: "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business.",
             key: 2
         },
         {
             img: ak,
-            client : "Amit Khanna" ,
+            client: "Amit Khanna",
 
             position: "CEO",
             company: ",Elite Club International",
             heading: "Impressive All-In-One Solution !",
-            para : "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn’t be happier!" ,
+            para: "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn’t be happier!",
 
             // para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span> like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span> and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
@@ -186,13 +209,28 @@ export default function RequestForm() {
             ...provided,
             paddingTop: '3px',
             paddingBottom: '3px',
-            width: '31rem',
+            width: '33rem',
         }),
         menu: (provided) => ({
             ...provided,
             paddingTop: '5px',
             paddingBottom: '3px',
-            width: '31rem',
+            width: '33rem',
+        }),
+    };
+
+    const customStyles2 = {
+        control: (provided) => ({
+            ...provided,
+            paddingTop: '3px',
+            paddingBottom: '3px',
+            // width: '31rem',
+        }),
+        menu: (provided) => ({
+            ...provided,
+            paddingTop: '5px',
+            paddingBottom: '3px',
+            // width: '31rem',
         }),
     };
 
@@ -221,7 +259,7 @@ export default function RequestForm() {
                         <div>
                             <label>Company Name*</label>
                             <div>
-                                <input  placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                <input placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
@@ -230,44 +268,47 @@ export default function RequestForm() {
                         <div>
                             <label>Role/Designation (optional)</label>
                             <div>
-                                <input autoComplete="off" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                <input autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div>
                             <label>Email ID*</label>
                             <div>
-                                <input autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                <input placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div>
                             <label>Phone Number*</label>
-                            <div>
-                           
-                            {/* <Select
-                                className={`${styles.line6Input}`}
-                                id="country"
-                                options={countries}
-                                isSearchable={true}
-                                placeholder=" -- Please Select --"
-                                styles={customStyles}
-                                value={countries.find((option) => option.value === formData.country)}
-                                onChange={handleSelectChange}
-                            /> */}
+                            <div className={`${styles.phoneNoAndCodeBox}`}>
+                                <div >
+                                    <Select
+                                        className={`${styles.phoneCode}`}
+                                        id="countryCode"
+                                        placeholder="Code"
+                                        options={countries.map(country => ({
+                                            label: `+${country.code}`,
+                                            value: country.value,
+                                            code: country.code
+                                        }))}
+                                        isSearchable={true}
+                                        styles={customStyles2}
 
-{/* <input
-                        id="phone"
-                        name="phone"
-                        type="text"
-                        value={formData.phoneCode + formData.phone}  // Show the phone code + user input
-                        onChange={handleChange}
-                        placeholder="Enter phone number"
-                    /> */}
-                        </div>
-                            <div>
-                                <input autoComplete="off" required className={`${styles.line2Input}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+
+
+                                        value={countries.find(option => option.code === formData.phoneCode) ? {
+                                            label: `+${formData.phoneCode}`,
+                                            value: formData.phoneCode
+                                        } : null}
+                                        onChange={handleCountryCodeChange}
+                                    />
+                                </div>
+                                <div >
+                                    <input placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -289,7 +330,7 @@ export default function RequestForm() {
                         <div>
                             <div>Address*</div>
                             <div>
-                                <input autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
+                                <input placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
@@ -302,7 +343,7 @@ export default function RequestForm() {
                                 name="requirement"
                                 required
                                 className={`${styles.requirementInput}`}
-                                value={formData.requirement} 
+                                value={formData.requirement}
                                 onChange={handleChange}
                             >
                                 <option value="">-- Please Select --</option>
@@ -325,8 +366,8 @@ export default function RequestForm() {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                
-                               
+
+
                             />
                         </div>
                     </div>
@@ -360,10 +401,14 @@ export default function RequestForm() {
                             <input
                                 required
                                 type="submit"
-                                className="font3"
-                                style={{ fontSize: "17px", border: "none", color: "white", background: "rgba(1, 176, 241, 1)" }}
+
+                                className={`${styles.buttonInputBox} font3`}
+                            // style={{ fontSize: "17px", border: "none", color: "white", background: "rgba(1, 176, 241, 1)" }}
                             />
+
+
                             <div className={`${styles.demoArrowButton}`}>
+
                                 <FaArrowRightLong />
                             </div>
                         </div>
@@ -399,7 +444,7 @@ export default function RequestForm() {
                                         <img style={{ width: "28%" }} src={item.img} alt="" />
                                     </div>
 
-                                    <figcaption style={{ textAlign: "center" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
+                                    <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
 
                                 </figure>
                                 <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>

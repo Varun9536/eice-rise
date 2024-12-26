@@ -3,6 +3,11 @@ import logo from '../../assets/logo/logo.svg';
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
+import { FaInstagram } from "react-icons/fa6";
+
+import { FaFacebookSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 
 export default function FooterLower() {
@@ -29,12 +34,34 @@ export default function FooterLower() {
                             <div style={{ display: "flex", gap: "0px 20px", marginTop: "15px" }}>
 
                                 <div>
-                                    <FaLinkedin size={30} className="blueTextGlobalClass" />
+                                    <Link to={"https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true"}>
+                                        <FaLinkedin size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
                                 </div>
 
                                 <div>
-                                    <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
+                                    <Link to={"https://twitter.com/EiceTech24"}>
+                                        <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
                                 </div>
+
+                                <div>
+                                    <Link to={"https://www.instagram.com/eicetechnology24/?next=%2F"}>
+                                        <FaInstagram size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
+                                </div>
+
+                                <div>
+                                    <Link to={"https://www.facebook.com/Eicetechnology/"}>
+                                        <FaFacebookSquare size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
+                                </div>
+
+
 
                             </div>
                         </div>
@@ -95,7 +122,7 @@ export default function FooterLower() {
                         ©2024 EICE Technologies Pvt. Ltd. All rights reserved.
                     </div>
 
-                    <div style={{fontWeight : "bold"}}>
+                    <div style={{ fontWeight: "bold" }}>
                         Terms & Conditions
                     </div>
                 </div>

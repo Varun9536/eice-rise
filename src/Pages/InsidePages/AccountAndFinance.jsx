@@ -477,7 +477,7 @@ export default function AccountAndFinance() {
 
 
       <div >
-        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
         <FooterLower />
 
       </div>

@@ -1,36 +1,45 @@
 .footerMainBoxUpper1 {
+    /* display: flex;
+    justify-content: flex-end; */
+
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1270px;
+    margin: 0px auto;
+    align-items: center;
+    padding: 0px 3.5rem;
+    /* position: relative; */
 
 }
 
 .footerMainBoxUpper2 {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1530px;
+    width: 1530px; */
 
 }
 
 
-@media (max-width : 1540px) {
+/* @media (max-width : 1540px) {
     .footerMainBoxUpper2 {
 
         width: 1340px;
 
     }
-}
+} */
 
-@media (min-width : 1700px) and (max-width : 1750px)
+/* @media (min-width : 1700px) and (max-width : 1750px)
 {
     .footerMainBoxUpper2 {
 
         width: 1415px;
 
     }
-}
+} */
 
-@media (min-width : 2000px) {
+/* @media (min-width : 2000px) {
     .footerMainBoxUpper2 {
 
         width: 1150px;
@@ -41,7 +50,7 @@
     .footerHeadAndIconBox {
         width: 60%;
     }
-}
+} */
 
 
 
@@ -63,7 +72,7 @@
 }
 
 .footerLaptopImg {
-    width: 40%;
+    width: 36%;
 
 }
 
@@ -91,11 +100,14 @@
 
 .footerUpperPartHeading {
     font-size: 46px;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
 }
 
 .footerHeadAndIconBox {
-    width: 52%;
+    width: 57%;
+    /* margin-left: 10px; */
+
+
 }
 
 .demoButton:hover {
@@ -206,7 +218,7 @@
 
 @media (max-width : 800px) {
 
-    .footerMainBoxUpper2 {
+    .footerMainBoxUpper1 {
         flex-direction: column;
         padding-left: unset;
         /* margin-top: 30px; */
@@ -320,7 +332,7 @@
 
 
 
-@media (min-width : 800px) and (max-width : 1120px) {
+/* @media (min-width : 800px) and (max-width : 1120px) {
     .footerHeadAndIconBox {
         padding: 0px 40px;
     }
@@ -365,4 +377,13 @@
         font-size: 30px;
     }
 }
+ */
 
+
+.bluebg {
+   position: absolute;
+   /* width: 100%; */
+   left: 20rem;
+   overflow-x: hidden;
+
+}

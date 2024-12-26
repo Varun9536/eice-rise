@@ -4,12 +4,16 @@ import { FaArrowRightLong } from "react-icons/fa6";
 // import footer from "../../assets/footer/foot.webp"
 import { Link } from 'react-router-dom';
 
+import bluebg from "../../assets/blueBg/bluebg.webp"
+
 export default function FooterUpperPart({ text1, text2, text3, img }) {
     return (
-        <div className={`${styles.footerMainBoxUpper1} `}>
+
+        <>
+            <div className={`${styles.footerMainBoxUpper1} `}>
 
 
-            <div className={`${styles.footerMainBoxUpper2} `}>
+                {/* <div className={`${styles.footerMainBoxUpper2} `}> */}
 
                 <div className={`${styles.footerHeadAndIconBox}`}>
 
@@ -28,12 +32,23 @@ export default function FooterUpperPart({ text1, text2, text3, img }) {
 
                 </div>
 
+
                 <div className={`${styles.footerLaptopImg}`} >
-                    <img style={{ width: "100%" }} src={img} alt="" />
+                    <img style={{ width: "100%", }} src={img} alt="" />
+
                 </div>
+
+
+
+                {/* </div> */}
 
             </div>
 
-        </div>
+
+            {/* <div className={`${styles.bluebg}`} > */}
+                {/* <img className={`${styles.bluebg}`} style={{ width: "100%"}} src={bluebg} alt="" /> */}
+            {/* </div> */}
+        </>
+
     )
 }

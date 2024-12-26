@@ -18,6 +18,8 @@ import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
 import vimg from "../../assets/insidePages/vimg.webp"
 
+import FooterLower from "../../Components/Footer/FooterLower"
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart"
 
 
 
@@ -44,6 +46,8 @@ import slb from "../../assets/Hospitality/clients/slb.png"
 import salesvu from "../../assets/Hospitality/clients/salesvu.png"
 
 
+
+
 import clientHeadIcon from "../../assets/Hospitality/customer/subh.png"
 
 
@@ -53,6 +57,9 @@ import h2 from "../../assets/Hospitality/headIcon/h2.png"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from "../../Components/Footer/Footer"
+
+
+import footerLap from "../../assets/section3Laptop/account.webp"
 
 
 
@@ -283,6 +290,13 @@ export default function HospitalityPage() {
     // }, [feedback.length]);
 
 
+    const footerUpperText = {
+    
+        text1: "Flexible, Modular Solutions ",
+        text2: "",
+        text3: "tailored to your business needs.",
+        // img: footer
+      }
 
     return (
         <>
@@ -307,7 +321,7 @@ export default function HospitalityPage() {
 
 
 
-                        <Link style={{color : "white"}} className="linkClass" to={"form"}>
+                        <Link style={{ color: "white" }} className="linkClass" to={"form"}>
                             <div className={`${styles.demoButton}`}>
                                 <div> Request a Demo </div>
                                 <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
@@ -604,9 +618,12 @@ export default function HospitalityPage() {
 
                             <p style={{ lineHeight: "1.8rem", marginBottom: item.margin }} >{item.para}</p>
 
-                            <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
-                                View More
-                            </div>
+                            <Link to={"/pricing"} className="linkClass">
+                                <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
+                                    View More
+                                </div>
+                            </Link>
+
 
                         </div>
 
@@ -760,7 +777,11 @@ export default function HospitalityPage() {
 
             <div >
 
-                <Footer />
+                <div >
+                    <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerLap} />
+                    <FooterLower />
+
+                </div>
             </div>
 
 

@@ -1,6 +1,9 @@
 import styles from "./footer.module.css"
 import footer from "../../assets/footer/foot.webp"
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+
+import { FaFacebookSquare } from "react-icons/fa";
 
 import logo from '../../assets/logo/logo.svg';
 
@@ -30,15 +33,15 @@ export default function Footer() {
 
 
 
-                         <Link style={{ color: "white" }} className="linkClass" to={"form"}>
-                                               
-                        <div className={`${styles.demoButton} font1`}>
-                            <div > Request a Demo </div>
-                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
-                        </div>
-                                            </Link>
+                        <Link style={{ color: "white" }} className="linkClass" to={"form"}>
 
-                        
+                            <div className={`${styles.demoButton} font1`}>
+                                <div > Request a Demo </div>
+                                <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                            </div>
+                        </Link>
+
+
 
                     </div>
 
@@ -72,12 +75,36 @@ export default function Footer() {
                             <div style={{ display: "flex", gap: "0px 20px", marginTop: "15px" }}>
 
                                 <div>
-                                    <FaLinkedin size={30} className="blueTextGlobalClass" />
+                                    <Link to={"https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true"}>
+                                        <FaLinkedin size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
                                 </div>
 
                                 <div>
-                                    <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
+                                    <Link to={""}>
+                                        <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
                                 </div>
+
+                                <div>
+                                    <Link to={""}>
+                                        <FaInstagram size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
+                                </div>
+
+                                <div>
+                                    <Link to={"https://www.facebook.com/Eicetechnology/"}>
+                                        <FaFacebookSquare size={30} className="blueTextGlobalClass" />
+                                    </Link>
+
+                                </div>
+
+
+
+
 
                             </div>
                         </div>
