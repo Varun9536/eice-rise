@@ -234,6 +234,21 @@ export default function RequestForm() {
         }),
     };
 
+    const options = [
+        { value: 'Product Details or Demo', label: 'Product Details or Demo' },
+        { value: 'Product Pricing', label: 'Product Pricing' },
+        { value: 'Support or Training', label: 'Support or Training' },
+      ];
+
+    const handleSelectChange2 = (selectedOption) => {
+        handleChange({
+          target: {
+            name: 'requirement',
+            value: selectedOption ? selectedOption.value : '',
+          },
+        });
+      };
+
     return (
         <>
             <div className={`${styles.formHeadingBox}`}>
@@ -338,7 +353,9 @@ export default function RequestForm() {
                     <div className={`${styles.requirement}`}>
                         <label>Requirement*</label>
                         <div>
-                            <select
+
+
+                            {/* <select
                                 id="requirement"
                                 name="requirement"
                                 required
@@ -350,7 +367,20 @@ export default function RequestForm() {
                                 <option value="Product Details or Demo">Product Details or Demo</option>
                                 <option value="Product Pricing">Product Pricing</option>
                                 <option value="Support or Training">Support or Training</option>
-                            </select>
+                            </select> */}
+
+                            <Select
+                                id="requirement"
+                                name="requirement"
+                                options={options}
+                                value={options.find(option => option.value === formData.requirement)}
+                                onChange={handleSelectChange2}
+                                className={styles.requirementInput}
+                                placeholder="-- Please Select --"
+                                styles={customStyles2}
+                            />
+
+
                         </div>
                     </div>
 

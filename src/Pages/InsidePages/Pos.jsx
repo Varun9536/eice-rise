@@ -193,7 +193,7 @@ export default function Pos() {
 
     const footerUpperText = {
 
-        text1: ' Revolutionize',
+        text1: 'Revolutionize',
         text2: "",
         text3: 'your dining experience.',
         img: footerRoomLaptop

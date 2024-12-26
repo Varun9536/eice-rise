@@ -158,10 +158,10 @@ select option {
 .requirementInput {
     width: 68rem;
     font-size: 16px;
-    padding: 12px 10px;
+    /* padding: 12px 10px; */
     border-radius: 5px;
     margin-top: 0.4rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
 }
 
 .messageTextArea {
@@ -181,6 +181,7 @@ select option {
 
 .messageTextAreaInput::placeholder {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c2c0c0;
 }
 
 input[type="text"]::placeholder {
