@@ -183,21 +183,6 @@ export default function MemberSuite() {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <>
 
@@ -369,17 +354,7 @@ export default function MemberSuite() {
         </div>
       </section>
 
-      {/* <section className={`${style.requestDemoBtn}`}>
-
-        <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-          <div className={`${style.demoButton} font1`}>
-            <div > Request a Demo </div>
-            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-          </div>
-
-        </div>
-
-      </section> */}
+    
 
       <section className={`${style.requestDemoBtn}`}>
 
@@ -398,47 +373,7 @@ export default function MemberSuite() {
 
 
 
-      {/* <section style={{ background: "#f5f5f5" }} >
-        <div className={`${style.section5} font4 globalSectionSize`}>
-
-
-          <div className={`${style.section5heading} font4`}>Benefits</div>
-          {benefits.map((item, index) =>
-          (
-
-            index % 2 === 0 ? (<div className='GlobalBenefitBox1'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
-
-
-            </div>) : (<div className='GlobalBenefitBox2'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img} alt="" />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
-
-
-            </div>)
-
-
-          ))}
-
-        </div>
-      </section> */}
+    
 
       <section style={{ background: "#f5f5f5" }} >
         <div className={`${style.section5} font4 globalSectionSize`}>

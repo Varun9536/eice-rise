@@ -192,16 +192,7 @@ export default function RequestForm() {
             question: "Q : Can I customize the demo based on my business requirements?",
             answer: "A : Absolutely! During the request, let us know your specific needs, and we’ll tailor the demo to address them."
         },
-        // {
-        //     key: 4,
-        //     question: "Q : Can the Accounts & Finance module integrate with other systems?",
-        //     answer: "A : Yes, it integrates fully with other EICE Rise ERP modules like Room Booking, Banquet & Billing, Dining (POS), and more, ensuring synchronized financial records and consistent data flow."
-        // },
-        // {
-        //     key: 5,
-        //     question: "Q : How does the system assist in managing cash flow?",
-        //     answer: "A : It provides real-time tracking and reporting, helping businesses monitor cash flow, ensuring liquidity, and optimizing cash reserves."
-        // }
+        
     ];
 
     const customStyles = {

@@ -13,13 +13,13 @@
 
 }
 
-.footerMainBoxUpper2 {
-    /* display: flex;
+/* .footerMainBoxUpper2 {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1530px; */
+    width: 1530px;
 
-}
+} */
 
 
 /* @media (max-width : 1540px) {
@@ -55,8 +55,8 @@
 
 
 
-.footerMainBoxUpper {
-    /* display: flex;
+/* .footerMainBoxUpper {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -65,11 +65,11 @@
     max-width: 2000px;
     margin: 0px auto;
     width: 100%;
-    overflow-x: hidden; */
+    overflow-x: hidden;
 
 
 
-}
+} */
 
 .footerLaptopImg {
     width: 36%;

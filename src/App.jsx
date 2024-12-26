@@ -24,6 +24,11 @@ import Blogs from './Pages/NavigationBarPages/Blogs'
 import RequestForm from './Pages/RequestForm/RequestForm'
 
 
+import Android from './Pages/CaseStudy/Android/Android'
+import Durgabari from './Pages/CaseStudy/Durgabari/Durgabari'
+import IIC from './Pages/CaseStudy/IIC/IIC'
+
+
 
 
 const router = createBrowserRouter([
@@ -125,7 +130,28 @@ const router = createBrowserRouter([
       {
         path : "form",
         element : <RequestForm/>
+      } ,
+
+      {
+        path : "/android" ,
+        element : <Android/>
       }
+
+      ,
+
+      {
+        path : "/durgabari" ,
+        element : <Durgabari/>
+      }
+
+      ,
+
+      {
+        path : "/iic" ,
+        element : <IIC/>
+      }
+
+
 
     ]
 
