@@ -217,14 +217,14 @@ export default function HospitalityPage() {
             img: s1,
             heading: " Seamless Operations at LuxeStay Hotels",
             margin: "20px",
-            link : "/android" ,
+            link: "/android",
             para: "How EICE Rise streamlined front desk, housekeeping, and POS systems, boosting operational efficiency by 40%. "
         },
 
         {
             img: s2,
             heading: "Driving Guest Satisfaction for Serenity Resorts",
-            link : "/durgabari" ,
+            link: "/durgabari",
             para: "Enhanced guest experiences through AI-driven personalization and integrated feedback systems. ",
             margin: "20px"
         },
@@ -232,7 +232,7 @@ export default function HospitalityPage() {
         {
             img: s3,
             heading: " Expanding Global Reach with Gourmet Suites ",
-            link : "/iic" ,
+            link: "/iic",
             para: " Scaling operations across multiple properties with centralized data and real-time insights. ",
             margin: "50px"
         }
@@ -294,12 +294,12 @@ export default function HospitalityPage() {
 
 
     const footerUpperText = {
-    
+
         text1: "Flexible, Modular Solutions ",
         text2: "",
         text3: "tailored to your business needs.",
         // img: footer
-      }
+    }
 
     return (
         <>

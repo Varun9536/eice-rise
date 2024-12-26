@@ -147,41 +147,41 @@ export default function Club() {
 
 
 
-<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
+                <div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
+                    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-    <div className={`${styles.servicesBox} `}>
+                    <div className={`${styles.servicesBox} `}>
 
 
-        {services.map((item) =>
-        (
-            <Link className="linkClass" key={item.key} to={item.path}>
+                        {services.map((item) =>
+                        (
+                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                <div className={`${styles.iconAndTextBox} `}>
+                                <div className={`${styles.iconAndTextBox} `}>
 
-                    <div className={styles.imgBox} >
-                        <img src={item.icon} alt="" />
-                    </div>
-                    <div>
-                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    <div className={styles.imgBox} >
+                                        <img src={item.icon} alt="" />
+                                    </div>
+                                    <div>
+                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    </div>
+
+                                </div>
+
+                            </Link>
+
+                        ))}
                     </div>
 
                 </div>
 
-            </Link>
-
-        ))}
-    </div>
-
-</div>
 
 
 
 
 
-
-</section>
+            </section>
 
 
             <section className={`${styles.requestDemoBtn}`}>
