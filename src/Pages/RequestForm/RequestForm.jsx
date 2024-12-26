@@ -190,7 +190,7 @@ export default function RequestForm() {
         {
             key: 3,
             question: "Q : Can I customize the demo based on my business requirements?",
-            answer: "A : The module automates tax calculations based on regional and international tax regulations, ensuring compliance and applying taxes seamlessly to invoices and payments."
+            answer: "A : Absolutely! During the request, let us know your specific needs, and we’ll tailor the demo to address them."
         },
         // {
         //     key: 4,
