@@ -67,7 +67,7 @@ export default function Android() {
                     <div className={`${styles.briefDescBox}`}>
 
                         <div className={`${styles.briefDescHeading} font3`}>
-                            Project Brief
+                            Overview
                         </div>
 
                         <div className={`${styles.briefPara} font1`}>

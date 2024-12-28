@@ -116,7 +116,7 @@ export default function Vanilla() {
 
     return (
         <>
-            
+
 
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
@@ -127,7 +127,7 @@ export default function Vanilla() {
                     </div>
 
                     <div className={`${styles.overviewPara} font1`}>
-                    The Vanilla Suite is a <strong className="font2">versatile and comprehensive suite</strong>  that  <strong className="font2"> empowers businesses with inventory control, financial management</strong>, procurement, and operational cost tracking. <strong className="font2">Ideal for diverse industries</strong> , it offers the perfect blend of essential modules for efficient operations.
+                        The Vanilla Suite is a <strong className="font2">versatile and comprehensive suite</strong>  that  <strong className="font2"> empowers businesses with inventory control, financial management</strong>, procurement, and operational cost tracking. <strong className="font2">Ideal for diverse industries</strong> , it offers the perfect blend of essential modules for efficient operations.
 
                     </div>
 
@@ -140,55 +140,55 @@ export default function Vanilla() {
 
 
 
-<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
+                <div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
+                    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-    <div className={`${styles.servicesBox} `}>
+                    <div className={`${styles.servicesBox} `}>
 
 
-        {services.map((item) =>
-        (
-            <Link className="linkClass" key={item.key} to={item.path}>
+                        {services.map((item) =>
+                        (
+                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                <div className={`${styles.iconAndTextBox} `}>
+                                <div className={`${styles.iconAndTextBox} `}>
 
-                    <div className={styles.imgBox} >
-                        <img src={item.icon} alt="" />
-                    </div>
-                    <div>
-                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    <div className={styles.imgBox} >
+                                        <img src={item.icon} alt="" />
+                                    </div>
+                                    <div>
+                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    </div>
+
+                                </div>
+
+                            </Link>
+
+                        ))}
                     </div>
 
                 </div>
 
-            </Link>
-
-        ))}
-    </div>
-
-</div>
 
 
 
 
 
-
-</section>
+            </section>
 
 
 
             <section className={`${styles.requestDemoBtn}`}>
 
-               <Link to={"/form"} className="linkClass">
-                               <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                                   <div className={`${styles.demoButton} font1`}>
-                                       <div > Request for Pricing </div>
-                                       <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
-                                   </div>
-               
-                               </div>
-                               </Link>
+                <Link to={"/form"} className="linkClass">
+                    <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                        <div className={`${styles.demoButton} font1`}>
+                            <div > Request for Pricing </div>
+                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+
+                    </div>
+                </Link>
 
             </section>
 
