@@ -7,33 +7,80 @@ export default function IIC() {
 
     const challenges = [
         {
-            key: "Mobile Phones",
-            value: "On phones, only one screen could be viewed at a time, limiting the user's ability to multitask"
-        },
+            id: 1,
+            key: "User Access Control and Permissions",
+            value: (<>
 
+                <span> With multiple users, you need to ensure that the right users have access to the right parts of the software. Managing permissions, roles, and different user access levels can be complex.</span> <strong>Solution: </strong> <span>Role-Based Access Control (RBAC): Implement RBAC to manage user roles (admin, user, guest, etc.). Each role should have specific permissions for certain actions or data.</span>
+                <strong> Granular Permissions: </strong> <span>For more complex systems, permissions can be based on individual data entities (e.g., only a user's data or specific features) rather than whole sections of the software. </span>
+
+            </>)
+
+
+        },
         {
-            key: "Tablets",
-            value: "On tablets, the expectation was to have both screens displayed side by side for better productivity and a more efficient workflow."
+            id: 2,
+            key: "Understanding Client Requirements Vague Requirements",
+            value: (<>
+                <span> Clients may have unclear, incomplete, or unrealistic expectations. Translating their vision into specific, actionable requirements can be difficult.</span>
+                <strong> Changing Requirements: </strong> <span> Clients often change their mind during the development process, which can lead to scope creep, delays, and budget overruns.</span>
+            </>
+
+            )
+        },
+        {
+            id: 3,
+            key: "Testing and Quality Assurance Bug Fixes and Testing Delays",
+            value: (<>
+
+                <span> Insufficient testing can lead to bugs or issues that are only discovered later in the development process, leading to delays and unexpected costs.</span>
+
+                <strong> Client-Related Testing: </strong>
+                <span> Sometimes clients want to perform their own testing, which can lead to misunderstandings or unrealistic expectations about the final product's behavior.</span>
+
+            </>
+            )
+        },
+        {
+            id: 4,
+            key: "Scope Creep Adding Features",
+            value: (<>
+
+                <span>
+                    During the course of the project, clients may keep adding new features or change existing ones, which can significantly alter the scope of the project and lead to delays and budget issues.
+                </span>
+
+                <strong> Inadequate Documentation: </strong>
+                <span> Without proper documentation, scope changes can cause confusion and lead to miscommunication regarding what was agreed upon initially.</span>
+
+            </>)
+
         }
-    ]
+    ];
+
+
+
 
 
     const roleHighlights = [
         {
-            key: "Adaptive UI",
-            value: "Utilized fragments for a responsive layout that adapts to both phones and tablets."
+            id: 1,
+            key: "Determine Access Control",
+            value: "Different users may need different levels of access, and defining roles helps in managing who can do what."
         },
-
         {
-            key: "Efficient Workflow",
-            value: "Enabled side-by-side views on tablets, optimizing the user's workflow while maintaining simplicity on mobile"
+            id: 2,
+            key: "Provide Clear Responsibilities",
+            value: "Roles help define what users are expected to do within the software. This clarity is important for both the development and end-user experience."
         },
-
         {
-            key: "Efficient Workflow",
-            value: "Avoided the need for creating separate layouts for different devices, ensuring a more streamlined development process and easier maintenance."
+            id: 3,
+            key: "Facilitate the System's Structure",
+            value: "Defining roles allows a system to be organized and ensures users can only interact with relevant features."
         }
-    ]
+    ];
+
+    // ]
 
     return (
         <>
@@ -59,7 +106,7 @@ export default function IIC() {
                         </div>
 
                         <div className={`${styles.briefPara} font1`}>
-                        Implement Role-Based Access Control (RBAC), enabling tailored access for different user roles such as admin, user, and guest. This approach ensured secure, organized access to relevant data and features. We also tackled challenges around unclear client requirements, scope creep, and testing delays, delivering a secure, scalable system aligned with IICC's goals while maintaining clear communication and focused development
+                            Implement Role-Based Access Control (RBAC), enabling tailored access for different user roles such as admin, user, and guest. This approach ensured secure, organized access to relevant data and features. We also tackled challenges around unclear client requirements, scope creep, and testing delays, delivering a secure, scalable system aligned with IICC's goals while maintaining clear communication and focused development
                         </div>
 
                     </div>
@@ -78,7 +125,7 @@ export default function IIC() {
                 <div className={`${styles.informationBox} font1 `}>
 
                     <div className={`${styles.statement1}`} >
-                    Challenges with User Interaction in Multi-User Software Systems
+                        Challenges with User Interaction in Multi-User Software Systems
 
 
 
@@ -91,7 +138,7 @@ export default function IIC() {
                             {challenges.map((item) =>
                             (
                                 <li>
-                                    <strong>{item.key}:</strong>
+                                    <span className="font3">{item.key}:</span>
                                     <span> {item.value} </span>
                                 </li>
                             ))}
@@ -101,9 +148,9 @@ export default function IIC() {
 
                     </div>
 
-                    <div className={`${styles.statement3}`} >
+                    {/* <div className={`${styles.statement3}`} >
                         The challenge was to maintain a consistent user interface across devices without having to build entirely separate layouts for each device type.
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -117,8 +164,27 @@ export default function IIC() {
                 </div>
 
                 <div className={`${styles.roleDesc} font1 `}>
-                    EICE Technology was tasked with developing both the Android app and the Web Admin interface for Salevsu. Our primary responsibility was to create a seamless experience for users on different devices, focusing on optimizing the UI/UX and functionality for both mobile phones and tablets.
+                    When you are managing a multi-user software system, defining roles becomes crucial because each role comes with specific duties, access rights, and permissions to use or modify parts of the system.
                 </div>
+
+                <div className={`${styles.roleDesc} font1 `}>
+                    In software systems, roles are often used to:
+                </div>
+
+                <div className={`${styles.roleHighlights} font4`}>
+                    <ul>
+                        {roleHighlights.map((item) =>
+                        (
+                            <li>
+                                <strong>{item.key}:</strong>
+                                <span> {item.value} </span>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+
+
 
             </section>
 
@@ -164,7 +230,7 @@ export default function IIC() {
                     Value to Client
                 </div>
 
-                <div className={`${styles.highlightBox}`} >
+                {/* <div className={`${styles.highlightBox}`} >
 
                     <div className={`${styles.highlightBoxHeading} font1 `} >
                         Key HighLlights
@@ -183,10 +249,10 @@ export default function IIC() {
                         </ul>
 
                     </div>
-                </div>
+                </div> */}
 
                 <div className={`${styles.highlightsBottomPara} font1`}>
-                    Through this approach, EICE Technology delivered a flexible and user-friendly app experience for Salevsu, ensuring functionality across device types without compromising on performance or design.
+                Successfully developing multi-user software involves understanding and addressing the challenges of user interaction, permissions management, security, and client communication. Defining clear roles and responsibilities, implementing effective RBAC, and fostering good communication with the client are essential components of the process. These strategies will ensure that the software is functional, secure, and aligned with client expectations, ultimately leading to a successful project outcome
                 </div>
 
             </section>

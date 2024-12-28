@@ -236,7 +236,7 @@ export default function AccountAndFinance() {
 
 
 
-      <section className={`${style.section1} insidePageUpperSection`}>
+      {/* <section className={`${style.section1} insidePageUpperSection`}>
 
         <div className={`${style.pageHeadingBox}`}>
           <div className={`${style.section1Heading} font4`}>
@@ -249,6 +249,34 @@ export default function AccountAndFinance() {
           <img style={{ width: "100%" }} src={main} alt="" />
         </div>
 
+
+      </section> */}
+
+      <section className={`${style.section1Container}  `}>
+
+
+        <div className={`${style.fadeBackgroundConatiner}`}>
+
+          <div className={`${style.contentConatiner}`}>
+
+            <div className={`${style.headingBox} font4 `}>
+              <div className={`${style.mainHeading}`}>
+                <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
+              </div>
+              <div className={`${style.mainPara}`}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+              </div>
+
+
+            </div>
+
+            <div className={`${style.herosectionImgBox}`}>
+              {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+            </div>
+
+          </div>
+
+        </div>
 
       </section>
 

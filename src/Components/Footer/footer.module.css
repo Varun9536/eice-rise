@@ -1,6 +1,4 @@
 .footerMainBoxUpper1 {
-    /* display: flex;
-    justify-content: flex-end; */
 
     display: flex;
     justify-content: space-between;
@@ -9,9 +7,13 @@
     margin: 0px auto;
     align-items: center;
     padding: 0px 3.5rem;
-    /* position: relative; */
+    position: relative;
+
+
+
 
 }
+
 
 /* .footerMainBoxUpper2 {
     display: flex;
@@ -106,6 +108,7 @@
 .footerHeadAndIconBox {
     width: 57%;
     /* margin-left: 10px; */
+    /* position: absolute; */
 
 
 }
@@ -381,9 +384,12 @@
 
 
 .bluebg {
-   position: absolute;
-   /* width: 100%; */
-   left: 20rem;
-   overflow-x: hidden;
+
+    /* background: url("../../assets/blueBg/bluebg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    width: 100%; */
+    /* position: relative; */
 
 }

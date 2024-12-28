@@ -10,10 +10,13 @@ export default function FooterUpperPart({ text1, text2, text3, img }) {
     return (
 
         <>
+
+
+
             <div className={`${styles.footerMainBoxUpper1} `}>
 
 
-                {/* <div className={`${styles.footerMainBoxUpper2} `}> */}
+
 
                 <div className={`${styles.footerHeadAndIconBox}`}>
 
@@ -39,15 +42,16 @@ export default function FooterUpperPart({ text1, text2, text3, img }) {
                 </div>
 
 
-
-                {/* </div> */}
+                {/* <div className={`${styles.bluebg}`} >
+                    <img style={{ width: "100%" }} src={bluebg} alt="" />
+                </div> */}
 
             </div>
 
 
-            {/* <div className={`${styles.bluebg}`} > */}
-                {/* <img className={`${styles.bluebg}`} style={{ width: "100%"}} src={bluebg} alt="" /> */}
-            {/* </div> */}
+
+
+
         </>
 
     )
