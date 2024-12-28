@@ -184,13 +184,15 @@ export default function Enterprise() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                    <div className={`${styles.demoButton} font1`}>
-                        <div > Request for Pricing </div>
-                        <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
-                    </div>
-
-                </div>
+               <Link to={"/form"} className="linkClass">
+                               <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                                   <div className={`${styles.demoButton} font1`}>
+                                       <div > Request for Pricing </div>
+                                       <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                                   </div>
+               
+                               </div>
+                               </Link>
 
             </section>
 

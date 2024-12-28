@@ -186,6 +186,7 @@ export default function Banquet() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
+                <Link to={"/form"} className="linkClass">
                 <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                     <div className={`${styles.demoButton} font1`}>
                         <div > Request for Pricing </div>
@@ -193,6 +194,9 @@ export default function Banquet() {
                     </div>
 
                 </div>
+                </Link>
+
+               
 
             </section>
 
