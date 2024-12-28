@@ -188,16 +188,18 @@ li{
 .imgAndParaBox
 {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin-top: 1rem;
 }
 
 .valueToClientPara
 {
-    width: 55%;
+    width: 43%;
     font-size: 18px;
     line-height: 2rem;
+    margin-left: 3rem;
+    
 }
 
 .valueClientImg
