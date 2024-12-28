@@ -1,5 +1,5 @@
 .pageMainHeading {
-    margin-top: 12rem;
+    margin-top: 9rem;
     font-size: 38px;
     text-align: center;
     font-weight: 600;
@@ -7,7 +7,7 @@
 }
 
 .briefDescSection {
-    background-color: #012060;
+    background-color: rgb(245, 245, 245);
     margin-bottom: 3rem;
 
 }
@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    justify-content: center;
 
 }
 
@@ -67,14 +68,31 @@
     font-size: 18px;
 }
 
-.statement2
-{
+.informationBox {
+    margin-top: 1rem;
+}
+
+.statement2 {
     padding-left: 1.5rem;
     font-size: 18px;
+    line-height: 1rem;
 }
-li{
-    margin-bottom: 1rem;
+
+li {
+    /* margin-bottom: 1rem; */
     font-size: 18px;
+    padding-left: 1rem;
+}
+
+.value
+{
+   margin-left: 1.5rem;
+   margin-top: 1rem;
+}
+
+.listBox
+{
+    line-height: 2rem;
 }
 
 .statement3
@@ -168,3 +186,103 @@ li{
 
 
 
+.section2 {
+    margin-bottom: 2rem;
+    /* background-color: #F0FBFF; */
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+
+
+}
+
+
+
+
+
+
+.moduleboxAndHeading {
+    padding: 40px 75px;
+}
+
+.moduleIncludedHeading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+
+.servicesBox {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+
+.iconAndTextBox {
+
+    width: 10rem;
+    padding: 8px;
+    background-color: white;
+    height: 9rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+
+
+}
+
+.iconAndTextBox:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+.imgBox {
+
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.imgBox img {
+    width: 50%;
+}
+
+
+.serviceName {
+    padding: 10px 28px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.serviceName2 {
+    padding: 10px 14px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.conclusionSection
+{
+    padding: 0 4rem;
+    margin-bottom: 3rem;
+}
+
+
+.conclusionPara
+{
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 1rem;
+    line-height: 2rem;
+}

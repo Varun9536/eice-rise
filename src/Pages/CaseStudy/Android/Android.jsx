@@ -1,20 +1,20 @@
 import FooterLower from "../../../Components/Footer/FooterLower"
 import styles from "./android.module.css"
 
-import laptop from "../../../assets/section3Laptop/account.webp"
+import laptop from "../../../assets/caseStudy/android.webp"
 
 export default function Android() {
 
 
     const challenges = [
         {
-            id : "1" ,
+            id: "1",
             key: "Mobile Phones",
             value: "On phones, only one screen could be viewed at a time, limiting the user's ability to multitask"
         },
 
         {
-            id : "2",
+            id: "2",
             key: "Tablets",
             value: "On tablets, the expectation was to have both screens displayed side by side for better productivity and a more efficient workflow."
         }
@@ -23,19 +23,19 @@ export default function Android() {
 
     const roleHighlights = [
         {
-            id : "r1" ,
+            id: "r1",
             key: "Adaptive UI",
             value: "Utilized fragments for a responsive layout that adapts to both phones and tablets."
         },
 
         {
-            id : "r2" ,
+            id: "r2",
             key: "Efficient Workflow",
             value: "Enabled side-by-side views on tablets, optimizing the user's workflow while maintaining simplicity on mobile"
         },
 
         {
-            id : "r3" ,
+            id: "r3",
             key: "Code Reuseability",
             value: "Avoided the need for creating separate layouts for different devices, ensuring a more streamlined development process and easier maintenance."
         }
@@ -46,11 +46,17 @@ export default function Android() {
 
             <header className={`${styles.pageMainHeading}`}>
 
-                <span className="font4" >The</span>   <span className={`font2 blueTextGlobalClass `} >SalesVu </span>  <span className="font4" > Android App</span>
+                <div>
+                    <span className={`font2 blueTextGlobalClass `}>Inventory Suite</span><span className={"font1"}  >:  Transforming </span>
+                </div>
 
+                <div className="font1" >
+
+                    Operational Efficiency for  <span className={`font2 blueTextGlobalClass `} > Sales Vu</span>
+                </div>
             </header>
 
-            <section className={`${styles.briefDescSection} globalBlueOverviewSection `}>
+            <section className={`${styles.briefDescSection}  `}>
 
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
@@ -84,7 +90,7 @@ export default function Android() {
                 <div className={`${styles.informationBox} font1 `}>
 
                     <div className={`${styles.statement1}`} >
-                        Salevsu faced a unique design challenge in optimizing the user experience across different device types. The application consisted of two key screens: one for selecting the category and product, and the other for displaying order details.
+                        SalesVu faced a unique design challenge in optimizing the user experience across different device types. The application consisted of two key screens: one for selecting the category and product, and the other for displaying order details.
 
 
                     </div>

@@ -1,5 +1,5 @@
 .pageMainHeading {
-    margin-top: 12rem;
+    margin-top: 9rem;
     font-size: 38px;
     text-align: center;
     font-weight: 600;
@@ -7,7 +7,7 @@
 }
 
 .briefDescSection {
-    background-color: #012060;
+    background-color: rgb(245, 245, 245);
     margin-bottom: 3rem;
 
 }

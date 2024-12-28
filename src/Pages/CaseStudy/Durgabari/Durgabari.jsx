@@ -1,22 +1,34 @@
 import styles from "./durgabari.module.css"
-import laptop from "../../../assets/section3Laptop/account.webp"
+import laptop from "../../../assets/caseStudy/durga.webp"
+
+
+import { Link } from "react-router-dom"
+
+
+import account from "../../../assets/Hospitality/allPageIcon/Account.png"
+import pos from "../../../assets/Hospitality/allPageIcon/POS.png"
+import banquet from "../../../assets/Hospitality/allPageIcon/Banquet.png"
+import emp from "../../../assets/Hospitality/allPageIcon/Employee.png"
+import food from "../../../assets/Hospitality/allPageIcon/Food.png"
+import inentry from "../../../assets/Hospitality/allPageIcon/store.png"
+import member from "../../../assets/Hospitality/allPageIcon/Member.png"
+import pay from "../../../assets/Hospitality/allPageIcon/PAyscale.png"
+import room from "../../../assets/Hospitality/allPageIcon/Room.png"
+import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
 
 import FooterLower from "../../../Components/Footer/FooterLower"
 
 export default function Durgabari() {
 
 
-    // const challenges = [
-    //     {
-    //         key: "Mobile Phones",
-    //         value: "On phones, only one screen could be viewed at a time, limiting the user's ability to multitask"
-    //     },
+    const challenges = [
+        { id: 1, key: "Geographical Dispersion of Members", value: "HDBS needed to enhance accessibility for its community members across the globe while maintaining their cultural essence." },
+        { id: 2, key: "Complex Event and Resource Management", value: "The society faced inefficiencies in organizing cultural events, religious ceremonies, and venue reservations." },
+        { id: 3, key: "Fragmented Member Engagement", value: "Members lacked a unified platform to interact with the organization, access services, or stay updated on activities." },
+        { id: 4, key: "Manual Administrative Processes", value: "From managing memberships to processing event registrations and donations, manual workflows led to delays and errors." }
+    ];
 
-    //     {
-    //         key: "Tablets",
-    //         value: "On tablets, the expectation was to have both screens displayed side by side for better productivity and a more efficient workflow."
-    //     }
-    // ]
+
 
 
     // const roleHighlights = [
@@ -65,6 +77,113 @@ export default function Durgabari() {
         }
     ];
 
+    const services = [
+        {
+            serviceName: "ROOM BOOKING",
+            icon: room,
+            path: "/room-booking",
+            key: 1
+        },
+
+        {
+            serviceName: "DINNING (POS)",
+            icon: pos,
+            path: "/pos-dining",
+            key: 2
+        },
+
+        {
+            serviceName: "BANQUET & BILLING",
+            icon: banquet,
+            path: "/banquet-billing",
+            key: 3
+        },
+
+        {
+
+            serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
+            icon: member,
+            path: "/member-suite",
+            key: 4
+        },
+
+        {
+            serviceName: "ACCOUNT & FINANCE",
+            icon: account,
+            path: "/account-finance",
+            key: 5
+        },
+
+        // {
+        //     serviceName: "EMPLOYEE SUITE",
+        //     icon: emp,
+        //     path: "/employee-suite",
+        //     key: 6
+        // },
+
+        // {
+        //     serviceName: "PAYROLL",
+        //     icon: pay,
+        //     path: "/payroll",
+        //     key: 7
+        // },
+
+        // {
+        //     serviceName: "USER STORE & INVENTORY",
+        //     icon: inentry,
+        //     path: "/userstore-inventry",
+        //     key: 8
+        // },
+
+        // {
+        //     serviceName: "PURCHASE & VENDOR PORTAL",
+        //     icon: vendor,
+        //     path: "/purchase-vendor",
+        //     key: 9
+        // },
+
+        // {
+        //     serviceName: "FOOD & BEVERAGE COST ANALYSIS",
+        //     icon: food,
+        //     path: "/food-cost",
+        //     key: 10
+        // }
+    ]
+
+
+    const value = [
+        {
+            id: 1,
+            key: "Enhanced Accessibility and Inclusivity",
+            value: "Through the member portal and e-Puja platform, members worldwide could participate in religious ceremonies, stay updated on events, and contribute to the community.",
+        },
+        {
+            id: 2,
+            key: "Operational Efficiency",
+            value: "Automated processes for venue reservations, event registrations, and membership renewals reduced administrative burdens, allowing staff to focus on community enrichment.",
+        },
+        {
+            id: 3,
+            key: "Streamlined Financial Operations",
+            value: "The integration of POS and Accounts & Finance modules improved donation management, facilitated secure transactions, and provided real-time insights into financial health.",
+        },
+        {
+            id: 4,
+            key: "Improved Member Engagement",
+            value: "The member portal became a one-stop solution for members, enabling them to easily manage bookings, participate in events, and interact with the society.",
+        },
+        {
+            id: 5,
+            key: "Preservation of Cultural Values",
+            value: "HDBS seamlessly blended its cultural and religious heritage into the digital platform, ensuring that the essence of their traditions remained intact while embracing modern technology.",
+        },
+        {
+            id: 6,
+            key: "Global Reach and Community Building",
+            value: "The platform fostered stronger connections within the HDBS community, bridging geographical gaps and ensuring every member felt included and valued.",
+        },
+    ];
+
 
     const valueToClient = [
         {
@@ -100,17 +219,54 @@ export default function Durgabari() {
     ];
 
 
+    const help = [
+        {
+            id: 1,
+            key: "Member Portal Integration",
+            value1: "Provided a centralized hub for members to manage their profiles, access religious services, and book venues or events.",
+            value2: "Enabled features like smart card recharges and seamless POS transactions for donations and event payments.",
+            value3: "Improved user engagement by offering easy access to organizational updates and activities.",
+        },
+        {
+            id: 2,
+            key: "Room Service Management",
+            value1: "Streamlined the reservation process for religious and cultural venues.",
+            value2: "Offered intuitive booking workflows, ensuring an organized and efficient system for managing room and resource allocation.",
+        },
+        {
+            id: 3,
+            key: "POS and Banquet Modules",
+            value1: "Facilitated efficient financial transactions during events, including catering services and donation drives.",
+            value2: "Improved the experience for members by offering seamless, secure, and quick payment processing during community events.",
+        },
+        {
+            id: 4,
+            key: "Accounts & Finance",
+            value1: "Centralized financial tracking for donations, event revenues, and operational expenses.",
+            value2: "Enhanced transparency and enabled HDBS to maintain accurate records of its financial activities.",
+        },
+    ];
+
+
+
 
     return (
         <>
 
             <header className={`${styles.pageMainHeading}`}>
 
-                <span className="font4" >Houston</span>   <span className={`font2 blueTextGlobalClass `} >Durga Bari Socienty</span>  <span className="font4" > (HBDS)</span>
+                <div>
+                    <span className={`font2 blueTextGlobalClass `}>Club Suite</span><span className={"font1"}  >:  Empowering Community Operations</span>
+                </div>
+
+                <div className="font1" >
+                    {/* International Center <span className={`font2 blueTextGlobalClass `} >(IIC)</span> */}
+                    for <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> (HDBS)
+                </div>
 
             </header>
 
-            <section className={`${styles.briefDescSection} globalBlueOverviewSection `}>
+            <section className={`${styles.briefDescSection}  `}>
 
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
@@ -121,11 +277,11 @@ export default function Durgabari() {
                     <div className={`${styles.briefDescBox}`}>
 
                         <div className={`${styles.briefDescHeading} font3`}>
-                            Project Brief
+                            Overview
                         </div>
 
                         <div className={`${styles.briefPara} font1`}>
-                            Digitize and streamline their operations, enhancing the overall experience for their community members. The project aimed to integrate various services, making them accessible online while preserving the cultural and religious essence of the society.
+                            The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
                         </div>
 
                     </div>
@@ -134,22 +290,61 @@ export default function Durgabari() {
 
             </section>
 
+            <section className={`${styles.section2} `}>
+
+
+
+                <div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
+
+                    <div className={`${styles.moduleIncludedHeading} font4`}>The Enterprise Suite included the following modules:</div>
+
+                    <div className={`${styles.servicesBox} `}>
+
+
+                        {services.map((item) =>
+                        (
+                            <Link className="linkClass" key={item.key} to={item.path}>
+
+                                <div className={`${styles.iconAndTextBox} `}>
+
+                                    <div className={styles.imgBox} >
+                                        <img src={item.icon} alt="" />
+                                    </div>
+                                    <div>
+                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    </div>
+
+                                </div>
+
+                            </Link>
+
+                        ))}
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </section>
+
 
             <section className={`${styles.challengeSection} globalSectionSize `} >
 
                 <div className={`${styles.sectionHeading} font3 `}>
-                    The Challenge
+                    The Challenges Addressed with the Club Suite
                 </div>
 
                 <div className={`${styles.informationBox} font1 `}>
 
-                    <div className={`${styles.statement1}`} >
-                        The Houston Durga Bari Society (HDBS) faced challenges in engaging with a geographically dispersed community while maintaining efficient management of its diverse activities. These included organizing religious and cultural events, managing memberships, facilitating venue reservations, and providing virtual access to religious services. The lack of a unified digital platform led to operational inefficiencies, limited accessibility for members, and a fragmented user experience. HDBS needed a comprehensive digital solution to centralize its offerings, enharice user engagement, and streamline administrative processes while preserving the essence of its cultural and religious heritage.
+                    {/* <div className={`${styles.statement1}`} >
+                        The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
 
+                    </div> */}
 
-                    </div>
-
-                    {/* <div className={`${styles.statement2}`} >
+                    <div className={`${styles.statement2}`} >
                         <ul>
 
                             {challenges.map((item) =>
@@ -163,7 +358,7 @@ export default function Durgabari() {
 
 
 
-                    </div> */}
+                    </div>
 
                     {/* <div className={`${styles.statement3}`} >
                         The challenge was to maintain a consistent user interface across devices without having to build entirely separate layouts for each device type.
@@ -174,7 +369,7 @@ export default function Durgabari() {
             </section>
 
 
-            <section className={`${styles.ourRoleSection} globalSectionSize `}>
+            {/* <section className={`${styles.ourRoleSection} globalSectionSize `}>
 
                 <div className={`${styles.sectionHeading} font3`}>
                     Our Role
@@ -184,19 +379,90 @@ export default function Durgabari() {
                     At EICE Technology, we partnered with the Houston Durga Bari Society (HDBS) to bring their vision of a digitally connected and efficiently managed community to life. By leveraging our expertise in web development, digital solutions, and user-centric design, we delivered a comprehensive platform tailored to meet HDBS's unique needs
                 </div>
 
-            </section>
+            </section> */}
 
+
+            <section className={`${styles.challengeSection} globalSectionSize `} >
+
+                <div className={`${styles.sectionHeading} font3 `}>
+                    How the Club Suite Helped ?
+                </div>
+
+                <div className={`${styles.informationBox} font1 `}>
+
+                    {/* <div className={`${styles.statement1}`} >
+                        Challenges with User Interaction in Multi-User Software Systems
+
+
+
+
+                    </div> */}
+
+                    <div className={`${styles.statement2}`} >
+
+
+                        {help.map((item, index) =>
+                        (
+                            <>
+                                {/* <ol className="font3">
+                                    <li>
+                                        {item.key}:
+                                    </li>
+                                </ol> */}
+
+                                <div className="font3 blueTextGlobalClass">
+                                    <span>{index + 1}. </span>
+                                    {item.key}:
+                                </div>
+
+                                <div className={`${styles.value}`} >
+                                    <ul>
+                                        <li >
+                                            {item.value1}
+
+                                        </li>
+                                        {item.value2 && (<li>
+                                            {item.value2}
+                                        </li>)}
+
+                                        {item.value3 && (<li>
+                                            {item.value3}
+                                        </li>)}
+
+                                    </ul>
+                                </div>
+
+
+
+
+
+                            </>
+
+                        ))}
+
+
+
+
+                    </div>
+
+                    {/* <div className={`${styles.statement3}`} >
+                        The challenge was to maintain a consistent user interface across devices without having to build entirely separate layouts for each device type.
+                    </div> */}
+
+                </div>
+
+            </section>
 
             <section className={`${styles.empoweringiListSection} globalSectionSize`}>
 
-                <div className={`${styles.sectionHeading} font1`}>
-                    Empowering Houston Durga Bari Society
+                <div className={`${styles.sectionHeading} font3`}>
+                    Value Delivered to HBDS
                 </div>
 
                 <div className={`${styles.listBox} font1`} >
                     <ul>
 
-                        {empoweringList.map((item) =>
+                        {value.map((item) =>
                         (
                             <li key={item.id}>
                                 <strong>{item.key}:</strong>
@@ -212,7 +478,7 @@ export default function Durgabari() {
             </section>
 
 
-            <section className={`${styles.toolsAndTechSection} globalSectionSize`} >
+            {/* <section className={`${styles.toolsAndTechSection} globalSectionSize`} >
                 <div className={`${styles.sectionHeading} font3 `}>
                     Tools and Technology
                 </div>
@@ -244,10 +510,10 @@ export default function Durgabari() {
 
                 </div>
 
-            </section>
+            </section> */}
 
 
-            <section className={`${styles.valuesToClientSection} globalSectionSize `} >
+            {/* <section className={`${styles.valuesToClientSection} globalSectionSize `} >
 
                 <div className={`${styles.sectionHeading} font3`}>
 
@@ -256,9 +522,7 @@ export default function Durgabari() {
 
                 <div className={`${styles.highlightBox}`} >
 
-                    {/* <div className={`${styles.highlightBoxHeading} font1 `} >
-                        Key HighLlights
-                    </div> */}
+                   
 
                     <div className={`${styles.highlightDesc} font4 `}>
                         Our digital solutions provided Houston Durga Bari Society (HDBS) with transformative benefits that enhanced their operational efficiency, expanded their reach, and elevated the overall member experience
@@ -279,11 +543,25 @@ export default function Durgabari() {
                     </div>
                 </div>
 
-                {/* <div className={`${styles.highlightsBottomPara} font1`}>
-                    Through this approach, EICE Technology delivered a flexible and user-friendly app experience for Salevsu, ensuring functionality across device types without compromising on performance or design.
-                </div> */}
+                
 
-            </section>
+            </section> */}
+
+
+             <section className={`${styles.conclusionSection} globalSectionSize `} >
+            
+                            <div className={`${styles.sectionHeading} font3`}>
+            
+                                Conclusion
+                            </div>
+            
+            
+                            <div className={`${styles.conclusionPara} font1`}>
+                                {/* By implementing the Enterprise Suite, <span className="font2 blueTextGlobalClass">EICE Technology empowered IIC to overcome its operational challenges, enhance security, and foster seamless multi-user interactions</span> . The result was a scalable, efficient, and secure system that aligned with IIC's vision for the future. */}
+                                The implementation of the <span className="font2 blueTextGlobalClass" >Club Suite was a pivotal moment for the Houston Durga Bari Society</span> . By addressing their operational challenges holistically, <span className="font2 blueTextGlobalClass" >EICE Technology enabled HDBS to embrace a future-ready, scalable platform</span>  that not only optimized their workflows but also reinforced their cultural and religious values across their global community
+                            </div>
+            
+                        </section>
 
             <div>
                 <FooterLower />
