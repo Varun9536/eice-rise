@@ -216,7 +216,7 @@ export default function FoodCost() {
 
 
 
-      <section className={`${style.section1} insidePageUpperSection`}>
+      {/* <section className={`${style.section1} insidePageUpperSection`}>
 
         <div className={`${style.pageHeadingBox}`}>
           <div className={`${style.section1Heading} font4`}>
@@ -230,7 +230,38 @@ export default function FoodCost() {
         </div>
 
 
-      </section>
+
+
+      </section> */}
+
+
+        <section className={`${style.section1Container}  `}>
+      
+      
+              <div className={`${style.fadeBackgroundConatiner}`}>
+      
+                <div className={`${style.contentConatiner}`}>
+      
+                  <div className={`${style.headingBox} font4 `}>
+                    <div className={`${style.mainHeading}`}>
+                      <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
+                    </div>
+                    <div className={`${style.mainPara}`}>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                    </div>
+      
+      
+                  </div>
+      
+                  <div className={`${style.herosectionImgBox}`}>
+                    {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                  </div>
+      
+                </div>
+      
+              </div>
+      
+            </section>
 
 
       <section style={{ backgroundColor: "#f5f5f5" }}>

@@ -54,29 +54,29 @@ export default function UserAndInventry() {
             key: 1,
             heading: "Centralized User Management",
             desc: "Streamline user access store-wise with customizable roles and permissions.",
-            img: cum, 
-            width: "64px" 
+            img: cum,
+            width: "64px"
         },
         {
             key: 2,
             heading: "Efficient Store Management",
             desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
-            img: esm, 
-            width: "65px" 
+            img: esm,
+            width: "65px"
         },
         {
             key: 3,
             heading: "Real-Time Inventory Control",
             desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
-            img: rtic, 
-            width: "54px" 
+            img: rtic,
+            width: "54px"
         },
         {
             key: 4,
             heading: "Advanced Reporting and Analytics",
             desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
-            img: ara, 
-            width: "65px" 
+            img: ara,
+            width: "65px"
         },
         {
             key: 5,
@@ -89,8 +89,8 @@ export default function UserAndInventry() {
             key: 6,
             heading: "Seamless ERP Integration",
             desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
-            img: serpi, 
-            width: "63px" 
+            img: serpi,
+            width: "63px"
         }
     ];
 
@@ -131,7 +131,7 @@ export default function UserAndInventry() {
             img: iic,
         },
 
-        
+
     ];
 
 
@@ -171,7 +171,7 @@ export default function UserAndInventry() {
         text2: "",
         text3: "with precision using our robust management system",
         img: footer
-      }
+    }
 
 
 
@@ -188,7 +188,7 @@ export default function UserAndInventry() {
 
 
 
-<section className={`${style.section1} insidePageUpperSection`}>
+            {/* <section className={`${style.section1} insidePageUpperSection`}>
            
                     <div className={`${style.pageHeadingBox}`}>
                         <div className={`${style.section1Heading} font4`}>
@@ -202,13 +202,42 @@ export default function UserAndInventry() {
                     </div>
               
 
+            </section> */}
+
+
+            <section className={`${style.section1Container}  `}>
+
+
+                <div className={`${style.fadeBackgroundConatiner}`}>
+
+                    <div className={`${style.contentConatiner}`}>
+
+                        <div className={`${style.headingBox} font4 `}>
+                            <div className={`${style.mainHeading}`}>
+                                <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
+                            </div>
+                            <div className={`${style.mainPara}`}>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                            </div>
+
+
+                        </div>
+
+                        <div className={`${style.herosectionImgBox}`}>
+                            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                        </div>
+
+                    </div>
+
+                </div>
+
             </section>
 
 
             <section style={{ backgroundColor: "#f5f5f5" }}>
                 <div className={`${style.section2} font4 globalSectionSize`}>
 
-                   
+
 
 
 
@@ -247,7 +276,7 @@ export default function UserAndInventry() {
                         </div>
                     </div>
 
-                    
+
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
@@ -353,20 +382,20 @@ export default function UserAndInventry() {
                 </div>
             </section>
 
-             <section className={`${style.requestDemoBtn}`}>
-            
-                    <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
-                      <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+            <section className={`${style.requestDemoBtn}`}>
+
+                <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                    <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${style.demoButton} font1`}>
-                          <div > Request a Demo </div>
-                          <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                            <div > Request a Demo </div>
+                            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
                         </div>
-            
-                      </div>
-                    </Link>
-            
-            
-                  </section>
+
+                    </div>
+                </Link>
+
+
+            </section>
 
 
 

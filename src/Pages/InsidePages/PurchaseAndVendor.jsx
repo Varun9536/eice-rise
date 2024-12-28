@@ -220,7 +220,7 @@ export default function PurchaseAndVendor() {
 
 
 
-<section className={`${style.section1} insidePageUpperSection`}>
+{/* <section className={`${style.section1} insidePageUpperSection`}>
               
                     <div className={`${style.pageHeadingBox}`}>
                         <div className={`${style.section1Heading} font4`}>
@@ -234,7 +234,36 @@ export default function PurchaseAndVendor() {
                     </div>
                
 
-            </section>
+            </section> */}
+
+
+              <section className={`${style.section1Container}  `}>
+            
+            
+                    <div className={`${style.fadeBackgroundConatiner}`}>
+            
+                      <div className={`${style.contentConatiner}`}>
+            
+                        <div className={`${style.headingBox} font4 `}>
+                          <div className={`${style.mainHeading}`}>
+                            <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
+                          </div>
+                          <div className={`${style.mainPara}`}>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                          </div>
+            
+            
+                        </div>
+            
+                        <div className={`${style.herosectionImgBox}`}>
+                          {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                        </div>
+            
+                      </div>
+            
+                    </div>
+            
+                  </section>
 
 
 
