@@ -44,6 +44,42 @@
     line-height: 2rem;
 }
 
+
+.moduleSection
+{
+    padding: 3rem 4rem;
+}
+
+.moduleBox
+{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.iconAndName
+{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    
+}
+
+.iconWidth
+{
+    width: 7rem;
+    /* border: 2px solid red; */
+    background-color: #F0F0F0;
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+   
+}
+
+.moduleNames
+{
+    font-size: 18px;
+}
+
 .challengeSection
 {
     padding: 0rem 4rem;
@@ -94,6 +130,7 @@ li{
     font-size: 18px;
     line-height: 1.7rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .toolsAndTechSection
@@ -144,6 +181,28 @@ li{
     font-style: italic;
     margin-top: 3rem;
 
+}
+
+
+
+.imgAndParaBox
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.valueToClientPara
+{
+    width: 55%;
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.valueClientImg
+{
+    width: 40%;
 }
 
 

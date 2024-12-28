@@ -217,7 +217,7 @@ export default function UserAndInventry() {
                                 <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
                             </div>
                             <div className={`${style.mainPara}`}>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                            Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
                             </div>
 
 

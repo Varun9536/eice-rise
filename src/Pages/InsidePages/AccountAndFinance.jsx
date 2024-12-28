@@ -264,7 +264,7 @@ export default function AccountAndFinance() {
                 <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
               </div>
               <div className={`${style.mainPara}`}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+              Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
               </div>
 
 

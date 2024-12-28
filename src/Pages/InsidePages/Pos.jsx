@@ -225,33 +225,33 @@ export default function Pos() {
             </section> */}
 
 
-              <section className={`${style.section1Container}  `}>
-            
-            
-                    <div className={`${style.fadeBackgroundConatiner}`}>
-            
-                      <div className={`${style.contentConatiner}`}>
-            
+            <section className={`${style.section1Container}  `}>
+
+
+                <div className={`${style.fadeBackgroundConatiner}`}>
+
+                    <div className={`${style.contentConatiner}`}>
+
                         <div className={`${style.headingBox} font4 `}>
-                          <div className={`${style.mainHeading}`}>
-                            <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
-                          </div>
-                          <div className={`${style.mainPara}`}>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
-                          </div>
-            
-            
+                            <div className={`${style.mainHeading}`}>
+                                <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                            </div>
+                            <div className={`${style.mainPara}`}>
+                                Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+                            </div>
+
+
                         </div>
-            
+
                         <div className={`${style.herosectionImgBox}`}>
-                          {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
                         </div>
-            
-                      </div>
-            
+
                     </div>
-            
-                  </section>
+
+                </div>
+
+            </section>
 
 
             <section style={{ backgroundColor: "#f5f5f5" }}>
@@ -398,19 +398,19 @@ export default function Pos() {
             </section>
 
             <section className={`${style.requestDemoBtn}`}>
-           
-                   <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
-                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                       <div className={`${style.demoButton} font1`}>
-                         <div > Request a Demo </div>
-                         <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                       </div>
-           
-                     </div>
-                   </Link>
-           
-           
-                 </section>
+
+                <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+                    <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                        <div className={`${style.demoButton} font1`}>
+                            <div > Request a Demo </div>
+                            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+
+                    </div>
+                </Link>
+
+
+            </section>
 
 
 

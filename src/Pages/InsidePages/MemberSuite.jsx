@@ -216,7 +216,7 @@ export default function MemberSuite() {
                       <span style={{ color: "#012060" }} >MEMBER</span><span style={{ color: "#01B0F1" }} > SUITE</span>
                     </div>
                     <div className={`${style.mainPara}`}>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                    Build a thriving member community with our Membership Portal, offering streamlined membership management and engagement tools.
                     </div>
       
       

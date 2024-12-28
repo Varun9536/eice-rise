@@ -3,6 +3,13 @@ import styles from "./android.module.css"
 
 import laptop from "../../../assets/caseStudy/android.webp"
 
+import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
+import inentry from "../../../assets/Hospitality/allPageIcon/store.png"
+import { Link } from "react-router-dom"
+
+
+import family from "../../../assets/caseStudy/family.webp"
+
 export default function Android() {
 
 
@@ -40,6 +47,26 @@ export default function Android() {
             value: "Avoided the need for creating separate layouts for different devices, ensuring a more streamlined development process and easier maintenance."
         }
     ]
+
+    const modules = [
+        {
+            key: "USER STORE & INVENTORY",
+            icon: inentry,
+            path: "/userstore-inventry",
+            id: 1,
+            value: "Ensured real-time inventory tracking and seamless store operations"
+        },
+
+        {
+            key: "PURCHASE & VENDOR PORTAL",
+            icon: vendor,
+            path: "/purchase-vendor",
+            id: 2,
+            value: "Enabled efficient vendor management and streamlined purchase processes"
+        },
+    ]
+
+
 
     return (
         <>
@@ -120,6 +147,50 @@ export default function Android() {
             </section>
 
 
+            <section className={`${styles.moduleSection} globalSectionSize `} >
+
+                <div className={`${styles.sectionHeading} font3`}>
+                    Modules Included
+                </div>
+
+                <div className={`${styles.moduleBox}`}>
+
+
+
+                    {modules.map((item) =>
+                    (
+                        <Link className="linkClass" to={item.path}>
+
+
+
+                            <div className={`${styles.iconAndName}`}>
+
+                                <div style={{ border: "1px solid rgba(0, 0, 0, 0.2)", padding: "5px" }}>
+                                    <div className={`${styles.iconWidth}`}>
+                                        <img style={{ width: "100%" }} src={item.icon} alt="" />
+                                    </div>
+                                </div>
+
+                                <div className={`${styles.moduleNames}`} >
+                                    <span className="font3">{item.key}:</span> <span className="font1" > {item.value}</span>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </Link>
+                    ))}
+
+
+
+
+                </div>
+
+            </section>
+
+
             <section className={`${styles.ourRoleSection} globalSectionSize `}>
 
                 <div className={`${styles.sectionHeading} font3`}>
@@ -127,39 +198,19 @@ export default function Android() {
                 </div>
 
                 <div className={`${styles.roleDesc} font1 `}>
-                    EICE Technology was tasked with developing both the Android app and the Web Admin interface for Salevsu. Our primary responsibility was to create a seamless experience for users on different devices, focusing on optimizing the UI/UX and functionality for both mobile phones and tablets.
+                    EICE Technology utilized the Inventory Suite to address these challenges, providing end-to-end support for both the Android app and the Web Admin interface.
+
                 </div>
+
+                <ul >
+                    <li> <strong className="font1">Developed a  <span className="font2 blueTextGlobalClass "> responsive UI/UX</span>  that adapted to both phones and tablets.
+                    </strong> </li>
+                    <li> <strong className="font1">Designed features to <span className="font2  blueTextGlobalClass">simplify inventory and vendor management</span>  while maintaining a consistent experience across devices.</strong> </li>
+                </ul>
 
             </section>
 
 
-            <section className={`${styles.toolsAndTechSection} globalSectionSize`} >
-                <div className={`${styles.sectionHeading} font3 `}>
-                    Tools and Technology
-                </div>
-
-                <div className={`${styles.technology} font1 `}>
-
-                    <div className={`${styles.technologyName}`}  >
-                        Android
-                    </div>
-
-                    <div className={`${styles.technologyName}`}  >
-                        Core Java
-                    </div>
-
-                    <div className={`${styles.technologyName}`}  >
-                        Eclipse
-                    </div>
-
-                    <div className={`${styles.technologyName}`}  >
-                        Mercury Payment Gateway
-
-                    </div>
-
-                </div>
-
-            </section>
 
 
             <section className={`${styles.valuesToClientSection} globalSectionSize `} >
@@ -169,30 +220,21 @@ export default function Android() {
                     Value to Client
                 </div>
 
-                <div className={`${styles.highlightBox}`} >
+                <div className={`${styles.imgAndParaBox}  font1`}>
 
-                    <div className={`${styles.highlightBoxHeading} font1 `} >
-                        Key HighLlights
+                    <div className={`${styles.valueClientImg}`}>
+                        <img style={{ width: "100%" }} src={family} alt="" />
                     </div>
 
-                    <div className={`${styles.highlightsList} font4 `}>
-
-                        <ul>
-                            {roleHighlights.map((item) =>
-                            (
-                                <li key={item.id}>
-                                    <strong>{item.key}:</strong>
-                                    <span> {item.value} </span>
-                                </li>
-                            ))}
-                        </ul>
-
+                    <div className={`${styles.valueToClientPara}`}>
+                      <strong>By leveraging the Inventory Suite</strong>  , EICE Technology helped SalesVu create an app that not only met their <span>technical requirements</span>  but also <strong>enhanced operational efficiency</strong> . The suite ensured that SalesVu could deliver a seamless, user- friendly experience to their customers while managing inventory and vendor interactions effortlessly. Through this approach, <strong> EICE Technology delivered a solution that was flexible, functional, and future-ready</strong> , empowering SalesVu to maintain their competitive edge in the POS market.
                     </div>
+
                 </div>
 
-                <div className={`${styles.highlightsBottomPara} font1`}>
-                    Through this approach, EICE Technology delivered a flexible and user-friendly app experience for Salevsu, ensuring functionality across device types without compromising on performance or design.
-                </div>
+
+
+
 
             </section>
 

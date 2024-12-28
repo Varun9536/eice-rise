@@ -253,7 +253,7 @@ export default function EmployeeSuite() {
                       <span style={{ color: "#012060" }} >EMPLOYEE</span><span style={{ color: "#01B0F1" }} > SUITE</span>
                     </div>
                     <div className={`${style.mainPara}`}>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                    Empower your team with centralized access to essential resources, payroll, and performance management tools..
                     </div>
       
       

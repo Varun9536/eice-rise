@@ -247,7 +247,7 @@ export default function FoodCost() {
                       <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
                     </div>
                     <div className={`${style.mainPara}`}>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                    Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
                     </div>
       
       

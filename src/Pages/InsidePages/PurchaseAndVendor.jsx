@@ -249,7 +249,7 @@ export default function PurchaseAndVendor() {
                             <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
                           </div>
                           <div className={`${style.mainPara}`}>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                          Optimize vendor management with a comprehensive portal for seamless purchasing, invoicing, and communication
                           </div>
             
             

@@ -221,7 +221,7 @@ export default function BanquetAnsBilling() {
                       <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
                     </div>
                     <div className={`${style.mainPara}`}>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                    Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
                     </div>
       
       

@@ -234,7 +234,7 @@ export default function Payroll() {
                       <span style={{ color: "#012060" }} >PAYROLL</span><span style={{ color: "#01B0F1" }} > MANAGEMENT</span>
                     </div>
                     <div className={`${style.mainPara}`}>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore, repellat officia et amet nam aut odit distinctio dolorum nesciunt!
+                    Simplify payroll processing with automated solutions for timely payouts, tax compliance, and employee satisfaction.
                     </div>
       
       
