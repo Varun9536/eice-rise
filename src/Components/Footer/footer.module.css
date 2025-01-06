@@ -393,3 +393,63 @@
     /* position: relative; */
 
 }
+
+
+
+.contactContainer {
+    /* border: 2px solid white; */
+    height: 200px;
+    width: 500px;
+    color: white;
+   
+
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.getInTouchBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addressContainer {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.logoAndDetailBox
+{
+    display: flex;
+    /* line-height: 1rem; */
+    column-gap: 10px;
+   
+}
+
+
+.indiaOffice {
+    border: 2px solid white;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 20px;
+
+}
+
+
+.usOffice {
+    border: 2px solid white;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+
+
+
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+}

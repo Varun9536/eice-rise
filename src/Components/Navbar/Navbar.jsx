@@ -4,63 +4,58 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 import logo from '../../assets/logo/logo.svg';
+import ProductDrop from '../NavDropDown/ProductDrop';
+import PricingDrop from '../NavDropDown/PricingDrop';
+import AboutusDrop from '../NavDropDown/AboutusDrop';
+
 
 export default function Navbar() {
 
 
-    const [hoverStates, setHoverStates] = useState({
-        Products: false,
-        Pricing: false,
-        'About Us': false,
-        Blogs: false,
-    });
-
-
-    const handleOnMouseEnter = (label) => {
-        setHoverStates((prev) => ({ ...prev, [label]: true }));
-    };
-
-    const handleOnMouseLeave = (label) => {
-        setHoverStates((prev) => ({ ...prev, [label]: false }));
-    };
-
-
-
-
     const navItems = [
-        // { label: 'Home', link: '/' },
-
         {
-            label: 'Products',
-            link: '',
-            dropdown: [
-                { productName: "Room Booking", path: "room-booking" },
-                { productName: "Dining (POS)", path: "pos-dining" },
-                { productName: "Banquet & Billing", path: "banquet-billing" },
-                { productName: "Member Suite", path: "member-suite" },
-                { productName: "Accounts & Finances", path: "account-finance" },
-                { productName: "Employee Suite", path: "employee-suite", },
-                { productName: "PayRoll", path: "payroll" },
-                { productName: "User, Store & Inventory", path: "userstore-inventry", },
-                { productName: "Purchase & Vendor Portal", path: "purchase-vendor", },
-                { productName: "Food & Beverage Cost Analysis", path: "food-cost", }
-            ]
+            navName: "Products",
+            id: 1,
+            dropdown: <ProductDrop />
+
+        },
+        {
+            navName: "Pricing",
+            id: 2,
+            dropdown: <PricingDrop />
+
+
+        },
+        {
+            navName: "About us",
+            id: 3,
+            dropdown: <AboutusDrop />
+
         },
 
+        {
+            navName: "Blogs",
+            id: 4,
+            dropdown: <ProductDrop />
+
+        }
+    ]
 
 
+    const [activeDropdown, setActiveDropdown] = useState()
 
 
-    ];
+    const handleMouseEnter = (index) => {
+        setActiveDropdown(index);
+    };
 
-
-
-
-
+    const handleMouseLeave = () => {
+        setActiveDropdown(null);
+    };
 
     return (
-        <div className={styles.navigationBar}>
-            <div className={styles.logoAndNavigationIcon}>
+        <div onMouseLeave={() => { handleMouseLeave() }} className={styles.navigationContainer}>
+            <div className={styles.navigationItemBox}>
 
                 <div>
                     <Link to={"/"}>
@@ -71,76 +66,42 @@ export default function Navbar() {
 
                 <div className={`${styles.navigationIcon} font1`}>
 
-                    <div >
-                        <Link className={`${styles.navigationHoverEffect} `} to={"/"}>Home</Link>
+                    <div>
+                        <Link onMouseEnter={handleMouseLeave} className={`${styles.homeNav} linkClass`} to={"/"}>
+                            Home
+                        </Link>
                     </div>
-                    {navItems.map((item) => (
 
-                        <div className={`${styles.navigationButton}  `} key={item.label} onMouseEnter={() => handleOnMouseEnter(item.label)} onMouseLeave={() => handleOnMouseLeave(item.label)}>
+                    {navItems.map((item) =>
+                    (<div style={{ position: "relative" }}>
+                        <div className={`${styles.navNameAndArrow}`} key={item.id} onMouseEnter={() => { handleMouseEnter(item.id) }} style={{ display: "flex" }}>
 
-                            {/* <Link to={item.link} className="linkClass">
-
-                                <div style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
-                                    {item.label}  
-                                </div>
-
-                            </Link> */}
-
-
-                            {/* {item.label === 'Products' ? (<div className="linkClass">
-
-                                <div  style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
-                                    {item.label}
-                                </div>
-
-                            </div>) : (<Link to={item.link} className="linkClass">
-
-                                <div  style={{ paddingBottom: item.label === "Home" ? "3px" : "0" }}>
-                                    {item.label}
-                                </div>
-
-                            </Link>)} */}
-
-                            <div  className={`${styles.navigationHoverEffect} `} style={{ display:"flex", columnGap : "5px" , alignItems : "center"}}>
-                                {item.label}
-                                <div  style={{ paddingTop: "3px" }}>
-                                    {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                                </div>
+                            <div>
+                                <Link to={item.path} className={`${styles.navName} linkClass`}>
+                                    {item.navName}
+                                </Link>
                             </div>
 
+                            <div style={{ display: "flex", alignItems: "center", paddingTop: "2px" }}>
+                                {item.id == activeDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                            </div>
 
-
-                            {/* {item.label === 'Products' && (
-                                <div  style={{ paddingTop: "3px" }}>
-                                    {hoverStates[item.label] ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                                </div>
-                            )} */}
-
-                            {item.dropdown && hoverStates[item.label] && (
-                                <div className={styles.dropdownMenu}>
-                                    {item.dropdown.map((dropdownItem, index) => (
-                                        <div>
-                                            <Link key={index} to={dropdownItem.path} className={styles.dropdownItem}>
-                                                {dropdownItem.productName}
-                                            </Link>
-                                        </div>
-
-                                    ))}
-
-
-                                </div>
-                            )}
                         </div>
+
+                        <div className={`${styles.dropDownContainer}`} onMouseLeave={() => { handleMouseLeave() }} >
+                            {item.id == activeDropdown ? item.dropdown : ""}
+                        </div>
+                    </div>
                     ))}
 
+                    <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn}`}>
+                        <Link to={"/form"} style={{textDecoration : "none" , color : "white"}}>
+                            Request Demo
+                        </Link>
 
-
-
-                    <div >
-                        <Link className={`${styles.navigationHoverEffect} `} to={"/pricing"}>Pricing</Link>
                     </div>
-                    <div><Link className={`${styles.navigationHoverEffect} `} target='_blank' to="https://www.eicetechnology.com/About">About Us</Link></div>
-                    <div ><Link className={`${styles.navigationHoverEffect} `} target='_blank' to="https://www.eicetechnology.com/Resources">Blogs</Link></div>
+
+
                 </div>
 
             </div>

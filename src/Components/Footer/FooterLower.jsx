@@ -1,5 +1,6 @@
 import styles from "./footer.module.css"
 import logo from '../../assets/logo/logo.svg';
+
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
@@ -7,6 +8,11 @@ import { FaInstagram } from "react-icons/fa6";
 
 import { FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdPhone } from "react-icons/md";
+import { IoMail } from "react-icons/io5";
 
 
 
@@ -73,7 +79,7 @@ export default function FooterLower() {
 
 
 
-                    <div style={{ color: "white" }} >
+                    {/* <div style={{ color: "white" }} >
 
                         <div style={{ fontWeight: "bold" }} className="blueTextGlobalClass font1">Get In Touch</div>
 
@@ -108,7 +114,81 @@ export default function FooterLower() {
 
 
                         </div>
+                    </div> */}
+
+
+
+
+                    <div className={`${styles.contactContainer}`}>
+
+                        <div className={`${styles.getInTouchBox} font1`}>
+
+                            <div>  GET IN TOUCH</div>
+
+                            <div  className={`${styles.logoAndDetailBox}`}>
+                                <div style={{paddingTop : "3px"}}> <IoLogoWhatsapp /> </div>
+                                <div> 3456789</div>
+                            </div>
+
+                            <div className={`${styles.logoAndDetailBox}`}>
+
+                                <div>
+                                    <MdPhone />
+                                </div>
+                                <div>
+                                    23456789
+                                </div>
+                            </div>
+                            <div className={`${styles.logoAndDetailBox}`}>
+                                <div>
+                                    <IoMail />
+                                </div>
+
+                                <div>
+                                    3456789
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div className={`${styles.addressContainer}`}>
+
+                            <div className={`${styles.indiaOffice}`}>
+
+                                <div>
+                                    India
+                                </div>
+
+                                <div>
+                                    B-8 , Second Floor Sec-60 , Noida 201301
+                                </div>
+
+                            </div>
+
+                            <div className={`${styles.usOffice}`}>
+
+                                <div>
+                                    United States
+                                </div>
+
+                                <div>
+                                    440 Cobia Drive
+                                    #901 Katy , Texas
+                                    77494
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
+
+
+
+
+
 
                 </div>
             </div>
