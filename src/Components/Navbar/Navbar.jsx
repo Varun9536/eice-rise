@@ -29,14 +29,16 @@ export default function Navbar() {
         {
             navName: "About us",
             id: 3,
-            dropdown: <AboutusDrop />
+            // dropdown: <AboutusDrop />
+            path: "https://eice-main-website.vercel.app/About"
 
         },
 
         {
             navName: "Blogs",
             id: 4,
-            dropdown: <ProductDrop />
+            // dropdown: <ProductDrop />
+            path: "https://www.eicetechnology.com/Resources"
 
         }
     ]
@@ -64,10 +66,10 @@ export default function Navbar() {
 
                 </div>
 
-                <div className={`${styles.navigationIcon} font1`}>
+                <div className={`${styles.navigationIcon} `}>
 
                     <div>
-                        <Link onMouseEnter={handleMouseLeave} className={`${styles.homeNav} linkClass`} to={"/"}>
+                        <Link onMouseEnter={handleMouseLeave} className={`${styles.homeNav} font1 linkClass`} to={"/"}>
                             Home
                         </Link>
                     </div>
@@ -76,26 +78,40 @@ export default function Navbar() {
                     (<div style={{ position: "relative" }}>
                         <div className={`${styles.navNameAndArrow}`} key={item.id} onMouseEnter={() => { handleMouseEnter(item.id) }} style={{ display: "flex" }}>
 
-                            <div>
-                                <Link to={item.path} className={`${styles.navName} linkClass`}>
+                            {item.path && (<div>
+                                <Link to={item.path} target='_blank' className={`${styles.navName} font1 linkClass`}>
                                     {item.navName}
                                 </Link>
-                            </div>
+                            </div>)}
 
-                            <div style={{ display: "flex", alignItems: "center", paddingTop: "2px" }}>
+
+                            {!item.path && (
+                                <div to={item.path} target='_blank' className={`${styles.navName} font1 linkClass`}>
+                                    {item.navName}
+                                </div>
+                            )}
+
+
+                            {item.dropdown && (<div style={{ display: "flex", alignItems: "center", paddingTop: "2px" }}>
                                 {item.id == activeDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                            </div>
+                            </div>)}
+
+
+
 
                         </div>
 
-                        <div className={`${styles.dropDownContainer}`} onMouseLeave={() => { handleMouseLeave() }} >
+                        {item.dropdown && (<div className={`${styles.dropDownContainer}`} onMouseLeave={() => { handleMouseLeave() }} >
                             {item.id == activeDropdown ? item.dropdown : ""}
-                        </div>
+                        </div>)
+
+                        }
+
                     </div>
                     ))}
 
-                    <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn}`}>
-                        <Link to={"/form"} style={{textDecoration : "none" , color : "white"}}>
+                    <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn} `}>
+                        <Link to={"/form"} style={{ textDecoration: "none", color: "white" }}>
                             Request Demo
                         </Link>
 
