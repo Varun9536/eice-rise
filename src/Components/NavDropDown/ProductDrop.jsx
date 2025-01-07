@@ -3,6 +3,20 @@ import { Link } from "react-router-dom"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
+// icon drop down
+
+import account from "../../assets/DropDown/account.png"
+import banwuet from "../../assets/DropDown/banquet.png"
+import dinning from "../../assets/DropDown/dinning.png"
+import food from "../../assets/DropDown/food.png"
+import inventary from "../../assets/DropDown/invent.png"
+import member from "../../assets/DropDown/member.png"
+import pay from "../../assets/DropDown/pay.png"
+import room from "../../assets/DropDown/room.png"
+import vendor from "../../assets/DropDown/vendor.png"
+import emp from "../../assets/DropDown/emp.png"
+
+
 
 export default function ProductDrop() {
 
@@ -12,25 +26,25 @@ export default function ProductDrop() {
             key: 1,
             title: "Room Booking",
             description: "Streamline guest reservations",
-            icon: "",
+            icon: room,
         },
         {
             key: 2,
             title: "Dining (POS)",
             description: "Simplify your dining operations",
-            icon: "",
+            icon: dinning,
         },
         {
             key: 3,
             title: "Banquet & Billing",
             description: "Manage events with ease",
-            icon: "",
+            icon: banwuet,
         },
         {
             key: 4,
             title: "Member Suite",
             description: "Manage events with ease",
-            icon: "",
+            icon: member,
         },
 
     ]
@@ -40,25 +54,27 @@ export default function ProductDrop() {
             key: 5,
             title: "Accounts & Finances",
             description: "Streamline guest reservations",
-            icon: "",
+            icon: account,
         },
         {
             key: 6,
-            title: "Purchase & Vendor Portal",
-            description: "Simplify your dining operations",
-            icon: "",
+            title: "Employee Portal",
+            description: "Manage events with ease",
+            icon: emp,
+           
         },
         {
             key: 7,
             title: "PayRoll",
             description: "Manage events with ease",
-            icon: "",
+            icon: pay,
         },
         {
             key: 8,
-            title: "User, Store & Inventory",
-            description: "Manage events with ease",
-            icon: "",
+          
+            title: "Purchase & Vendor Portal",
+            description: "Simplify your dining operations",
+            icon: vendor,
         },
 
     ]
@@ -68,13 +84,13 @@ export default function ProductDrop() {
             key: 9,
             title: "User, Store & Inventory",
             description: "Streamline guest reservations",
-            icon: "",
+            icon: inventary,
         },
         {
             key: 10,
             title: "Food & Beverage Cost Analysis",
             description: "Simplify your dining operations",
-            icon: "",
+            icon: food,
         },
 
     ]
@@ -91,11 +107,11 @@ export default function ProductDrop() {
                     {product1.map((item) =>
                     (
                         <div style={{ width: "13rem" }}>
-                            <div>
-                                <img src={item.icon} alt="" />
+                            <div style={{width : "2rem"}}>
+                                <img style={{width : "100%"}} src={item.icon} alt="" />
                             </div>
-                            <div className={`${styles.titleHeading}`}>{item.title}</div>
-                            <div className={`${styles.titeDesc}`} >{item.description} </div>
+                            <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                            <div className={`${styles.titeDesc} font1`} >{item.description} </div>
                         </div>
                     ))}
 
@@ -106,26 +122,26 @@ export default function ProductDrop() {
                     {product2.map((item) =>
                     (
                         <div style={{ width: "13rem" }}>
-                            <div>
-                                <img src={item.icon} alt="" />
+                            <div style={{width : "2rem"}}>
+                                <img style={{width : "100%"}} src={item.icon} alt="" />
                             </div>
-                            <div className={`${styles.titleHeading}`}>{item.title}</div>
-                            <div className={`${styles.titeDesc}`} >{item.description} </div>
+                            <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                            <div className={`${styles.titeDesc} font1`} >{item.description} </div>
                         </div>
                     ))}
 
                 </div>
 
-                <div className={`${styles.productConatiner} font1`}>
+                <div className={`${styles.productConatiner} `}>
 
                     {product3.map((item) =>
                     (
                         <div style={{ width: "13rem" }}>
-                            <div>
-                                <img src={item.icon} alt="" />
+                            <div style={{width : "2rem"}}>
+                                <img style={{width : "100%"}} src={item.icon} alt="" />
                             </div>
-                            <div className={`${styles.titleHeading}`}>{item.title}</div>
-                            <div className={`${styles.titeDesc}`} >{item.description} </div>
+                            <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                            <div className={`${styles.titeDesc} font1`} >{item.description} </div>
                         </div>
                     ))}
 

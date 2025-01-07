@@ -22,7 +22,8 @@ export default function Navbar() {
         {
             navName: "Pricing",
             id: 2,
-            dropdown: <PricingDrop />
+            // dropdown: <PricingDrop />
+            path : "/pricing"
 
 
         },
@@ -110,7 +111,7 @@ export default function Navbar() {
                     </div>
                     ))}
 
-                    <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn} `}>
+                    <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn} font1 `}>
                         <Link to={"/form"} style={{ textDecoration: "none", color: "white" }}>
                             Request Demo
                         </Link>
