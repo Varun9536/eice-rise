@@ -123,7 +123,7 @@ export default function FooterLower() {
 
                         <div className={`${styles.getInTouchBox} font1`}>
 
-                            <div> GET IN TOUCH</div>
+                            <div  className={`${styles.getInTouchHeading} font1`}> GET IN TOUCH</div>
 
                             <div className={`${styles.logoAndDetailBox}`}>
                                 <div > <IoLogoWhatsapp /> </div>
@@ -157,11 +157,11 @@ export default function FooterLower() {
 
                             <div className={`${styles.indiaOffice}`}>
 
-                                <div>
-                                    India
+                                <div className={`${styles.countryName}`}> 
+                                    INDIA
                                 </div>
 
-                                <div>
+                                <div className={`${styles.location1}`}>
                                     B-8 , Second Floor Sec-60 , Noida 201301
                                 </div>
 
@@ -169,11 +169,11 @@ export default function FooterLower() {
 
                             <div className={`${styles.usOffice}`}>
 
-                                <div>
-                                    United States
+                                <div className={`${styles.countryName}`} >
+                                    UNITED STATES
                                 </div>
 
-                                <div>
+                                <div  className={`${styles.location2}`} >
                                     440 Cobia Drive
                                     #901 Katy , Texas
                                     77494

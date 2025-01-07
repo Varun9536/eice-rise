@@ -27,6 +27,7 @@ export default function ProductDrop() {
             title: "Room Booking",
             description: "Streamline guest reservations",
             icon: room,
+            
         },
         {
             key: 2,
@@ -58,7 +59,7 @@ export default function ProductDrop() {
         },
         {
             key: 6,
-            title: "Employee Portal",
+            title: "Employee Suite",
             description: "Empower with centralized access",
             icon: emp,
            
@@ -106,7 +107,7 @@ export default function ProductDrop() {
 
                     {product1.map((item) =>
                     (
-                        <div style={{ width: "13rem" }}>
+                        <div style={{ width: "13rem"  , border : "2px solid red"}}>
                             <div style={{width : "2rem"}}>
                                 <img style={{width : "100%"}} src={item.icon} alt="" />
                             </div>
@@ -121,7 +122,7 @@ export default function ProductDrop() {
 
                     {product2.map((item) =>
                     (
-                        <div style={{ width: "13rem" }}>
+                        <div style={{ width: "13rem"  , border : "2px solid red"}}>
                             <div style={{width : "2rem"}}>
                                 <img style={{width : "100%"}} src={item.icon} alt="" />
                             </div>
@@ -136,7 +137,7 @@ export default function ProductDrop() {
 
                     {product3.map((item) =>
                     (
-                        <div style={{ width: "13rem" }}>
+                        <div style={{ width: "13rem" , border : "2px solid red" }}>
                             <div style={{width : "2rem"}}>
                                 <img style={{width : "100%"}} src={item.icon} alt="" />
                             </div>
