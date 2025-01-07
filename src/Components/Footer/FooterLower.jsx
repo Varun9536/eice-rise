@@ -123,11 +123,11 @@ export default function FooterLower() {
 
                         <div className={`${styles.getInTouchBox} font1`}>
 
-                            <div  className={`${styles.getInTouchHeading} font1`}> GET IN TOUCH</div>
+                            <div className={`${styles.getInTouchHeading} font1`}> GET IN TOUCH :</div>
 
                             <div className={`${styles.logoAndDetailBox}`}>
                                 <div > <IoLogoWhatsapp /> </div>
-                                <div> 3456789</div>
+                                <div> +91-987185200</div>
                             </div>
 
                             <div className={`${styles.logoAndDetailBox}`}>
@@ -136,7 +136,7 @@ export default function FooterLower() {
                                     <MdPhone />
                                 </div>
                                 <div>
-                                    23456789
+                                    +1 832 280 4632
                                 </div>
                             </div>
                             <div className={`${styles.logoAndDetailBox}`}>
@@ -145,7 +145,7 @@ export default function FooterLower() {
                                 </div>
 
                                 <div>
-                                    3456789
+                                    info@eicetechnology.com
                                 </div>
                             </div>
 
@@ -157,11 +157,11 @@ export default function FooterLower() {
 
                             <div className={`${styles.indiaOffice}`}>
 
-                                <div className={`${styles.countryName}`}> 
+                                <div className={`${styles.countryName} font1`}>
                                     INDIA
                                 </div>
 
-                                <div className={`${styles.location1}`}>
+                                <div className={`${styles.location1} font1`}>
                                     B-8 , Second Floor Sec-60 , Noida 201301
                                 </div>
 
@@ -169,11 +169,17 @@ export default function FooterLower() {
 
                             <div className={`${styles.usOffice}`}>
 
-                                <div className={`${styles.countryName}`} >
-                                    UNITED STATES
+                                <div>
+                                    <div className={`${styles.countryName} font1`} >
+                                        UNITED
+                                    </div>
+                                    <div className={`${styles.countryName } font1`} >
+                                        STATES
+                                    </div>
                                 </div>
 
-                                <div  className={`${styles.location2}`} >
+
+                                <div className={`${styles.location2} font1`} >
                                     440 Cobia Drive
                                     #901 Katy , Texas
                                     77494

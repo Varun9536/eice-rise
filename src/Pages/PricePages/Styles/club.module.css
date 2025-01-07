@@ -21,9 +21,14 @@
 
 
 .overviewPara {
-    width: 52%;
+    /* width: 52%; */
     font-size: 26px;
     padding-left: 3rem;
+    margin: 0px auto;
+    width: 1200px;
+    text-align: center;
+    padding: 1rem 4rem;
+
 }
 
 @media (min-width : 2000px)

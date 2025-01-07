@@ -385,6 +385,11 @@
     border-radius: 5px;
 }
 
+.storyImgHeight
+{
+    height: 14rem;
+}
+
 
 .viewMoreBtn {
     /* background-color: rgba(20, 176, 241, 1); */

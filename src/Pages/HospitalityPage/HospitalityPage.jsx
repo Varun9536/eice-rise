@@ -28,6 +28,10 @@ import c2 from "../../assets/Hospitality/customer/c2.png"
 import c1 from "../../assets/Hospitality/customer/c3.png"
 
 
+import and from "../../assets/caseStudy/android.webp"
+import iic from "../../assets/caseStudy/IIC.webp"
+import durga from "../../assets/caseStudy/durga.webp"
+
 import s1 from "../../assets/Hospitality/story/s1.webp"
 import s2 from "../../assets/Hospitality/story/s2.webp"
 import s3 from "../../assets/Hospitality/story/s3.webp"
@@ -214,27 +218,30 @@ export default function HospitalityPage() {
 
     const stories = [
         {
-            img: s1,
-            heading: " Seamless Operations at LuxeStay Hotels",
+            key : 1 ,
+            img: and,
+            heading: "Transforming Operational Efficiency for  Sales Vu",
             margin: "20px",
             link: "/android",
-            para: "How EICE Rise streamlined front desk, housekeeping, and POS systems, boosting operational efficiency by 40%. "
+            para: "The SalesVu Android App enhances POS functionality with features like order management, payment processing, and barcode scanning. These features streamline operations, improve inventory management..."
         },
 
         {
-            img: s2,
-            heading: "Driving Guest Satisfaction for Serenity Resorts",
+            key : 2,
+            img: durga,
+            heading: "Empowering Community Operations for Houston Durga Bari Society (HDBS)",
             link: "/durgabari",
-            para: "Enhanced guest experiences through AI-driven personalization and integrated feedback systems. ",
-            margin: "20px"
+            para: "The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically... ",
+            margin: "22px"
         },
 
         {
-            img: s3,
-            heading: " Expanding Global Reach with Gourmet Suites ",
+            key : 3,
+            img: iic,
+            heading: "Empowering Indian International Center (IIC) ",
             link: "/iic",
-            para: " Scaling operations across multiple properties with centralized data and real-time insights. ",
-            margin: "50px"
+            para: " The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency. EICE Technology implemented the Enterprise Suite, tailored to... ",
+            margin: "20px"
         }
 
     ]
@@ -609,11 +616,14 @@ export default function HospitalityPage() {
 
                     {stories.map((item) =>
                     (
-                        <div className={`${styles.storyBox}`}>
+                        <div key={item.key} className={`${styles.storyBox}`}>
 
-                            <div>
+                           
+                            {item.key === 1 ? (  <div  className={`${styles.storyImgHeight}`}>
+                                <img style={{ width: "113%" }} src={item.img} alt="storyimg" />
+                            </div>):( <div  className={`${styles.storyImgHeight}`}>
                                 <img style={{ width: "100%" }} src={item.img} alt="storyimg" />
-                            </div>
+                            </div>)}
 
                             <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
                                 {item.heading}

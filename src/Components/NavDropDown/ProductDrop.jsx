@@ -27,25 +27,29 @@ export default function ProductDrop() {
             title: "Room Booking",
             description: "Streamline guest reservations",
             icon: room,
-            
+            path: "room-booking",
+
         },
         {
             key: 2,
             title: "Dining (POS)",
             description: "Simplify your dining operations",
             icon: dinning,
+            path: "pos-dining",
         },
         {
             key: 3,
             title: "Banquet & Billing",
             description: "Manage events with ease",
             icon: banwuet,
+            path: "banquet-billing",
         },
         {
             key: 4,
             title: "Member Suite",
             description: "Build a thriving member community",
             icon: member,
+            path: "member-suite",
         },
 
     ]
@@ -56,26 +60,30 @@ export default function ProductDrop() {
             title: "Accounts & Finances",
             description: "Gain full financial control",
             icon: account,
+            path: "account-finance",
         },
         {
             key: 6,
             title: "Employee Suite",
             description: "Empower with centralized access",
             icon: emp,
-           
+            path: "employee-suite",
+
         },
         {
             key: 7,
             title: "PayRoll",
             description: "Simplify payroll processing",
             icon: pay,
+            path: "payroll",
         },
         {
             key: 8,
-          
+
             title: "Purchase & Vendor Portal",
             description: "Manage inventory effortlessly",
             icon: vendor,
+            path: "userstore-inventry",
         },
 
     ]
@@ -86,12 +94,14 @@ export default function ProductDrop() {
             title: "User, Store & Inventory",
             description: "Optimize vendor management",
             icon: inventary,
+            path: "purchase-vendor",
         },
         {
             key: 10,
             title: "Food & Beverage Cost Analysis",
             description: "Boost profit accuracy",
             icon: food,
+            path: "food-cost",
         },
 
     ]
@@ -107,13 +117,16 @@ export default function ProductDrop() {
 
                     {product1.map((item) =>
                     (
-                        <div style={{ width: "13rem"  }}>
-                            <div style={{width : "2rem"}}>
-                                <img style={{width : "100%"}} src={item.icon} alt="" />
+                        <Link className="linkClass" key={item.key} to={item.path}>
+                            <div style={{ width: "13rem" }}>
+                                <div style={{ width: "2rem" }}>
+                                    <img style={{ width: "100%" }} src={item.icon} alt="" />
+                                </div>
+                                <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                                <div className={`${styles.titeDesc} font1`} >{item.description} </div>
                             </div>
-                            <div className={`${styles.titleHeading} font3`}>{item.title}</div>
-                            <div className={`${styles.titeDesc} font1`} >{item.description} </div>
-                        </div>
+                        </Link>
+
                     ))}
 
                 </div>
@@ -122,13 +135,17 @@ export default function ProductDrop() {
 
                     {product2.map((item) =>
                     (
-                        <div style={{ width: "13rem"  }}>
-                            <div style={{width : "2rem"}}>
-                                <img style={{width : "100%"}} src={item.icon} alt="" />
+
+                        <Link className="linkClass" key={item.key} to={item.path}>
+                            <div style={{ width: "13rem" }}>
+                                <div style={{ width: "2rem" }}>
+                                    <img style={{ width: "100%" }} src={item.icon} alt="" />
+                                </div>
+                                <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                                <div className={`${styles.titeDesc} font1`} >{item.description} </div>
                             </div>
-                            <div className={`${styles.titleHeading} font3`}>{item.title}</div>
-                            <div className={`${styles.titeDesc} font1`} >{item.description} </div>
-                        </div>
+                        </Link>
+
                     ))}
 
                 </div>
@@ -137,13 +154,16 @@ export default function ProductDrop() {
 
                     {product3.map((item) =>
                     (
-                        <div style={{ width: "13rem"  }}>
-                            <div style={{width : "2rem"}}>
-                                <img style={{width : "100%"}} src={item.icon} alt="" />
+                        <Link className="linkClass"  key={item.key} to={item.path}>
+                            <div style={{ width: "13rem" }}>
+                                <div style={{ width: "2rem" }}>
+                                    <img style={{ width: "100%" }} src={item.icon} alt="" />
+                                </div>
+                                <div className={`${styles.titleHeading} font3`}>{item.title}</div>
+                                <div className={`${styles.titeDesc} font1`} >{item.description} </div>
                             </div>
-                            <div className={`${styles.titleHeading} font3`}>{item.title}</div>
-                            <div className={`${styles.titeDesc} font1`} >{item.description} </div>
-                        </div>
+                        </Link>
+
                     ))}
 
                 </div>

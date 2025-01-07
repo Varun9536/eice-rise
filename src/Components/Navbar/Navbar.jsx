@@ -102,7 +102,7 @@ export default function Navbar() {
 
                         </div>
 
-                        {item.dropdown && (<div className={`${styles.dropDownContainer}`} onMouseLeave={() => { handleMouseLeave() }} >
+                        {item.dropdown && (<div className={`${styles.dropDownContainer}`} onClick={handleMouseLeave} onMouseLeave={() => { handleMouseLeave() }} >
                             {item.id == activeDropdown ? item.dropdown : ""}
                         </div>)
 
