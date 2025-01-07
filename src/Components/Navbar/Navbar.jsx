@@ -80,7 +80,7 @@ export default function Navbar() {
                         <div className={`${styles.navNameAndArrow}`} key={item.id} onMouseEnter={() => { handleMouseEnter(item.id) }} style={{ display: "flex" }}>
 
                             {item.path && (<div>
-                                <Link to={item.path} target='_blank' className={`${styles.navName} font1 linkClass`}>
+                                <Link to={item.path}  className={`${styles.navName} font1 linkClass`}>
                                     {item.navName}
                                 </Link>
                             </div>)}
