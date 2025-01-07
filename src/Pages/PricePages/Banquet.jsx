@@ -126,9 +126,9 @@ export default function Banquet() {
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
 
 
-                    <div className={`${styles.overviewEyeImgSize}`}>
+                    {/* <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
-                    </div>
+                    </div> */}
 
                     <div className={`${styles.overviewPara} font1`}>
 

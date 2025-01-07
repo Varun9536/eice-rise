@@ -122,9 +122,9 @@ export default function Vanilla() {
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
 
 
-                    <div className={`${styles.overviewEyeImgSize}`}>
+                    {/* <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
-                    </div>
+                    </div> */}
 
                     <div className={`${styles.overviewPara} font1`}>
                         The Vanilla Suite is a <strong className="font2">versatile and comprehensive suite</strong>  that  <strong className="font2"> empowers businesses with inventory control, financial management</strong>, procurement, and operational cost tracking. <strong className="font2">Ideal for diverse industries</strong> , it offers the perfect blend of essential modules for efficient operations.
