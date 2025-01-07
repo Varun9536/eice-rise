@@ -123,10 +123,10 @@ export default function FooterLower() {
 
                         <div className={`${styles.getInTouchBox} font1`}>
 
-                            <div>  GET IN TOUCH</div>
+                            <div> GET IN TOUCH</div>
 
-                            <div  className={`${styles.logoAndDetailBox}`}>
-                                <div style={{paddingTop : "3px"}}> <IoLogoWhatsapp /> </div>
+                            <div className={`${styles.logoAndDetailBox}`}>
+                                <div > <IoLogoWhatsapp /> </div>
                                 <div> 3456789</div>
                             </div>
 
