@@ -43,7 +43,7 @@ export default function ProductDrop() {
         {
             key: 4,
             title: "Member Suite",
-            description: "Manage events with ease",
+            description: "Build a thriving member community",
             icon: member,
         },
 
@@ -53,27 +53,27 @@ export default function ProductDrop() {
         {
             key: 5,
             title: "Accounts & Finances",
-            description: "Streamline guest reservations",
+            description: "Gain full financial control",
             icon: account,
         },
         {
             key: 6,
             title: "Employee Portal",
-            description: "Manage events with ease",
+            description: "Empower with centralized access",
             icon: emp,
            
         },
         {
             key: 7,
             title: "PayRoll",
-            description: "Manage events with ease",
+            description: "Simplify payroll processing",
             icon: pay,
         },
         {
             key: 8,
           
             title: "Purchase & Vendor Portal",
-            description: "Simplify your dining operations",
+            description: "Manage inventory effortlessly",
             icon: vendor,
         },
 
@@ -83,13 +83,13 @@ export default function ProductDrop() {
         {
             key: 9,
             title: "User, Store & Inventory",
-            description: "Streamline guest reservations",
+            description: "Optimize vendor management",
             icon: inventary,
         },
         {
             key: 10,
             title: "Food & Beverage Cost Analysis",
-            description: "Simplify your dining operations",
+            description: "Boost profit accuracy",
             icon: food,
         },
 
