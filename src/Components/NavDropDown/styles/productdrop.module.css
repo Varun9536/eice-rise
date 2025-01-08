@@ -1,6 +1,6 @@
 .mainDropDownContainer {
 
-    width: 59rem;
+    width: 62rem;
     /* height: 20rem; */
     background-color: white;
     border-radius: 5px;
@@ -8,23 +8,61 @@
     display: flex;
     flex-direction: column;
    
-    padding: 1rem 2rem;
-    row-gap: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    row-gap: 1.5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .productConatiner {
 
     display: flex;
     column-gap: 1rem;
+   
 }
+
+.productDetailBox
+{
+    width: 14rem;
+  
+}
+
+
+
+.productDetailBox:hover .titleHeading
+{
+    
+    border-bottom: 2px solid rgba(1, 176, 241, 1);
+}
+
+
+
+.productIcon
+{
+    width: 2rem;
+}
+
+.iconSize
+{
+    width: 100%;
+}
+
+
+
 
 
 .titleHeading {
     font-size: 1rem;
     font-weight: 600;
     /* padding-right: 7rem; */
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
 }
+
+/* .titleHeading:hover {
+    
+    border-bottom: 2px solid rgba(1, 176, 241, 1);
+} */
 
 
 

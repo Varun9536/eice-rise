@@ -216,7 +216,7 @@ export default function HospitalityPage() {
 
     const stories = [
         {
-            key : 1 ,
+            key: 1,
             img: and,
             heading: "Transforming Operational Efficiency for  Sales Vu",
             margin: "20px",
@@ -225,7 +225,7 @@ export default function HospitalityPage() {
         },
 
         {
-            key : 2,
+            key: 2,
             img: durga,
             heading: "Empowering Community Operations for Houston Durga Bari Society (HDBS)",
             link: "/durgabari",
@@ -234,7 +234,7 @@ export default function HospitalityPage() {
         },
 
         {
-            key : 3,
+            key: 3,
             img: iic,
             heading: "Empowering Indian International Center (IIC) ",
             link: "/iic",
@@ -616,10 +616,10 @@ export default function HospitalityPage() {
                     (
                         <div key={item.key} className={`${styles.storyBox}`}>
 
-                           
-                            {item.key === 1 ? (  <div  className={`${styles.storyImgHeight}`}>
+
+                            {item.key === 1 ? (<div className={`${styles.storyImgHeight}`}>
                                 <img style={{ width: "113%" }} src={item.img} alt="storyimg" />
-                            </div>):( <div  className={`${styles.storyImgHeight}`}>
+                            </div>) : (<div className={`${styles.storyImgHeight}`}>
                                 <img style={{ width: "100%" }} src={item.img} alt="storyimg" />
                             </div>)}
 
@@ -676,9 +676,12 @@ export default function HospitalityPage() {
 
                         <p style={{ lineHeight: "1.8rem", marginBottom: stories[currentIndex].margin }} >{stories[currentIndex].para}</p>
 
-                        <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
-                            View More
-                        </div>
+
+                        <Link to={stories[currentIndex].link} className="linkClass">
+                            <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
+                                View More
+                            </div>
+                        </Link>
 
                     </div>
                 </div>
