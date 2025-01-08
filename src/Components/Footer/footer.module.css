@@ -9,73 +9,12 @@
     padding: 0px 3.5rem;
     position: relative;
 
-
-
-
 }
 
 
-/* .footerMainBoxUpper2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1530px;
-
-} */
-
-
-/* @media (max-width : 1540px) {
-    .footerMainBoxUpper2 {
-
-        width: 1340px;
-
-    }
-} */
-
-/* @media (min-width : 1700px) and (max-width : 1750px)
-{
-    .footerMainBoxUpper2 {
-
-        width: 1415px;
-
-    }
-} */
-
-/* @media (min-width : 2000px) {
-    .footerMainBoxUpper2 {
-
-        width: 1150px;
-        margin: 0px auto;
-
-    }
-
-    .footerHeadAndIconBox {
-        width: 60%;
-    }
-} */
-
-
-
-
-/* .footerMainBoxUpper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 180px;
-    padding-left: 12rem;
-    max-width: 2000px;
-    margin: 0px auto;
-    width: 100%;
-    overflow-x: hidden;
-
-
-
-} */
 
 .footerLaptopImg {
     width: 36%;
-
 }
 
 
@@ -97,19 +36,15 @@
     width: 45%;
     margin-top: 30px;
 
-
 }
 
 .footerUpperPartHeading {
     font-size: 46px;
-    /* padding: 0px 10px; */
+
 }
 
 .footerHeadAndIconBox {
     width: 57%;
-    /* margin-left: 10px; */
-    /* position: absolute; */
-
 
 }
 
@@ -148,8 +83,6 @@
 
 .logoWhite {
     filter: brightness(0) invert(1);
-    /* Makes the SVG appear white */
-
 }
 
 
@@ -196,26 +129,9 @@
 
 
 
-@media (max-width : 2000px) {
-    /* .footerMainBoxUpper {
-        max-width: 1150px;
-        padding-left: unset;
+@media (max-width : 2000px) {}
 
-    } */
-
-    /* .footerLaptopImg {
-        width: 36%;
-
-    } */
-}
-
-@media (max-width : 1490px) {
-    /* .footerMainBoxUpper {
-        max-width: 1100px;
-        width: 100%;
-        padding-left: unset;
-    } */
-}
+@media (max-width : 1490px) {}
 
 
 
@@ -224,7 +140,6 @@
     .footerMainBoxUpper1 {
         flex-direction: column;
         padding-left: unset;
-        /* margin-top: 30px; */
         align-items: unset;
         justify-content: unset;
 
@@ -238,7 +153,6 @@
     .footerLaptopImg {
 
         width: 340px;
-        /* left: 30px; */
         position: relative;
         margin: 0px auto;
         margin-top: 30px;
@@ -248,11 +162,8 @@
     }
 
     .footerHeadAndIconBox {
-
         width: 100vw;
         padding: 0px 20px;
-
-
     }
 
 
@@ -261,22 +172,16 @@
         display: flex;
         flex-direction: column;
         padding: 0px 20px;
-
     }
 
 
     .footerNavigationBox {
-
         height: unset;
         padding: 25px 0px;
-
-
-
     }
 
 
     .eiceLogoAndSocialMediaBox {
-
         width: 80%;
     }
 
@@ -284,15 +189,10 @@
         font-size: 11px;
         column-gap: 68px;
         row-gap: 20px;
-
-
     }
 
     .footerPointsSubheading {
-
-
         font-size: 12px;
-
     }
 
 
@@ -300,112 +200,30 @@
         font-size: 12px;
     }
 
-
-
-
-
-
-
     .demoButton {
         padding: 10px 5px;
         font-size: 16px;
         width: 200px;
         margin-top: 30px;
 
-
     }
-
-
 
     .copyRightSectionInnerBox {
-
         padding: 20px 5px;
-
         font-size: 10px;
-
-    }
-
-
-
-
-
-
-
-}
-
-
-
-/* @media (min-width : 800px) and (max-width : 1120px) {
-    .footerHeadAndIconBox {
-        padding: 0px 40px;
-    }
-
-
-   
-
-}
-
-@media (max-width : 350px) {
-    .footerHeadAndIconBox {
-        padding: 0px 10px;
-    }
-
-    .footerUpperPartHeading {
-        font-size: 16px;
-    }
-
-    .demoButton {
-        padding: 7px 5px;
-        font-size: 12px;
-        width: 150px;
-        margin-top: 30px;
-    }
-
-
-    .footerLaptopImg {
-        width: 86%;
     }
 
 }
-
-@media (max-width : 1400px) and (min-width : 800px)
-{
-    .footerHeadAndIconBox
-    {
-        padding-left: 6vw;
-    }
-
-
-    .footerUpperPartHeading {
-        font-size: 30px;
-    }
-}
- */
-
-
-.bluebg {
-
-    /* background: url("../../assets/blueBg/bluebg.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10rem;
-    width: 100%; */
-    /* position: relative; */
-
-}
-
 
 
 .contactContainer {
-    /* border: 2px solid white; */
+
     height: 200px;
     width: 680px;
     color: white;
-   
+
 
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-direction: column;
     row-gap: 1rem;
 }
@@ -413,11 +231,10 @@
 .getInTouchBox {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
-.getInTouchHeading
-{
+.getInTouchHeading {
     font-weight: 600;
 }
 
@@ -427,14 +244,13 @@
     margin-top: 1rem;
 }
 
-.logoAndDetailBox
-{
+.logoAndDetailBox {
     display: flex;
-    /* line-height: 1rem; */
+
     column-gap: 10px;
     align-items: center;
-   
-   
+
+
 }
 
 
@@ -443,14 +259,12 @@
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
-
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 30px 51px;
 
     display: flex;
     align-items: center;
-    /* column-gap: 1rem; */
     width: 320px;
 
 }
@@ -462,38 +276,26 @@
     border-top-right-radius: 30px;
     padding: 30px 55px;
 
-
-
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
 
     display: flex;
     align-items: center;
-    /* column-gap: 1rem; */
     width: 320px;
 }
 
 
-.countryName
-{
+.countryName {
     font-weight: 700;
     padding-right: 10px;
-   
-   
 }
 
-.location2
-{
+.location2 {
     border-left: 3px solid white;
-    /* padding-left: 0.5rem; */
     padding-left: 10px;
-   
 }
 
-.location1
-{
+.location1 {
     border-left: 3px solid white;
-    /* padding-left: 0.5rem;
-    padding-right: 1.5rem; */
     padding-left: 10px;
 }
