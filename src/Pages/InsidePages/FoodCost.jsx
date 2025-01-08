@@ -41,8 +41,7 @@ import laptop from "../../assets/section3Laptop/food.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import Footer3 from "../../Components/Footer/Footer3.jsx"
-// import footer from "../../assets/footer/foot.webp"
+
 import footer from "../../assets/footerLaptop/foodL.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"

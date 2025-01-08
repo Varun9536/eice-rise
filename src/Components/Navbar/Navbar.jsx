@@ -111,15 +111,17 @@ export default function Navbar() {
                     </div>
                     ))}
 
-                    <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn} font1 `}>
+                   
+
+
+                </div>
+
+                <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn} font1 `}>
                         <Link to={"/form"} style={{ textDecoration: "none", color: "white" }}>
                             Request a Demo
                         </Link>
 
                     </div>
-
-
-                </div>
 
             </div>
         </div>

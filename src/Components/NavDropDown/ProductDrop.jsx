@@ -117,8 +117,8 @@ export default function ProductDrop() {
 
                     {product1.map((item) =>
                     (
-                        <Link className="linkClass" key={item.key} to={item.path}>
-                            <div style={{ width: "13rem" }}>
+                        <Link  className="linkClass" key={item.key} to={item.path}>
+                            <div style={{ width: "13rem"}}>
                                 <div style={{ width: "2rem" }}>
                                     <img style={{ width: "100%" }} src={item.icon} alt="" />
                                 </div>

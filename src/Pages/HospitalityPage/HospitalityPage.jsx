@@ -32,9 +32,7 @@ import and from "../../assets/caseStudy/android.webp"
 import iic from "../../assets/caseStudy/IIC.webp"
 import durga from "../../assets/caseStudy/durga.webp"
 
-import s1 from "../../assets/Hospitality/story/s1.webp"
-import s2 from "../../assets/Hospitality/story/s2.webp"
-import s3 from "../../assets/Hospitality/story/s3.webp"
+
 
 
 import insight1 from "../../assets/Hospitality/insights/01.webp"
@@ -60,7 +58,7 @@ import h2 from "../../assets/Hospitality/headIcon/h2.png"
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
-import Footer from "../../Components/Footer/Footer"
+
 
 
 import footerLap from "../../assets/section3Laptop/account.webp"
