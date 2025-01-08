@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from "./footer.module.css"
 import { FaArrowRightLong } from "react-icons/fa6";
-// import footer from "../../assets/footer/foot.webp"
 import { Link } from 'react-router-dom';
 
-import bluebg from "../../assets/blueBg/bluebg.webp"
+
 
 export default function FooterUpperPart({ text1, text2, text3, img }) {
     return (

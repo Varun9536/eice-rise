@@ -180,7 +180,7 @@
     width: 100%;
     /* max-width: 1600px; */
     margin: 0px auto;
-    margin-bottom: 52px;
+    /* margin-bottom: 52px; */
 }
 
 
@@ -244,21 +244,28 @@
 
 }
 
-.section3Spiral {
-    position: absolute;
+.Spiral {
+    /* position: absolute;
     bottom: -398px;
     right: -477px;
     width: 55%;
     z-index: -1;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 
 
+    position: absolute;
+    width: 100rem;
+    left: 40rem;
+    top: -26rem;
+    margin: 0px auto;
+   
 
 
 }
 
 .section4 {
     margin-bottom: 22px;
+    margin-top: 3rem;
 
 
 
@@ -497,14 +504,13 @@
 
 }
 
-@media (min-width : 800px) and (max-width : 1400px)
-{
-   
+@media (min-width : 800px) and (max-width : 1400px) {
+
 
     .section1Heading {
-        
+
         padding-left: 26%;
         font-size: 30px;
-    
+
     }
 }

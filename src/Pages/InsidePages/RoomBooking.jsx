@@ -249,7 +249,7 @@ export default function RoomBooking() {
                                 <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
                             </div>
                             <div className={`${style.mainPara}`}>
-                            Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
+                                Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
                             </div>
 
 
@@ -334,16 +334,18 @@ export default function RoomBooking() {
 
                         </div>
 
-                        {/* <div style={{overflow : "hidden"}} >
-                            <div className={`${style.section3Spiral}`}  >
-                                <img style={{width : "100%" }} src={spiral} alt="" />
-                            </div>
-                        </div> */}
+
 
                     </div>
 
                 </div>
             </section>
+
+            {/* <div style={{position : "absolute" , border:"2px solid red" , overflow : "hidden" , width : "100%" ,   height : "10rem" }} >
+                <div className={`${style.Spiral}`}  >
+                    <img style={{ width: "100%" }} src={spiral} alt="" />
+                </div>
+            </div> */}
 
 
 

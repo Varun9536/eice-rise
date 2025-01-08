@@ -10,7 +10,7 @@ import ak from "../../assets/form/feedback/AK.png"
 import kd from "../../assets/form/feedback/KD.png"
 import pd from "../../assets/form/feedback/PD.png"
 
-import laptop from "../../assets/form/laptop.webp"
+import laptop from "../../assets/form/allLaptop.webp"
 import Accordion from "../../Components/Accordian/Accordian"
 
 import FooterLower from "../../Components/Footer/FooterLower"
@@ -25,8 +25,8 @@ export default function RequestForm() {
         role: '',
         email: '',
         phone: '',
-        country: '',       // Selected country
-        phoneCode: '',     // Selected phone code
+        country: '',       
+        phoneCode: '', 
         address: '',
         requirement: '',
         message: '',
@@ -48,16 +48,14 @@ export default function RequestForm() {
                     code: country.callingCodes[0] || '',
 
                 }));
-
-                // data.map((item) => {
-                //     console.log(item)
-                // })
-
+                
                 setCountries(countryList);
-                // console.log(data)
+                
             })
             .catch((error) => console.error('Error fetching country data:', error));
     }, []);
+
+
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -67,6 +65,8 @@ export default function RequestForm() {
         }));
     };
 
+
+
     const handleSelectChange = (selectedOption) => {
         setFormData((prevData) => ({
             ...prevData,
@@ -75,29 +75,20 @@ export default function RequestForm() {
         }));
     };
 
+
+
     const handleCountryCodeChange = (selectedOption) => {
         setFormData((prevData) => ({
             ...prevData,
-            phoneCode: selectedOption ? selectedOption.code : '',  // Store country code
-            // country: selectedOption ? selectedOption.value : '',   // Store country name
+            phoneCode: selectedOption ? selectedOption.code : '',  
         }));
     };
 
 
-    // const handlePhoneCodeChange = (e) => {
-    //     const { value } = e.target;
-    //     setFormData((prevData) => ({
-    //         ...prevData,
-    //         phoneCode: value,  // Store phone code entered
-    //     }));
-    // };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // console.log(formData)
-
-        // Check if both checkboxes are checked before submitting
+        
         if (!formData.subscribe || !formData.policyAgree) {
             alert("Please agree to the terms and conditions before submitting.");
             return;
