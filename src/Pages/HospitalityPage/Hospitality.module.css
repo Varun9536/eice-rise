@@ -50,6 +50,22 @@
     line-height: 53px;
 }
 
+
+@media (max-width : 1400px)
+{
+    .text1{
+        font-size: 48px;
+    }
+}
+
+@media (max-width : 1260px)
+{
+    .text1
+    {
+        font-size: 44px;
+    }
+}
+
 .text2 {
 
     padding: 10px 60px;

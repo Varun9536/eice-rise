@@ -14,13 +14,13 @@ export default function Navbar() {
 
     const navItems = [
         {
-            navName: "Products",
+            navName: "PRODUCTS",
             id: 1,
             dropdown: <ProductDrop />
 
         },
         {
-            navName: "Pricing",
+            navName: "PRICING",
             id: 2,
             // dropdown: <PricingDrop />
             path : "/pricing"
@@ -28,7 +28,7 @@ export default function Navbar() {
 
         },
         {
-            navName: "About us",
+            navName: "ABOUT US",
             id: 3,
             // dropdown: <AboutusDrop />
             path: "https://eice-main-website.vercel.app/About"
@@ -36,7 +36,7 @@ export default function Navbar() {
         },
 
         {
-            navName: "Blogs",
+            navName: "BLOGS",
             id: 4,
             // dropdown: <ProductDrop />
             path: "https://www.eicetechnology.com/Resources"
@@ -71,7 +71,7 @@ export default function Navbar() {
 
                     <div>
                         <Link onMouseEnter={handleMouseLeave} className={`${styles.homeNav} font1 linkClass`} to={"/"}>
-                            Home
+                            HOME
                         </Link>
                     </div>
 

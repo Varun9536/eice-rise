@@ -208,21 +208,7 @@ export default function Pos() {
 
 
 
-            {/* <section className={`${style.section1} insidePageUpperSection`}>
-               
-                    <div className={`${style.pageHeadingBox}`}>
-                        <div className={`${style.section1Heading} font4`}>
-                            <div style={{ color: "#012060" }}>DINNING</div>
-                            <div style={{ color: "#01B0F1" }} className="blueTextGlobalClass"> (POS)</div>
-                        </div>
-                    </div>
-
-                    <div className={style.section1ImgBox}>
-                        <img style={{ width: "100%" }} src={main} alt="" />
-                    </div>
-               
-
-            </section> */}
+            
 
 
             <section className={`${style.section1Container}  `}>
