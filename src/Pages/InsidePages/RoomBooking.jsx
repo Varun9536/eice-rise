@@ -7,6 +7,10 @@ import icon2 from "../../assets/insidePages/room/roomPage/Icons/2.png"
 import icon3 from "../../assets/insidePages/room/roomPage/Icons/3.png"
 
 
+
+import heroImg from "../../assets/allHero/roomh.webp"
+
+
 import { Link } from "react-router-dom"
 
 
@@ -221,7 +225,7 @@ export default function RoomBooking() {
     return (
         <>
 
-           
+
 
             <section className={`${style.section1Container}  `}>
 
@@ -242,7 +246,7 @@ export default function RoomBooking() {
                         </div>
 
                         <div className={`${style.herosectionImgBox}`}>
-                          
+
                         </div>
 
                     </div>
@@ -250,6 +254,35 @@ export default function RoomBooking() {
                 </div>
 
             </section>
+
+            <section className={`${style.section1ContainerPhone}  `}>
+
+
+                {/* <div className={`${style.fadeBackgroundConatiner}`}> */}
+
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeading}`}>
+                            <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                            Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
+                    </div>
+
+                    {/* </div> */}
+
+                </div>
+
+            </section>
+
 
 
             <section style={{ backgroundColor: "#f5f5f5" }}>

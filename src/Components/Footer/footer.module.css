@@ -216,6 +216,19 @@
 }
 
 
+@media (max-width : 350px)
+{
+    .footerLaptopImg {
+
+        width: 240px;
+
+
+
+
+    }
+}
+
+
 .contactContainer {
 
     height: 200px;
@@ -226,6 +239,14 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+}
+
+@media (max-width : 800px)
+{
+    .contactContainer
+    {
+        display: none;
+    }
 }
 
 .getInTouchBox {

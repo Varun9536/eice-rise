@@ -307,41 +307,6 @@
 
 
 @media (max-width : 800px) {
-    .section1 {
-        flex-direction: column-reverse;
-        margin-top: unset;
-        margin-bottom: unset;
-
-
-    }
-
-    .section1ImgBox {
-
-        margin: 0px auto;
-        left: unset;
-        width: 360px;
-        background-position: unset;
-        height: 200px;
-
-    }
-
-    .pageHeadingBox {
-        width: 70%;
-        margin: 0px auto;
-        padding-right: unset;
-
-    }
-
-
-    .section1Heading {
-        font-size: 26px;
-        padding-left: unset;
-        background: unset;
-        padding-top: 40px;
-        padding-bottom: 30px;
-        text-align: center;
-
-    }
 
 
 
