@@ -8,7 +8,7 @@ import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
 
 import { Link } from "react-router-dom"
 
-
+import herosectionImg from "../../assets/allHero/banquetHero.webp"
 
 import abs from "../../assets/insidePages/banquet/icon/abs.png"
 import cpa from "../../assets/insidePages/banquet/icon/cpa.png"
@@ -18,7 +18,7 @@ import dci from "../../assets/insidePages/banquet/icon/dci.png"
 import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 
-import heroImg from "../../assets/allHero/banquetH.webp"
+
 
 import main from "../../assets/insidePages/banquet/banquetHero.webp"
 
@@ -239,7 +239,7 @@ export default function BanquetAnsBilling() {
                     </div>
 
                     <div className={`${style.herosectionImgBoxPhone}`}>
-                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                        <img style={{ width: "100%" }} src={herosectionImg} alt={"room booking"} />
                     </div>
 
 
