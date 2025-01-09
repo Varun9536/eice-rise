@@ -257,13 +257,10 @@ export default function RoomBooking() {
 
             <section className={`${style.section1ContainerPhone}  `}>
 
-
-                {/* <div className={`${style.fadeBackgroundConatiner}`}> */}
-
                 <div className={`${style.contentConatinerPhone}`}>
 
                     <div className={`${style.headingBoxPhone} font4 `}>
-                        <div className={`${style.mainHeading}`}>
+                        <div className={`${style.mainHeadingPhone}`}>
                             <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
                         </div>
                         <div className={`${style.mainParaPhone}`}>
@@ -277,7 +274,6 @@ export default function RoomBooking() {
                         <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
                     </div>
 
-                    {/* </div> */}
 
                 </div>
 

@@ -191,13 +191,13 @@ export default function RequestForm() {
             ...provided,
             paddingTop: '3px',
             paddingBottom: '3px',
-            width: '33rem',
+            // width: '33rem',
         }),
         menu: (provided) => ({
             ...provided,
             paddingTop: '5px',
             paddingBottom: '3px',
-            width: '33rem',
+            // width: '33rem',
         }),
     };
 
@@ -301,7 +301,7 @@ export default function RequestForm() {
                                         onChange={handleCountryCodeChange}
                                     />
                                 </div>
-                                <div >
+                                <div  >
                                     <input placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
                                 </div>
                             </div>

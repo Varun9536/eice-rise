@@ -21,7 +21,7 @@ import sm from "../../assets/insidePages/member/icon/sm.png"
 import ssp from "../../assets/insidePages/member/icon/ssp.png"
 
 
-
+import heroImg from "../../assets/allHero/memberh.webp"
 
 
 // benefits
@@ -219,6 +219,29 @@ export default function MemberSuite() {
       
             </section>
 
+  <section className={`${style.section1ContainerPhone}  `}>
+
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeadingPhone}`}>
+                        <span style={{ color: "#012060" }} >MEMBER</span><span style={{ color: "#01B0F1" }} > SUITE</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                        Build a thriving member community with our Membership Portal, offering streamlined membership management and engagement tools.
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    </div>
+
+
+                </div>
+
+            </section>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

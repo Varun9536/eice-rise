@@ -60,6 +60,7 @@
     display: flex;
     padding: 0px 68px;
     justify-content: space-between;
+    column-gap: 2rem;
 
 }
 
@@ -95,20 +96,7 @@
 }
 
 
-.footerPoints {
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 28px;
-    margin-top: 14px;
-}
 
-.footerPointsSubheading {
-
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
 
 
 
@@ -119,119 +107,11 @@
 
 
 
-.copyRightSectionInnerBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 58px;
-    font-size: 14px;
-}
-
-
-
-@media (max-width : 2000px) {}
-
-@media (max-width : 1490px) {}
-
-
-
-@media (max-width : 800px) {
-
-    .footerMainBoxUpper1 {
-        flex-direction: column;
-        padding-left: unset;
-        align-items: unset;
-        justify-content: unset;
-
-
-    }
-
-    .footerUpperPartHeading {
-        font-size: 25px;
-    }
-
-    .footerLaptopImg {
-
-        width: 340px;
-        position: relative;
-        margin: 0px auto;
-        margin-top: 30px;
-
-
-
-    }
-
-    .footerHeadAndIconBox {
-        width: 100vw;
-        padding: 0px 20px;
-    }
-
-
-
-    .footerInnerBox {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 20px;
-    }
-
-
-    .footerNavigationBox {
-        height: unset;
-        padding: 25px 0px;
-    }
-
-
-    .eiceLogoAndSocialMediaBox {
-        width: 80%;
-    }
-
-    .footerPoints {
-        font-size: 11px;
-        column-gap: 68px;
-        row-gap: 20px;
-    }
-
-    .footerPointsSubheading {
-        font-size: 12px;
-    }
-
-
-    .footerParagraph {
-        font-size: 12px;
-    }
-
-    .demoButton {
-        padding: 10px 5px;
-        font-size: 16px;
-        width: 200px;
-        margin-top: 30px;
-
-    }
-
-    .copyRightSectionInnerBox {
-        padding: 20px 5px;
-        font-size: 10px;
-    }
-
-}
-
-
-@media (max-width : 350px)
-{
-    .footerLaptopImg {
-
-        width: 240px;
-
-
-
-
-    }
-}
 
 
 .contactContainer {
 
-    height: 200px;
+   
     width: 680px;
     color: white;
 
@@ -241,18 +121,24 @@
     row-gap: 1rem;
 }
 
-@media (max-width : 800px)
-{
-    .contactContainer
-    {
-        display: none;
-    }
-}
 
 .getInTouchBox {
     display: flex;
     justify-content: space-between;
 
+}
+
+.email {
+    padding-bottom: 4px;
+
+}
+
+.tele {
+    padding-bottom: 4px;
+}
+
+.contactno {
+    padding-bottom: 4px;
 }
 
 .getInTouchHeading {
@@ -319,4 +205,203 @@
 .location1 {
     border-left: 3px solid white;
     padding-left: 10px;
+}
+
+.copyRightSectionInnerBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 58px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width : 800px) {
+
+    .footerMainBoxUpper1 {
+        flex-direction: column;
+        padding-left: unset;
+        align-items: unset;
+        justify-content: unset;
+
+
+    }
+
+    .footerUpperPartHeading {
+        font-size: 25px;
+    }
+
+    .footerLaptopImg {
+
+        width: 340px;
+        position: relative;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+
+    .demoButton {
+        padding: 10px 5px;
+        font-size: 16px;
+        width: 200px;
+        margin-top: 30px;
+
+    }
+
+    .copyRightSectionInnerBox {
+        padding: 20px 5px;
+        font-size: 10px;
+    }
+
+    .contactContainer {
+        width: 100%;
+    }
+
+    .countryName {
+        font-size: 12px;
+    }
+
+    .location1 {
+        font-size: 12px;
+        border: unset;
+    }
+
+    .location2 {
+        font-size: 12px;
+        border: unset;
+    }
+
+    .getInTouchHeading {
+        font-size: 12px;
+    }
+
+    .tele {
+        font-size: 12px;
+    }
+
+    .email {
+        font-size: 12px;
+    }
+
+    .contactno {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media (max-width : 730px) {
+    .getInTouchBox {
+        flex-direction: column;
+        row-gap: 0.3rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width : 610px) {
+
+    .addressContainer {
+        flex-direction: column;
+
+        row-gap: 1rem;
+    }
+
+    .indiaOffice {
+        border: unset;
+        border-radius: 5px;
+        padding: unset;
+
+        display: flex;
+        align-items: center;
+        width: unset;
+
+    }
+
+
+    .usOffice {
+        border: unset;
+
+        padding: unset;
+
+        border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+        width: unset;
+    }
+
+    .usNameBox
+    {
+        display: flex;
+    }
+
+    .contactDetails
+    {
+        font-size: 12px;
+    }
+
+
+
+
+}
+
+
+@media (max-width : 1200px) {
+    .footerHeadAndIconBox {
+        width: 100vw;
+        padding: 0px 20px;
+    }
+
+
+
+    .footerInnerBox {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+
+    .footerNavigationBox {
+        height: unset;
+        padding: 25px 0px;
+    }
+
+
+    .eiceLogoAndSocialMediaBox {
+        width: 100%;
+    }
+
+
+
+    .footerParagraph {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width : 350px) {
+    .footerLaptopImg {
+
+        width: 240px;
+    }
 }

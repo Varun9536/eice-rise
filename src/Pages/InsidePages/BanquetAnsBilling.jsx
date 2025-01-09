@@ -18,7 +18,7 @@ import dci from "../../assets/insidePages/banquet/icon/dci.png"
 import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 
-
+import heroImg from "../../assets/allHero/banquetH.webp"
 
 import main from "../../assets/insidePages/banquet/banquetHero.webp"
 
@@ -223,7 +223,29 @@ export default function BanquetAnsBilling() {
       
             </section>
       
+  <section className={`${style.section1ContainerPhone}  `}>
 
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeadingPhone}`}>
+                        <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                        Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    </div>
+
+
+                </div>
+
+            </section>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

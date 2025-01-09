@@ -1,7 +1,7 @@
 import style from "./Styles/purchaseAndVendor.module.css"
 
 
-
+import heroImg from "../../assets/allHero/vendorh.webp"
 
 
 import sp from "../../assets/insidePages/vendor/section2icon/sp.png"
@@ -249,7 +249,29 @@ export default function PurchaseAndVendor() {
             
                   </section>
 
+  <section className={`${style.section1ContainerPhone}  `}>
 
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeadingPhone}`}>
+                        <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                        Optimize vendor management with a comprehensive portal for seamless purchasing, invoicing, and communication
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    </div>
+
+
+                </div>
+
+            </section>
 
             <section style={{ backgroundColor: "#f5f5f5" }}>
                 <div className={`${style.section2} font4 globalSectionSize`}>

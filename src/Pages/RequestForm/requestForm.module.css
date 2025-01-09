@@ -241,8 +241,7 @@ input[type="checkbox"] {
     margin-bottom: 1rem;
 }
 
-.buttonInputBox
-{
+.buttonInputBox {
     font-size: 17px;
     border: none;
     color: white;
@@ -413,4 +412,76 @@ input[type="checkbox"] {
 
 .LaptopImg img {
     width: 100%;
+}
+
+
+
+@media (max-width : 1200px) {
+    .formHeadingBox {
+        padding: 0px 10px;
+    }
+
+    .formHeading {
+        text-align: unset;
+    }
+
+    .formSubheading {
+        text-align: unset;
+    }
+
+    .line1 {
+        flex-direction: column;
+
+    }
+
+    .line1Input {
+        width: 100%;
+
+
+    }
+
+    .line2 {
+        flex-direction: column;
+    }
+
+    .line2Input {
+        width: 100%;
+
+    }
+
+    .phoneNo
+    {
+        width: 100%;
+    }
+    
+
+    .line3 {
+        flex-direction: column;
+    }
+
+    .line3Input {
+
+       width: 100%;
+    
+    }
+
+   
+
+    .messageTextAreaInput
+    {
+        width: 100%;
+    }
+
+    .requirementInput
+    {
+        width: 100%;
+    }
+
+    .line6Input
+    {
+        width: 100%;
+    }
+
+  
+
 }

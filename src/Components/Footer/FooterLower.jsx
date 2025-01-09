@@ -79,43 +79,7 @@ export default function FooterLower() {
 
 
 
-                    {/* <div style={{ color: "white" }} >
-
-                        <div style={{ fontWeight: "bold" }} className="blueTextGlobalClass font1">Get In Touch</div>
-
-                        <div className={`${styles.footerPoints}`}>
-
-                            <div>
-
-                                <div className={`${styles.footerPointsSubheading} font1`}>Email :</div>
-                                <div className="font4">info@eicetechnology.com</div>
-
-                            </div>
-                            <div>
-
-                                <div className={`${styles.footerPointsSubheading} font1 `}>Phone no :</div>
-                                <div className="font4"> 0120 435 5910</div>
-
-                            </div>
-                            <div>
-
-                                <div className={`${styles.footerPointsSubheading} font1`}>Address (India) :</div>
-                                <div className="font4">B-8 Second Floor   </div>
-                                <div className="font4"> Sec-60, Noida 201301</div>
-
-                            </div>
-                            <div >
-
-                                <div className={`${styles.footerPointsSubheading} font1`}>Address (USA) :</div>
-                                <div className="font4">440 Cobia Drive, #901 </div>
-                                <div className="font4">katy, Texas 77494</div>
-
-                            </div>
-
-
-                        </div>
-                    </div> */}
-
+                  
 
 
 
@@ -127,7 +91,7 @@ export default function FooterLower() {
 
                             <div className={`${styles.logoAndDetailBox}`}>
                                 <div > <IoLogoWhatsapp /> </div>
-                                <div style={{paddingBottom : "4px"}}> +91-987185200</div>
+                                <div className={`${styles.contactDetails}`} style={{paddingBottom : "4px"}}> +91-987185200</div>
                             </div>
 
                             <div className={`${styles.logoAndDetailBox}`}>
@@ -135,7 +99,7 @@ export default function FooterLower() {
                                 <div>
                                     <MdPhone />
                                 </div>
-                                <div style={{paddingBottom : "4px"}}>
+                                <div  className={`${styles.contactDetails}`} style={{paddingBottom : "4px"}}>
                                     +1 832 280 4632
                                 </div>
                             </div>
@@ -144,7 +108,7 @@ export default function FooterLower() {
                                     <IoMail />
                                 </div>
 
-                                <div style={{paddingBottom : "4px"}}>
+                                <div className={`${styles.contactDetails}`} style={{paddingBottom : "4px"}}>
                                     info@eicetechnology.com
                                 </div>
                             </div>

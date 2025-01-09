@@ -24,7 +24,7 @@ import wlm from "../../assets/insidePages/food/foodFeatures/wlm.png"
 
 
 
-
+import heroImg from "../../assets/allHero/foodh.webp"
 
 
 
@@ -245,6 +245,30 @@ export default function FoodCost() {
       
             </section>
 
+
+  <section className={`${style.section1ContainerPhone}  `}>
+
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeadingPhone}`}>
+                        <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                        Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    </div>
+
+
+                </div>
+
+            </section>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

@@ -5,7 +5,7 @@ import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
 import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
 import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
 
-
+import heroImg from "../../assets/allHero/payrollh.webp"
 
 import { Link } from "react-router-dom"
 
@@ -235,6 +235,31 @@ export default function Payroll() {
               </div>
       
             </section>
+
+
+              <section className={`${style.section1ContainerPhone}  `}>
+            
+                            <div className={`${style.contentConatinerPhone}`}>
+            
+                                <div className={`${style.headingBoxPhone} font4 `}>
+                                    <div className={`${style.mainHeadingPhone}`}>
+                                    <span style={{ color: "#012060" }} >PAYROLL</span><span style={{ color: "#01B0F1" }} > MANAGEMENT</span>
+                                    </div>
+                                    <div className={`${style.mainParaPhone}`}>
+                                    Simplify payroll processing with automated solutions for timely payouts, tax compliance, and employee satisfaction.
+                                    </div>
+            
+            
+                                </div>
+            
+                                <div className={`${style.herosectionImgBoxPhone}`}>
+                                    <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                                </div>
+            
+            
+                            </div>
+            
+                        </section>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

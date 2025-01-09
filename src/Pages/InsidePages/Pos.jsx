@@ -1,6 +1,7 @@
 import style from "./Styles/pos.module.css"
 
 
+import heroImg from "../../assets/allHero/posh.webp"
 import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
 import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
 import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
@@ -208,7 +209,7 @@ export default function Pos() {
 
 
 
-            
+
 
 
             <section className={`${style.section1Container}  `}>
@@ -234,6 +235,30 @@ export default function Pos() {
                         </div>
 
                     </div>
+
+                </div>
+
+            </section>
+
+            <section className={`${style.section1ContainerPhone}  `}>
+
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeadingPhone}`}>
+                            <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                            Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    </div>
+
 
                 </div>
 

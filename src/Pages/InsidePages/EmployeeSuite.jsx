@@ -24,7 +24,7 @@ import pm from "../../assets/insidePages/emp/icon/pm.png"
 import sr from "../../assets/insidePages/emp/icon/sr.png"
 import td from "../../assets/insidePages/emp/icon/td.png"
 
-
+import heroImg from "../../assets/allHero/employeeh.webp"
 
 
 
@@ -256,6 +256,30 @@ export default function EmployeeSuite() {
       
             </section>
 
+
+  <section className={`${style.section1ContainerPhone}  `}>
+
+                <div className={`${style.contentConatinerPhone}`}>
+
+                    <div className={`${style.headingBoxPhone} font4 `}>
+                        <div className={`${style.mainHeadingPhone}`}>
+                            <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                        </div>
+                        <div className={`${style.mainParaPhone}`}>
+                            Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+                        </div>
+
+
+                    </div>
+
+                    <div className={`${style.herosectionImgBoxPhone}`}>
+                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    </div>
+
+
+                </div>
+
+            </section>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

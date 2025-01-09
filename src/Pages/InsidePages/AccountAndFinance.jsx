@@ -34,7 +34,7 @@ import cc from "../../assets/insidePages/account/financebenefit/cc.webp"
 import icfm from "../../assets/insidePages/account/financebenefit/icfm.webp"
 import oe from "../../assets/insidePages/account/financebenefit/oe.webp"
 
-
+import heroImg from "../../assets/allHero/accounth.webp"
 
 import laptop from "../../assets/section3Laptop/account.webp"
 
@@ -236,7 +236,7 @@ export default function AccountAndFinance() {
 
 
 
-     
+
 
       <section className={`${style.section1Container}  `}>
 
@@ -250,7 +250,7 @@ export default function AccountAndFinance() {
                 <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
               </div>
               <div className={`${style.mainPara}`}>
-              Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
+                Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
               </div>
 
 
@@ -266,6 +266,30 @@ export default function AccountAndFinance() {
 
       </section>
 
+
+      <section className={`${style.section1ContainerPhone}  `}>
+
+        <div className={`${style.contentConatinerPhone}`}>
+
+          <div className={`${style.headingBoxPhone} font4 `}>
+            <div className={`${style.mainHeadingPhone}`}>
+            <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
+            </div>
+            <div className={`${style.mainParaPhone}`}>
+            Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
+            </div>
+
+
+          </div>
+
+          <div className={`${style.herosectionImgBoxPhone}`}>
+            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+          </div>
+
+
+        </div>
+
+      </section>
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>

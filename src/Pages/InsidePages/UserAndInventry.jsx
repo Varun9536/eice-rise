@@ -6,6 +6,8 @@ import ir from "../../assets/insidePages/inventry/section2icon/ir.png"
 import sv from "../../assets/insidePages/inventry/section2icon/sv.png"
 
 
+import heroImg from "../../assets/allHero/inventoryh.webp"
+
 
 import { Link } from "react-router-dom"
 
@@ -217,6 +219,30 @@ export default function UserAndInventry() {
 
             </section>
 
+
+            <section className={`${style.section1ContainerPhone}  `}>
+
+<div className={`${style.contentConatinerPhone}`}>
+
+    <div className={`${style.headingBoxPhone} font4 `}>
+        <div className={`${style.mainHeadingPhone}`}>
+        <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
+        </div>
+        <div className={`${style.mainParaPhone}`}>
+        Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
+        </div>
+
+
+    </div>
+
+    <div className={`${style.herosectionImgBoxPhone}`}>
+        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
+    </div>
+
+
+</div>
+
+</section>
 
             <section style={{ backgroundColor: "#f5f5f5" }}>
                 <div className={`${style.section2} font4 globalSectionSize`}>
