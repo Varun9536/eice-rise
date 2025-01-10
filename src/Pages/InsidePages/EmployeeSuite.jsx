@@ -263,10 +263,10 @@ export default function EmployeeSuite() {
 
                     <div className={`${style.headingBoxPhone} font4 `}>
                         <div className={`${style.mainHeadingPhone}`}>
-                            <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                            <span style={{ color: "#012060" }} >EMPLOYEE</span><span style={{ color: "#01B0F1" }} >SUITE</span>
                         </div>
                         <div className={`${style.mainParaPhone}`}>
-                            Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+                        Empower your team with centralized access to essential resources, payroll, and performance management tools..
                         </div>
 
 
