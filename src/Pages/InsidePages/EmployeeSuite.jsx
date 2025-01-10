@@ -204,7 +204,7 @@ export default function EmployeeSuite() {
 
     text1: "Empower your workforce",
     text2: "",
-    text3: "with a streamlined Employee Portal",
+    text3: "with a streamlined Employee Portal",
     img: footer
   }
 
@@ -263,7 +263,7 @@ export default function EmployeeSuite() {
 
                     <div className={`${style.headingBoxPhone} font4 `}>
                         <div className={`${style.mainHeadingPhone}`}>
-                            <span style={{ color: "#012060" }} >EMPLOYEE</span><span style={{ color: "#01B0F1" }} >SUITE</span>
+                            <span style={{ color: "#012060" }} >EMPLOYEE </span><span style={{ color: "#01B0F1" }} >SUITE</span>
                         </div>
                         <div className={`${style.mainParaPhone}`}>
                         Empower your team with centralized access to essential resources, payroll, and performance management tools..

@@ -196,9 +196,9 @@ export default function FoodCost() {
 
   const footerUpperText = {
 
-    text1: "Empower your workforce",
+    text1: "Optimize food costs",
     text2: "",
-    text3: "with a streamlined Employee Portal",
+    text3: "with realtime analysis and insights",
     img: footer
   }
 
