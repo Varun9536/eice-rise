@@ -273,7 +273,7 @@ export default function Durgabari() {
                 <div>
                     <span className={`font1 blueTextGlobalClass `}>Club Suite</span><span className={"font1"}  >:  Empowering Community Operations </span>
 
-                    <span className="font1">for</span>   <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> <span>(HDBS)</span>
+                    <span className="font1">for</span>   <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> <span className="font1">(HDBS)</span>
                 </div>
 
                 <div className="font1" >
