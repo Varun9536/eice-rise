@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  
  
 
 }
@@ -10,7 +10,6 @@
 
 @font-face {
   font-family: 'Segoe';
-  /* src: url("/font1/SegoeUI.ttf") format('truetype'); */
   src: url("/font1/SegoeUI.woff") ;
 
 
@@ -19,7 +18,6 @@
 
 @font-face {
   font-family: 'Segoe2';
-  /* src: url("/font2/segoeuithisz.ttf") format('truetype'); */
   src: url("/font2/segoeuithisz.woff") ;
 
 

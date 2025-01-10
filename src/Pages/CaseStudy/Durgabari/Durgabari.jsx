@@ -260,8 +260,25 @@ export default function Durgabari() {
                 </div>
 
                 <div className="font1" >
-                    {/* International Center <span className={`font2 blueTextGlobalClass `} >(IIC)</span> */}
+
                     for <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> (HDBS)
+                </div>
+
+
+
+            </header>
+
+            <header className={`${styles.pageMainHeadingPhone}`}>
+
+                <div>
+                    <span className={`font1 blueTextGlobalClass `}>Club Suite</span><span className={"font1"}  >:  Empowering Community Operations </span>
+
+                    <span className="font1">for</span>   <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> <span>(HDBS)</span>
+                </div>
+
+                <div className="font1" >
+
+
                 </div>
 
             </header>
@@ -289,6 +306,30 @@ export default function Durgabari() {
                 </div>
 
             </section>
+
+
+
+            <section className={`${styles.briefDescSectionPhone}  `}>
+
+                <div className={`${styles.descImgPhone}`}>
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                </div>
+
+            </section>
+
+
+            <div className={`${styles.briefDescBoxPhone}`}>
+
+                <div className={`${styles.briefDescHeadingPhone} font3`}>
+                    Overview
+                </div>
+
+                <div className={`${styles.briefParaPhone} font1`}>
+                    The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
+                </div>
+
+            </div>
+
 
             <section className={`${styles.section2} `}>
 
@@ -350,8 +391,8 @@ export default function Durgabari() {
                             {challenges.map((item) =>
                             (
                                 <li>
-                                    <strong>{item.key}:</strong>
-                                    <span> {item.value} </span>
+                                    <strong className={`${styles.listKey}`}>{item.key}:</strong>
+                                    <span className={`${styles.listValue}`}> {item.value} </span>
                                 </li>
                             ))}
                         </ul>
@@ -403,13 +444,8 @@ export default function Durgabari() {
 
                         {help.map((item, index) =>
                         (
-                            <>
-                                {/* <ol className="font3">
-                                    <li>
-                                        {item.key}:
-                                    </li>
-                                </ol> */}
-
+                          
+                                <div className={`${styles.helpBoxOfList}`}>
                                 <div className="font3 blueTextGlobalClass">
                                     <span>{index + 1}. </span>
                                     {item.key}:
@@ -432,11 +468,14 @@ export default function Durgabari() {
                                     </ul>
                                 </div>
 
+                                </div>
 
 
 
 
-                            </>
+
+
+                          
 
                         ))}
 
@@ -465,8 +504,8 @@ export default function Durgabari() {
                         {value.map((item) =>
                         (
                             <li key={item.id}>
-                                <strong>{item.key}:</strong>
-                                <span> {item.value} </span>
+                                <strong className={`${styles.listKey}`} >{item.key}:</strong>
+                                <span className={`${styles.listValue}`} > {item.value} </span>
                             </li>
                         ))}
                     </ul>
@@ -548,20 +587,20 @@ export default function Durgabari() {
             </section> */}
 
 
-             <section className={`${styles.conclusionSection} globalSectionSize `} >
-            
-                            <div className={`${styles.sectionHeading} font3`}>
-            
-                                Conclusion
-                            </div>
-            
-            
-                            <div className={`${styles.conclusionPara} font1`}>
-                                {/* By implementing the Enterprise Suite, <span className="font2 blueTextGlobalClass">EICE Technology empowered IIC to overcome its operational challenges, enhance security, and foster seamless multi-user interactions</span> . The result was a scalable, efficient, and secure system that aligned with IIC's vision for the future. */}
-                                The implementation of the <span className="font2 blueTextGlobalClass" >Club Suite was a pivotal moment for the Houston Durga Bari Society</span> . By addressing their operational challenges holistically, <span className="font2 blueTextGlobalClass" >EICE Technology enabled HDBS to embrace a future-ready, scalable platform</span>  that not only optimized their workflows but also reinforced their cultural and religious values across their global community
-                            </div>
-            
-                        </section>
+            <section className={`${styles.conclusionSection} globalSectionSize `} >
+
+                <div className={`${styles.sectionHeading} font3`}>
+
+                    Conclusion
+                </div>
+
+
+                <div className={`${styles.conclusionPara} font1`}>
+                    {/* By implementing the Enterprise Suite, <span className="font2 blueTextGlobalClass">EICE Technology empowered IIC to overcome its operational challenges, enhance security, and foster seamless multi-user interactions</span> . The result was a scalable, efficient, and secure system that aligned with IIC's vision for the future. */}
+                    The implementation of the <span className="font2 blueTextGlobalClass" >Club Suite was a pivotal moment for the Houston Durga Bari Society</span> . By addressing their operational challenges holistically, <span className="font2 blueTextGlobalClass" >EICE Technology enabled HDBS to embrace a future-ready, scalable platform</span>  that not only optimized their workflows but also reinforced their cultural and religious values across their global community
+                </div>
+
+            </section>
 
             <div>
                 <FooterLower />

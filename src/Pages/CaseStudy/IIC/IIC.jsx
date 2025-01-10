@@ -418,9 +418,9 @@ export default function IIC() {
                     <ul>
                         {role.map((item) =>
                         (
-                            <li>
-                                <strong>{item.key}:</strong>
-                                <span> {item.value} </span>
+                            <li className={`${styles.roleHighlightsListBox}`} >
+                                <strong className={`${styles.roleHighlightsKey}`}>{item.key}:</strong>
+                                <span className={`${styles.roleHighlightsValue}`} > {item.value} </span>
                             </li>
                         ))}
                     </ul>
@@ -481,12 +481,12 @@ export default function IIC() {
 
                     <div className={`${styles.valueToClientList} font4 `}>
 
-                        <ul>
+                        <ul >
                             {valueToClient.map((item) =>
                             (
-                                <li>
-                                    <strong>{item.key}:</strong>
-                                    <span> {item.value} </span>
+                                <li  className={`${styles.valueToClinetListBox}`}>
+                                    <strong className={`${styles.valueToClinetListKey}`} >{item.key}:</strong>
+                                    <span  className={`${styles.valueToClinetListValue}`} > {item.value} </span>
                                 </li>
                             ))}
                         </ul>

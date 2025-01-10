@@ -68,16 +68,15 @@
     line-height: 2rem;
 }
 
-li {
-    /* margin-bottom: 1rem; */
-    font-size: 18px;
-    padding-left: 1rem;
-}
 
 .value
 {
    margin-left: 1.5rem;
    margin-top: 1rem;
+}
+
+.value ul{
+    margin-bottom: 1rem;
 }
 
 .statement3 {
@@ -102,6 +101,22 @@ li {
     margin-top: 5px;
     line-height: 2rem;
     padding-left: 2rem;
+}
+
+.roleHighlightsKey
+{
+font-size: 18px;
+}
+
+.roleHighlightsValue
+{
+    font-size: 18px;
+
+}
+
+.roleHighlightsListBox
+{
+    margin-bottom: 1rem;
 }
 
 .toolsAndTechSection {
@@ -145,6 +160,22 @@ li {
     /* padding-left: 1.5rem; */
     padding-left: 2rem;
     margin-top: 1rem;
+}
+
+.valueToClinetListKey
+{
+
+    font-size: 18px;
+}
+
+.valueToClinetListValue
+{
+    font-size: 18px;
+}
+
+.valueToClinetListBox
+{
+    margin-bottom: 1rem;
 }
 
 .highlightsBottomPara {

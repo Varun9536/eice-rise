@@ -78,9 +78,21 @@ export default function Android() {
                 </div>
 
                 <div className="font1" >
-
                     Operational Efficiency for  <span className={`font2 blueTextGlobalClass `} > Sales Vu</span>
                 </div>
+            </header>
+
+
+            <header className={`${styles.pageMainHeadingPhone}`}>
+
+                <div>
+                    <span className={`font1 blueTextGlobalClass `}>Inventory Suite</span><span className={"font1"}  >:  Transforming </span>
+                </div>
+
+                <div className="font1" >
+                    Operational Efficiency for  <span className={`font2 blueTextGlobalClass `} > Sales Vu</span>
+                </div>
+
             </header>
 
             <section className={`${styles.briefDescSection}  `}>
@@ -108,13 +120,35 @@ export default function Android() {
             </section>
 
 
+            <section className={`${styles.briefDescSectionPhone}  `}>
+
+                <div className={`${styles.descImgPhone}`}>
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                </div>
+
+            </section>
+
+
+            <div className={`${styles.briefDescBoxPhone}`}>
+
+                <div className={`${styles.briefDescHeadingPhone} font3`}>
+                    Overview
+                </div>
+
+                <div className={`${styles.briefParaPhone} font1`}>
+                    The SalesVu Android App enhances POS functionality with features like order management, payment processing, and barcode scanning. These features streamline operations, improve inventory management, and provide secure, fast transactions, all while boosting user accessibility. The app delivers an intuitive solution for businesses to efficiently manage their operations on Android devices.
+                </div>
+
+            </div>
+
+
             <section className={`${styles.challengeSection} globalSectionSize `} >
 
                 <div className={`${styles.sectionHeading} font3 `}>
                     The Challenge
                 </div>
 
-                <div className={`${styles.informationBox} font1 `}>
+                <div className={`${styles.informationBoxPhone} font1 `}>
 
                     <div className={`${styles.statement1}`} >
                         SalesVu faced a unique design challenge in optimizing the user experience across different device types. The application consisted of two key screens: one for selecting the category and product, and the other for displaying order details.
@@ -128,8 +162,8 @@ export default function Android() {
                             {challenges.map((item) =>
                             (
                                 <li key={item.id}>
-                                    <strong>{item.key}:</strong>
-                                    <span> {item.value} </span>
+                                    <strong className={`${styles.listKey}`}>{item.key}:</strong>
+                                    <span className={`${styles.listValue}`}> {item.value} </span>
                                 </li>
                             ))}
                         </ul>
@@ -165,7 +199,7 @@ export default function Android() {
 
                             <div className={`${styles.iconAndName}`}>
 
-                                <div style={{ border: "1px solid rgba(0, 0, 0, 0.2)", padding: "5px" }}>
+                                <div className={`${styles.moduleImgBorder}`}>
                                     <div className={`${styles.iconWidth}`}>
                                         <img style={{ width: "100%" }} src={item.icon} alt="" />
                                     </div>
@@ -201,12 +235,14 @@ export default function Android() {
                     EICE Technology utilized the Inventory Suite to address these challenges, providing end-to-end support for both the Android app and the Web Admin interface.
 
                 </div>
+                <div className={`${styles.ourRoleListBox}`}>
 
-                <ul >
-                    <li> <strong className="font1">Developed a  <span className="font2 blueTextGlobalClass "> responsive UI/UX</span>  that adapted to both phones and tablets.
-                    </strong> </li>
-                    <li> <strong className="font1">Designed features to <span className="font2  blueTextGlobalClass">simplify inventory and vendor management</span>  while maintaining a consistent experience across devices.</strong> </li>
-                </ul>
+                    <ul >
+                        <li> <strong className={`${styles.ourRoleBottomPoints} font1 `}>Developed a  <span className="font2 blueTextGlobalClass "> responsive UI/UX</span>  that adapted to both phones and tablets.
+                        </strong> </li>
+                        <li> <strong className={`${styles.ourRoleBottomPoints} font1 `}>Designed features to <span className="font2  blueTextGlobalClass">simplify inventory and vendor management </span>while maintaining a consistent experience across devices.</strong> </li>
+                    </ul>
+                </div>
 
             </section>
 
@@ -227,7 +263,7 @@ export default function Android() {
                     </div>
 
                     <div className={`${styles.valueToClientPara}`}>
-                      <strong>By leveraging the Inventory Suite</strong>  , EICE Technology helped SalesVu create an app that not only met their <span>technical requirements</span>  but also <strong>enhanced operational efficiency</strong> . The suite ensured that SalesVu could deliver a seamless, user- friendly experience to their customers while managing inventory and vendor interactions effortlessly. Through this approach, <strong> EICE Technology delivered a solution that was flexible, functional, and future-ready</strong> , empowering SalesVu to maintain their competitive edge in the POS market.
+                        <strong>By leveraging the Inventory Suite</strong>  , EICE Technology helped SalesVu create an app that not only met their <span>technical requirements</span>  but also <strong>enhanced operational efficiency</strong> . The suite ensured that SalesVu could deliver a seamless, user- friendly experience to their customers while managing inventory and vendor interactions effortlessly. Through this approach, <strong> EICE Technology delivered a solution that was flexible, functional, and future-ready</strong> , empowering SalesVu to maintain their competitive edge in the POS market.
                     </div>
 
                 </div>
