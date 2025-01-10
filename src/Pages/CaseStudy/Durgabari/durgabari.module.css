@@ -431,7 +431,7 @@
 
     .statement2 {
         font-size: 16px;
-        line-height: unset;
+        line-height: 1.8rem;
     }
 
     .statement2 li {

@@ -366,7 +366,7 @@
     }
 
     .briefParaPhone {
-        line-height: 1.5rem;
+        line-height: 1.8rem;
 
     }
 
@@ -426,6 +426,12 @@
         margin-bottom: 3rem;
 
     }
+
+    .value li {
+        line-height: 1.5rem
+    }
+
+    ;
 
     .sectionHeading {
         font-size: 18px;
@@ -540,19 +546,18 @@
         margin-bottom: 1rem;
     }
 
-    .valueToClientSubheading
-    {
+    .valueToClientSubheading {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .valueToClientListKey {
         font-size: 16px;
     }
 
-    .valueToClientListKey
-    {
+    .valueToClientListValue {
         font-size: 16px;
-    }
-
-    .valueToClientListValue
-    {
-        font-size: 16px;
+        line-height: 1.8rem;
     }
 
     .imgAndParaBox {
