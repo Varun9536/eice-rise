@@ -67,7 +67,7 @@
 
 .herosectionImgBox {
     width: 50%;
-    background-image: url("../../../assets/allHero/banqueth.webp");
+    background-image: url("../../../assets/allHero/banquetHero.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -110,7 +110,7 @@
 .section3 {
 
     width: 100%;
-    /* max-width: 1600px; */
+   
     margin: 0px auto;
     margin-bottom: 52px;
 }
@@ -120,16 +120,15 @@
 
 .blueBoxSetion3 {
     background-image: url("../../../assets/insidePages/room/roomPage/overview.webp");
-    /* height: 700px; */
-    /* height: 970px; */
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    /* position: relative; */
+    
 
     display: flex;
-    /* Centering horizontally can also use flexbox */
+    
     justify-content: center;
 
 
