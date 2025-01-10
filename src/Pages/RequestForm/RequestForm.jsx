@@ -25,8 +25,8 @@ export default function RequestForm() {
         role: '',
         email: '',
         phone: '',
-        country: '',       
-        phoneCode: '', 
+        country: '',
+        phoneCode: '',
         address: '',
         requirement: '',
         message: '',
@@ -48,9 +48,9 @@ export default function RequestForm() {
                     code: country.callingCodes[0] || '',
 
                 }));
-                
+
                 setCountries(countryList);
-                
+
             })
             .catch((error) => console.error('Error fetching country data:', error));
     }, []);
@@ -80,7 +80,7 @@ export default function RequestForm() {
     const handleCountryCodeChange = (selectedOption) => {
         setFormData((prevData) => ({
             ...prevData,
-            phoneCode: selectedOption ? selectedOption.code : '',  
+            phoneCode: selectedOption ? selectedOption.code : '',
         }));
     };
 
@@ -88,7 +88,7 @@ export default function RequestForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        
+
         if (!formData.subscribe || !formData.policyAgree) {
             alert("Please agree to the terms and conditions before submitting.");
             return;
@@ -183,7 +183,7 @@ export default function RequestForm() {
             question: "Q : Can I customize the demo based on my business requirements?",
             answer: "A : Absolutely! During the request, let us know your specific needs, and we’ll tailor the demo to address them."
         },
-        
+
     ];
 
     const customStyles = {
@@ -220,16 +220,16 @@ export default function RequestForm() {
         { value: 'Product Details or Demo', label: 'Product Details or Demo' },
         { value: 'Product Pricing', label: 'Product Pricing' },
         { value: 'Support or Training', label: 'Support or Training' },
-      ];
+    ];
 
     const handleSelectChange2 = (selectedOption) => {
         handleChange({
-          target: {
-            name: 'requirement',
-            value: selectedOption ? selectedOption.value : '',
-          },
+            target: {
+                name: 'requirement',
+                value: selectedOption ? selectedOption.value : '',
+            },
         });
-      };
+    };
 
     return (
         <>
@@ -428,9 +428,7 @@ export default function RequestForm() {
                 </form>
             </div>
 
-            <div className={`${styles.reviewSection}`}>
-                {/* Feedback and FAQ sections remain the same */}
-            </div>
+
 
 
             <div className={`${styles.reviewSection}`}>
@@ -502,7 +500,7 @@ export default function RequestForm() {
 
                     <div className={`${styles.contactUsBox} font1 `}>
 
-                        <div>
+                        <div >
 
                             <div className={`${styles.key} font3`}>Email :</div>
                             <div className={`${styles.value} font1 `}  >info@eicetechnology.com</div>
@@ -536,9 +534,68 @@ export default function RequestForm() {
             </section>
 
 
+            <section className={`${styles.contactUsBackgroundPhone}`}>
+                <div className={`${styles.ContactUsSectionPhone} globalSectionSize  `}>
+
+                    <div className={`${styles.contactUsHeading} font3`}>
+                        Contact Us
+                    </div>
+
+                    <div className={`${styles.contactUsBoxPhone} font1 `}>
+
+                        <div className={`${styles.contactSubBox1}`}>
+                            <div className={`${styles.contactDetailBox}`}>
+
+                                <div className={`${styles.key} font3`}>Email </div>
+                                <div className={`${styles.value} font1 `}  >info@eicetechnology.com</div>
+
+                            </div>
+
+                            <div className={`${styles.contactDetailBox}`}>
+
+                                <div className={`${styles.key} font3`}>Address (India) </div>
+                                <div className={`${styles.value} font1 `}>B-8 Second Floor   </div>
+                                <div className={`${styles.value} font1 `}> Sec-60, Noida 201301</div>
+
+                            </div>
+                        </div>
+
+
+                        <div className={`${styles.contactSubBox1}`}>
+
+                            <div className={`${styles.contactDetailBox}`}>
+
+                                <div className={`${styles.key} font3 `}>Phone no </div>
+                                <div className={`${styles.value} font1 `}> 0120 435 5910</div>
+
+                            </div>
+
+                            <div className={`${styles.contactDetailBox}`} >
+                                <div className={`${styles.key} font3`}>Address (USA) </div>
+                                <div className={`${styles.value} font1 `}>440 Cobia Drive, #901 </div>
+                                <div className={`${styles.value} font1 `}>katy, Texas 77494</div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
             <section className={`${styles.LaptopImgSection}`}>
                 <div className={`${styles.LaptopImg}`}>
                     <img src={laptop} alt="footer" />
+                </div>
+            </section>
+
+            <section className={`${styles.LaptopImgSectionPhone}`}>
+                <div className={`${styles.LaptopImgPhone}`}>
+
                 </div>
             </section>
 
