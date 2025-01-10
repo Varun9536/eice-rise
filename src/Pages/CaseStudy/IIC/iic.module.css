@@ -18,6 +18,7 @@
     margin: 0px auto;
     padding: 3rem 4rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 .descImg {
@@ -69,13 +70,12 @@
 }
 
 
-.value
-{
-   margin-left: 1.5rem;
-   margin-top: 1rem;
+.value {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 
-.value ul{
+.value ul {
     margin-bottom: 1rem;
 }
 
@@ -103,19 +103,16 @@
     padding-left: 2rem;
 }
 
-.roleHighlightsKey
-{
-font-size: 18px;
+.roleHighlightsKey {
+    font-size: 18px;
 }
 
-.roleHighlightsValue
-{
+.roleHighlightsValue {
     font-size: 18px;
 
 }
 
-.roleHighlightsListBox
-{
+.roleHighlightsListBox {
     margin-bottom: 1rem;
 }
 
@@ -150,8 +147,7 @@ font-size: 18px;
 
 }
 
-.valueToClientSubheading
-{
+.valueToClientSubheading {
     font-size: 18px;
     margin-top: 1rem;
 }
@@ -162,19 +158,16 @@ font-size: 18px;
     margin-top: 1rem;
 }
 
-.valueToClinetListKey
-{
+.valueToClientListKey {
 
     font-size: 18px;
 }
 
-.valueToClinetListValue
-{
+.valueToClientListValue {
     font-size: 18px;
 }
 
-.valueToClinetListBox
-{
+.valueToClientListBox {
     margin-bottom: 1rem;
 }
 
@@ -187,15 +180,13 @@ font-size: 18px;
 
 
 
-.conclusionSection
-{
+.conclusionSection {
     padding: 0 4rem;
     margin-bottom: 3rem;
 }
 
 
-.conclusionPara
-{
+.conclusionPara {
     font-style: italic;
     font-size: 18px;
     margin-top: 1rem;
@@ -290,4 +281,308 @@ font-size: 18px;
     text-align: center;
     font-size: 13px;
     font-weight: 600;
+}
+
+
+
+
+
+
+@media (max-width : 800px) {
+
+    .pageMainHeading {
+        display: none;
+    }
+
+
+
+    .briefDescSection {
+
+        display: none;
+    }
+
+}
+
+
+@media (min-width : 800px) {
+
+    .pageMainHeadingPhone {
+        display: none;
+    }
+
+
+    .briefDescSectionPhone {
+        display: none;
+    }
+
+    .briefDescBoxPhone {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width : 800px) {
+    .pageMainHeadingPhone {
+        margin-top: 6rem;
+        font-size: 20px;
+        text-align: left;
+        font-weight: 600;
+        padding: 0px 10px;
+        margin-bottom: 1rem;
+
+
+    }
+
+
+    .briefDescSectionPhone {
+
+        background-color: rgb(245, 245, 245);
+        padding: 1rem 0px;
+
+
+    }
+
+
+
+    .descImgPhone {
+        width: 85%;
+        margin: 0px auto;
+
+    }
+
+    .briefDescBoxPhone {
+        padding: 0px 10px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .briefDescHeadingPhone {
+
+        margin-bottom: 0.5rem;
+        font-size: 20px;
+
+    }
+
+    .briefParaPhone {
+        line-height: 1.5rem;
+
+    }
+
+
+    .section2 {
+        padding-top: unset;
+    }
+
+    .moduleboxAndHeading {
+        padding: 0px 10px;
+    }
+
+    .moduleIncludedHeading {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 1rem;
+
+    }
+
+    .servicesBox {
+        justify-content: unset;
+        padding: 0px 10px;
+    }
+
+
+    .iconAndTextBox {
+
+        width: 8rem;
+
+        height: 8rem;
+
+
+
+
+    }
+
+    .serviceName {
+        padding: 10px 20px;
+    }
+
+
+    .value {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .helpBoxOfList {
+        margin-bottom: 1.5rem;
+    }
+
+
+
+
+
+    .challengeSection {
+        padding: 0px 10px;
+        margin-bottom: 3rem;
+
+    }
+
+    .sectionHeading {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+
+    .statement1 {
+        font-size: 16px;
+    }
+
+    .statement2 {
+        font-size: 16px;
+        line-height: unset;
+    }
+
+    .statement2 li {
+        margin-bottom: 0.5rem;
+    }
+
+
+
+
+
+    .listKey {
+        font-size: 16px;
+
+    }
+
+    .listValue {
+        font-size: 16px;
+    }
+
+    .statement3 {
+        font-size: 16px;
+    }
+
+    .moduleSection {
+        padding: 0px 10px;
+        margin-bottom: 3rem;
+    }
+
+    .iconAndName {
+        display: unset;
+
+    }
+
+    .serviceName {
+        padding: 8px 15px;
+    }
+
+    .serviceName2 {
+        padding: 5px 4px;
+    }
+
+    .moduleNames {
+        font-size: 16px;
+    }
+
+
+
+    .moduleImgBorder {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .iconWidth {
+        width: 6rem;
+
+
+    }
+
+    .listBox {
+        margin-top: unset;
+    }
+
+    .empoweringiListSection {
+        padding: 0px 10px;
+    }
+
+
+    .ourRoleSection {
+        padding: 0 10px;
+        margin-bottom: 3rem;
+
+    }
+
+    .roleDesc {
+        font-size: 16px;
+        margin-top: unset;
+    }
+
+    .roleHighlightsKey {
+        font-size: 16px;
+    }
+
+    .roleHighlightsValue {
+        font-size: 16px;
+    }
+
+
+    .ourRoleBottomPoints {
+
+        font-size: 16px;
+    }
+
+    .valuesToClientSection {
+        padding: 0px 10px;
+        margin-bottom: 1rem;
+    }
+
+    .valueToClientSubheading
+    {
+        font-size: 16px;
+    }
+
+    .valueToClientListKey
+    {
+        font-size: 16px;
+    }
+
+    .valueToClientListValue
+    {
+        font-size: 16px;
+    }
+
+    .imgAndParaBox {
+        flex-direction: column;
+    }
+
+    .valueToClientPara {
+        width: 95%;
+        font-size: 16px;
+        line-height: 2rem;
+        margin-left: unset;
+
+
+    }
+
+
+    .valueClientImg {
+        width: 95%;
+    }
+
+
+    .conclusionSection {
+        padding: 0px 10px;
+    }
+
+    .conclusionPara {
+        margin-top: 0.5rem;
+        font-size: 16px;
+    }
+
+
+
 }

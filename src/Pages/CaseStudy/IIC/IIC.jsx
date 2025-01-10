@@ -263,6 +263,22 @@ export default function IIC() {
 
             </header>
 
+
+            <header className={`${styles.pageMainHeadingPhone}`}>
+
+                <div>
+                    <span className={`font1 blueTextGlobalClass `}>Enterprise Suite</span><span className={"font1"}  >: Empowering Indian </span>
+                  <span className="font1">International Center</span>   <span className={`font2 blueTextGlobalClass `} >(IIC)</span>
+                    {/* <span className="font1">for</span>   <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> <span>(HDBS)</span> */}
+                </div>
+
+                <div className="font1" >
+
+               
+                </div>
+
+            </header>
+
             <section className={`${styles.briefDescSection}  `}>
 
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
@@ -286,6 +302,27 @@ export default function IIC() {
                 </div>
 
             </section>
+
+             <section className={`${styles.briefDescSectionPhone}  `}>
+            
+                            <div className={`${styles.descImgPhone}`}>
+                                <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                            </div>
+            
+                        </section>
+            
+            
+                        <div className={`${styles.briefDescBoxPhone}`}>
+            
+                            <div className={`${styles.briefDescHeadingPhone} font3`}>
+                                Overview
+                            </div>
+            
+                            <div className={`${styles.briefParaPhone} font1`}>
+                                The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
+                            </div>
+            
+                        </div>
 
 
 
@@ -484,9 +521,9 @@ export default function IIC() {
                         <ul >
                             {valueToClient.map((item) =>
                             (
-                                <li  className={`${styles.valueToClinetListBox}`}>
-                                    <strong className={`${styles.valueToClinetListKey}`} >{item.key}:</strong>
-                                    <span  className={`${styles.valueToClinetListValue}`} > {item.value} </span>
+                                <li className={`${styles.valueToClientListBox}`}>
+                                    <strong className={`${styles.valueToClientListKey}`} >{item.key}:</strong>
+                                    <span className={`${styles.valueToClientListValue}`} > {item.value} </span>
                                 </li>
                             ))}
                         </ul>
