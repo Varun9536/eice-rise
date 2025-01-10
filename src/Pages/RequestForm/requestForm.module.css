@@ -541,6 +541,31 @@ input[type="checkbox"] {
 @media (max-width : 730px)
 {
 
+
+    .checkBoxNote
+    {
+        font-size: 14px;
+    }
+
+    .clientHeading
+    {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .clientInfo
+    {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .quoteHeading
+    {
+        font-size: 16px;
+    }
+
     .FAQsection
     {
         padding: 0px 10px;

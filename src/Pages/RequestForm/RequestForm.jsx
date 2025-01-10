@@ -4,6 +4,9 @@ import c3 from "../../assets/Hospitality/customer/c1.png"
 import c2 from "../../assets/Hospitality/customer/c2.png"
 import c1 from "../../assets/Hospitality/customer/c3.png"
 
+
+
+
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
 import ak from "../../assets/form/feedback/AK.png"
@@ -37,6 +40,15 @@ export default function RequestForm() {
 
     const [countries, setCountries] = useState([]);
     const [isDisabled, setIsDisabled] = useState(true);
+
+
+
+    const [feedbackIndex, setFeedbackIndex] = useState(0);
+
+
+
+
+
 
     useEffect(() => {
         fetch('https://restcountries.com/v2/all')
@@ -393,7 +405,7 @@ export default function RequestForm() {
                                 onChange={handleChange}
 
                             />
-                            <span>Recieve EICE Rise Products, Services, Events and more</span>
+                            <span className={`${styles.checkBoxNote}`}>Recieve EICE Rise Products, Services, Events and more</span>
                         </div>
 
                         <div className={`${styles.checkBox}`}>
@@ -404,7 +416,7 @@ export default function RequestForm() {
                                 checked={formData.policyAgree}
                                 onChange={handleChange}
                             />
-                            <span>I have agreed to EICE Technology Privacy policy</span>
+                            <span className={`${styles.checkBoxNote}`}>I have agreed to EICE Technology Privacy policy</span>
                         </div>
                     </div>
 
@@ -471,6 +483,60 @@ export default function RequestForm() {
                             </article>
                         ))}
                     </main>
+
+
+                </section>
+            </div>
+
+
+            <div className={`${styles.reviewSectionForPhone}`}>
+                <section className={`${styles.section5} globalSectionSize`}>
+
+                    <div className={`${styles.clientHeading} font3`}>
+                            What our clients say  ?
+                    </div>
+
+                    <main className={`${styles.feedBack}`}>
+
+
+                        <article key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
+
+                            <figure >
+
+                                <div style={{ textAlign: "center" }}  >
+                                    <img style={{ width: "28%" }} src={feedback[feedbackIndex].img} alt="" />
+                                </div>
+
+                                <figcaption className={`${styles.clientInfo}`} > <span >-- {feedback[feedbackIndex].client} ,</span> <span style={{ fontWeight: "bold" }} >{feedback[feedbackIndex].position}</span>  <span>{feedback[feedbackIndex].company}</span></figcaption>
+
+                            </figure>
+                            <div>
+                                <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
+                                    "{
+                                        feedback[feedbackIndex].heading
+                                    }"
+
+                                </div>
+                            </div>
+
+
+
+                            <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
+
+                        </article>
+
+                    </main>
+
+
+                    <div className="indicators">
+                        {feedback.map((_, index) => (
+                            <span
+                                key={index}
+                                className={`indicator ${feedbackIndex === index ? 'active' : ''}`}
+                                onClick={() => setFeedbackIndex(index)}
+                            ></span>
+                        ))}
+                    </div>
 
 
                 </section>
