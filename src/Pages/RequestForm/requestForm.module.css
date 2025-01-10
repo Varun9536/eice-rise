@@ -420,14 +420,40 @@ input[type="checkbox"] {
 @media (max-width : 1200px) {
     .formHeadingBox {
         padding: 0px 10px;
+        margin-top: 5rem;
     }
 
     .formHeading {
         text-align: unset;
+        font-size: 20px;
+        margin-bottom: 0.5rem;
     }
 
     .formSubheading {
         text-align: unset;
+        font-size: 14px;
+    }
+    .formContainer
+    {
+        box-shadow: none;
+        padding: 0px 10px;
+    }
+
+    .formContainer label
+    {
+        font-size: 12px;
+    }
+
+    .FormInnerHeading
+    {
+        padding-top: unset;
+        font-size: 16px;
+        margin-bottom: 0.7rem;
+    }
+
+    .formContainer input::placeholder
+    {
+        font-size: 14px;
     }
 
     .line1 {

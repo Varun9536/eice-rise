@@ -337,7 +337,7 @@ export default function RequestForm() {
                         </div>
 
                         <div>
-                            <div>Address*</div>
+                            <label>Address*</label>
                             <div>
                                 <input placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
                             </div>
