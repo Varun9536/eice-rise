@@ -134,7 +134,7 @@ export default function Pricing() {
   };
 
 
-  
+
 
   return (
     <>
@@ -174,17 +174,21 @@ export default function Pricing() {
           Suites For Your Needs
         </div>
 
-        <div className={`${styles.modulesTabHeadings} font3`}>
-          {suites.map((item) =>
-          (
-            <div  style={{   padding: "7px 5px", cursor: "pointer", color: item.key === showSuitPage ? '#01B0F1' : 'rgb(156, 153, 153)', borderBottom: item.key === showSuitPage ? ' 2px solid #01B0F1' : '' }} onClick={(e) => { handleSuitPage(e, item.key) , handleScroll() }} key={item.key}>{item.suiteName}</div>
-          ))}
+        <div className={`${styles.modulesTabHeadingContainer} font3`}>
+          <div className={`${styles.modulesTabHeadings} font3`}>
+            {suites.map((item) =>
+            (
+              <div style={{ padding: "7px 5px", cursor: "pointer", color: item.key === showSuitPage ? '#01B0F1' : 'rgb(156, 153, 153)', borderBottom: item.key === showSuitPage ? ' 2px solid #01B0F1' : '' }} onClick={(e) => { handleSuitPage(e, item.key), handleScroll() }} key={item.key}>{item.suiteName}</div>
+            ))}
+          </div>
         </div>
+
+
 
       </section>
 
 
-      <section  ref={targetDivRef}>
+      <section ref={targetDivRef}>
         {suitPage[showSuitPage].page}
 
       </section>

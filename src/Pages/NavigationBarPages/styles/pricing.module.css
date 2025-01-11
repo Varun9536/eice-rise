@@ -131,9 +131,12 @@
 
     }
 
-    .moduleSuiteSection
-    {
+    .modulesTabHeadingContainer {
         overflow-x: auto;
+    }
+
+    .modulesTabHeadingContainer::-webkit-scrollbar {
+        display: none;
     }
 
     .modulesTabHeadings {
