@@ -277,7 +277,7 @@
     line-height: 2rem;
 }
 
-
+/* 
 @media (max-width : 800px) {
 
     .pageMainHeading {
@@ -291,9 +291,9 @@
         display: none;
     }
 
-}
+} */
 
-
+/* 
 @media (min-width : 800px) {
 
     .pageMainHeadingPhone {
@@ -309,7 +309,7 @@
         display: none;
     }
 
-}
+} */
 
 
 

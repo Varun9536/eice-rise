@@ -44,11 +44,28 @@ import footer from "../../assets/footerLaptop/inventary.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
+import { useEffect, useState } from "react"
+
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function UserAndInventry() {
 
 
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+
+
+
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 980); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
 
     const features = [
@@ -189,60 +206,60 @@ export default function UserAndInventry() {
         <>
 
 
+            {isPhone ? (
+                <section className={`${style.section1ContainerPhone}  `}>
 
+                    <div className={`${style.contentConatinerPhone}`}>
 
-            <section className={`${style.section1Container}  `}>
-
-
-                <div className={`${style.fadeBackgroundConatiner}`}>
-
-                    <div className={`${style.contentConatiner}`}>
-
-                        <div className={`${style.headingBox} font4 `}>
-                            <div className={`${style.mainHeading}`}>
+                        <div className={`${style.headingBoxPhone} font4 `}>
+                            <div className={`${style.mainHeadingPhone}`}>
                                 <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
                             </div>
-                            <div className={`${style.mainPara}`}>
-                            Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
+                            <div className={`${style.mainParaPhone}`}>
+                                Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
                             </div>
 
 
                         </div>
 
-                        <div className={`${style.herosectionImgBox}`}>
-                            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                        <div className={`${style.herosectionImgBoxPhone}`}>
+                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                        </div>
+
+
+                    </div>
+
+                </section>) : (<section className={`${style.section1Container}  `}>
+
+
+                    <div className={`${style.fadeBackgroundConatiner}`}>
+
+                        <div className={`${style.contentConatiner}`}>
+
+                            <div className={`${style.headingBox} font4 `}>
+                                <div className={`${style.mainHeading}`}>
+                                    <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
+                                </div>
+                                <div className={`${style.mainPara}`}>
+                                    Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
+                                </div>
+
+
+                            </div>
+
+                            <div className={`${style.herosectionImgBox}`}>
+                                {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
-
-            </section>
+                </section>)}
 
 
-            <section className={`${style.section1ContainerPhone}  `}>
-
-<div className={`${style.contentConatinerPhone}`}>
-
-    <div className={`${style.headingBoxPhone} font4 `}>
-        <div className={`${style.mainHeadingPhone}`}>
-        <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
-        </div>
-        <div className={`${style.mainParaPhone}`}>
-        Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
-        </div>
 
 
-    </div>
-
-    <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
-    </div>
-
-
-</div>
-
-</section>
 
             <section style={{ backgroundColor: "#f5f5f5" }}>
                 <div className={`${style.section2} font4 globalSectionSize`}>

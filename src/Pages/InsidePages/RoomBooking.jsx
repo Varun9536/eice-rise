@@ -58,7 +58,7 @@ import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
 
-
+import { useEffect , useState } from "react"
 
 import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp"
 
@@ -68,6 +68,22 @@ import main from "../../assets/insidePages/room/roomPage/H.webp"
 export default function RoomBooking() {
 
 
+     const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+    
+    
+     
+    
+    
+      useEffect(() => {
+          const handleResize = () => {
+              setIsPhone(window.innerWidth <= 980); // Update based on screen size
+          };
+          window.addEventListener('resize', handleResize);
+          return () => {
+              window.removeEventListener('resize', handleResize);
+          };
+      }, []);
+    
 
     const footerUpperText = {
 
@@ -225,59 +241,59 @@ export default function RoomBooking() {
     return (
         <>
 
+{isPhone ? (  <section className={`${style.section1ContainerPhone}  `}>
+
+<div className={`${style.contentConatinerPhone}`}>
+
+    <div className={`${style.headingBoxPhone} font4 `}>
+        <div className={`${style.mainHeadingPhone}`}>
+            <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
+        </div>
+        <div className={`${style.mainParaPhone}`}>
+            Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
+        </div>
 
 
-            <section className={`${style.section1Container}  `}>
+    </div>
+
+    <div className={`${style.herosectionImgBoxPhone}`}>
+        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
+    </div>
 
 
-                <div className={`${style.fadeBackgroundConatiner}`}>
+</div>
 
-                    <div className={`${style.contentConatiner}`}>
-
-                        <div className={`${style.headingBox} font4 `}>
-                            <div className={`${style.mainHeading}`}>
-                                <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
-                            </div>
-                            <div className={`${style.mainPara}`}>
-                                Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
-                            </div>
+</section>) : ( <section className={`${style.section1Container}  `}>
 
 
-                        </div>
+<div className={`${style.fadeBackgroundConatiner}`}>
 
-                        <div className={`${style.herosectionImgBox}`}>
+    <div className={`${style.contentConatiner}`}>
 
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section className={`${style.section1ContainerPhone}  `}>
-
-                <div className={`${style.contentConatinerPhone}`}>
-
-                    <div className={`${style.headingBoxPhone} font4 `}>
-                        <div className={`${style.mainHeadingPhone}`}>
-                            <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
-                        </div>
-                        <div className={`${style.mainParaPhone}`}>
-                            Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
-                        </div>
+        <div className={`${style.headingBox} font4 `}>
+            <div className={`${style.mainHeading}`}>
+                <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
+            </div>
+            <div className={`${style.mainPara}`}>
+                Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
+            </div>
 
 
-                    </div>
+        </div>
 
-                    <div className={`${style.herosectionImgBoxPhone}`}>
-                        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
-                    </div>
+        <div className={`${style.herosectionImgBox}`}>
 
+        </div>
 
-                </div>
+    </div>
 
-            </section>
+</div>
+
+</section>)}
+
+           
+
+          
 
 
 

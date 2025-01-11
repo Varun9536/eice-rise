@@ -48,7 +48,7 @@ import laptop from "../../assets/section3Laptop/vendor.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-
+import { useState , useEffect } from "react"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -58,6 +58,24 @@ import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 export default function PurchaseAndVendor() {
 
+
+
+     const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+    
+    
+     
+    
+    
+      useEffect(() => {
+          const handleResize = () => {
+              setIsPhone(window.innerWidth <= 980); // Update based on screen size
+          };
+          window.addEventListener('resize', handleResize);
+          return () => {
+              window.removeEventListener('resize', handleResize);
+          };
+      }, []);
+    
 
 
 
@@ -219,59 +237,59 @@ export default function PurchaseAndVendor() {
         <>
 
 
+{isPhone ? ( <section className={`${style.section1ContainerPhone}  `}>
+
+<div className={`${style.contentConatinerPhone}`}>
+
+    <div className={`${style.headingBoxPhone} font4 `}>
+        <div className={`${style.mainHeadingPhone}`}>
+        <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
+        </div>
+        <div className={`${style.mainParaPhone}`}>
+        Optimize vendor management with a comprehensive portal for seamless purchasing, invoicing, and communication
+        </div>
 
 
-              <section className={`${style.section1Container}  `}>
-            
-            
-                    <div className={`${style.fadeBackgroundConatiner}`}>
-            
-                      <div className={`${style.contentConatiner}`}>
-            
-                        <div className={`${style.headingBox} font4 `}>
-                          <div className={`${style.mainHeading}`}>
-                            <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
-                          </div>
-                          <div className={`${style.mainPara}`}>
-                          Optimize vendor management with a comprehensive portal for seamless purchasing, invoicing, and communication
-                          </div>
-            
-            
-                        </div>
-            
-                        <div className={`${style.herosectionImgBox}`}>
-                          {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
-                        </div>
-            
-                      </div>
-            
-                    </div>
-            
-                  </section>
+    </div>
 
-  <section className={`${style.section1ContainerPhone}  `}>
-
-                <div className={`${style.contentConatinerPhone}`}>
-
-                    <div className={`${style.headingBoxPhone} font4 `}>
-                        <div className={`${style.mainHeadingPhone}`}>
-                        <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
-                        </div>
-                        <div className={`${style.mainParaPhone}`}>
-                        Optimize vendor management with a comprehensive portal for seamless purchasing, invoicing, and communication
-                        </div>
+    <div className={`${style.herosectionImgBoxPhone}`}>
+        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+    </div>
 
 
-                    </div>
+</div>
 
-                    <div className={`${style.herosectionImgBoxPhone}`}>
-                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
-                    </div>
-
-
+</section>):(<section className={`${style.section1Container}  `}>
+            
+            
+            <div className={`${style.fadeBackgroundConatiner}`}>
+    
+              <div className={`${style.contentConatiner}`}>
+    
+                <div className={`${style.headingBox} font4 `}>
+                  <div className={`${style.mainHeading}`}>
+                    <span style={{ color: "#012060" }} >PURCHASE</span><span style={{ color: "#01B0F1" }} > & VENDOR PORTAL</span>
+                  </div>
+                  <div className={`${style.mainPara}`}>
+                  Optimize vendor management with a comprehensive portal for seamless purchasing, invoicing, and communication
+                  </div>
+    
+    
                 </div>
+    
+                <div className={`${style.herosectionImgBox}`}>
+                  {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </section>)}
 
-            </section>
+              
+
+ 
 
             <section style={{ backgroundColor: "#f5f5f5" }}>
                 <div className={`${style.section2} font4 globalSectionSize`}>

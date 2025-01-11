@@ -9,7 +9,7 @@
 
 }
 
-@media (max-width : 980px) {
+/* @media (max-width : 980px) {
     .section1Container {
         display: none;
     }
@@ -22,9 +22,9 @@
     .section1ContainerPhone {
         display: none;
     }
+} */
 
 
-}
 .fadeBackgroundConatiner {
 
 

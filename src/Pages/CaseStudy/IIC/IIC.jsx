@@ -18,8 +18,27 @@ import pay from "../../../assets/Hospitality/allPageIcon/PAyscale.png"
 import room from "../../../assets/Hospitality/allPageIcon/Room.png"
 import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
 
+import { useState, useEffect } from "react"
+
 
 export default function IIC() {
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
+
+
+
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
 
     // const challenges = [
     //     {
@@ -249,37 +268,37 @@ export default function IIC() {
     return (
         <>
 
-            <header className={`${styles.pageMainHeading}`}>
+            {isPhone ? (
+                <header className={`${styles.pageMainHeadingPhone}`}>
 
-                {/* <span className={`font2 blueTextGlobalClass `} >IIC</span>  <span className="font4" > SKY</span> */}
-                <div>
-                    <span className={`font2 blueTextGlobalClass `}>Enterprise Suite</span><span className={"font1"} >: Empowering Indian</span>
-                </div>
+                    <div>
+                        <span className={`font1 blueTextGlobalClass `}>Enterprise Suite</span><span className={"font1"}  >: Empowering Indian </span>
+                        <span className="font1">International Center</span>   <span className={`font2 blueTextGlobalClass `} >(IIC)</span>
+                        {/* <span className="font1">for</span>   <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> <span>(HDBS)</span> */}
+                    </div>
 
-                <div className="font1" >
-                    International Center <span className={`font2 blueTextGlobalClass `} >(IIC)</span>
-                </div>
-
-
-            </header>
+                    <div className="font1" >
 
 
-            <header className={`${styles.pageMainHeadingPhone}`}>
+                    </div>
 
-                <div>
-                    <span className={`font1 blueTextGlobalClass `}>Enterprise Suite</span><span className={"font1"}  >: Empowering Indian </span>
-                  <span className="font1">International Center</span>   <span className={`font2 blueTextGlobalClass `} >(IIC)</span>
-                    {/* <span className="font1">for</span>   <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> <span>(HDBS)</span> */}
-                </div>
+                </header>) : (<header className={`${styles.pageMainHeading}`}>
 
-                <div className="font1" >
+                    {/* <span className={`font2 blueTextGlobalClass `} >IIC</span>  <span className="font4" > SKY</span> */}
+                    <div>
+                        <span className={`font2 blueTextGlobalClass `}>Enterprise Suite</span><span className={"font1"} >: Empowering Indian</span>
+                    </div>
 
-               
-                </div>
+                    <div className="font1" >
+                        International Center <span className={`font2 blueTextGlobalClass `} >(IIC)</span>
+                    </div>
 
-            </header>
 
-            <section className={`${styles.briefDescSection}  `}>
+                </header>)}
+
+
+
+            {!isPhone && (<section className={`${styles.briefDescSection}  `}>
 
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
@@ -301,28 +320,31 @@ export default function IIC() {
 
                 </div>
 
-            </section>
+            </section>)}
 
-             <section className={`${styles.briefDescSectionPhone}  `}>
-            
-                            <div className={`${styles.descImgPhone}`}>
-                                <img style={{ width: "100%" }} src={laptop} alt="brief description" />
-                            </div>
-            
-                        </section>
-            
-            
-                        <div className={`${styles.briefDescBoxPhone}`}>
-            
-                            <div className={`${styles.briefDescHeadingPhone} font3`}>
-                                Overview
-                            </div>
-            
-                            <div className={`${styles.briefParaPhone} font1`}>
-                                The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
-                            </div>
-            
-                        </div>
+
+            {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
+
+                <div className={`${styles.descImgPhone}`}>
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                </div>
+
+            </section>)}
+
+
+            {isPhone && (<div className={`${styles.briefDescBoxPhone}`}>
+
+                <div className={`${styles.briefDescHeadingPhone} font3`}>
+                    Overview
+                </div>
+
+                <div className={`${styles.briefParaPhone} font1`}>
+                    The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
+                </div>
+
+            </div>)}
+
+
 
 
 

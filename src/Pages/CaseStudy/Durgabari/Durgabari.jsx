@@ -16,6 +16,8 @@ import pay from "../../../assets/Hospitality/allPageIcon/PAyscale.png"
 import room from "../../../assets/Hospitality/allPageIcon/Room.png"
 import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
 
+import { useState, useEffect } from "react"
+
 import FooterLower from "../../../Components/Footer/FooterLower"
 
 export default function Durgabari() {
@@ -27,6 +29,23 @@ export default function Durgabari() {
         { id: 3, key: "Fragmented Member Engagement", value: "Members lacked a unified platform to interact with the organization, access services, or stay updated on activities." },
         { id: 4, key: "Manual Administrative Processes", value: "From managing memberships to processing event registrations and donations, manual workflows led to delays and errors." }
     ];
+
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
+
+
+
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
 
 
@@ -253,22 +272,7 @@ export default function Durgabari() {
     return (
         <>
 
-            <header className={`${styles.pageMainHeading}`}>
-
-                <div>
-                    <span className={`font2 blueTextGlobalClass `}>Club Suite</span><span className={"font1"}  >:  Empowering Community Operations</span>
-                </div>
-
-                <div className="font1" >
-
-                    for <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> (HDBS)
-                </div>
-
-
-
-            </header>
-
-            <header className={`${styles.pageMainHeadingPhone}`}>
+            {isPhone ? (<header className={`${styles.pageMainHeadingPhone}`}>
 
                 <div>
                     <span className={`font1 blueTextGlobalClass `}>Club Suite</span><span className={"font1"}  >:  Empowering Community Operations </span>
@@ -281,9 +285,24 @@ export default function Durgabari() {
 
                 </div>
 
-            </header>
+            </header>) : (<header className={`${styles.pageMainHeading}`}>
 
-            <section className={`${styles.briefDescSection}  `}>
+                <div>
+                    <span className={`font2 blueTextGlobalClass `}>Club Suite</span><span className={"font1"}  >:  Empowering Community Operations</span>
+                </div>
+
+                <div className="font1" >
+
+                    for <span className={`font2 blueTextGlobalClass `} > Houston Durga Bari Society</span> (HDBS)
+                </div>
+
+
+
+            </header>)}
+
+
+
+            {!isPhone && (<section className={`${styles.briefDescSection}  `}>
 
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
@@ -305,20 +324,22 @@ export default function Durgabari() {
 
                 </div>
 
-            </section>
+            </section>)}
 
 
 
-            <section className={`${styles.briefDescSectionPhone}  `}>
+
+
+            {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
 
                 <div className={`${styles.descImgPhone}`}>
                     <img style={{ width: "100%" }} src={laptop} alt="brief description" />
                 </div>
 
-            </section>
+            </section>)}
 
 
-            <div className={`${styles.briefDescBoxPhone}`}>
+            {isPhone && (<div className={`${styles.briefDescBoxPhone}`}>
 
                 <div className={`${styles.briefDescHeadingPhone} font3`}>
                     Overview
@@ -328,7 +349,8 @@ export default function Durgabari() {
                     The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed community. EICE Technology implemented the Club Suite, a comprehensive set of integrated modules, to address these needs. By leveraging the suite's capabilities, HDBS was able to centralize its operations, foster stronger connections with its members, and streamline administrative processes.
                 </div>
 
-            </div>
+            </div>)}
+
 
 
             <section className={`${styles.section2} `}>
@@ -444,8 +466,8 @@ export default function Durgabari() {
 
                         {help.map((item, index) =>
                         (
-                          
-                                <div className={`${styles.helpBoxOfList}`}>
+
+                            <div className={`${styles.helpBoxOfList}`}>
                                 <div className="font3 blueTextGlobalClass">
                                     <span>{index + 1}. </span>
                                     {item.key}:
@@ -468,14 +490,14 @@ export default function Durgabari() {
                                     </ul>
                                 </div>
 
-                                </div>
+                            </div>
 
 
 
 
 
 
-                          
+
 
                         ))}
 

@@ -11,22 +11,7 @@
 
 
 
-@media (max-width : 980px) {
-    .section1Container {
-        display: none;
-    }
 
-
-}
-
-
-@media (min-width : 980px) {
-    .section1ContainerPhone {
-        display: none;
-    }
-
-
-}
 
 
 .fadeBackgroundConatiner {
@@ -479,14 +464,3 @@
 
 }
 
-@media (min-width : 800px) and (max-width : 1400px)
-{
-   
-
-    .section1Heading {
-        
-        padding-left: 26%;
-        font-size: 30px;
-    
-    }
-}

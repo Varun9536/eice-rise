@@ -7,11 +7,23 @@ import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
 import inentry from "../../../assets/Hospitality/allPageIcon/store.png"
 import { Link } from "react-router-dom"
 
+import { useEffect, useState } from "react"
 
 import family from "../../../assets/caseStudy/family.webp"
 
 export default function Android() {
 
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const challenges = [
         {
@@ -71,19 +83,7 @@ export default function Android() {
     return (
         <>
 
-            <header className={`${styles.pageMainHeading}`}>
-
-                <div>
-                    <span className={`font2 blueTextGlobalClass `}>Inventory Suite</span><span className={"font1"}  >:  Transforming </span>
-                </div>
-
-                <div className="font1" >
-                    Operational Efficiency for  <span className={`font2 blueTextGlobalClass `} > Sales Vu</span>
-                </div>
-            </header>
-
-
-            <header className={`${styles.pageMainHeadingPhone}`}>
+            {isPhone ? (<header className={`${styles.pageMainHeadingPhone}`}>
 
                 <div>
                     <span className={`font1 blueTextGlobalClass `}>Inventory Suite</span><span className={"font1"}  >:  Transforming </span>
@@ -94,8 +94,18 @@ export default function Android() {
                 </div>
 
             </header>
+            ) : (<header className={`${styles.pageMainHeading}`}>
 
-            <section className={`${styles.briefDescSection}  `}>
+                <div>
+                    <span className={`font2 blueTextGlobalClass `}>Inventory Suite</span><span className={"font1"}  >:  Transforming </span>
+                </div>
+
+                <div className="font1" >
+                    Operational Efficiency for  <span className={`font2 blueTextGlobalClass `} > Sales Vu</span>
+                </div>
+            </header>)}
+
+            {!isPhone && (<section className={`${styles.briefDescSection}  `}>
 
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
@@ -117,19 +127,20 @@ export default function Android() {
 
                 </div>
 
-            </section>
+            </section>)}
 
 
-            <section className={`${styles.briefDescSectionPhone}  `}>
+            {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
 
                 <div className={`${styles.descImgPhone}`}>
                     <img style={{ width: "100%" }} src={laptop} alt="brief description" />
                 </div>
 
             </section>
+            )}
 
 
-            <div className={`${styles.briefDescBoxPhone}`}>
+            {isPhone && (<div className={`${styles.briefDescBoxPhone}`}>
 
                 <div className={`${styles.briefDescHeadingPhone} font3`}>
                     Overview
@@ -139,7 +150,11 @@ export default function Android() {
                     The SalesVu Android App enhances POS functionality with features like order management, payment processing, and barcode scanning. These features streamline operations, improve inventory management, and provide secure, fast transactions, all while boosting user accessibility. The app delivers an intuitive solution for businesses to efficiently manage their operations on Android devices.
                 </div>
 
-            </div>
+            </div>)}
+
+
+
+
 
 
             <section className={`${styles.challengeSection} globalSectionSize `} >

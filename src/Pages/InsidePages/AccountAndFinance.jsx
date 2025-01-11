@@ -26,7 +26,7 @@ import vsp from "../../assets/insidePages/account/icon/vsp.png"
 
 import main from "../../assets/insidePages/account/h.webp"
 
-
+import { useState ,useEffect } from "react"
 
 import ac from "../../assets/insidePages/account/financebenefit/ac.webp"
 import ca from "../../assets/insidePages/account/financebenefit/ca.webp"
@@ -52,7 +52,21 @@ import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 export default function AccountAndFinance() {
 
+  const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
 
+
+ 
+
+
+  useEffect(() => {
+      const handleResize = () => {
+          setIsPhone(window.innerWidth <= 980); // Update based on screen size
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, []);
 
   const features = [
     {
@@ -236,60 +250,60 @@ export default function AccountAndFinance() {
 
 
 
+{!isPhone && (  <section className={`${style.section1Container}  `}>
 
 
-      <section className={`${style.section1Container}  `}>
+<div className={`${style.fadeBackgroundConatiner}`}>
+
+  <div className={`${style.contentConatiner}`}>
+
+    <div className={`${style.headingBox} font4 `}>
+      <div className={`${style.mainHeading}`}>
+        <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
+      </div>
+      <div className={`${style.mainPara}`}>
+        Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
+      </div>
 
 
-        <div className={`${style.fadeBackgroundConatiner}`}>
+    </div>
 
-          <div className={`${style.contentConatiner}`}>
+    <div className={`${style.herosectionImgBox}`}>
+      {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+    </div>
 
-            <div className={`${style.headingBox} font4 `}>
-              <div className={`${style.mainHeading}`}>
-                <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
-              </div>
-              <div className={`${style.mainPara}`}>
-                Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
-              </div>
+  </div>
 
+</div>
 
-            </div>
+</section>)}
 
-            <div className={`${style.herosectionImgBox}`}>
-              {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
-            </div>
+    
 
-          </div>
+{isPhone && (<section className={`${style.section1ContainerPhone}  `}>
 
-        </div>
+<div className={`${style.contentConatinerPhone}`}>
 
-      </section>
-
-
-      <section className={`${style.section1ContainerPhone}  `}>
-
-        <div className={`${style.contentConatinerPhone}`}>
-
-          <div className={`${style.headingBoxPhone} font4 `}>
-            <div className={`${style.mainHeadingPhone}`}>
-            <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
-            </div>
-            <div className={`${style.mainParaPhone}`}>
-            Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
-            </div>
+  <div className={`${style.headingBoxPhone} font4 `}>
+    <div className={`${style.mainHeadingPhone}`}>
+    <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
+    </div>
+    <div className={`${style.mainParaPhone}`}>
+    Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
+    </div>
 
 
-          </div>
+  </div>
 
-          <div className={`${style.herosectionImgBoxPhone}`}>
-            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
-          </div>
+  <div className={`${style.herosectionImgBoxPhone}`}>
+    <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+  </div>
 
 
-        </div>
+</div>
 
-      </section>
+</section>)}
+      
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>
