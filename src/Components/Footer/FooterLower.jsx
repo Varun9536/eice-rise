@@ -30,14 +30,17 @@ export default function FooterLower() {
                             <img className={styles.logoWhite} src={logo} alt="" />
                         </div>
 
-                        <div className={`${styles.footerParagraph}`}>
+                        <div className={`${styles.footerParagraph} `}>
                             Delivering innovative ERP solutions since 2010. Simplifying operations, enhancing efficiency, and empowering businesses worldwide.
                         </div>
 
-                        <div style={{ fontWeight: "600", marginTop: "20px" }}>
+                        <div className={`${styles.socialMediaSection}`}>
+                            <div className={`${styles.followUsHeading}`}>
                             Follow us
+                            </div>
+                           
 
-                            <div style={{ display: "flex", gap: "0px 20px", marginTop: "15px" }}>
+                            <div className={`${styles.socialMediaContainer}`}>
 
                                 <div>
                                     <Link to={"https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true"}>
