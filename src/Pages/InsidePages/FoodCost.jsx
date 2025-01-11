@@ -48,27 +48,25 @@ import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import { useState , useEffect } from "react"
+import { useState, useEffect } from "react"
 
 export default function FoodCost() {
 
 
-   const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
-  
-  
-   
-  
-  
-    useEffect(() => {
-        const handleResize = () => {
-            setIsPhone(window.innerWidth <= 980); // Update based on screen size
-        };
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-  
+  const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth <= 980); // Update based on screen size
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
 
 
@@ -223,70 +221,64 @@ export default function FoodCost() {
 
 
 
-
-
-
-
-
   return (
     <>
 
+      {isPhone ? (<section className={`${style.section1ContainerPhone}  `}>
 
-{isPhone ?(  <section className={`${style.section1ContainerPhone}  `}>
+        <div className={`${style.contentConatinerPhone}`}>
 
-<div className={`${style.contentConatinerPhone}`}>
-
-    <div className={`${style.headingBoxPhone} font4 `}>
-        <div className={`${style.mainHeadingPhone}`}>
-        <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
-        </div>
-        <div className={`${style.mainParaPhone}`}>
-        Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
-        </div>
-
-
-    </div>
-
-    <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
-    </div>
-
-
-</div>
-
-</section>) : ( <section className={`${style.section1Container}  `}>
-      
-      
-      <div className={`${style.fadeBackgroundConatiner}`}>
-
-        <div className={`${style.contentConatiner}`}>
-
-          <div className={`${style.headingBox} font4 `}>
-            <div className={`${style.mainHeading}`}>
+          <div className={`${style.headingBoxPhone} font4 `}>
+            <div className={`${style.mainHeadingPhone}`}>
               <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
             </div>
-            <div className={`${style.mainPara}`}>
-            Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
+            <div className={`${style.mainParaPhone}`}>
+              Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
             </div>
 
 
           </div>
 
-          <div className={`${style.herosectionImgBox}`}>
-            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+          <div className={`${style.herosectionImgBoxPhone}`}>
+            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+          </div>
+
+
+        </div>
+
+      </section>) : (<section className={`${style.section1Container}  `}>
+
+
+        <div className={`${style.fadeBackgroundConatiner}`}>
+
+          <div className={`${style.contentConatiner}`}>
+
+            <div className={`${style.headingBox} font4 `}>
+              <div className={`${style.mainHeading}`}>
+                <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
+              </div>
+              <div className={`${style.mainPara}`}>
+                Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
+              </div>
+
+
+            </div>
+
+            <div className={`${style.herosectionImgBox}`}>
+              {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+            </div>
+
           </div>
 
         </div>
 
-      </div>
-
-    </section>)}
+      </section>)}
 
 
 
-    
 
-       
+
+
 
 
 

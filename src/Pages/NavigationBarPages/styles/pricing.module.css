@@ -131,10 +131,13 @@
 
     }
 
-    .modulesTabHeadings {
-        
-        flex-direction: column;
+    .moduleSuiteSection
+    {
+        overflow-x: auto;
+    }
 
+    .modulesTabHeadings {
+        width: 70rem;
     }
 
     .SuiteSectionHeading {
