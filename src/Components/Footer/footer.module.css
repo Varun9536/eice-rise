@@ -369,7 +369,7 @@
 
 }
 
-@media (max-width : 350px)
+@media (max-width : 400px)
 {
     .indiaOffice {
         display: flex;
@@ -389,7 +389,7 @@
 
 
 
-@media (min-width : 350px)
+@media (min-width : 400px)
 {
     .indiaOffice {
         display: flex;

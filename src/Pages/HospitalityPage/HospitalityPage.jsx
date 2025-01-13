@@ -706,7 +706,7 @@ export default function HospitalityPage() {
 
 
             {/* section7 */}
-            <section className={`${styles.section7} globalSectionSize`}>
+            {/* <section className={`${styles.section7} globalSectionSize`}>
 
 
                 <div className={`${styles.section7Heading} font1`}>
@@ -741,9 +741,9 @@ export default function HospitalityPage() {
                 </div>
 
 
-            </section>
+            </section> */}
 
-            <section className={`${styles.section7ForPhone} globalSectionSize`}>
+            {/* <section className={`${styles.section7ForPhone} globalSectionSize`}>
 
 
                 <div className={`${styles.section7Heading} font1`}>
@@ -787,7 +787,7 @@ export default function HospitalityPage() {
                     ))}
                 </div>
 
-            </section>
+            </section> */}
 
             <div >
 
