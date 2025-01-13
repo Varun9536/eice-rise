@@ -385,6 +385,11 @@
         width: unset;
         padding:  5px;
     }
+
+    .countryName
+    {
+        padding-right: 7px;
+    }
 }
 
 
