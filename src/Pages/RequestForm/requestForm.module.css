@@ -458,6 +458,7 @@ input[type="checkbox"] {
 
     .line1 {
         flex-direction: column;
+        margin-bottom: unset;
 
     }
 
@@ -469,6 +470,7 @@ input[type="checkbox"] {
 
     .line2 {
         flex-direction: column;
+        margin-bottom: unset;
     }
 
     .line2Input {
@@ -483,6 +485,7 @@ input[type="checkbox"] {
 
     .line3 {
         flex-direction: column;
+        margin-bottom: unset;
     }
 
     .line3Input {
@@ -495,6 +498,11 @@ input[type="checkbox"] {
 
     .messageTextAreaInput {
         width: 100%;
+    }
+
+    .requirement
+    {
+        margin-bottom: unset;
     }
 
     .requirementInput {
