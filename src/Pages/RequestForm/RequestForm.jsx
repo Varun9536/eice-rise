@@ -313,7 +313,7 @@ export default function RequestForm() {
                                         onChange={handleCountryCodeChange}
                                     />
                                 </div>
-                                <div  >
+                                <div className={`${styles.phoneNoInputBox}`} >
                                     <input placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
                                 </div>
                             </div>
