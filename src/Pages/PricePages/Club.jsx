@@ -16,8 +16,11 @@ import pay from "../../assets/Hospitality/allPageIcon/PAyscale.png"
 import room from "../../assets/Hospitality/allPageIcon/Room.png"
 import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
+import heroimg from "../../assets/pricing/suitHeroSection/clubP.webp"
+
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import FooterLower from "../../Components/Footer/FooterLower"
 
 
 export default function Club() {
@@ -124,6 +127,17 @@ export default function Club() {
     return (
         <>
 
+
+         <section className={`${styles.heroImgSection}`}>
+                        <div className={`${styles.heroImgBox}`}>
+                            <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                        </div>
+                    </section>
+        
+                    <section className={`${styles.heroSectionHeading}`}>
+                        <span className="font2" style={{ color: "#01B0F1" }} >Club</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+                    </section>
+
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
 
@@ -220,6 +234,10 @@ export default function Club() {
                 </div>
 
             </section>
+
+            <div>
+                <FooterLower/>
+            </div>
 
         </>
     )

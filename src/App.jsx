@@ -27,6 +27,13 @@ import RequestForm from './Pages/RequestForm/RequestForm'
 import Android from './Pages/CaseStudy/Android/Android'
 import Durgabari from './Pages/CaseStudy/Durgabari/Durgabari'
 import IIC from './Pages/CaseStudy/IIC/IIC'
+import Vanilla from './Pages/PricePages/Vanilla'
+import Banquet from './Pages/PricePages/Banquet'
+import FrontDesk from './Pages/PricePages/FrontDesk'
+import PosSuite from './Pages/PricePages/PosSuite'
+import Inventary from './Pages/PricePages/Inventary'
+import Enterprise from './Pages/PricePages/Enterprise'
+import Club from './Pages/PricePages/Club'
 
 
 
@@ -61,10 +68,10 @@ const router = createBrowserRouter([
       // },
 
 
-      {
-        path: "pricing",
-        element: <Pricing />
-      },
+      // {
+      //   path: "pricing",
+      //   element: <Pricing />
+      // },
 
 
       // {
@@ -133,25 +140,51 @@ const router = createBrowserRouter([
       } ,
 
       {
-        path : "/android" ,
+        path : "android" ,
         element : <Android/>
-      }
-
-      ,
+      },
 
       {
-        path : "/durgabari" ,
+        path : "durgabari" ,
         element : <Durgabari/>
-      }
-
-      ,
+      },
 
       {
-        path : "/iic" ,
-        element : <IIC/>
+        path : "club-suite" ,
+        element : <Club/>
+      } ,
+
+      {
+        path : "enterprise-suite" ,
+        element : <Enterprise/>
+      },
+
+      {
+        path : "inventary-suite" ,
+        element : <Inventary/>
+      },
+
+      {
+        path : "pos-suite" ,
+        element : <PosSuite/>
+      },
+
+
+      {
+        path : "frontdesk-suite" ,
+        element : <FrontDesk/>
       }
+      
+      ,
+      {
+        path : "banquet-suite" ,
+        element : <Banquet/>
+      },
 
-
+      {
+        path : "vanilla-suite" ,
+        element : <Vanilla/>
+      }
 
     ]
 

@@ -18,7 +18,8 @@ import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import heroimg from "../../assets/pricing/suitHeroSection/enterpriseP.webp"
+import FooterLower from "../../Components/Footer/FooterLower"
 
 export default function Enterprise() {
 
@@ -122,7 +123,15 @@ export default function Enterprise() {
     return (
         <>
 
+ <section className={`${styles.heroImgSection}`}>
+                <div className={`${styles.heroImgBox}`}>
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                </div>
+            </section>
 
+            <section className={`${styles.heroSectionHeading}`}>
+                <span className="font2" style={{ color: "#01B0F1" }} >Enterprise</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+            </section>
 
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
@@ -218,6 +227,10 @@ export default function Enterprise() {
                 </div>
 
             </section>
+
+            <div>
+                <FooterLower/>
+            </div>
 
         </>
     )

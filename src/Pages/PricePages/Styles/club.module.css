@@ -1,3 +1,29 @@
+
+.heroImgSection
+{
+    padding-top: 10rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0px auto;
+
+}
+
+.heroImgBox
+{
+    width: 91%;
+    margin: 0px auto;
+
+}
+
+.heroSectionHeading
+{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 30px;
+}
+
 .overviewSection {
     background-color: #012060;
 }

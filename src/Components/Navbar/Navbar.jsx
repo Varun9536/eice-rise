@@ -16,14 +16,16 @@ export default function Navbar() {
         {
             navName: "PRODUCTS",
             id: 1,
-            dropdown: <ProductDrop />
+            dropdown: <ProductDrop />,
+            style: (styles.dropDownContainerProduct)
 
         },
         {
             navName: "PRICING",
             id: 2,
-            // dropdown: <PricingDrop />
-            path : "/pricing"
+            dropdown: <PricingDrop />,
+            // path : "/pricing"
+            style: (styles.dropDownContainerPricing)
 
 
         },
@@ -80,7 +82,7 @@ export default function Navbar() {
                         <div className={`${styles.navNameAndArrow}`} key={item.id} onMouseEnter={() => { handleMouseEnter(item.id) }} style={{ display: "flex" }}>
 
                             {item.path && (<div>
-                                <Link to={item.path}  className={`${styles.navName} font1 linkClass`}>
+                                <Link to={item.path} className={`${styles.navName} font1 linkClass`}>
                                     {item.navName}
                                 </Link>
                             </div>)}
@@ -102,7 +104,7 @@ export default function Navbar() {
 
                         </div>
 
-                        {item.dropdown && (<div className={`${styles.dropDownContainer}`} onClick={handleMouseLeave} onMouseLeave={() => { handleMouseLeave() }} >
+                        {item.dropdown && (<div className={item.style} onClick={handleMouseLeave} onMouseLeave={() => { handleMouseLeave() }} >
                             {item.id == activeDropdown ? item.dropdown : ""}
                         </div>)
 
@@ -111,17 +113,17 @@ export default function Navbar() {
                     </div>
                     ))}
 
-                   
+
 
 
                 </div>
 
                 <div onMouseEnter={handleMouseLeave} className={`${styles.contactUsBtn} font1 `}>
-                        <Link to={"/form"} style={{ textDecoration: "none", color: "white" }}>
-                            Request a Demo
-                        </Link>
+                    <Link to={"/form"} style={{ textDecoration: "none", color: "white" }}>
+                        Request a Demo
+                    </Link>
 
-                    </div>
+                </div>
 
             </div>
         </div>

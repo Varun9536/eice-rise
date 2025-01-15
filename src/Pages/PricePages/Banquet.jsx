@@ -15,8 +15,11 @@ import pay from "../../assets/Hospitality/allPageIcon/PAyscale.png"
 import room from "../../assets/Hospitality/allPageIcon/Room.png"
 import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
+import heroimg from "../../assets/pricing/suitHeroSection/banquetP.webp"
+
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import FooterLower from "../../Components/Footer/FooterLower"
 
 
 
@@ -119,9 +122,21 @@ export default function Banquet() {
         }
     ];
 
-   
+
     return (
         <>
+
+            <section className={`${styles.heroImgSection}`}>
+                <div className={`${styles.heroImgBox}`}>
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                </div>
+            </section>
+
+            <section className={`${styles.heroSectionHeading}`}>
+                <span className="font2" style={{ color: "#01B0F1" }} >Banquet</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+            </section>
+
+
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
 
@@ -157,7 +172,7 @@ export default function Banquet() {
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
 
-                                <div  className={`${styles.iconAndTextBox} `}>
+                                <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
@@ -187,16 +202,16 @@ export default function Banquet() {
             <section className={`${styles.requestDemoBtn}`}>
 
                 <Link to={"/form"} className="linkClass">
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                    <div className={`${styles.demoButton} font1`}>
-                        <div > Request for Pricing </div>
-                        <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
-                    </div>
+                    <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                        <div className={`${styles.demoButton} font1`}>
+                            <div > Request for Pricing </div>
+                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
 
-                </div>
+                    </div>
                 </Link>
 
-               
+
 
             </section>
 
@@ -224,6 +239,10 @@ export default function Banquet() {
                 </div>
 
             </section>
+
+            <div>
+                <FooterLower/>
+            </div>
 
         </>
     )
