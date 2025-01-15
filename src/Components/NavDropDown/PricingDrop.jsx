@@ -10,16 +10,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 // icon drop down
 
-import account from "../../assets/DropDown/account.png"
-import banwuet from "../../assets/DropDown/banquet.png"
-import dinning from "../../assets/DropDown/dinning.png"
-import food from "../../assets/DropDown/food.png"
-import inventary from "../../assets/DropDown/invent.png"
-import member from "../../assets/DropDown/member.png"
-import pay from "../../assets/DropDown/pay.png"
-import room from "../../assets/DropDown/room.png"
-import vendor from "../../assets/DropDown/vendor.png"
-import emp from "../../assets/DropDown/emp.png"
+import clubIcon  from "../../assets/DropDown/pricingSuites/clubIcon.png"
+import enterpriseIcon  from "../../assets/DropDown/pricingSuites/enterIcon.png"
+import inventaryIcon  from "../../assets/DropDown/pricingSuites/inventaryIcon.png"
+import posIcon  from "../../assets/DropDown/pricingSuites/posIcon.png"
+import frontDeskIcon  from "../../assets/DropDown/pricingSuites/frontIcon.png"
+import banquetIcon  from "../../assets/DropDown/pricingSuites/banquetIcon.png"
+import vanillaIcon  from "../../assets/DropDown/pricingSuites/vanillaIcon.png"
 
 
 
@@ -31,7 +28,7 @@ export default function PricingDrop() {
             key: 1,
             title: "Club Suite",
             description: "Streamline guest reservations",
-            icon: room,
+            icon: clubIcon,
             path: "club-suite",
 
         },
@@ -39,21 +36,21 @@ export default function PricingDrop() {
             key: 2,
             title: "Enterprise Suite",
             description: "Simplify your dining operations",
-            icon: dinning,
+            icon: enterpriseIcon,
             path: "enterprise-suite",
         },
         {
             key: 3,
             title: "Inventary Suite",
             description: "Manage events with ease",
-            icon: banwuet,
+            icon: inventaryIcon,
             path: "inventary-suite",
         },
         {
             key: 4,
             title: "Pos Suite",
             description: "Build a thriving member community",
-            icon: member,
+            icon: posIcon,
             path: "pos-suite",
         },
 
@@ -64,22 +61,22 @@ export default function PricingDrop() {
             key: 5,
             title: "Front Desk Suite",
             description: "Gain full financial control",
-            icon: account,
+            icon: frontDeskIcon,
             path: "frontdesk-suite",
         },
         {
             key: 6,
             title: "Banquet Suite",
             description: "Empower with centralized access",
-            icon: emp,
+            icon: banquetIcon,
             path: "banquet-suite",
 
         },
         {
             key: 7,
-            title: "Vanila Suite",
+            title: "Vanilla Suite",
             description: "Simplify payroll processing",
-            icon: pay,
+            icon: vanillaIcon,
             path: "vanilla-suite",
         },
         // {

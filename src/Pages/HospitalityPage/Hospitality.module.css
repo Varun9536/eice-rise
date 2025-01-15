@@ -634,9 +634,9 @@
 
 
     .servicesBox {
-        column-gap: 16px;
+        column-gap: 32px;
         padding: 40px 20px;
-        row-gap: 8px;
+        row-gap: 1rem;
     }
 
 
