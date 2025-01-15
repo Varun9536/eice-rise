@@ -150,9 +150,16 @@ const router = createBrowserRouter([
       },
 
       {
+        path : "iic" ,
+        element : <IIC/>
+      },
+
+      {
         path : "club-suite" ,
         element : <Club/>
       } ,
+
+    
 
       {
         path : "enterprise-suite" ,
