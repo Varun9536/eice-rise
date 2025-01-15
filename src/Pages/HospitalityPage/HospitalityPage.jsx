@@ -61,7 +61,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 
 
-import footerLap from "../../assets/section3Laptop/account.webp"
+import footerLap from "../../assets/Hospitality/flaptop.webp"
 
 
 

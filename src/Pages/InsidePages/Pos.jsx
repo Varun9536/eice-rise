@@ -46,7 +46,7 @@ import { useState , useEffect } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-import footerRoomLaptop from "../../assets/insidePages/pos/posPage/FooterPos.webp"
+import footerRoomLaptop from "../../assets/Hospitality/flaptop.webp"
 
 export default function Pos() {
 
