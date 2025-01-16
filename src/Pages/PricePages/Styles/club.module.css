@@ -223,14 +223,13 @@
     }
 
     .overviewPara {
-        width: 92%;
-        padding: unset;
+        width: 100%;
+        padding: 0px 20px;
         font-size: 16px;
-       
+
         text-align: unset;
 
     }
-
     .moduleboxAndHeading {
         padding: 0px 0px;
 

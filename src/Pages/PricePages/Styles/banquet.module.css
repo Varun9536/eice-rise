@@ -224,11 +224,10 @@
     }
 
     .overviewPara {
-        width: 92%;
-
+        width: 100%;
+        padding: 0px 20px;
         font-size: 16px;
 
-        padding: unset;
         text-align: unset;
 
     }
