@@ -329,7 +329,7 @@
         font-size: 20px;
         text-align: left;
         font-weight: 600;
-        padding: 0px 10px;
+        padding: 0px 20px;
         margin-bottom: 1rem;
 
 
@@ -353,7 +353,7 @@
     }
 
     .briefDescBoxPhone {
-        padding: 0px 10px;
+        padding: 0px 20px;
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
@@ -376,7 +376,7 @@
     }
 
     .moduleboxAndHeading {
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
     .moduleIncludedHeading {
@@ -388,7 +388,7 @@
 
     .servicesBox {
         justify-content: unset;
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
 
@@ -422,7 +422,7 @@
 
 
     .challengeSection {
-        padding: 0px 10px;
+        padding: 0px 20px;
         margin-bottom: 3rem;
 
     }
@@ -467,7 +467,7 @@
     }
 
     .moduleSection {
-        padding: 0px 10px;
+        padding: 0px 20px;
         margin-bottom: 3rem;
     }
 
@@ -510,7 +510,7 @@
     }
 
     .empoweringiListSection {
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
 
@@ -540,7 +540,7 @@
     }
 
     .valuesToClientSection {
-        padding: 0px 10px;
+        padding: 0px 20px;
         margin-bottom: 1rem;
     }
 
@@ -578,7 +578,7 @@
 
 
     .conclusionSection {
-        padding: 0px 10px;
+        padding: 0px 20px;
     }
 
     .conclusionPara {

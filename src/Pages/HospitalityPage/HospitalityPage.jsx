@@ -308,7 +308,7 @@ export default function HospitalityPage() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+            setIsPhone(window.innerWidth <= 800); 
         };
         window.addEventListener('resize', handleResize);
         return () => {
