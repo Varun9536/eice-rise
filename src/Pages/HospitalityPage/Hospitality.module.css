@@ -51,17 +51,14 @@
 }
 
 
-@media (max-width : 1400px)
-{
-    .text1{
+@media (max-width : 1400px) {
+    .text1 {
         font-size: 48px;
     }
 }
 
-@media (max-width : 1260px)
-{
-    .text1
-    {
+@media (max-width : 1260px) {
+    .text1 {
         font-size: 44px;
     }
 }
@@ -190,7 +187,7 @@
 }
 
 .serviceName2 {
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 17px;
     font-weight: 600;
@@ -226,10 +223,8 @@
     margin: 0px auto;
 }
 
-@media (max-width : 800px)
-{
-    .videoImgBox
-    {
+@media (max-width : 800px) {
+    .videoImgBox {
         width: 97%;
         height: 200px;
         background-image: url("../../assets/insidePages/vimg.webp");
@@ -401,8 +396,7 @@
     border-radius: 5px;
 }
 
-.storyImgHeight
-{
+.storyImgHeight {
     height: 15rem;
 }
 
@@ -580,12 +574,12 @@
 
     .text1 {
         text-align: left;
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
 
     .text2 {
 
-        padding: 10px 15px;
+        padding: 10px 20px;
         /* margin-top: 15px; */
         font-size: 16px;
         text-align: left;
@@ -594,7 +588,7 @@
     .text3 {
 
         justify-content: flex-start;
-        padding: 10px 15px;
+        padding: 10px 20px;
 
     }
 
@@ -604,7 +598,7 @@
 
     .demoButton {
 
-        padding: 10px 15px;
+        padding: 10px 20px;
         font-size: 16px;
     }
 
@@ -718,16 +712,16 @@
 
 
     .clientLogoBox {
-       column-gap: 1rem;
-       row-gap: 1rem;
-       justify-content: center;
-       align-items: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
 
     .clinetLogoSize {
-       width: 9rem;
+        width: 8.5rem;
     }
 
 
@@ -759,9 +753,8 @@
     }
 
 
-    .section6ForPhone
-    {
-       margin-bottom: 4rem;
+    .section6ForPhone {
+        margin-bottom: 4rem;
     }
 
     .section6Heading {
@@ -779,8 +772,7 @@
     }
 
 
-    .section7ForPhone
-    {
+    .section7ForPhone {
         margin-bottom: 4rem;
     }
 

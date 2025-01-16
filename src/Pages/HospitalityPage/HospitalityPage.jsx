@@ -61,7 +61,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 
 
-import footerLap from "../../assets/Hospitality/flaptop.webp"
+// import footerLap from "../../assets/Hospitality/flaptop.webp"
+// import footerLap from "../../Components/Footer/FooterLower"
+import footerlaptop from "../../assets/section3Laptop/pos.webp"
 
 
 
@@ -303,7 +305,7 @@ export default function HospitalityPage() {
         text1: "Flexible, Modular Solutions ",
         text2: "",
         text3: "tailored to your business needs.",
-        // img: footer
+        img: footerlaptop
     }
 
     return (
@@ -789,14 +791,16 @@ export default function HospitalityPage() {
 
             </section> */}
 
-            <div >
+            
 
-                <div >
-                    <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerLap} />
-                    <FooterLower />
+               
+               <FooterUpperPart  text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+             
 
-                </div>
-            </div>
+                    <FooterLower  />
+
+               
+           
 
 
 

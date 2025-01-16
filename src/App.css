@@ -11,6 +11,7 @@
 
     .globalPageSize {
         padding-top: 70px;
+        
     }
 }
 
@@ -47,6 +48,12 @@
         padding-top: 90px;
         /* max-width: 1150px; */
     }
+
+    
+.globalSectionSize {
+    
+    padding: 0px 20px;
+}
 }
 
 

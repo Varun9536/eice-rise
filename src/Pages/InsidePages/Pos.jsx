@@ -214,7 +214,7 @@ export default function Pos() {
         text1: 'Revolutionize',
         text2: "",
         text3: 'your dining experience.',
-        img: footerRoomLaptop
+        img: laptop
     }
 
 
@@ -507,7 +507,7 @@ export default function Pos() {
             </div> */}
 
             <div >
-                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
+                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
                 <FooterLower />
 
             </div>
