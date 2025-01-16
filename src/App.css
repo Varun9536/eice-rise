@@ -61,9 +61,9 @@
 }
 
 .indicator {
-    width: 24px;
-    height: 7px;
-    border-radius: 30%;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
     
     cursor: pointer;
     transition: background-color 0.3s;

@@ -325,7 +325,7 @@
 
 
 
-@media (max-width : 600px) {
+@media (max-width : 440px) {
 
 
     .heroSectionHeadingPhone
@@ -345,7 +345,7 @@
 
     .heroImgBoxPhone {
         
-        height: 15rem;
+        height: 16rem;
         width: 100%;
         /* border: 2px solid red; */
         background: url("../../../assets/pricing/suitHeroSection/inventaryP.webp");

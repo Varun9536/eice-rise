@@ -25,11 +25,11 @@ export default function PosSuite() {
 
 
 
-    const [isPhone, setIsPhone] = useState(window.innerWidth <= 600);
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 440);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 600); // Update based on screen size
+            setIsPhone(window.innerWidth <= 440); // Update based on screen size
         };
         window.addEventListener('resize', handleResize);
         return () => {

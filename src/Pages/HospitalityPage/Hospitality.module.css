@@ -718,13 +718,16 @@
 
 
     .clientLogoBox {
-        gap: 15px 38px;
+       column-gap: 1rem;
+       row-gap: 1rem;
+       justify-content: center;
+       align-items: center;
         flex-wrap: wrap;
     }
 
 
     .clinetLogoSize {
-        width: 100px;
+       width: 9rem;
     }
 
 

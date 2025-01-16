@@ -272,13 +272,13 @@ export default function HospitalityPage() {
     ]
 
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
-    //     }, 3000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+        }, 3000);
 
-    //     return () => clearInterval(interval);
-    // }, [stories.length]);
+        return () => clearInterval(interval);
+    }, [stories.length]);
 
 
     // useEffect(() => {
