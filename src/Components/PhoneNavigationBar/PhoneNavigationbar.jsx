@@ -12,6 +12,9 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function PhoneNavigationbar() {
 
+
+    
+
     const navigationItems = [
         {
             key: 1,
@@ -73,6 +76,8 @@ export default function PhoneNavigationbar() {
 
     const [activeNavItem, setActiveNavItem] = useState("");
 
+   
+
     const toggleNavItem = (item) => {
         setActiveNavItem(prev => (prev === item ? "" : item));
     };
@@ -111,6 +116,7 @@ export default function PhoneNavigationbar() {
                     navbarOpen ? (<div></div>) :
                         (
                             <>
+                            
 
                                 <div className={styles.menuMainBox}>
                                     {navigationItems.map((item) => (
