@@ -291,14 +291,30 @@ export default function HospitalityPage() {
     //     return () => clearInterval(interval);
     // }, [insights.length]);
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-    //     }, 3000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+        }, 3000);
 
-    //     return () => clearInterval(interval);
-    // }, [feedback.length]);
+        return () => clearInterval(interval);
+    }, [feedback.length]);
 
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
+
+
+
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const footerUpperText = {
 
@@ -454,8 +470,7 @@ export default function HospitalityPage() {
 
             {/* section5 */}
 
-
-            <div className={`${styles.reviewSection}`}>
+            {!isPhone && (<div className={`${styles.reviewSection}`}>
                 <section className={`${styles.section5} globalSectionSize`}>
 
                     <div className={`${styles.section5Heading} font1`}>
@@ -509,11 +524,11 @@ export default function HospitalityPage() {
 
 
                 </section>
-            </div>
+            </div>)}
 
 
 
-            <div className={`${styles.reviewSectionForPhone}`}>
+            {isPhone && (<div className={`${styles.reviewSectionForPhone}`}>
                 <section className={`${styles.section5} globalSectionSize`}>
 
                     <div className={`${styles.section5Heading} font1`}>
@@ -579,7 +594,8 @@ export default function HospitalityPage() {
 
 
                 </section>
-            </div>
+            </div>)}
+
 
 
 
@@ -589,7 +605,60 @@ export default function HospitalityPage() {
 
 
             {/* section6 */}
-            <section className={`${styles.section6} globalSectionSize`}>
+
+
+            {isPhone ? ( <section className={`${styles.section6ForPhone} globalSectionSize`}>
+                <div className={`${styles.section6Heading} font1`}>
+
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                        <div style={{ width: "50px", paddingTop: "12px" }}>
+                            <img style={{ width: "100%" }} src={h2} alt="" />
+                        </div>
+
+                        <div className="font3">
+                            Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className={`${styles.storySection} font1`}>
+
+
+                    <div className={`${styles.storyBox}`}>
+
+                        <div>
+                            <img style={{ width: "100%" }} src={stories[currentIndex].img} alt="storyimg" />
+                        </div>
+
+                        <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
+                            {stories[currentIndex].heading}
+                        </div>
+
+                        <p style={{ lineHeight: "1.8rem", marginBottom: stories[currentIndex].margin }} >{stories[currentIndex].para}</p>
+
+
+                        <Link to={stories[currentIndex].link} className="linkClass">
+                            <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
+                                View More
+                            </div>
+                        </Link>
+
+                    </div>
+                </div>
+
+                <div className="indicators">
+                    {stories.map((_, index) => (
+                        <span
+                            key={index}
+                            className={`indicator ${currentIndex === index ? 'active' : ''}`}
+                            onClick={() => setCurrentIndex(index)}
+                        ></span>
+                    ))}
+                </div>
+
+
+            </section>):( <section className={`${styles.section6} globalSectionSize`}>
                 <div className={`${styles.section6Heading} font1`}>
 
 
@@ -645,61 +714,11 @@ export default function HospitalityPage() {
                 </div>
 
 
-            </section>
+            </section>)}
+           
 
 
-            <section className={`${styles.section6ForPhone} globalSectionSize`}>
-                <div className={`${styles.section6Heading} font1`}>
-
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2} alt="" />
-                        </div>
-
-                        <div className="font3">
-                            Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className={`${styles.storySection} font1`}>
-
-
-                    <div className={`${styles.storyBox}`}>
-
-                        <div>
-                            <img style={{ width: "100%" }} src={stories[currentIndex].img} alt="storyimg" />
-                        </div>
-
-                        <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
-                            {stories[currentIndex].heading}
-                        </div>
-
-                        <p style={{ lineHeight: "1.8rem", marginBottom: stories[currentIndex].margin }} >{stories[currentIndex].para}</p>
-
-
-                        <Link to={stories[currentIndex].link} className="linkClass">
-                            <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
-                                View More
-                            </div>
-                        </Link>
-
-                    </div>
-                </div>
-
-                <div className="indicators">
-                    {stories.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`indicator ${currentIndex === index ? 'active' : ''}`}
-                            onClick={() => setCurrentIndex(index)}
-                        ></span>
-                    ))}
-                </div>
-
-
-            </section>
+           
 
 
 
@@ -791,16 +810,16 @@ export default function HospitalityPage() {
 
             </section> */}
 
-            
 
-               
-               <FooterUpperPart  text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
-             
 
-                    <FooterLower  />
 
-               
-           
+            <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+
+
+            <FooterLower />
+
+
+
 
 
 

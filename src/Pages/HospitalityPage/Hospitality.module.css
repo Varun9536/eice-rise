@@ -225,7 +225,7 @@
 
 @media (max-width : 800px) {
     .videoImgBox {
-        width: 97%;
+        width: 100%;
         height: 200px;
         background-image: url("../../assets/insidePages/vimg.webp");
         background-size: cover;
@@ -296,7 +296,7 @@
 
 }
 
-
+/* 
 @media (max-width : 800px) {
     .reviewSection {
         display: none;
@@ -310,7 +310,7 @@
     .reviewSectionForPhone {
         display: none;
     }
-}
+} */
 
 .section5Heading {
     margin-bottom: 0px;
@@ -357,7 +357,7 @@
 .section6 {
     margin-bottom: 3rem;
 }
-
+/* 
 @media (max-width : 800px) {
     .section6 {
         display: none;
@@ -371,7 +371,7 @@
     .section6ForPhone {
         display: none;
     }
-}
+} */
 
 .section6Heading {
     margin-bottom: 20px;
@@ -421,7 +421,7 @@
     margin-bottom: 3rem;
 }
 
-
+/* 
 @media (max-width : 800px) {
     .section7 {
         display: none;
@@ -435,7 +435,7 @@
     .section7ForPhone {
         display: none;
     }
-}
+} */
 
 .section7Heading {
     margin-bottom: 20px;
