@@ -274,13 +274,13 @@ export default function HospitalityPage() {
     ]
 
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, [stories.length]);
+    //     return () => clearInterval(interval);
+    // }, [stories.length]);
 
 
     // useEffect(() => {
@@ -291,13 +291,13 @@ export default function HospitalityPage() {
     //     return () => clearInterval(interval);
     // }, [insights.length]);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-        }, 3000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+    //     }, 3000);
 
-        return () => clearInterval(interval);
-    }, [feedback.length]);
+    //     return () => clearInterval(interval);
+    // }, [feedback.length]);
 
 
     const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
