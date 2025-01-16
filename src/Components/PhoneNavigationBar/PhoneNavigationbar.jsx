@@ -16,6 +16,7 @@ export default function PhoneNavigationbar() {
         {
             key: 1,
             navName: "Home", path: "/",
+            dropdown : false
         },
         {
             key: 2,
@@ -31,25 +32,40 @@ export default function PhoneNavigationbar() {
                 { productName: "User, Store & Inventory", path: "userstore-inventry" },
                 { productName: "Purchase & Vendor Portal", path: "purchase-vendor" },
                 { productName: "Food & Beverage Cost Analysis", path: "food-cost" }
-            ]
+            ] ,
+            dropdown : true
         },
 
         {
             key: 4,
-            navName: "Pricing", path: "/pricing"
+            navName: "Pricing", path: "" ,
+            innerItem: [
+                { productName: "Enterprise Suite", path: "enterprise-suite" },
+                { productName: "Club Suite", path: "club-suite" },
+                { productName: "Inventary Suite", path: "inventary-suite" },
+                { productName: "POS Suite", path: "pos-suite" },
+                { productName: "Front Desk Suite", path: "frontdesk-suite" },
+                { productName: "Banquet Suite", path: "banquet-suite" },
+                { productName: "Vanilla Suite", path: "vanilla-suite" },
+                
+            ],
+            dropdown : true
+             
         },
 
 
         {
             key: 3,
             navName: "About Us", path: "https://www.eicetechnology.com/About",
+            dropdown : false
 
 
         },
 
         {
             key: 5,
-            navName: "Blogs", path: "https://www.eicetechnology.com/Resources"
+            navName: "Blogs", path: "https://www.eicetechnology.com/Resources",
+            dropdown : false
         },
     ];
 
@@ -105,7 +121,7 @@ export default function PhoneNavigationbar() {
                                                 className='linkClass'
                                             >
                                                 <div style={{ fontWeight: "600" }}>
-                                                    {item.navName !== "Products" ?
+                                                    {item.dropdown !== true ?
                                                         (<div onClick={navbarIconChange}>{item.navName}</div>)
                                                         :
                                                         (<div style={{ display: "flex", justifyContent: "space-between" }}>
