@@ -373,6 +373,12 @@
 
     }
 
+    
+    .featureContainer
+    {
+        row-gap: 35px;
+    }
+
     .laptopImgBox {
         width: 16rem;
 

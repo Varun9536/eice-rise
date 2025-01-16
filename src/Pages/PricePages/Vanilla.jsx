@@ -132,7 +132,7 @@ export default function Vanilla() {
     return (
         <>
             {isPhone && (<section className={`${styles.heroSectionHeadingPhone}`}>
-                <span className="font2" style={{ color: "#01B0F1" }} >VaniLla</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+                <span className="font2" style={{ color: "#01B0F1" }} >Vanilla</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>
             )}
 

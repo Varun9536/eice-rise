@@ -396,6 +396,12 @@
 
     }
 
+    
+    .featureContainer
+    {
+        row-gap: 35px;
+    }
+
 
     .demoButton {
 

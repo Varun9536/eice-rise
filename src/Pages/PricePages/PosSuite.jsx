@@ -132,7 +132,7 @@ export default function PosSuite() {
     return (
         <>
             {isPhone && (<section className={`${styles.heroSectionHeadingPhone}`}>
-                <span className="font2" style={{ color: "#01B0F1" }} >Pos</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+                <span className="font2" style={{ color: "#01B0F1" }} >POS</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
 
 
@@ -150,7 +150,7 @@ export default function PosSuite() {
 
 
             {!isPhone && (<section className={`${styles.heroSectionHeading}`}>
-                <span className="font2" style={{ color: "#01B0F1" }} >Pos</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+                <span className="font2" style={{ color: "#01B0F1" }} >POS</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
 
 

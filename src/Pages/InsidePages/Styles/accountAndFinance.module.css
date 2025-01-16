@@ -394,6 +394,11 @@
         text-align: left;
     }
 
+    .featureContainer
+    {
+        row-gap: 35px;
+    }
+
     .paragraph {
         width: 100%;
         max-width: 1300px;

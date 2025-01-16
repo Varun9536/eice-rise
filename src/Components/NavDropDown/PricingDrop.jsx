@@ -50,7 +50,7 @@ export default function PricingDrop() {
         },
         {
             key: 4,
-            title: "Pos Suite",
+            title: "POS Suite",
             description: "Streamline sales and transactions effortlessly",
             icon: posIcon,
             path: "pos-suite",

@@ -432,6 +432,12 @@
         text-align: center;
     }
 
+    
+    .featureContainer
+    {
+        row-gap: 35px;
+    }
+
 
     .FAQsection {
 

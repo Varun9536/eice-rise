@@ -364,6 +364,12 @@
 
     }
 
+    
+    .featureContainer
+    {
+        row-gap: 35px;
+    }
+
     .pageHeadingBox {
         width: 70%;
         margin: 0px auto;

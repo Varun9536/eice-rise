@@ -379,6 +379,12 @@
 
     }
 
+    
+    .featureContainer
+    {
+        row-gap: 35px;
+    }
+
     .section3Para {
 
         font-size: 18px;
