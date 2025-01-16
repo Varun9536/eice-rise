@@ -1,7 +1,9 @@
 import style from "./Styles/pos.module.css"
 
 
-import heroImg from "../../assets/allHero/posh.webp"
+// import heroImg from "../../assets/allHero/posh.webp"
+
+import heroImg from "../../assets/allHero/new/posH.webp"
 import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
 import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
 import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
@@ -41,7 +43,7 @@ import main from "../../assets/insidePages/pos/posPage/H3.webp"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
-import { useState , useEffect } from "react"
+import { useState, useEffect } from "react"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -51,21 +53,21 @@ import footerRoomLaptop from "../../assets/Hospitality/flaptop.webp"
 export default function Pos() {
 
 
- const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
 
 
- 
 
 
-  useEffect(() => {
-      const handleResize = () => {
-          setIsPhone(window.innerWidth <= 980); // Update based on screen size
-      };
-      window.addEventListener('resize', handleResize);
-      return () => {
-          window.removeEventListener('resize', handleResize);
-      };
-  }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 980); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
 
     const features = [
@@ -223,60 +225,60 @@ export default function Pos() {
         <>
 
 
-{isPhone ? (
-            <section className={`${style.section1ContainerPhone}  `}>
+            {isPhone ? (
+                <section className={`${style.section1ContainerPhone}  `}>
 
-                <div className={`${style.contentConatinerPhone}`}>
+                    <div className={`${style.contentConatinerPhone}`}>
 
-                    <div className={`${style.headingBoxPhone} font4 `}>
-                        <div className={`${style.mainHeadingPhone}`}>
-                            <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                        <div className={`${style.headingBoxPhone} font4 `}>
+                            <div className={`${style.mainHeadingPhone}`}>
+                                <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                            </div>
+                            <div className={`${style.mainParaPhone}`}>
+                                Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+                            </div>
+
+
                         </div>
-                        <div className={`${style.mainParaPhone}`}>
-                            Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+
+                        <div className={`${style.herosectionImgBoxPhone}`}>
+                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
                         </div>
 
 
                     </div>
 
-                    <div className={`${style.herosectionImgBoxPhone}`}>
-                        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                </section>) : (<section className={`${style.section1Container}  `}>
+
+
+                    <div className={`${style.fadeBackgroundConatiner}`}>
+
+                        <div className={`${style.contentConatiner}`}>
+
+                            <div className={`${style.headingBox} font4 `}>
+                                <div className={`${style.mainHeading}`}>
+                                    <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                                </div>
+                                <div className={`${style.mainPara}`}>
+                                    Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
+                                </div>
+
+
+                            </div>
+
+                            <div className={`${style.herosectionImgBox}`}>
+                                {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+                            </div>
+
+                        </div>
+
                     </div>
 
-
-                </div>
-
-            </section>):( <section className={`${style.section1Container}  `}>
-
-
-<div className={`${style.fadeBackgroundConatiner}`}>
-
-    <div className={`${style.contentConatiner}`}>
-
-        <div className={`${style.headingBox} font4 `}>
-            <div className={`${style.mainHeading}`}>
-                <span style={{ color: "#012060" }} >DINNING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
-            </div>
-            <div className={`${style.mainPara}`}>
-                Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
-            </div>
-
-
-        </div>
-
-        <div className={`${style.herosectionImgBox}`}>
-            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
-        </div>
-
-    </div>
-
-</div>
-
-</section>)}
+                </section>)}
 
 
 
-           
+
 
 
 

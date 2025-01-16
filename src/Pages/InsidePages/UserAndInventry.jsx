@@ -6,7 +6,8 @@ import ir from "../../assets/insidePages/inventry/section2icon/ir.png"
 import sv from "../../assets/insidePages/inventry/section2icon/sv.png"
 
 
-import heroImg from "../../assets/allHero/inventoryh.webp"
+// import heroImg from "../../assets/allHero/inventoryh.webp"
+import heroImg from "../../assets/allHero/new/inventaryH.webp"
 
 
 import { Link } from "react-router-dom"

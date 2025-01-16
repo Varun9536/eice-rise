@@ -24,7 +24,9 @@ import pm from "../../assets/insidePages/emp/icon/pm.png"
 import sr from "../../assets/insidePages/emp/icon/sr.png"
 import td from "../../assets/insidePages/emp/icon/td.png"
 
-import heroImg from "../../assets/allHero/employeeh.webp"
+// import heroImg from "../../assets/allHero/employeeh.webp"
+
+import heroImg from "../../assets/allHero/new/employeeH.webp"
 
 
 

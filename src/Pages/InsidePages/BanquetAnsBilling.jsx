@@ -8,7 +8,8 @@ import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
 
 import { Link } from "react-router-dom"
 
-import herosectionImg from "../../assets/allHero/banquetHero.webp"
+// import herosectionImg from "../../assets/allHero/banquetHero.webp"
+import herosectionImg from "../../assets/allHero/new/banquetH.webp"
 
 import abs from "../../assets/insidePages/banquet/icon/abs.png"
 import cpa from "../../assets/insidePages/banquet/icon/cpa.png"

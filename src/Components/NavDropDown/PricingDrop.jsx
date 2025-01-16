@@ -24,32 +24,34 @@ export default function PricingDrop() {
 
 
     const product1 = [
+
         {
             key: 1,
-            title: "Club Suite",
-            description: "Streamline guest reservations",
-            icon: clubIcon,
-            path: "club-suite",
-
-        },
-        {
-            key: 2,
             title: "Enterprise Suite",
-            description: "Simplify your dining operations",
+            description: "Optimize operations with full-scale control",
             icon: enterpriseIcon,
             path: "enterprise-suite",
         },
         {
+            key: 2,
+            title: "Club Suite",
+            description: "Engage members with seamless management",
+            icon: clubIcon,
+            path: "club-suite",
+
+        },
+        
+        {
             key: 3,
             title: "Inventary Suite",
-            description: "Manage events with ease",
+            description: "Simplify inventory and procurement workflows",
             icon: inventaryIcon,
             path: "inventary-suite",
         },
         {
             key: 4,
             title: "Pos Suite",
-            description: "Build a thriving member community",
+            description: "Streamline sales and transactions effortlessly",
             icon: posIcon,
             path: "pos-suite",
         },
@@ -60,14 +62,14 @@ export default function PricingDrop() {
         {
             key: 5,
             title: "Front Desk Suite",
-            description: "Gain full financial control",
+            description: "Elevate guest experiences from check-in to billing",
             icon: frontDeskIcon,
             path: "frontdesk-suite",
         },
         {
             key: 6,
             title: "Banquet Suite",
-            description: "Empower with centralized access",
+            description: "Manage events and finances flawlessly",
             icon: banquetIcon,
             path: "banquet-suite",
 
@@ -75,7 +77,7 @@ export default function PricingDrop() {
         {
             key: 7,
             title: "Vanilla Suite",
-            description: "Simplify payroll processing",
+            description: "All-in-one solution for versatile operations",
             icon: vanillaIcon,
             path: "vanilla-suite",
         },

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 
 import { useEffect, useState } from "react"
 
-import family from "../../../assets/caseStudy/family.webp"
+import family from "../../../assets/caseStudy/androidBottom.webp"
 
 export default function Android() {
 
