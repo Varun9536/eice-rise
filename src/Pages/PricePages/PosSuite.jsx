@@ -131,6 +131,12 @@ export default function PosSuite() {
 
     return (
         <>
+            {isPhone && (<section className={`${styles.heroSectionHeadingPhone}`}>
+                <span className="font2" style={{ color: "#01B0F1" }} >Pos</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+            </section>)}
+
+
+
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
@@ -143,10 +149,10 @@ export default function PosSuite() {
             </section>)}
 
 
-
-            <section className={`${styles.heroSectionHeading}`}>
+            {!isPhone && (<section className={`${styles.heroSectionHeading}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >Pos</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
-            </section>
+            </section>)}
+
 
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>

@@ -1,6 +1,4 @@
-
-.heroImgSection
-{
+.heroImgSection {
     padding-top: 10rem;
     width: 100%;
     max-width: 80rem;
@@ -8,15 +6,13 @@
 
 }
 
-.heroImgBox
-{
+.heroImgBox {
     width: 91%;
     margin: 0px auto;
 
 }
 
-.heroSectionHeading
-{
+.heroSectionHeading {
     margin-top: 2rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -35,7 +31,7 @@
     display: flex;
     padding: 20px 0px;
     align-items: center;
-   
+
 
 
 }
@@ -60,18 +56,17 @@
     padding: 1rem 7rem;
 }
 
-@media (min-width : 2000px)
-{
+@media (min-width : 2000px) {
     .overviewPara {
         width: 67%;
-      
+
     }
 }
 
 .section2 {
     margin-bottom: 2rem;
     background-color: #F0FBFF;
-    padding-top: 2rem ;
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
 
 
@@ -229,7 +224,7 @@
         width: 92%;
         padding: unset;
         font-size: 16px;
-     
+
         text-align: unset;
 
     }
@@ -316,8 +311,7 @@
 }
 
 
-@media (max-width : 340px)
-{
+@media (max-width : 340px) {
     .overviewEyeImgSize {
         width: 90vw;
 
@@ -328,18 +322,23 @@
 
 @media (max-width : 600px) {
 
+
+    .heroSectionHeadingPhone {
+        margin-top: 6rem;
+    }
+
     .heroImgSectionPhone {
-       overflow: hidden;
-       margin-top: 7rem;
-      
+        overflow: hidden;
+        
+
 
     }
 
     .heroImgBoxPhone {
-        
+
         height: 15rem;
         width: 100%;
-        /* border: 2px solid red; */
+
         background: url("../../../assets/pricing/suitHeroSection/vanillaP.webp");
         background-position: center;
         background-size: cover;

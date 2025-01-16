@@ -325,9 +325,14 @@
 
 @media (max-width : 600px) {
 
+
+    .heroSectionHeadingPhone
+    {
+        margin-top: 6rem;
+    }
     .heroImgSectionPhone {
        overflow: hidden;
-       margin-top: 7rem;
+       /* margin-top: 7rem; */
       
 
     }
