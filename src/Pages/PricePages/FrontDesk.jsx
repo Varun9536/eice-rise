@@ -18,13 +18,25 @@ import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
 
 import heroimg from "../../assets/pricing/suitHeroSection/frontP.webp"
 
-
+import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"
 
 
 export default function FrontDesk() {
 
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 600);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 600); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const services = [
         {
@@ -120,21 +132,28 @@ export default function FrontDesk() {
     return (
         <>
 
-         <section className={`${styles.heroImgSection}`}>
-                        <div className={`${styles.heroImgBox}`}>
-                            <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
-                        </div>
-                    </section>
-        
-                    <section className={`${styles.heroSectionHeading}`}>
-                        <span className="font2" style={{ color: "#01B0F1" }} >FrontDesk</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
-                    </section>
+            {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
+                <div className={`${styles.heroImgBoxPhone}`}>
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                </div>
+            </section>) : (<section className={`${styles.heroImgSection}`}>
+                <div className={`${styles.heroImgBox}`}>
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                </div>
+            </section>)}
+
+
+            
+
+            <section className={`${styles.heroSectionHeading}`}>
+                <span className="font2" style={{ color: "#01B0F1" }} >FrontDesk</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+            </section>
 
 
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
 
-{/* 
+                    {/* 
                     <div className={`${styles.overviewEyeImgSize}`}>
                         <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div> */}
@@ -153,55 +172,55 @@ export default function FrontDesk() {
 
 
 
-<div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
+                <div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
-    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
+                    <div className={`${styles.moduleIncludedHeading} font4`}>Modules Included</div>
 
-    <div className={`${styles.servicesBox} `}>
+                    <div className={`${styles.servicesBox} `}>
 
 
-        {services.map((item) =>
-        (
-            <Link className="linkClass" key={item.key} to={item.path}>
+                        {services.map((item) =>
+                        (
+                            <Link className="linkClass" key={item.key} to={item.path}>
 
-                <div className={`${styles.iconAndTextBox} `}>
+                                <div className={`${styles.iconAndTextBox} `}>
 
-                    <div className={styles.imgBox} >
-                        <img src={item.icon} alt="" />
-                    </div>
-                    <div>
-                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    <div className={styles.imgBox} >
+                                        <img src={item.icon} alt="" />
+                                    </div>
+                                    <div>
+                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    </div>
+
+                                </div>
+
+                            </Link>
+
+                        ))}
                     </div>
 
                 </div>
 
-            </Link>
-
-        ))}
-    </div>
-
-</div>
 
 
 
 
 
-
-</section>
+            </section>
 
 
 
             <section className={`${styles.requestDemoBtn}`}>
 
-               <Link to={"/form"} className="linkClass">
-                               <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                                   <div className={`${styles.demoButton} font1`}>
-                                       <div > Request for Pricing </div>
-                                       <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
-                                   </div>
-               
-                               </div>
-                               </Link>
+                <Link to={"/form"} className="linkClass">
+                    <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                        <div className={`${styles.demoButton} font1`}>
+                            <div > Request for Pricing </div>
+                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+
+                    </div>
+                </Link>
 
             </section>
 
@@ -209,7 +228,7 @@ export default function FrontDesk() {
             <section>
                 <div className={`${styles.whyChooseSection} globalSectionSize`}>
                     <div className={`${styles.chooseUsHeading} font3`}>Why Choose Club Suite ?</div>
-                    <div className={`${styles.titleAndDescBox}`}> 
+                    <div className={`${styles.titleAndDescBox}`}>
 
                         {whyToChooseUs.map((item) =>
 
@@ -229,7 +248,7 @@ export default function FrontDesk() {
             </section>
 
             <div>
-                <FooterLower/>
+                <FooterLower />
             </div>
 
         </>

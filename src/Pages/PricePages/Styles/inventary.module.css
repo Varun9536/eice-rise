@@ -322,3 +322,27 @@
 
     }
 }
+
+
+
+@media (max-width : 600px) {
+
+    .heroImgSectionPhone {
+       overflow: hidden;
+       margin-top: 7rem;
+      
+
+    }
+
+    .heroImgBoxPhone {
+        
+        height: 15rem;
+        width: 100%;
+        /* border: 2px solid red; */
+        background: url("../../../assets/pricing/suitHeroSection/inventaryP.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}

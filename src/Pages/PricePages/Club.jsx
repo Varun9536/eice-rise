@@ -21,10 +21,22 @@ import heroimg from "../../assets/pricing/suitHeroSection/clubP.webp"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"
-
+import { useEffect, useState } from "react"
 
 export default function Club() {
 
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 600);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 600); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const services = [
 
@@ -128,15 +140,21 @@ export default function Club() {
         <>
 
 
-         <section className={`${styles.heroImgSection}`}>
-                        <div className={`${styles.heroImgBox}`}>
-                            <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
-                        </div>
-                    </section>
-        
-                    <section className={`${styles.heroSectionHeading}`}>
-                        <span className="font2" style={{ color: "#01B0F1" }} >Club</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
-                    </section>
+            {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
+                <div className={`${styles.heroImgBoxPhone}`}>
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                </div>
+            </section>) : (<section className={`${styles.heroImgSection}`}>
+                <div className={`${styles.heroImgBox}`}>
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                </div>
+            </section>)}
+
+            
+
+            <section className={`${styles.heroSectionHeading}`}>
+                <span className="font2" style={{ color: "#01B0F1" }} >Club</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
+            </section>
 
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
@@ -201,14 +219,14 @@ export default function Club() {
             <section className={`${styles.requestDemoBtn}`}>
 
                 <Link to={"/form"} className="linkClass">
-                                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                                    <div className={`${styles.demoButton} font1`}>
-                                        <div > Request for Pricing </div>
-                                        <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
-                                    </div>
-                
-                                </div>
-                                </Link>
+                    <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                        <div className={`${styles.demoButton} font1`}>
+                            <div > Request for Pricing </div>
+                            <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                        </div>
+
+                    </div>
+                </Link>
 
             </section>
 
@@ -236,7 +254,7 @@ export default function Club() {
             </section>
 
             <div>
-                <FooterLower/>
+                <FooterLower />
             </div>
 
         </>
