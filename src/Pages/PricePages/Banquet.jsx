@@ -21,9 +21,27 @@ import heroimg from "../../assets/pricing/suitHeroSection/banquetP.webp"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"
 
+import { useEffect, useState } from "react"
+
 
 
 export default function Banquet() {
+
+
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 600);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 600); // Update based on screen size
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
 
 
     const services = [
@@ -125,12 +143,18 @@ export default function Banquet() {
 
     return (
         <>
-
-            <section className={`${styles.heroImgSection}`}>
+            {isPhone ?(<section className={`${styles.heroImgSectionPhone}`}>
+                <div className={`${styles.heroImgBoxPhone}`}>
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                </div>
+            </section>):(<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
                     <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
                 </div>
-            </section>
+            </section>)}
+
+
+
 
             <section className={`${styles.heroSectionHeading}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >Banquet</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
@@ -241,7 +265,7 @@ export default function Banquet() {
             </section>
 
             <div>
-                <FooterLower/>
+                <FooterLower />
             </div>
 
         </>
