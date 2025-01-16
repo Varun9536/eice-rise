@@ -325,10 +325,14 @@
 
     .heroSectionHeadingPhone {
         margin-top: 6rem;
+        margin-bottom: 2rem;
+        padding-left: 20px;
+        font-size: 24px;
     }
 
     .heroImgSectionPhone {
         overflow: hidden;
+        margin-bottom: 2rem;
         
 
 
