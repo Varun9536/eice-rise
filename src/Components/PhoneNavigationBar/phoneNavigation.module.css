@@ -22,9 +22,21 @@
 
 
 
-@keyframes slideIn {
+/* @keyframes slideIn {
     from {
         transform: translateX(100%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
         opacity: 1;
     }
 
@@ -37,10 +49,10 @@
 
 .menuMainBox {
     position: fixed;
-    width: 100%;
+    width: 85%;
     top: 65px;
     background-color: white;
-    right: 0;
+   left: 0;
     height: 100vh;
     overflow-y: scroll;
 
@@ -58,6 +70,10 @@
     /* font-weight: 600; */
     padding-bottom: 200px;
 
+}
+
+.menuMainBox::-webkit-scrollbar {
+    display: none;
 }
 
 
