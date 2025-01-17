@@ -155,16 +155,6 @@ export default function BanquetAnsBilling() {
   ];
 
 
-
-
-
-
-
-
-
-
-
-
   const query = [
     {
       key: 1,

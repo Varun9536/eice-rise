@@ -5,7 +5,7 @@ import c2 from "../../assets/Hospitality/customer/c2.png"
 import c1 from "../../assets/Hospitality/customer/c3.png"
 
 
-
+import Flag from "react-world-flags"
 
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
@@ -74,6 +74,7 @@ export default function RequestForm() {
                     label: country.name,
                     value: country.name,
                     code: country.callingCodes[0] || '',
+                    flag: country.flag
 
                 }));
 
@@ -168,7 +169,7 @@ export default function RequestForm() {
             company: ", Zenith Hospitality",
             heading: "Transformative Technology Partner !",
             // para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span> our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
-            para: "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!",
+            para: "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!",
             key: 1
         },
         {
@@ -176,9 +177,9 @@ export default function RequestForm() {
             client: "Priya Desai",
             position: "Owner",
             company: ", Gourmet haven",
-            heading: "Exceptional Efficiency and Customization!",
+            heading: "Exceptional Efficiency and Customization!",
             // para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
-            para: "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business.",
+            para: "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business.",
             key: 2
         },
         {
@@ -188,7 +189,7 @@ export default function RequestForm() {
             position: "CEO",
             company: ",Elite Club International",
             heading: "Impressive All-In-One Solution !",
-            para: "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn’t be happier!",
+            para: "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn't be happier!",
 
             // para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span> like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span> and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
@@ -209,7 +210,7 @@ export default function RequestForm() {
         {
             key: 3,
             question: "Q : Can I customize the demo based on my business requirements?",
-            answer: "A : Absolutely! During the request, let us know your specific needs, and we’ll tailor the demo to address them."
+            answer: "A : Absolutely! During the request, let us know your specific needs, and we'll tailor the demo to address them."
         },
 
     ];
@@ -313,12 +314,19 @@ export default function RequestForm() {
                                         id="countryCode"
                                         placeholder="Code"
                                         options={countries.map(country => ({
+                                            // label: (
+                                            //     <div style={{ display: 'flex', alignItems: 'center' }}>
+                                            //         <Flag code={country.code} style={{ width: 20, height: 15, marginRight: 8 }} />
+                                            //         +{country.code}
+                                            //     </div>
+                                            // ),
                                             label: `+${country.code}`,
                                             value: country.value,
-                                            code: country.code
+                                            code: country.code,
                                         }))}
                                         isSearchable={true}
                                         styles={customStyles2}
+
 
 
 

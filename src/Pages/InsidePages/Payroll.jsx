@@ -207,7 +207,7 @@ export default function Payroll() {
 
     text1: "Streamlined payrol",
     text2: "",
-    text3: "processing with accuracy, compliance, and efficiency",
+    text3: "processing with accuracy, compliance, and efficiency",
     img: footer
   }
 
