@@ -22,6 +22,22 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function RequestForm() {
 
+
+
+    const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsPhone(window.innerWidth <= 800);
+
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const [formData, setFormData] = useState({
         name: '',
         companyName: '',
@@ -258,14 +274,14 @@ export default function RequestForm() {
                     </div>
 
                     <div className={`${styles.line1}`}>
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label>Name*</label>
                             <div>
                                 <input placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
                             </div>
                         </div>
 
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label>Company Name*</label>
                             <div>
                                 <input placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
@@ -274,21 +290,21 @@ export default function RequestForm() {
                     </div>
 
                     <div className={`${styles.line2}`}>
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label>Role/Designation (optional)</label>
                             <div>
                                 <input autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
                             </div>
                         </div>
 
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label>Email ID*</label>
                             <div>
                                 <input placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
                             </div>
                         </div>
 
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label>Phone Number*</label>
                             <div className={`${styles.phoneNoAndCodeBox}`}>
                                 <div >
@@ -322,7 +338,7 @@ export default function RequestForm() {
                     </div>
 
                     <div className={`${styles.line3}`}>
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label htmlFor="country">Country:</label>
                             <Select
                                 className={`${styles.line6Input}`}
@@ -336,7 +352,7 @@ export default function RequestForm() {
                             />
                         </div>
 
-                        <div>
+                        <div className={`${styles.inputContainer}`}>
                             <label>Address*</label>
                             <div>
                                 <input placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
@@ -344,7 +360,7 @@ export default function RequestForm() {
                         </div>
                     </div>
 
-                    <div className={`${styles.requirement}`}>
+                    <div className={`${styles.requirement} ${styles.inputContainer} `}>
                         <label>Requirement*</label>
                         <div>
 
@@ -378,7 +394,7 @@ export default function RequestForm() {
                         </div>
                     </div>
 
-                    <div className={`${styles.messageTextArea}`}>
+                    <div className={`${styles.messageTextArea}  ${styles.inputContainer} `}>
                         <div>
                             <label htmlFor="message">Message:</label>
                         </div>
@@ -441,59 +457,11 @@ export default function RequestForm() {
             </div>
 
 
-
-
-            <div className={`${styles.reviewSection}`}>
-                <section className={`${styles.section5} globalSectionSize`}>
-
-                    <div className={`${styles.section5Heading} font1`}>
-
-                        <div className="font3">
-                            What our clients say  ?
-                        </div>
-
-                    </div>
-
-
-                    <main className={`${styles.feedBack}`}>
-                        {feedback.map((item) =>
-                        (
-                            <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
-
-                                <figure >
-
-                                    <div style={{ textAlign: "center" }}  >
-                                        <img style={{ width: "28%" }} src={item.img} alt="" />
-                                    </div>
-
-                                    <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
-
-                                </figure>
-                                <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
-                                    "{
-                                        item.heading
-                                    }"
-                                    {/* {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)} */}
-                                </div>
-
-
-
-                                <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
-
-                            </article>
-                        ))}
-                    </main>
-
-
-                </section>
-            </div>
-
-
-            <div className={`${styles.reviewSectionForPhone}`}>
+            {isPhone ? (<div className={`${styles.reviewSectionForPhone}`}>
                 <section className={`${styles.section5} globalSectionSize`}>
 
                     <div className={`${styles.clientHeading} font3`}>
-                            What our clients say  ?
+                        What our clients say  ?
                     </div>
 
                     <main className={`${styles.feedBack}`}>
@@ -540,7 +508,55 @@ export default function RequestForm() {
 
 
                 </section>
-            </div>
+            </div>) : (<div className={`${styles.reviewSection}`}>
+                <section className={`${styles.section5} globalSectionSize`}>
+
+                    <div className={`${styles.section5Heading} font1`}>
+
+                        <div className="font3">
+                            What our clients say  ?
+                        </div>
+
+                    </div>
+
+
+                    <main className={`${styles.feedBack}`}>
+                        {feedback.map((item) =>
+                        (
+                            <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
+
+                                <figure >
+
+                                    <div style={{ textAlign: "center" }}  >
+                                        <img style={{ width: "28%" }} src={item.img} alt="" />
+                                    </div>
+
+                                    <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
+
+                                </figure>
+                                <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
+                                    "{
+                                        item.heading
+                                    }"
+                                    {/* {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)} */}
+                                </div>
+
+
+
+                                <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
+
+                            </article>
+                        ))}
+                    </main>
+
+
+                </section>
+            </div>)}
+
+
+
+
+
 
             <section >
                 <div className={`${styles.FAQsection} globalSectionSize font4`}>
