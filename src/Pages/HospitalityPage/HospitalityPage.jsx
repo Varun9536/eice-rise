@@ -308,7 +308,7 @@ export default function HospitalityPage() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 800); 
+            setIsPhone(window.innerWidth <= 800);
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -343,7 +343,7 @@ export default function HospitalityPage() {
                         EICE Rise ERP simplifies hospitality operations by uniting front desk, housekeeping, dining, and finance into a single, efficient platform for streamlined management and enhanced guest experiences.
                     </p>
 
-                    <div className={`${styles.text3} font1`}>
+                    <div className={`${styles.requestDemoButtonContainer} font1`}>
 
 
 
@@ -405,6 +405,18 @@ export default function HospitalityPage() {
 
             {/* section3 */}
 
+            <div  className={` ${styles.requestDemoButtonContainer2} font1`}>
+
+                <Link style={{ color: "white" }} className="linkClass" to={"form"}>
+                    <div className={`${styles.demoButton}`}>
+                        <div> Request a Demo </div>
+                        <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
+                    </div>
+                </Link>
+
+            </div>
+
+
 
             <section className={`${styles.section3} globalSectionSize`}>
 
@@ -413,7 +425,7 @@ export default function HospitalityPage() {
                     tech solutions for the industry</div>
 
 
-                <p className={`${styles.section3Para} font1`} >With a deep understanding of the hospitality industry's unique needs, we deliver cutting-edge software solutions tailored for hotels, restaurants, and event spaces. From full-stack cloud ERP systems to focused modules for specific operations, our tools enhance efficiency and elevate guest experiences across wellness, leisure, and meetings.</p>
+                <p className={`${styles.section3Para} font1`} >With a deep understanding of the hospitality industry's unique needs, we deliver <span className="font2">cutting-edge software solutions tailored for hotels, restaurants, and event spaces</span> . From full-stack cloud ERP systems to focused modules for specific operations, our tools enhance efficiency and elevate guest experiences across wellness, leisure, and meetings.</p>
 
 
                 <div className={`${styles.section3Video}`} >
@@ -607,7 +619,7 @@ export default function HospitalityPage() {
             {/* section6 */}
 
 
-            {isPhone ? ( <section className={`${styles.section6ForPhone} globalSectionSize`}>
+            {isPhone ? (<section className={`${styles.section6ForPhone} globalSectionSize`}>
                 <div className={`${styles.section6Heading} font1`}>
 
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
@@ -658,7 +670,7 @@ export default function HospitalityPage() {
                 </div>
 
 
-            </section>):( <section className={`${styles.section6} globalSectionSize`}>
+            </section>) : (<section className={`${styles.section6} globalSectionSize`}>
                 <div className={`${styles.section6Heading} font1`}>
 
 
@@ -715,10 +727,10 @@ export default function HospitalityPage() {
 
 
             </section>)}
-           
 
 
-           
+
+
 
 
 

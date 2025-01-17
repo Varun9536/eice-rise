@@ -2,31 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
- 
-
 }
 
 
 @font-face {
   font-family: 'Segoe';
   src: url("/font1/SegoeUI.woff") ;
-
-
-
 }
 
 @font-face {
   font-family: 'Segoe2';
   src: url("/font2/segoeuithisz.woff") ;
-
-
 }
 
 /* font family classes for global use */
 .font1 {
   font-family: "Segoe";
-
 }
 
 
@@ -95,8 +86,6 @@
     flex-direction: column;
     column-gap: unset;
     margin-bottom: 5rem;
-
-
   }
 
   .GlobalBenefitBox2 {
@@ -104,9 +93,6 @@
     flex-direction: column;
     column-gap: unset;
     margin-bottom:5rem;
-
-
-
   }
 
   .GlobalBenefitImgBox {
@@ -115,12 +101,9 @@
   }
 
   .GlobalBenefitTextBox {
-
     width: 19rem;
     justify-content: center;
     align-items: unset;
     margin-top: 1rem;
-
-
   }
 }
