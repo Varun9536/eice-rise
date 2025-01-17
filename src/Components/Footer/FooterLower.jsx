@@ -92,10 +92,10 @@ export default function FooterLower() {
 
                             <div className={`${styles.getInTouchHeading} font1`}> GET IN TOUCH :</div>
 
-                            <div className={`${styles.logoAndDetailBox}`}>
+                            {/* <div className={`${styles.logoAndDetailBox}`}>
                                 <div > <IoLogoWhatsapp /> </div>
                                 <div className={`${styles.contactDetails}`} style={{paddingBottom : "4px"}}> +91-987185200</div>
-                            </div>
+                            </div> */}
 
                             <div className={`${styles.logoAndDetailBox}`}>
 
@@ -103,7 +103,7 @@ export default function FooterLower() {
                                     <MdPhone />
                                 </div>
                                 <div  className={`${styles.contactDetails}`} style={{paddingBottom : "4px"}}>
-                                    +1 832 280 4632
+                                    +91 120 311 0836
                                 </div>
                             </div>
                             <div className={`${styles.logoAndDetailBox}`}>
