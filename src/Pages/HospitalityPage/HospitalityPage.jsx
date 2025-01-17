@@ -453,7 +453,7 @@ export default function HospitalityPage() {
                     {clientLogo.map((item) =>
                     (
                         <div className={`${styles.clinetLogoSize}`} >
-                            <img style={{ width: "100%" }} src={item.logo} alt="" />
+                            <img style={{ width: "100%" }} src={item.logo} alt="EICE Technology" />
                         </div>
 
                     ))}
@@ -476,7 +476,7 @@ export default function HospitalityPage() {
                     <div className={`${styles.section5Heading} font1`}>
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                             <div style={{ width: "55px", paddingBottom: "14px" }}>
-                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="clients" />
                             </div>
 
                             <div className="font3">
