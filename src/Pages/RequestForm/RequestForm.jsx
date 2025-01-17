@@ -599,7 +599,7 @@ export default function RequestForm() {
                         <div>
 
                             <div className={`${styles.key} font3 `}>Phone no :</div>
-                            <div className={`${styles.value} font1 `}> 0120 435 5910</div>
+                            <div className={`${styles.value} font1 `}>+91 120 311 0836</div>
 
                         </div>
                         <div>
@@ -656,7 +656,7 @@ export default function RequestForm() {
                             <div className={`${styles.contactDetailBox}`}>
 
                                 <div className={`${styles.key} font3 `}>Phone no </div>
-                                <div className={`${styles.value} font1 `}> 0120 435 5910</div>
+                                <div className={`${styles.value} font1 `}> +91 120 311 0836</div>
 
                             </div>
 
