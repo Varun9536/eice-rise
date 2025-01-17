@@ -511,9 +511,8 @@
 
 
     .section1 {
-        /* top: 64px; */
-        top: -43px;
-        background-size: contain;
+        top: 64px;
+        
     }
 
     .text1 {
@@ -569,16 +568,16 @@
 
         width: 100vw;
         height: 860px;
-        background-size: 350%;
-        /* background-size: cover; */
+        /* background-size: 350%; */
+        background-size: cover;
 
     }
 
     .textBox {
 
 
-        /* top: 1%; */
-        top: 9%;
+        top: 1%;
+        /* top: 9%; */
         left: unset;
         transform: unset;
         padding-top: 2rem;
@@ -627,7 +626,7 @@
     .laptopImg {
 
 
-        width: 120%;
+        width: 100%;
         bottom: 10rem;
     }
 
@@ -639,9 +638,8 @@
     /* section2 */
 
     .section2 {
-        /* margin-top: -80px; */
-        margin-top: -10rem;
-        margin-bottom: 1rem;
+        margin-top: -80px;
+        
     }
 
 
@@ -817,3 +815,40 @@
 
 
 }
+
+@media (max-width : 530px)
+{
+
+
+    .section2 {
+        
+        margin-top: -10rem;
+        margin-bottom: 1rem;
+    }
+
+    .laptopImg {
+
+
+        width: 120%;
+        bottom: 10rem;
+    }
+
+    .textBox {
+
+
+      
+        top: 9%;
+        left: unset;
+        transform: unset;
+        padding-top: 2rem;
+      
+
+    }
+
+    
+    .section1 {
+        
+        top: -43px;
+        background-size: 78rem
+    }
+} 
