@@ -592,10 +592,11 @@
 
     .text2 {
 
-        padding: 10px 20px;
+        padding: 0px 20px;
         /* margin-top: 15px; */
         font-size: 16px;
         text-align: left;
+        margin-top: unset;
     }
 
     .requestDemoButtonContainer {
@@ -852,3 +853,12 @@
         background-size: 78rem
     }
 } 
+
+
+@media (max-width : 280px)
+{
+    .section2
+    {
+        margin-top: -17rem;
+    }
+}

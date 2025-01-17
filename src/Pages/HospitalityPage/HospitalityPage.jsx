@@ -301,6 +301,7 @@ export default function HospitalityPage() {
 
 
     const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
+    const [forSmallestScreen, setforSmallestScreen] = useState(window.innerWidth <= 280);
 
 
 
@@ -309,6 +310,7 @@ export default function HospitalityPage() {
     useEffect(() => {
         const handleResize = () => {
             setIsPhone(window.innerWidth <= 800);
+            setforSmallestScreen(window.innerWidth <= 280);
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -330,20 +332,23 @@ export default function HospitalityPage() {
             {/* section1 */}
             <section className={styles.section1}>
 
-                <div className={styles.laptopImg}>
+
+                {!forSmallestScreen && (<div className={styles.laptopImg}>
                     <img className={`${styles.laptopImgDimension}`} src={laptop} alt="" />
-                </div>
+                </div>)}
+
 
                 <div className={styles.textBox}>
                     <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight: "600" }} className="font1">tailored to your business needs</span>
+                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight: "600" }} className="font1">tailored to your business needs</span>
                     </div>
 
                     <p className={`${styles.text2} font1`}>
-                        EICE Rise ERP simplifies hospitality operations by uniting front desk, housekeeping, dining, and finance into a single, efficient platform for streamlined management and enhanced guest experiences.
+                        EICE Rise ERP simplifies hospitality operations by uniting front desk, housekeeping, dining, and finance into a single, efficient platform for streamlined management and enhanced guest experiences.
                     </p>
 
-                    <div className={`${styles.requestDemoButtonContainer} font1`}>
+                    {!forSmallestScreen && (<div className={`${styles.requestDemoButtonContainer} font1`}>
+
 
 
 
@@ -358,9 +363,10 @@ export default function HospitalityPage() {
 
 
                         {/* <button className={` ${ styles.requestDemoBtn } font1`}>  Request a Demo    </button> 
-                        <div className={` ${ styles.requestDemoBtn } font1`} ><FaArrowRightLong  /></div> */}
+<div className={` ${ styles.requestDemoBtn } font1`} ><FaArrowRightLong  /></div> */}
 
-                    </div>
+                    </div>)}
+
 
                 </div>
 
@@ -405,7 +411,7 @@ export default function HospitalityPage() {
 
             {/* section3 */}
 
-            <div  className={` ${styles.requestDemoButtonContainer2} font1`}>
+            <div className={` ${styles.requestDemoButtonContainer2} font1`}>
 
                 <Link style={{ color: "white" }} className="linkClass" to={"form"}>
                     <div className={`${styles.demoButton}`}>
