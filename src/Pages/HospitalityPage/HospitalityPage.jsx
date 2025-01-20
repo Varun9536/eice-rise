@@ -291,6 +291,72 @@ export default function HospitalityPage() {
     //     return () => clearInterval(interval);
     // }, [insights.length]);
 
+
+
+    let startX = 0;
+    let startY = 0;
+
+    const handleTouchStart = (e) => {
+        const touch = e.touches[0];
+        startX = touch.clientX;
+        startY = touch.clientY;
+    };
+    const handleFeedbackChange = (e) => {
+
+        const touch = e.touches[0];
+        const deltaX = touch.clientX - startX;
+        const deltaY = touch.clientY - startY;
+
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            if (deltaX > 0) {
+                //right
+                setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
+            } else {
+                //left
+
+                setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+            }
+        } else {
+            if (deltaY > 0) {
+                //down
+            } else {
+                //up
+            }
+        }
+    }
+
+
+    const handleStoryChange = (e) => {
+
+        const touch = e.touches[0];
+        const deltaX = touch.clientX - startX;
+        const deltaY = touch.clientY - startY;
+
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            if (deltaX > 0) {
+                //right
+                setCurrentIndex((prevIndex) => (prevIndex - 1 + stories.length) % stories.length);
+            } else {
+                //left
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+
+            }
+        } else {
+            if (deltaY > 0) {
+                //down
+            } else {
+                //up
+            }
+        }
+    }
+
+
+
+
+    // const handleStoryChange = () => {
+    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+    // }
+
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //         setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
@@ -576,9 +642,9 @@ export default function HospitalityPage() {
                     <main className={`${styles.feedBack}`}>
 
 
-                        <article key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
+                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
 
-                            <figure >
+                            <figure  >
 
                                 <div style={{ textAlign: "center" }}  >
                                     <img style={{ width: "28%" }} src={feedback[feedbackIndex].img} alt="" />
@@ -588,7 +654,7 @@ export default function HospitalityPage() {
 
                             </figure>
                             <div>
-                                {feedback[feedbackIndex].key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>)}
+                                <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>
                             </div>
 
 
@@ -643,9 +709,9 @@ export default function HospitalityPage() {
                 <div className={`${styles.storySection} font1`}>
 
 
-                    <div className={`${styles.storyBox}`}>
+                    <div onTouchStart={handleTouchStart} onTouchMove={handleStoryChange} className={`${styles.storyBox}`}>
 
-                        <div>
+                        <div >
                             <img style={{ width: "100%" }} src={stories[currentIndex].img} alt="storyimg" />
                         </div>
 

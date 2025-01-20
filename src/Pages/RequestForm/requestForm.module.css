@@ -332,6 +332,7 @@ input[type="checkbox"] {
     justify-content: center;
     column-gap: 16px;
     row-gap: 30px;
+    user-select: none;
 
 }
 

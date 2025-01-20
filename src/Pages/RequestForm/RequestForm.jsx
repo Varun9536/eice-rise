@@ -59,7 +59,6 @@ export default function RequestForm() {
 
 
 
-    const [feedbackIndex, setFeedbackIndex] = useState(0);
 
 
 
@@ -214,6 +213,42 @@ export default function RequestForm() {
         },
 
     ];
+
+
+    const [feedbackIndex, setFeedbackIndex] = useState(0);
+
+
+    let startX = 0;
+    let startY = 0;
+
+    const handleTouchStart = (e) => {
+        const touch = e.touches[0];
+        startX = touch.clientX;
+        startY = touch.clientY;
+    };
+    const handleFeedbackChange = (e) => {
+
+        const touch = e.touches[0];
+        const deltaX = touch.clientX - startX;
+        const deltaY = touch.clientY - startY;
+
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            if (deltaX > 0) {
+                //right
+                 setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+            } else {
+               //left
+                setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
+
+            }
+        } else {
+            if (deltaY > 0) {
+                //down
+            } else {
+                //up
+            }
+        }
+    }
 
     const customStyles = {
         control: (provided) => ({
@@ -472,12 +507,12 @@ export default function RequestForm() {
                         What our clients say  ?
                     </div>
 
-                    <main className={`${styles.feedBack}`}>
+                    <main  className={`${styles.feedBack}`}>
 
 
-                        <article key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
+                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
 
-                            <figure >
+                            <figure  >
 
                                 <div style={{ textAlign: "center" }}  >
                                     <img style={{ width: "28%" }} src={feedback[feedbackIndex].img} alt="" />
@@ -497,7 +532,7 @@ export default function RequestForm() {
 
 
 
-                            <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
+                            <p  style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
 
                         </article>
 

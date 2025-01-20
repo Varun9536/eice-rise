@@ -351,6 +351,7 @@
     justify-content: center;
     column-gap: 16px;
     row-gap: 30px;
+    user-select: none;
 
 }
 
@@ -404,6 +405,7 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 15px;
     border-radius: 5px;
+    user-select: none;
 }
 
 .storyImgHeight {
@@ -809,6 +811,9 @@
         text-align: center;
 
     }
+
+
+    
 
 
 
