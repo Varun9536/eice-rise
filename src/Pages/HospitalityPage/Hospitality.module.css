@@ -759,6 +759,25 @@
         margin-bottom: 15px;
     }
 
+    
+.insightSection {
+    display: flex;
+    flex-wrap: unset;
+    justify-content: center;
+    column-gap: unset;
+    row-gap: unset;
+
+}
+
+    .cardBoxInnerHeading
+    {
+        /* font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+    text-align: center; */
+    padding: 0px 20px;
+    }
+
     .section5HeadingAndIconBox {
         gap: 0px 0px;
         align-items: center;
