@@ -213,11 +213,12 @@ export default function HospitalityPage() {
     ];
 
     const [logoIndex, setLogoIndex] = useState(0);
+    
 
     useEffect(() => {
         const interval = setInterval(() => {
             setLogoIndex((prevIndex) => (prevIndex + 1) % 5); 
-        }, 4000); 
+        }, 3000); 
 
         return () => clearInterval(interval); 
     }, []);

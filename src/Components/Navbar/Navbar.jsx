@@ -78,7 +78,7 @@ export default function Navbar() {
                     </div>
 
                     {navItems.map((item) =>
-                    (<div style={{ position: "relative" }}>
+                    (<div key={item.id} style={{ position: "relative" }}>
                         <div className={`${styles.navNameAndArrow}`} key={item.id} onMouseEnter={() => { handleMouseEnter(item.id) }} style={{ display: "flex" }}>
 
                             {item.path && (<div>

@@ -121,7 +121,7 @@ export default function PricingDrop() {
 
                     {product1.map((item) =>
                     (
-                        <Link  className="linkClass" key={item.key} to={item.path}>
+                        <Link   className="linkClass" key={item.key} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>
                                 <div className={`${styles.productIcon}`}>
                                     <img className={`${styles.iconSize}`} src={item.icon} alt="" />
