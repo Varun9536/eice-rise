@@ -361,6 +361,7 @@
     padding: 15px;
     border-radius: 5px;
     background-color: white;
+   
 }
 
 
@@ -771,10 +772,6 @@
 
     .cardBoxInnerHeading
     {
-        /* font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px;
-    text-align: center; */
     padding: 0px 20px;
     }
 
