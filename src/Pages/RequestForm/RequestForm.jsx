@@ -235,10 +235,12 @@ export default function RequestForm() {
         if (Math.abs(deltaX) > Math.abs(deltaY)) {
             if (deltaX > 0) {
                 //right
-                 setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+                setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
+
             } else {
                //left
-                setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
+              
+                setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
 
             }
         } else {

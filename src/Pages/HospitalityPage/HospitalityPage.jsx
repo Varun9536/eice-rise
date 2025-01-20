@@ -188,7 +188,7 @@ export default function HospitalityPage() {
             position: "Operations Manager",
             company: ", LuxeStay Hotels",
             heading: "Transformative Technology Partner",
-            para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span>  our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
+            para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span>  our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn't ask for a better technology partner.</span>),
             // para: " EICE Rise has completely transformed our operations. Their cloud ERP seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.",
             key: 1
 
@@ -199,7 +199,7 @@ export default function HospitalityPage() {
             position: " General Manager ",
             company: ", Serenity Resorts",
             heading: "Exceptional Support & Innovation",
-            para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
+            para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We' ve seen remarkable growth since implementing their solutions.</span>),
             key: 2
 
         },
@@ -209,7 +209,7 @@ export default function HospitalityPage() {
             position: " Director of Operations",
             company: ", Gourmet Suites",
             heading: "Elevated, Efficiency Guaranteed",
-            para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span>  like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span>  and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
+            para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we've streamlined processes</span>  like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span>  and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
 
         }
@@ -255,20 +255,20 @@ export default function HospitalityPage() {
 
             // para: "Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. "
 
-            para: (<span>Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. </span>)
+            para: (<span>Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. </span>)
         },
 
         {
             img: insight2,
             heading: "The Rise of Contactless Technology ",
-            para: "From mobile check-ins to digital room keys, 85% of hotels now prioritize contactless solutions to enhance convenience and safety for their guests. "
+            para: "From mobile check-ins to digital room keys, 85% of hotels now prioritize contactless solutions to enhance convenience and safety for their guests. "
 
         },
 
         {
             img: insight3,
             heading: "AI-Powered Guest Experiences:",
-            para: "Chatbots and virtual concierges powered by AI are revolutionizing guest services, reducing response times and increasing satisfaction "
+            para: "Chatbots and virtual concierges powered by AI are revolutionizing guest services, reducing response times and increasing satisfaction "
         }
 
     ]
@@ -388,7 +388,7 @@ export default function HospitalityPage() {
 
         text1: "Flexible, Modular Solutions ",
         text2: "",
-        text3: "tailored to your business needs.",
+        text3: "tailored to your business needs.",
         img: footerlaptop
     }
 
