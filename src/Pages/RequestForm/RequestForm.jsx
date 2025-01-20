@@ -239,7 +239,6 @@ export default function RequestForm() {
 
             } else {
                //left
-              
                 setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
 
             }

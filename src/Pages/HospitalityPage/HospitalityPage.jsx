@@ -612,6 +612,8 @@ export default function HospitalityPage() {
 
 
 
+
+
             {isPhone && (<div className={`${styles.reviewSectionForPhone}`}>
                 <section className={`${styles.section5} globalSectionSize`}>
 
@@ -910,3 +912,9 @@ export default function HospitalityPage() {
         </>
     )
 }
+
+
+
+
+
+
