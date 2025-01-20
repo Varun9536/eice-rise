@@ -32,21 +32,45 @@ import and from "../../assets/caseStudy/android.webp"
 import iic from "../../assets/caseStudy/IIC.webp"
 import durga from "../../assets/caseStudy/durga.webp"
 
+import cl1 from "../../assets/Hospitality/clients/c1.png";
+import cl2 from "../../assets/Hospitality/clients/c2.png";
+import cl3 from "../../assets/Hospitality/clients/c3.png";
+import cl4 from "../../assets/Hospitality/clients/c4.png";
+import cl5 from "../../assets/Hospitality/clients/c5.png";
+import cl6 from "../../assets/Hospitality/clients/c6.png";
+import cl7 from "../../assets/Hospitality/clients/c7.png";
+import cl8 from "../../assets/Hospitality/clients/c8.png";
+import cl9 from "../../assets/Hospitality/clients/c9.png";
+import cl10 from "../../assets/Hospitality/clients/c10.png";
+import cl11 from "../../assets/Hospitality/clients/c11.png";
+import cl12 from "../../assets/Hospitality/clients/c12.png";
+import cl13 from "../../assets/Hospitality/clients/c13.png";
+import cl14 from "../../assets/Hospitality/clients/c14.png";
+import cl15 from "../../assets/Hospitality/clients/c15.png";
+import cl16 from "../../assets/Hospitality/clients/c16.png";
+import cl17 from "../../assets/Hospitality/clients/c17.png";
+import cl18 from "../../assets/Hospitality/clients/c18.png";
+import cl19 from "../../assets/Hospitality/clients/c19.png";
+import cl20 from "../../assets/Hospitality/clients/c20.png";
+import cl21 from "../../assets/Hospitality/clients/c21.png";
+import cl22 from "../../assets/Hospitality/clients/c22.png";
+import cl23 from "../../assets/Hospitality/clients/c23.png";
+import cl24 from "../../assets/Hospitality/clients/c24.png";
+import cl25 from "../../assets/Hospitality/clients/c25.png";
+import cl26 from "../../assets/Hospitality/clients/c26.png";
+import cl27 from "../../assets/Hospitality/clients/c27.png";
+import cl28 from "../../assets/Hospitality/clients/c28.png";
+import cl29 from "../../assets/Hospitality/clients/c29.png";
+import cl30 from "../../assets/Hospitality/clients/c30.png";
+
+
+
 
 
 
 import insight1 from "../../assets/Hospitality/insights/01.webp"
 import insight2 from "../../assets/Hospitality/insights/02.webp"
 import insight3 from "../../assets/Hospitality/insights/03.webp"
-
-
-import tata from "../../assets/Hospitality/clients/tata.png"
-import nrf from "../../assets/Hospitality/clients/nrf.png"
-import indOil from "../../assets/Hospitality/clients/indOil.png"
-import pg from "../../assets/Hospitality/clients/pg.png"
-import slb from "../../assets/Hospitality/clients/slb.png"
-import salesvu from "../../assets/Hospitality/clients/salesvu.png"
-
 
 
 
@@ -66,6 +90,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import footerlaptop from "../../assets/section3Laptop/pos.webp"
 
 
+
+import { useSpring, animated } from "@react-spring/web";
 
 
 export default function HospitalityPage() {
@@ -153,33 +179,56 @@ export default function HospitalityPage() {
     ]
 
 
-
     const clientLogo = [
+        { logo: cl1 },
+        { logo: cl2 },
+        { logo: cl3 },
+        { logo: cl4 },
+        { logo: cl5 },
+        { logo: cl6 },
+        { logo: cl7 },
+        { logo: cl8 },
+        { logo: cl9 },
+        { logo: cl10 },
+        { logo: cl11 },
+        { logo: cl12 },
+        { logo: cl13 },
+        { logo: cl14 },
+        { logo: cl15 },
+        { logo: cl16 },
+        { logo: cl17 },
+        { logo: cl18 },
+        { logo: cl19 },
+        { logo: cl20 },
+        { logo: cl21 },
+        { logo: cl22 },
+        { logo: cl23 },
+        { logo: cl24 },
+        { logo: cl25 },
+        { logo: cl26 },
+        { logo: cl27 },
+        { logo: cl28 },
+        { logo: cl29 },
+        { logo: cl30 },
+    ];
 
-        {
-            logo: tata
-        },
+    const [logoIndex, setLogoIndex] = useState(0);
 
-        {
-            logo: pg
-        },
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setLogoIndex((prevIndex) => (prevIndex + 1) % 5); 
+        }, 4000); 
 
-        {
-            logo: slb
-        },
+        return () => clearInterval(interval); 
+    }, []);
 
-        {
-            logo: salesvu
-        },
+    const displayedLogos = clientLogo.slice(logoIndex * 6, (logoIndex + 1) * 6);
 
-        {
-            logo: indOil
-        },
-
-        {
-            logo: nrf
-        }
-    ]
+    const animation = useSpring({
+        opacity: 1,
+        from: { opacity: 0 },
+        config: { tension: 300, friction: 30 }
+    });
 
 
     const feedback = [
@@ -532,16 +581,15 @@ export default function HospitalityPage() {
 
 
             <div className={styles.clientSection} >
-                <div className={`${styles.clientLogoBox} globalSectionSize`}>
-                    {/* <img style={{ width: "100%" }} src={client} alt="" /> */}
-                    {clientLogo.map((item) =>
-                    (
-                        <div className={`${styles.clinetLogoSize}`} >
-                            <img style={{ width: "100%" }} src={item.logo} alt="EICE Technology" />
+                    <animated.div style={animation}>
+                        <div className={`${styles.clientLogoBox} globalSectionSize`} >
+                            {displayedLogos.map((item, index) => (
+                                <div key={index} className={`${styles.clinetLogoSize}`} >
+                                    <img style={{ width: "100%" }} src={item.logo} alt="EICE Technology" />
+                                </div>
+                            ))}
                         </div>
-
-                    ))}
-                </div>
+                    </animated.div>
             </div>
 
 

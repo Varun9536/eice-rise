@@ -275,7 +275,8 @@
 .clientLogoBox {
     display: flex;
     justify-content: center;
-    gap: 0px 38px;
+    gap: 38px 38px;
+    flex-wrap: wrap;
 }
 
 .clinetLogoSize {
