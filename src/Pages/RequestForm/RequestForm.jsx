@@ -38,6 +38,9 @@ export default function RequestForm() {
         };
     }, []);
 
+
+
+    const [countries, setCountries] = useState([]);
     const [formData, setFormData] = useState({
         name: '',
         companyName: '',
@@ -52,18 +55,6 @@ export default function RequestForm() {
         subscribe: false,
         policyAgree: false,
     });
-
-
-    const [countries, setCountries] = useState([]);
-    const [isDisabled, setIsDisabled] = useState(true);
-
-
-
-
-
-
-
-
 
     useEffect(() => {
         fetch('https://restcountries.com/v2/all')
@@ -160,6 +151,8 @@ export default function RequestForm() {
         }
     };
 
+
+
     const feedback = [
         {
             img: kd,
@@ -167,7 +160,6 @@ export default function RequestForm() {
             position: "Operations Manager",
             company: ", Zenith Hospitality",
             heading: "Transformative Technology Partner !",
-            // para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span> our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn’t ask for a better technology partner.</span>),
             para: "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!",
             key: 1
         },
@@ -177,23 +169,20 @@ export default function RequestForm() {
             position: "Owner",
             company: ", Gourmet haven",
             heading: "Exceptional Efficiency and Customization!",
-            // para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We’ve seen remarkable growth since implementing their solutions.</span>),
             para: "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business.",
             key: 2
         },
         {
             img: ak,
             client: "Amit Khanna",
-
             position: "CEO",
             company: ",Elite Club International",
             heading: "Impressive All-In-One Solution !",
             para: "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn't be happier!",
-
-            // para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we’ve streamlined processes</span> like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span> and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
         }
     ];
+
 
     const query = [
         {
@@ -226,6 +215,8 @@ export default function RequestForm() {
         startX = touch.clientX;
         startY = touch.clientY;
     };
+
+
     const handleFeedbackChange = (e) => {
 
         const touch = e.touches[0];
@@ -251,6 +242,8 @@ export default function RequestForm() {
         }
     }
 
+
+
     const customStyles = {
         control: (provided) => ({
             ...provided,
@@ -265,6 +258,8 @@ export default function RequestForm() {
             // width: '33rem',
         }),
     };
+
+
 
     const customStyles2 = {
         control: (provided) => ({
@@ -281,11 +276,15 @@ export default function RequestForm() {
         }),
     };
 
+
+
     const options = [
         { value: 'Product Details or Demo', label: 'Product Details or Demo' },
         { value: 'Product Pricing', label: 'Product Pricing' },
         { value: 'Support or Training', label: 'Support or Training' },
     ];
+
+
 
     const handleSelectChange2 = (selectedOption) => {
         handleChange({
@@ -552,7 +551,11 @@ export default function RequestForm() {
 
 
                 </section>
-            </div>) : (<div className={`${styles.reviewSection}`}>
+            </div>) 
+
+            : 
+            
+            (<div className={`${styles.reviewSection}`}>
                 <section className={`${styles.section5} globalSectionSize`}>
 
                     <div className={`${styles.section5Heading} font1`}>
