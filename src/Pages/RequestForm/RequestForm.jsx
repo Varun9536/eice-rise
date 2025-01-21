@@ -205,6 +205,8 @@ export default function RequestForm() {
 
 
     const [feedbackIndex, setFeedbackIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
 
 
     let startX = 0;
@@ -240,6 +242,9 @@ export default function RequestForm() {
                 //up
             }
         }
+
+
+        
     }
 
 
