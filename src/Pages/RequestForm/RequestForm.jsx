@@ -510,7 +510,7 @@ export default function RequestForm() {
                     <main  className={`${styles.feedBack}`}>
 
 
-                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} key={feedback[feedbackIndex].key} className={`${styles.feedBackArticleBox} font1`} >
+                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange}  className={`${styles.feedBackArticleBox} font1`} >
 
                             <figure  >
 
