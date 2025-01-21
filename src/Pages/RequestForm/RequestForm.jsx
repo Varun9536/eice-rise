@@ -1,11 +1,8 @@
 import styles from "./requestForm.module.css"
 
-import c3 from "../../assets/Hospitality/customer/c1.png"
-import c2 from "../../assets/Hospitality/customer/c2.png"
-import c1 from "../../assets/Hospitality/customer/c3.png"
 
 
-import Flag from "react-world-flags"
+
 
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
@@ -354,12 +351,6 @@ export default function RequestForm() {
                                         id="countryCode"
                                         placeholder="Code"
                                         options={countries.map(country => ({
-                                            // label: (
-                                            //     <div style={{ display: 'flex', alignItems: 'center' }}>
-                                            //         <Flag code={country.code} style={{ width: 20, height: 15, marginRight: 8 }} />
-                                            //         +{country.code}
-                                            //     </div>
-                                            // ),
                                             label: `+${country.code}`,
                                             value: country.value,
                                             code: country.code,
