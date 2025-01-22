@@ -185,7 +185,7 @@ export default function UserAndInventry() {
         text1: "Track inventory",
         text2: "",
         text3: "with precision using our robust management system",
-        img: footer
+        img: laptop
     }
 
 
