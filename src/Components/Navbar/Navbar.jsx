@@ -33,7 +33,7 @@ export default function Navbar() {
             navName: "ABOUT US",
             id: 3,
             // dropdown: <AboutusDrop />
-            path: "https://eice-main-website.vercel.app/About"
+            path: "https://www.eicetechnology.com/About"
 
         },
 
