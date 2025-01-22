@@ -17,10 +17,7 @@ import Payroll from './Pages/InsidePages/Payroll'
 import PurchaseAndVendor from './Pages/InsidePages/PurchaseAndVendor'
 import UserAndInventry from './Pages/InsidePages/UserAndInventry'
 import FoodCost from './Pages/InsidePages/FoodCost'
-// import AboutUs from './Pages/NavigationBarPages/AboutUs'
-// import Products from './Pages/NavigationBarPages/Products'
-import Pricing from './Pages/NavigationBarPages/Pricing'
-// import Blogs from './Pages/NavigationBarPages/Blogs'
+
 import RequestForm from './Pages/RequestForm/RequestForm'
 
 

@@ -25,7 +25,7 @@ import aqc from "../../assets/insidePages/vendor/featuresIcon/aqc.png"
 import dm from "../../assets/insidePages/vendor/featuresIcon/dm.png"
 import pfb from "../../assets/insidePages/vendor/featuresIcon/pfb.png"
 import poa from "../../assets/insidePages/vendor/featuresIcon/poa.png"
-import poa1 from "../../assets/insidePages/vendor/featuresIcon/poa1.png"
+
 import spm from "../../assets/insidePages/vendor/featuresIcon/spm.png"
 import vmfeature from "../../assets/insidePages/vendor/featuresIcon/vm.png"
 import vpt from "../../assets/insidePages/vendor/featuresIcon/vpt.png"
@@ -43,7 +43,7 @@ import ta from "../../assets/insidePages/vendor/vendorBenefits/ta.webp"
 import tcs from "../../assets/insidePages/vendor/vendorBenefits/tcs.webp"
 
 
-import main from "../../assets/insidePages/vendor/vendorHero.webp"
+
 import laptop from "../../assets/section3Laptop/vendor.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
@@ -52,7 +52,6 @@ import { useState , useEffect } from "react"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import footer from "../../assets/footerLaptop/vendor.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
@@ -219,7 +218,7 @@ export default function PurchaseAndVendor() {
         text1: "Collaborate seamlessly",
         text2: "",
         text3: "with vendors using our comprehensive portal",
-        img: footer
+        img: laptop
     }
 
 

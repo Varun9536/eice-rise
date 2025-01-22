@@ -8,7 +8,7 @@ import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
 
 import { Link } from "react-router-dom"
 
-// import herosectionImg from "../../assets/allHero/banquetHero.webp"
+
 import herosectionImg from "../../assets/allHero/new/banquetH.webp"
 
 import abs from "../../assets/insidePages/banquet/icon/abs.png"
@@ -21,7 +21,7 @@ import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 import { useEffect , useState } from "react"
 
-import main from "../../assets/insidePages/banquet/banquetHero.webp"
+
 
 // benefits
 
@@ -41,8 +41,7 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-// import footer from "../../assets/footer/foot.webp"
-import footer from "../../assets/footerLaptop/banquetL.jpg"
+
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
@@ -188,7 +187,7 @@ export default function BanquetAnsBilling() {
     text1: "Manage events",
     text2: "",
     text3: "and simplify billing with our Banquet solution",
-    img: footer
+    img: laptop
   }
 
 

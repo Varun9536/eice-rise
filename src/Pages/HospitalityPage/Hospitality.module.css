@@ -306,21 +306,6 @@
 
 }
 
-/* 
-@media (max-width : 800px) {
-    .reviewSection {
-        display: none;
-    }
-
-
-}
-
-@media (min-width : 800px) {
-
-    .reviewSectionForPhone {
-        display: none;
-    }
-} */
 
 .section5Heading {
     margin-bottom: 0px;
@@ -369,21 +354,6 @@
     margin-bottom: 3rem;
 }
 
-/* 
-@media (max-width : 800px) {
-    .section6 {
-        display: none;
-    }
-
-
-}
-
-@media (min-width : 800px) {
-
-    .section6ForPhone {
-        display: none;
-    }
-} */
 
 .section6Heading {
     margin-bottom: 20px;
@@ -429,26 +399,11 @@
 }
 
 
-
+/* 
 .section7 {
     margin-bottom: 3rem;
 }
 
-/* 
-@media (max-width : 800px) {
-    .section7 {
-        display: none;
-    }
-
-
-}
-
-@media (min-width : 800px) {
-
-    .section7ForPhone {
-        display: none;
-    }
-} */
 
 .section7Heading {
     margin-bottom: 20px;
@@ -465,8 +420,8 @@
     column-gap: 20px;
     row-gap: 30px;
 
-}
-
+} */
+/* 
 .insightBox {
     width: 370px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -506,7 +461,7 @@
     margin: 10px 0px;
 
 
-}
+} */
 
 
 /* shift of top section when phone nav bar  appear */
@@ -761,19 +716,19 @@
     }
 
     
-.insightSection {
+/* .insightSection {
     display: flex;
     flex-wrap: unset;
     justify-content: center;
     column-gap: unset;
     row-gap: unset;
 
-}
+} */
 
-    .cardBoxInnerHeading
+    /* .cardBoxInnerHeading
     {
     padding: 0px 20px;
-    }
+    } */
 
     .section5HeadingAndIconBox {
         gap: 0px 0px;
@@ -814,7 +769,7 @@
 
     }
 
-
+/* 
     .section7ForPhone {
         margin-bottom: 4rem;
     }
@@ -827,7 +782,7 @@
         font-weight: 900;
         text-align: center;
 
-    }
+    } */
 
 
     

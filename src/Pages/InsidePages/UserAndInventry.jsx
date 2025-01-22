@@ -6,7 +6,6 @@ import ir from "../../assets/insidePages/inventry/section2icon/ir.png"
 import sv from "../../assets/insidePages/inventry/section2icon/sv.png"
 
 
-// import heroImg from "../../assets/allHero/inventoryh.webp"
 import heroImg from "../../assets/allHero/new/inventaryH.webp"
 
 
@@ -38,10 +37,6 @@ import laptop from "../../assets/section3Laptop/store.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
-import main from "../../assets/insidePages/inventry/inventryHero.webp"
-
-// import footer from "../../assets/footer/foot.webp"
-import footer from "../../assets/footerLaptop/inventary.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 

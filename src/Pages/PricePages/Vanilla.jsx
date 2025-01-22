@@ -1,20 +1,16 @@
 import styles from "./Styles/vanilla.module.css"
 
 
-import eyeImg from "../../assets/pricing/eye/eye.webp"
+
 import { Link } from "react-router-dom"
 
 
-import account from "../../assets/Hospitality/allPageIcon/Account.png"
 import pos from "../../assets/Hospitality/allPageIcon/POS.png"
 import banquet from "../../assets/Hospitality/allPageIcon/Banquet.png"
-import emp from "../../assets/Hospitality/allPageIcon/Employee.png"
+
 import food from "../../assets/Hospitality/allPageIcon/Food.png"
 import inentry from "../../assets/Hospitality/allPageIcon/store.png"
-import member from "../../assets/Hospitality/allPageIcon/Member.png"
-import pay from "../../assets/Hospitality/allPageIcon/PAyscale.png"
-import room from "../../assets/Hospitality/allPageIcon/Room.png"
-import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
+
 
 import heroimg from "../../assets/pricing/suitHeroSection/vanillaP.webp"
 
@@ -39,13 +35,7 @@ export default function Vanilla() {
     }, []);
 
     const services = [
-        // {
-        //     serviceName: "ROOM BOOKING",
-        //     icon: room,
-        //     path: "room-booking",
-        //     key: 1
-        // },
-
+        
         {
             serviceName: "DINNING (POS)",
             icon: pos,
@@ -60,34 +50,7 @@ export default function Vanilla() {
             key: 3
         },
 
-        // {
-
-        //     serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
-        //     icon: member,
-        //     path: "member-suite",
-        //     key: 4
-        // },
-
-        // {
-        //     serviceName: "ACCOUNT & FINANCE",
-        //     icon: account,
-        //     path: "account-finance",
-        //     key: 5
-        // },
-
-        // {
-        //     serviceName: "EMPLOYEE SUITE",
-        //     icon: emp,
-        //     path: "employee-suite",
-        //     key: 6
-        // },
-
-        // {
-        //     serviceName: "PAYROLL",
-        //     icon: pay,
-        //     path: "payroll",
-        //     key: 7
-        // },
+       
 
         {
             serviceName: "USER STORE & INVENTORY",
@@ -96,12 +59,6 @@ export default function Vanilla() {
             key: 8
         },
 
-        // {
-        //     serviceName: "PURCHASE & VENDOR PORTAL",
-        //     icon: vendor,
-        //     path: "purchase-vendor",
-        //     key: 9
-        // },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",

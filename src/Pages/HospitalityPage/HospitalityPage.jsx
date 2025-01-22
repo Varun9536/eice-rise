@@ -68,10 +68,6 @@ import cl30 from "../../assets/Hospitality/clients/c30.png";
 
 
 
-import insight1 from "../../assets/Hospitality/insights/01.webp"
-import insight2 from "../../assets/Hospitality/insights/02.webp"
-import insight3 from "../../assets/Hospitality/insights/03.webp"
-
 
 
 import clientHeadIcon from "../../assets/Hospitality/customer/subh.png"
@@ -297,31 +293,7 @@ export default function HospitalityPage() {
     ]
 
 
-    const insights = [
-
-        {
-            img: insight1,
-            heading: "Guest Loyalty (Personalization) ",
-
-            // para: "Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. "
-
-            para: (<span>Customized experiences are becoming the gold standard in hospitality. 71% of travelers prefer personalized services, making tech-driven solutions like AI and guest data analytics essential for success. </span>)
-        },
-
-        {
-            img: insight2,
-            heading: "The Rise of Contactless Technology ",
-            para: "From mobile check-ins to digital room keys, 85% of hotels now prioritize contactless solutions to enhance convenience and safety for their guests. "
-
-        },
-
-        {
-            img: insight3,
-            heading: "AI-Powered Guest Experiences:",
-            para: "Chatbots and virtual concierges powered by AI are revolutionizing guest services, reducing response times and increasing satisfaction "
-        }
-
-    ]
+  
 
 
     // useEffect(() => {
@@ -853,104 +825,7 @@ export default function HospitalityPage() {
 
 
 
-
-
-
-
-
-
-
-
-            {/* section7 */}
-            {/* <section className={`${styles.section7} globalSectionSize`}>
-
-
-                <div className={`${styles.section7Heading} font1`}>
-
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "50px" }}>
-                            <img style={{ width: "100%" }} src={h1} alt="" />
-                        </div>
-
-                        <div className="font3">
-                            Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-                <div className={`${styles.insightSection} font1`}>
-
-                    {insights.map((item) => (
-                        <div className={`${styles.insightBox}`}>
-
-                            <div>
-                                <img style={{ width: "100%" }} src={item.img} alt="" />
-                            </div>
-
-                            <div className={`${styles.cardBoxInsightsInnerHeading} blueTextGlobalClass font1`}>{item.heading}</div>
-                            <p style={{ lineHeight: "1.8rem" }}  >{item.para}</p>
-                        </div>
-                    ))}
-                </div>
-
-
-            </section> */}
-
-            {/* <section className={`${styles.section7ForPhone} globalSectionSize`}>
-
-
-                <div className={`${styles.section7Heading} font1`}>
-
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "50px" }}>
-                            <img style={{ width: "100%" }} src={h1} alt="" />
-                        </div>
-
-                        <div className="font3">
-                            Some Interesting <span className={` blueTextGlobalClass font2`} >Insights</span> from the Hospitality Industry
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-                <div className={`${styles.insightSection} font1`}>
-
-
-                    <div className={`${styles.insightBox}`}>
-
-                        <div>
-                            <img style={{ width: "100%" }} src={insights[insightsIndex].img} alt="" />
-                        </div>
-
-                        <div className={`${styles.cardBoxInsightsInnerHeading} blueTextGlobalClass font1`}>{insights[insightsIndex].heading}</div>
-                        <p style={{ lineHeight: "1.8rem" }}  >{insights[insightsIndex].para}</p>
-                    </div>
-
-                </div>
-
-                <div className="indicators">
-                    {insights.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`indicator ${insightsIndex === index ? 'active' : ''}`}
-                            onClick={() => setInsightsIndex(index)}
-                        ></span>
-                    ))}
-                </div>
-
-            </section> */}
-
-
-
-
             <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
-
-
             <FooterLower />
 
 

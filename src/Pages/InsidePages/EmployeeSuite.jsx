@@ -24,7 +24,6 @@ import pm from "../../assets/insidePages/emp/icon/pm.png"
 import sr from "../../assets/insidePages/emp/icon/sr.png"
 import td from "../../assets/insidePages/emp/icon/td.png"
 
-// import heroImg from "../../assets/allHero/employeeh.webp"
 
 import heroImg from "../../assets/allHero/new/employeeH.webp"
 
@@ -37,7 +36,7 @@ import ie from "../../assets/insidePages/emp/empBenefits/ie.webp"
 import ts from "../../assets/insidePages/emp/empBenefits/ts.webp"
 import tt from "../../assets/insidePages/emp/empBenefits/tt.webp"
 
-import main from "../../assets/insidePages/emp/empH.webp"
+
 
 
 
@@ -51,16 +50,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import laptop from "../../assets/section3Laptop/emp.webp"
 
 
-import footer from "../../assets/footerLaptop/employeeL.jpg"
+
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 export default function EmployeeSuite() {
 
  const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
-
-
- 
 
 
   useEffect(() => {
@@ -222,7 +218,7 @@ export default function EmployeeSuite() {
     text1: "Empower your workforce",
     text2: "",
     text3: "with a streamlined Employee Portal",
-    img: footer
+    img: laptop
   }
 
 

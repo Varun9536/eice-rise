@@ -35,14 +35,14 @@ import esn from "../../assets/insidePages/food/benefits/esn.webp"
 import ioe from "../../assets/insidePages/food/benefits/ioe.webp"
 import po from "../../assets/insidePages/food/benefits/po.webp"
 
-import main from "../../assets/insidePages/food/foodHero.webp"
+
 
 import laptop from "../../assets/section3Laptop/food.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 
-import footer from "../../assets/footerLaptop/foodL.jpg"
+
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
@@ -216,7 +216,7 @@ export default function FoodCost() {
     text1: "Optimize food costs",
     text2: "",
     text3: "with realtime analysis and insights",
-    img: footer
+    img: laptop
   }
 
 

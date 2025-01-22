@@ -14,7 +14,7 @@ import rtet from "../../assets/insidePages/account/financeSection2/rtet.png"
 
 import ara from "../../assets/insidePages/account/icon/ara.png"
 import bf from "../../assets/insidePages/account/icon/bf.png"
-import cf from "../../assets/insidePages/account/icon/cf.png"
+
 import cfm from "../../assets/insidePages/account/icon/cfm.png"
 import iib from "../../assets/insidePages/account/icon/iib.png"
 import pgi from "../../assets/insidePages/account/icon/pgi.png"
@@ -24,7 +24,7 @@ import vsp from "../../assets/insidePages/account/icon/vsp.png"
 
 
 
-import main from "../../assets/insidePages/account/h.webp"
+
 
 import { useState, useEffect } from "react"
 
@@ -45,8 +45,6 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-// import footer from "../../assets/footer/foot.webp"
-import footer from "../../assets/footerLaptop/accountL.jpg"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
@@ -228,7 +226,7 @@ export default function AccountAndFinance() {
     text1: "Gain control ",
     text2: "",
     text3: "of your finances with automated workflows and insights.",
-    img: footer
+    img: laptop
   }
 
 

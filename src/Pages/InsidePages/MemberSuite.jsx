@@ -9,7 +9,7 @@ import cag from "../../assets/insidePages/member/memberSection2/cag.png"
 import pme from "../../assets/insidePages/member/memberSection2/pme.png"
 import smo from "../../assets/insidePages/member/memberSection2/smo.png"
 
-import main from "../../assets/insidePages/member/hero.webp"
+
 
 
 
@@ -42,8 +42,7 @@ import Accordion from "../../Components/Accordian/Accordian.jsx"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { useState, useEffect } from "react"
-// import footer from "../../assets/footer/foot.webp"
-import footer from "../../assets/footerLaptop/memberL.jpg"
+
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
@@ -194,7 +193,7 @@ export default function MemberSuite() {
     text1: "Engage members",
     text2: "",
     text3: "and grow loyalty with our all-in-one Membership Portal",
-    img: footer
+    img: laptop
   }
 
 

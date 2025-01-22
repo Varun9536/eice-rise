@@ -1,7 +1,7 @@
 import styles from "./Styles/enterprise.module.css"
 
 
-import eyeImg from "../../assets/pricing/eye/eye.webp"
+
 import { Link } from "react-router-dom"
 
 

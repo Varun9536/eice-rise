@@ -40,8 +40,6 @@ import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.webp"
 import laptop from "../../assets/section3Laptop/room.webp"
 
 
-// import spiral from "../../assets/insidePages/room/roomPage/spiral.jpg"
-import spiral from "../../assets/insidePages/room/roomPage/spiral2.png"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -62,7 +60,7 @@ import { useEffect , useState } from "react"
 
 import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp"
 
-import main from "../../assets/insidePages/room/roomPage/H.webp"
+
 
 
 export default function RoomBooking() {

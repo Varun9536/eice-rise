@@ -1,7 +1,6 @@
 import style from "./Styles/pos.module.css"
 
 
-// import heroImg from "../../assets/allHero/posh.webp"
 
 import heroImg from "../../assets/allHero/new/posH.webp"
 import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
@@ -38,7 +37,7 @@ import laptop from "../../assets/section3Laptop/pos.webp"
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 
-import main from "../../assets/insidePages/pos/posPage/H3.webp"
+
 
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
@@ -48,7 +47,6 @@ import { useState, useEffect } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-import footerRoomLaptop from "../../assets/Hospitality/flaptop.webp"
 
 export default function Pos() {
 
