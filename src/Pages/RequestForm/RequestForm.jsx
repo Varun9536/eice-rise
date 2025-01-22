@@ -53,22 +53,30 @@ export default function RequestForm() {
         policyAgree: false,
     });
 
+
+
+
     useEffect(() => {
-        fetch('https://restcountries.com/v2/all')
-            .then((response) => response.json())
-            .then((data) => {
-                const countryList = data.map((country) => ({
+        const fetchConuntryList = async () => {
+
+            try {
+                let countryNames = await fetch("https://restcountries.com/v2/all")
+                countryNames = await countryNames.json()
+                const countryList = countryNames.map((country) => ({
                     label: country.name,
                     value: country.name,
                     code: country.callingCodes[0] || '',
                     flag: country.flag
 
                 }));
-
                 setCountries(countryList);
 
-            })
-            .catch((error) => console.error('Error fetching country data:', error));
+            } catch (error) {
+                console.error('Error fetching country data:', error)
+            }
+
+        }
+        fetchConuntryList()
     }, []);
 
 
@@ -101,7 +109,7 @@ export default function RequestForm() {
     };
 
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
 
 
@@ -125,22 +133,22 @@ export default function RequestForm() {
         };
 
         try {
+            
+            const response = await fetch("http://localhost/eiceRise/eicedata.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(dataToSend),
+            });
 
-            // const response = await fetch("YOUR_API_ENDPOINT_HERE", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //     },
-            //     body: JSON.stringify(dataToSend),
-            // });
+           
 
-            console.log(dataToSend)
-
-            // if (response.ok) {
-            //     alert("Your form has been submitted successfully.");
-            // } else {
-            //     alert("Failed to submit the form. Please try again.");
-            // }
+            if (response.statusCode === 200) {
+                alert("Your form has been submitted successfully.");
+            } else {
+                alert("Failed to submit the form. Please try again.");
+            }
 
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -228,7 +236,7 @@ export default function RequestForm() {
                 setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
 
             } else {
-               //left
+                //left
                 setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
 
             }
@@ -241,7 +249,7 @@ export default function RequestForm() {
         }
 
 
-        
+
     }
 
 
@@ -357,9 +365,6 @@ export default function RequestForm() {
                                         }))}
                                         isSearchable={true}
                                         styles={customStyles2}
-
-
-
 
                                         value={countries.find(option => option.code === formData.phoneCode) ? {
                                             label: `+${formData.phoneCode}`,
@@ -503,10 +508,10 @@ export default function RequestForm() {
                         What our clients say  ?
                     </div>
 
-                    <main  className={`${styles.feedBack}`}>
+                    <main className={`${styles.feedBack}`}>
 
 
-                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange}  className={`${styles.feedBackArticleBox} font1`} >
+                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} className={`${styles.feedBackArticleBox} font1`} >
 
                             <figure  >
 
@@ -528,7 +533,7 @@ export default function RequestForm() {
 
 
 
-                            <p  style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
+                            <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
 
                         </article>
 
@@ -547,54 +552,54 @@ export default function RequestForm() {
 
 
                 </section>
-            </div>) 
+            </div>)
 
-            : 
-            
-            (<div className={`${styles.reviewSection}`}>
-                <section className={`${styles.section5} globalSectionSize`}>
+                :
 
-                    <div className={`${styles.section5Heading} font1`}>
+                (<div className={`${styles.reviewSection}`}>
+                    <section className={`${styles.section5} globalSectionSize`}>
 
-                        <div className="font3">
-                            What our clients say  ?
+                        <div className={`${styles.section5Heading} font1`}>
+
+                            <div className="font3">
+                                What our clients say  ?
+                            </div>
+
                         </div>
 
-                    </div>
 
+                        <main className={`${styles.feedBack}`}>
+                            {feedback.map((item) =>
+                            (
+                                <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
 
-                    <main className={`${styles.feedBack}`}>
-                        {feedback.map((item) =>
-                        (
-                            <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
+                                    <figure >
 
-                                <figure >
+                                        <div style={{ textAlign: "center" }}  >
+                                            <img style={{ width: "28%" }} src={item.img} alt="" />
+                                        </div>
 
-                                    <div style={{ textAlign: "center" }}  >
-                                        <img style={{ width: "28%" }} src={item.img} alt="" />
+                                        <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
+
+                                    </figure>
+                                    <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
+                                        "{
+                                            item.heading
+                                        }"
+                                        {/* {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)} */}
                                     </div>
 
-                                    <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
-
-                                </figure>
-                                <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
-                                    "{
-                                        item.heading
-                                    }"
-                                    {/* {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)} */}
-                                </div>
 
 
+                                    <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
 
-                                <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
-
-                            </article>
-                        ))}
-                    </main>
+                                </article>
+                            ))}
+                        </main>
 
 
-                </section>
-            </div>)}
+                    </section>
+                </div>)}
 
 
 
