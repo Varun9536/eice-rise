@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import styles from './accordian.module.css';
 
-// import { GoDash } from "react-icons/go";
-// import { FaPlus } from "react-icons/fa6";
 
-import { FaPlus, FaMinus } from "react-icons/fa"; // Import FontAwesome icons
+import { FaPlus, FaMinus } from "react-icons/fa"; 
 
 const Accordion = ({ question, answer, id }) => {
     const [isOpen, setIsOpen] = useState(false);
