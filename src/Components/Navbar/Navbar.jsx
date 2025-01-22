@@ -24,7 +24,6 @@ export default function Navbar() {
             navName: "PRICING",
             id: 2,
             dropdown: <PricingDrop />,
-            // path : "/pricing"
             style: (styles.dropDownContainerPricing)
 
 
@@ -32,7 +31,6 @@ export default function Navbar() {
         {
             navName: "ABOUT US",
             id: 3,
-            // dropdown: <AboutusDrop />
             path: "https://www.eicetechnology.com/About"
 
         },
@@ -40,7 +38,6 @@ export default function Navbar() {
         {
             navName: "BLOGS",
             id: 4,
-            // dropdown: <ProductDrop />
             path: "https://www.eicetechnology.com/Resources"
 
         }
@@ -81,17 +78,20 @@ export default function Navbar() {
                     (<div key={item.id} style={{ position: "relative" }}>
                         <div className={`${styles.navNameAndArrow}`} key={item.id} onMouseEnter={() => { handleMouseEnter(item.id) }} style={{ display: "flex" }}>
 
-                            {item.path && (<div>
-                                <Link to={item.path} className={`${styles.navName} font1 linkClass`}>
+                            {item.dropdown && (<div>
+                                <div className={`${styles.navName} font1 linkClass`}>
                                     {item.navName}
-                                </Link>
+                                </div>
                             </div>)}
 
 
-                            {!item.path && (
-                                <div to={item.path} target='_blank' className={`${styles.navName} font1 linkClass`}>
-                                    {item.navName}
-                                </div>
+                            {item.path && (
+                                <Link to={item.path} className={`${styles.navName} font1 linkClass`} target='_blank'>
+                                    <div  >
+                                        {item.navName}
+                                    </div>
+                                </Link>
+
                             )}
 
 
