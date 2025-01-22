@@ -73,16 +73,13 @@ import cl30 from "../../assets/Hospitality/clients/c30.png";
 import clientHeadIcon from "../../assets/Hospitality/customer/subh.png"
 
 
-import h1 from "../../assets/Hospitality/headIcon/h1.png"
+
 import h2 from "../../assets/Hospitality/headIcon/h2.png"
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-
-// import footerLap from "../../assets/Hospitality/flaptop.webp"
-// import footerLap from "../../Components/Footer/FooterLower"
 import footerlaptop from "../../assets/section3Laptop/pos.webp"
 
 
@@ -96,7 +93,7 @@ export default function HospitalityPage() {
 
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [insightsIndex, setInsightsIndex] = useState(0);
+   
     const [feedbackIndex, setFeedbackIndex] = useState(0);
 
 
