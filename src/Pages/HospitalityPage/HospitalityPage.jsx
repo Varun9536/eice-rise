@@ -1,6 +1,6 @@
 import styles from "./Hospitality.module.css"
 
-import laptop from "../../assets/Hospitality/laptoplatest.webp"
+
 import { Link } from "react-router-dom"
 
 import { useState, useEffect } from "react"
@@ -419,7 +419,7 @@ export default function HospitalityPage() {
 
 
                 {!forSmallestScreen && (<div className={styles.laptopImg}>
-                    <img className={`${styles.laptopImgDimension}`} src={laptop} alt="" />
+                    <img className={`${styles.laptopImgDimension}`} src={footerlaptop} alt="" />
                 </div>)}
 
 
