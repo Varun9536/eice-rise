@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: 'Segoe';
-  src: url("/font1/SegoeUI.woff") ;
+  src: url("/font1/SegoeUI.woff2") ;
 }
 
 @font-face {
   font-family: 'Segoe2';
-  src: url("/font2/segoeuithisz.woff") ;
+  src: url("/font2/segoeuithisz.woff2") ;
 }
 
 /* font family classes for global use */
