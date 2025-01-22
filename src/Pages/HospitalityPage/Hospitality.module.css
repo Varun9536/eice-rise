@@ -430,6 +430,27 @@
 }
 
 
+
+ */
+
+ 
+.cardBoxStoryInnerHeading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+
+
+}
+
+.cardBoxInsightsInnerHeading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+
+
+}
+
+
 .cardBoxInnerHeading {
     font-size: 20px;
     font-weight: bold;
@@ -445,23 +466,6 @@
     text-align: center;
     padding: 0px 60px;
 }
-
-
-.cardBoxStoryInnerHeading {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px;
-
-
-}
-
-.cardBoxInsightsInnerHeading {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px;
-
-
-} */
 
 
 /* shift of top section when phone nav bar  appear */
