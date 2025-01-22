@@ -12,6 +12,7 @@
     cursor: pointer;
     margin-top: 15px;
     margin-bottom: 15px;
+    column-gap: 5px;
 }
 
 .answer {

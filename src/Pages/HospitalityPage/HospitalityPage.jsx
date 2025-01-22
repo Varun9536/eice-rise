@@ -1,6 +1,7 @@
 import styles from "./Hospitality.module.css"
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
+import allLaptop from "../../assets/Hospitality/laptoplatest.webp"
 
 import account from "../../assets/Hospitality/allPageIcon/Account.png"
 import pos from "../../assets/Hospitality/allPageIcon/POS.png"
@@ -68,7 +69,11 @@ import h2 from "../../assets/Hospitality/headIcon/h2.png"
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
+
+
 import footerlaptop from "../../assets/section3Laptop/pos.webp"
+
+
 
 import { useSpring, animated } from "@react-spring/web";
 
@@ -218,6 +223,7 @@ export default function HospitalityPage() {
             company: ", LuxeStay Hotels",
             heading: "Transformative Technology Partner",
             para: (<span> EICE Rise has <span style={{ fontWeight: "bold" }}>completely transformed</span>  our operations. Their cloud ERP <span style={{ fontWeight: "bold" }}>seamlessly integrates</span> seamlessly integrates all aspects of our hotel, from reservations to dining, improving efficiency and enhancing our guest experience. We couldn't ask for a better technology partner.</span>),
+
             key: 1
 
         },
@@ -404,7 +410,7 @@ export default function HospitalityPage() {
 
 
                 {!forSmallestScreen && (<div className={styles.laptopImg}>
-                    <img className={`${styles.laptopImgDimension}`} src={footerlaptop} alt="" />
+                    <img className={`${styles.laptopImgDimension}`} src={allLaptop} alt="" />
                 </div>)}
 
 

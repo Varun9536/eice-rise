@@ -17,7 +17,7 @@ export default function Android() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+            setIsPhone(window.innerWidth <= 800); 
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -186,14 +186,9 @@ export default function Android() {
 
                 <div className={`${styles.moduleBox}`}>
 
-
-
                     {modules.map((item) =>
                     (
                         <Link className="linkClass" to={item.path}>
-
-
-
                             <div className={`${styles.iconAndName}`}>
 
                                 <div className={`${styles.moduleImgBorder}`}>
@@ -206,9 +201,6 @@ export default function Android() {
                                     <span className="font3">{item.key}:</span> <span className="font1" > {item.value}</span>
                                 </div>
                             </div>
-
-
-
 
 
                         </Link>
@@ -265,17 +257,11 @@ export default function Android() {
 
                 </div>
 
-
-
-
-
             </section>
 
             <div>
                 <FooterLower />
             </div>
-
-
 
         </>
     )
