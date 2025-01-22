@@ -58,7 +58,7 @@ import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
 import { useEffect , useState } from "react"
 
-import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp"
+
 
 
 
@@ -88,7 +88,7 @@ export default function RoomBooking() {
         text1: 'Streamline',
         text2: "",
         text3: 'bookings effortlessly ',
-        img: footerRoomLaptop
+        img: laptop
     }
 
 
