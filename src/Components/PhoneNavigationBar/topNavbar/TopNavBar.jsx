@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function TopNavBar({ sendDataToParent , change }) {
 
-    const [navbarOpen, setNavbarOpen] = useState(false);
+    const [navIcon, setNavIcon] = useState(false);
 
     const handleIconChange = () => {
         setNavbarOpen(prev => !prev);
@@ -25,7 +25,7 @@ export default function TopNavBar({ sendDataToParent , change }) {
         <>
 
             <div>
-                {!navbarOpen ?
+                {!navIcon ?
                     (< IoCloseSharp className={styles.menuIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />) :
                     (<HiOutlineBars3 className={styles.closeIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />)}
             </div>
