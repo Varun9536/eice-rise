@@ -1,0 +1,33 @@
+.contactDetailSideBarContainer {
+    background-color: #ECF6FA;
+    padding: 1rem 20px;
+
+}
+
+.contactDetailSideBarHeading Qa{
+    font-weight: 600;
+}
+
+.contactDetailBox {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 1.2rem;
+    margin-top: 0.7rem;
+
+
+}
+
+.contactDetailSubBox1 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.contactDetailSubBox2 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}

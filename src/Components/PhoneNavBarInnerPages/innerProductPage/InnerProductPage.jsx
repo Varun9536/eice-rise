@@ -1,0 +1,228 @@
+import ContactUs from "../../contactUs/contactUs"
+import TopNavBar from "../../PhoneNavigationBar/topNavbar/TopNavBar"
+import RequestButton from "../../requestDemoButton/requestButton"
+import styles from "./innerProductPage.module.css"
+
+
+import { Link } from "react-router-dom"
+
+
+
+
+
+import account from "../../../assets/DropDown/account.png"
+import banwuet from "../../../assets/DropDown/banquet.png"
+import dinning from "../../../assets/DropDown/dinning.png"
+import food from "../../../assets/DropDown/food.png"
+import inventary from "../../../assets/DropDown/invent.png"
+import member from "../../../assets/DropDown/member.png"
+import pay from "../../../assets/DropDown/pay.png"
+import room from "../../../assets/DropDown/room.png"
+import vendor from "../../../assets/DropDown/vendor.png"
+import emp from "../../../assets/DropDown/emp.png"
+
+
+import { IoIosArrowForward } from "react-icons/io";
+
+export default function InnerProductPage({ sendDataToProduct , handleHomeButton }) {
+
+
+    const product1 = [
+        {
+            key: 1,
+            title: "Room ",
+            title2: "Booking",
+            description: "Streamline guest reservations",
+            icon: room,
+            path: "room-booking",
+
+        },
+
+        {
+            key: 3,
+            title: "Banquet",
+            title2: "& Billing",
+            description: "Manage events with ease",
+            icon: banwuet,
+            path: "banquet-billing",
+        },
+
+        {
+
+
+            key: 5,
+            title: "Accounts",
+            title2: "& Finances",
+            description: "Gain full financial control",
+            icon: account,
+            path: "account-finance",
+        },
+
+        {
+            key: 7,
+            title: "PayRoll",
+            title2: "Booking",
+            description: "Simplify payroll processing",
+            icon: pay,
+            path: "payroll",
+        },
+
+
+        {
+            key: 8,
+
+            title: "Purchase",
+            title2: " & Vendor Portal",
+            description: "Manage inventory effortlessly",
+            icon: vendor,
+            path: "userstore-inventry",
+        },
+
+    ]
+
+    const product2 = [
+
+        {
+            key: 2,
+            title: "Dining",
+            title2: "(POS)",
+            description: "Simplify your dining operations",
+            icon: dinning,
+            path: "pos-dining",
+        },
+
+        {
+            key: 4,
+            title: "Member",
+            title2: "Suite",
+            description: "Build a thriving member community",
+            icon: member,
+            path: "member-suite",
+        },
+
+        {
+            key: 6,
+            title: "Employee",
+            title2: "Portal",
+            description: "Empower with centralized access",
+            icon: emp,
+            path: "employee-suite",
+
+        },
+
+        {
+            key: 9,
+            title: "User, Store ",
+            title2: "& Inventory",
+            description: "Optimize vendor management",
+            icon: inventary,
+            path: "purchase-vendor",
+        },
+
+        {
+            key: 10,
+            title: "Food & Beverage ",
+            title2: "Cost Analysis",
+            description: "Boost profit accuracy",
+            icon: food,
+            path: "food-cost",
+        },
+
+
+
+    ]
+
+
+
+
+
+
+    return (
+        <>
+
+            <section className={`${styles.mainProductConatiner}`}>
+
+
+                    <div className={`${styles.breadScrum}`} style={{ padding: "0px 20px" }}>
+
+                        <div onClick={handleHomeButton}>
+                                Home
+                        </div>
+
+                        <div className={`${styles.arrowSign}`}>
+                            <IoIosArrowForward />
+                        </div>
+
+                        <div style={{ fontWeight: "600" }}>
+                            Products
+                        </div>
+
+                    </div>
+
+               
+
+
+                <div style={{ padding: "0px 20px" }} className={`${styles.productNavItemContainer}`}>
+
+                    <div className={`${styles.NavItemSubContainer}`}>
+
+                        {product1.map((item) =>
+                        (
+                            <Link onClick={sendDataToProduct} className="linkClass" key={item.key} to={item.path}>
+                                <div className={`${styles.productDetailBox}`}>
+                                    <div className={`${styles.productIcon}`}>
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                    </div>
+                                    <div className={`${styles.titleHeading} font3`}>
+
+                                        <div>{item.title}</div>
+                                        <div>{item.title2}</div>
+                                    </div>
+                                    {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
+                                </div>
+                            </Link>
+
+                        ))}
+
+                    </div>
+
+
+
+                    <div className={`${styles.NavItemSubContainer}`}>
+                        {product2.map((item) =>
+                        (
+                            <Link onClick={sendDataToProduct} className="linkClass" key={item.key} to={item.path}>
+                                <div className={`${styles.productDetailBox}`}>
+                                    <div className={`${styles.productIcon}`}>
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                    </div>
+                                    <div className={`${styles.titleHeading} font3`}>
+
+                                        <div>{item.title}</div>
+                                        <div>{item.title2}</div>
+                                    </div>
+                                    {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
+                                </div>
+                            </Link>
+
+                        ))}
+
+                    </div>
+
+                </div>
+
+                <div style={{marginTop : "4rem"}} onClick={sendDataToProduct}>
+                    <RequestButton />
+                </div>
+
+                <ContactUs />
+
+
+            </section>
+
+
+
+
+        </>
+    )
+}

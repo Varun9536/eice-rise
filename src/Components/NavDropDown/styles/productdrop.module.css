@@ -87,6 +87,12 @@
     font-weight: 600;
 }
 
+.requestDemo:hover
+{
+    background-color: #5FCDF6;
+
+}
+
 .arrowStyle
 {
     color: white;

@@ -38,6 +38,11 @@
 
 }
 
+.demoButton:hover
+{
+    background-color: #5FCDF6;
+}
+
 .footerUpperPartHeading {
     font-size: 46px;
 
@@ -46,10 +51,6 @@
 .footerHeadAndIconBox {
     width: 57%;
 
-}
-
-.demoButton:hover {
-    background-color: rgba(20, 176, 241, 1);
 }
 
 .demoArrowButton {
@@ -250,7 +251,7 @@
     }
 
     .footerUpperPartHeading {
-        font-size: 25px;
+        font-size: 34px;
     }
 
     .footerLaptopImg {

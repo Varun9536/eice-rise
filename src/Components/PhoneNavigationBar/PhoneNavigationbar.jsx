@@ -8,19 +8,28 @@ import { Link } from 'react-router-dom';
 import { HiOutlineBars3 } from "react-icons/hi2";
 
 
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+
+
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import RequestButton from '../requestDemoButton/requestButton';
+import ContactUs from '../contactUs/contactUs';
+import InnerProductPage from '../PhoneNavBarInnerPages/innerProductPage/InnerProductPage';
+import InnerPricePage from '../PhoneNavBarInnerPages/innerPricePage/innerPricePage';
+import TopNavBar from './topNavbar/TopNavBar';
+import { motion } from 'framer-motion';
+
 
 export default function PhoneNavigationbar() {
 
 
-    
+
 
     const navigationItems = [
-        {
-            key: 1,
-            navName: "Home", path: "/",
-            dropdown : false
-        },
+        // {
+        //     key: 1,
+        //     navName: "Home", path: "/",
+        //     innerNavPage: false
+        // },
         {
             key: 2,
             navName: "Products", path: "",
@@ -35,13 +44,13 @@ export default function PhoneNavigationbar() {
                 { productName: "User, Store & Inventory", path: "userstore-inventry" },
                 { productName: "Purchase & Vendor Portal", path: "purchase-vendor" },
                 { productName: "Food & Beverage Cost Analysis", path: "food-cost" }
-            ] ,
-            dropdown : true
+            ],
+            innerNavPage: true
         },
 
         {
             key: 4,
-            navName: "Pricing", path: "" ,
+            navName: "Pricing", path: "",
             innerItem: [
                 { productName: "Enterprise Suite", path: "enterprise-suite" },
                 { productName: "Club Suite", path: "club-suite" },
@@ -50,16 +59,17 @@ export default function PhoneNavigationbar() {
                 { productName: "Front Desk Suite", path: "frontdesk-suite" },
                 { productName: "Banquet Suite", path: "banquet-suite" },
                 { productName: "Vanilla Suite", path: "vanilla-suite" },
-                
+
             ],
-            dropdown : true
+            innerNavPage: true
+
         },
 
 
         {
             key: 3,
             navName: "About Us", path: "https://www.eicetechnology.com/About",
-            dropdown : false
+            innerNavPage: false
 
 
         },
@@ -67,41 +77,57 @@ export default function PhoneNavigationbar() {
         {
             key: 5,
             navName: "Blogs", path: "https://www.eicetechnology.com/Resources",
-            dropdown : false
+            innerNavPage: false
         },
     ];
 
     const [navbarOpen, setNavbarOpen] = useState(true);
+    const [change, setChange] = useState(true)
+
+    const handleDataFromChild = () => {
+        setNavbarOpen(prev => !prev);
+        setInnerNavPageActive("Home")
+    };
+
+    const handleDataFromPrice = () => {
+        setNavbarOpen(prev => !prev);
+        setChange(prev => !prev)
+        setInnerNavPageActive("Home")
+
+    }
+
+    const handleDataFromProduct = () => {
+        setNavbarOpen(prev => !prev);
+        setChange(prev => !prev)
+        setInnerNavPageActive("Home")
+
+    };
+
+    const handleHomeButton =()=>
+    {
+        setInnerNavPageActive("Home")
+    }
+    
 
     const [activeNavItem, setActiveNavItem] = useState("");
-
-   
-
-    const toggleNavItem = (item) => {
-        setActiveNavItem(prev => (prev === item ? "" : item));
-    };
+    const [innerNavPageActive, setInnerNavPageActive] = useState("Home")
 
 
+    const toggleNavPageActive = (item) => {
+        setInnerNavPageActive(prev => (prev === item ? "" : item))
+    }
 
-    const navbarIconChange = () => {
-        setNavbarOpen(prev => !prev);
-    };
+
+
+
 
     return (
         <>
 
+
+
             <div className={styles.navigationBar}>
-                <div>
-                    {navbarOpen ?
-                        (< HiOutlineBars3 className={styles.menuIcon} onClick={navbarIconChange} size={37} />) :
-                        (<IoCloseSharp className={styles.closeIcon} onClick={navbarIconChange} size={36} />)}
-                </div>
-
-                <div style={{ width: "100px" }}>
-                    <img style={{ width: "100%" }} src={logo} alt="Logo" />
-                </div>
-
-
+                <TopNavBar change={change} sendDataToParent={handleDataFromChild} />
             </div>
 
 
@@ -110,73 +136,154 @@ export default function PhoneNavigationbar() {
 
 
 
-            <div className='font1' style={{ position: "fixed", zIndex: "999" }}>
-                {
+            <div className='font1' style={{ position: "relative", zIndex: "999" }}>
+                {/* {
                     navbarOpen ? (<div></div>) :
                         (
                             <>
-                            
+                                {innerNavPageActive === "Home" && (<div className={styles.mainMenuBox}>
 
-                                <div className={styles.menuMainBox}>
-                                    {navigationItems.map((item) => (
-                                        <div key={item.key}>
-                                            <Link
-                                                onClick={() => toggleNavItem(item.navName)}
-                                                to={item.path}
-                                                className='linkClass'
-                                            >
-                                                <div style={{ fontWeight: "600" }}>
-                                                    {item.dropdown !== true ?
-                                                        (<div onClick={navbarIconChange}>{item.navName}</div>)
-                                                        :
-                                                        (<div style={{ display: "flex", justifyContent: "space-between" }}>
-
-                                                            <div>{item.navName} </div>
-                                                            <div>
-
-                                                                {activeNavItem === item.navName ? (<IoIosArrowUp />) : (<IoIosArrowDown />)}
-                                                            </div>
-
-                                                        </div>)}
-                                                </div>
-
-                                            </Link>
+                                    <div className={`${styles.navigationContainer}`}>
 
 
+                                        <Link
+                                            onClick={() => { setChange(prev => !prev), setNavbarOpen(prev => !prev) }}
+                                            to={"/"}
+                                            className='linkClass'
+                                        >
+                                            Home
+                                        </Link>
 
-                                            {/* inner menu items */}
-                                            <div className={`${styles.innerNavItems}`}>
-                                                {activeNavItem === item.navName && item.innerItem?.map((innerItem, index) => (
-                                                    <div className={`${styles.innerNavItemStyle}`}>
-                                                        <Link
-                                                            key={index}
-                                                            onClick={navbarIconChange}
-                                                            to={innerItem.path}
-                                                            className='linkClass'
-                                                        >
-                                                            <div>{innerItem.productName}</div>
-                                                        </Link>
+                                        {navigationItems.map((item) => (
+                                            <div key={item.key}>
+                                                <Link
+                                                    onClick={() => { toggleNavPageActive(item.navName) }}
+                                                    to={item.path}
+                                                    className='linkClass'
+                                                >
+                                                    <div className={`${styles.navNameAndIconBox}`}>
+                                                        <div>
+                                                            {item.navName}
+                                                        </div>
+
+                                                        <div>
+                                                            {item.innerNavPage && (
+                                                                <div className={`${styles.plusMinusIcon}`}>
+                                                                    {innerNavPageActive === item.navName ? (<div  ><AiOutlineMinus /></div>) : (<div><AiOutlinePlus /> </div>)}
+
+                                                                </div>
+                                                            )}
+                                                        </div>
                                                     </div>
 
-                                                ))}
+                                                </Link>
+
+
                                             </div>
+                                        ))}
+                                    </div>
+
+                                    <div onClick={() => { setNavbarOpen(prev => !prev), setChange(prev => !prev) }}>
+                                        <RequestButton />
+                                    </div>
+
+                                    <ContactUs />
+                                </div>)}
 
 
-                                        </div>
-                                    ))}
+                                {innerNavPageActive === "Products" && (<div >
+                                    <InnerProductPage sendDataToProduct={handleDataFromProduct} />
+                                </div>)}
 
-
-
-
-                                </div>
-
+                                {innerNavPageActive === "Pricing" && (<div>
+                                    <InnerPricePage sendDataToPrice={handleDataFromPrice} />
+                                </div>)}
 
 
                             </>
 
                         )
-                }
+                } */}
+
+
+
+                <motion.div
+                    className={styles.mainMenuContainer}
+                    initial={{ x: '-100%' }} 
+                    animate={{ x: !navbarOpen ? 0 : '-100%' }} 
+                    
+                    transition={{
+                        stiffness: 150,  
+                        damping: 40,     
+                        mass: 1.5,      
+                      }} 
+                >
+
+                    <>
+                        {innerNavPageActive === "Home" && (<div className={styles.menuBox}>
+
+                            <div className={`${styles.navigationContainer}`}>
+
+
+                                <Link
+                                    onClick={() => { setChange(prev => !prev), setNavbarOpen(prev => !prev) }}
+                                    to={"/"}
+                                    className='linkClass'
+                                >
+                                    Home
+                                </Link>
+
+                                {navigationItems.map((item) => (
+                                    <div key={item.key}>
+                                        <Link
+                                            onClick={() => { toggleNavPageActive(item.navName) }}
+                                            to={item.path}
+                                            className='linkClass'
+                                        >
+                                            <div className={`${styles.navNameAndIconBox}`}>
+                                                <div>
+                                                    {item.navName}
+                                                </div>
+
+                                                <div>
+                                                    {item.innerNavPage && (
+                                                        <div className={`${styles.plusMinusIcon}`}>
+                                                            {innerNavPageActive === item.navName ? (<div  ><AiOutlineMinus /></div>) : (<div><AiOutlinePlus /> </div>)}
+
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+
+                                        </Link>
+
+
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div onClick={() => { setNavbarOpen(prev => !prev), setChange(prev => !prev) }}>
+                                <RequestButton />
+                            </div>
+
+                            <ContactUs />
+                        </div>)}
+
+                        {innerNavPageActive === "Products" && (<div >
+                            <InnerProductPage sendDataToProduct={handleDataFromProduct} handleHomeButton = {handleHomeButton} />
+                        </div>)}
+
+                        {innerNavPageActive === "Pricing" && (<div>
+                            <InnerPricePage sendDataToPrice={handleDataFromPrice} handleHomeButton = {handleHomeButton} />
+                        </div>)}
+
+
+                    </>
+
+                </motion.div>
             </div>
+
+
         </>
     );
 }

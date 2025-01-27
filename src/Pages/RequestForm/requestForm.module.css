@@ -252,6 +252,11 @@ input[type="checkbox"] {
     position: absolute;
 }
 
+.buttonInputBox:hover
+{
+    background-color: #5FCDF6;
+}
+
 
 
 

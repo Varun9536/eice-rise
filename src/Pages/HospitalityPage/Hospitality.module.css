@@ -105,7 +105,7 @@
 }
 
 .demoButton:hover {
-    background-color: rgba(20, 176, 241, 1);
+    background-color: #5FCDF6;
 }
 
 .demoArrowButton {
@@ -608,7 +608,7 @@
 
     .section2Heading {
 
-        font-size: 17px;
+        font-size: 20px;
 
     }
 
@@ -650,7 +650,7 @@
 
 
     .section3Heading {
-        font-size: 18px;
+        font-size: 20px;
         width: 100%;
         text-align: left;
 
@@ -660,7 +660,7 @@
         width: 100%;
         margin-bottom: 20px;
         text-align: left;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .section3Video {
@@ -674,7 +674,7 @@
 
     .section4Heading {
 
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -738,13 +738,14 @@
         gap: 0px 0px;
         align-items: center;
         font-size: 18px;
+        justify-content: flex-start;
 
     }
     
 
     .section5Subheading {
 
-        /* text-align: unset; */
+        text-align: unset;
         font-size: 16px;
         margin-top: 20px;
 

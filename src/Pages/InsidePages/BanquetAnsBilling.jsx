@@ -357,7 +357,7 @@ export default function BanquetAnsBilling() {
       <section >
         <div className={`${style.section4} globalSectionSize`}>
 
-          <div className={`${style.section4heading} font4`}>Key Features</div>
+          <div className={`${style.keyFeatureHeading} font4`}>Key Features</div>
 
           <div className={`${style.featureContainer}`}>
 
@@ -461,7 +461,7 @@ export default function BanquetAnsBilling() {
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 
-          <div className={`${style.section5heading} font4`}>Benefits</div>
+          <div className={`${style.benefitSectionHeading} font4`}>Benefits</div>
           {benefits.map((item, index) =>
           (
 

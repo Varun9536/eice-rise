@@ -208,7 +208,7 @@
 
 }
 
-.section4heading {
+.keyFeatureHeading {
     text-align: center;
     font-size: 28px;
     font-weight: 700;
@@ -266,7 +266,7 @@
 }
 
 .demoButton:hover {
-    background-color: rgba(20, 176, 241, 1);
+    background-color: #5FCDF6;
 }
 
 .demoArrowButton {
@@ -283,7 +283,7 @@
 }
 
 
-.section5heading {
+.benefitSectionHeading {
     text-align: center;
     font-size: 28px;
     font-weight: 700;
@@ -452,4 +452,54 @@
 
 
 
+}
+
+
+@media (max-width:  500px)
+{
+    .keyFeatureHeading
+    {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .featureHeading
+    {
+        font-size: 18px;
+    }
+
+    .featureDesc
+    {
+        font-size: 16px;
+    }
+
+    .section5
+    {
+        padding: 1px 0px;
+    }
+
+    .benefitSectionHeading
+    {
+        font-size: 20px;
+    }
+
+    .innerHeadingBenifit
+    {
+        font-size: 18px;
+    }
+
+    .innerDescBenifit
+    {
+        font-size: 16px;
+    }
+
+    .FAQContainer
+    {
+        margin-top: 0px;
+    }
+
+    .FAQsection
+    {
+        margin-top: 0px;
+    }
 }

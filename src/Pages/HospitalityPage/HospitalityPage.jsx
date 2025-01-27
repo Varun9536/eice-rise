@@ -211,8 +211,9 @@ export default function HospitalityPage() {
 
     const animation = useSpring({
         opacity: 1,
-        from: { opacity: 0 },
-        config: { tension: 300, friction: 30 }
+        from: { opacity: 0.1 },
+        reset: true,  // Ensures animation triggers on logo change
+        config: { tension: 250, friction: 80 }, // Faster easing (less friction for quicker fade)
     });
 
 

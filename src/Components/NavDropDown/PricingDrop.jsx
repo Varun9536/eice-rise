@@ -92,23 +92,7 @@ export default function PricingDrop() {
 
     ]
 
-    // const product3 = [
-    //     {
-    //         key: 9,
-    //         title: "User, Store & Inventory",
-    //         description: "Optimize vendor management",
-    //         icon: inventary,
-    //         path: "purchase-vendor",
-    //     },
-    //     {
-    //         key: 10,
-    //         title: "Food & Beverage Cost Analysis",
-    //         description: "Boost profit accuracy",
-    //         icon: food,
-    //         path: "food-cost",
-    //     },
-
-    // ]
+   
 
 
 

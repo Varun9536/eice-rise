@@ -1,3 +1,7 @@
+
+
+
+
 .navigationBar {
     display: flex;
     align-items: center;
@@ -12,13 +16,10 @@
     background: white;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    
 
 
 }
-
-
-
-
 
 
 
@@ -33,7 +34,7 @@
         opacity: 1;
     }
 } */
-
+/* 
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
@@ -44,32 +45,55 @@
         transform: translateX(0);
         opacity: 1;
     }
+} */
+
+
+.mainMenuContainer {
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+   
+   
+    /* padding-bottom: 200px; */
+   
+
+}
+
+.menuBox
+{
+    font-size: 16px;
+}
+
+.navigationContainer
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 10px 15px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
 }
 
 
-.menuMainBox {
-    position: fixed;
-    width: 85%;
-    top: 65px;
-    background-color: white;
-   left: 0;
-    height: 100vh;
-    overflow-y: scroll;
-
-
+.navNameAndIconBox
+{
     display: flex;
-    flex-direction: column;
-    /* row-gap: 15px; */
-    padding: 10px 15px;
+    align-items: center;
+    column-gap: 0.3rem;
 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: slideIn 0.3s ease-out;
+}
 
-
-    font-size: 20px;
-    /* font-weight: 600; */
-    padding-bottom: 200px;
-
+.plusMinusIcon
+{
+    padding-top: 7px;
 }
 
 .menuMainBox::-webkit-scrollbar {
