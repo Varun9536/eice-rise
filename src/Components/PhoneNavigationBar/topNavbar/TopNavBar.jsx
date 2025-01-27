@@ -15,9 +15,7 @@ export default function TopNavBar({ sendDataToParent , change }) {
 
     useEffect(()=>
     {
-        if (change) {
-            handleIconChange(); // Change the icon/state based on `change`
-          }
+        
         // handleIconChange()
     } , [change])
 
