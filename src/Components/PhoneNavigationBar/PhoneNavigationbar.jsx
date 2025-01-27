@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import { FaBars } from "react-icons/fa";
-import { IoCloseSharp } from "react-icons/io5";
+
+
 import styles from "./phoneNavigation.module.css";
-import logo from "../../assets/logo/logo.svg";
+
 import { Link } from 'react-router-dom';
 
-import { HiOutlineBars3 } from "react-icons/hi2";
 
 
 

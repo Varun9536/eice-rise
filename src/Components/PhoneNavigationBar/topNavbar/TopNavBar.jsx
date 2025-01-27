@@ -2,7 +2,7 @@ import styles from "./topNavBar.module.css"
 import { IoCloseSharp } from "react-icons/io5";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import logo from "../../../assets/logo/logo.svg"
-import { useEffect, useState } from "react";
+
 
 import { useSelector , useDispatch } from "react-redux";
 import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice";

@@ -1,5 +1,5 @@
 
-import TopNavBar from "../../PhoneNavigationBar/topNavbar/TopNavBar"
+
 
 import styles from "./sideBarPricePage.module.css"
 
