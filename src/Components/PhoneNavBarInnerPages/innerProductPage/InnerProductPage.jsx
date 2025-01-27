@@ -1,4 +1,4 @@
-import ContactUs from "../../contactUs/contactUs"
+
 import TopNavBar from "../../PhoneNavigationBar/topNavbar/TopNavBar"
 
 import styles from "./innerProductPage.module.css"
@@ -24,6 +24,7 @@ import emp from "../../../assets/DropDown/emp.png"
 
 import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
+import ContactUs from "../../contactUs/ContactUs"
 
 export default function InnerProductPage({ sendDataToProduct , handleHomeButton }) {
 
@@ -216,7 +217,7 @@ export default function InnerProductPage({ sendDataToProduct , handleHomeButton 
                    <RequestButton/>
                 </div>
 
-                <ContactUs />
+               <ContactUs/>
 
 
             </section>

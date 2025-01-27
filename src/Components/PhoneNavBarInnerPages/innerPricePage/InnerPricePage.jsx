@@ -1,4 +1,4 @@
-import ContactUs from "../../contactUs/contactUs"
+
 import TopNavBar from "../../PhoneNavigationBar/topNavbar/TopNavBar"
 
 import styles from "./innerPricePage.module.css"
@@ -16,6 +16,7 @@ import vanillaIcon from "../../../assets/DropDown/pricingSuites/vanillaIcon.png"
 
 import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
+import ContactUs from "../../contactUs/ContactUs"
 
 
 
@@ -170,7 +171,7 @@ export default function InnerPricePage({ sendDataToPrice , handleHomeButton }) {
                   <RequestButton/>
                 </div>
 
-                <ContactUs />
+               <ContactUs/>
 
 
             </div>
