@@ -23,9 +23,7 @@ export default function TopNavBar() {
 
 
     return (
-       
         <>
-
             <div>
                 {navIcon ?
                     (< IoCloseSharp className={styles.menuIcon} onClick={() => { handleIconChange() }} size={36} />) :
