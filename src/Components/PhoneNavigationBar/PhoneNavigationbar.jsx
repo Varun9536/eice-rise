@@ -148,11 +148,11 @@ export default function PhoneNavigationbar() {
                             <div className={`${styles.navigationContainer}`}>
 
 
-                                <Link style={{fontSize : "18px"}}
+                                <Link 
                                     onClick={() => { closeSideBar() }}
 
                                     to={"/"}
-                                    className='linkClass'
+                                    className={`${styles.navigatioName} linkClass`}
                                 >
                                     Home
                                 </Link>
@@ -162,7 +162,8 @@ export default function PhoneNavigationbar() {
                                         <Link
                                             onClick={() => { toggleNavPageActive(item.navName) }}
                                             to={item.path}
-                                            className='linkClass'
+                                           
+                                            className={`${styles.navigatioName} linkClass`}
                                         >
                                             <div className={`${styles.navNameAndIconBox}`}>
                                                 <div >
@@ -191,8 +192,8 @@ export default function PhoneNavigationbar() {
 
                                     to={"https://www.eicetechnology.com/About"}
                                     target="_blank"
-                                    className='linkClass'
-                                    style={{fontSize : "18px"}}
+                                    className={`${styles.navigatioName} linkClass`}
+                                    
                                 >
                                     About Us
                                 </Link>
@@ -201,8 +202,8 @@ export default function PhoneNavigationbar() {
                                     onClick={() => { closeSideBar() }}
                                     to={"https://www.eicetechnology.com/Resources"}
                                     target="_blank"
-                                    className='linkClass'
-                                    style={{fontSize : "18px"}}
+                                    className={`${styles.navigatioName} linkClass`}
+                                   
                                 >
                                     Blogs
                                 </Link>
