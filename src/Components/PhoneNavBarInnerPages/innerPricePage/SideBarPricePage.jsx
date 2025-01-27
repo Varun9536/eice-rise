@@ -17,9 +17,11 @@ import vanillaIcon from "../../../assets/DropDown/pricingSuites/vanillaIcon.png"
 import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
 import ContactUs from "../../contactUs/ContactUs"
+import { useDispatch } from "react-redux"
+import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice"
 
 
-export default function SideBarPricePage({ sendDataToPrice , handleHomeButton }) {
+export default function SideBarPricePage() {
 
     const priceItem1 = [
 
@@ -90,92 +92,103 @@ export default function SideBarPricePage({ sendDataToPrice , handleHomeButton })
 
     ]
 
-  return (
-    <>
+    const dispatch = useDispatch()
 
-    <div className={`${styles.mainPriceContainer}`}>
 
-        {/* <div className={`${styles.TopNavBar}`}>
-        <TopNavBar />
-        </div> */}
+    const handleHomeButton = () => {
+        dispatch(setShowSideBarPge("Home"))
 
-        <div className={`${styles.breadScrum}`} style={{ padding: "0px 20px" }}>
+    }
 
-            <div  onClick={handleHomeButton}>
-                    Home
+    const closeSidebar = () => {
+        dispatch(toggleNavBarIcon())
+        handleHomeButton()
+    }
+
+    return (
+        <>
+
+            <div className={`${styles.mainPriceContainer}`}>
+
+                
+
+                <div className={`${styles.breadScrum}`} style={{ padding: "0px 20px" }}>
+
+                    <div onClick={handleHomeButton}>
+                        Home
+                    </div>
+
+                    <div className={`${styles.arrowSign}`}>
+                        <IoIosArrowForward />
+                    </div>
+
+                    <div style={{ fontWeight: "600" }}>
+                        Pricing
+                    </div>
+
+                </div>
+
+                <div style={{ padding: "0px 20px" }} className={`${styles.priceNavItemContainer}`} >
+
+
+
+                    <div className={`${styles.priceNavItemSubContainer} font1`}>
+
+                        {priceItem1.map((item) =>
+                        (
+                            <Link className="linkClass" key={item.key} to={item.path}>
+                                <div onClick={closeSidebar} className={`${styles.priceDetailBox}`}>
+                                    <div className={`${styles.priceIcon}`}>
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                    </div>
+                                    <div className={`${styles.titleHeading} font3`}>
+
+                                        <div>{item.title}</div>
+                                        <div>{item.title2}</div>
+                                    </div>
+                                    {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
+                                </div>
+                            </Link>
+
+                        ))}
+
+                    </div>
+
+
+                    <div className={`${styles.priceNavItemSubContainer} font1`}>
+
+                        {priceItem2.map((item) =>
+                        (
+                            <Link className="linkClass" key={item.key} to={item.path}>
+                                <div onClick={closeSidebar} className={`${styles.priceDetailBox}`}>
+                                    <div className={`${styles.priceIcon}`}>
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                    </div>
+                                    <div className={`${styles.titleHeading} font3`}>
+
+                                        <div>{item.title}</div>
+                                        <div>{item.title2}</div>
+                                    </div>
+                                    {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
+                                </div>
+                            </Link>
+
+                        ))}
+
+                    </div>
+
+                </div>
+                <div onClick={closeSidebar} style={{ marginTop: "4rem" }} >
+                    <RequestButton />
+                </div>
+
+                <ContactUs />
+
+
             </div>
 
-            <div className={`${styles.arrowSign}`}>
-                <IoIosArrowForward />
-            </div>
-
-            <div style={{ fontWeight: "600" }}>
-                Pricing
-            </div>
-
-        </div>
-
-        <div style={{ padding: "0px 20px" }} className={`${styles.priceNavItemContainer}`} >
-
-
-
-            <div className={`${styles.priceNavItemSubContainer} font1`}>
-
-                {priceItem1.map((item) =>
-                (
-                    <Link onClick={sendDataToPrice} className="linkClass" key={item.key} to={item.path}>
-                        <div className={`${styles.priceDetailBox}`}>
-                            <div className={`${styles.priceIcon}`}>
-                                <img className={`${styles.iconSize}`} src={item.icon} alt="" />
-                            </div>
-                            <div className={`${styles.titleHeading} font3`}>
-
-                                <div>{item.title}</div>
-                                <div>{item.title2}</div>
-                            </div>
-                            {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
-                        </div>
-                    </Link>
-
-                ))}
-
-            </div>
-
-
-            <div className={`${styles.priceNavItemSubContainer} font1`}>
-
-                {priceItem2.map((item) =>
-                (
-                    <Link onClick={sendDataToPrice} className="linkClass" key={item.key} to={item.path}>
-                        <div className={`${styles.priceDetailBox}`}>
-                            <div className={`${styles.priceIcon}`}>
-                                <img className={`${styles.iconSize}`} src={item.icon} alt="" />
-                            </div>
-                            <div className={`${styles.titleHeading} font3`}>
-
-                                <div>{item.title}</div>
-                                <div>{item.title2}</div>
-                            </div>
-                            {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
-                        </div>
-                    </Link>
-
-                ))}
-
-            </div>
-
-        </div>
-        <div style={{marginTop : "4rem"}} onClick={sendDataToPrice}>
-          <RequestButton/>
-        </div>
-
-       <ContactUs/>
-
-
-    </div>
-
-</>
-  )
+        </>
+    )
 }
 
 

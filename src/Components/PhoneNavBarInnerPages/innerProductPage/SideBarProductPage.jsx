@@ -25,9 +25,11 @@ import emp from "../../../assets/DropDown/emp.png"
 import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
 import ContactUs from "../../contactUs/ContactUs"
+import { useDispatch } from "react-redux"
+import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice"
 
-export default function SideBarProductPage({ sendDataToProduct , handleHomeButton }) {
-  
+export default function SideBarProductPage() {
+
     const product1 = [
         {
             key: 1,
@@ -133,29 +135,40 @@ export default function SideBarProductPage({ sendDataToProduct , handleHomeButto
 
     ]
 
+    const disPatch = useDispatch()
+
+    const handleHomeButton = () => {
+        disPatch(setShowSideBarPge("Home"))
+    }
+
+    const closeSideBar = () => {
+        disPatch(toggleNavBarIcon())
+        handleHomeButton()
+    }
+
     return (
         <>
 
             <section className={`${styles.mainProductConatiner}`}>
 
 
-                    <div className={`${styles.breadScrum}`} style={{ padding: "0px 20px" }}>
+                <div className={`${styles.breadScrum}`} style={{ padding: "0px 20px" }}>
 
-                        <div onClick={handleHomeButton}>
-                                Home
-                        </div>
-
-                        <div className={`${styles.arrowSign}`}>
-                            <IoIosArrowForward />
-                        </div>
-
-                        <div style={{ fontWeight: "600" }}>
-                            Products
-                        </div>
-
+                    <div onClick={handleHomeButton}>
+                        Home
                     </div>
 
-               
+                    <div className={`${styles.arrowSign}`}>
+                        <IoIosArrowForward />
+                    </div>
+
+                    <div style={{ fontWeight: "600" }}>
+                        Products
+                    </div>
+
+                </div>
+
+
 
 
                 <div style={{ padding: "0px 20px" }} className={`${styles.productNavItemContainer}`}>
@@ -164,8 +177,8 @@ export default function SideBarProductPage({ sendDataToProduct , handleHomeButto
 
                         {product1.map((item) =>
                         (
-                            <Link onClick={sendDataToProduct} className="linkClass" key={item.key} to={item.path}>
-                                <div className={`${styles.productDetailBox}`}>
+                            <Link className="linkClass" key={item.key} to={item.path}>
+                                <div onClick={closeSideBar} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -187,8 +200,8 @@ export default function SideBarProductPage({ sendDataToProduct , handleHomeButto
                     <div className={`${styles.NavItemSubContainer}`}>
                         {product2.map((item) =>
                         (
-                            <Link onClick={sendDataToProduct} className="linkClass" key={item.key} to={item.path}>
-                                <div className={`${styles.productDetailBox}`}>
+                            <Link className="linkClass" key={item.key} to={item.path}>
+                                <div onClick={closeSideBar} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -207,11 +220,11 @@ export default function SideBarProductPage({ sendDataToProduct , handleHomeButto
 
                 </div>
 
-                <div style={{marginTop : "4rem"}} onClick={sendDataToProduct}>
-                   <RequestButton/>
+                <div onClick={closeSideBar} style={{ marginTop: "4rem" }} >
+                    <RequestButton />
                 </div>
 
-               <ContactUs/>
+                <ContactUs />
 
 
             </section>

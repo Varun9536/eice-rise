@@ -21,6 +21,8 @@ import RequestButton from '../requestDemoButton/RequestButton';
 import ContactUs from '../contactUs/ContactUs';
 import SideBarPricePage from '../PhoneNavBarInnerPages/innerPricePage/SideBarPricePage';
 import SideBarProductPage from '../PhoneNavBarInnerPages/innerProductPage/SideBarProductPage';
+import { useDispatch, useSelector } from 'react-redux';
+import { setShowSideBarPge, toggleNavBarIcon } from '../../redux/slice';
 
 
 export default function PhoneNavigationbar() {
@@ -85,43 +87,30 @@ export default function PhoneNavigationbar() {
         },
     ];
 
-    const [navbarOpen, setNavbarOpen] = useState(true);
-    const [change, setChange] = useState(false)
 
-    const handleDataFromChild = () => {
-        setNavbarOpen(prev => !prev);
-        setInnerNavPageActive("Home")
-    };
 
-    const handleDataFromPrice = () => {
-        setNavbarOpen(prev => !prev);
-        setChange(prev => !prev)
-        setInnerNavPageActive("Home")
 
-    }
 
-    const handleDataFromProduct = () => {
-        setNavbarOpen(prev => !prev);
-        setChange(prev => !prev)
-        setInnerNavPageActive("Home")
 
-    };
 
-    const handleHomeButton =()=>
-    {
-        setInnerNavPageActive("Home")
-    }
-    
 
-    const [activeNavItem, setActiveNavItem] = useState("");
-    const [innerNavPageActive, setInnerNavPageActive] = useState("Home")
+
+
+    const navbarOpen = useSelector((state) => state.sideBar.navbarIcon);
+
+    const innerNavPageActive = useSelector((state) => state.sideBar.showSideBarPge)
+
+    const disPatch = useDispatch()
 
 
     const toggleNavPageActive = (item) => {
-        setInnerNavPageActive(prev => (prev === item ? "" : item))
+        disPatch(setShowSideBarPge(item))
     }
 
-
+    const closeSideBar = () => {
+        disPatch(toggleNavBarIcon())
+        disPatch(setShowSideBarPge("Home"))
+    }
 
 
 
@@ -131,96 +120,22 @@ export default function PhoneNavigationbar() {
 
 
             <div className={styles.navigationBar}>
-                <TopNavBar change={change} sendDataToParent={handleDataFromChild} />
+                <TopNavBar />
             </div>
 
 
-
-
-
-
-
             <div className='font1' style={{ position: "relative", zIndex: "999" }}>
-                {/* {
-                    navbarOpen ? (<div></div>) :
-                        (
-                            <>
-                                {innerNavPageActive === "Home" && (<div className={styles.mainMenuBox}>
-
-                                    <div className={`${styles.navigationContainer}`}>
-
-
-                                        <Link
-                                            onClick={() => { setChange(prev => !prev), setNavbarOpen(prev => !prev) }}
-                                            to={"/"}
-                                            className='linkClass'
-                                        >
-                                            Home
-                                        </Link>
-
-                                        {navigationItems.map((item) => (
-                                            <div key={item.key}>
-                                                <Link
-                                                    onClick={() => { toggleNavPageActive(item.navName) }}
-                                                    to={item.path}
-                                                    className='linkClass'
-                                                >
-                                                    <div className={`${styles.navNameAndIconBox}`}>
-                                                        <div>
-                                                            {item.navName}
-                                                        </div>
-
-                                                        <div>
-                                                            {item.innerNavPage && (
-                                                                <div className={`${styles.plusMinusIcon}`}>
-                                                                    {innerNavPageActive === item.navName ? (<div  ><AiOutlineMinus /></div>) : (<div><AiOutlinePlus /> </div>)}
-
-                                                                </div>
-                                                            )}
-                                                        </div>
-                                                    </div>
-
-                                                </Link>
-
-
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    <div onClick={() => { setNavbarOpen(prev => !prev), setChange(prev => !prev) }}>
-                                        <RequestButton />
-                                    </div>
-
-                                    <ContactUs />
-                                </div>)}
-
-
-                                {innerNavPageActive === "Products" && (<div >
-                                    <InnerProductPage sendDataToProduct={handleDataFromProduct} />
-                                </div>)}
-
-                                {innerNavPageActive === "Pricing" && (<div>
-                                    <InnerPricePage sendDataToPrice={handleDataFromPrice} />
-                                </div>)}
-
-
-                            </>
-
-                        )
-                } */}
-
-
 
                 <motion.div
                     className={styles.mainMenuContainer}
-                    initial={{ x: '-100%' }} 
-                    animate={{ x: !navbarOpen ? 0 : '-100%' }} 
-                    
+                    initial={{ x: '-100%' }}
+                    animate={{ x: navbarOpen ? 0 : '-100%' }}
+
                     transition={{
-                        stiffness: 150,  
-                        damping: 40,     
-                        mass: 1.5,      
-                      }} 
+                        stiffness: 150,
+                        damping: 40,
+                        mass: 1.5,
+                    }}
                 >
 
                     <>
@@ -230,7 +145,8 @@ export default function PhoneNavigationbar() {
 
 
                                 <Link
-                                    onClick={() => { setChange(prev => !prev), setNavbarOpen(prev => !prev) }}
+                                    onClick={() => { closeSideBar() }}
+
                                     to={"/"}
                                     className='linkClass'
                                 >
@@ -266,21 +182,20 @@ export default function PhoneNavigationbar() {
                                 ))}
                             </div>
 
-                            <div onClick={() => { setNavbarOpen(prev => !prev), setChange(prev => !prev) }}>
-                                <RequestButton/>
+                            <div onClick={() => { closeSideBar() }}>
+                                <RequestButton />
                             </div>
 
-                           <ContactUs/>
+                            <ContactUs />
                         </div>)}
 
                         {innerNavPageActive === "Products" && (<div >
-                            <SideBarProductPage sendDataToProduct={handleDataFromProduct} handleHomeButton = {handleHomeButton} />
+                            <SideBarProductPage />
                         </div>)}
 
                         {innerNavPageActive === "Pricing" && (<div>
-                            <SideBarPricePage sendDataToPrice={handleDataFromPrice} handleHomeButton = {handleHomeButton} />
+                            <SideBarPricePage />
                         </div>)}
-
 
                     </>
 

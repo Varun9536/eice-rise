@@ -4,20 +4,22 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import logo from "../../../assets/logo/logo.svg"
 import { useEffect, useState } from "react";
 
-export default function TopNavBar({ sendDataToParent , change }) {
+import { useSelector , useDispatch } from "react-redux";
+import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice";
 
-    const [navIcon, setNavIcon] = useState(false);
+export default function TopNavBar() {
 
-    const handleIconChange = () => {
-        setNavIcon(prev => !prev);
-    };
+    const navIcon = useSelector((state) => state.sideBar.navbarIcon);
 
+    const disPatch  = useDispatch()
 
-    useEffect(()=>
+    const handleIconChange = ()=>
     {
         
-        handleIconChange()
-    } , [change])
+        disPatch(toggleNavBarIcon())
+        disPatch(setShowSideBarPge("Home"))
+
+    }
 
 
     return (
@@ -26,8 +28,8 @@ export default function TopNavBar({ sendDataToParent , change }) {
 
             <div>
                 {navIcon ?
-                    (< IoCloseSharp className={styles.menuIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />) :
-                    (<HiOutlineBars3 className={styles.closeIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />)}
+                    (< IoCloseSharp className={styles.menuIcon} onClick={() => { handleIconChange() }} size={36} />) :
+                    (<HiOutlineBars3 className={styles.closeIcon} onClick={() => { handleIconChange() }} size={36} />)}
             </div>
 
             <div style={{ width: "100px" }}>
