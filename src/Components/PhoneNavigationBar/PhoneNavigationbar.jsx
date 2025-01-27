@@ -86,7 +86,7 @@ export default function PhoneNavigationbar() {
     ];
 
     const [navbarOpen, setNavbarOpen] = useState(true);
-    const [change, setChange] = useState(true)
+    const [change, setChange] = useState(false)
 
     const handleDataFromChild = () => {
         setNavbarOpen(prev => !prev);

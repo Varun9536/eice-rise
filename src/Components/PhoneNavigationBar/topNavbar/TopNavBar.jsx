@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function TopNavBar({ sendDataToParent , change }) {
 
-    const [navbarOpen, setNavbarOpen] = useState(true);
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
     const handleIconChange = () => {
         setNavbarOpen(prev => !prev);
@@ -15,7 +15,10 @@ export default function TopNavBar({ sendDataToParent , change }) {
 
     useEffect(()=>
     {
-        handleIconChange()
+        if (change) {
+            handleIconChange(); // Change the icon/state based on `change`
+          }
+        // handleIconChange()
     } , [change])
 
 
@@ -25,8 +28,8 @@ export default function TopNavBar({ sendDataToParent , change }) {
 
             <div>
                 {navbarOpen ?
-                    (< HiOutlineBars3 className={styles.menuIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />) :
-                    (<IoCloseSharp className={styles.closeIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />)}
+                    (< IoCloseSharp className={styles.menuIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />) :
+                    (<HiOutlineBars3 className={styles.closeIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />)}
             </div>
 
             <div style={{ width: "100px" }}>
