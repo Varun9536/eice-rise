@@ -102,8 +102,14 @@ export default function SideBarPricePage() {
 
     const closeSidebar = () => {
         dispatch(toggleNavBarIcon())
-        handleHomeButton()
+        // handleHomeButton()
     }
+
+    const requestButtonCloseSideBar = ()=>
+        {
+            dispatch(toggleNavBarIcon())
+            handleHomeButton()
+        }
 
     return (
         <>
@@ -178,7 +184,7 @@ export default function SideBarPricePage() {
                     </div>
 
                 </div>
-                <div onClick={closeSidebar} style={{ marginTop: "4rem" }} >
+                <div onClick={requestButtonCloseSideBar} style={{ marginTop: "4rem" }} >
                     <RequestButton />
                 </div>
 

@@ -198,9 +198,8 @@ export default function PhoneNavigationbar() {
 
                                 <Link
                                     onClick={() => { closeSideBar() }}
-
                                     to={"https://www.eicetechnology.com/Resources"}
-                                     target="_blank"
+                                    target="_blank"
                                     className='linkClass'
                                 >
                                     Blogs
