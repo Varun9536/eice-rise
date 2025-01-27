@@ -215,11 +215,11 @@ export default function PhoneNavigationbar() {
                             <ContactUs />
                         </div>)}
 
-                        {innerNavPageActive === "Products" && (<div >
+                        {innerNavPageActive === "Products" && (<div style={{paddingBottom : "15rem"}} >
                             <SideBarProductPage />
                         </div>)}
 
-                        {innerNavPageActive === "Pricing" && (<div>
+                        {innerNavPageActive === "Pricing" && (<div style={{paddingBottom : "15rem"}} >
                             <SideBarPricePage />
                         </div>)}
 
