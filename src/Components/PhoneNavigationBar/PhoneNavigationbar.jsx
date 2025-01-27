@@ -148,7 +148,7 @@ export default function PhoneNavigationbar() {
                             <div className={`${styles.navigationContainer}`}>
 
 
-                                <Link
+                                <Link style={{fontSize : "18px"}}
                                     onClick={() => { closeSideBar() }}
 
                                     to={"/"}
@@ -165,7 +165,7 @@ export default function PhoneNavigationbar() {
                                             className='linkClass'
                                         >
                                             <div className={`${styles.navNameAndIconBox}`}>
-                                                <div>
+                                                <div >
                                                     {item.navName}
                                                 </div>
 
@@ -192,6 +192,7 @@ export default function PhoneNavigationbar() {
                                     to={"https://www.eicetechnology.com/About"}
                                     target="_blank"
                                     className='linkClass'
+                                    style={{fontSize : "18px"}}
                                 >
                                     About Us
                                 </Link>
@@ -201,6 +202,7 @@ export default function PhoneNavigationbar() {
                                     to={"https://www.eicetechnology.com/Resources"}
                                     target="_blank"
                                     className='linkClass'
+                                    style={{fontSize : "18px"}}
                                 >
                                     Blogs
                                 </Link>
