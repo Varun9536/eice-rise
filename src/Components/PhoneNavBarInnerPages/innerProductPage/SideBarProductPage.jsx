@@ -1,7 +1,7 @@
 
 import TopNavBar from "../../PhoneNavigationBar/topNavbar/TopNavBar"
 
-import styles from "./innerProductPage.module.css"
+import styles from "./sideBarProductPage.module.css"
 
 
 import { Link } from "react-router-dom"
@@ -26,9 +26,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
 import ContactUs from "../../contactUs/ContactUs"
 
-export default function InnerProductPage({ sendDataToProduct , handleHomeButton }) {
-
-
+export default function SideBarProductPage({ sendDataToProduct , handleHomeButton }) {
+  
     const product1 = [
         {
             key: 1,
@@ -134,11 +133,6 @@ export default function InnerProductPage({ sendDataToProduct , handleHomeButton 
 
     ]
 
-
-
-
-
-
     return (
         <>
 
@@ -228,3 +222,5 @@ export default function InnerProductPage({ sendDataToProduct , handleHomeButton 
         </>
     )
 }
+
+

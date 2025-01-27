@@ -13,12 +13,14 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 
-import InnerProductPage from '../PhoneNavBarInnerPages/innerProductPage/InnerProductPage';
-import InnerPricePage from '../PhoneNavBarInnerPages/innerPricePage/innerPricePage';
+
+
 import TopNavBar from './topNavbar/TopNavBar';
 import { motion } from 'framer-motion';
 import RequestButton from '../requestDemoButton/RequestButton';
 import ContactUs from '../contactUs/ContactUs';
+import SideBarPricePage from '../PhoneNavBarInnerPages/innerPricePage/SideBarPricePage';
+import SideBarProductPage from '../PhoneNavBarInnerPages/innerProductPage/SideBarProductPage';
 
 
 export default function PhoneNavigationbar() {
@@ -272,11 +274,11 @@ export default function PhoneNavigationbar() {
                         </div>)}
 
                         {innerNavPageActive === "Products" && (<div >
-                            <InnerProductPage sendDataToProduct={handleDataFromProduct} handleHomeButton = {handleHomeButton} />
+                            <SideBarProductPage sendDataToProduct={handleDataFromProduct} handleHomeButton = {handleHomeButton} />
                         </div>)}
 
                         {innerNavPageActive === "Pricing" && (<div>
-                            <InnerPricePage sendDataToPrice={handleDataFromPrice} handleHomeButton = {handleHomeButton} />
+                            <SideBarPricePage sendDataToPrice={handleDataFromPrice} handleHomeButton = {handleHomeButton} />
                         </div>)}
 
 
