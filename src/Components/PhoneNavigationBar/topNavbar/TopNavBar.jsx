@@ -9,7 +9,7 @@ export default function TopNavBar({ sendDataToParent , change }) {
     const [navIcon, setNavIcon] = useState(false);
 
     const handleIconChange = () => {
-        setNavbarOpen(prev => !prev);
+        setNavIcon(prev => !prev);
     };
 
 
