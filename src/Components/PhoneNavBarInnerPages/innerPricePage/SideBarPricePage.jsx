@@ -100,9 +100,9 @@ export default function SideBarPricePage() {
 
     }
 
-    const closeSidebar = () => {
+    const closeSidebarPricePage = () => {
         dispatch(toggleNavBarIcon())
-        // handleHomeButton()
+       
     }
 
     const requestButtonCloseSideBar = ()=>
@@ -143,7 +143,7 @@ export default function SideBarPricePage() {
                         {priceItem1.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSidebar} className={`${styles.priceDetailBox}`}>
+                                <div onClick={closeSidebarPricePage} className={`${styles.priceDetailBox}`}>
                                     <div className={`${styles.priceIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -166,7 +166,7 @@ export default function SideBarPricePage() {
                         {priceItem2.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSidebar} className={`${styles.priceDetailBox}`}>
+                                <div onClick={closeSidebarPricePage} className={`${styles.priceDetailBox}`}>
                                     <div className={`${styles.priceIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>

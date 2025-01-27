@@ -141,9 +141,9 @@ export default function SideBarProductPage() {
         disPatch(setShowSideBarPge("Home"))
     }
 
-    const closeSideBar = () => {
+    const closeSideBarProductPage = () => {
         disPatch(toggleNavBarIcon())
-        // handleHomeButton()
+       
     }
 
     const requestButtonCloseSideBar = ()=>
@@ -184,7 +184,7 @@ export default function SideBarProductPage() {
                         {product1.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSideBar} className={`${styles.productDetailBox}`}>
+                                <div onClick={closeSideBarProductPage} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -207,7 +207,7 @@ export default function SideBarProductPage() {
                         {product2.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSideBar} className={`${styles.productDetailBox}`}>
+                                <div onClick={closeSideBarProductPage} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
