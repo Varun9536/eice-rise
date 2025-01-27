@@ -1,6 +1,6 @@
 import ContactUs from "../../contactUs/contactUs"
 import TopNavBar from "../../PhoneNavigationBar/topNavbar/TopNavBar"
-import RequestButton from "../../requestDemoButton/requestButton"
+
 import styles from "./innerPricePage.module.css"
 
 import { Link } from "react-router-dom"
@@ -15,6 +15,7 @@ import vanillaIcon from "../../../assets/DropDown/pricingSuites/vanillaIcon.png"
 
 
 import { IoIosArrowForward } from "react-icons/io";
+import RequestButton from "../../requestDemoButton/RequestButton"
 
 
 
@@ -166,7 +167,7 @@ export default function InnerPricePage({ sendDataToPrice , handleHomeButton }) {
 
                 </div>
                 <div style={{marginTop : "4rem"}} onClick={sendDataToPrice}>
-                    <RequestButton />
+                  <RequestButton/>
                 </div>
 
                 <ContactUs />

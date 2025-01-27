@@ -11,12 +11,13 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 
 
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import RequestButton from '../requestDemoButton/requestButton';
+
 import ContactUs from '../contactUs/contactUs';
 import InnerProductPage from '../PhoneNavBarInnerPages/innerProductPage/InnerProductPage';
 import InnerPricePage from '../PhoneNavBarInnerPages/innerPricePage/innerPricePage';
 import TopNavBar from './topNavbar/TopNavBar';
 import { motion } from 'framer-motion';
+import RequestButton from '../requestDemoButton/RequestButton';
 
 
 export default function PhoneNavigationbar() {
@@ -263,7 +264,7 @@ export default function PhoneNavigationbar() {
                             </div>
 
                             <div onClick={() => { setNavbarOpen(prev => !prev), setChange(prev => !prev) }}>
-                                <RequestButton />
+                                <RequestButton/>
                             </div>
 
                             <ContactUs />
