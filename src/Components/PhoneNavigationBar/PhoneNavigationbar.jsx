@@ -21,6 +21,7 @@ import SideBarPricePage from '../PhoneNavBarInnerPages/innerPricePage/SideBarPri
 import SideBarProductPage from '../PhoneNavBarInnerPages/innerProductPage/SideBarProductPage';
 import { useDispatch, useSelector } from 'react-redux';
 import { setShowSideBarPge, toggleNavBarIcon } from '../../redux/slice';
+import { div } from "framer-motion/client";
 
 
 export default function PhoneNavigationbar() {
@@ -70,6 +71,11 @@ export default function PhoneNavigationbar() {
         },
 
 
+
+    ];
+
+
+    const navItem2 = [
         {
             key: 3,
             navName: "About Us", path: "https://www.eicetechnology.com/About",
@@ -83,7 +89,7 @@ export default function PhoneNavigationbar() {
             navName: "Blogs", path: "https://www.eicetechnology.com/Resources",
             innerNavPage: false
         },
-    ];
+    ]
 
 
 
@@ -178,6 +184,29 @@ export default function PhoneNavigationbar() {
 
                                     </div>
                                 ))}
+
+
+                                <Link
+                                    onClick={() => { closeSideBar() }}
+
+                                    to={"https://www.eicetechnology.com/About"}
+                                    target="_blank"
+                                    className='linkClass'
+                                >
+                                    About Us
+                                </Link>
+
+                                <Link
+                                    onClick={() => { closeSideBar() }}
+
+                                    to={"https://www.eicetechnology.com/Resources"}
+                                     target="_blank"
+                                    className='linkClass'
+                                >
+                                    Blogs
+                                </Link>
+
+
                             </div>
 
                             <div onClick={() => { closeSideBar() }}>
