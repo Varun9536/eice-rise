@@ -24,7 +24,7 @@ export default function TopNavBar({ sendDataToParent , change }) {
         <>
 
             <div>
-                {navbarOpen ?
+                {!navbarOpen ?
                     (< HiOutlineBars3 className={styles.menuIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />) :
                     (<IoCloseSharp className={styles.closeIcon} onClick={() => { handleIconChange(), sendDataToParent() }} size={36} />)}
             </div>
