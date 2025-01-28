@@ -739,11 +739,6 @@ export default function RequestForm() {
             </section>)}
 
 
-
-
-
-
-
             <section className={`${styles.LaptopImgSection}`}>
                 <div className={`${styles.LaptopImg}`}>
                     <img src={laptop} alt="footer" />
