@@ -35,52 +35,52 @@ export default function Club() {
         };
     }, []);
 
-     const services = [
-           {
-               serviceName: "ROOM",
-               serviceName2 : "BOOKING",
-               icon: room,
-               path: "/room-booking",
-               key: 1
-           },
-   
-           {
-               serviceName: "DINNING",
-               serviceName2 : "(POS)",
-               icon: pos,
-               path: "/pos-dining",
-               key: 2
-           },
-   
-           {
-               serviceName: "BANQUET &",
-               serviceName2 : "BILLING",
-               icon: banquet,
-               path: "/banquet-billing",
-               key: 3
-           },
-   
-           {
-   
-               serviceName: "MEMBER" ,
-               serviceName2 : "SUITE" ,
-               icon: member,
-               path: "/member-suite",
-               key: 4
-           },
-   
-           {
-               serviceName: "ACCOUNT & ",
-               serviceName2 : "FINANCE" ,
-               icon: account,
-               path: "/account-finance",
-               key: 5
-           },
-   
-          
-   
-           
-       ]
+    const services = [
+        {
+            serviceName: "ROOM",
+            serviceName2: "BOOKING",
+            icon: room,
+            path: "/room-booking",
+            key: 1
+        },
+
+        {
+            serviceName: "DINNING",
+            serviceName2: "(POS)",
+            icon: pos,
+            path: "/pos-dining",
+            key: 2
+        },
+
+        {
+            serviceName: "BANQUET &",
+            serviceName2: "BILLING",
+            icon: banquet,
+            path: "/banquet-billing",
+            key: 3
+        },
+
+        {
+
+            serviceName: "MEMBER",
+            serviceName2: "SUITE",
+            icon: member,
+            path: "/member-suite",
+            key: 4
+        },
+
+        {
+            serviceName: "ACCOUNT & ",
+            serviceName2: "FINANCE",
+            icon: account,
+            path: "/account-finance",
+            key: 5
+        },
+
+
+
+
+    ]
 
 
     const whyToChooseUs = [
@@ -109,10 +109,10 @@ export default function Club() {
     return (
         <>
 
-        {isPhone && ( <section className={`${styles.heroSectionHeadingPhone}`}>
+            {isPhone && (<section className={`${styles.heroSectionHeadingPhone}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >Club</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
-           
+
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
@@ -124,11 +124,11 @@ export default function Club() {
                 </div>
             </section>)}
 
-{!isPhone && ( <section className={`${styles.heroSectionHeading}`}>
+            {!isPhone && (<section className={`${styles.heroSectionHeading}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >Club</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
 
-           
+
 
             <section className={`${styles.overviewSection}`}>
                 <div className={`${styles.overviewBox} globalBlueOverviewSection`}>
@@ -169,11 +169,11 @@ export default function Club() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
-                                   <div className={`${styles.serviceName} font1`}>
-                                                                           <div>  {item.serviceName}</div>
-                                                                           <div>  {item.serviceName2}</div>
-                                   
-                                                                       </div>
+                                    <div className={`${styles.serviceName} font1`}>
+                                        <div>  {item.serviceName}</div>
+                                        <div>  {item.serviceName2}</div>
+
+                                    </div>
 
                                 </div>
 
