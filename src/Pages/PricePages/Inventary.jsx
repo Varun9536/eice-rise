@@ -38,14 +38,14 @@ export default function Inventary() {
           {
               serviceName: "USER STORE & INVENTORY",
               icon: inentry,
-              path: "userstore-inventry",
+              path: "/userstore-inventry",
               key: 8
           },
   
           {
               serviceName: "PURCHASE & VENDOR PORTAL",
               icon: vendor,
-              path: "purchase-vendor",
+              path: "/purchase-vendor",
               key: 9
           },
   

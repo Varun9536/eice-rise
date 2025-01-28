@@ -37,7 +37,7 @@ export default function PosSuite() {
                serviceName: "DINNING",
                serviceName2 : "(POS)",
                icon: pos,
-               path: "pos-dining",
+               path: "/pos-dining",
                key: 2
            },
    
@@ -47,7 +47,7 @@ export default function PosSuite() {
                serviceName: "ACCOUNT & ",
                serviceName2 : "FINANCE" ,
                icon: account,
-               path: "account-finance",
+               path: "/account-finance",
                key: 5
            },
    

@@ -32,33 +32,33 @@ export default function FrontDesk() {
         };
     }, []);
 
-     const services = [
-           {
-               serviceName: "ROOM",
-               serviceName2 : "BOOKING",
-               icon: room,
-               path: "room-booking",
-               key: 1
-           },
+    const services = [
+        {
+            serviceName: "ROOM",
+            serviceName2: "BOOKING",
+            icon: room,
+            path: "/room-booking",
+            key: 1
+        },
 
-            {
-                       serviceName: "ACCOUNT & ",
-                       serviceName2: "FINANCE",
-                       icon: account,
-                       path: "account-finance",
-                       key: 5
-                   },
-   
-          
-   
-           
-   
-           
-   
-          
-   
-           
-       ]
+        {
+            serviceName: "ACCOUNT & ",
+            serviceName2: "FINANCE",
+            icon: account,
+            path: "/account-finance",
+            key: 5
+        },
+
+
+
+
+
+
+
+
+
+
+    ]
 
     const whyToChooseUs = [
         {
@@ -80,10 +80,10 @@ export default function FrontDesk() {
 
     return (
         <>
-{isPhone && (<section className={`${styles.heroSectionHeadingPhone}`}>
+            {isPhone && (<section className={`${styles.heroSectionHeadingPhone}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >FrontDesk</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
-            
+
 
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
@@ -98,10 +98,10 @@ export default function FrontDesk() {
 
 
 
-{!isPhone && (<section className={`${styles.heroSectionHeading}`}>
+            {!isPhone && (<section className={`${styles.heroSectionHeading}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >FrontDesk</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
-            
+
 
 
             <section className={`${styles.overviewSection}`}>
@@ -143,10 +143,10 @@ export default function FrontDesk() {
                                         <img src={item.icon} alt="" />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
-                                                                            <div>  {item.serviceName}</div>
-                                                                            <div>  {item.serviceName2}</div>
-                                    
-                                                                        </div>
+                                        <div>  {item.serviceName}</div>
+                                        <div>  {item.serviceName2}</div>
+
+                                    </div>
 
                                 </div>
 

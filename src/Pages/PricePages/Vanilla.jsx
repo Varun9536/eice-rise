@@ -41,7 +41,7 @@ export default function Vanilla() {
             serviceName: "DINNING",
             serviceName2: "(POS)",
             icon: pos,
-            path: "pos-dining",
+            path: "/pos-dining",
             key: 2
         },
 
@@ -49,7 +49,7 @@ export default function Vanilla() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -60,7 +60,7 @@ export default function Vanilla() {
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "userstore-inventry",
+            path: "/userstore-inventry",
             key: 8
         },
 
@@ -69,7 +69,7 @@ export default function Vanilla() {
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "food-cost",
+            path: "/food-cost",
             key: 10
         }
     ]

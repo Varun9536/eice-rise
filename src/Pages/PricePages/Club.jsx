@@ -40,7 +40,7 @@ export default function Club() {
                serviceName: "ROOM",
                serviceName2 : "BOOKING",
                icon: room,
-               path: "room-booking",
+               path: "/room-booking",
                key: 1
            },
    
@@ -48,7 +48,7 @@ export default function Club() {
                serviceName: "DINNING",
                serviceName2 : "(POS)",
                icon: pos,
-               path: "pos-dining",
+               path: "/pos-dining",
                key: 2
            },
    
@@ -56,7 +56,7 @@ export default function Club() {
                serviceName: "BANQUET &",
                serviceName2 : "BILLING",
                icon: banquet,
-               path: "banquet-billing",
+               path: "/banquet-billing",
                key: 3
            },
    
@@ -65,7 +65,7 @@ export default function Club() {
                serviceName: "MEMBER" ,
                serviceName2 : "SUITE" ,
                icon: member,
-               path: "member-suite",
+               path: "/member-suite",
                key: 4
            },
    
@@ -73,7 +73,7 @@ export default function Club() {
                serviceName: "ACCOUNT & ",
                serviceName2 : "FINANCE" ,
                icon: account,
-               path: "account-finance",
+               path: "/account-finance",
                key: 5
            },
    

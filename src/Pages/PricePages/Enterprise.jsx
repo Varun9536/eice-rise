@@ -43,7 +43,7 @@ export default function Enterprise() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "room-booking",
+            path: "/room-booking",
             key: 1
         },
 
@@ -51,7 +51,7 @@ export default function Enterprise() {
             serviceName: "DINNING",
             serviceName2: "(POS)",
             icon: pos,
-            path: "pos-dining",
+            path: "/pos-dining",
             key: 2
         },
 
@@ -59,7 +59,7 @@ export default function Enterprise() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -68,7 +68,7 @@ export default function Enterprise() {
             serviceName: "MEMBER",
             serviceName2: "SUITE",
             icon: member,
-            path: "member-suite",
+            path: "/member-suite",
             key: 4
         },
 
@@ -76,7 +76,7 @@ export default function Enterprise() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "account-finance",
+            path: "/account-finance",
             key: 5
         },
 
@@ -84,7 +84,7 @@ export default function Enterprise() {
             serviceName: "EMPLOYEE",
             serviceName2: "SUITE",
             icon: emp,
-            path: "employee-suite",
+            path: "/employee-suite",
             key: 6
         },
 
@@ -92,28 +92,28 @@ export default function Enterprise() {
             serviceName: "PAYROLL",
             serviceName2: "MANAGEMENT",
             icon: pay,
-            path: "payroll",
+            path: "/payroll",
             key: 7
         },
 
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "userstore-inventry",
+            path: "/userstore-inventry",
             key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "purchase-vendor",
+            path: "/purchase-vendor",
             key: 9
         },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "food-cost",
+            path: "/food-cost",
             key: 10
         }
     ]

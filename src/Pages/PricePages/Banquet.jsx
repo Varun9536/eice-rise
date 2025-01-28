@@ -45,7 +45,7 @@ export default function Banquet() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "banquet-billing",
+            path: "/banquet-billing",
             key: 3
         },
 
@@ -55,7 +55,7 @@ export default function Banquet() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "account-finance",
+            path: "/account-finance",
             key: 5
         },
 
