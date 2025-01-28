@@ -189,18 +189,18 @@
 
 
 .serviceName {
-    padding: 10px 40px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.serviceName2 {
     padding: 10px 20px;
     text-align: center;
     font-size: 17px;
     font-weight: 600;
 }
+/* 
+.serviceName2 {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+} */
 
 
 

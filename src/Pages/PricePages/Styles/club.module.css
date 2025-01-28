@@ -136,18 +136,13 @@
 
 
 .serviceName {
-    padding: 10px 40px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 17px;
     font-weight: 600;
 }
 
-.serviceName2 {
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 600;
-}
+
 
 .whyChooseSection {
     padding: 0px 80px;
@@ -260,12 +255,7 @@
 
     }
 
-    .serviceName2 {
-        padding: unset;
-        margin-top: 5px;
-        font-size: 12px;
-
-    }
+   
 
     .demoButton {
 
