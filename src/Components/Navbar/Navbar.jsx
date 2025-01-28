@@ -59,9 +59,9 @@ export default function Navbar() {
         <div onMouseLeave={() => { handleMouseLeave() }} className={styles.navigationContainer}>
             <div className={styles.navigationItemBox}>
 
-                <div>
+                <div className={`${styles.eiceRiseLogoBox}`}>
                     <Link to={"/"}>
-                        <img src={logo} alt="Logo" />
+                        <img className={`${styles.eiceRiseLogo}`} src={logo} alt="Logo" />
                     </Link>
 
                 </div>

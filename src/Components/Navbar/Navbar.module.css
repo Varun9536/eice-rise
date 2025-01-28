@@ -22,6 +22,17 @@
 
 }
 
+.eiceRiseLogoBox
+{
+    width: 9rem;
+
+}
+
+.eiceRiseLogo
+{
+    width: 100%;
+}
+
 .navigationIcon {
 
     display: flex;
