@@ -550,34 +550,23 @@ export default function RequestForm() {
 
                         <article className={`${styles.cardContainer} font1`}>
                             <div className={styles.card}>
-                                <figure  >
-
+                                
                                     <div style={{ textAlign: "center" }}  >
                                         <img style={{ width: "28%" }} src={feedBackArray[feedBackArrayIndex].img} alt="" />
                                     </div>
 
-                                    <figcaption className={`${styles.clientInfo}`} > <span >-- {feedBackArray[feedBackArrayIndex].client} ,</span> <span style={{ fontWeight: "bold" }} >{feedBackArray[feedBackArrayIndex].position}</span>  <span>{feedBackArray[feedBackArrayIndex].company}</span></figcaption>
+                                    <div className={`${styles.clientInfo}`} > <span >-- {feedBackArray[feedBackArrayIndex].client} ,</span> <span style={{ fontWeight: "bold" }} >{feedBackArray[feedBackArrayIndex].position}</span>  <span>{feedBackArray[feedBackArrayIndex].company}</span></div>
 
-                                </figure>
-
-                                <div>
                                     <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
                                         "{
                                             feedBackArray[feedBackArrayIndex].heading
                                         }"
-
                                     </div>
-                                </div>
 
                                 <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedBackArray[feedBackArrayIndex].para}</p>
 
-
                             </div>
                         </article>
-
-
-
-
                     </main>
 
 
@@ -663,7 +652,7 @@ export default function RequestForm() {
 
 
 
-{isPhone ? ( <section className={`${styles.contactUsBackgroundPhone}`}>
+            {isPhone ? (<section className={`${styles.contactUsBackgroundPhone}`}>
                 <div className={`${styles.ContactUsSectionPhone} globalSectionSize  `}>
 
                     <div className={`${styles.contactUsHeading} font3`}>
@@ -713,7 +702,7 @@ export default function RequestForm() {
                     </div>
 
                 </div>
-            </section>):(<section className={`${styles.contactUsBackground}`}>
+            </section>) : (<section className={`${styles.contactUsBackground}`}>
                 <div className={`${styles.ContactUsSection} globalSectionSize  `}>
 
                     <div className={`${styles.contactUsHeading} font3`}>
@@ -755,10 +744,10 @@ export default function RequestForm() {
                 </div>
             </section>)}
 
-            
 
 
-           
+
+
 
 
             <section className={`${styles.LaptopImgSection}`}>
