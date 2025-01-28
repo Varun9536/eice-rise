@@ -191,7 +191,6 @@ export default function RequestForm() {
 
     const [feedBackArrayIndex, setfeedBackArrayIndex] = useState(0);
 
-    // Change the current card every 5 seconds (or your desired interval)
     useEffect(() => {
         const interval = setInterval(() => {
             setfeedBackArrayIndex((prevIndex) =>
@@ -199,7 +198,6 @@ export default function RequestForm() {
             );
         }, 5000);
 
-        // Clear interval when the component unmounts
         return () => clearInterval(interval);
     }, []);
 
@@ -224,7 +222,7 @@ export default function RequestForm() {
     ];
 
 
-    const [feedbackIndex, setFeedbackIndex] = useState(0);
+    // const [feedbackIndex, setFeedbackIndex] = useState(0);
 
 
 
@@ -616,11 +614,7 @@ export default function RequestForm() {
                                         "{
                                             item.heading
                                         }"
-                                        {/* {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)} */}
                                     </div>
-
-
-
                                     <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{item.para}</p>
 
                                 </article>
