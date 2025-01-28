@@ -32,7 +32,7 @@ import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 
-import laptop from "../../assets/section3Laptop/pos.webp"
+import laptop from "../../assets/section3Laptop/pos2.webp"
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

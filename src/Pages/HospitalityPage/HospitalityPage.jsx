@@ -71,7 +71,7 @@ import h2 from "../../assets/Hospitality/headIcon/h2.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-import footerlaptop from "../../assets/section3Laptop/pos.webp"
+import footerlaptop from "../../assets/section3Laptop/pos2.webp"
 
 
 
@@ -85,7 +85,7 @@ export default function HospitalityPage() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const [feedbackIndex, setFeedbackIndex] = useState(0);
+
 
 
 
@@ -250,12 +250,12 @@ export default function HospitalityPage() {
         }
     ]
 
-    const [currentIndex2, setCurrentIndex2] = useState(0);
+    const [feedBackIndex, setfeedBackIndex] = useState(0);
 
     // Change the current card every 5 seconds (or your desired interval)
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex2((prevIndex) =>
+            setfeedBackIndex((prevIndex) =>
                 prevIndex === feedback.length - 1 ? 0 : prevIndex + 1
             );
         }, 5000);
@@ -263,10 +263,6 @@ export default function HospitalityPage() {
         // Clear interval when the component unmounts
         return () => clearInterval(interval);
     }, []);
-
-
-
-
 
 
 
@@ -304,6 +300,34 @@ export default function HospitalityPage() {
 
 
 
+
+
+    const [storyIndex, setStoryIndex] = useState(0);
+
+    // Change the current card every 5 seconds (or your desired interval)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setStoryIndex((prevIndex) =>
+                prevIndex === stories.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 5000);
+
+        // Clear interval when the component unmounts
+        return () => clearInterval(interval);
+    }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //         setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
@@ -323,62 +347,62 @@ export default function HospitalityPage() {
 
 
 
-    let startX = 0;
-    let startY = 0;
+    // let startX = 0;
+    // let startY = 0;
 
-    const handleTouchStart = (e) => {
-        const touch = e.touches[0];
-        startX = touch.clientX;
-        startY = touch.clientY;
-    };
-    const handleFeedbackChange = (e) => {
+    // const handleTouchStart = (e) => {
+    //     const touch = e.touches[0];
+    //     startX = touch.clientX;
+    //     startY = touch.clientY;
+    // };
+    // const handleFeedbackChange = (e) => {
 
-        const touch = e.touches[0];
-        const deltaX = touch.clientX - startX;
-        const deltaY = touch.clientY - startY;
+    //     const touch = e.touches[0];
+    //     const deltaX = touch.clientX - startX;
+    //     const deltaY = touch.clientY - startY;
 
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
-            if (deltaX > 0) {
-                //right
-                setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
-            } else {
-                //left
+    //     if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    //         if (deltaX > 0) {
+    //             //right
+    //             setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
+    //         } else {
+    //             //left
 
-                setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-            }
-        } else {
-            if (deltaY > 0) {
-                //down
-            } else {
-                //up
-            }
-        }
-    }
+    //             setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+    //         }
+    //     } else {
+    //         if (deltaY > 0) {
+    //             //down
+    //         } else {
+    //             //up
+    //         }
+    //     }
+    // }
 
 
-    const handleStoryChange = (e) => {
+    // const handleStoryChange = (e) => {
 
-        const touch = e.touches[0];
-        const deltaX = touch.clientX - startX;
-        const deltaY = touch.clientY - startY;
+    //     const touch = e.touches[0];
+    //     const deltaX = touch.clientX - startX;
+    //     const deltaY = touch.clientY - startY;
 
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
-            if (deltaX > 0) {
-                //right
-                setCurrentIndex((prevIndex) => (prevIndex - 1 + stories.length) % stories.length);
-            } else {
-                //left
-                setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
+    //     if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    //         if (deltaX > 0) {
+    //             //right
+    //             setCurrentIndex((prevIndex) => (prevIndex - 1 + stories.length) % stories.length);
+    //         } else {
+    //             //left
+    //             setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
 
-            }
-        } else {
-            if (deltaY > 0) {
-                //down
-            } else {
-                //up
-            }
-        }
-    }
+    //         }
+    //     } else {
+    //         if (deltaY > 0) {
+    //             //down
+    //         } else {
+    //             //up
+    //         }
+    //     }
+    // }
 
 
 
@@ -701,24 +725,24 @@ export default function HospitalityPage() {
                                 <div className={styles.imgAndClientDetailBox}>
                                     <div className={`${styles.feedBackImgBox}`}>
                                         <img
-                                            src={feedback[currentIndex2].img}
-                                            alt={`feedback ${currentIndex2 + 1}`}
+                                            src={feedback[feedBackIndex].img}
+                                            alt={`feedback ${feedBackIndex + 1}`}
                                             className={styles.cardImage}
                                         />
                                     </div>
                                     <div>
-                                        <figcaption style={{ textAlign: "center" }} > <span className="font1" style={{ fontWeight: "bold" }}>{feedback[currentIndex2].position}</span> <span className="font1">{feedback[currentIndex2].company}</span></figcaption>
+                                        <figcaption style={{ textAlign: "center" }} > <span className="font1" style={{ fontWeight: "bold" }}>{feedback[feedBackIndex].position}</span> <span className="font1">{feedback[feedBackIndex].company}</span></figcaption>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[currentIndex2].heading}"</div>
+                                    <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedBackIndex].heading}"</div>
                                 </div>
 
 
 
 
-                                <p className="font1" style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[currentIndex2].para}</p>
+                                <p className="font1" style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedBackIndex].para}</p>
                             </figure>
                         </article>
 
@@ -733,8 +757,8 @@ export default function HospitalityPage() {
                         {feedback.map((_, index) => (
                             <span
                                 key={index}
-                                className={`indicator ${currentIndex2 === index ? 'active' : ''}`}
-                                onClick={() => setCurrentIndex2(index)}
+                                className={`indicator ${feedBackIndex === index ? 'active' : ''}`}
+                                onClick={() => setfeedBackIndex(index)}
                             ></span>
                         ))}
 
@@ -774,7 +798,7 @@ export default function HospitalityPage() {
                 <div className={`${styles.storySection} font1`}>
 
 
-                    <div onTouchStart={handleTouchStart} onTouchMove={handleStoryChange} className={`${styles.storyBox}`}>
+                    {/* <div onTouchStart={handleTouchStart} onTouchMove={handleStoryChange} className={`${styles.storyBox}`}>
 
                         <div >
                             <img style={{ width: "100%" }} src={stories[currentIndex].img} alt="storyimg" />
@@ -793,7 +817,60 @@ export default function HospitalityPage() {
                             </div>
                         </Link>
 
-                    </div>
+                    </div> */}
+
+                    <article className={styles.storyCardContainer}>
+                        <div className={styles.storyCard}>
+
+                            <div >
+                                <img style={{ width: "100%" }} src={stories[storyIndex].img} alt="storyimg" />
+                            </div>
+
+                            <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
+                                {stories[storyIndex].heading}
+                            </div>
+
+                            <p style={{ lineHeight: "1.8rem", marginBottom: stories[storyIndex].margin }} >{stories[currentIndex].para}</p>
+
+
+                            <Link to={stories[storyIndex].link} className={`${styles.viewMoreBtnBox} linkClass`}>
+                                <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
+                                    View More
+                                </div>
+                            </Link>
+
+
+
+
+
+
+
+
+
+
+                            {/* <div className={styles.imgAndClientDetailBox}>
+                                <div className={`${styles.feedBackImgBox}`}>
+                                    <img
+                                        src={feedback[currentIndex2].img}
+                                        alt={`feedback ${currentIndex2 + 1}`}
+                                        className={styles.cardImage}
+                                    />
+                                </div>
+                                <div>
+                                    <figcaption style={{ textAlign: "center" }} > <span className="font1" style={{ fontWeight: "bold" }}>{feedback[currentIndex2].position}</span> <span className="font1">{feedback[currentIndex2].company}</span></figcaption>
+                                </div>
+                            </div> */}
+
+                            {/* <div>
+                                <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[currentIndex2].heading}"</div>
+                            </div> */}
+
+
+
+
+                            {/* <p className="font1" style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[currentIndex2].para}</p> */}
+                        </div>
+                    </article>
 
 
                 </div>
@@ -802,8 +879,8 @@ export default function HospitalityPage() {
                     {stories.map((_, index) => (
                         <span
                             key={index}
-                            className={`indicator ${currentIndex === index ? 'active' : ''}`}
-                            onClick={() => setCurrentIndex(index)}
+                            className={`indicator ${storyIndex === index ? 'active' : ''}`}
+                            onClick={() => setStoryIndex(index)}
                         ></span>
                     ))}
                 </div>
