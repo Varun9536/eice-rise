@@ -143,11 +143,10 @@ export default function SideBarProductPage() {
 
     const closeSideBarProductPage = () => {
         disPatch(toggleNavBarIcon())
-       
+
     }
 
-    const requestButtonCloseSideBar = ()=>
-    {
+    const requestButtonCloseSideBar = () => {
         disPatch(toggleNavBarIcon())
         handleHomeButton()
     }
@@ -226,11 +225,14 @@ export default function SideBarProductPage() {
 
                 </div>
 
-                <div onClick={requestButtonCloseSideBar} style={{ marginTop: "4rem" }} >
+                <div onClick={requestButtonCloseSideBar} className={`${styles.requestonButton}`} >
                     <RequestButton />
                 </div>
 
-                <ContactUs />
+                <div className={`${styles.ContactUsBox}`}>
+                    <ContactUs />
+                </div>
+
 
 
             </section>

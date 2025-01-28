@@ -82,7 +82,7 @@
 }
 
 .requestDemoButtonContainer2 {
-   
+
     margin-bottom: 2rem;
     text-align: center;
     display: flex;
@@ -346,7 +346,7 @@
     padding: 15px;
     border-radius: 5px;
     background-color: white;
-   
+
 }
 
 
@@ -433,7 +433,7 @@
 
  */
 
- 
+
 .cardBoxStoryInnerHeading {
     font-size: 20px;
     font-weight: bold;
@@ -474,7 +474,7 @@
 
     .section1 {
         top: 64px;
-        
+
     }
 
     .text1 {
@@ -568,7 +568,7 @@
 
     }
 
-    
+
     .requestDemoButtonContainer2 {
 
         justify-content: center;
@@ -602,7 +602,7 @@
 
     .section2 {
         margin-top: -80px;
-        
+
     }
 
 
@@ -719,8 +719,8 @@
         margin-bottom: 15px;
     }
 
-    
-/* .insightSection {
+
+    /* .insightSection {
     display: flex;
     flex-wrap: unset;
     justify-content: center;
@@ -741,7 +741,7 @@
         justify-content: flex-start;
 
     }
-    
+
 
     .section5Subheading {
 
@@ -774,7 +774,7 @@
 
     }
 
-/* 
+    /* 
     .section7ForPhone {
         margin-bottom: 4rem;
     }
@@ -790,7 +790,60 @@
     } */
 
 
+
     
+
+.cardContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    overflow: hidden;
+    width: 370px;
+
+}
+
+.card {
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 1;
+    transform: translateY(0);
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.feedBackImgBox {
+    width: 28%;
+    margin: 0px auto;
+}
+
+.cardBoxInnerHeading {
+    padding: unset;
+}
+
+.cardImage {
+    width: 100%;
+    border-radius: 8px;
+   
+}
+
+.cardExiting {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.cardEntering {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 
 
 
@@ -799,12 +852,11 @@
 
 }
 
-@media (max-width : 530px)
-{
+@media (max-width : 530px) {
 
 
     .section2 {
-        
+
         margin-top: -10rem;
         margin-bottom: 1rem;
     }
@@ -819,28 +871,29 @@
     .textBox {
 
 
-      
+
         top: 9%;
         left: unset;
         transform: unset;
         padding-top: 2rem;
-      
+
 
     }
 
-    
+
     .section1 {
-        
+
         top: -43px;
         background-size: 78rem
     }
-} 
+}
 
 
-@media (max-width : 280px)
-{
-    .section2
-    {
+@media (max-width : 280px) {
+    .section2 {
         margin-top: -17rem;
     }
 }
+
+
+

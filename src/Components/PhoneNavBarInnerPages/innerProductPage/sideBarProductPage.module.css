@@ -42,7 +42,7 @@
 {
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 1rem;
     column-gap: 0.3rem;
 }
@@ -94,7 +94,19 @@
 
 .titleHeading
 {
-    font-size: 14px;
+    font-size: 16px;
    
+
+}
+
+.requestonButton
+{
+    margin-top: 4rem;
+}
+
+
+.ContactUsBox
+{
+    margin-top: 4rem;
 
 }

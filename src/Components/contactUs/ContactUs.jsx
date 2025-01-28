@@ -16,7 +16,7 @@ export default function ContactUs() {
                 <div>
 
                     <strong>Email:</strong>
-                    <div>varun@gmail.com</div>
+                    <div>info@eicetechnology.com</div>
 
                 </div>
                 <div>

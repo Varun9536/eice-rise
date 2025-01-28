@@ -75,7 +75,7 @@ import footerlaptop from "../../assets/section3Laptop/pos.webp"
 
 
 
-import { useSpring, animated } from "@react-spring/web";
+import { useSpring, animated, useTransition } from "@react-spring/web";
 
 
 export default function HospitalityPage() {
@@ -84,7 +84,7 @@ export default function HospitalityPage() {
 
 
     const [currentIndex, setCurrentIndex] = useState(0);
-   
+
     const [feedbackIndex, setFeedbackIndex] = useState(0);
 
 
@@ -197,14 +197,14 @@ export default function HospitalityPage() {
     ];
 
     const [logoIndex, setLogoIndex] = useState(0);
-    
+
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setLogoIndex((prevIndex) => (prevIndex + 1) % 5); 
-        }, 3000); 
+            setLogoIndex((prevIndex) => (prevIndex + 1) % 5);
+        }, 3000);
 
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
     }, []);
 
     const displayedLogos = clientLogo.slice(logoIndex * 6, (logoIndex + 1) * 6);
@@ -212,7 +212,7 @@ export default function HospitalityPage() {
     const animation = useSpring({
         opacity: 1,
         from: { opacity: 0.1 },
-         // Ensures animation triggers on logo change
+        // Ensures animation triggers on logo change
         config: { tension: 250, friction: 80 }, // Faster easing (less friction for quicker fade)
     });
 
@@ -250,6 +250,25 @@ export default function HospitalityPage() {
         }
     ]
 
+    const [currentIndex2, setCurrentIndex2] = useState(0);
+
+    // Change the current card every 5 seconds (or your desired interval)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex2((prevIndex) =>
+                prevIndex === feedback.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 5000);
+
+        // Clear interval when the component unmounts
+        return () => clearInterval(interval);
+    }, []);
+
+
+
+
+
+
 
     const stories = [
         {
@@ -282,7 +301,7 @@ export default function HospitalityPage() {
     ]
 
 
-  
+
 
 
     // useEffect(() => {
@@ -543,15 +562,15 @@ export default function HospitalityPage() {
 
 
             <div className={styles.clientSection} >
-                    <animated.div style={animation}>
-                        <div className={`${styles.clientLogoBox} globalSectionSize`} >
-                            {displayedLogos.map((item, index) => (
-                                <div key={index} className={`${styles.clinetLogoSize}`} >
-                                    <img style={{ width: "100%" }} src={item.logo} alt="EICE Technology" />
-                                </div>
-                            ))}
-                        </div>
-                    </animated.div>
+                <animated.div style={animation}>
+                    <div className={`${styles.clientLogoBox} globalSectionSize`} >
+                        {displayedLogos.map((item, index) => (
+                            <div key={index} className={`${styles.clinetLogoSize}`} >
+                                <img style={{ width: "100%" }} src={item.logo} alt="EICE Technology" />
+                            </div>
+                        ))}
+                    </div>
+                </animated.div>
             </div>
 
 
@@ -654,7 +673,7 @@ export default function HospitalityPage() {
                     <main className={`${styles.feedBack}`}>
 
 
-                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange}  className={`${styles.feedBackArticleBox} font1`} >
+                        {/* <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} className={`${styles.feedBackArticleBox} font1`} >
 
                             <figure  >
 
@@ -665,6 +684,7 @@ export default function HospitalityPage() {
                                 <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{feedback[feedbackIndex].position}</span> <span>{feedback[feedbackIndex].company}</span></figcaption>
 
                             </figure>
+
                             <div>
                                 <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>
                             </div>
@@ -673,7 +693,38 @@ export default function HospitalityPage() {
 
                             <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
 
+                        </article> */}
+
+
+                        <article className={styles.cardContainer}>
+                            <figure className={styles.card}>
+                                <div className={styles.imgAndClientDetailBox}>
+                                    <div className={`${styles.feedBackImgBox}`}>
+                                        <img
+                                            src={feedback[currentIndex2].img}
+                                            alt={`feedback ${currentIndex2 + 1}`}
+                                            className={styles.cardImage}
+                                        />
+                                    </div>
+                                    <div>
+                                        <figcaption style={{ textAlign: "center" }} > <span className="font1" style={{ fontWeight: "bold" }}>{feedback[currentIndex2].position}</span> <span className="font1">{feedback[currentIndex2].company}</span></figcaption>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[currentIndex2].heading}"</div>
+                                </div>
+
+
+
+
+                                <p className="font1" style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[currentIndex2].para}</p>
+                            </figure>
                         </article>
+
+
+
+
 
                     </main>
 
@@ -682,10 +733,12 @@ export default function HospitalityPage() {
                         {feedback.map((_, index) => (
                             <span
                                 key={index}
-                                className={`indicator ${feedbackIndex === index ? 'active' : ''}`}
-                                onClick={() => setFeedbackIndex(index)}
+                                className={`indicator ${currentIndex2 === index ? 'active' : ''}`}
+                                onClick={() => setCurrentIndex2(index)}
                             ></span>
                         ))}
+
+
                     </div>
 
 
@@ -741,6 +794,8 @@ export default function HospitalityPage() {
                         </Link>
 
                     </div>
+
+
                 </div>
 
                 <div className="indicators">

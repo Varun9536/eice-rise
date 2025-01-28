@@ -11,6 +11,7 @@
 .contactDetailBox {
     display: flex;
     justify-content: space-between;
+    column-gap: 1.5rem;
 
     line-height: 1.2rem;
     margin-top: 0.7rem;
@@ -19,14 +20,14 @@
 }
 
 .contactDetailSubBox1 {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
 .contactDetailSubBox2 {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;

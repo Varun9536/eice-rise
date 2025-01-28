@@ -148,7 +148,7 @@ export default function PhoneNavigationbar() {
                             <div className={`${styles.navigationContainer}`}>
 
 
-                                <Link 
+                                <Link
                                     onClick={() => { closeSideBar() }}
 
                                     to={"/"}
@@ -162,18 +162,19 @@ export default function PhoneNavigationbar() {
                                         <Link
                                             onClick={() => { toggleNavPageActive(item.navName) }}
                                             to={item.path}
-                                           
-                                            className={`${styles.navigatioName} linkClass`}
+                                            className="linkClass"
+
+
                                         >
                                             <div className={`${styles.navNameAndIconBox}`}>
-                                                <div >
+                                                <div className={`${styles.navigatioName} `}>
                                                     {item.navName}
                                                 </div>
 
                                                 <div>
                                                     {item.innerNavPage && (
                                                         <div className={`${styles.plusMinusIcon}`}>
-                                                            {innerNavPageActive === item.navName ? (<div  ><AiOutlineMinus /></div>) : (<div><AiOutlinePlus /> </div>)}
+                                                            {innerNavPageActive === item.navName ? (<div   >< AiOutlineMinus style={{ fontSize: "25px" }} /></div>) : (<div><AiOutlinePlus style={{ fontSize: "25px" }} /> </div>)}
 
                                                         </div>
                                                     )}
@@ -193,7 +194,7 @@ export default function PhoneNavigationbar() {
                                     to={"https://www.eicetechnology.com/About"}
                                     target="_blank"
                                     className={`${styles.navigatioName} linkClass`}
-                                    
+
                                 >
                                     About Us
                                 </Link>
@@ -203,7 +204,7 @@ export default function PhoneNavigationbar() {
                                     to={"https://www.eicetechnology.com/Resources"}
                                     target="_blank"
                                     className={`${styles.navigatioName} linkClass`}
-                                   
+
                                 >
                                     Blogs
                                 </Link>
@@ -211,18 +212,21 @@ export default function PhoneNavigationbar() {
 
                             </div>
 
-                            <div onClick={() => { closeSideBar() }}>
+                            <div className={`${styles.requestonButton}`} onClick={() => { closeSideBar() }}>
                                 <RequestButton />
                             </div>
 
-                            <ContactUs />
+                            <div className={`${styles.ContactUsBox}`}>
+                                <ContactUs />
+                            </div>
+
                         </div>)}
 
-                        {innerNavPageActive === "Products" && (<div style={{paddingBottom : "15rem"}} >
+                        {innerNavPageActive === "Products" && (<div style={{ paddingBottom: "15rem" }} >
                             <SideBarProductPage />
                         </div>)}
 
-                        {innerNavPageActive === "Pricing" && (<div style={{paddingBottom : "15rem"}} >
+                        {innerNavPageActive === "Pricing" && (<div style={{ paddingBottom: "15rem" }} >
                             <SideBarPricePage />
                         </div>)}
 

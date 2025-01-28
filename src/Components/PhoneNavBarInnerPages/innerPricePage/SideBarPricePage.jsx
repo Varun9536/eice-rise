@@ -102,21 +102,20 @@ export default function SideBarPricePage() {
 
     const closeSidebarPricePage = () => {
         dispatch(toggleNavBarIcon())
-       
+
     }
 
-    const requestButtonCloseSideBar = ()=>
-        {
-            dispatch(toggleNavBarIcon())
-            handleHomeButton()
-        }
+    const requestButtonCloseSideBar = () => {
+        dispatch(toggleNavBarIcon())
+        handleHomeButton()
+    }
 
     return (
         <>
 
             <div className={`${styles.mainPriceContainer}`}>
 
-                
+
 
                 <div className={`${styles.breadScrum}`} style={{ padding: "0px 20px" }}>
 
@@ -184,11 +183,14 @@ export default function SideBarPricePage() {
                     </div>
 
                 </div>
-                <div onClick={requestButtonCloseSideBar} style={{ marginTop: "4rem" }} >
+                <div className={`${styles.requestonButton}`} onClick={requestButtonCloseSideBar}  >
                     <RequestButton />
                 </div>
 
-                <ContactUs />
+
+                <div className={`${styles.ContactUsBox}`}>
+                    <ContactUs />
+                </div>
 
 
             </div>
