@@ -345,3 +345,26 @@
     }
 
 }
+
+
+@media (max-width : 400px)
+{
+    
+    .iconAndTextBox {
+        width: 120px;
+        height: 145px;
+
+
+    }
+}
+
+@media (max-width : 315px)
+{
+    
+    .iconAndTextBox {
+        width: 100px;
+        height: auto;
+
+
+    }
+}
