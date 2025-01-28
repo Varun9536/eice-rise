@@ -83,7 +83,7 @@ export default function HospitalityPage() {
 
 
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // const [currentIndex, setCurrentIndex] = useState(0);
 
 
 
@@ -91,21 +91,24 @@ export default function HospitalityPage() {
 
     const services = [
         {
-            serviceName: "ROOM BOOKING",
+            serviceName: "ROOM",
+            serviceName2: "BOOKING",
             icon: room,
             path: "room-booking",
             key: 1
         },
 
         {
-            serviceName: "DINNING (POS)",
+            serviceName: "DINNING",
+            serviceName2: "(POS)",
             icon: pos,
             path: "pos-dining",
             key: 2
         },
 
         {
-            serviceName: "BANQUET & BILLING",
+            serviceName: "BANQUET &",
+            serviceName2: "BILLING",
             icon: banquet,
             path: "banquet-billing",
             key: 3
@@ -113,21 +116,24 @@ export default function HospitalityPage() {
 
         {
 
-            serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
+            serviceName: "MEMBER",
+            serviceName2: "SUITE",
             icon: member,
             path: "member-suite",
             key: 4
         },
 
         {
-            serviceName: "ACCOUNT & FINANCE",
+            serviceName: "ACCOUNT & ",
+            serviceName2: "FINANCE",
             icon: account,
             path: "account-finance",
             key: 5
         },
 
         {
-            serviceName: "EMPLOYEE SUITE",
+            serviceName: "EMPLOYEE",
+            serviceName2: "SUITE",
             icon: emp,
             path: "employee-suite",
             key: 6
@@ -135,6 +141,7 @@ export default function HospitalityPage() {
 
         {
             serviceName: "PAYROLL",
+            serviceName2: "MANAGEMENT",
             icon: pay,
             path: "payroll",
             key: 7
@@ -510,11 +517,15 @@ export default function HospitalityPage() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon} alt="" />
+                                        <img src={item.icon} alt={item.serviceName} />
                                     </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+
+                                    <div className={`${styles.serviceName} font1`}>
+                                        <div>  {item.serviceName}</div>
+                                        <div>  {item.serviceName2}</div>
+
                                     </div>
+
 
                                 </div>
 

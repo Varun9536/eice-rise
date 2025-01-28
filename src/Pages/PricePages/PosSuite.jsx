@@ -30,28 +30,31 @@ export default function PosSuite() {
         };
     }, []);
 
-    const services = [
-        
-
-        {
-            serviceName: "DINNING (POS)",
-            icon: pos,
-            path: "/pos-dining",
-            key: 2
-        },
-
-
-       
-
-        {
-            serviceName: "ACCOUNT & FINANCE",
-            icon: account,
-            path: "/account-finance",
-            key: 5
-        },
-
-       
-    ]
+     const services = [
+          
+   
+           {
+               serviceName: "DINNING",
+               serviceName2 : "(POS)",
+               icon: pos,
+               path: "pos-dining",
+               key: 2
+           },
+   
+          
+   
+           {
+               serviceName: "ACCOUNT & ",
+               serviceName2 : "FINANCE" ,
+               icon: account,
+               path: "account-finance",
+               key: 5
+           },
+   
+           
+   
+           
+       ]
 
     const whyToChooseUs = [
         {
@@ -135,9 +138,11 @@ export default function PosSuite() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+                                    <div className={`${styles.serviceName} font1`}>
+                                                                            <div>  {item.serviceName}</div>
+                                                                            <div>  {item.serviceName2}</div>
+                                    
+                                                                        </div>
 
                                 </div>
 

@@ -623,8 +623,8 @@
 
 
     .iconAndTextBox {
-        width: 130px;
-        height: 145px;
+        width: 160px;
+        height: 165px;
 
 
     }
@@ -708,7 +708,7 @@
 
 
     .clinetLogoSize {
-        width: 8.5rem;
+        width: 10rem;
     }
 
 
@@ -799,7 +799,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 53vh;
+    height: 27rem;
     overflow: hidden;
     width: 370px;
 
@@ -824,11 +824,12 @@
 }
 
 .cardBoxInnerHeading {
-    padding: unset;
+    padding: 0px 20px;
 }
 
 .cardImage {
     width: 100%;
+
     border-radius: 8px;
    
 }
@@ -937,11 +938,11 @@
 {
     .storyCardContainer
 {
-    
-    /* height: 69vh; */
     height: auto;
-    
+}
 
+.cardContainer {
+    height: auto;
 
 }
 }

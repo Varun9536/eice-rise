@@ -32,23 +32,33 @@ export default function FrontDesk() {
         };
     }, []);
 
-    const services = [
-        {
-            serviceName: "ROOM BOOKING",
-            icon: room,
-            path: "/room-booking",
-            key: 1
-        },
+     const services = [
+           {
+               serviceName: "ROOM",
+               serviceName2 : "BOOKING",
+               icon: room,
+               path: "room-booking",
+               key: 1
+           },
 
-        {
-            serviceName: "ACCOUNT & FINANCE",
-            icon: account,
-            path: "/account-finance",
-            key: 5
-        },
-
-        
-    ]
+            {
+                       serviceName: "ACCOUNT & ",
+                       serviceName2: "FINANCE",
+                       icon: account,
+                       path: "account-finance",
+                       key: 5
+                   },
+   
+          
+   
+           
+   
+           
+   
+          
+   
+           
+       ]
 
     const whyToChooseUs = [
         {
@@ -132,9 +142,11 @@ export default function FrontDesk() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+                                    <div className={`${styles.serviceName} font1`}>
+                                                                            <div>  {item.serviceName}</div>
+                                                                            <div>  {item.serviceName2}</div>
+                                    
+                                                                        </div>
 
                                 </div>
 

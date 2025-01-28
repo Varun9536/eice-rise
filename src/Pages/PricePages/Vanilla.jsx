@@ -35,35 +35,41 @@ export default function Vanilla() {
     }, []);
 
     const services = [
-        
+      
+
         {
-            serviceName: "DINNING (POS)",
+            serviceName: "DINNING",
+            serviceName2: "(POS)",
             icon: pos,
-            path: "/pos-dining",
+            path: "pos-dining",
             key: 2
         },
 
         {
-            serviceName: "BANQUET & BILLING",
+            serviceName: "BANQUET &",
+            serviceName2: "BILLING",
             icon: banquet,
-            path: "/banquet-billing",
+            path: "banquet-billing",
             key: 3
         },
 
        
 
+        
+
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "/userstore-inventry",
+            path: "userstore-inventry",
             key: 8
         },
 
+       
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "/food-cost",
+            path: "food-cost",
             key: 10
         }
     ]
@@ -105,7 +111,7 @@ export default function Vanilla() {
 
 
 
-            {!isPhone && ( <section className={`${styles.heroSectionHeading}`}>
+            {!isPhone && (<section className={`${styles.heroSectionHeading}`}>
                 <span className="font2" style={{ color: "#01B0F1" }} >VaniLla</span>    <span className="font3" style={{ color: "#012060" }} >Suite</span>
             </section>)}
 
@@ -148,8 +154,10 @@ export default function Vanilla() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    <div className={`${styles.serviceName} font1`}>
+                                        <div>  {item.serviceName}</div>
+                                        <div>  {item.serviceName2}</div>
+
                                     </div>
 
                                 </div>

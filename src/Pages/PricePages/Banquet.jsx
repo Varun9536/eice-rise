@@ -42,20 +42,24 @@ export default function Banquet() {
         
 
         {
-            serviceName: "BANQUET & BILLING",
+            serviceName: "BANQUET &",
+            serviceName2: "BILLING",
             icon: banquet,
-            path: "/banquet-billing",
+            path: "banquet-billing",
             key: 3
         },
 
-      
+       
 
         {
-            serviceName: "ACCOUNT & FINANCE",
+            serviceName: "ACCOUNT & ",
+            serviceName2: "FINANCE",
             icon: account,
-            path: "/account-finance",
+            path: "account-finance",
             key: 5
         },
+
+        
 
         
 
@@ -152,8 +156,10 @@ export default function Banquet() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
+                                    <div className={`${styles.serviceName} font1`}>
+                                        <div>  {item.serviceName}</div>
+                                        <div>  {item.serviceName2}</div>
+
                                     </div>
 
                                 </div>

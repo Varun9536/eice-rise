@@ -33,23 +33,24 @@ export default function Inventary() {
     }, []);
 
     const services = [
-       
-
-        {
-            serviceName: "USER STORE & INVENTORY",
-            icon: inentry,
-            path: "/userstore-inventry",
-            key: 8
-        },
-
-        {
-            serviceName: "PURCHASE & VENDOR PORTAL",
-            icon: vendor,
-            path: "/purchase-vendor",
-            key: 9
-        },
-
-    ]
+          
+  
+          {
+              serviceName: "USER STORE & INVENTORY",
+              icon: inentry,
+              path: "userstore-inventry",
+              key: 8
+          },
+  
+          {
+              serviceName: "PURCHASE & VENDOR PORTAL",
+              icon: vendor,
+              path: "purchase-vendor",
+              key: 9
+          },
+  
+          
+      ]
 
     const whyToChooseUs = [
         {
@@ -137,9 +138,11 @@ export default function Inventary() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
-                                    <div>
-                                        {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
-                                    </div>
+                                    <div className={`${styles.serviceName} font1`}>
+                                                                            <div>  {item.serviceName}</div>
+                                                                            <div>  {item.serviceName2}</div>
+                                    
+                                                                        </div>
 
                                 </div>
 
