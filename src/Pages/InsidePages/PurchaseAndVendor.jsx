@@ -409,9 +409,7 @@ export default function PurchaseAndVendor() {
                                             {item.heading}
                                         </div>
 
-                                        <div>
-                                            {item.heading2}
-                                        </div>
+                                        
 
                                     </div>
 

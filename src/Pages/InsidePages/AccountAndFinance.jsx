@@ -426,9 +426,7 @@ export default function AccountAndFinance() {
                       {item.heading}
                     </div>
 
-                    {/* <div>
-                      {item.heading2}
-                    </div> */}
+                    
 
                   </div>
 

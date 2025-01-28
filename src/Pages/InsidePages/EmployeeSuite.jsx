@@ -417,9 +417,7 @@ export default function EmployeeSuite() {
                       {item.heading}
                     </div>
 
-                    <div>
-                      {item.heading2}
-                    </div>
+                    
 
                   </div>
 

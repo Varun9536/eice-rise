@@ -376,9 +376,7 @@ export default function BanquetAnsBilling() {
                       {item.heading}
                     </div>
 
-                    <div>
-                      {item.heading2}
-                    </div>
+                    
 
                   </div>
 

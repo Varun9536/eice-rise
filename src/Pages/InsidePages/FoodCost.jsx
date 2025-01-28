@@ -406,9 +406,6 @@ export default function FoodCost() {
                       {item.heading}
                     </div>
 
-                    <div>
-                      {item.heading2}
-                    </div>
 
                   </div>
 

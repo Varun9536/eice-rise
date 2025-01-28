@@ -1,7 +1,5 @@
 import style from "./Styles/pos.module.css"
 
-
-
 import heroImg from "../../assets/allHero/new/posH.webp"
 import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
 import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
@@ -20,8 +18,6 @@ import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
 import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
 import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
 
-
-
 // benifits
 
 import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
@@ -33,10 +29,7 @@ import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
 
 
 import laptop from "../../assets/section3Laptop/pos2.webp"
-
 import Accordion from "../../Components/Accordian/Accordian.jsx"
-
-
 
 
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
@@ -59,7 +52,7 @@ export default function Pos() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 980); // Update based on screen size
+            setIsPhone(window.innerWidth <= 980); 
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -364,13 +357,6 @@ export default function Pos() {
                             </div>
 
                         </div>
-
-                        {/* <div style={{overflow : "hidden"}} >
-            <div className={`${style.section3Spiral}`}  >
-                <img style={{width : "100%" }} src={spiral} alt="" />
-            </div>
-        </div> */}
-
                     </div>
 
                 </div>
@@ -402,9 +388,7 @@ export default function Pos() {
                                             {item.heading}
                                         </div>
 
-                                        <div>
-                                            {item.heading2}
-                                        </div>
+                                       
 
                                     </div>
 

@@ -384,9 +384,7 @@ export default function UserAndInventry() {
                                             {item.heading}
                                         </div>
 
-                                        <div>
-                                            {item.heading2}
-                                        </div>
+                                        
 
                                     </div>
 

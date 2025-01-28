@@ -398,9 +398,7 @@ export default function Payroll() {
                       {item.heading}
                     </div>
 
-                    <div>
-                      {item.heading2}
-                    </div>
+                    
 
                   </div>
 
