@@ -383,11 +383,8 @@ export default function UserAndInventry() {
                                         <div>
                                             {item.heading}
                                         </div>
-
-                                        
-
                                     </div>
-
+                                    
                                 </div>
 
                                 <div className={`${style.featureDesc}`}>

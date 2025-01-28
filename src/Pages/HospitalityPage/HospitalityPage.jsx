@@ -830,7 +830,7 @@ export default function HospitalityPage() {
                                 {stories[storyIndex].heading}
                             </div>
 
-                            <p style={{ lineHeight: "1.8rem", marginBottom: stories[storyIndex].margin }} >{stories[currentIndex].para}</p>
+                            <p style={{ lineHeight: "1.8rem", marginBottom: stories[storyIndex].margin }} >{stories[storyIndex].para}</p>
 
 
                             <Link to={stories[storyIndex].link} className={`${styles.viewMoreBtnBox} linkClass`}>

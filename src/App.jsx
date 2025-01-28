@@ -53,32 +53,6 @@ const router = createBrowserRouter([
         element: <HospitalityPage />,
       },
 
-      // {
-      //   path: "about-us",
-      //   element: <AboutUs />
-      // },
-
-
-      // {
-      //   path: "products",
-      //   element: <Products />
-      // },
-
-
-      // {
-      //   path: "pricing",
-      //   element: <Pricing />
-      // },
-
-
-      // {
-      //   path: "blogs",
-      //   element: <Blogs />
-      // },
-
-
-
-
       {
         path: "room-booking",
         element: <RoomBooking />
@@ -132,73 +106,66 @@ const router = createBrowserRouter([
 
 
       {
-        path : "form",
-        element : <RequestForm/>
-      } ,
-
-      {
-        path : "android" ,
-        element : <Android/>
+        path: "form",
+        element: <RequestForm />
       },
 
       {
-        path : "durgabari" ,
-        element : <Durgabari/>
+        path: "android",
+        element: <Android />
       },
 
       {
-        path : "iic" ,
-        element : <IIC/>
+        path: "durgabari",
+        element: <Durgabari />
       },
 
       {
-        path : "club-suite" ,
-        element : <Club/>
-      } ,
-
-    
-
-      {
-        path : "enterprise-suite" ,
-        element : <Enterprise/>
+        path: "iic",
+        element: <IIC />
       },
 
       {
-        path : "inventary-suite" ,
-        element : <Inventary/>
+        path: "club-suite",
+        element: <Club />
       },
 
       {
-        path : "pos-suite" ,
-        element : <PosSuite/>
+        path: "enterprise-suite",
+        element: <Enterprise />
+      },
+
+      {
+        path: "inventary-suite",
+        element: <Inventary />
+      },
+
+      {
+        path: "pos-suite",
+        element: <PosSuite />
       },
 
 
       {
-        path : "frontdesk-suite" ,
-        element : <FrontDesk/>
+        path: "frontdesk-suite",
+        element: <FrontDesk />
       }
-      
+
       ,
       {
-        path : "banquet-suite" ,
-        element : <Banquet/>
+        path: "banquet-suite",
+        element: <Banquet />
       },
 
       {
-        path : "vanilla-suite" ,
-        element : <Vanilla/>
+        path: "vanilla-suite",
+        element: <Vanilla />
       }
 
     ]
 
 
   }
-
-
-
-
-
 ],
 
   {

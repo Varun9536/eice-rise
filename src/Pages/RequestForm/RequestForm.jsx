@@ -109,7 +109,7 @@ export default function RequestForm() {
     };
 
 
-    const handleSubmit = async(e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
 
@@ -133,7 +133,7 @@ export default function RequestForm() {
         };
 
         try {
-            
+
             const response = await fetch("http://localhost/eiceRise/eicedata.php", {
                 method: "POST",
                 headers: {
@@ -142,7 +142,7 @@ export default function RequestForm() {
                 body: JSON.stringify(dataToSend),
             });
 
-           
+
 
             if (response.statusCode === 200) {
                 alert("Your form has been submitted successfully.");
@@ -158,7 +158,7 @@ export default function RequestForm() {
 
 
 
-    const feedback = [
+    const feedBackArray = [
         {
             img: kd,
             client: "Kevin Droid",
@@ -189,6 +189,21 @@ export default function RequestForm() {
     ];
 
 
+    const [feedBackArrayIndex, setfeedBackArrayIndex] = useState(0);
+
+    // Change the current card every 5 seconds (or your desired interval)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setfeedBackArrayIndex((prevIndex) =>
+                prevIndex === feedBackArray.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 5000);
+
+        // Clear interval when the component unmounts
+        return () => clearInterval(interval);
+    }, []);
+
+
     const query = [
         {
             key: 1,
@@ -210,47 +225,46 @@ export default function RequestForm() {
 
 
     const [feedbackIndex, setFeedbackIndex] = useState(0);
-    const [isTransitioning, setIsTransitioning] = useState(false);
 
 
 
-    let startX = 0;
-    let startY = 0;
+    // let startX = 0;
+    // let startY = 0;
 
-    const handleTouchStart = (e) => {
-        const touch = e.touches[0];
-        startX = touch.clientX;
-        startY = touch.clientY;
-    };
-
-
-    const handleFeedbackChange = (e) => {
-
-        const touch = e.touches[0];
-        const deltaX = touch.clientX - startX;
-        const deltaY = touch.clientY - startY;
-
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
-            if (deltaX > 0) {
-                //right
-                setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
-
-            } else {
-                //left
-                setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-
-            }
-        } else {
-            if (deltaY > 0) {
-                //down
-            } else {
-                //up
-            }
-        }
+    // const handleTouchStart = (e) => {
+    //     const touch = e.touches[0];
+    //     startX = touch.clientX;
+    //     startY = touch.clientY;
+    // };
 
 
+    // const handleFeedbackChange = (e) => {
 
-    }
+    //     const touch = e.touches[0];
+    //     const deltaX = touch.clientX - startX;
+    //     const deltaY = touch.clientY - startY;
+
+    //     if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    //         if (deltaX > 0) {
+    //             //right
+    //             setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
+
+    //         } else {
+    //             //left
+    //             setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+
+    //         }
+    //     } else {
+    //         if (deltaY > 0) {
+    //             //down
+    //         } else {
+    //             //up
+    //         }
+    //     }
+
+
+
+    // }
 
 
 
@@ -511,7 +525,7 @@ export default function RequestForm() {
                     <main className={`${styles.feedBack}`}>
 
 
-                        <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} className={`${styles.feedBackArticleBox} font1`} >
+                        {/* <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} className={`${styles.feedBackArticleBox} font1`} >
 
                             <figure  >
 
@@ -530,22 +544,49 @@ export default function RequestForm() {
 
                                 </div>
                             </div>
-
-
-
                             <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
 
+                        </article> */}
+
+                        <article className={`${styles.cardContainer} font1`}>
+                            <div className={styles.card}>
+                                <figure  >
+
+                                    <div style={{ textAlign: "center" }}  >
+                                        <img style={{ width: "28%" }} src={feedBackArray[feedBackArrayIndex].img} alt="" />
+                                    </div>
+
+                                    <figcaption className={`${styles.clientInfo}`} > <span >-- {feedBackArray[feedBackArrayIndex].client} ,</span> <span style={{ fontWeight: "bold" }} >{feedBackArray[feedBackArrayIndex].position}</span>  <span>{feedBackArray[feedBackArrayIndex].company}</span></figcaption>
+
+                                </figure>
+
+                                <div>
+                                    <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
+                                        "{
+                                            feedBackArray[feedBackArrayIndex].heading
+                                        }"
+
+                                    </div>
+                                </div>
+
+                                <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedBackArray[feedBackArrayIndex].para}</p>
+
+
+                            </div>
                         </article>
+
+
+
 
                     </main>
 
 
                     <div className="indicators">
-                        {feedback.map((_, index) => (
+                        {feedBackArray.map((_, index) => (
                             <span
                                 key={index}
-                                className={`indicator ${feedbackIndex === index ? 'active' : ''}`}
-                                onClick={() => setFeedbackIndex(index)}
+                                className={`indicator ${feedBackArrayIndex === index ? 'active' : ''}`}
+                                onClick={() => setfeedBackArrayIndex(index)}
                             ></span>
                         ))}
                     </div>
@@ -569,7 +610,7 @@ export default function RequestForm() {
 
 
                         <main className={`${styles.feedBack}`}>
-                            {feedback.map((item) =>
+                            {feedBackArray.map((item) =>
                             (
                                 <article key={item.key} className={`${styles.feedBackArticleBox} font1`} >
 
@@ -621,50 +662,8 @@ export default function RequestForm() {
             </section>
 
 
-            <section className={`${styles.contactUsBackground}`}>
-                <div className={`${styles.ContactUsSection} globalSectionSize  `}>
 
-                    <div className={`${styles.contactUsHeading} font3`}>
-                        Contact Us
-                    </div>
-
-                    <div className={`${styles.contactUsBox} font1 `}>
-
-                        <div >
-
-                            <div className={`${styles.key} font3`}>Email :</div>
-                            <div className={`${styles.value} font1 `}  >info@eicetechnology.com</div>
-
-                        </div>
-                        <div>
-
-                            <div className={`${styles.key} font3 `}>Phone no :</div>
-                            <div className={`${styles.value} font1 `}>+91 120 311 0836</div>
-
-                        </div>
-                        <div>
-
-                            <div className={`${styles.key} font3`}>Address (India) :</div>
-                            <div className={`${styles.value} font1 `}>B-8 Second Floor   </div>
-                            <div className={`${styles.value} font1 `}> Sec-60, Noida 201301</div>
-
-                        </div>
-                        <div >
-
-                            <div className={`${styles.key} font3`}>Address (USA) :</div>
-                            <div className={`${styles.value} font1 `}>440 Cobia Drive, #901 </div>
-                            <div className={`${styles.value} font1 `}>katy, Texas 77494</div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </section>
-
-
-            <section className={`${styles.contactUsBackgroundPhone}`}>
+{isPhone ? ( <section className={`${styles.contactUsBackgroundPhone}`}>
                 <div className={`${styles.ContactUsSectionPhone} globalSectionSize  `}>
 
                     <div className={`${styles.contactUsHeading} font3`}>
@@ -714,7 +713,52 @@ export default function RequestForm() {
                     </div>
 
                 </div>
-            </section>
+            </section>):(<section className={`${styles.contactUsBackground}`}>
+                <div className={`${styles.ContactUsSection} globalSectionSize  `}>
+
+                    <div className={`${styles.contactUsHeading} font3`}>
+                        Contact Us
+                    </div>
+
+                    <div className={`${styles.contactUsBox} font1 `}>
+
+                        <div >
+
+                            <div className={`${styles.key} font3`}>Email :</div>
+                            <div className={`${styles.value} font1 `}  >info@eicetechnology.com</div>
+
+                        </div>
+                        <div>
+
+                            <div className={`${styles.key} font3 `}>Phone no :</div>
+                            <div className={`${styles.value} font1 `}>+91 120 311 0836</div>
+
+                        </div>
+                        <div>
+
+                            <div className={`${styles.key} font3`}>Address (India) :</div>
+                            <div className={`${styles.value} font1 `}>B-8 Second Floor   </div>
+                            <div className={`${styles.value} font1 `}> Sec-60, Noida 201301</div>
+
+                        </div>
+                        <div >
+
+                            <div className={`${styles.key} font3`}>Address (USA) :</div>
+                            <div className={`${styles.value} font1 `}>440 Cobia Drive, #901 </div>
+                            <div className={`${styles.value} font1 `}>katy, Texas 77494</div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>)}
+
+            
+
+
+           
 
 
             <section className={`${styles.LaptopImgSection}`}>
