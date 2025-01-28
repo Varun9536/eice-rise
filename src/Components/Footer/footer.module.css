@@ -38,8 +38,7 @@
 
 }
 
-.demoButton:hover
-{
+.demoButton:hover {
     background-color: #5FCDF6;
 }
 
@@ -83,8 +82,15 @@
 
 }
 
-.logoWhite {
+
+.whiteLogoBox {
+    width: 8rem;
+
+}
+
+.whiteLogo {
     filter: brightness(0) invert(1);
+    width: 100%;
 }
 
 
@@ -106,15 +112,13 @@
     color: rgba(1, 176, 241, 1);
 }
 
-.followUsHeading
-{
-   margin-bottom: 0.5rem;
-   font-weight: 600;
+.followUsHeading {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 
 }
 
-.socialMediaContainer
-{
+.socialMediaContainer {
     display: flex;
     gap: 0px 20px;
 }
@@ -125,7 +129,7 @@
 
 .contactContainer {
 
-   
+
     width: 680px;
     color: white;
 
@@ -138,7 +142,7 @@
 
 .getInTouchBox {
     display: flex;
-   column-gap: 2.5rem;
+    column-gap: 2.5rem;
 
 }
 
@@ -195,7 +199,7 @@
     border: 2px solid white;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
-   
+
 
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -275,12 +279,11 @@
         font-size: 10px;
     }
 
-    .followUsHeading
-    {
-       font-size: 14px;
-       font-weight: 600;
-       margin-bottom: 0.5rem;
-    
+    .followUsHeading {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
     }
 
     .contactContainer {
@@ -345,38 +348,35 @@
         margin-top: unset;
     }
 
-   
 
-    .usNameBox
-    {
+
+    .usNameBox {
         display: flex;
     }
 
-    .contactDetails
-    {
+    .contactDetails {
         font-size: 12px;
     }
 
     .footerNavigationBox {
-       
-    
-    
-        
+
+
+
+
         margin-top: 2rem;
-    
-      
-    
+
+
+
     }
 
 }
 
-@media (max-width : 400px)
-{
+@media (max-width : 400px) {
     .indiaOffice {
         display: flex;
         align-items: center;
         width: unset;
-        padding:  5px;
+        padding: 5px;
     }
 
 
@@ -384,24 +384,22 @@
         display: flex;
         align-items: center;
         width: unset;
-        padding:  5px;
+        padding: 5px;
     }
 
-    .countryName
-    {
+    .countryName {
         padding-right: 7px;
     }
 }
 
 
 
-@media (min-width : 400px)
-{
+@media (min-width : 400px) {
     .indiaOffice {
         display: flex;
         align-items: center;
         width: unset;
-        padding:  15px 15px;
+        padding: 15px 15px;
     }
 
 
@@ -409,7 +407,7 @@
         display: flex;
         align-items: center;
         width: unset;
-        padding:  15px 15px;
+        padding: 15px 15px;
     }
 }
 

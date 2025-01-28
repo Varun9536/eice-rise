@@ -26,8 +26,8 @@ export default function FooterLower() {
 
                     <div className={`${styles.eiceLogoAndSocialMediaBox} font1 `}>
 
-                        <div>
-                            <img className={styles.logoWhite} src={logo} alt="" />
+                        <div className={styles.whiteLogoBox}>
+                            <img className={styles.whiteLogo} src={logo} alt="" />
                         </div>
 
                         <div className={`${styles.footerParagraph} `}>
