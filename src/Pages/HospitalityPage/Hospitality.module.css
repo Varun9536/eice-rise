@@ -625,6 +625,9 @@
     .iconAndTextBox {
         width: 160px;
         height: 165px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
 
 
     }

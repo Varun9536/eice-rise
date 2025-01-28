@@ -1,7 +1,7 @@
 import styles from "./Hospitality.module.css"
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
-import allLaptop from "../../assets/Hospitality/laptoplatest.webp"
+import allLaptop from "../../assets/Hospitality/allLaptop.webp"
 
 import account from "../../assets/Hospitality/allPageIcon/Account.png"
 import pos from "../../assets/Hospitality/allPageIcon/POS.png"
