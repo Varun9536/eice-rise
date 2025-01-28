@@ -58,7 +58,7 @@
 .productNavItemContainer
 {
     display: flex;
-    column-gap: 2.5rem;
+    column-gap: 3rem;
     margin: 2rem 0;
 }
 
