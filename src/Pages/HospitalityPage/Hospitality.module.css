@@ -194,6 +194,7 @@
     font-size: 17px;
     font-weight: 600;
 }
+
 /* 
 .serviceName2 {
     padding: 10px 20px;
@@ -795,49 +796,49 @@
 
 
 
-    
 
-.cardContainer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 27rem;
-    overflow: hidden;
-    width: 370px;
 
-}
+    .cardContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 27rem;
+        overflow: hidden;
+        width: 370px;
 
-.card {
-    transition: opacity 1s ease, transform 1s ease;
-    opacity: 1;
-    transform: translateY(0);
-    width: 100%;
-    height: 100%;
-    padding: 10px 15px;
-    background-color: white;
-    border-radius: 5px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
+    }
 
-.feedBackImgBox {
-    width: 28%;
-    margin: 0px auto;
-}
+    .card {
+        transition: opacity 1s ease, transform 1s ease;
+        opacity: 1;
+        transform: translateY(0);
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        background-color: white;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
 
-.cardBoxInnerHeading {
-    padding: 0px 20px;
-}
+    .feedBackImgBox {
+        width: 28%;
+        margin: 0px auto;
+    }
 
-.cardImage {
-    width: 100%;
+    .cardBoxInnerHeading {
+        padding: 0px 20px;
+    }
 
-    border-radius: 8px;
-   
-}
+    .cardImage {
+        width: 100%;
 
-/* .cardExiting {
+        border-radius: 8px;
+
+    }
+
+    /* .cardExiting {
     opacity: 0;
     transform: translateY(-20px);
 }
@@ -847,50 +848,39 @@
     transform: translateY(0);
 } */
 
-.storyCardContainer
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 69vh; */
-    height: 35rem;
-    overflow: hidden;
-    width: 370px;
+    .storyCardContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 69vh; */
+        height: 35rem;
+        overflow: hidden;
+        width: 370px;
 
 
-}
+    }
 
-.storyCard{
+    .storyCard {
 
-    transition: opacity 1s ease, transform 1s ease;
-    opacity: 1;
-    transform: translateY(0);
-    width: 100%;
-    height: 100%;
-    padding: 10px 15px;
-    background-color: white;
-    border-radius: 5px;
-   
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
+        transition: opacity 1s ease, transform 1s ease;
+        opacity: 1;
+        transform: translateY(0);
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
 
-.viewMoreBtnBox
-{
-    position: absolute;
-    bottom: 1rem;
-    width: 90%;
-    margin: 0px auto;
+    .viewMoreBtnBox {
+        position: absolute;
+        bottom: 1rem;
+        width: 90%;
+        margin: 0px auto;
 
-}
-
-
-
-
-
-
-
-
+    }
 
 }
 
@@ -905,21 +895,15 @@
 
     .laptopImg {
 
-
         width: 120%;
         bottom: 10rem;
     }
 
     .textBox {
-
-
-
         top: 11%;
         left: unset;
         transform: unset;
         padding-top: 50px;
-
-
     }
 
 
@@ -937,23 +921,20 @@
     }
 }
 
-@media (max-width : 300px)
-{
-    .storyCardContainer
-{
-    height: auto;
+@media (max-width : 300px) {
+    .storyCardContainer {
+        height: auto;
+    }
+
+    .cardContainer {
+        height: auto;
+
+    }
 }
 
-.cardContainer {
-    height: auto;
 
-}
-}
+@media (max-width : 400px) {
 
-
-@media (max-width : 400px)
-{
-    
     .iconAndTextBox {
         width: 120px;
         height: 145px;
@@ -962,9 +943,8 @@
     }
 }
 
-@media (max-width : 370px)
-{
-    
+@media (max-width : 370px) {
+
     .textBox {
         top: 6%;
     }
@@ -972,9 +952,8 @@
 }
 
 
-@media (max-width : 335px)
-{
-    
+@media (max-width : 335px) {
+
     .iconAndTextBox {
         width: 100px;
         height: auto;
@@ -986,10 +965,5 @@
         padding: 5px 10px;
         font-size: 14px;
     }
-    
+
 }
-
-
-
-
-
