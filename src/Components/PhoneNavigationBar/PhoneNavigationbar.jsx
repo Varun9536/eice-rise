@@ -234,7 +234,7 @@ export default function PhoneNavigationbar() {
                 <motion.div
                     className={styles.mainMenuContainer}
                     initial={{ x: '-100%' }}
-                    animate={{ x: innerNavPageActive === "Products" ? 0 : '-100%' }}
+                    animate={{ x: navbarOpen ? 0 : '-100%' }}
 
                     transition={{
                         stiffness: 150,
@@ -260,7 +260,7 @@ export default function PhoneNavigationbar() {
                 <motion.div
                     className={styles.mainMenuContainer}
                     initial={{ x: '-100%' }}
-                    animate={{ x: innerNavPageActive === "Pricing" ? 0 : '-100%' }}
+                    animate={{ x: navbarOpen ? 0 : '-100%' }}
 
                     transition={{
                         stiffness: 150,

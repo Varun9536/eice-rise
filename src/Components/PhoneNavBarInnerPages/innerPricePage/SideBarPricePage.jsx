@@ -129,7 +129,6 @@ export default function SideBarPricePage() {
 
     const closeSidebarPricePage = () => {
         dispatch(toggleNavBarIcon())
-        handleHomeButton()
 
     }
 
