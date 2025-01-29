@@ -138,6 +138,8 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
+                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+        ease: "easeInOut",
                     }}
                 >
 
@@ -240,6 +242,8 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
+                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+        ease: "easeInOut",
                     }}
                 >
 
@@ -266,6 +270,8 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
+                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+        ease: "easeInOut",
                     }}
                 >
 
