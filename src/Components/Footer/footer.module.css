@@ -112,6 +112,11 @@
     color: rgba(1, 176, 241, 1);
 }
 
+.socialMediaSection
+{
+    margin-top: 1rem;
+}
+
 .followUsHeading {
     margin-bottom: 0.5rem;
     font-weight: 600;
@@ -130,7 +135,7 @@
 .contactContainer {
 
 
-    width: 680px;
+    width: 620px;
     color: white;
 
 
@@ -186,11 +191,11 @@
 
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding: 30px 51px;
+    padding: 10px 40px;
 
     display: flex;
     align-items: center;
-    width: 320px;
+    width: 270px;
 
 }
 
@@ -203,11 +208,11 @@
 
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
-    padding: 30px 55px;
+    padding: 10px 40px;
 
     display: flex;
     align-items: center;
-    width: 320px;
+    width: 270px;
 }
 
 
@@ -320,6 +325,21 @@
         font-size: 12px;
     }
 
+    .indiaOffice {
+        display: flex;
+        align-items: center;
+        width: unset;
+        padding: 15px 25px;
+    }
+
+
+    .usOffice {
+        display: flex;
+        align-items: center;
+        width: unset;
+        padding: 15px 25px;
+    }
+
 
 
 
@@ -334,7 +354,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         row-gap: 0.5rem;
-        margin-top: 0.7rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -359,34 +379,13 @@
     }
 
     .footerNavigationBox {
-
-
-
-
         margin-top: 2rem;
-
-
-
     }
 
 }
 
 @media (max-width : 400px) {
-    .indiaOffice {
-        display: flex;
-        align-items: center;
-        width: unset;
-        padding: 5px;
-    }
-
-
-    .usOffice {
-        display: flex;
-        align-items: center;
-        width: unset;
-        padding: 5px;
-    }
-
+    
     .countryName {
         padding-right: 7px;
     }
@@ -394,12 +393,12 @@
 
 
 
-@media (min-width : 400px) {
+@media (max-width : 380px) {
     .indiaOffice {
         display: flex;
         align-items: center;
         width: unset;
-        padding: 15px 15px;
+        padding: 1% 15px;
     }
 
 
@@ -407,7 +406,7 @@
         display: flex;
         align-items: center;
         width: unset;
-        padding: 15px 15px;
+        padding: 1% 15px;
     }
 }
 
@@ -445,19 +444,11 @@
         font-size: 12px;
     }
 
-
-
-
-
-
-
-
 }
 
 
 @media (max-width : 350px) {
     .footerLaptopImg {
-
         width: 240px;
     }
 }
