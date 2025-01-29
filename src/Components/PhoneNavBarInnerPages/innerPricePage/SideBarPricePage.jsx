@@ -60,6 +60,33 @@ export default function SideBarPricePage() {
             path: "pos-suite",
         },
 
+        {
+            key: 5,
+            title: "Front Desk",
+            title2: "Suite",
+            description: "Elevate guest experiences from check-in to billing",
+            icon: frontDeskIcon,
+            path: "frontdesk-suite",
+        },
+        {
+            key: 6,
+            title: "Banquet",
+            title2: "Suite",
+            description: "Manage events and finances flawlessly",
+            icon: banquetIcon,
+            path: "banquet-suite",
+
+        },
+        {
+            key: 7,
+            title: "Vanilla",
+            title2: "Suite",
+            description: "All-in-one solution for versatile operations",
+            icon: vanillaIcon,
+            path: "vanilla-suite",
+        },
+
+
     ]
 
     const priceItem2 = [
@@ -160,7 +187,7 @@ export default function SideBarPricePage() {
                     </div>
 
 
-                    <div className={`${styles.priceNavItemSubContainer} font1`}>
+                    {/* <div className={`${styles.priceNavItemSubContainer} font1`}>
 
                         {priceItem2.map((item) =>
                         (
@@ -172,15 +199,15 @@ export default function SideBarPricePage() {
                                     <div className={`${styles.titleHeading} font3`}>
 
                                         <div>{item.title} {item.title2}</div>
-                                        {/* <div>{item.title2}</div> */}
+                                   
                                     </div>
-                                    {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
+                                    
                                 </div>
                             </Link>
 
                         ))}
 
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className={`${styles.requestonButton}`} onClick={requestButtonCloseSideBar}  >
