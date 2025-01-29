@@ -160,7 +160,7 @@ export default function SideBarPricePage() {
 
                 </div>
 
-                <div style={{ padding: "0px 20px" }} className={`${styles.priceNavItemContainer}`} >
+                <div  className={`${styles.priceNavItemContainer}`} >
 
 
 
