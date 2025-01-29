@@ -143,6 +143,7 @@ export default function SideBarProductPage() {
 
     const closeSideBarProductPage = () => {
         disPatch(toggleNavBarIcon())
+        handleHomeButton()
 
     }
 

@@ -1,41 +1,5 @@
-.mainPriceContainer {
-    /* position: fixed;
-    width: 100%;
-    top: 65px;
-    background-color: white; */
-    /* background: url("../../assets//phoneNavbar/bg/sideNavBg.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    /* left: 0;
-    height: 100vh;
-    overflow-y: scroll; */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    /* animation: slideIn 0.3s ease-out; */
-    font-size: 16px;
-    background-color: white;
 
 
-}
-
-
-.TopNavBar {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    height: 65px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0px 15px;
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2; */
-    background: white;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
-
-
-}
 
 .breadScrum
 {
