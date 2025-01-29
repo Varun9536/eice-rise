@@ -28,7 +28,7 @@
 .priceNavItemSubContainer {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    /* row-gap: 1rem; */
 
 }
 
@@ -40,8 +40,8 @@
     column-gap: 0.6rem;
     /* border-bottom: 1px solid; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 8px;
-    height: 2.5rem;
+    /* padding-bottom: 8px; */
+    height: 3.2rem;
     padding: 0px 15px;
 
 
@@ -83,6 +83,6 @@
 @media (max-width : 330px)
 {
     .priceDetailBox {
-        height: auto;
+        height: 4rem;
     }
 }

@@ -931,7 +931,7 @@
 }
 
 
-@media (max-width : 280px) {
+@media (max-width : 290px) {
     .section2 {
         margin-top: -17rem;
     }
@@ -962,15 +962,31 @@
     }
 }
 
-@media (max-width : 315px)
+@media (max-width : 370px)
+{
+    
+    .textBox {
+        top: 6%;
+    }
+
+}
+
+
+@media (max-width : 335px)
 {
     
     .iconAndTextBox {
         width: 100px;
         height: auto;
 
-
     }
+
+    .demoButton {
+
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
 }
 
 

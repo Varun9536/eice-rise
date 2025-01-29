@@ -428,7 +428,7 @@ export default function HospitalityPage() {
 
 
     const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
-    const [forSmallestScreen, setforSmallestScreen] = useState(window.innerWidth <= 280);
+    const [forSmallestScreen, setforSmallestScreen] = useState(window.innerWidth <= 290);
 
 
 
@@ -437,7 +437,7 @@ export default function HospitalityPage() {
     useEffect(() => {
         const handleResize = () => {
             setIsPhone(window.innerWidth <= 800);
-            setforSmallestScreen(window.innerWidth <= 280);
+            setforSmallestScreen(window.innerWidth <= 290);
         };
         window.addEventListener('resize', handleResize);
         return () => {
