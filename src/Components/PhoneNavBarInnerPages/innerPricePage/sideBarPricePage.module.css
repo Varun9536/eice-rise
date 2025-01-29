@@ -74,12 +74,19 @@
     display: flex;
     align-items: center;
     column-gap: 0.6rem;
+    /* border-bottom: 1px solid; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 8px;
+    height: 2.5rem;
 
 
 }
 
 .priceIcon {
     width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -89,7 +96,7 @@
 }
 
 .titleHeading {
-    font-size: 16px;
+    font-size: 14px;
 
 }
 
@@ -104,4 +111,12 @@
 {
     margin-top: 5rem;
 
+}
+
+
+@media (max-width : 330px)
+{
+    .priceDetailBox {
+        height: auto;
+    }
 }

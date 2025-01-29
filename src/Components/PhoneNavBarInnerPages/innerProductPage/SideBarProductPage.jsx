@@ -189,8 +189,8 @@ export default function SideBarProductPage() {
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 
-                                        <div>{item.title}</div>
-                                        <div>{item.title2}</div>
+                                        <div>{item.title} {item.title2}</div>
+                                        {/* <div>{item.title2}</div> */}
                                     </div>
                                     {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
                                 </div>
@@ -212,8 +212,8 @@ export default function SideBarProductPage() {
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 
-                                        <div>{item.title}</div>
-                                        <div>{item.title2}</div>
+                                        <div>{item.title} {item.title2}</div>
+                                        {/* <div>{item.title2}</div> */}
                                     </div>
                                     {/* <div className={`${styles.titeDesc} font1`} >{item.description} </div> */}
                                 </div>
