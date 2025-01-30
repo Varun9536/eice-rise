@@ -261,6 +261,30 @@ export default function HospitalityPage() {
         }
     ]
 
+
+
+    const [feedbackImagesLoaded, setFeedBackImagesLoaded] = useState(false);
+    
+        useEffect(() => {
+            const loadImages = async () => {
+                const img1 = new Image();
+                const img2 = new Image();
+                const img3 = new Image();
+    
+                img1.src = c1;
+                img2.src = c2;
+                img3.src = c3;
+    
+                Promise.all([
+                    new Promise((resolve) => (img1.onload = resolve)),
+                    new Promise((resolve) => (img2.onload = resolve)),
+                    new Promise((resolve) => (img3.onload = resolve)),
+                ]).then(() => setFeedBackImagesLoaded(true));
+            };
+    
+            loadImages();
+        }, []);
+
     const [feedBackIndex, setfeedBackIndex] = useState(0);
 
     // Change the current card every 5 seconds (or your desired interval)
@@ -603,11 +627,13 @@ export default function HospitalityPage() {
                             <figure className={styles.card}>
                                 <div className={styles.imgAndClientDetailBox}>
                                     <div className={`${styles.feedBackImgBox}`}>
-                                        <img
+
+                                        {feedbackImagesLoaded && (<img
                                             src={feedback[feedBackIndex].img}
                                             alt={`feedback ${feedBackIndex + 1}`}
                                             className={styles.cardImage}
-                                        />
+                                        />)}
+                                        
                                     </div>
                                     <div>
                                         <figcaption style={{ textAlign: "center" }} > <span className="font1" style={{ fontWeight: "bold" }}>{feedback[feedBackIndex].position}</span> <span className="font1">{feedback[feedBackIndex].company}</span></figcaption>
