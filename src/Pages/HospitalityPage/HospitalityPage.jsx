@@ -369,18 +369,12 @@ export default function HospitalityPage() {
 
                     {!forSmallestScreen && (<div className={`${styles.requestDemoButtonContainer} font1`}>
 
-
-
-
                         <Link style={{ color: "white" }} className="linkClass" to={"form"}>
                             <div className={`${styles.demoButton}`}>
                                 <div> Request a Demo </div>
                                 <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
                             </div>
                         </Link>
-
-
-
 
                     </div>)}
 
