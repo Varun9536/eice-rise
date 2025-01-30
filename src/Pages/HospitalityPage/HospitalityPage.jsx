@@ -270,18 +270,15 @@ export default function HospitalityPage() {
                 const img1 = new Image();
                 const img2 = new Image();
                 const img3 = new Image();
-                const allLaptop = new Image();
     
                 img1.src = c1;
                 img2.src = c2;
                 img3.src = c3;
-                allLaptop.src = allLaptop
     
                 Promise.all([
                     new Promise((resolve) => (img1.onload = resolve)),
                     new Promise((resolve) => (img2.onload = resolve)),
                     new Promise((resolve) => (img3.onload = resolve)),
-                    new Promise((resolve) => (allLaptop.onload = resolve)),
                 ]).then(() => setFeedBackImagesLoaded(true));
             };
     
