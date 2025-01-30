@@ -83,7 +83,7 @@ export default function HospitalityPage() {
 
 
 
-    // const [currentIndex, setCurrentIndex] = useState(0);
+  
 
 
 
@@ -311,7 +311,6 @@ export default function HospitalityPage() {
 
     const [storyIndex, setStoryIndex] = useState(0);
 
-    // Change the current card every 5 seconds (or your desired interval)
     useEffect(() => {
         const interval = setInterval(() => {
             setStoryIndex((prevIndex) =>
@@ -319,119 +318,13 @@ export default function HospitalityPage() {
             );
         }, 5000);
 
-        // Clear interval when the component unmounts
         return () => clearInterval(interval);
     }, []);
 
 
 
-
-
-
-
-
-
-
-
-
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
-    //     }, 3000);
-
-    //     return () => clearInterval(interval);
-    // }, [stories.length]);
-
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setInsightsIndex((prevIndex) => (prevIndex + 1) % insights.length);
-    //     }, 3000);
-
-    //     return () => clearInterval(interval);
-    // }, [insights.length]);
-
-
-
-    // let startX = 0;
-    // let startY = 0;
-
-    // const handleTouchStart = (e) => {
-    //     const touch = e.touches[0];
-    //     startX = touch.clientX;
-    //     startY = touch.clientY;
-    // };
-    // const handleFeedbackChange = (e) => {
-
-    //     const touch = e.touches[0];
-    //     const deltaX = touch.clientX - startX;
-    //     const deltaY = touch.clientY - startY;
-
-    //     if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    //         if (deltaX > 0) {
-    //             //right
-    //             setFeedbackIndex((prevIndex) => (prevIndex - 1 + feedback.length) % feedback.length);
-    //         } else {
-    //             //left
-
-    //             setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-    //         }
-    //     } else {
-    //         if (deltaY > 0) {
-    //             //down
-    //         } else {
-    //             //up
-    //         }
-    //     }
-    // }
-
-
-    // const handleStoryChange = (e) => {
-
-    //     const touch = e.touches[0];
-    //     const deltaX = touch.clientX - startX;
-    //     const deltaY = touch.clientY - startY;
-
-    //     if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    //         if (deltaX > 0) {
-    //             //right
-    //             setCurrentIndex((prevIndex) => (prevIndex - 1 + stories.length) % stories.length);
-    //         } else {
-    //             //left
-    //             setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
-
-    //         }
-    //     } else {
-    //         if (deltaY > 0) {
-    //             //down
-    //         } else {
-    //             //up
-    //         }
-    //     }
-    // }
-
-
-
-
-    // const handleStoryChange = () => {
-    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
-    // }
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setFeedbackIndex((prevIndex) => (prevIndex + 1) % feedback.length);
-    //     }, 3000);
-
-    //     return () => clearInterval(interval);
-    // }, [feedback.length]);
-
-
     const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
     const [forSmallestScreen, setforSmallestScreen] = useState(window.innerWidth <= 290);
-
-
-
 
 
     useEffect(() => {
@@ -488,9 +381,6 @@ export default function HospitalityPage() {
 
 
 
-
-                        {/* <button className={` ${ styles.requestDemoBtn } font1`}>  Request a Demo    </button> 
-<div className={` ${ styles.requestDemoBtn } font1`} ><FaArrowRightLong  /></div> */}
 
                     </div>)}
 

@@ -6,7 +6,7 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import logo from '../../assets/logo/logo.svg';
 import ProductDrop from '../NavDropDown/ProductDrop';
 import PricingDrop from '../NavDropDown/PricingDrop';
-import AboutusDrop from '../NavDropDown/AboutusDrop';
+
 
 
 export default function Navbar() {
