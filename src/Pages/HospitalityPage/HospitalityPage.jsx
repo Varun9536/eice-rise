@@ -224,6 +224,10 @@ export default function HospitalityPage() {
     });
 
 
+
+    
+
+
     const feedback = [
         {
             img: c1,
@@ -592,27 +596,7 @@ export default function HospitalityPage() {
                     <main className={`${styles.feedBack}`}>
 
 
-                        {/* <article onTouchStart={handleTouchStart} onTouchMove={handleFeedbackChange} className={`${styles.feedBackArticleBox} font1`} >
-
-                            <figure  >
-
-                                <div style={{ textAlign: "center" }}  >
-                                    <img style={{ width: "28%" }} src={feedback[feedbackIndex].img} alt="" />
-                                </div>
-
-                                <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{feedback[feedbackIndex].position}</span> <span>{feedback[feedbackIndex].company}</span></figcaption>
-
-                            </figure>
-
-                            <div>
-                                <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedbackIndex].heading}"</div>
-                            </div>
-
-
-
-                            <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedbackIndex].para}</p>
-
-                        </article> */}
+                       
 
 
                         <article className={styles.cardContainer}>

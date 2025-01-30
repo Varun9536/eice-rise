@@ -36,6 +36,29 @@ export default function RequestForm() {
     }, []);
 
 
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {
+        const loadImages = async () => {
+            const img1 = new Image();
+            const img2 = new Image();
+            const img3 = new Image();
+
+            img1.src = ak;
+            img2.src = kd;
+            img3.src = pd;
+
+            Promise.all([
+                new Promise((resolve) => (img1.onload = resolve)),
+                new Promise((resolve) => (img2.onload = resolve)),
+                new Promise((resolve) => (img3.onload = resolve)),
+            ]).then(() => setImagesLoaded(true));
+        };
+
+        loadImages();
+    }, []);
+
+
 
     const [countries, setCountries] = useState([]);
     const [formData, setFormData] = useState({
@@ -523,22 +546,24 @@ export default function RequestForm() {
                     <main className={`${styles.feedBack}`}>
 
 
-                       
+
 
                         <article className={`${styles.cardContainer} font1`}>
                             <div className={styles.card}>
-                                
+
+                                {imagesLoaded && (
                                     <div style={{ textAlign: "center" }}  >
                                         <img style={{ width: "28%" }} src={feedBackArray[feedBackArrayIndex].img} alt="" />
-                                    </div>
+                                    </div>)}
 
-                                    <div className={`${styles.clientInfo}`} > <span >-- {feedBackArray[feedBackArrayIndex].client} ,</span> <span style={{ fontWeight: "bold" }} >{feedBackArray[feedBackArrayIndex].position}</span>  <span>{feedBackArray[feedBackArrayIndex].company}</span></div>
 
-                                    <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
-                                        "{
-                                            feedBackArray[feedBackArrayIndex].heading
-                                        }"
-                                    </div>
+                                <div className={`${styles.clientInfo}`} > <span >-- {feedBackArray[feedBackArrayIndex].client} ,</span> <span style={{ fontWeight: "bold" }} >{feedBackArray[feedBackArrayIndex].position}</span>  <span>{feedBackArray[feedBackArrayIndex].company}</span></div>
+
+                                <div className={`${styles.quoteHeading} blueTextGlobalClass font3`}>
+                                    "{
+                                        feedBackArray[feedBackArrayIndex].heading
+                                    }"
+                                </div>
 
                                 <p style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedBackArray[feedBackArrayIndex].para}</p>
 
