@@ -21,7 +21,7 @@ import SideBarPricePage from '../PhoneNavBarInnerPages/innerPricePage/SideBarPri
 import SideBarProductPage from '../PhoneNavBarInnerPages/innerProductPage/SideBarProductPage';
 import { useDispatch, useSelector } from 'react-redux';
 import { setShowSideBarPge, toggleNavBarIcon } from '../../redux/slice';
-import { div } from "framer-motion/client";
+
 
 
 export default function PhoneNavigationbar() {
@@ -104,6 +104,8 @@ export default function PhoneNavigationbar() {
 
     const innerNavPageActive = useSelector((state) => state.sideBar.showSideBarPge)
 
+
+
     const disPatch = useDispatch()
 
 
@@ -127,7 +129,8 @@ export default function PhoneNavigationbar() {
                 <TopNavBar />
             </div>
 
-            {innerNavPageActive === "Home" && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
+
+            {navbarOpen && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
 
                 <motion.div
                     className={styles.mainMenuContainer}
@@ -139,7 +142,28 @@ export default function PhoneNavigationbar() {
                         damping: 40,
                         mass: 1.5,
                         duration: 0.5, // Increase duration for a slower animation (in seconds)
-        ease: "easeInOut",
+                        ease: "easeInOut",
+                    }}
+                >
+
+                </motion.div>
+            </div>)}
+
+
+
+            {innerNavPageActive === "Home" && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
+
+                <motion.div
+                    className={styles.homeMenuContainer}
+                    initial={{ x: '-100%' }}
+                    animate={{ x: navbarOpen ? 0 : '-100%' }}
+
+                    transition={{
+                        stiffness: 150,
+                        damping: 40,
+                        mass: 1.5,
+                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+                        ease: "easeInOut",
                     }}
                 >
 
@@ -234,7 +258,7 @@ export default function PhoneNavigationbar() {
             {innerNavPageActive === "Products" && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
 
                 <motion.div
-                    className={styles.mainMenuContainer}
+                    className={styles.sideBarProductPageContainer}
                     initial={{ x: '-100%' }}
                     animate={{ x: navbarOpen ? 0 : '-100%' }}
 
@@ -243,16 +267,14 @@ export default function PhoneNavigationbar() {
                         damping: 40,
                         mass: 1.5,
                         duration: 0.5, // Increase duration for a slower animation (in seconds)
-        ease: "easeInOut",
+                        ease: "easeInOut",
                     }}
                 >
 
                     <>
-
                         {innerNavPageActive === "Products" && (<div style={{ paddingBottom: "15rem" }} >
                             <SideBarProductPage />
                         </div>)}
-
                     </>
 
                 </motion.div>
@@ -262,7 +284,7 @@ export default function PhoneNavigationbar() {
             {innerNavPageActive === "Pricing" && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
 
                 <motion.div
-                    className={styles.mainMenuContainer}
+                    className={styles.sideBarPricePageContainer}
                     initial={{ x: '-100%' }}
                     animate={{ x: navbarOpen ? 0 : '-100%' }}
 
@@ -271,17 +293,14 @@ export default function PhoneNavigationbar() {
                         damping: 40,
                         mass: 1.5,
                         duration: 0.5, // Increase duration for a slower animation (in seconds)
-        ease: "easeInOut",
+                        ease: "easeInOut",
                     }}
                 >
 
                     <>
-
-
                         {innerNavPageActive === "Pricing" && (<div style={{ paddingBottom: "15rem" }} >
                             <SideBarPricePage />
                         </div>)}
-
                     </>
 
                 </motion.div>

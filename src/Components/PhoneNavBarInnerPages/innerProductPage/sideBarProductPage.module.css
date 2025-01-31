@@ -90,6 +90,14 @@
 @media (max-width : 330px)
 {
     .productDetailBox {
-        height: auto;
+        height: 4rem;
+        
+    }
+
+    .NavItemSubContainer
+    {
+       row-gap: 0.5rem;
+       
+    
     }
 }

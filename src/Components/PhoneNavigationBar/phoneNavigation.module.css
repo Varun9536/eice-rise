@@ -14,40 +14,11 @@
     width: 100%;
     z-index: 2;
     background: white;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.24);
-    
-   
-    
-
 
 }
 
 
-
-/* @keyframes slideIn {
-    from {
-        transform: translateX(100%);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-} */
-/* 
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-} */
 
 
 .mainMenuContainer {
@@ -55,16 +26,49 @@
     width: 100%;
     top: 65px;
     background-color: white;
-    
     left: 0;
     height: 100vh;
     overflow-y: scroll;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-   
-   
-    /* padding-bottom: 200px; */
-   
+
+
+}
+
+.homeMenuContainer
+{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sideBarProductPageContainer
+{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.sideBarPricePageContainer
+{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 }
 
