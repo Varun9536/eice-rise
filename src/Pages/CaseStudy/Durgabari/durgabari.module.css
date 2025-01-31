@@ -552,3 +552,13 @@
 
 
 }
+
+
+@media (max-width : 360px)
+{
+    .iconAndTextBox
+    {
+        width: 7rem;
+        height: auto;
+    }
+}
