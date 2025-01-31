@@ -457,7 +457,7 @@ export default function HospitalityPage() {
 
             {/* section3 */}
 
-            <div className={` ${styles.requestDemoButtonContainer2} font1`}>
+            {/* <div className={` ${styles.requestDemoButtonContainer2} font1`}>
 
                 <Link style={{ color: "white" }} className="linkClass" to={"form"}>
                     <div className={`${styles.demoButton}`}>
@@ -466,11 +466,11 @@ export default function HospitalityPage() {
                     </div>
                 </Link>
 
-            </div>
+            </div> */}
 
 
 
-            <section className={`${styles.section3} globalSectionSize`}>
+            {/* <section className={`${styles.section3} globalSectionSize`}>
 
                 <div className={`${styles.section3Heading} font3`}>With deep expertise in <span className={` blueTextGlobalClass font2`}>Hospitality Technology</span> , we have
                     perfected the art of delivering efficient, scalable, and tailored
@@ -494,7 +494,7 @@ export default function HospitalityPage() {
 
 
 
-            </section>
+            </section> */}
 
 
             {/* section4 */}
