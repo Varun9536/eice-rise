@@ -15,11 +15,7 @@ export default function TopNavBar() {
 
     const handleIconChange = ()=>
     {
-        
-        
         disPatch(toggleSideBar())
-       
-
     }
 
 

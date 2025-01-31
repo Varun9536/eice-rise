@@ -78,6 +78,9 @@ import footerlaptop from "../../assets/section3Laptop/pos2.webp"
 import { useSpring, animated, useTransition } from "@react-spring/web";
 
 
+
+
+
 export default function HospitalityPage() {
 
 
