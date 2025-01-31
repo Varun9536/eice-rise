@@ -18,7 +18,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
 import ContactUs from "../../contactUs/ContactUs"
 import { useDispatch } from "react-redux"
-import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice"
+import { setShowSideBarPge, toggleNavBarIcon, toggleSideBar } from "../../../redux/slice"
 
 
 export default function SideBarPricePage() {
@@ -99,14 +99,14 @@ export default function SideBarPricePage() {
 
     }
 
-    const closeSidebarPricePage = () => {
-        dispatch(toggleNavBarIcon())
+    const handlePriceItems = () => {
+        dispatch(toggleSideBar())
 
     }
 
-    const requestButtonCloseSideBar = () => {
-        dispatch(toggleNavBarIcon())
-        handleHomeButton()
+    const handleRequestBtn = () => {
+        dispatch(toggleSideBar())
+
     }
 
     return (
@@ -141,7 +141,7 @@ export default function SideBarPricePage() {
                         {priceItem1.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSidebarPricePage} className={`${styles.priceDetailBox}`}>
+                                <div onClick={handlePriceItems} className={`${styles.priceDetailBox}`}>
                                     <div className={`${styles.priceIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -162,7 +162,7 @@ export default function SideBarPricePage() {
 
 
                 </div>
-                <div className={`${styles.requestonButton}`} onClick={requestButtonCloseSideBar}  >
+                <div className={`${styles.requestonButton}`} onClick={handleRequestBtn}  >
                     <RequestButton />
                 </div>
 

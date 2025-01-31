@@ -26,7 +26,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import RequestButton from "../../requestDemoButton/RequestButton"
 import ContactUs from "../../contactUs/ContactUs"
 import { useDispatch } from "react-redux"
-import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice"
+import { setShowSideBarPge, toggleNavBarIcon , toggleSideBar } from "../../../redux/slice"
+import { IoHandLeftSharp } from "react-icons/io5"
 
 export default function SideBarProductPage() {
 
@@ -141,14 +142,14 @@ export default function SideBarProductPage() {
         disPatch(setShowSideBarPge("Home"))
     }
 
-    const closeSideBarProductPage = () => {
-        disPatch(toggleNavBarIcon())
+    const handleProductItems = () => {
+        disPatch(toggleSideBar())
 
     }
 
-    const requestButtonCloseSideBar = () => {
-        disPatch(toggleNavBarIcon())
-        handleHomeButton()
+    const handleRequestBtn = () => {
+        disPatch(toggleSideBar())
+        
     }
 
     return (
@@ -183,7 +184,7 @@ export default function SideBarProductPage() {
                         {product1.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSideBarProductPage} className={`${styles.productDetailBox}`}>
+                                <div onClick={handleProductItems} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -206,7 +207,7 @@ export default function SideBarProductPage() {
                         {product2.map((item) =>
                         (
                             <Link className="linkClass" key={item.key} to={item.path}>
-                                <div onClick={closeSideBarProductPage} className={`${styles.productDetailBox}`}>
+                                <div onClick={handleProductItems} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
                                         <img className={`${styles.iconSize}`} src={item.icon} alt="" />
                                     </div>
@@ -225,7 +226,7 @@ export default function SideBarProductPage() {
 
                 </div>
 
-                <div onClick={requestButtonCloseSideBar} className={`${styles.requestonButton}`} >
+                <div onClick={handleRequestBtn} className={`${styles.requestonButton}`} >
                     <RequestButton />
                 </div>
 

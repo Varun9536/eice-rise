@@ -5,18 +5,19 @@ import logo from "../../../assets/logo/logo.svg"
 
 
 import { useSelector , useDispatch } from "react-redux";
-import { setShowSideBarPge, toggleNavBarIcon } from "../../../redux/slice";
+import { setShowSideBarPge, toggleNavBarIcon , toggleSideBar } from "../../../redux/slice";
 
 export default function TopNavBar() {
 
-    const navIcon = useSelector((state) => state.sideBar.navbarIcon);
+    const setSidebar = useSelector((state) => state.sideBar.sidebarOpen);
 
     const disPatch  = useDispatch()
 
     const handleIconChange = ()=>
     {
         
-        disPatch(toggleNavBarIcon())
+        // disPatch(toggleNavBarIcon())
+        disPatch(toggleSideBar())
         disPatch(setShowSideBarPge("Home"))
 
     }
@@ -25,7 +26,7 @@ export default function TopNavBar() {
     return (
         <>
             <div>
-                {navIcon ?
+                {setSidebar ?
                     (< IoCloseSharp className={styles.menuIcon} onClick={() => { handleIconChange() }} size={36} />) :
                     (<HiOutlineBars3 className={styles.closeIcon} onClick={() => { handleIconChange() }} size={36} />)}
             </div>

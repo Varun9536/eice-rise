@@ -20,7 +20,7 @@ import ContactUs from '../contactUs/ContactUs';
 import SideBarPricePage from '../PhoneNavBarInnerPages/innerPricePage/SideBarPricePage';
 import SideBarProductPage from '../PhoneNavBarInnerPages/innerProductPage/SideBarProductPage';
 import { useDispatch, useSelector } from 'react-redux';
-import { setShowSideBarPge, toggleNavBarIcon } from '../../redux/slice';
+import { setShowSideBarPge, toggleNavBarIcon , toggleSideBar } from '../../redux/slice';
 
 
 
@@ -73,7 +73,8 @@ export default function PhoneNavigationbar() {
 
 
 
-    const navbarOpen = useSelector((state) => state.sideBar.navbarIcon);
+    // const navbarOpen = useSelector((state) => state.sideBar.navbarIcon);
+    const setSidebar = useSelector((state) => state.sideBar.sidebarOpen);
 
     const innerNavPageActive = useSelector((state) => state.sideBar.showSideBarPge)
 
@@ -87,7 +88,7 @@ export default function PhoneNavigationbar() {
     }
 
     const closeSideBar = () => {
-        disPatch(toggleNavBarIcon())
+        disPatch(toggleSideBar())
         disPatch(setShowSideBarPge("Home"))
     }
 
@@ -103,12 +104,12 @@ export default function PhoneNavigationbar() {
             </div>
 
 
-            {navbarOpen && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
+            {setSidebar && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
 
                 <motion.div
                     className={styles.mainMenuContainer}
                     initial={{ x: '-100%' }}
-                    animate={{ x: navbarOpen ? 0 : '-100%' }}
+                    animate={{ x: setSidebar ? 0 : '-100%' }}
 
                     transition={{
                         stiffness: 150,
@@ -127,9 +128,10 @@ export default function PhoneNavigationbar() {
             {innerNavPageActive === "Home" && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
 
                 <motion.div
+
                     className={styles.homeMenuContainer}
                     initial={{ x: '-100%' }}
-                    animate={{ x: navbarOpen ? 0 : '-100%' }}
+                    animate={{ x: setSidebar ? 0 : '-100%' }}
 
                     transition={{
                         stiffness: 150,
@@ -141,7 +143,7 @@ export default function PhoneNavigationbar() {
                 >
 
                     <>
-                        {innerNavPageActive === "Home" && (<div className={styles.menuBox}>
+                        <div className={styles.menuBox}>
 
                             <div className={`${styles.navigationContainer}`}>
 
@@ -218,8 +220,7 @@ export default function PhoneNavigationbar() {
                                 <ContactUs />
                             </div>
 
-                        </div>)}
-
+                        </div>
                     </>
 
                 </motion.div>
@@ -233,7 +234,7 @@ export default function PhoneNavigationbar() {
                 <motion.div
                     className={styles.sideBarProductPageContainer}
                     initial={{ x: '-100%' }}
-                    animate={{ x: navbarOpen ? 0 : '-100%' }}
+                    animate={{ x: setSidebar ? 0 : '-100%' }}
 
                     transition={{
                         stiffness: 150,
@@ -244,9 +245,9 @@ export default function PhoneNavigationbar() {
                     }}
                 >
                     <>
-                        {innerNavPageActive === "Products" && (<div style={{ paddingBottom: "15rem" }} >
+                        <div style={{ paddingBottom: "15rem" }} >
                             <SideBarProductPage />
-                        </div>)}
+                        </div>
                     </>
 
                 </motion.div>
@@ -258,7 +259,7 @@ export default function PhoneNavigationbar() {
                 <motion.div
                     className={styles.sideBarPricePageContainer}
                     initial={{ x: '-100%' }}
-                    animate={{ x: navbarOpen ? 0 : '-100%' }}
+                    animate={{ x: setSidebar ? 0 : '-100%' }}
 
                     transition={{
                         stiffness: 150,
@@ -269,9 +270,9 @@ export default function PhoneNavigationbar() {
                     }}
                 >
                     <>
-                        {innerNavPageActive === "Pricing" && (<div style={{ paddingBottom: "15rem" }} >
+                        <div style={{ paddingBottom: "15rem" }} >
                             <SideBarPricePage />
-                        </div>)}
+                        </div>
                     </>
 
                 </motion.div>
