@@ -227,8 +227,6 @@ export default function PhoneNavigationbar() {
             </div>)}
 
 
-
-
             {innerNavPageActive === "Products" && (<div className='font1' style={{ position: "relative", zIndex: "999" }}>
 
                 <motion.div

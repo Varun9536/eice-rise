@@ -16,9 +16,9 @@ export default function TopNavBar() {
     const handleIconChange = ()=>
     {
         
-        // disPatch(toggleNavBarIcon())
+        
         disPatch(toggleSideBar())
-        disPatch(setShowSideBarPge("Home"))
+       
 
     }
 
