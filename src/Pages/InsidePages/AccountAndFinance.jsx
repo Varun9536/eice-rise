@@ -64,7 +64,7 @@ export default function AccountAndFinance() {
   }, []);
 
 
-
+  
   const features = [
     {
       key: 1,
@@ -265,10 +265,8 @@ export default function AccountAndFinance() {
 
             </div>
 
-            <div style={{
-              backgroundImage: 'url("../../../assets/allHero/accounth.webp")',
-            }} className={`${style.herosectionImgBox}`}>
-
+            <div className={`${style.herosectionImgBox}`}>
+              {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
             </div>
 
           </div>
@@ -428,7 +426,7 @@ export default function AccountAndFinance() {
                       {item.heading}
                     </div>
 
-
+                    
 
                   </div>
 

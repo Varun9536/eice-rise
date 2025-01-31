@@ -67,7 +67,7 @@
 
 .herosectionImgBox {
     width: 50%;
-    /* background-image: url("../../../assets/allHero/new/banquetH.webp"); */
+    background-image: url("../../../assets/allHero/new/banquetH.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
