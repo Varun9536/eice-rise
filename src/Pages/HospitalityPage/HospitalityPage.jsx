@@ -574,7 +574,7 @@ export default function HospitalityPage() {
 
                                 </figure>
                                 <div>
-                                    {item.key === 2 ? (<div className={`${styles.cardBoxInnerHeading2} blueTextGlobalClass font3`} >"{item.heading}"</div>) : (<div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>)}
+                                    <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{item.heading}"</div>
                                 </div>
 
 
@@ -647,9 +647,6 @@ export default function HospitalityPage() {
                                     <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[feedBackIndex].heading}"</div>
                                 </div>
 
-
-
-
                                 <p className="font1" style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[feedBackIndex].para}</p>
                             </figure>
                         </article>
@@ -705,28 +702,6 @@ export default function HospitalityPage() {
 
                 <div className={`${styles.storySection} font1`}>
 
-
-                    {/* <div onTouchStart={handleTouchStart} onTouchMove={handleStoryChange} className={`${styles.storyBox}`}>
-
-                        <div >
-                            <img style={{ width: "100%" }} src={stories[currentIndex].img} alt="storyimg" />
-                        </div>
-
-                        <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
-                            {stories[currentIndex].heading}
-                        </div>
-
-                        <p style={{ lineHeight: "1.8rem", marginBottom: stories[currentIndex].margin }} >{stories[currentIndex].para}</p>
-
-
-                        <Link to={stories[currentIndex].link} className="linkClass">
-                            <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
-                                View More
-                            </div>
-                        </Link>
-
-                    </div> */}
-
                     <article className={styles.storyCardContainer}>
                         <div className={styles.storyCard}>
 
@@ -747,36 +722,6 @@ export default function HospitalityPage() {
                                 </div>
                             </Link>
 
-
-
-
-
-
-
-
-
-
-                            {/* <div className={styles.imgAndClientDetailBox}>
-                                <div className={`${styles.feedBackImgBox}`}>
-                                    <img
-                                        src={feedback[currentIndex2].img}
-                                        alt={`feedback ${currentIndex2 + 1}`}
-                                        className={styles.cardImage}
-                                    />
-                                </div>
-                                <div>
-                                    <figcaption style={{ textAlign: "center" }} > <span className="font1" style={{ fontWeight: "bold" }}>{feedback[currentIndex2].position}</span> <span className="font1">{feedback[currentIndex2].company}</span></figcaption>
-                                </div>
-                            </div> */}
-
-                            {/* <div>
-                                <div className={`${styles.cardBoxInnerHeading} blueTextGlobalClass font3`} >"{feedback[currentIndex2].heading}"</div>
-                            </div> */}
-
-
-
-
-                            {/* <p className="font1" style={{ textAlign: "center", lineHeight: "1.8rem" }}>{feedback[currentIndex2].para}</p> */}
                         </div>
                     </article>
 
@@ -797,11 +742,6 @@ export default function HospitalityPage() {
             </section>) : (<section className={`${styles.section6} globalSectionSize`}>
                 <div className={`${styles.section6Heading} font1`}>
 
-
-
-
-
-
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
                             <img style={{ width: "100%" }} src={h2} alt="" />
@@ -811,8 +751,6 @@ export default function HospitalityPage() {
                             Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
                         </div>
                     </div>
-
-
 
                 </div>
 
@@ -856,11 +794,6 @@ export default function HospitalityPage() {
 
             <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
             <FooterLower />
-
-
-
-
-
 
         </>
     )

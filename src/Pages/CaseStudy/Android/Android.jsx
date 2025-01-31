@@ -134,11 +134,6 @@ export default function Android() {
 
             </div>)}
 
-
-
-
-
-
             <section className={`${styles.challengeSection} globalSectionSize `} >
 
                 <div className={`${styles.sectionHeading} font3 `}>
@@ -164,8 +159,6 @@ export default function Android() {
                                 </li>
                             ))}
                         </ul>
-
-
 
                     </div>
 
@@ -201,12 +194,8 @@ export default function Android() {
                                     <span className="font3">{item.key}:</span> <span className="font1" > {item.value}</span>
                                 </div>
                             </div>
-
-
                         </Link>
                     ))}
-
-
 
 
                 </div>

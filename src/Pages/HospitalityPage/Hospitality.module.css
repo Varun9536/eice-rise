@@ -401,39 +401,6 @@
 }
 
 
-/* 
-.section7 {
-    margin-bottom: 3rem;
-}
-
-
-.section7Heading {
-    margin-bottom: 20px;
-    font-size: 32px;
-    font-weight: 900;
-    text-align: center;
-
-}
-
-.insightSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 20px;
-    row-gap: 30px;
-
-} */
-/* 
-.insightBox {
-    width: 370px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 5px;
-}
-
-
-
- */
 
 
 .cardBoxStoryInnerHeading {
@@ -461,13 +428,6 @@
     padding: 0px 50px;
 }
 
-.cardBoxInnerHeading2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0px;
-    text-align: center;
-    padding: 0px 60px;
-}
 
 
 /* shift of top section when phone nav bar  appear */
