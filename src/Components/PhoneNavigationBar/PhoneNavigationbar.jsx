@@ -30,11 +30,7 @@ export default function PhoneNavigationbar() {
 
 
     const navigationItems = [
-        // {
-        //     key: 1,
-        //     navName: "Home", path: "/",
-        //     innerNavPage: false
-        // },
+        
         {
             key: 2,
             navName: "Products", path: "",
@@ -73,29 +69,6 @@ export default function PhoneNavigationbar() {
 
 
     ];
-
-
-    const navItem2 = [
-        {
-            key: 3,
-            navName: "About Us", path: "https://www.eicetechnology.com/About",
-            innerNavPage: false
-
-
-        },
-
-        {
-            key: 5,
-            navName: "Blogs", path: "https://www.eicetechnology.com/Resources",
-            innerNavPage: false
-        },
-    ]
-
-
-
-
-
-
 
 
 
@@ -141,7 +114,7 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
-                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+                        duration: 0.5, 
                         ease: "easeInOut",
                     }}
                 >
@@ -162,7 +135,7 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
-                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+                        duration: 0.5, 
                         ease: "easeInOut",
                     }}
                 >
@@ -266,11 +239,10 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
-                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+                        duration: 0.5, 
                         ease: "easeInOut",
                     }}
                 >
-
                     <>
                         {innerNavPageActive === "Products" && (<div style={{ paddingBottom: "15rem" }} >
                             <SideBarProductPage />
@@ -292,11 +264,10 @@ export default function PhoneNavigationbar() {
                         stiffness: 150,
                         damping: 40,
                         mass: 1.5,
-                        duration: 0.5, // Increase duration for a slower animation (in seconds)
+                        duration: 0.5, 
                         ease: "easeInOut",
                     }}
                 >
-
                     <>
                         {innerNavPageActive === "Pricing" && (<div style={{ paddingBottom: "15rem" }} >
                             <SideBarPricePage />
