@@ -8,13 +8,9 @@ import { Link } from "react-router-dom"
 import account from "../../../assets/Hospitality/allPageIcon/Account.png"
 import pos from "../../../assets/Hospitality/allPageIcon/POS.png"
 import banquet from "../../../assets/Hospitality/allPageIcon/Banquet.png"
-import emp from "../../../assets/Hospitality/allPageIcon/Employee.png"
-import food from "../../../assets/Hospitality/allPageIcon/Food.png"
-import inentry from "../../../assets/Hospitality/allPageIcon/store.png"
 import member from "../../../assets/Hospitality/allPageIcon/Member.png"
-import pay from "../../../assets/Hospitality/allPageIcon/PAyscale.png"
 import room from "../../../assets/Hospitality/allPageIcon/Room.png"
-import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
+
 
 import { useState, useEffect } from "react"
 
@@ -246,8 +242,6 @@ export default function Durgabari() {
 
             <section className={`${styles.section2} `}>
 
-
-
                 <div className={`${styles.moduleboxAndHeading}  globalSectionSize `} >
 
                     <div className={`${styles.moduleIncludedHeading} font4`}>The Enterprise Suite included the following modules:</div>
@@ -264,24 +258,16 @@ export default function Durgabari() {
                                     <div className={styles.imgBox} >
                                         <img src={item.icon} alt="" />
                                     </div>
+
                                     <div>
                                         {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
                                     </div>
-
                                 </div>
-
                             </Link>
-
                         ))}
                     </div>
 
                 </div>
-
-
-
-
-
-
             </section>
 
 
@@ -292,8 +278,6 @@ export default function Durgabari() {
                 </div>
 
                 <div className={`${styles.informationBox} font1 `}>
-
-                    
 
                     <div className={`${styles.statement2}`} >
                         <ul>
@@ -307,12 +291,7 @@ export default function Durgabari() {
                             ))}
                         </ul>
 
-
-
                     </div>
-
-                    
-
                 </div>
 
             </section>
@@ -361,23 +340,8 @@ export default function Durgabari() {
                                 </div>
 
                             </div>
-
-
-
-
-
-
-
-
                         ))}
-
-
-
-
                     </div>
-
-                   
-
                 </div>
 
             </section>
@@ -400,8 +364,6 @@ export default function Durgabari() {
                         ))}
                     </ul>
 
-
-
                 </div>
 
             </section>
@@ -419,7 +381,6 @@ export default function Durgabari() {
 
 
                 <div className={`${styles.conclusionPara} font1`}>
-                    {/* By implementing the Enterprise Suite, <span className="font2 blueTextGlobalClass">EICE Technology empowered IIC to overcome its operational challenges, enhance security, and foster seamless multi-user interactions</span> . The result was a scalable, efficient, and secure system that aligned with IIC's vision for the future. */}
                     The implementation of the <span className="font2 blueTextGlobalClass" >Club Suite was a pivotal moment for the Houston Durga Bari Society</span> . By addressing their operational challenges holistically, <span className="font2 blueTextGlobalClass" >EICE Technology enabled HDBS to embrace a future-ready, scalable platform</span>  that not only optimized their workflows but also reinforced their cultural and religious values across their global community
                 </div>
 

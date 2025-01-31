@@ -26,22 +26,15 @@ export default function IIC() {
     const [isPhone, setIsPhone] = useState(window.innerWidth <= 800);
 
 
-
-
-
     useEffect(() => {
         const handleResize = () => {
-            setIsPhone(window.innerWidth <= 800); // Update based on screen size
+            setIsPhone(window.innerWidth <= 800);
         };
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-
-    
-
 
     const challenges = [
         {
@@ -139,11 +132,6 @@ export default function IIC() {
     ]
 
 
-
-
-
-
-
     const valueToClient = [
         {
             id: 1,
@@ -215,7 +203,7 @@ export default function IIC() {
 
                 </header>) : (<header className={`${styles.pageMainHeading}`}>
 
-                    {/* <span className={`font2 blueTextGlobalClass `} >IIC</span>  <span className="font4" > SKY</span> */}
+
                     <div>
                         <span className={`font2 blueTextGlobalClass `}>Enterprise Suite</span><span className={"font1"} >: Empowering Indian</span>
                     </div>
