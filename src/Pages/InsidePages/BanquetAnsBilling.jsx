@@ -19,7 +19,7 @@ import dci from "../../assets/insidePages/banquet/icon/dci.png"
 import irm from "../../assets/insidePages/banquet/icon/irm.png"
 
 
-import { useEffect , useState } from "react"
+import { useEffect, useState } from "react"
 
 
 
@@ -48,20 +48,20 @@ import FooterLower from "../../Components/Footer/FooterLower.jsx"
 export default function BanquetAnsBilling() {
 
 
- const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
+  const [isPhone, setIsPhone] = useState(window.innerWidth <= 980);
 
 
- 
+
 
 
   useEffect(() => {
-      const handleResize = () => {
-          setIsPhone(window.innerWidth <= 980); // Update based on screen size
-      };
-      window.addEventListener('resize', handleResize);
-      return () => {
-          window.removeEventListener('resize', handleResize);
-      };
+    const handleResize = () => {
+      setIsPhone(window.innerWidth <= 980); // Update based on screen size
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
 
@@ -198,59 +198,61 @@ export default function BanquetAnsBilling() {
     <>
 
 
-     {isPhone ? ( <section className={`${style.section1ContainerPhone}  `}>
+      {isPhone ? (<section className={`${style.section1ContainerPhone}  `}>
 
-<div className={`${style.contentConatinerPhone}`}>
+        <div className={`${style.contentConatinerPhone}`}>
 
-    <div className={`${style.headingBoxPhone} font4 `}>
-        <div className={`${style.mainHeadingPhone}`}>
-        <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
-        </div>
-        <div className={`${style.mainParaPhone}`}>
-        Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
-        </div>
-
-
-    </div>
-
-    <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={herosectionImg} alt={"room booking"} />
-    </div>
-
-
-</div>
-
-</section>):(<section className={`${style.section1Container}  `}>
-      
-      
-      <div className={`${style.fadeBackgroundConatiner}`}>
-
-        <div className={`${style.contentConatiner}`}>
-
-          <div className={`${style.headingBox} font4 `}>
-            <div className={`${style.mainHeading}`}>
+          <div className={`${style.headingBoxPhone} font4 `}>
+            <div className={`${style.mainHeadingPhone}`}>
               <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
             </div>
-            <div className={`${style.mainPara}`}>
-            Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
+            <div className={`${style.mainParaPhone}`}>
+              Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
             </div>
 
 
           </div>
 
-          <div className={`${style.herosectionImgBox}`}>
-            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+          <div className={`${style.herosectionImgBoxPhone}`}>
+            <img style={{ width: "100%" }} src={herosectionImg} alt={"room booking"} />
+          </div>
+
+
+        </div>
+
+      </section>) : (<section className={`${style.section1Container}  `}>
+
+
+        <div className={`${style.fadeBackgroundConatiner}`}>
+
+          <div className={`${style.contentConatiner}`}>
+
+            <div className={`${style.headingBox} font4 `}>
+              <div className={`${style.mainHeading}`}>
+                <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
+              </div>
+              <div className={`${style.mainPara}`}>
+                Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
+              </div>
+
+
+            </div>
+
+            <div style={{
+              backgroundImage: 'url("../../../assets/allHero/new/banquetH.webp")',
+            }} className={`${style.herosectionImgBox}`}>
+
+            </div>
+
           </div>
 
         </div>
 
-      </div>
+      </section>)}
 
-    </section>)}
 
-        
-      
- 
+
+
 
       <section style={{ backgroundColor: "#f5f5f5" }}>
         <div className={`${style.section2} font4 globalSectionSize`}>
@@ -376,7 +378,7 @@ export default function BanquetAnsBilling() {
                       {item.heading}
                     </div>
 
-                    
+
 
                   </div>
 
@@ -397,19 +399,19 @@ export default function BanquetAnsBilling() {
 
       <section className={`${style.requestDemoBtn}`}>
 
-      <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
-                  <div className={`${style.demoButton} font1`}>
-                    <div > Request a Demo </div>
-                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                  </div>
-      
-                </div>
-              </Link>
+        <Link style={{ color: "white" }} className="linkClass" to={"/form"}>
+          <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+            <div className={`${style.demoButton} font1`}>
+              <div > Request a Demo </div>
+              <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+            </div>
+
+          </div>
+        </Link>
 
       </section>
 
-      
+
 
 
 
