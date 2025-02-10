@@ -143,7 +143,7 @@ export default function SideBarPricePage() {
                             <Link className="linkClass" key={item.key} to={item.path}>
                                 <div onClick={handlePriceItems} className={`${styles.priceDetailBox}`}>
                                     <div className={`${styles.priceIcon}`}>
-                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt={item.title} />
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 

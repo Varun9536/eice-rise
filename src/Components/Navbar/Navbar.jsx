@@ -61,7 +61,7 @@ export default function Navbar() {
 
                 <div className={`${styles.eiceRiseLogoBox}`}>
                     <Link to={"/"}>
-                        <img className={`${styles.eiceRiseLogo}`} src={logo} alt="Logo" />
+                        <img className={`${styles.eiceRiseLogo}`} src={logo} alt="eice technology" />
                     </Link>
 
                 </div>

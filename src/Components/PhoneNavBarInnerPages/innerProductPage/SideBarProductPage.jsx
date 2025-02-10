@@ -186,7 +186,7 @@ export default function SideBarProductPage() {
                             <Link className="linkClass" key={item.key} to={item.path}>
                                 <div onClick={handleProductItems} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
-                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt={item.title} />
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 
@@ -209,7 +209,7 @@ export default function SideBarProductPage() {
                             <Link className="linkClass" key={item.key} to={item.path}>
                                 <div onClick={handleProductItems} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
-                                        <img className={`${styles.iconSize}`} src={item.icon} alt="" />
+                                        <img className={`${styles.iconSize}`} src={item.icon} alt={item.title} />
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 

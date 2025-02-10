@@ -186,7 +186,7 @@ export default function Android() {
 
                                 <div className={`${styles.moduleImgBorder}`}>
                                     <div className={`${styles.iconWidth}`}>
-                                        <img style={{ width: "100%" }} src={item.icon} alt="" />
+                                        <img style={{ width: "100%" }} src={item.icon} alt={item.key} />
                                     </div>
                                 </div>
 
@@ -237,7 +237,7 @@ export default function Android() {
                 <div className={`${styles.imgAndParaBox}  font1`}>
 
                     <div className={`${styles.valueClientImg}`}>
-                        <img style={{ width: "100%" }} src={family} alt="" />
+                        <img style={{ width: "100%" }} src={family} alt="client" />
                     </div>
 
                     <div className={`${styles.valueToClientPara}`}>

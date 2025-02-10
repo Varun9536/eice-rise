@@ -36,7 +36,7 @@ export default function FooterUpperPart({ text1, text2, text3, img }) {
 
 
                 <div className={`${styles.footerLaptopImg}`} >
-                    <img style={{ width: "100%", }} src={img} alt="" />
+                    <img style={{ width: "100%", }} src={img} alt="eice technology" />
 
                 </div>
 
