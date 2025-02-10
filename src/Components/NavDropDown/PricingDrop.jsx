@@ -127,7 +127,7 @@ export default function PricingDrop() {
                         <Link className="linkClass" key={item.key} to={item.path}>
                             <div className={`${styles.productDetailBox}`} >
                                 <div className={`${styles.productIcon}`}>
-                                    <img className={`${styles.iconSize}`} src={item.icon} {item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon} alt= {item.title} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>
