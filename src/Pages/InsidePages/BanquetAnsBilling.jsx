@@ -198,7 +198,7 @@ export default function BanquetAnsBilling() {
     <>
 
 
-     {isPhone ? ( <section className={`${style.section1ContainerPhone}  `}>
+     {isPhone ? ( <section className={`${style.heroSectionConatinerPhone}  `}>
 
 <div className={`${style.contentConatinerPhone}`}>
 
@@ -220,7 +220,7 @@ export default function BanquetAnsBilling() {
 
 </div>
 
-</section>):(<section className={`${style.section1Container}  `}>
+</section>):(<section className={`${style.heroSectionConatiner}  `}>
       
       
       <div className={`${style.fadeBackgroundConatiner}`}>

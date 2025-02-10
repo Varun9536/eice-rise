@@ -1,16 +1,16 @@
 
 
-.section1Container {
+.heroSectionConatiner {
     width: 100%;
 
-    padding-top: 10rem;
+    padding-top: 7rem;
     margin: 0px auto;
     margin-bottom: 3rem;
 
 }
 
 /* @media (max-width : 980px) {
-    .section1Container {
+    .heroSectionConatiner {
         display: none;
     }
 
@@ -19,7 +19,7 @@
 
 
 @media (min-width : 980px) {
-    .section1ContainerPhone {
+    .heroSectionConatinerPhone {
         display: none;
     }
 
@@ -323,7 +323,7 @@
         width: 100%
     }
 
-    .section1ContainerPhone {
+    .heroSectionConatinerPhone {
         margin-top: 6rem;
         margin-bottom: 2rem;
     }

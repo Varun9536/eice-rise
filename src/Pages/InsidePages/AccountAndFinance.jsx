@@ -247,7 +247,7 @@ export default function AccountAndFinance() {
 
 
 
-      {!isPhone && (<section className={`${style.section1Container}  `}>
+      {!isPhone && (<section className={`${style.heroSectionConatiner}  `}>
 
 
         <div className={`${style.fadeBackgroundConatiner}`}>
@@ -277,7 +277,7 @@ export default function AccountAndFinance() {
 
 
 
-      {isPhone && (<section className={`${style.section1ContainerPhone}  `}>
+      {isPhone && (<section className={`${style.heroSectionConatinerPhone}  `}>
 
         <div className={`${style.contentConatinerPhone}`}>
 

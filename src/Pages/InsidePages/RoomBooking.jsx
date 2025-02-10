@@ -239,7 +239,7 @@ export default function RoomBooking() {
     return (
         <>
 
-{isPhone ? (  <section className={`${style.section1ContainerPhone}  `}>
+{isPhone ? (  <section className={`${style.heroSectionConatinerPhone}  `}>
 
 <div className={`${style.contentConatinerPhone}`}>
 
@@ -261,7 +261,7 @@ export default function RoomBooking() {
 
 </div>
 
-</section>) : ( <section className={`${style.section1Container}  `}>
+</section>) : ( <section className={`${style.heroSectionConatiner}  `}>
 
 
 <div className={`${style.fadeBackgroundConatiner}`}>

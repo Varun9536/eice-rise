@@ -4,7 +4,7 @@
     /* height: 20rem; */
     background-color: white;
     border-radius: 5px;
-    border: 1px solid rgba(238, 173, 173, 0.2);
+   
     display: flex;
     flex-direction: column;
    
@@ -21,19 +21,38 @@
    
 }
 
-.productDetailBox
-{
+
+
+
+
+.productDetailBox {
+   
     width: 14rem;
-  
+
 }
 
 
-
-.productDetailBox:hover .titleHeading
-{
-    
-    border-bottom: 2px solid rgba(1, 176, 241, 1);
+.productDetailBox .titleHeading {
+    position: relative;
+    padding-bottom: 6px;
 }
+
+
+.productDetailBox .titleHeading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.5s ease-in-out;
+}
+
+.productDetailBox:hover .titleHeading::after {
+    width: 100%;
+}
+
 
 
 

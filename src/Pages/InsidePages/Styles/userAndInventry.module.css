@@ -1,9 +1,9 @@
 
 
-.section1Container {
+.heroSectionConatiner {
     width: 100%;
 
-    padding-top: 10rem;
+    padding-top: 7rem;
     margin: 0px auto;
     margin-bottom: 3rem;
 
@@ -311,7 +311,7 @@
         width: 100%
     }
 
-    .section1ContainerPhone {
+    .heroSectionConatinerPhone {
         margin-top: 6rem;
         margin-bottom: 2rem;
     }

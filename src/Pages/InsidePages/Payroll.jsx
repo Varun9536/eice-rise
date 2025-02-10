@@ -218,7 +218,7 @@ export default function Payroll() {
 
 
 
-     {isPhone ? (    <section className={`${style.section1ContainerPhone}  `}>
+     {isPhone ? (    <section className={`${style.heroSectionConatinerPhone}  `}>
             
             <div className={`${style.contentConatinerPhone}`}>
 
@@ -240,7 +240,7 @@ export default function Payroll() {
 
             </div>
 
-        </section>):(   <section className={`${style.section1Container}  `}>
+        </section>):(   <section className={`${style.heroSectionConatiner}  `}>
       
       
       <div className={`${style.fadeBackgroundConatiner}`}>

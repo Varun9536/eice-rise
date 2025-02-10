@@ -203,7 +203,7 @@ export default function UserAndInventry() {
 
 
             {isPhone ? (
-                <section className={`${style.section1ContainerPhone}  `}>
+                <section className={`${style.heroSectionConatinerPhone}  `}>
 
                     <div className={`${style.contentConatinerPhone}`}>
 
@@ -225,7 +225,7 @@ export default function UserAndInventry() {
 
                     </div>
 
-                </section>) : (<section className={`${style.section1Container}  `}>
+                </section>) : (<section className={`${style.heroSectionConatiner}  `}>
 
 
                     <div className={`${style.fadeBackgroundConatiner}`}>

@@ -202,7 +202,7 @@ export default function MemberSuite() {
 
 
       {isPhone ? (
-        <section className={`${style.section1ContainerPhone}  `}>
+        <section className={`${style.heroSectionConatinerPhone}  `}>
 
           <div className={`${style.contentConatinerPhone}`}>
 
@@ -225,7 +225,7 @@ export default function MemberSuite() {
           </div>
 
         </section>
-      ) : (<section className={`${style.section1Container}  `}>
+      ) : (<section className={`${style.heroSectionConatiner}  `}>
 
 
         <div className={`${style.fadeBackgroundConatiner}`}>
