@@ -81,14 +81,6 @@ export default function PricingDrop() {
             icon: vanillaIcon,
             path: "vanilla-suite",
         },
-        // {
-        //     key: 8,
-
-        //     title: "Purchase & Vendor Portal",
-        //     description: "Manage inventory effortlessly",
-        //     icon: vendor,
-        //     path: "userstore-inventry",
-        // },
 
     ]
 

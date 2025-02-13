@@ -444,19 +444,7 @@ export default function RequestForm() {
                         <div>
 
 
-                            {/* <select
-                                id="requirement"
-                                name="requirement"
-                                required
-                                className={`${styles.requirementInput}`}
-                                value={formData.requirement}
-                                onChange={handleChange}
-                            >
-                                <option value="">-- Please Select --</option>
-                                <option value="Product Details or Demo">Product Details or Demo</option>
-                                <option value="Product Pricing">Product Pricing</option>
-                                <option value="Support or Training">Support or Training</option>
-                            </select> */}
+                            
 
                             <Select
                                 id="requirement"
